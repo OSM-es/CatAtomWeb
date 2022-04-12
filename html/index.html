@@ -80,6 +80,7 @@ $(document).ready(function() {
 <button id="button1" class="w-button" onclick="procesar()">Procesar</button>
 </div>
 <div id=mensaje class="text-block-2"></div>
+<div id="loading" class="hidden"><img src="cat_files/Loading_bar.gif"></div>
 </div>
 
 
@@ -110,6 +111,8 @@ $(document).ready(function() {
 </div>
 </form>
 </div>
+</div>
+<div id="registro"></div>
 
 <!--[if lte IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js">
@@ -182,24 +185,57 @@ async function subirDirecciones() {
 //    alert('Has subido el archivo.');
 }
 
+class Registro {
+    constructor(cod_municipio) {
+        this.cod_municipio = cod_municipio;
+        this.linea = 0;
+        this.log = $("#registro")
+        this.log.html("");
+        this.loading = $("#loading");
+        this.loading.removeClass("hidden");
+        this.#actualizar();
+    }
+    
+    #actualizar() {
+        console.log("log", this.cod_municipio);
+        let self = this
+        $.ajax({
+            url: `${base_url}job/${this.cod_municipio}`,
+        }).done(function(data) {
+            if (data.linea > self.linea) {
+                console.log(data.log);
+                data.log.forEach(function(row) {
+                    console.log(row);
+                    self.log.prepend(`<pre>${row}</pre>`);
+                });
+                self.linea = data.linea;
+            };
+            if (data.estado == "RUNNING" || data.estado == "AVAILABLE") {
+                setTimeout(function() {
+                    self.#actualizar();
+                }, 500);
+            } else {
+                self.loading.addClass("hidden");
+            };
+        });
+    }
+}
 
 function procesar() {
     const select = document.getElementById('municipio');
-    var cod_municipio = select.value
+    var cod_municipio = select.value;
     var edificiosCheck =  document.getElementById('edificios');
     var direccionesCheck = document.getElementById('direcciones');
-    if (edificiosCheck.checked)
-            {
-                var edificios = true;
-            } else {
-                var edificios = false;
-            }
-    if (direccionesCheck.checked)
-            {
-                var direcciones = true;
-            } else {
-                var direcciones = false;
-            }
+    if (edificiosCheck.checked) {
+        var edificios = true;
+    } else {
+        var edificios = false;
+    }
+    if (direccionesCheck.checked) {
+        var direcciones = true;
+    } else {
+        var direcciones = false;
+    }
 
 
     async function postData(url = '', data = {}) {
@@ -216,18 +252,20 @@ function procesar() {
         body: JSON.stringify(data) // body data type must match "Content-Type" header
       });
       return response.json(); // parses JSON response into native JavaScript objects
-}
+    }
 
 
-var post_job_url = base_url+'job/'+cod_municipio
+    var post_job_url = base_url+'job/'+cod_municipio
 
-console.log(post_job_url, 'building='+edificios+'&direcciones='+direcciones);
+    console.log(post_job_url, 'building='+edificios+'&direcciones='+direcciones);
 
-postData(post_job_url, {building: edificios, address: direcciones})
-  .then(data => {
-    console.log(data); // JSON data parsed by `data.json()` call
-    document.getElementById("mensaje").innerHTML = data.mensage;
-  });
+    postData(
+        post_job_url, {building: edificios, address: direcciones}
+    ).then(data => {
+        console.log(data); // JSON data parsed by `data.json()` call
+        document.getElementById("mensaje").innerHTML = data.mensaje;
+        var registro = new Registro(cod_municipio);
+    });
 }
 
 

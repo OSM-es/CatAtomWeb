@@ -216,3 +216,16 @@
 .section-4 {
   margin-top: 40px;
 }
+
+#registro {
+  margin-top: 1em;
+}
+
+#registro pre {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.hidden {
+    visibility: hidden !important;
+}
