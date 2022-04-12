@@ -223,7 +223,7 @@ var post_job_url = base_url+'job/'+cod_municipio
 
 console.log(post_job_url, 'building='+edificios+'&direcciones='+direcciones);
 
-postData(post_job_url, 'building='+edificios+'&address='+direcciones)
+postData(post_job_url, {building: edificios, address: direcciones})
   .then(data => {
     console.log(data); // JSON data parsed by `data.json()` call
     document.getElementById("mensaje").innerHTML = data.mensage;
@@ -252,3 +252,4 @@ fetch(base_url+'prov')
 
 </body>
 </html>
+
