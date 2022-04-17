@@ -19,15 +19,6 @@
 </head>
 <body class="body">
 
-<script>
-//var base_url = "https://cartobase.es/";  var municipios_url = base_url;
-var base_url = "https://cat.cartobase.es/api/"; var municipios_url = base_url+'prov/';
-
-$(document).ready(function() {
-    $('.selector').select2();
-});
-</script>
-
 <style>     select {        width: 200px;    } </style>
 
 
@@ -41,10 +32,10 @@ $(document).ready(function() {
 
 
 <div class="section wf-section">
+<p><a id="login" class="login-required" href="#">Iniciar sesión</a><span id="username" class="login-required w-hidden"></span><a class="login-required w-hidden" href="javascript:logout()">Cerrar sesión</a></p>
 <div class="w-form">
 <!-- SELECCIONAR MUNICIPIO -->
-<div name="wf-form-municipio-form" data-name="municipio-form" method="get" aria-label="municipio-form">
-
+<div name="wf-form-municipio-form" data-name="municipio-form" method="get" aria-label="municipio-form" class="login-required w-hidden">
 <select id="provincia" name="provincia" data-name="provincia" class="selector" autofocus onChange="mostrarSelectMunicipios(this)">
 <option value=""> Selecciona la provincia...</option>
 </select>
@@ -123,6 +114,12 @@ $(document).ready(function() {
 
 
 <script>
+function logout() {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    window.location.href = window.location.href.split('?')[0];
+}
+
 function removeOptions(selectElement) {
    var i, L = selectElement.options.length - 1;
    for(i = L; i >= 1; i--) {
@@ -169,7 +166,7 @@ function mostrarBloques() {
     if(cod_municipio == "") {
         $("#bloques").addClass("hidden");
         return;
-    };
+    }
     $("#bloques").removeClass("hidden");
     document.getElementById('cod_mun').value = cod_municipio;
     updateLinks();
@@ -180,7 +177,7 @@ function mostrarBloques() {
         $("#registro").html("");
         if (data.estado != "AVAILABLE") {
             new Registro(cod_municipio);
-        };
+        }
         actualizarBloques(data.estado);
     });
 }
@@ -197,15 +194,15 @@ function actualizarBloques(estado) {
         $("#blq-procesar").removeClass("disabled");
     } else {
         $("#blq-procesar").addClass("disabled");
-    };
+    }
     if (estado == "DONE" || estado == "REVIEW") {
         $("#blq-descargar").removeClass("disabled");
         $("#blq-revisar").removeClass("disabled");
     } else {
         $("#blq-descargar").addClass("disabled");
         $("#blq-revisar").addClass("disabled");
-    };
-};
+    }
+}
 
 function descargar() {
     const select = document.getElementById('municipio');
@@ -253,7 +250,7 @@ class Registro {
                     self.log.prepend(`<pre>${row}</pre>`);
                 });
                 self.linea = data.linea;
-            };
+            }
             if (data.estado == "RUNNING" || data.estado == "AVAILABLE") {
                 setTimeout(function() {
                     self.#actualizar();
@@ -261,8 +258,8 @@ class Registro {
             } else {
                 self.loading.addClass("hidden");
                 actualizarBloques(data.estado);
-            };
-        });
+            }
+        })
     }
 }
 
@@ -283,19 +280,21 @@ function procesar() {
     }
 
     async function postData(url = '', data = {}) {
-      // Default options are marked with *
+        // Default options are marked with *
+        const token = localStorage.getItem('token');
         const response = await fetch(url, {
-        method: 'POST', // *GET, POST, PUT, DELETE, etc.
-        mode: 'cors', // no-cors, *cors, same-origin
-        credentials: 'same-origin', // include, *same-origin, omit
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        redirect: 'follow', // manual, *follow, error
-        referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(data) // body data type must match "Content-Type" header
-      });
-      return response.json(); // parses JSON response into native JavaScript objects
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Token ${token}`,
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+            body: JSON.stringify(data) // body data type must match "Content-Type" header
+        });
+        return response.json(); // parses JSON response into native JavaScript objects
     }
 
     var post_job_url = base_url+'job/'+cod_municipio
@@ -311,6 +310,21 @@ function procesar() {
     });
 }
 
+//prod
+var base_url = "https://cat.cartobase.es/api/";
+//dev
+var base_url = "http://127.0.0.1:5001/";
+var municipios_url = base_url+'prov/';
+
+// login
+const params = new URLSearchParams(window.location.search);
+if (params.has('oauth_token') && params.has('oauth_verifier')) {
+    $.get('/authorize', params.toString()).done(function(data) {
+        localStorage.setItem('token', data.session_token);
+        localStorage.setItem('username', data.username);
+        window.location.href = window.location.href.split('?')[0];
+    });
+}
 
 fetch(base_url+'prov')
   .then(response => response.json())
@@ -326,10 +340,20 @@ fetch(base_url+'prov')
     }
   })
   .catch(console.error);
- </script>
 
-
-
+$(document).ready(function() {
+    let token = localStorage.getItem('token');
+    if (token == null) {  // no registrado
+        let login_url = `/login?callback=${base_url}static/index.html`;
+        $('#login').attr('href', login_url);
+    } else {  // registrado
+        let username = localStorage.getItem('username');
+        $('#username').html(username + ': ');
+        $('.login-required').toggleClass('w-hidden');
+    }
+    $('.selector').select2();
+});
+</script>
 
 </body>
 </html>
