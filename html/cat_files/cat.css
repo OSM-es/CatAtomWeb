@@ -217,13 +217,35 @@
   margin-top: 40px;
 }
 
-#registro {
+#bloques {
+  max-width: 80%;
+}
+
+#plantilla, #revisar, #registro, #informe {
   margin-top: 1em;
 }
 
-#registro pre {
+#plantilla h5, #revisar h5, #registro h5, #informe h5 {
+  background: #EEE;
+  border-bottom: 1px solid #000;
+  margin-top: 0px;
+  padding: 0.5em;
+}
+
+#plantilla h5 {
+  margin-bottom: 0px;
+}
+
+.terminal pre {
   margin-top: 0px;
   margin-bottom: 0px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 button[disabled], .disabled {
@@ -232,6 +254,18 @@ button[disabled], .disabled {
 }
 
 .hidden {
-    visibility: hidden !important;
+    display: none !important;
 }
 
+.warning {
+    background: #FDD;
+    max-width: 50%
+}
+
+.warning img {
+    margin:  auto 1em auto 1em;
+}
+
+.warning div {
+    padding: 1em;
+}

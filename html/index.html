@@ -1,360 +1,200 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<style>.wf-force-outline-none[tabindex="-1"]:focus{outline:none;}</style>
-<title>CatAtom2Osm online</title>
-<meta content="width=device-width, initial-scale=1" name="viewport">
-<link href="./cat_files/cat.css" rel="stylesheet" type="text/css">
-<!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript">
-</script>
-<![endif]-->
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      .wf-force-outline-none[tabindex="-1"]:focus {
+        outline: none;
+      }
+    </style>
+    <title>CatAtom2Osm online</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="cat_files/cat.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  </head>
+  <body class="body">
+    <style>
+      select {
+        width: 200px;
+      }
+    </style>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- CABECERA -->
+    <div class="section-2 wf-section">
+      <div class="div-block">
+        <img src="./cat_files/600px-Spanish_Cadastre_Buildings_Import.svg.png" loading="lazy" sizes="200px" alt="" class="image" />
+        <h1 class="heading">CatAtom2Osm online</h1>
+      </div>
+    </div>
+    <div class="heading">
+      <div class="warning div-block">
+        <img alt="Warning" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Ambox_warning_pn.svg/40px-Ambox_warning_pn.svg.png" title="Warning" width="40" height="35">
+        <div>
+          <p>Las importaciones y ediciones automatizadas deben ser llevadas a cabo por personas con experiencia y suficiente conocimiento de la forma en que la comunidad OpenStreetMap crea mapas y con una cuidada planificación y consulta con la comunidad local correspondiente.</p>
+          <p>Consulta la <a href="https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos">guía de importación</a>. Las importaciones o ediciones automatizadas que no sigan estas directrices ¡se pueden revertir!</p>
+        </div>
+      </div>
+    </div>
+    <div class="section wf-section">
+      <p><a id="login" class="login-required" href="#">Iniciar sesión</a><span id="username" class="login-required hidden"></span><a class="login-required hidden" href="javascript:logout()">Cerrar sesión</a></p>
+      <div class="w-form">
+        <!-- SELECCIONAR MUNICIPIO -->
+        <div name="wf-form-municipio-form" data-name="municipio-form" method="get" aria-label="municipio-form" class="login-required hidden">
+          <select id="provincia" name="provincia" data-name="provincia" class="selector" autofocus onChange="mostrarSelectMunicipios(this)">
+            <option value=""> Selecciona la provincia...</option>
+          </select>
 
-</head>
-<body class="body">
+          <p></p>
+          <div id="selector-municipio" class="hidden">
+            <select id="municipio" name="municipio" data-name="municipio" class="selector" onChange="mostrarBloques()">
+              <option value=""> Selecciona el municipio...</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<style>     select {        width: 200px;    } </style>
+    <!-- PROCESAR EDIFICIOS -->
+    <div id="bloques" class="hidden">
+      <div class="section-3 wf-section">
+        <div id="blq-procesar" class="div-block-2">
+          <div class="text-block">
+            1. Procesar edificios
+          </div>
+          <div class="text-block-2">Notas: bla, bla, bla</div>
+          <div id="opciones" class="text-block-3">Opciones</div>
+          <div class="form-block w-form">
+            <label class="w-checkbox checkbox-field-2">
+              <input type="checkbox" id="edificios" name="checkbox-2" data-name="Checkbox 2" class="w-checkbox-input checkbox" checked />
+              <span class="checkbox-label w-form-label" for="checkbox-2">Procesar edificios</span>
+            </label>
+            <label class="w-checkbox checkbox-field-2">
+              <input type="checkbox" id="direcciones" name="checkbox-2" data-name="Checkbox 2" class="w-checkbox-input checkbox" checked />
+              <span class="checkbox-label w-form-label" for="checkbox-2">Procesar direcciones</span>
+            </label>
+            <p></p>
+            <p>
+              <button id="btn-procesar" class="w-button" onclick="procesar()">Procesar</button>
+            </p>
+          </div>
 
+          <div id="mensaje" class="text-block-2"></div>
+          <div id="loading" class="text-block-2 hidden"><img src="cat_files/Loading_bar.gif" /></div>
+        </div>
 
-<!-- CABECERA -->
-<div class="section-2 wf-section">
-<div class="div-block">
-<img src="./cat_files/600px-Spanish_Cadastre_Buildings_Import.svg.png" loading="lazy" sizes="200px" alt="" class="image">
-<h1 class="heading">CatAtom2Osm online</h1>
-</div>
-</div>
+        <!-- DESCARGAR DATOS PROCESADOS -->
+        <div id="blq-descargar" class="div-block-2 disabled">
+          <div class="text-block">
+            2. Descargar datos procesados
+          </div>
+          <div class="text-block-2">Notas: bla, bla, bla</div>
+          <p><a href="#" class="text-block-2" id="lnk-descarga">Enlace a los datos procesados</a></p>
+          <div class="form-block w-form">
+            <button id="button1" class="w-button" onclick="descargar()">Descargar</button>
+          </div>
+        </div>
 
+        <!-- SUBIR CSV CON DIRECCIONES REVISADAS-->
+        <div id="blq-revisar" class="div-block-2 disabled">
+          <div class="text-block">3. Correción de nombres de viales</div>
+          <div class="text-block-2">Notas: bla, bla, bla</div>
+          <div class="text-block-2">
+            Sube aquí el archivo <a id="lnk-revisar" href="#">highway_names.csv</a><br />
+            revisado manualmente
+          </div>
 
-<div class="section wf-section">
-<p><a id="login" class="login-required" href="#">Iniciar sesión</a><span id="username" class="login-required w-hidden"></span><a class="login-required w-hidden" href="javascript:logout()">Cerrar sesión</a></p>
-<div class="w-form">
-<!-- SELECCIONAR MUNICIPIO -->
-<div name="wf-form-municipio-form" data-name="municipio-form" method="get" aria-label="municipio-form" class="login-required w-hidden">
-<select id="provincia" name="provincia" data-name="provincia" class="selector" autofocus onChange="mostrarSelectMunicipios(this)">
-<option value=""> Selecciona la provincia...</option>
-</select>
-
-<p>
-<div id="selector-municipio" class="hidden">
-<select id="municipio" name="municipio" data-name="municipio" class="selector" onChange="mostrarBloques()">
-<option value=""> Selecciona el municipio...</option>
-</select>
-</div>
-
-</div>
-</div>
-</div>
-
-<!-- PROCESAR EDIFICIOS -->
-<div id="bloques" class="hidden">
-<div class="section-3 wf-section">
-<div id="blq-procesar" class="div-block-2">
-<div class="text-block">
-1. Procesar edificios</div>
-<div class="text-block-2">Notas: bla, bla, bla</div>
-<div id="opciones" class="text-block-3">Opciones</div>
-<div class="form-block w-form">
-<label class="w-checkbox checkbox-field-2">
-<input type="checkbox" id="edificios" name="checkbox-2" data-name="Checkbox 2" class="w-checkbox-input checkbox" checked>
-<span class="checkbox-label w-form-label" for="checkbox-2">Procesar edificios</span>
-</label>
-<label class="w-checkbox checkbox-field-2">
-<input type="checkbox" id="direcciones" name="checkbox-2" data-name="Checkbox 2" class="w-checkbox-input checkbox" checked>
-<span class="checkbox-label w-form-label" for="checkbox-2">Procesar direcciones</span>
-</label>
-<p><p>
-<button id="btn-procesar" class="w-button" onclick="procesar()">Procesar</button>
-</div>
-<div id=mensaje class="text-block-2"></div>
-<div id="loading" class="text-block-2 hidden"><img src="cat_files/Loading_bar.gif"/></div>
-</div>
-
-
-<!-- DESCARGAR DATOS PROCESADOS -->
-<div id="blq-descargar" class="div-block-2 disabled">
-<div class="text-block">
-2. Descargar datos procesados</div>
-<div class="text-block-2">Notas: bla, bla, bla</div>
-<p><a href="https://cat.cartobase.es/results/" class="text-block-2" id="lnk-descarga">Enlace a los datos procesados</a>
-<div class="form-block w-form">
-<button id="button1" class="w-button" onclick="descargar()">Descargar</button>
-</div>
-</div>
-
-
-<!-- SUBIR CSV CON DIRECCIONES REVISADAS-->
-<div id="blq-revisar" class="div-block-2 disabled">
-<div class="text-block">3. Correción de nombres de viales</div>
-<div class="text-block-2">Notas: bla, bla, bla</div>
-<div class="text-block-2">Sube aquí el archivo <a id="lnk-revisar" href="#">highway_names.csv</a><br>revisado manualmente</div>
-
-<form action="upload.php" method="post" enctype="multipart/form-data">
-<div class="form-block w-form">
-<input type="file" id="fileToUpload" name="fileToUpload"><p><p>
-<input type="hidden" id="cod_mun" name="cod_mun">
-<!-- <button id="button1" class="w-button" onclick="subirDirecciones()">Subir y procesar</button> -->
- <input type="submit" class="w-button value="Subir" name="Subir">
-</div>
-</form>
-</div>
-</div>
-<div id="registro"></div>
-</div>
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+            <div class="form-block w-form">
+              <input type="file" id="fileToUpload" name="fileToUpload" />
+              <p></p>
+              <p>
+                <input type="hidden" id="cod_mun" name="cod_mun" />
+                <!-- <button id="button1" class="w-button" onclick="subirDirecciones()">Subir y procesar</button> -->
+                <input type="submit" class="w-button value="Subir" name="Subir">
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="section-4 wf-section">
+        <div id="plantilla" class="div-block-2">
+          <h5>Plantilla</h5>
+<table id="plantilla_tbl" class="display datatable">
+  <thead>
+    <tr>
+      <th>Campo</th>
+      <th>Español (es)</th>
+      <th>Inglés (en)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Nombre del proyecto</th>
+      <td>Catastro de <span class="nom-municipio">Nombre de la zona</span></td>
+      <td>Cadastre of <span class="nom-municipio">Nombre de la zona</span></td>
+    </tr>
+    <tr>
+      <th>Descripción breve</th>
+      <td>Importación de <span class="tipo-import">edificios y direcciones</span> de <span class="nom-municipio">Nombre de la zona</span></td>
+      <td>Import of <span class="tipo-import-en">buildings and addresses</span> of <span class="nom-municipio">Nombre de la zona</span></td>
+    </tr>
+      <th>Descripción</th>
+      <td>El trazado de edificios y las direcciones postales son datos de mucho valor para el mapa de OpenStreetMap. Actualmente no son muchos los municipios españoles que disponen de esta información y es por ello que desde OpenStreetMap España se está impulsando la importación de algunos de los datos catastrales. ¡Ayúdanos a que el mapa de OpenStreetMap sea todavía más útil!<br><br>
+      <p>Consulta la [guía de importación](https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gu%C3%ADa_de_importaci%C3%B3n) para colaborar.</p></td>
+      <td>Building footprints and postal addresses are very valuable data for the OpenStreetMap map. Currently there are not many Spanish municipalities that have this information and that is why OpenStreetMap Spain is promoting the import of some of the cadastral data. Help us make the OpenStreetMap map even more useful!</p></td>
+    <tr>
+      <th>Objetos a cartografiar</th>
+      <td>buildings[, addresses]</td>
+      <td>buildings[, addresses]</td>
+    </tr>
+    <tr>
+      <th>Comentario del conjunto de cambios</th>
+      <td>#Spanish_Cadastre_Buildings_Import <span class="cod-municipio">Código municipio</span> <span class="nom-municipio">Nombre de la zona</span></td>
+      <td>#Spanish_Cadastre_Buildings_Import <span class="cod-municipio">Código municipio</span> <span class="nom-municipio">Nombre de la zona</span></td>
+    </tr>
+    <tr>
+      <th>Instrucciones detalladas</th>
+      <td>Revisa la tarea siguiendo las instrucciones de la [guía de importación](https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gu%C3%ADa_de_importaci%C3%B3n).</td>
+      <td>Review this task following the instructions in this [import guide](https://wiki.openstreetmap.org/wiki/Spanish Cadastre/Buildings Import/Import guide).</td>
+    </tr>
+    <tr>
+      <th>Instrucciones adicionales para esta tarea</th>
+      <td>Descarga el [archivo de la tarea](<span class="base-url">url</span>{muncode}/{localId}.osm.gz) o [Editar con Control Remoto de JOSM](http://localhost:8111/import?new_layer=true&amp;url=<span class="base-url">url</span>results/{muncode}/{localId}.osm.gz).<br>
+      <p>Tipo: {type}. Complejidad: {parts} partes.<br>
+Revisa la tarea siguiendo las instrucciones de la [guía de importación](https://openstreetmap.es/catastro). Consulta las fotos de fachada de los edificios haciendo uso del complemento **pointinfo** que se activa con *Ctrl-Maýus-x*. 
+      </p></td>
+      <td><i>(Introduce el texto en español debido a un problema con el gestor de tareas que muestra siempre el texto en inglés independientemente de la configuración del usuario.)</i></td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div id="revisar" class="div-block-2 hidden">
+          <h5>Revisar</h5>
+          <ul class="terminal"></ul>
+        </div>
+        <div id="informe" class="div-block-2 hidden">
+          <h5>Informe</h5>
+          <div class="terminal"></div>
+        </div>
+        <div id="registro" class="div-block-2 hidden">
+          <h5>Registro</h5>
+          <div class="terminal"></div>
+        </div>
+      </div>
+    </div>
 
 <!--[if lte IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js">
 </script>
 <![endif]-->
-
-
-<script>
-function logout() {
-    localStorage.removeItem('token');
-    localStorage.removeItem('username');
-    window.location.href = window.location.href.split('?')[0];
-}
-
-function removeOptions(selectElement) {
-   var i, L = selectElement.options.length - 1;
-   for(i = L; i >= 1; i--) {
-      selectElement.remove(i);
-   }
-}
-
-function updateLinks() {
-    let cod_municipio = $("#municipio").val();
-    document.getElementById("lnk-descarga").innerHTML = "https://cat.cartobase.es/results/"+cod_municipio+"/";
-    document.getElementById("lnk-descarga").href = "https://cat.cartobase.es/results/"+cod_municipio+"/";
-    $("#lnk-revisar").attr("href", `results/${cod_municipio}/highway_names.csv`);
-}
-
-function mostrarSelectMunicipios(selectObject) {
-    // using the function:
-    removeOptions(document.getElementById('municipio'));
-
-    var cod_provincia = selectObject.value;
-    if (cod_provincia == "") {
-        $("#selector-municipio").addClass("hidden");
-        $("#bloques").addClass("hidden");
-        return;
-    }
-    fetch(municipios_url+cod_provincia)
-      .then(response => response.json())
-      .then(data => {
-        for (const municipio of data.municipios) {
-        
-            var option = document.createElement("option");
-            option.text = municipio.nombre;
-            option.value = municipio.cod_municipio;
-            var select = document.getElementById("municipio");
-            select.appendChild(option);
-        }
-    })
-      .catch(console.error);
-    $("#selector-municipio").removeClass("hidden");
-}
-
-function mostrarBloques() {
-    const select = document.getElementById('municipio');
-    var cod_municipio = select.value;
-    if(cod_municipio == "") {
-        $("#bloques").addClass("hidden");
-        return;
-    }
-    $("#bloques").removeClass("hidden");
-    document.getElementById('cod_mun').value = cod_municipio;
-    updateLinks();
-    $.ajax({
-        url: `${base_url}job/${cod_municipio}`,
-    }).done(function(data) {
-        $("#mensaje").html(data.mensaje);
-        $("#registro").html("");
-        if (data.estado != "AVAILABLE") {
-            new Registro(cod_municipio);
-        }
-        actualizarBloques(data.estado);
-    });
-}
-
-function actualizarBloques(estado) {
-    // Estado / disabled:
-    //           blq-procesar blq-descargar blq-revisar
-    // AVAILABLE   false         true          true
-    // RUNNING     true          true          true
-    // DONE        true          false         false
-    // REVIEW      true          false         false
-    // ERROR       false         true          false
-    if (estado == "AVAILABLE" || estado == "ERROR") {
-        $("#blq-procesar").removeClass("disabled");
-    } else {
-        $("#blq-procesar").addClass("disabled");
-    }
-    if (estado == "DONE" || estado == "REVIEW") {
-        $("#blq-descargar").removeClass("disabled");
-        $("#blq-revisar").removeClass("disabled");
-    } else {
-        $("#blq-descargar").addClass("disabled");
-        $("#blq-revisar").addClass("disabled");
-    }
-}
-
-function descargar() {
-    const select = document.getElementById('municipio');
-    var cod_municipio = select.value
-    document.location.href='results/'+cod_municipio
-}
-
-async function subirDirecciones() {
-    const select = document.getElementById('municipio');
-    var cod_municipio = select.value
-    let formData = new FormData();           
-    formData.append("fileToUpload", fileToUpload.files[0]);
-    await fetch('/upload.php?cod_mun='+cod_municipio, {
-      method: "POST", 
-      body: formData
-    });    
-//    alert('Has subido el archivo.');
-}
-
-class Registro {
-    constructor(cod_municipio) {
-        this.cod_municipio = cod_municipio;
-        this.linea = 0;
-        this.log = $("#registro")
-        this.log.html("");
-        this.loading = $("#loading");
-        this.loading.removeClass("hidden");
-        this.bloque = $("#blq-procesar");
-        this.bloque.addClass("disabled");
-        this.mensaje = $("#mensaje");
-        this.#actualizar();
-    }
-    
-    #actualizar() {
-        console.log("log", this.cod_municipio);
-        let self = this
-        $.ajax({
-            url: `${base_url}job/${this.cod_municipio}`,
-            data: {"linea": self.linea},
-        }).done(function(data) {
-            if (data.linea > self.linea) {
-                self.mensaje.html(data.mensaje);
-                data.log.forEach(function(row) {
-                    console.log(row);
-                    self.log.prepend(`<pre>${row}</pre>`);
-                });
-                self.linea = data.linea;
-            }
-            if (data.estado == "RUNNING" || data.estado == "AVAILABLE") {
-                setTimeout(function() {
-                    self.#actualizar();
-                }, 500);
-            } else {
-                self.loading.addClass("hidden");
-                actualizarBloques(data.estado);
-            }
-        })
-    }
-}
-
-function procesar() {
-    const select = document.getElementById('municipio');
-    var cod_municipio = select.value;
-    var edificiosCheck =  document.getElementById('edificios');
-    var direccionesCheck = document.getElementById('direcciones');
-    if (edificiosCheck.checked) {
-        var edificios = true;
-    } else {
-        var edificios = false;
-    }
-    if (direccionesCheck.checked) {
-        var direcciones = true;
-    } else {
-        var direcciones = false;
-    }
-
-    async function postData(url = '', data = {}) {
-        // Default options are marked with *
-        const token = localStorage.getItem('token');
-        const response = await fetch(url, {
-            method: 'POST', // *GET, POST, PUT, DELETE, etc.
-            mode: 'cors', // no-cors, *cors, same-origin
-            credentials: 'same-origin', // include, *same-origin, omit
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Token ${token}`,
-            },
-            redirect: 'follow', // manual, *follow, error
-            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-            body: JSON.stringify(data) // body data type must match "Content-Type" header
-        });
-        return response.json(); // parses JSON response into native JavaScript objects
-    }
-
-    var post_job_url = base_url+'job/'+cod_municipio
-
-    console.log(post_job_url, 'building='+edificios+'&direcciones='+direcciones);
-
-    postData(
-        post_job_url, {building: edificios, address: direcciones}
-    ).then(data => {
-        console.log(data); // JSON data parsed by `data.json()` call
-        document.getElementById("mensaje").innerHTML = data.mensaje;
-        var registro = new Registro(cod_municipio);
-    });
-}
-
-//prod
-var base_url = "https://cat.cartobase.es/api/";
-//dev
-var base_url = "http://127.0.0.1:5001/";
-var municipios_url = base_url+'prov/';
-
-// login
-const params = new URLSearchParams(window.location.search);
-if (params.has('oauth_token') && params.has('oauth_verifier')) {
-    $.get('/authorize', params.toString()).done(function(data) {
-        localStorage.setItem('token', data.session_token);
-        localStorage.setItem('username', data.username);
-        window.location.href = window.location.href.split('?')[0];
-    });
-}
-
-fetch(base_url+'prov')
-  .then(response => response.json())
-  .then(data => {
-    for (const provincia of data.provincias) {
-    
-        var option = document.createElement("option");
-        option.text = provincia.nombre;
-        option.value = provincia.cod_provincia;
-        var select = document.getElementById("provincia");
-        select.appendChild(option);
-
-    }
-  })
-  .catch(console.error);
-
-$(document).ready(function() {
-    let token = localStorage.getItem('token');
-    if (token == null) {  // no registrado
-        let login_url = `/login?callback=${base_url}static/index.html`;
-        $('#login').attr('href', login_url);
-    } else {  // registrado
-        let username = localStorage.getItem('username');
-        $('#username').html(username + ': ');
-        $('.login-required').toggleClass('w-hidden');
-    }
-    $('.selector').select2();
-});
-</script>
-
-</body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="//cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="cat_files/cat.js"></script>
+  </body>
 </html>
-
