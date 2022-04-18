@@ -67,6 +67,7 @@ function mostrarBloques() {
     }).done(function(data) {
         $("#info-revisar").toggleClass("hidden", data.estado != "REVIEW");
         $("#info-fixme").toggleClass("hidden", data.estado != "FIXME");
+        $("#opciones :checkbox").attr("disabled", data.estado == "REVIEW");
         $("#registro").addClass("hidden");
         $("#registro .terminal").html("");
         if (data.estado != "AVAILABLE") {
