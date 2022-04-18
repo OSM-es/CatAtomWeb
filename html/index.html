@@ -59,14 +59,13 @@
       </div>
     </div>
 
-    <!-- PROCESAR EDIFICIOS -->
     <div id="bloques" class="hidden">
       <div class="section-3 wf-section">
+        <!-- PROCESAR EDIFICIOS -->
         <div id="blq-procesar" class="div-block-2">
           <div class="text-block">
-            1. Procesar edificios
+            1. Procesar
           </div>
-          <div class="text-block-2">Notas: bla, bla, bla</div>
           <div id="opciones" class="text-block-3">Opciones</div>
           <div class="form-block w-form">
             <label class="w-checkbox checkbox-field-2">
@@ -87,27 +86,16 @@
           <div id="loading" class="text-block-2 hidden"><img src="cat_files/Loading_bar.gif" /></div>
         </div>
 
-        <!-- DESCARGAR DATOS PROCESADOS -->
-        <div id="blq-descargar" class="div-block-2 disabled">
-          <div class="text-block">
-            2. Descargar datos procesados
-          </div>
-          <div class="text-block-2">Notas: bla, bla, bla</div>
-          <p><a href="#" class="text-block-2" id="lnk-descarga">Enlace a los datos procesados</a></p>
-          <div class="form-block w-form">
-            <button id="button1" class="w-button" onclick="descargar()">Descargar</button>
-          </div>
-        </div>
-
-        <!-- SUBIR CSV CON DIRECCIONES REVISADAS-->
+        <!-- SUBIR ARCHIVOS REVISADOS-->
         <div id="blq-revisar" class="div-block-2 disabled">
-          <div class="text-block">3. Correción de nombres de viales</div>
-          <div class="text-block-2">Notas: bla, bla, bla</div>
-          <div class="text-block-2">
-            Sube aquí el archivo <a id="lnk-revisar" href="#">highway_names.csv</a><br />
-            revisado manualmente
+          <div class="text-block">
+            2. Correciones
           </div>
-
+          <div id="info-fixme" class="text-block-2 hidden">Sube aquí los archivos con problemas a revisar</div>
+          <div id="info-revisar" class="text-block-2">
+            Sube aquí el archivo <a id="lnk-revisar" href="#">highway_names.csv</a><br />
+            revisado manualmente, después repite el proceso
+          </div>
           <form action="upload.php" method="post" enctype="multipart/form-data">
             <div class="form-block w-form">
               <input type="file" id="fileToUpload" name="fileToUpload" />
@@ -115,12 +103,29 @@
               <p>
                 <input type="hidden" id="cod_mun" name="cod_mun" />
                 <!-- <button id="button1" class="w-button" onclick="subirDirecciones()">Subir y procesar</button> -->
-                <input type="submit" class="w-button value="Subir" name="Subir">
+                <input type="submit" class="w-button" value="Subir" name="Subir">
               </p>
             </div>
           </form>
         </div>
+
+        <!-- DESCARGAR DATOS PROCESADOS -->
+        <div id="blq-descargar" class="div-block-2 disabled">
+          <div class="text-block">
+            3. Generar el proyecto
+          </div>
+          <div class="text-block-2">
+            <p>Crea un nuevo proyecto en el <a href="https://tareas.openstreetmap.es">Gestor de Tareas</a><br/>
+            usando el archivo <a id="lnk-zoning" href="">zoning.geojson</a>.</p>
+            <p>Completa la información de la Descripción e<br/>Instrucciones usando la plantilla.</p>
+          </div>
+          <p><a href="#" class="text-block-2" id="lnk-descarga">Enlace a los datos procesados</a></p>
+          <div class="form-block w-form">
+            <button id="button1" class="w-button" onclick="descargar()">Descargar</button>
+          </div>
+        </div>
       </div>
+
       <div class="section-4 wf-section">
         <div id="plantilla" class="div-block-2">
           <h5>Plantilla</h5>
@@ -186,6 +191,9 @@ Revisa la tarea siguiendo las instrucciones de la [guía de importación](https:
           <div class="terminal"></div>
         </div>
       </div>
+    </div>
+    <div>
+      <p></p>
     </div>
 
 <!--[if lte IE 9]>

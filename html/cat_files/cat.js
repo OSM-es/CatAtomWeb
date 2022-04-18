@@ -1,3 +1,11 @@
+// prod
+var base_url = "https://cat.cartobase.es/";
+var api_url = base_url + "api/";
+// dev
+//var api_url = "http://127.0.0.1:5001/";
+//var base_url = api_url + "static/";
+
+
 function logout() {
     localStorage.removeItem('token');
     localStorage.removeItem('username');
@@ -28,7 +36,7 @@ function mostrarSelectMunicipios(selectObject) {
         $("#bloques").addClass("hidden");
         return;
     }
-    fetch(municipios_url+cod_provincia)
+    fetch(api_url + 'prov/' + cod_provincia)
       .then(response => response.json())
       .then(data => {
         for (const municipio of data.municipios) {
@@ -57,6 +65,8 @@ function mostrarBloques() {
     $.ajax({
         url: `${api_url}job/${cod_municipio}`,
     }).done(function(data) {
+        $("#info-revisar").toggleClass("hidden", data.estado != "REVIEW");
+        $("#info-fixme").toggleClass("hidden", data.estado != "FIXME");
         $("#registro").addClass("hidden");
         $("#registro .terminal").html("");
         if (data.estado != "AVAILABLE") {
@@ -107,26 +117,25 @@ function actualizarPlantilla(data) {
 
 function actualizarBloques(estado) {
     // Estado / disabled:
-    //           blq-procesar blq-descargar blq-revisar
-    // AVAILABLE   false         true          true
-    // RUNNING     true          true          true
-    // DONE        true          false         false
-    // REVIEW      true          false         false
-    // FIXME      true          false         false
-    // ERROR       false         true          false
+    //           blq-procesar  blq-revisar  blq-descargar
+    // AVAILABLE   false         true         true
+    // RUNNING     true          true         true
+    // DONE        true          true         false
+    // REVIEW      false         false        true
+    // FIXME       true          false        true
+    // ERROR       false         true         true
     console.log(estado);
-    if (estado == "AVAILABLE" || estado == "ERROR") {
+    if (estado == "AVAILABLE" || estado == "ERROR" || estado == "REVIEW") {
         $("#blq-procesar").removeClass("disabled");
     } else {
         $("#blq-procesar").addClass("disabled");
     }
-    if (estado == "DONE" || estado == "REVIEW" || estado == "FIXME") {
-        $("#blq-descargar").removeClass("disabled");
+    if (estado == "REVIEW" || estado == "FIXME") {
         $("#blq-revisar").removeClass("disabled");
     } else {
-        $("#blq-descargar").addClass("disabled");
         $("#blq-revisar").addClass("disabled");
     }
+    $("#blq-descargar").toggleClass("disabled", estado != "DONE");
 }
 
 function descargar() {
@@ -237,14 +246,6 @@ function procesar() {
     });
 }
 
-
-// prod
-var base_url = "https://cat.cartobase.es/";
-var api_url = base_url + "api/";
-// dev
-//var api_url = "http://127.0.0.1:5001/";
-//var base_url = api_url + "static/";
-var municipios_url = api_url+'prov/';
 
 // login
 const params = new URLSearchParams(window.location.search);
