@@ -1,9 +1,9 @@
 // prod
-var base_url = "https://cat.cartobase.es/";
-var api_url = base_url + "api/";
+//var base_url = "https://cat.cartobase.es/";
+//var api_url = base_url + "api/";
 // dev
-//var api_url = "http://127.0.0.1:5001/";
-//var base_url = api_url + "static/";
+var api_url = "http://127.0.0.1:5001/";
+var base_url = api_url + "static/";
 
 
 function logout() {
@@ -57,22 +57,51 @@ function mostrarSelectMunicipios(selectObject) {
     $("#municipio").parent().removeClass("hidden");
 }
 
+function mostrarSelectDivision(cod_municipio) {
+    $("#division").empty();
+    $("#division").append(new Option("Actualizando divisiones...", ""));
+    if (cod_municipio == "") {
+        $("#division").parent().addClass("hidden");
+        return;
+    }
+    console.log(cod_municipio);
+    $("#division").attr("disabled", true);
+    $.get(
+        api_url + 'mun/' + cod_municipio
+    ).done(function(data) {
+        console.log(data);
+        $("#division").attr("disabled", false);
+        $("#division").empty();
+        if (data.divisiones.length == 0) {
+            $("#division").parent().addClass("hidden");
+            return;
+        }
+        $("#division").append(new Option("Selecciona la división...", ""));
+        for (const division of data.divisiones) {
+            $("#division").append(
+                new Option(
+                    division.nombre.replace(/\s/gy, '-'),
+                    division.osm_id,
+                )
+            );
+        }
+    });
+    $("#division").parent().removeClass("hidden");
+}
+
 function mostrarBloques() {
-    const select = document.getElementById('municipio');
     let cod_municipio = $('#municipio').val();
-    if(cod_municipio == "") {
+    mostrarSelectDivision(cod_municipio);
+    if (cod_municipio == "") {
         $("#bloques").addClass("hidden");
         return;
     }
     $("#bloques").removeClass("hidden");
     $('#cod_mun').val(cod_municipio);
     updateLinks();
-    $.ajax({
-        url: `${api_url}job/${cod_municipio}`,
-    }).done(function(data) {
-        $("#info-revisar").toggleClass("hidden", data.estado != "REVIEW");
-        $("#info-fixme").toggleClass("hidden", data.estado != "FIXME");
-        $("#opciones :checkbox").attr("disabled", data.estado == "REVIEW");
+    $.get(
+        `${api_url}job/${cod_municipio}`,
+    ).done(function(data) {
         $("#registro").addClass("hidden");
         $("#registro .terminal").html("");
         if (data.estado != "AVAILABLE") {
@@ -85,11 +114,16 @@ function mostrarBloques() {
 function actualizarProceso(data) {
     let cod_municipio = $('#municipio').val();
     $("#mensaje").html(data.mensaje);
+    $("#info-revisar").toggleClass("hidden", data.estado != "REVIEW");
+    $("#info-fixme").toggleClass("hidden", data.estado != "FIXME");
+    $("#opciones :checkbox").attr("disabled", data.estado == "REVIEW");
     $("#revisar").toggleClass("hidden", data.revisar.length == 0);
     $("#revisar .terminal").html("");
     data.revisar.forEach(function(row) {
-        let url = `http://localhost:8111/import?new_layer=true&url=${base_url}results/${cod_municipio}/tasks/${row}`;
-        $("#revisar .terminal").append(`<li><a href='${url}'>${row}</a></li>`);
+        let url = `${base_url}results/${cod_municipio}/tasks/${row}`;
+        let url_josm = `http://localhost:8111/import?new_layer=true&url=${url}`;
+        let elem = `<li><a href='${url}'>${row}</a> (<a href="url_josm">abrir en JOSM</a>)</li>`;
+        $("#revisar .terminal").append(elem);
     });
     $("#informe").toggleClass("hidden", data.informe.length == 0);
     $("#informe .terminal").html("");
