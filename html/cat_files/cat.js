@@ -36,6 +36,7 @@ function mostrarSelectProvincia() {
 function mostrarSelectMunicipios(selectObject) {
     let cod_provincia = selectObject.value;
     $("#municipio").empty();
+    $("#municipio").append(new Option("Selecciona el municipio...", ""));
     if (cod_provincia == "") {
         $("#municipio").parent().addClass("hidden");
         $("#bloques").addClass("hidden");
