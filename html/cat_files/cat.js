@@ -1,9 +1,9 @@
 // prod
-//var base_url = "https://cat.cartobase.es/";
-//var api_url = base_url + "api/";
+var base_url = "https://cat.cartobase.es/";
+var api_url = base_url + "api/";
 // dev
-var api_url = "http://127.0.0.1:5001/";
-var base_url = api_url + "static/";
+//var api_url = "http://127.0.0.1:5001/";
+//var base_url = api_url + "static/";
 
 
 function logout() {
@@ -286,7 +286,7 @@ function procesar() {
 // login
 const params = new URLSearchParams(window.location.search);
 if (params.has('oauth_token') && params.has('oauth_verifier')) {
-    $.get('/authorize', params.toString()).done(function(data) {
+    $.get(`${api_url}authorize`, params.toString()).done(function(data) {
         localStorage.setItem('token', data.session_token);
         localStorage.setItem('username', data.username);
         window.location.href = window.location.href.split('?')[0];
@@ -297,7 +297,7 @@ if (params.has('oauth_token') && params.has('oauth_verifier')) {
 $(document).ready(function() {
     let token = localStorage.getItem('token');
     if (token == null) {  // no registrado
-        let login_url = `/login?callback=${base_url}index.html`;
+        let login_url = `${api_url}login?callback=${base_url}index.html`;
         $('#login').attr('href', login_url);
     } else {  // registrado
         let username = localStorage.getItem('username');
