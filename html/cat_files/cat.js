@@ -12,13 +12,6 @@ function logout() {
     window.location.href = window.location.href.split('?')[0];
 }
 
-function removeOptions(selectElement) {
-   var i, L = selectElement.options.length - 1;
-   for(i = L; i >= 1; i--) {
-      selectElement.remove(i);
-   }
-}
-
 function updateLinks() {
     let cod_municipio = $("#municipio").val();
     $("#lnk-descarga").html(base_url + "results/" + cod_municipio + "/");
@@ -26,30 +19,41 @@ function updateLinks() {
     $("#lnk-revisar").attr("href", `results/${cod_municipio}/highway_names.csv`);
 }
 
-function mostrarSelectMunicipios(selectObject) {
-    // using the function:
-    removeOptions(document.getElementById('municipio'));
+function mostrarSelectProvincia() {
+    $.get(
+        api_url + 'prov'
+    ).done(function(data) {
+        for (const prov of data.provincias) {
+            $("#provincia").append(
+                new Option(
+                    prov.cod_provincia + ' ' + prov.nombre, prov.cod_provincia,
+                )
+            );
+        }
+    });
+}
 
-    var cod_provincia = selectObject.value;
+function mostrarSelectMunicipios(selectObject) {
+    let cod_provincia = selectObject.value;
+    $("#municipio").empty();
     if (cod_provincia == "") {
-        $("#selector-municipio").addClass("hidden");
+        $("#municipio").parent().addClass("hidden");
         $("#bloques").addClass("hidden");
         return;
     }
-    fetch(api_url + 'prov/' + cod_provincia)
-      .then(response => response.json())
-      .then(data => {
+    $.get(
+        api_url + 'prov/' + cod_provincia
+    ).done(function(data) {
         for (const municipio of data.municipios) {
-        
-            var option = document.createElement("option");
-            option.text = municipio.nombre;
-            option.value = municipio.cod_municipio;
-            var select = document.getElementById("municipio");
-            select.appendChild(option);
+            $("#municipio").append(
+                new Option(
+                    municipio.cod_municipio + ' ' + municipio.nombre,
+                    municipio.cod_municipio,
+                )
+            );
         }
-    })
-      .catch(console.error);
-    $("#selector-municipio").removeClass("hidden");
+    });
+    $("#municipio").parent().removeClass("hidden");
 }
 
 function mostrarBloques() {
@@ -125,7 +129,6 @@ function actualizarBloques(estado) {
     // REVIEW      false         false        true
     // FIXME       true          false        true
     // ERROR       false         true         true
-    console.log(estado);
     if (estado == "AVAILABLE" || estado == "ERROR" || estado == "REVIEW") {
         $("#blq-procesar").removeClass("disabled");
     } else {
@@ -140,9 +143,7 @@ function actualizarBloques(estado) {
 }
 
 function descargar() {
-    const select = document.getElementById('municipio');
-    var cod_municipio = select.value;
-    document.location.href='results/'+cod_municipio;
+    document.location.href = 'results/' + $('#municipio').val();
 }
 
 async function subirDirecciones() {
@@ -163,7 +164,6 @@ class Registro {
         this.linea = 0;
         this.log = $('#registro');
         this.log.removeClass("hidden");
-        this.log.find('.terminal').html("");
         this.loading = $("#loading");
         this.loading.removeClass("hidden");
         this.bloque = $("#blq-procesar");
@@ -258,20 +258,6 @@ if (params.has('oauth_token') && params.has('oauth_verifier')) {
     });
 }
 
-fetch(api_url+'prov')
-  .then(response => response.json())
-  .then(data => {
-    for (const provincia of data.provincias) {
-    
-        var option = document.createElement("option");
-        option.text = provincia.nombre;
-        option.value = provincia.cod_provincia;
-        var select = document.getElementById("provincia");
-        select.appendChild(option);
-
-    }
-  })
-  .catch(console.error);
 
 $(document).ready(function() {
     let token = localStorage.getItem('token');
@@ -283,6 +269,7 @@ $(document).ready(function() {
         $('#username').html(username + ': ');
         $('.login-required').toggleClass('hidden');
     }
+    mostrarSelectProvincia();
     $('.selector').select2();
     $('#plantilla_tbl').DataTable({
         "paging": false,
