@@ -269,3 +269,13 @@ button[disabled], .disabled {
 .warning div {
     padding: 1em;
 }
+
+.blink {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

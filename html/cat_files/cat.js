@@ -64,18 +64,19 @@ function mostrarSelectDivision(cod_municipio) {
         $("#division").parent().addClass("hidden");
         return;
     }
-    console.log(cod_municipio);
+    $("#division").parent().addClass("blink");
+    $("#division").parent().removeClass("hidden");
     $("#division").attr("disabled", true);
     $.get(
         api_url + 'mun/' + cod_municipio
     ).done(function(data) {
-        console.log(data);
         $("#division").attr("disabled", false);
         $("#division").empty();
         if (data.divisiones.length == 0) {
             $("#division").parent().addClass("hidden");
             return;
         }
+        $("#division").parent().removeClass("blink");
         $("#division").append(new Option("Selecciona la división...", ""));
         for (const division of data.divisiones) {
             $("#division").append(
@@ -86,7 +87,6 @@ function mostrarSelectDivision(cod_municipio) {
             );
         }
     });
-    $("#division").parent().removeClass("hidden");
 }
 
 function mostrarBloques() {
