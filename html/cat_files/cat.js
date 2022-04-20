@@ -35,6 +35,11 @@ function mostrarSelectProvincia() {
 
 function mostrarSelectMunicipios(selectObject) {
     let cod_provincia = selectObject.value;
+    if (['03', '07', '08', '12', '17', '25', '43', '46'].includes(cod_provincia)) {
+        $("#idioma").val("ca_ES");
+    } else if (['15', '27', '32', '36'].includes(cod_provincia)) {
+        $("#idioma").val("gl_ES");
+    }
     $("#municipio").empty();
     $("#municipio").append(new Option("Selecciona el municipio...", ""));
     if (cod_provincia == "") {
@@ -249,10 +254,12 @@ function procesar() {
     const token = localStorage.getItem('token');
     let cod_municipio = $('#municipio').val();
     let split = $('#division').val() || '';
-    let edificios =  $('#edificios').prop('checked');
-    let direcciones = $('#direcciones').prop('checked');
     let post_job_url = `${api_url}job/${cod_municipio}/${split}`;
-    let data = {building: edificios, address: direcciones};
+    let data = {
+        building: $('#edificios').prop('checked'),
+        address: $('#direcciones').prop('checked'),
+        idioma: $('#idioma').val(),
+    };
 
     console.log(post_job_url, data);
     $.post({
