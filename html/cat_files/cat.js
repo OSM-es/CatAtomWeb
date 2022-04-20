@@ -14,7 +14,7 @@ function logout() {
 
 function updateLinks() {
     let cod_municipio = $("#municipio").val();
-    $("#lnk-descarga").html(base_url + "results/" + cod_municipio + "/");
+    $("#lnk-descarga").text(base_url + "results/" + cod_municipio + "/");
     $("#lnk-descarga").attr("href", base_url + "results/" + cod_municipio + "/");
     $("#lnk-revisar").attr("href", `results/${cod_municipio}/highway_names.csv`);
 }
@@ -103,7 +103,7 @@ function mostrarBloques() {
         `${api_url}job/${cod_municipio}`,
     ).done(function(data) {
         $("#registro").addClass("hidden");
-        $("#registro .terminal").html("");
+        $("#registro .terminal").text("");
         if (data.estado != "AVAILABLE") {
             new Registro(cod_municipio);
         }
@@ -111,14 +111,24 @@ function mostrarBloques() {
     });
 }
 
+function mostrarDivision() {
+    let cod_municipio = $('#municipio').val();
+    let split = $('#division').val();
+    $.get(
+        `${api_url}job/${cod_municipio}/${split}`,
+    ).done(function(data) {
+        actualizarProceso(data);
+    });
+}
+
 function actualizarProceso(data) {
     let cod_municipio = $('#municipio').val();
-    $("#mensaje").html(data.mensaje);
+    $("#mensaje").text(data.mensaje);
     $("#info-revisar").toggleClass("hidden", data.estado != "REVIEW");
     $("#info-fixme").toggleClass("hidden", data.estado != "FIXME");
     $("#opciones :checkbox").attr("disabled", data.estado == "REVIEW");
     $("#revisar").toggleClass("hidden", data.revisar.length == 0);
-    $("#revisar .terminal").html("");
+    $("#revisar .terminal").text("");
     data.revisar.forEach(function(row) {
         let url = `${base_url}results/${cod_municipio}/tasks/${row}`;
         let url_josm = `http://localhost:8111/import?new_layer=true&url=${url}`;
@@ -126,7 +136,7 @@ function actualizarProceso(data) {
         $("#revisar .terminal").append(elem);
     });
     $("#informe").toggleClass("hidden", data.informe.length == 0);
-    $("#informe .terminal").html("");
+    $("#informe .terminal").text("");
     data.informe.forEach(function(row) {
         $("#informe .terminal").append(`<pre>${row || ' '}</pre>`);
     });
@@ -139,19 +149,19 @@ function actualizarPlantilla(data) {
     let nom_municipio = $("#municipio :selected").text();
     let edificios = "building_date" in data.report;
     let direcciones = "address_date" in data.report;
-    $(".cod-municipio").html(cod_municipio);
-    $(".nom-municipio").html(nom_municipio);
+    $(".cod-municipio").text(cod_municipio);
+    $(".nom-municipio").text(nom_municipio);
     if (edificios && !direcciones) {
-        $(".tipo-import").html("edificios");
-        $(".tipo-import-en").html("buildings");
+        $(".tipo-import").text("edificios");
+        $(".tipo-import-en").text("buildings");
     } else if (!edificios && direcciones) {
-        $(".tipo-import").html("direcciones");
-        $(".tipo-import-en").html("addresses");
+        $(".tipo-import").text("direcciones");
+        $(".tipo-import-en").text("addresses");
     } else {
-        $(".tipo-import").html("edificios y direcciones");
-        $(".tipo-import-en").html("buildings and addresses");
+        $(".tipo-import").text("edificios y direcciones");
+        $(".tipo-import-en").text("buildings and addresses");
     }
-    $(".base-url").html(base_url);
+    $(".base-url").text(base_url);
     $("#plantilla").toggleClass("hidden", data.estado != "DONE");
 }
 
@@ -215,7 +225,7 @@ class Registro {
             data: {"linea": self.linea},
         }).done(function(data) {
             if (data.linea > self.linea) {
-                self.mensaje.html(data.mensaje);
+                self.mensaje.text(data.mensaje);
                 data.log.forEach(function(row) {
                     console.log(row);
                     self.log.find('.terminal').prepend(`<pre>${row}</pre>`);
@@ -236,49 +246,33 @@ class Registro {
 }
 
 function procesar() {
-    const select = document.getElementById('municipio');
-    var cod_municipio = select.value;
-    var edificiosCheck =  document.getElementById('edificios');
-    var direccionesCheck = document.getElementById('direcciones');
-    if (edificiosCheck.checked) {
-        var edificios = true;
-    } else {
-        var edificios = false;
-    }
-    if (direccionesCheck.checked) {
-        var direcciones = true;
-    } else {
-        var direcciones = false;
-    }
+    const token = localStorage.getItem('token');
+    let cod_municipio = $('#municipio').val();
+    let split = $('#division').val() || '';
+    let edificios =  $('#edificios').prop('checked');
+    let direcciones = $('#direcciones').prop('checked');
+    let post_job_url = `${api_url}job/${cod_municipio}/${split}`;
+    let data = {building: edificios, address: direcciones};
 
-    async function postData(url = '', data = {}) {
-        // Default options are marked with *
-        const token = localStorage.getItem('token');
-        const response = await fetch(url, {
-            method: 'POST', // *GET, POST, PUT, DELETE, etc.
-            mode: 'cors', // no-cors, *cors, same-origin
-            credentials: 'same-origin', // include, *same-origin, omit
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Token ${token}`,
-            },
-            redirect: 'follow', // manual, *follow, error
-            referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-            body: JSON.stringify(data) // body data type must match "Content-Type" header
-        });
-        return response.json(); // parses JSON response into native JavaScript objects
-    }
-
-    var post_job_url = api_url+'job/'+cod_municipio
-
-    console.log(post_job_url, 'building='+edificios+'&direcciones='+direcciones);
-
-    postData(
-        post_job_url, {building: edificios, address: direcciones}
-    ).then(data => {
-        console.log(data); // JSON data parsed by `data.json()` call
-        document.getElementById("mensaje").innerHTML = data.mensaje;
-        var registro = new Registro(cod_municipio);
+    console.log(post_job_url, data);
+    $.post({
+        url: post_job_url,
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader('Authorization', `Token ${token}`);
+        },
+    }).done(function(data) {
+        console.log(data);
+        $("#mensaje").text(data.mensaje);
+        new Registro(cod_municipio);
+    }).fail(function(resp) {
+        console.log(resp);
+        if (resp.hasOwnProperty('responseJSON')) {
+            $("#mensaje").text(resp.responseJSON.message);
+        } else {
+            $("#mensaje").text(resp.responseText);
+        }
     });
 }
 
@@ -301,7 +295,7 @@ $(document).ready(function() {
         $('#login').attr('href', login_url);
     } else {  // registrado
         let username = localStorage.getItem('username');
-        $('#username').html(username + ': ');
+        $('#username').text(username + ': ');
         $('.login-required').toggleClass('hidden');
     }
     mostrarSelectProvincia();
