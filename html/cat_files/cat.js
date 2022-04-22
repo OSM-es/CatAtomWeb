@@ -8,6 +8,7 @@ var api_url = base_url + "api/";
 
 function logout() {
     localStorage.removeItem('token');
+    localStorage.removeItem('osm_id');
     localStorage.removeItem('username');
     window.location.href = window.location.href.split('?')[0];
 }
@@ -35,10 +36,14 @@ function mostrarSelectProvincia() {
 
 function mostrarSelectMunicipios(selectObject) {
     let cod_provincia = selectObject.value;
+    $("#bloques").addClass("hidden");
+    $("#division").parent().addClass("hidden");
     if (['03', '07', '08', '12', '17', '25', '43', '46'].includes(cod_provincia)) {
         $("#idioma").val("ca_ES");
     } else if (['15', '27', '32', '36'].includes(cod_provincia)) {
         $("#idioma").val("gl_ES");
+    } else {
+        $("#idioma").val("es_ES");
     }
     $("#municipio").empty();
     $("#municipio").append(new Option("Selecciona el municipio...", ""));
@@ -62,12 +67,29 @@ function mostrarSelectMunicipios(selectObject) {
     $("#municipio").parent().removeClass("hidden");
 }
 
-function mostrarSelectDivision(cod_municipio) {
+function get_split(data) {
+    if (
+        data.hasOwnProperty('report') && data.report.hasOwnProperty('split_id')
+        && data.report != 'AVAILABLE' && data.report != 'DONE'
+    ) {
+        return data.report.split_id
+    }
+    return null
+}
+
+function mostrarSelectDivision(data) {
+    let cod_municipio = data.cod_municipio;
+    let split = get_split(data);
     $("#division").empty();
-    $("#division").append(new Option("Actualizando divisiones...", ""));
     if (cod_municipio == "") {
         $("#division").parent().addClass("hidden");
         return;
+    }
+    if (split != null) {
+        $("#division").append(new Option(data.report.split_name, split));
+        $("#division").val(split);
+    } else {
+        $("#division").append(new Option("Actualizando divisiones...", ""));
     }
     $("#division").parent().addClass("blink");
     $("#division").parent().removeClass("hidden");
@@ -91,12 +113,20 @@ function mostrarSelectDivision(cod_municipio) {
                 )
             );
         }
+        if (split != null) {
+            $("#division").attr("disabled", true);
+            $("#division").val(split);
+        }
+    }).fail(function(resp) {
+        console.log(resp);
+        $("#division").parent().removeClass("blink");
+        $("#division").empty();
+        $("#division").append(new Option("Error", ""));
     });
 }
 
 function mostrarBloques() {
     let cod_municipio = $('#municipio').val();
-    mostrarSelectDivision(cod_municipio);
     if (cod_municipio == "") {
         $("#bloques").addClass("hidden");
         return;
@@ -105,30 +135,40 @@ function mostrarBloques() {
     $('#cod_mun').val(cod_municipio);
     updateLinks();
     $.get(
-        `${api_url}job/${cod_municipio}`,
+        job_url(),
     ).done(function(data) {
+        mostrarSelectDivision(data);
         $("#registro").addClass("hidden");
         $("#registro .terminal").text("");
         if (data.estado != "AVAILABLE") {
-            new Registro(cod_municipio);
+            new Registro(data.cod_municipio);
         }
         actualizarProceso(data);
     });
 }
 
 function mostrarDivision() {
-    let cod_municipio = $('#municipio').val();
-    let split = $('#division').val();
     $.get(
-        `${api_url}job/${cod_municipio}/${split}`,
+        job_url(),
     ).done(function(data) {
         actualizarProceso(data);
     });
 }
 
+function es_propietario(data) {
+    if (data.hasOwnProperty('propietario')) {
+        if (data.propietario != null && data.propietario.hasOwnProperty('osm_id')) {
+            return localStorage.getItem('osm_id') == data.propietario.osm_id
+        }
+    }
+    return false
+}
+
 function actualizarProceso(data) {
     let cod_municipio = $('#municipio').val();
+    console.log(data.estado);
     $("#mensaje").text(data.mensaje);
+    $(".superuser").toggleClass("hidden", !es_propietario(data) || data.estado == 'AVAILABLE' || data.estado == 'RUNNING');
     $("#info-revisar").toggleClass("hidden", data.estado != "REVIEW");
     $("#info-fixme").toggleClass("hidden", data.estado != "FIXME");
     $("#opciones :checkbox").attr("disabled", data.estado == "REVIEW");
@@ -146,7 +186,7 @@ function actualizarProceso(data) {
         $("#informe .terminal").append(`<pre>${row || ' '}</pre>`);
     });
     actualizarPlantilla(data);
-    actualizarBloques(data.estado);
+    actualizarBloques(data);
 }
 
 function actualizarPlantilla(data) {
@@ -170,16 +210,17 @@ function actualizarPlantilla(data) {
     $("#plantilla").toggleClass("hidden", data.estado != "DONE");
 }
 
-function actualizarBloques(estado) {
+function actualizarBloques(data) {
     // Estado / disabled:
     //           blq-procesar  blq-revisar  blq-descargar
     // AVAILABLE   false         true         true
     // RUNNING     true          true         true
-    // DONE        true          true         false
-    // REVIEW      false         false        true
+    // DONE        true          true         !es_propietario
+    // REVIEW      !es_propietario         false        true
     // FIXME       true          false        true
     // ERROR       false         true         true
-    if (estado == "AVAILABLE" || estado == "ERROR" || estado == "REVIEW") {
+    let estado = data.estado;
+    if (estado == "AVAILABLE" || estado == "ERROR" || estado == "REVIEW" && es_propietario(data)) {
         $("#blq-procesar").removeClass("disabled");
     } else {
         $("#blq-procesar").addClass("disabled");
@@ -189,7 +230,7 @@ function actualizarBloques(estado) {
     } else {
         $("#blq-revisar").addClass("disabled");
     }
-    $("#blq-descargar").toggleClass("disabled", estado != "DONE");
+    $("#blq-descargar").toggleClass("disabled", estado != "DONE" || !es_propietario(data));
 }
 
 function descargar() {
@@ -225,10 +266,10 @@ class Registro {
     #actualizar() {
         console.log("log", this.cod_municipio);
         let self = this
-        $.ajax({
-            url: `${api_url}job/${this.cod_municipio}`,
-            data: {"linea": self.linea},
-        }).done(function(data) {
+        $.get(
+            job_url(),
+            {"linea": self.linea},
+        ).done(function(data) {
             if (data.linea > self.linea) {
                 self.mensaje.text(data.mensaje);
                 data.log.forEach(function(row) {
@@ -250,37 +291,63 @@ class Registro {
     }
 }
 
-function procesar() {
+function auth_ajax(method, url, data=null) {
     const token = localStorage.getItem('token');
+
+    console.log(method, url);
+    let req = {
+        url: url,
+        method: method,
+        contentType: 'application/json',
+        beforeSend: function(xhr) {
+            xhr.setRequestHeader('Authorization', `Token ${token}`);
+        },
+    }
+    if (data != null) {
+        req['data'] = JSON.stringify(data);
+    }
+    return $.ajax(req);
+}
+
+function job_fail(resp) {
+    console.log(resp);
+    if (resp.hasOwnProperty('responseJSON')) {
+        $("#mensaje").text(resp.responseJSON.message);
+    } else {
+        $("#mensaje").text(resp.responseText);
+    }
+}
+
+function job_url() {
     let cod_municipio = $('#municipio').val();
     let split = $('#division').val() || '';
-    let post_job_url = `${api_url}job/${cod_municipio}/${split}`;
+    return `${api_url}job/${cod_municipio}/${split}`
+}
+
+function procesar() {
     let data = {
         building: $('#edificios').prop('checked'),
         address: $('#direcciones').prop('checked'),
         idioma: $('#idioma').val(),
     };
 
-    console.log(post_job_url, data);
-    $.post({
-        url: post_job_url,
-        data: JSON.stringify(data),
-        contentType: 'application/json',
-        beforeSend: function(xhr) {
-            xhr.setRequestHeader('Authorization', `Token ${token}`);
-        },
-    }).done(function(data) {
-        console.log(data);
+    auth_ajax(
+        'POST', job_url(), data
+    ).done(function(data) {
         $("#mensaje").text(data.mensaje);
-        new Registro(cod_municipio);
-    }).fail(function(resp) {
-        console.log(resp);
-        if (resp.hasOwnProperty('responseJSON')) {
-            $("#mensaje").text(resp.responseJSON.message);
-        } else {
-            $("#mensaje").text(resp.responseText);
-        }
-    });
+        new Registro(data.cod_municipio);
+    }).fail(job_fail);
+}
+
+function eliminar() {
+    auth_ajax(
+        'DELETE', job_url()
+    ).done(function(data) {
+        console.log(data);
+        $("#registro").addClass("hidden");
+        $("#registro .terminal").text("");
+        actualizarProceso(data);
+    }).fail(job_fail);
 }
 
 
@@ -289,6 +356,7 @@ const params = new URLSearchParams(window.location.search);
 if (params.has('oauth_token') && params.has('oauth_verifier')) {
     $.get(`${api_url}authorize`, params.toString()).done(function(data) {
         localStorage.setItem('token', data.session_token);
+        localStorage.setItem('osm_id', data.osm_id);
         localStorage.setItem('username', data.username);
         window.location.href = window.location.href.split('?')[0];
     });
@@ -301,9 +369,13 @@ $(document).ready(function() {
         let login_url = `${api_url}login?callback=${base_url}index.html`;
         $('#login').attr('href', login_url);
     } else {  // registrado
-        let username = localStorage.getItem('username');
-        $('#username').text(username + ': ');
-        $('.login-required').toggleClass('hidden');
+        auth_ajax(  // comprueba si ha expirado
+            'PUT', `${api_url}login`
+        ).done(function() {
+            let username = localStorage.getItem('username');
+            $('#username').text(username + ': ');
+            $('.login-required').toggleClass('hidden');
+        }).fail(logout);
     }
     mostrarSelectProvincia();
     $('.selector').select2();
