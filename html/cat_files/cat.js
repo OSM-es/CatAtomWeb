@@ -335,6 +335,8 @@ function procesar() {
         'POST', job_url(), data
     ).done(function(data) {
         $("#mensaje").text(data.mensaje);
+        $("#informe").addClass("hidden");
+        $(".superuser").addClass("hidden");
         new Registro(data.cod_municipio);
     }).fail(job_fail);
 }
