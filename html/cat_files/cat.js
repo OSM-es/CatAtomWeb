@@ -137,6 +137,7 @@ function mostrarBloques() {
     $.get(
         job_url(),
     ).done(function(data) {
+        $("#msgestado").addClass("hidden");
         mostrarSelectDivision(data);
         $("#registro").addClass("hidden");
         $("#registro .terminal").text("");
