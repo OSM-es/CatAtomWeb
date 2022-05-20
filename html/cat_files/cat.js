@@ -177,7 +177,7 @@ function actualizarProceso(data) {
     data.revisar.forEach(function(row) {
         let url = `${base_url}results/${cod_municipio}/tasks/${row}`;
         let url_josm = `http://localhost:8111/import?new_layer=true&url=${url}`;
-        let elem = `<li><a href='${url}'>${row}</a> (<a href="url_josm">abrir en JOSM</a>)</li>`;
+        let elem = `<li><a href='${url}'>${row}</a> (<a href="${url_josm}">abrir en JOSM</a>)</li>`;
         $("#revisar .terminal").append(elem);
     });
     $("#informe").toggleClass("hidden", data.informe.length == 0);
