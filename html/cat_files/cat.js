@@ -164,6 +164,14 @@ function es_propietario(data) {
     return false
 }
 
+function abreJosm(url) {
+    $.get(
+        url
+    ).fail(function() {
+        alert("Debe abrir la aplicación JOSM con el complemento Control Remoto activo");
+    });
+}
+
 function actualizarProceso(data) {
     let cod_municipio = $('#municipio').val();
     console.log(data.estado);
@@ -177,7 +185,7 @@ function actualizarProceso(data) {
     data.revisar.forEach(function(row) {
         let url = `${base_url}results/${cod_municipio}/tasks/${row}`;
         let url_josm = `http://localhost:8111/import?new_layer=true&url=${url}`;
-        let elem = `<li><a href='${url}'>${row}</a> (<a href="${url_josm}">abrir en JOSM</a>)</li>`;
+        let elem = `<li><a href='${url}'>${row}</a> (<a href="javascript:abreJosm('${url_josm}');">abrir en JOSM</a>)</li>`;
         $("#revisar .terminal").append(elem);
     });
     $("#informe").toggleClass("hidden", data.informe.length == 0);
