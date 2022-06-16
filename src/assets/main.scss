@@ -1,0 +1,19 @@
+@import '~bulma';
+@import 'vue-collapsible-panel.scss';
+@import 'smarttable.sass';
+@import 'vue-select/dist/vue-select.css';
+
+.is-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.vs__dropdown-toggle {
+    height: 2.5em;
+}
+
+ul.vs__dropdown-menu {
+    list-style: none !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+}

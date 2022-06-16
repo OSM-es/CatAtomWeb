@@ -1,0 +1,99 @@
+.vt-pagination
+  @extend %block
+  font-size: $size-normal
+  margin: $pagination-margin
+  // Sizes
+  &.is-small
+      font-size: $size-small
+  &.is-medium
+      font-size: $size-medium
+  &.is-large
+      font-size: $size-large
+  &.is-rounded
+  .pagination-previous,
+  .pagination-next
+    padding-left: 1em
+    padding-right: 1em
+    border-radius: $radius-rounded
+  .pagination-link
+    border-radius: $radius-rounded
+
+.vt-pagination li,
+.vt-pagination li + li
+  margin-top: 0.1em
+  margin-bottom: 0.1em
+
+.vt-pagination,
+.vt-pagination .pagination
+  align-items: center
+  display: flex
+  justify-content: center
+  text-align: center
+
+.page-link
+  @extend %control
+  @extend %unselectable
+  font-size: $pagination-item-font-size
+  justify-content: center
+  margin: $pagination-item-margin
+  padding-left: $pagination-item-padding-left
+  padding-right: $pagination-item-padding-right
+  text-align: center
+
+.page-link
+  border-color: $pagination-border-color
+  color: $pagination-color
+  min-width: $pagination-min-width
+  &:hover
+    border-color: $pagination-hover-border-color
+    color: $pagination-hover-color
+  &:focus
+    border-color: $pagination-focus-border-color
+  &:active
+    box-shadow: $pagination-shadow-inset
+.disabled .page-link
+    background-color: $pagination-disabled-background-color
+    border-color: $pagination-disabled-border-color
+    box-shadow: none
+    color: $pagination-disabled-color
+    opacity: 0.5
+
+.active .page-link
+  background-color: $pagination-current-background-color
+  border-color: $pagination-current-border-color
+  color: $pagination-current-color
+
+.vt-pagination .pagination
+  flex-wrap: wrap
+  li
+    list-style: none
+
++mobile
+  .vt-pagination
+    flex-wrap: wrap
+  .vt-pagination .pagination
+    li
+      flex-grow: 1
+      flex-shrink: 1
+
++tablet
+  .vt-pagination .pagination
+    flex-grow: 1
+    flex-shrink: 1
+    justify-content: flex-start
+    order: 1
+  .page-link
+    margin-bottom: 0
+    margin-top: 0
+  .vt-pagination .pagination
+    justify-content: space-between
+    margin-bottom: 0
+    margin-top: 0
+    &.is-centered
+      .vt-pagination .pagination
+        justify-content: center
+        order: 2
+    &.is-right
+      .vt-pagination .pagination
+        justify-content: flex-end
+        order: 3

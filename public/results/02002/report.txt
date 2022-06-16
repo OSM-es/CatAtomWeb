@@ -1,0 +1,87 @@
+Municipio: Alatoz
+Nombre en Catastro: ALATOZ
+Código: 02002
+Fecha: 22/04/22
+Opciones: 02002
+
+=Información del sistema=
+Versión de la aplicación: CatAtom2Osm 2.9.6
+Plataforma: Linux 5.13.0-40-generic #45~20.04.1-Ubuntu SMP Mon Apr 4 09:38:31 UTC 2022 x86_64 x86_64
+Idioma: es_ES
+Versión de QGIS: 3.10.4-A Coruña
+Versión de GDAL: 3.0.4
+Número de CPUs: 6
+Frecuencia de CPU: 4000.0 Mhz
+Tiempo de ejecución: 3.5 segundos
+Memoria total: 31986.80 MB
+Memoria física usada: 123.32 MB
+Memoria virtual usada: 657.23 MB
+
+=Direcciones=
+
+==Datos de entrada==
+Fecha de origen: 2022-03-11
+Número de características: 852
+  Tipo entrada: 748
+  Tipo parcela: 104
+Códigos postales: 2
+Nombres de viales: 35
+
+==Procesado==
+Direcciones sin edificio asociado excluidas: 108
+Direcciones sin número de portal eliminadas: 7
+Direcciones correspondientes a edificios múltiples eliminadas: 53
+Direcciones tipo parcela no únicas para su edificio eliminadas: 4
+
+==Combinación==
+Direcciones OSM: 4
+Direcciones rechazadas por existir en OSM: 2
+
+==Datos de salida==
+Direcciones: 678
+  En nodos de entrada: 516
+  En parcelas: 162
+  Tipo addr:street: 678
+
+=Edificios=
+
+==Datos de entrada==
+Fecha de origen: 2022-03-11
+Número de características: 2658
+  Edificios: 807
+  Partes de edificios: 1831
+  Piscinas: 20
+
+==Procesado==
+Partes fuera de contorno eliminadas: 7
+Partes bajo rasante eliminadas: 8
+Edificios con geometrías multiparte: 158
+Edificios resultantes de dividir multipartes: 345
+Partes fusionadas al contorno: 783
+Partes adyacentes fusionadas: 225
+Vértices próximos fusionados: 2038
+Puntos topológicos creados: 115
+Vértices simplificados: 1631
+
+==Datos de salida==
+Nodos: 15764
+Vías: 1833
+Relaciones: 11
+Número de características: 1822
+  Edificios: 994
+  Partes de edificios: 808
+  Piscinas: 20
+Recuento de tipos de edificios: yes: 97, residential: 617, barn: 125, public: 13, industrial: 131, ruins: 7, retail: 3, office: 1
+Plantas sobre rasante (nivel: nº de edificios): 1: 302, 2: 451, 3: 53
+Plantas bajo rasante (nivel: nº de edificios): 1: 16
+
+=Proyecto=
+Archivos de tareas: 114
+  Rústica: 32
+  Urbana: 82
+
+=Problemas=
+Correcciones (fixmes): 4
+  Las partes de edificio no cubren todo el contorno: 4
+
+https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Generar_y_corregir_los_archivos_a_importar

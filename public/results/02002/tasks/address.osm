@@ -1,0 +1,4315 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm upload='never' version='0.6' generator='CatAtom2Osm 2.9.6'>
+<changeset>
+  <tag k="comment" v="#Spanish_Cadastre_Buildings_Import"/>
+  <tag k="source" v="Direcci&#243;n General del Catastro"/>
+  <tag k="type" v="import"/>
+  <tag k="url" v="https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_Import"/>
+  <tag k="generator" v="CatAtom2Osm 2.9.6"/>
+  <tag k="source:date" v="2022-03-11"/>
+</changeset>
+<node id="-65" action="modify" visible="true" lon="-1.3557305413215488" lat="39.094056666714884">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="69"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-149" action="modify" visible="true" lon="-1.3623647076101595" lat="39.096374378833104">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-233" action="modify" visible="true" lon="-1.3594129956380638" lat="39.09501942387358">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-317" action="modify" visible="true" lon="-1.3602574468142943" lat="39.095256112189716">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-401" action="modify" visible="true" lon="-1.360775674519845" lat="39.09608326608255">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-485" action="modify" visible="true" lon="-1.3585132111244749" lat="39.096126903219705">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-569" action="modify" visible="true" lon="-1.3629664910331614" lat="39.09537817602409">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-653" action="modify" visible="true" lon="-1.3575993743198715" lat="39.094375739484896">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-738" action="modify" visible="true" lon="-1.3602533821472766" lat="39.09659176789653">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-23" action="modify" visible="true" lon="-1.3580282037688896" lat="39.0942648487613">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-107" action="modify" visible="true" lon="-1.3579215783543541" lat="39.09734074645459">
+  <tag k="addr:street" v="CR AYORA"/>
+  <tag k="addr:housenumber" v="169"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-191" action="modify" visible="true" lon="-1.3667061504242826" lat="39.099245736732506">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="129W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-275" action="modify" visible="true" lon="-1.361603638132255" lat="39.09724499997557">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-359" action="modify" visible="true" lon="-1.3617709352572396" lat="39.095602679209705">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-443" action="modify" visible="true" lon="-1.3603179517916595" lat="39.09620540730653">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="51"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-527" action="modify" visible="true" lon="-1.358298439940594" lat="39.096362853501134">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="6D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-611" action="modify" visible="true" lon="-1.362738581867188" lat="39.09533578408707">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-66" action="modify" visible="true" lon="-1.3579127743841255" lat="39.094166810962015">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-150" action="modify" visible="true" lon="-1.3622325380004232" lat="39.09610464129042">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-234" action="modify" visible="true" lon="-1.3593944029945058" lat="39.09523540837452">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-318" action="modify" visible="true" lon="-1.36029063865391" lat="39.0954280523963">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-402" action="modify" visible="true" lon="-1.3615301570529295" lat="39.09605377739354">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-486" action="modify" visible="true" lon="-1.3593884094166242" lat="39.096055154643885">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-570" action="modify" visible="true" lon="-1.3632354037495114" lat="39.09425268622696">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-654" action="modify" visible="true" lon="-1.3578593030654706" lat="39.09444463631877">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-737" action="modify" visible="true" lon="-1.3602506023404384" lat="39.096649116310125">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="51"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-24" action="modify" visible="true" lon="-1.3570428472636313" lat="39.09400488929008">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-108" action="modify" visible="true" lon="-1.3576235899396878" lat="39.09761069529917">
+  <tag k="addr:street" v="CR AYORA"/>
+  <tag k="addr:housenumber" v="169A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-192" action="modify" visible="true" lon="-1.3519480679993565" lat="39.08737907696625">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="130W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-276" action="modify" visible="true" lon="-1.3632997845485046" lat="39.09639346818591">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-360" action="modify" visible="true" lon="-1.361902695986963" lat="39.09558020273856">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-444" action="modify" visible="true" lon="-1.3589077504388003" lat="39.0965297713887">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-528" action="modify" visible="true" lon="-1.3584051483352544" lat="39.096428510709565">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-612" action="modify" visible="true" lon="-1.3636667649601606" lat="39.09427451073444">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="70"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-67" action="modify" visible="true" lon="-1.3556653214574363" lat="39.09403700498044">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="71"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-151" action="modify" visible="true" lon="-1.3623505827372533" lat="39.09627019983501">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-235" action="modify" visible="true" lon="-1.359140683035914" lat="39.09498588164461">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-319" action="modify" visible="true" lon="-1.3603460123263782" lat="39.0955334426022">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-403" action="modify" visible="true" lon="-1.3605258550265398" lat="39.09613800334486">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-487" action="modify" visible="true" lon="-1.3594789677828836" lat="39.095944373516254">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="1F"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-571" action="modify" visible="true" lon="-1.3630792524327382" lat="39.0953947214469">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-655" action="modify" visible="true" lon="-1.35776007816573" lat="39.09444531081807">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-736" action="modify" visible="true" lon="-1.3618931394508118" lat="39.09601311051133">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-25" action="modify" visible="true" lon="-1.3569504357818645" lat="39.09413024655578">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="31"/>
+</node>
+<node id="-109" action="modify" visible="true" lon="-1.3586455203957963" lat="39.0969010442115">
+  <tag k="addr:street" v="CR AYORA"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-193" action="modify" visible="true" lon="-1.363766872767877" lat="39.0927024613433">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="131W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-277" action="modify" visible="true" lon="-1.3612418571251959" lat="39.097580585608014">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-361" action="modify" visible="true" lon="-1.3652972672456773" lat="39.09738192201148">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="5D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-445" action="modify" visible="true" lon="-1.3601949440898975" lat="39.0962343124192">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-529" action="modify" visible="true" lon="-1.3584011335844748" lat="39.09649666321896">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-613" action="modify" visible="true" lon="-1.3637169573070096" lat="39.09425908661388">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="74"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-68" action="modify" visible="true" lon="-1.3580118168567157" lat="39.094218844865985">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-152" action="modify" visible="true" lon="-1.3622258885272058" lat="39.09598723635075">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-236" action="modify" visible="true" lon="-1.359368457577953" lat="39.09519990696619">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-320" action="modify" visible="true" lon="-1.3641659737033414" lat="39.09672152918327">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-404" action="modify" visible="true" lon="-1.360428903910026" lat="39.096130617998504">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="18D"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-488" action="modify" visible="true" lon="-1.3588246258075913" lat="39.09593381086978">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="1H"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-572" action="modify" visible="true" lon="-1.3628011832214755" lat="39.095308821084224">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="38D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-656" action="modify" visible="true" lon="-1.3579307971537367" lat="39.096205758897426">
+  <tag k="addr:street" v="CL CERRO DE LA CRUZ"/>
+  <tag k="addr:housenumber" v="2T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-735" action="modify" visible="true" lon="-1.3603725395055608" lat="39.0965843435294">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="47"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-278" action="modify" visible="true" lon="-1.363448693855563" lat="39.09638952197123">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-26" action="modify" visible="true" lon="-1.3570707058040379" lat="39.09419104127483">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="31A"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-110" action="modify" visible="true" lon="-1.3632597545275253" lat="39.09721218997639">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-194" action="modify" visible="true" lon="-1.3403549217707338" lat="39.084927658502146">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="132W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-362" action="modify" visible="true" lon="-1.3588994457900678" lat="39.09496875992123">
+  <tag k="addr:street" v="CL RAMON Y CAJAL"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-446" action="modify" visible="true" lon="-1.3587798880380222" lat="39.09643971655674">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="54"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-530" action="modify" visible="true" lon="-1.358485653761753" lat="39.09652686714151">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-614" action="modify" visible="true" lon="-1.3637920521541524" lat="39.094237073979926">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="74D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-69" action="modify" visible="true" lon="-1.3578218828350952" lat="39.09412608367991">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-153" action="modify" visible="true" lon="-1.3623362372852672" lat="39.09615556561657">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-237" action="modify" visible="true" lon="-1.3605297140821966" lat="39.095040726785136">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-321" action="modify" visible="true" lon="-1.364230010649621" lat="39.09658745134637">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-405" action="modify" visible="true" lon="-1.361822152330364" lat="39.09578784286834">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="1D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-489" action="modify" visible="true" lon="-1.3585566434369776" lat="39.09622273179805">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="1I"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-573" action="modify" visible="true" lon="-1.3633167581809407" lat="39.094349519529565">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-657" action="modify" visible="true" lon="-1.367883441843843" lat="39.099193635369964">
+  <tag k="addr:street" v="CL LOS ALMENDROS"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-733" action="modify" visible="true" lon="-1.3605415626576587" lat="39.09657319628474">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="43A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-27" action="modify" visible="true" lon="-1.3569691468726075" lat="39.094001868179156">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-111" action="modify" visible="true" lon="-1.3637102008762003" lat="39.097227996743776">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-195" action="modify" visible="true" lon="-1.3585128119878855" lat="39.09753405475036">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="133W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-279" action="modify" visible="true" lon="-1.3610994363499342" lat="39.09755389459996">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-363" action="modify" visible="true" lon="-1.3587159748437916" lat="39.0949587160542">
+  <tag k="addr:street" v="CL RAMON Y CAJAL"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-447" action="modify" visible="true" lon="-1.3587482779604603" lat="39.09656536992416">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="54D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-531" action="modify" visible="true" lon="-1.3648368334198047" lat="39.09762387287732">
+  <tag k="addr:street" v="CL TRULLO"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-615" action="modify" visible="true" lon="-1.3638630767638389" lat="39.09421581510692">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="76"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-70" action="modify" visible="true" lon="-1.3616820005187102" lat="39.095396256872405">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-154" action="modify" visible="true" lon="-1.3622047239343793" lat="39.09589746523867">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-238" action="modify" visible="true" lon="-1.3591235249594213" lat="39.09474944930248">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-322" action="modify" visible="true" lon="-1.36410487512936" lat="39.095988036689626">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-406" action="modify" visible="true" lon="-1.3615103470844943" lat="39.09580562606271">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-490" action="modify" visible="true" lon="-1.3601742227919298" lat="39.09569903925775">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-574" action="modify" visible="true" lon="-1.3627940449742737" lat="39.09513752230337">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-658" action="modify" visible="true" lon="-1.361344149667543" lat="39.09507822362508">
+  <tag k="addr:street" v="CL CUESTA IGLESIA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-732" action="modify" visible="true" lon="-1.3604216967453489" lat="39.09657377193128">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-28" action="modify" visible="true" lon="-1.3569963661950535" lat="39.09404523346677">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-112" action="modify" visible="true" lon="-1.3640253336154242" lat="39.097683123537934">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-196" action="modify" visible="true" lon="-1.349171599178142" lat="39.081722642204355">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="134W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-280" action="modify" visible="true" lon="-1.3609892991110364" lat="39.09753126154709">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="18D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-364" action="modify" visible="true" lon="-1.3588493893318012" lat="39.09493152862661">
+  <tag k="addr:street" v="CL RAMON Y CAJAL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-448" action="modify" visible="true" lon="-1.3602270500486897" lat="39.0963435787129">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="55"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-532" action="modify" visible="true" lon="-1.3649260113482595" lat="39.097627826985814">
+  <tag k="addr:street" v="CL TRULLO"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-616" action="modify" visible="true" lon="-1.3639216373605392" lat="39.0941985260567">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="78"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-71" action="modify" visible="true" lon="-1.3616421073104876" lat="39.095079078053274">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-155" action="modify" visible="true" lon="-1.3619884187851277" lat="39.09706713534572">
+  <tag k="addr:street" v="CM CEMENTERIO"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-239" action="modify" visible="true" lon="-1.35934366450968" lat="39.09509224359882">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-323" action="modify" visible="true" lon="-1.3642146279943257" lat="39.09647253247349">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-407" action="modify" visible="true" lon="-1.3603248001625594" lat="39.096180321250465">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-491" action="modify" visible="true" lon="-1.359329568362316" lat="39.09606946399658">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-575" action="modify" visible="true" lon="-1.3633794346203059" lat="39.09433201372561">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-659" action="modify" visible="true" lon="-1.3612748410232571" lat="39.0950526642614">
+  <tag k="addr:street" v="CL CUESTA IGLESIA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-731" action="modify" visible="true" lon="-1.3606239000639901" lat="39.09657786840411">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-281" action="modify" visible="true" lon="-1.3635994609903954" lat="39.09638524122972">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-29" action="modify" visible="true" lon="-1.3569453617266927" lat="39.094045776001245">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="33D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-113" action="modify" visible="true" lon="-1.363673380888607" lat="39.09717008332015">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-197" action="modify" visible="true" lon="-1.3403564310466587" lat="39.0872460933456">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="135W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-365" action="modify" visible="true" lon="-1.3585937789672209" lat="39.094914435475275">
+  <tag k="addr:street" v="CL RAMON Y CAJAL"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-449" action="modify" visible="true" lon="-1.3601910919820719" lat="39.09644050730132">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="57"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-533" action="modify" visible="true" lon="-1.3652417498051086" lat="39.09763531912029">
+  <tag k="addr:street" v="CL TRULLO"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-617" action="modify" visible="true" lon="-1.363980189601919" lat="39.09418159727755">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="80"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-726" action="modify" visible="true" lon="-1.360449106744452" lat="39.09635141478428">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-72" action="modify" visible="true" lon="-1.3615003496476117" lat="39.09489292907804">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-156" action="modify" visible="true" lon="-1.3610930263785534" lat="39.09488142168517">
+  <tag k="addr:street" v="PZ VIRGEN DE LA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-240" action="modify" visible="true" lon="-1.3592377614059068" lat="39.095146527607454">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-324" action="modify" visible="true" lon="-1.3642038475209393" lat="39.09635110956515">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-408" action="modify" visible="true" lon="-1.3614256656252028" lat="39.09603959933349">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-492" action="modify" visible="true" lon="-1.3592409028299903" lat="39.096088399359175">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-576" action="modify" visible="true" lon="-1.3628645776111983" lat="39.09489262230627">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-660" action="modify" visible="true" lon="-1.3610681539625071" lat="39.09507485515677">
+  <tag k="addr:street" v="CL CUESTA IGLESIA"/>
+  <tag k="addr:housenumber" v="6D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-730" action="modify" visible="true" lon="-1.3618587792097208" lat="39.09600388749718">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-30" action="modify" visible="true" lon="-1.356842693312985" lat="39.09398008251007">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-114" action="modify" visible="true" lon="-1.3636276840236123" lat="39.09709600667174">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-198" action="modify" visible="true" lon="-1.3433471009008167" lat="39.08981924668707">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="137W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-282" action="modify" visible="true" lon="-1.3635540942300683" lat="39.09608185779116">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="19D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-366" action="modify" visible="true" lon="-1.3587480655183928" lat="39.0949097438091">
+  <tag k="addr:street" v="CL RAMON Y CAJAL"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-450" action="modify" visible="true" lon="-1.3613891493649237" lat="39.09587627175003">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-534" action="modify" visible="true" lon="-1.365426886814675" lat="39.09765698338341">
+  <tag k="addr:street" v="CL TRULLO"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-618" action="modify" visible="true" lon="-1.3640566760068789" lat="39.094159153479794">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="82"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-725" action="modify" visible="true" lon="-1.3608075937860222" lat="39.09659731032262">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-73" action="modify" visible="true" lon="-1.3616150537737988" lat="39.095028960131216">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-157" action="modify" visible="true" lon="-1.361015527639114" lat="39.09485762569299">
+  <tag k="addr:street" v="PZ VIRGEN DE LA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-241" action="modify" visible="true" lon="-1.3592160496231493" lat="39.095275071355026">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-325" action="modify" visible="true" lon="-1.36422489250038" lat="39.096221023712275">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-409" action="modify" visible="true" lon="-1.361478302803074" lat="39.09614366204508">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="21A"/>
+</node>
+<node id="-493" action="modify" visible="true" lon="-1.3591513459152913" lat="39.09610588043496">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-577" action="modify" visible="true" lon="-1.363451172625681" lat="39.09431716704703">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-661" action="modify" visible="true" lon="-1.3575948189773845" lat="39.095261938986205">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="S-N"/>
+</node>
+<node id="-729" action="modify" visible="true" lon="-1.360689879820726" lat="39.09657736368303">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-283" action="modify" visible="true" lon="-1.363604796169626" lat="39.09615022904253">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="19T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-31" action="modify" visible="true" lon="-1.356907914109007" lat="39.09402442320862">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-115" action="modify" visible="true" lon="-1.3639641223305647" lat="39.09762486786759">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-199" action="modify" visible="true" lon="-1.364533806789206" lat="39.07145347365405">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-367" action="modify" visible="true" lon="-1.3586684201063133" lat="39.09488879937775">
+  <tag k="addr:street" v="CL RAMON Y CAJAL"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-451" action="modify" visible="true" lon="-1.360107580973815" lat="39.096344511028946">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="61"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-535" action="modify" visible="true" lon="-1.3645248795162777" lat="39.097612738463575">
+  <tag k="addr:street" v="CL TRULLO"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-619" action="modify" visible="true" lon="-1.3641293040558289" lat="39.09413855218344">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="84"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-74" action="modify" visible="true" lon="-1.361248050031863" lat="39.094683116966344">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="12A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-158" action="modify" visible="true" lon="-1.3608598561220946" lat="39.09478906577612">
+  <tag k="addr:street" v="PZ VIRGEN DE LA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-242" action="modify" visible="true" lon="-1.3591360097171927" lat="39.09471746406551">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-326" action="modify" visible="true" lon="-1.3643823336551875" lat="39.09603049502976">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="18D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-410" action="modify" visible="true" lon="-1.361389236275774" lat="39.0960700561304">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="21B"/>
+</node>
+<node id="-494" action="modify" visible="true" lon="-1.3590645966160648" lat="39.09612195929513">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-578" action="modify" visible="true" lon="-1.3629900880696686" lat="39.094148139579836">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="43D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-662" action="modify" visible="true" lon="-1.3581238405717038" lat="39.095585297941945">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="S-N"/>
+</node>
+<node id="-728" action="modify" visible="true" lon="-1.360418860402874" lat="39.096259443224234">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-284" action="modify" visible="true" lon="-1.3627706869832676" lat="39.096626972604035">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-32" action="modify" visible="true" lon="-1.3567368984747044" lat="39.09395498376222">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-116" action="modify" visible="true" lon="-1.3635652586058535" lat="39.09700277772017">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-200" action="modify" visible="true" lon="-1.3640486025930372" lat="39.071351335192105">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-368" action="modify" visible="true" lon="-1.363629721630335" lat="39.09530667386817">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-452" action="modify" visible="true" lon="-1.3600285409345438" lat="39.09627963660255">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="63"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-536" action="modify" visible="true" lon="-1.3646420296258361" lat="39.09761717536544">
+  <tag k="addr:street" v="CL TRULLO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-620" action="modify" visible="true" lon="-1.364171808948256" lat="39.094125542905886">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="86"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-734" action="modify" visible="true" lon="-1.3603230792418894" lat="39.09663569661959">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="44"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-75" action="modify" visible="true" lon="-1.3614448736792584" lat="39.09478800740769">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-159" action="modify" visible="true" lon="-1.3609655140436507" lat="39.094820195870284">
+  <tag k="addr:street" v="PZ VIRGEN DE LA"/>
+  <tag k="addr:housenumber" v="3D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-243" action="modify" visible="true" lon="-1.3592038769501247" lat="39.095276431784576">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-327" action="modify" visible="true" lon="-1.3641631546680355" lat="39.09662336584616">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="1D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-411" action="modify" visible="true" lon="-1.3601835057414904" lat="39.096209960263025">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-495" action="modify" visible="true" lon="-1.358994691879665" lat="39.09613467105574">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-579" action="modify" visible="true" lon="-1.3632191035461056" lat="39.09415253145046">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="43T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-663" action="modify" visible="true" lon="-1.3583781077348858" lat="39.095168479791646">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-727" action="modify" visible="true" lon="-1.3607277263089392" lat="39.09657086779254">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-10" action="modify" visible="true" lon="-1.357640752546228" lat="39.09408268741076">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-33" action="modify" visible="true" lon="-1.3566652481396335" lat="39.09392342825054">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-117" action="modify" visible="true" lon="-1.36357014403276" lat="39.09746543901637">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-201" action="modify" visible="true" lon="-1.3699792079314896" lat="39.07640053364137">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-285" action="modify" visible="true" lon="-1.3609004199372063" lat="39.09751442369402">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-369" action="modify" visible="true" lon="-1.363935571118084" lat="39.095196264069685">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-453" action="modify" visible="true" lon="-1.359942609901362" lat="39.09630032295516">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="65"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-537" action="modify" visible="true" lon="-1.3647494388176327" lat="39.097620308642">
+  <tag k="addr:street" v="CL TRULLO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-621" action="modify" visible="true" lon="-1.3642615203007682" lat="39.09409121056028">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="88"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-76" action="modify" visible="true" lon="-1.361585901545278" lat="39.09497709621354">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-160" action="modify" visible="true" lon="-1.3608780240236926" lat="39.09493265944705">
+  <tag k="addr:street" v="PZ VIRGEN DE LA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-244" action="modify" visible="true" lon="-1.3591282284184254" lat="39.09466905853945">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-328" action="modify" visible="true" lon="-1.364350096946649" lat="39.097530273209124">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-412" action="modify" visible="true" lon="-1.361265510216688" lat="39.096004910257385">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-496" action="modify" visible="true" lon="-1.359421790039028" lat="39.09617402440392">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="3"/>
+</node>
+<node id="-580" action="modify" visible="true" lon="-1.3628799099872357" lat="39.09484463174438">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="44"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-664" action="modify" visible="true" lon="-1.3587835081042465" lat="39.09474792507765">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-705" action="modify" visible="true" lon="-1.3620378137126676" lat="39.09579240533306">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="1D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-724" action="modify" visible="true" lon="-1.3606253417932195" lat="39.09640579369379">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="34T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-34" action="modify" visible="true" lon="-1.356718607198059" lat="39.09417309222063">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-118" action="modify" visible="true" lon="-1.3635276115803763" lat="39.09746004382934">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="17D"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-202" action="modify" visible="true" lon="-1.3669648986596863" lat="39.099230597860355">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="316"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-286" action="modify" visible="true" lon="-1.3638424119993322" lat="39.096467398507016">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-370" action="modify" visible="true" lon="-1.3636852004801456" lat="39.095232665958456">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-454" action="modify" visible="true" lon="-1.359819690352226" lat="39.09633040026683">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="67"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-538" action="modify" visible="true" lon="-1.3645119016967855" lat="39.093515928447495">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-622" action="modify" visible="true" lon="-1.3631578900279626" lat="39.09577408435396">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="8D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-77" action="modify" visible="true" lon="-1.3613339723292512" lat="39.09470990555523">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-1" action="modify" visible="true" lon="-1.3580871512902462" lat="39.09434095506474">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-161" action="modify" visible="true" lon="-1.3585560054689372" lat="39.096682125644605">
+  <tag k="addr:street" v="CL COMTE RUBEN"/>
+  <tag k="addr:housenumber" v="109"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-245" action="modify" visible="true" lon="-1.3592052613289933" lat="39.09521671202067">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-329" action="modify" visible="true" lon="-1.3640157870415506" lat="39.09476236991288">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-413" action="modify" visible="true" lon="-1.3601032175663386" lat="39.09618847884772">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-497" action="modify" visible="true" lon="-1.3589022749775357" lat="39.09615580595728">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-581" action="modify" visible="true" lon="-1.3635217069222418" lat="39.09429211711071">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="45"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-665" action="modify" visible="true" lon="-1.35810087408712" lat="39.094968737561466">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-723" action="modify" visible="true" lon="-1.3605887891143909" lat="39.09645627871866">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="34D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-35" action="modify" visible="true" lon="-1.3581407043158393" lat="39.09433986855758">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-119" action="modify" visible="true" lon="-1.363538793077063" lat="39.09696464788879">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-203" action="modify" visible="true" lon="-1.3674779315618235" lat="39.098866644059854">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="318"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-287" action="modify" visible="true" lon="-1.3636685780539497" lat="39.096189457585645">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="21D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-371" action="modify" visible="true" lon="-1.3642773457653625" lat="39.09523746283961">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-455" action="modify" visible="true" lon="-1.3598779567285166" lat="39.09665027544268">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="69"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-539" action="modify" visible="true" lon="-1.3627598034382091" lat="39.09581777620395">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-623" action="modify" visible="true" lon="-1.3627446171286075" lat="39.095279823869916">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-78" action="modify" visible="true" lon="-1.361546650345005" lat="39.09489445931867">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-162" action="modify" visible="true" lon="-1.3591601874442647" lat="39.095430255813184">
+  <tag k="addr:street" v="CL COMTE RUBEN"/>
+  <tag k="addr:housenumber" v="1C"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-246" action="modify" visible="true" lon="-1.3602358587252878" lat="39.09500086062926">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-330" action="modify" visible="true" lon="-1.364342031402008" lat="39.09745897750132">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="2A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-414" action="modify" visible="true" lon="-1.360038112795515" lat="39.09619864573563">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-498" action="modify" visible="true" lon="-1.3588062280564548" lat="39.09617391172342">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-582" action="modify" visible="true" lon="-1.3630715331483272" lat="39.094111033982834">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="45D"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-666" action="modify" visible="true" lon="-1.3587878544372562" lat="39.09469626811878">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-722" action="modify" visible="true" lon="-1.3605259700990484" lat="39.096387726739636">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="34C"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-36" action="modify" visible="true" lon="-1.3565199745983167" lat="39.09381830511347">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-120" action="modify" visible="true" lon="-1.3636899156833404" lat="39.09735647216051">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-204" action="modify" visible="true" lon="-1.3669912716640107" lat="39.098929567899205">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="322"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-288" action="modify" visible="true" lon="-1.3608006113545845" lat="39.09749517946431">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-372" action="modify" visible="true" lon="-1.3644420141552849" lat="39.095256983439945">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-456" action="modify" visible="true" lon="-1.361669083166118" lat="39.09585416192904">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-540" action="modify" visible="true" lon="-1.3632339099271884" lat="39.095691895294436">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="10D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-624" action="modify" visible="true" lon="-1.3627589430328004" lat="39.095190371128396">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="9D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-79" action="modify" visible="true" lon="-1.3614612976817373" lat="39.09474539810535">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-163" action="modify" visible="true" lon="-1.3662829228655111" lat="39.1001902949001">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-247" action="modify" visible="true" lon="-1.3591262205664603" lat="39.094635961938735">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-331" action="modify" visible="true" lon="-1.364167264180264" lat="39.09640303246842">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-415" action="modify" visible="true" lon="-1.361108628064877" lat="39.0960336104181">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-499" action="modify" visible="true" lon="-1.3587076385807613" lat="39.096183680287645">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-583" action="modify" visible="true" lon="-1.3629106901384187" lat="39.09476865543093">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="46"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-667" action="modify" visible="true" lon="-1.3579724503121668" lat="39.095017535701786">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-721" action="modify" visible="true" lon="-1.3604873989586452" lat="39.09647043622876">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-289" action="modify" visible="true" lon="-1.3609722968219644" lat="39.09779158647147">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-37" action="modify" visible="true" lon="-1.3565629503795882" lat="39.09410877702896">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-121" action="modify" visible="true" lon="-1.3635240239464819" lat="39.09694326598985">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-205" action="modify" visible="true" lon="-1.3669912716640107" lat="39.098929567899205">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="322"/>
+</node>
+<node id="-373" action="modify" visible="true" lon="-1.364618256621153" lat="39.09489417617859">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="15A"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-457" action="modify" visible="true" lon="-1.3571232588618332" lat="39.09715564991011">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="70B"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-541" action="modify" visible="true" lon="-1.3627700041489357" lat="39.09510708973689">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-625" action="modify" visible="true" lon="-1.3612569852763654" lat="39.097017109419255">
+  <tag k="addr:street" v="CL SAN ISIDRO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-80" action="modify" visible="true" lon="-1.3611478501485028" lat="39.09465806752764">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-164" action="modify" visible="true" lon="-1.358227279175733" lat="39.09777088606854">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-248" action="modify" visible="true" lon="-1.359163386696874" lat="39.09504285171076">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-332" action="modify" visible="true" lon="-1.3640794115330401" lat="39.09457602570454">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-416" action="modify" visible="true" lon="-1.3611242961702816" lat="39.09606356968785">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="27D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-500" action="modify" visible="true" lon="-1.3599909423641512" lat="39.09593624126989">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-584" action="modify" visible="true" lon="-1.3635839769768974" lat="39.09427442978668">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="47"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-668" action="modify" visible="true" lon="-1.3578770618761447" lat="39.09511282804837">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="13D"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-711" action="modify" visible="true" lon="-1.3610797222843964" lat="39.09642552780147">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-720" action="modify" visible="true" lon="-1.3608213292366802" lat="39.096630833114226">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-38" action="modify" visible="true" lon="-1.3558926442258936" lat="39.093414796579815">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-122" action="modify" visible="true" lon="-1.3636609706015592" lat="39.09728804146035">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-206" action="modify" visible="true" lon="-1.3609036883954793" lat="39.09609281524612">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-290" action="modify" visible="true" lon="-1.3631950368409902" lat="39.09658283861287">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-374" action="modify" visible="true" lon="-1.363421451625853" lat="39.09514002554889">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-458" action="modify" visible="true" lon="-1.3562159681735113" lat="39.097438450633824">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="70D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-542" action="modify" visible="true" lon="-1.3628448778479063" lat="39.09591654975967">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-626" action="modify" visible="true" lon="-1.3659923650215342" lat="39.09811682450067">
+  <tag k="addr:street" v="CL SANTA CECILIA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-81" action="modify" visible="true" lon="-1.3618032468373418" lat="39.09536093250352">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-165" action="modify" visible="true" lon="-1.3658981609042833" lat="39.09878116234184">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="101W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-249" action="modify" visible="true" lon="-1.3590970971995888" lat="39.094633315574356">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-333" action="modify" visible="true" lon="-1.3642926391038401" lat="39.09712697927338">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-417" action="modify" visible="true" lon="-1.3599816600878982" lat="39.096251806014294">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-501" action="modify" visible="true" lon="-1.3598995030243393" lat="39.09595513360495">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-585" action="modify" visible="true" lon="-1.3636648743212545" lat="39.09425150754465">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-669" action="modify" visible="true" lon="-1.3587647376442835" lat="39.09469199065396">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-719" action="modify" visible="true" lon="-1.3605085264353398" lat="39.09652677835915">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-291" action="modify" visible="true" lon="-1.363517386809458" lat="39.09653672145693">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-39" action="modify" visible="true" lon="-1.3564160662580351" lat="39.093742849872385">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="42A"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-123" action="modify" visible="true" lon="-1.3634975713719724" lat="39.09690207728428">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-207" action="modify" visible="true" lon="-1.365069836681347" lat="39.098735579346766">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-375" action="modify" visible="true" lon="-1.3635582851569321" lat="39.09517565021442">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-459" action="modify" visible="true" lon="-1.3599073139363491" lat="39.09670574232637">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="71"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-543" action="modify" visible="true" lon="-1.362811558960086" lat="39.09496522270735">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-627" action="modify" visible="true" lon="-1.3660830435941727" lat="39.09790554367824">
+  <tag k="addr:street" v="CL SANTA CECILIA"/>
+  <tag k="addr:housenumber" v="2A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-82" action="modify" visible="true" lon="-1.3614053129209989" lat="39.09470631671545">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-166" action="modify" visible="true" lon="-1.3795412705957433" lat="39.067696973057885">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="102W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-250" action="modify" visible="true" lon="-1.359072307522018" lat="39.09506121235436">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-334" action="modify" visible="true" lon="-1.364152623883435" lat="39.09627100865682">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-418" action="modify" visible="true" lon="-1.3610810117110153" lat="39.096075215308986">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-502" action="modify" visible="true" lon="-1.3598202843262204" lat="39.095970598154">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-586" action="modify" visible="true" lon="-1.3630788177176905" lat="39.096060997424644">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="4B"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-670" action="modify" visible="true" lon="-1.3577575211306312" lat="39.095104978084">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-708" action="modify" visible="true" lon="-1.3609092267474447" lat="39.09646781774997">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-718" action="modify" visible="true" lon="-1.3608523528972398" lat="39.096651822207576">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-292" action="modify" visible="true" lon="-1.3645685351393901" lat="39.097820744431594">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-40" action="modify" visible="true" lon="-1.356593648629782" lat="39.09389466664952">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-124" action="modify" visible="true" lon="-1.3636291044456257" lat="39.097180910424704">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-208" action="modify" visible="true" lon="-1.3421105842026437" lat="39.09749924774113">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="35"/>
+</node>
+<node id="-376" action="modify" visible="true" lon="-1.3635988059095703" lat="39.09515846849145">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-460" action="modify" visible="true" lon="-1.356101526669718" lat="39.09765597057378">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="72"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-544" action="modify" visible="true" lon="-1.3628464923792274" lat="39.09586674466107">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-628" action="modify" visible="true" lon="-1.365985653330456" lat="39.097891653941375">
+  <tag k="addr:street" v="CL SANTA CECILIA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-83" action="modify" visible="true" lon="-1.3607162308118552" lat="39.094678480940324">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-167" action="modify" visible="true" lon="-1.4056508996435504" lat="39.04616087833412">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="103W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-251" action="modify" visible="true" lon="-1.359004690618137" lat="39.09507503759103">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="45"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-335" action="modify" visible="true" lon="-1.3641366791008382" lat="39.096160406895656">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-419" action="modify" visible="true" lon="-1.3615771197684643" lat="39.09574835715592">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="2D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-503" action="modify" visible="true" lon="-1.3587609160539156" lat="39.09609699852294">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="9D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-587" action="modify" visible="true" lon="-1.3627229780387915" lat="39.09543549078452">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-671" action="modify" visible="true" lon="-1.3586721729066726" lat="39.09472456657506">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-701" action="modify" visible="true" lon="-1.3615768519514773" lat="39.096484232015136">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-717" action="modify" visible="true" lon="-1.3606579006032335" lat="39.096555198760456">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-293" action="modify" visible="true" lon="-1.3638132921924149" lat="39.09667219008564">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-41" action="modify" visible="true" lon="-1.3565549541210726" lat="39.09398230632434">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="43D"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-125" action="modify" visible="true" lon="-1.3636773466005536" lat="39.09679989162447">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-209" action="modify" visible="true" lon="-1.363277979270144" lat="39.093378770231325">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-377" action="modify" visible="true" lon="-1.363593239201616" lat="39.095309225261744">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-461" action="modify" visible="true" lon="-1.359883552207376" lat="39.09667053306351">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="73"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-545" action="modify" visible="true" lon="-1.3639012547669613" lat="39.09418490450272">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-629" action="modify" visible="true" lon="-1.3660594978331244" lat="39.09828932448874">
+  <tag k="addr:street" v="CL SANTA CECILIA"/>
+  <tag k="addr:housenumber" v="69"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-84" action="modify" visible="true" lon="-1.3613139492038733" lat="39.094622136223705">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-168" action="modify" visible="true" lon="-1.3467038235920934" lat="39.078515353439364">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="104W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-252" action="modify" visible="true" lon="-1.3589743091907482" lat="39.09459498837008">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="46"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-336" action="modify" visible="true" lon="-1.3642455536899216" lat="39.09693033678877">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-420" action="modify" visible="true" lon="-1.3616665081076276" lat="39.09581304711019">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-504" action="modify" visible="true" lon="-1.36343953665376" lat="39.09403551720488">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-588" action="modify" visible="true" lon="-1.3628892077587034" lat="39.09502505690715">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="50"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-672" action="modify" visible="true" lon="-1.3586024524785338" lat="39.094659579132816">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-716" action="modify" visible="true" lon="-1.36195259899364" lat="39.09592708539578">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-294" action="modify" visible="true" lon="-1.3645632379199029" lat="39.097889352235846">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-42" action="modify" visible="true" lon="-1.35636488305662" lat="39.093704838446904">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="44A"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-126" action="modify" visible="true" lon="-1.3636096124668677" lat="39.0971487398035">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-210" action="modify" visible="true" lon="-1.3702375768857016" lat="39.076535969210546">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-378" action="modify" visible="true" lon="-1.3637513185795094" lat="39.09517610292509">
+  <tag k="addr:street" v="CJ ROYO"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-462" action="modify" visible="true" lon="-1.3598646969187989" lat="39.096625936372774">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="75"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-546" action="modify" visible="true" lon="-1.3628452657499568" lat="39.09485270509622">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="15A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-630" action="modify" visible="true" lon="-1.365045537703074" lat="39.09786527994159">
+  <tag k="addr:street" v="CL HONTANARES"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-85" action="modify" visible="true" lon="-1.3607985911335294" lat="39.094631490041586">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-169" action="modify" visible="true" lon="-1.3717468515695022" lat="39.1009832028655">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="105W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-253" action="modify" visible="true" lon="-1.3589449694361282" lat="39.09508744217311">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="47"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-337" action="modify" visible="true" lon="-1.364120963670029" lat="39.09606990164967">
+  <tag k="addr:street" v="CL POETA LILLO"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-421" action="modify" visible="true" lon="-1.3598756457670567" lat="39.09627590403091">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-505" action="modify" visible="true" lon="-1.3634181962166436" lat="39.09407333179258">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="1D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-589" action="modify" visible="true" lon="-1.363739940491478" lat="39.094230485691334">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="51"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-673" action="modify" visible="true" lon="-1.3580897893048283" lat="39.094932223378656">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-707" action="modify" visible="true" lon="-1.3609885888480693" lat="39.09644118152844">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-715" action="modify" visible="true" lon="-1.3620397525650676" lat="39.095687337427066">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="2D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-43" action="modify" visible="true" lon="-1.356544406091617" lat="39.09386414781629">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="45"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-127" action="modify" visible="true" lon="-1.363701986339684" lat="39.09676454623507">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-211" action="modify" visible="true" lon="-1.359412341558058" lat="39.09705556329982">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-295" action="modify" visible="true" lon="-1.363910754228746" lat="39.096822946823">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-379" action="modify" visible="true" lon="-1.362690418218947" lat="39.09620046194524">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-463" action="modify" visible="true" lon="-1.3598274198716058" lat="39.096543236601526">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="77"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-547" action="modify" visible="true" lon="-1.3632248399292803" lat="39.095581835961">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-631" action="modify" visible="true" lon="-1.3580949236624786" lat="39.094429193006924">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-86" action="modify" visible="true" lon="-1.3607694948179898" lat="39.09456041823622">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-170" action="modify" visible="true" lon="-1.3581679472828012" lat="39.09730781474913">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="106W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-254" action="modify" visible="true" lon="-1.3590236050839133" lat="39.0947301569548">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="48"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-338" action="modify" visible="true" lon="-1.3638709470751038" lat="39.09801867259992">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-422" action="modify" visible="true" lon="-1.3609557715577334" lat="39.09605074800312">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-506" action="modify" visible="true" lon="-1.3635297321862692" lat="39.09390523091943">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-590" action="modify" visible="true" lon="-1.3629559679230663" lat="39.09416856464494">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="51F"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-674" action="modify" visible="true" lon="-1.3584275776288066" lat="39.095344523337644">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-703" action="modify" visible="true" lon="-1.3615447960159697" lat="39.096400434807954">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-714" action="modify" visible="true" lon="-1.3608586422956706" lat="39.09652504358949">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-44" action="modify" visible="true" lon="-1.3563143284731136" lat="39.09366729449487">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="46"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-128" action="modify" visible="true" lon="-1.3635905141609124" lat="39.09711954815305">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-212" action="modify" visible="true" lon="-1.3665559901816484" lat="39.09907757001227">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-296" action="modify" visible="true" lon="-1.3658786766795687" lat="39.09827117002348">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-380" action="modify" visible="true" lon="-1.3625403455428036" lat="39.09558745453709">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="3A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-464" action="modify" visible="true" lon="-1.3597923342045735" lat="39.09646552339789">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="79"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-548" action="modify" visible="true" lon="-1.362883979285673" lat="39.09474368176163">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-632" action="modify" visible="true" lon="-1.3574326299866304" lat="39.09432626530769">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-87" action="modify" visible="true" lon="-1.3606223870380127" lat="39.09453112522528">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="28D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-171" action="modify" visible="true" lon="-1.3677046235027" lat="39.09877536949836">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="107W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-255" action="modify" visible="true" lon="-1.3588010007520452" lat="39.095272381943694">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-339" action="modify" visible="true" lon="-1.3639545712854988" lat="39.09817750663526">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-423" action="modify" visible="true" lon="-1.3597817011486342" lat="39.09629809938759">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-507" action="modify" visible="true" lon="-1.363598179924171" lat="39.09408045396365">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="2D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-591" action="modify" visible="true" lon="-1.3628962577264634" lat="39.09414556035089">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="51T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-675" action="modify" visible="true" lon="-1.3587716011353987" lat="39.09451067999092">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-713" action="modify" visible="true" lon="-1.360719569943064" lat="39.096548587392284">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-45" action="modify" visible="true" lon="-1.3556958242096497" lat="39.09357259097285">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="46A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-129" action="modify" visible="true" lon="-1.3636681514620186" lat="39.096777586930635">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-213" action="modify" visible="true" lon="-1.346662306722482" lat="39.100417591999424">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-297" action="modify" visible="true" lon="-1.3648264192856496" lat="39.09807938056419">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="35D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-381" action="modify" visible="true" lon="-1.3625161572830804" lat="39.0954461868358">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-465" action="modify" visible="true" lon="-1.3612713124525682" lat="39.09592660545446">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-549" action="modify" visible="true" lon="-1.3631261335231861" lat="39.09567227086977">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-633" action="modify" visible="true" lon="-1.3577038384890128" lat="39.09445319732358">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-88" action="modify" visible="true" lon="-1.3605211056660187" lat="39.0942017871367">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="28E"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-172" action="modify" visible="true" lon="-1.3670067945698183" lat="39.09270719278587">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="108W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-256" action="modify" visible="true" lon="-1.360454491644445" lat="39.095035969973424">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-340" action="modify" visible="true" lon="-1.3639346000778563" lat="39.09812137958023">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="12A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-424" action="modify" visible="true" lon="-1.3597280108051393" lat="39.09630968818053">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-508" action="modify" visible="true" lon="-1.3634857433879377" lat="39.093917408189455">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-592" action="modify" visible="true" lon="-1.3629972542337159" lat="39.09465048269194">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-676" action="modify" visible="true" lon="-1.3580225759738558" lat="39.09490621855479">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-710" action="modify" visible="true" lon="-1.3608488750564127" lat="39.096497424382896">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-712" action="modify" visible="true" lon="-1.3609340262978031" lat="39.09650042386718">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-46" action="modify" visible="true" lon="-1.3563204693531588" lat="39.094064360541495">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="47"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-130" action="modify" visible="true" lon="-1.3635427887659517" lat="39.09704319038167">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-214" action="modify" visible="true" lon="-1.3841827855941844" lat="39.088747280464915">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-298" action="modify" visible="true" lon="-1.3649480228147344" lat="39.09816136947624">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-382" action="modify" visible="true" lon="-1.3562611018253905" lat="39.09782796413844">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-466" action="modify" visible="true" lon="-1.3596771740066187" lat="39.09635785896031">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="81"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-550" action="modify" visible="true" lon="-1.3631917567968403" lat="39.09634716485803">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-634" action="modify" visible="true" lon="-1.357304213978184" lat="39.09428158937941">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-6" action="modify" visible="true" lon="-1.3577247929642577" lat="39.09410452702473">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-89" action="modify" visible="true" lon="-1.3616629519471561" lat="39.095317512651555">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-173" action="modify" visible="true" lon="-1.3721139688347972" lat="39.04531323379283">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="109W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-257" action="modify" visible="true" lon="-1.3590265204755838" lat="39.09481143797672">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="50"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-341" action="modify" visible="true" lon="-1.3640359505092916" lat="39.0982440826883">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-425" action="modify" visible="true" lon="-1.3608598718089442" lat="39.09610247100397">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-509" action="modify" visible="true" lon="-1.3634674906675788" lat="39.093976711010214">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="3D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-593" action="modify" visible="true" lon="-1.3630873530522154" lat="39.09477694817487">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-677" action="modify" visible="true" lon="-1.3580367847022974" lat="39.09486443904347">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-700" action="modify" visible="true" lon="-1.3613034667878376" lat="39.09632576972285">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-47" action="modify" visible="true" lon="-1.35581153990374" lat="39.09394211966386">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="48"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-131" action="modify" visible="true" lon="-1.3634501169820914" lat="39.09683401288994">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-215" action="modify" visible="true" lon="-1.360636872623305" lat="39.09503952627516">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-299" action="modify" visible="true" lon="-1.3625699566155391" lat="39.096701642836756">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-383" action="modify" visible="true" lon="-1.3616993466552931" lat="39.09565321281296">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-467" action="modify" visible="true" lon="-1.3596050694467008" lat="39.096375676082054">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="83"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-551" action="modify" visible="true" lon="-1.3627985798254592" lat="39.09582354240026">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-635" action="modify" visible="true" lon="-1.357577729116109" lat="39.094501248242">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-13" action="modify" visible="true" lon="-1.358208711087712" lat="39.09439894381155">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-90" action="modify" visible="true" lon="-1.3605358500645588" lat="39.094590303355176">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-174" action="modify" visible="true" lon="-1.3533623650971585" lat="39.08849422059332">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="110W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-258" action="modify" visible="true" lon="-1.3588121037362109" lat="39.09511269298038">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="51"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-342" action="modify" visible="true" lon="-1.3641670328400812" lat="39.0983762134165">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-426" action="modify" visible="true" lon="-1.3596301463446263" lat="39.09633137773209">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-510" action="modify" visible="true" lon="-1.3635512595811519" lat="39.093782801787455">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-594" action="modify" visible="true" lon="-1.3638119658649714" lat="39.09421095288322">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-678" action="modify" visible="true" lon="-1.3584153509589265" lat="39.09471253426413">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-706" action="modify" visible="true" lon="-1.3619754544501559" lat="39.095751666822416">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-48" action="modify" visible="true" lon="-1.3562178654117496" lat="39.09412094093992">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-132" action="modify" visible="true" lon="-1.363496846347377" lat="39.09696974096591">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-216" action="modify" visible="true" lon="-1.359931920593837" lat="39.09498865089782">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-300" action="modify" visible="true" lon="-1.363960117305285" lat="39.096980790886235">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-384" action="modify" visible="true" lon="-1.3611546700525188" lat="39.09597028810256">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-468" action="modify" visible="true" lon="-1.3595397131457252" lat="39.096391695937974">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="85"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-552" action="modify" visible="true" lon="-1.362910091854391" lat="39.09468953528382">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-636" action="modify" visible="true" lon="-1.3572474273578874" lat="39.0942622275813">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-19" action="modify" visible="true" lon="-1.3573469563928833" lat="39.09405670804117">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-91" action="modify" visible="true" lon="-1.3606547759756888" lat="39.0946266247429">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-175" action="modify" visible="true" lon="-1.3520990259120476" lat="39.08689359256335">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="111W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-259" action="modify" visible="true" lon="-1.3587272265327066" lat="39.09509047203161">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-343" action="modify" visible="true" lon="-1.3642778703854748" lat="39.09850373488862">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-427" action="modify" visible="true" lon="-1.360771999442283" lat="39.09611213792962">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-511" action="modify" visible="true" lon="-1.3634988985180212" lat="39.09384353147741">
+  <tag k="addr:street" v="CL ARRAMBLILLA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-595" action="modify" visible="true" lon="-1.363114660172385" lat="39.09468114059133">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="54"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-679" action="modify" visible="true" lon="-1.358323489966952" lat="39.09478954131112">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-695" action="modify" visible="true" lon="-1.361797931102721" lat="39.096149898114184">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-49" action="modify" visible="true" lon="-1.3579862579163042" lat="39.09422380099072">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-133" action="modify" visible="true" lon="-1.3633845508836684" lat="39.09677291244714">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-217" action="modify" visible="true" lon="-1.3602938306967391" lat="39.0950282137">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-301" action="modify" visible="true" lon="-1.3641090396719124" lat="39.097509583082484">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-385" action="modify" visible="true" lon="-1.3592726077357473" lat="39.09678285071523">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="101"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-469" action="modify" visible="true" lon="-1.3594670597785814" lat="39.09640824378788">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="87"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-553" action="modify" visible="true" lon="-1.3627739497447795" lat="39.09574858994836">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-637" action="modify" visible="true" lon="-1.3575544588043063" lat="39.0945296546635">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-15" action="modify" visible="true" lon="-1.357487027097908" lat="39.094064718854156">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-92" action="modify" visible="true" lon="-1.3606524577250025" lat="39.09465118345215">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="311"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-176" action="modify" visible="true" lon="-1.3936508475943232" lat="39.064776391040404">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="112W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-260" action="modify" visible="true" lon="-1.3586540041150654" lat="39.09514407583813">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-344" action="modify" visible="true" lon="-1.3637363714996213" lat="39.09757779012602">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-428" action="modify" visible="true" lon="-1.3595174660299243" lat="39.09636453802427">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-512" action="modify" visible="true" lon="-1.3600726679439799" lat="39.094597435073716">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-596" action="modify" visible="true" lon="-1.363054192178878" lat="39.09456838616263">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="56"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-680" action="modify" visible="true" lon="-1.3583657902569428" lat="39.094640833979945">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-696" action="modify" visible="true" lon="-1.3615448145755729" lat="39.09624978041635">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-50" action="modify" visible="true" lon="-1.3558526084151803" lat="39.093806821447345">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="50"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-134" action="modify" visible="true" lon="-1.3634788853408435" lat="39.09694137620452">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-218" action="modify" visible="true" lon="-1.3597106990294938" lat="39.09498228711673">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-302" action="modify" visible="true" lon="-1.3654583024303222" lat="39.09834982541548">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-386" action="modify" visible="true" lon="-1.3590917450984734" lat="39.09650189109112">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="103"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-470" action="modify" visible="true" lon="-1.3594306383560946" lat="39.09653035430606">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="89"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-554" action="modify" visible="true" lon="-1.3629393451092213" lat="39.094639577714645">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-638" action="modify" visible="true" lon="-1.3571338306094427" lat="39.09421953897555">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-7" action="modify" visible="true" lon="-1.3577337357265273" lat="39.0940691383479">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-93" action="modify" visible="true" lon="-1.3606524577250025" lat="39.09465118345215">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="312"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-177" action="modify" visible="true" lon="-1.3678229185708224" lat="39.092494254612966">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="113W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-261" action="modify" visible="true" lon="-1.358994555833608" lat="39.09503373519925">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="54"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-345" action="modify" visible="true" lon="-1.36439443545684" lat="39.09865863827369">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-429" action="modify" visible="true" lon="-1.3607678822739346" lat="39.0962949019625">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-513" action="modify" visible="true" lon="-1.359915225883874" lat="39.094533192929354">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-597" action="modify" visible="true" lon="-1.3640268098134378" lat="39.094150624910554">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="57"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-681" action="modify" visible="true" lon="-1.3582882215787198" lat="39.09469488544132">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-697" action="modify" visible="true" lon="-1.3616008077765496" lat="39.096293547289605">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-51" action="modify" visible="true" lon="-1.355952700641139" lat="39.093888245944505">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="51"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-135" action="modify" visible="true" lon="-1.3634542989766174" lat="39.09689949285481">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-219" action="modify" visible="true" lon="-1.3601524777949148" lat="39.095020548626884">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-303" action="modify" visible="true" lon="-1.3624775128431346" lat="39.09672395155598">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-387" action="modify" visible="true" lon="-1.3590230767554292" lat="39.096521107789556">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="105"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-471" action="modify" visible="true" lon="-1.3615611462975372" lat="39.09577903846298">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-555" action="modify" visible="true" lon="-1.3627540449677353" lat="39.095679560653096">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-639" action="modify" visible="true" lon="-1.3576427942478915" lat="39.09442521130288">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-262" action="modify" visible="true" lon="-1.3585457585962848" lat="39.095164717270805">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="55"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-2" action="modify" visible="true" lon="-1.357949213147596" lat="39.094171108667766">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-8" action="modify" visible="true" lon="-1.3576900999966202" lat="39.094094757474366">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-94" action="modify" visible="true" lon="-1.3604663346350427" lat="39.09458878047882">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-178" action="modify" visible="true" lon="-1.363695560488594" lat="39.09296132177258">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="114W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-346" action="modify" visible="true" lon="-1.3635393383162178" lat="39.09754249636287">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="2D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-430" action="modify" visible="true" lon="-1.3614668853267675" lat="39.09583492981196">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-514" action="modify" visible="true" lon="-1.3593861335121322" lat="39.09440502805445">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="44"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-598" action="modify" visible="true" lon="-1.3630775417222987" lat="39.094538709265755">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="58"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-682" action="modify" visible="true" lon="-1.3583176007434938" lat="39.094559872227684">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-52" action="modify" visible="true" lon="-1.3559041634872444" lat="39.09366806694285">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-136" action="modify" visible="true" lon="-1.3638557704927257" lat="39.097452427868106">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-220" action="modify" visible="true" lon="-1.3596320361355736" lat="39.094983793177995">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-304" action="modify" visible="true" lon="-1.3655719963320883" lat="39.09831871176488">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="65"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-388" action="modify" visible="true" lon="-1.358937975930389" lat="39.09654585978296">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="107"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-472" action="modify" visible="true" lon="-1.3593454344625413" lat="39.096437343157">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="91"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-556" action="modify" visible="true" lon="-1.3628394591220017" lat="39.09456383864397">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-640" action="modify" visible="true" lon="-1.3575366727561529" lat="39.094384250291036">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-9" action="modify" visible="true" lon="-1.3575795972921194" lat="39.09402705935175">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-95" action="modify" visible="true" lon="-1.3605486963018059" lat="39.09463269257381">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-179" action="modify" visible="true" lon="-1.3616923590409933" lat="39.068264054225615">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="115W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-263" action="modify" visible="true" lon="-1.358445522182858" lat="39.09518403422775">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="57"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-347" action="modify" visible="true" lon="-1.3637496018525725" lat="39.09765573599702">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-431" action="modify" visible="true" lon="-1.359348605826572" lat="39.0964137660159">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-515" action="modify" visible="true" lon="-1.3594861183917384" lat="39.09443262593289">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="44D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-599" action="modify" visible="true" lon="-1.3641327278327242" lat="39.0941204892255">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="59"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-683" action="modify" visible="true" lon="-1.358152001919835" lat="39.09459058113804">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-53" action="modify" visible="true" lon="-1.355950890941794" lat="39.093846682273416">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-137" action="modify" visible="true" lon="-1.3642663471826848" lat="39.09814676404887">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-221" action="modify" visible="true" lon="-1.3600069845571943" lat="39.09501940726128">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-305" action="modify" visible="true" lon="-1.362322483674561" lat="39.09672249437808">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="6D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-389" action="modify" visible="true" lon="-1.3588075308391783" lat="39.096586282182216">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="107D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-473" action="modify" visible="true" lon="-1.3592595622703911" lat="39.096460462650235">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="93"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-557" action="modify" visible="true" lon="-1.362735018603022" lat="39.095579556761976">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-641" action="modify" visible="true" lon="-1.3578526325052358" lat="39.09442210633705">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-4" action="modify" visible="true" lon="-1.357732406691098" lat="39.0941912598135">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="11D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-96" action="modify" visible="true" lon="-1.3604859808878282" lat="39.09463471725139">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-180" action="modify" visible="true" lon="-1.376181326718995" lat="39.08517247764436">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="116W"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-264" action="modify" visible="true" lon="-1.3585455545347347" lat="39.09513991044532">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="58"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-348" action="modify" visible="true" lon="-1.3637717783392964" lat="39.09775436027323">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-432" action="modify" visible="true" lon="-1.36071142110195" lat="39.096318792048066">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-516" action="modify" visible="true" lon="-1.3594075754814612" lat="39.09437275797858">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="44T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-600" action="modify" visible="true" lon="-1.3631405140467259" lat="39.09415340568241">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="59D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-684" action="modify" visible="true" lon="-1.3583677870478381" lat="39.09507164245984">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-54" action="modify" visible="true" lon="-1.3557504887863416" lat="39.09359615399276">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="54"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-138" action="modify" visible="true" lon="-1.363811520851604" lat="39.09738576017251">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-222" action="modify" visible="true" lon="-1.3598849851402814" lat="39.09501985324275">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-306" action="modify" visible="true" lon="-1.3621326989172242" lat="39.09661395506249">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-390" action="modify" visible="true" lon="-1.3586964880300496" lat="39.09662274272802">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="107T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-474" action="modify" visible="true" lon="-1.3591897028616209" lat="39.096653014598715">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="95"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-558" action="modify" visible="true" lon="-1.363075907890563" lat="39.095646836379785">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="26"/>
+</node>
+<node id="-642" action="modify" visible="true" lon="-1.357453559343293" lat="39.094353344678886">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-3" action="modify" visible="true" lon="-1.3577623191577997" lat="39.094200552025725">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-11" action="modify" visible="true" lon="-1.3575161279213037" lat="39.09402661556306">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-97" action="modify" visible="true" lon="-1.3603011377045395" lat="39.09458585399543">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-181" action="modify" visible="true" lon="-1.3558153420808603" lat="39.1017864517472">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="117W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-265" action="modify" visible="true" lon="-1.358049902369692" lat="39.09534073569446">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="59"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-349" action="modify" visible="true" lon="-1.3638155084729362" lat="39.097901028941216">
+  <tag k="addr:street" v="CL JACINTO BENAVENTE"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-433" action="modify" visible="true" lon="-1.35928136075908" lat="39.096431299927104">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-517" action="modify" visible="true" lon="-1.3598705260645023" lat="39.09455300778951">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="48"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-601" action="modify" visible="true" lon="-1.3629325128707712" lat="39.09601670988186">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-685" action="modify" visible="true" lon="-1.3582643476384446" lat="39.09447289224418">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-55" action="modify" visible="true" lon="-1.3561504912956777" lat="39.09405213316725">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="55"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-139" action="modify" visible="true" lon="-1.3640606485513813" lat="39.097911227555095">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-223" action="modify" visible="true" lon="-1.3595501581106544" lat="39.09495095117134">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-307" action="modify" visible="true" lon="-1.3668778986716004" lat="39.098425146985235">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="73"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-391" action="modify" visible="true" lon="-1.3615041848691731" lat="39.09592446832398">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-475" action="modify" visible="true" lon="-1.3592846480383294" lat="39.09675229458218">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="97"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-559" action="modify" visible="true" lon="-1.362998881396715" lat="39.09454012753654">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-643" action="modify" visible="true" lon="-1.3573880184740006" lat="39.09432755227866">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-5" action="modify" visible="true" lon="-1.3578605592776165" lat="39.09411985179475">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-98" action="modify" visible="true" lon="-1.3603758469056308" lat="39.094861432488564">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-182" action="modify" visible="true" lon="-1.3763199430608806" lat="39.0916168868753">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="119W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-266" action="modify" visible="true" lon="-1.3601144390634092" lat="39.09496051300298">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-350" action="modify" visible="true" lon="-1.362300287566503" lat="39.09533323115558">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="1B"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-434" action="modify" visible="true" lon="-1.3607295928679743" lat="39.09624813540312">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-518" action="modify" visible="true" lon="-1.3600872761520062" lat="39.09471054149076">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-602" action="modify" visible="true" lon="-1.3632226685088702" lat="39.09482818053661">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="60"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-686" action="modify" visible="true" lon="-1.3582063895323908" lat="39.09454514613411">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-709" action="modify" visible="true" lon="-1.361128798403663" lat="39.09640846273675">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-56" action="modify" visible="true" lon="-1.3554747129757705" lat="39.09359389000822">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="56"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-140" action="modify" visible="true" lon="-1.3637593988563963" lat="39.097306993553616">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-224" action="modify" visible="true" lon="-1.3598189091839923" lat="39.09502207716016">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-308" action="modify" visible="true" lon="-1.3670978857815073" lat="39.098112732635734">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="75"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-392" action="modify" visible="true" lon="-1.3584431605170346" lat="39.096746668643014">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="111"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-476" action="modify" visible="true" lon="-1.3593273798078795" lat="39.09681939312761">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="97D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-560" action="modify" visible="true" lon="-1.3627365570989767" lat="39.09553804020687">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-644" action="modify" visible="true" lon="-1.357245325473248" lat="39.09429076557406">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-14" action="modify" visible="true" lon="-1.3574500071922417" lat="39.09402333213036">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-99" action="modify" visible="true" lon="-1.360231799777021" lat="39.09458650229064">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-183" action="modify" visible="true" lon="-1.3711284819912974" lat="39.099210742395876">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="120W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-267" action="modify" visible="true" lon="-1.3580858195756615" lat="39.09531390844628">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="64"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-351" action="modify" visible="true" lon="-1.3621550229800474" lat="39.09534966154845">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="1D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-435" action="modify" visible="true" lon="-1.3592411042082087" lat="39.09644199633139">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="44"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-519" action="modify" visible="true" lon="-1.3589339602102022" lat="39.094279802577894">
+  <tag k="addr:street" v="CJ DE BRU"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-603" action="modify" visible="true" lon="-1.3630991302993896" lat="39.094510178993445">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="60A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-687" action="modify" visible="true" lon="-1.3583971463749867" lat="39.09507434188805">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-699" action="modify" visible="true" lon="-1.3615890220394875" lat="39.09638808141492">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-57" action="modify" visible="true" lon="-1.3563276993263609" lat="39.09392479610092">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="57"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-141" action="modify" visible="true" lon="-1.3640987517834737" lat="39.09778858502375">
+  <tag k="addr:street" v="CL ARRABAL"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-225" action="modify" visible="true" lon="-1.3598353145308721" lat="39.0951773732676">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="19I"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-309" action="modify" visible="true" lon="-1.361964458283715" lat="39.09674368406733">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-393" action="modify" visible="true" lon="-1.3583375599135965" lat="39.09680771388751">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="113"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-477" action="modify" visible="true" lon="-1.3593382450781961" lat="39.0968844212496">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="99"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-561" action="modify" visible="true" lon="-1.3630264943531167" lat="39.09449609380435">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-645" action="modify" visible="true" lon="-1.3571639892675036" lat="39.09430286462334">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-12" action="modify" visible="true" lon="-1.3575651636982458" lat="39.09407135045891">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-100" action="modify" visible="true" lon="-1.3617283145902115" lat="39.09523121469544">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-184" action="modify" visible="true" lon="-1.3663189618031486" lat="39.095433124871484">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="121W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-268" action="modify" visible="true" lon="-1.3580059760469767" lat="39.09533708221122">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="66"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-352" action="modify" visible="true" lon="-1.3620013493223044" lat="39.095254784669486">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-436" action="modify" visible="true" lon="-1.3607148939799272" lat="39.09618881566155">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="45"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-520" action="modify" visible="true" lon="-1.3581746925097984" lat="39.09604475390319">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="1A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-604" action="modify" visible="true" lon="-1.364196375008604" lat="39.09407822236556">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="61"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-688" action="modify" visible="true" lon="-1.3583596824855078" lat="39.094992326510905">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-58" action="modify" visible="true" lon="-1.3553655258627981" lat="39.09376236758792">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="58"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-142" action="modify" visible="true" lon="-1.3622695091763564" lat="39.09632835401182">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-226" action="modify" visible="true" lon="-1.3583836538155207" lat="39.09550338960953">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="1B"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-310" action="modify" visible="true" lon="-1.3598063185347968" lat="39.09700497269502">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="99D"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-394" action="modify" visible="true" lon="-1.3582266828849383" lat="39.0968619268852">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="115"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-478" action="modify" visible="true" lon="-1.3596388410551563" lat="39.09692692821912">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="99D"/>
+</node>
+<node id="-562" action="modify" visible="true" lon="-1.3627393450084802" lat="39.095714945446346">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-646" action="modify" visible="true" lon="-1.357991973699237" lat="39.0944187819434">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-21" action="modify" visible="true" lon="-1.3571790423164578" lat="39.094050201348566">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-101" action="modify" visible="true" lon="-1.3616393227984198" lat="39.09523184709456">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-185" action="modify" visible="true" lon="-1.3624852962736427" lat="39.096965890454655">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="122W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-269" action="modify" visible="true" lon="-1.3579493814866623" lat="39.09535111526005">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="68"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-353" action="modify" visible="true" lon="-1.3622570107793923" lat="39.09505722328084">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-437" action="modify" visible="true" lon="-1.3605456175223472" lat="39.096166260538304">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="45A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-521" action="modify" visible="true" lon="-1.3581404953331526" lat="39.09592633453322">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="1A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-605" action="modify" visible="true" lon="-1.363183366517375" lat="39.09474266012092">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="62"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-689" action="modify" visible="true" lon="-1.3584379163389633" lat="39.09484773210625">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-59" action="modify" visible="true" lon="-1.3554289172875886" lat="39.09379054108725">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="58T"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-143" action="modify" visible="true" lon="-1.3623234320002597" lat="39.09603933565823">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-227" action="modify" visible="true" lon="-1.3603305584250467" lat="39.09500588705799">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-311" action="modify" visible="true" lon="-1.3604159207426898" lat="39.09571246785393">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-395" action="modify" visible="true" lon="-1.3579719185789036" lat="39.09693781037331">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="119"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-479" action="modify" visible="true" lon="-1.3597381723715372" lat="39.09599115788887">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-563" action="modify" visible="true" lon="-1.3627376556696393" lat="39.095495796636406">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-647" action="modify" visible="true" lon="-1.3568799780059124" lat="39.094335911537335">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-744" action="modify" visible="true" lon="-1.3618313867549992" lat="39.09609828792124">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-20" action="modify" visible="true" lon="-1.357252745504664" lat="39.093946135029356">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-102" action="modify" visible="true" lon="-1.3600043218862812" lat="39.094793223815444">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="54"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-186" action="modify" visible="true" lon="-1.3840083361974684" lat="39.09439872696244">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="123W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-270" action="modify" visible="true" lon="-1.36039293544738" lat="39.09503276141709">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-354" action="modify" visible="true" lon="-1.3619449084906448" lat="39.09515793565303">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="3D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-438" action="modify" visible="true" lon="-1.3604767300657423" lat="39.09621743056105">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="45A"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-522" action="modify" visible="true" lon="-1.3582374141921785" lat="39.09566649139841">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="1B"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-606" action="modify" visible="true" lon="-1.3631189454152441" lat="39.09448333579824">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="62A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-690" action="modify" visible="true" lon="-1.358351279903577" lat="39.094915889705696">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-60" action="modify" visible="true" lon="-1.3564240306492723" lat="39.0937847805454">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="59"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-144" action="modify" visible="true" lon="-1.3621940200120157" lat="39.09581036402761">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-228" action="modify" visible="true" lon="-1.3594723101620267" lat="39.094985595497675">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-312" action="modify" visible="true" lon="-1.3604538379062352" lat="39.09592778317765">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-396" action="modify" visible="true" lon="-1.3568647958553184" lat="39.09730857215055">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="129"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-480" action="modify" visible="true" lon="-1.3589116237382837" lat="39.09606658821772">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="11D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-564" action="modify" visible="true" lon="-1.3627395116773806" lat="39.09546554760054">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-648" action="modify" visible="true" lon="-1.3570039683686783" lat="39.09424993898374">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="30A"/>
+</node>
+<node id="-743" action="modify" visible="true" lon="-1.3617548090787976" lat="39.096164519716105">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-22" action="modify" visible="true" lon="-1.3571237497806512" lat="39.09400648008627">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-103" action="modify" visible="true" lon="-1.359778868173794" lat="39.09489392401679">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="58"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-187" action="modify" visible="true" lon="-1.3667092841320276" lat="39.09282052900028">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="124W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-271" action="modify" visible="true" lon="-1.3603433841133916" lat="39.09503044253149">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-355" action="modify" visible="true" lon="-1.361966253993499" lat="39.09504750171635">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="3T"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-439" action="modify" visible="true" lon="-1.3591247688260992" lat="39.09647234579346">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="46"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-523" action="modify" visible="true" lon="-1.3582275709218885" lat="39.09617534819046">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-607" action="modify" visible="true" lon="-1.3642640275122857" lat="39.09406277271691">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="63"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-691" action="modify" visible="true" lon="-1.3585713794808651" lat="39.09478358843933">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-704" action="modify" visible="true" lon="-1.3615518616187439" lat="39.09668463346853">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="19A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-61" action="modify" visible="true" lon="-1.358055236633814" lat="39.09426090453834">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-145" action="modify" visible="true" lon="-1.362290991169016" lat="39.09581722287581">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-229" action="modify" visible="true" lon="-1.3597282789727714" lat="39.09502107217694">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-313" action="modify" visible="true" lon="-1.360481558226849" lat="39.09603395570649">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="18D"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-397" action="modify" visible="true" lon="-1.361551309939372" lat="39.095986672083704">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-481" action="modify" visible="true" lon="-1.359656196060728" lat="39.09600586268543">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-565" action="modify" visible="true" lon="-1.3627018042600798" lat="39.09465376672099">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-649" action="modify" visible="true" lon="-1.3570680683325436" lat="39.094320614839745">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-742" action="modify" visible="true" lon="-1.3618072714634428" lat="39.09609605681174">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-16" action="modify" visible="true" lon="-1.3573914176914348" lat="39.094021875783824">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-104" action="modify" visible="true" lon="-1.3616987897200055" lat="39.09518295425336">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-188" action="modify" visible="true" lon="-1.3574144847307785" lat="39.096635044678834">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="126W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-272" action="modify" visible="true" lon="-1.3627027752661882" lat="39.096463560355275">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-356" action="modify" visible="true" lon="-1.3616986553108452" lat="39.09545353159142">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-440" action="modify" visible="true" lon="-1.3590337894991023" lat="39.09649629426959">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="48"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-524" action="modify" visible="true" lon="-1.3582123215571076" lat="39.09624702772791">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-608" action="modify" visible="true" lon="-1.3633839893826083" lat="39.09435731144217">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="64D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-692" action="modify" visible="true" lon="-1.358176119749226" lat="39.09493439719663">
+  <tag k="addr:street" v="CL PE&#209;ICAS"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-62" action="modify" visible="true" lon="-1.3563099915394201" lat="39.0937213608825">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="61"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-146" action="modify" visible="true" lon="-1.3624366855953594" lat="39.09590745051858">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-230" action="modify" visible="true" lon="-1.3593586905536745" lat="39.094988681790305">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-314" action="modify" visible="true" lon="-1.3602322593083354" lat="39.09513546841124">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-398" action="modify" visible="true" lon="-1.3613614793822242" lat="39.09775292512859">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-482" action="modify" visible="true" lon="-1.3595779354073863" lat="39.09601989887974">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-566" action="modify" visible="true" lon="-1.3631761163844893" lat="39.09434114728099">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="33A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-650" action="modify" visible="true" lon="-1.3577116682698536" lat="39.0943998477678">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-741" action="modify" visible="true" lon="-1.3604460374385507" lat="39.09640903845768">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="59"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-17" action="modify" visible="true" lon="-1.357450418486988" lat="39.094062761326725">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-105" action="modify" visible="true" lon="-1.3616716559569142" lat="39.09513130344102">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-189" action="modify" visible="true" lon="-1.3440742943738702" lat="39.079327274478075">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="127W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-273" action="modify" visible="true" lon="-1.3661665418832836" lat="39.0985606256781">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="103"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-357" action="modify" visible="true" lon="-1.3617137534251214" lat="39.09551311813467">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="4D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-441" action="modify" visible="true" lon="-1.361686410695567" lat="39.09586738952382">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-525" action="modify" visible="true" lon="-1.358365519201025" lat="39.09632764834512">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="4W"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-609" action="modify" visible="true" lon="-1.3634675355277552" lat="39.09433460673779">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="66"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-693" action="modify" visible="true" lon="-1.3620550405033849" lat="39.09572254612619">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-698" action="modify" visible="true" lon="-1.3614200873197384" lat="39.09626307458402">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-63" action="modify" visible="true" lon="-1.3559568748987887" lat="39.09390018959425">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="65"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-147" action="modify" visible="true" lon="-1.3623731792626326" lat="39.09644802309617">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-231" action="modify" visible="true" lon="-1.3595584267646943" lat="39.095020749821074">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-315" action="modify" visible="true" lon="-1.3606143184719945" lat="39.09609792745776">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-399" action="modify" visible="true" lon="-1.3608543748229862" lat="39.096060224819425">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="14A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-483" action="modify" visible="true" lon="-1.3586153574514057" lat="39.09611005043637">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02152"/>
+</node>
+<node id="-567" action="modify" visible="true" lon="-1.3627573556787274" lat="39.09534397697716">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-651" action="modify" visible="true" lon="-1.3575188783010241" lat="39.09435162863189">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-740" action="modify" visible="true" lon="-1.3604817406931649" lat="39.09650504685391">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="57"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-18" action="modify" visible="true" lon="-1.3572871755767963" lat="39.09402203316601">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-106" action="modify" visible="true" lon="-1.361507863137697" lat="39.09495252527167">
+  <tag k="addr:street" v="CL JOSE ANTONIO"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-190" action="modify" visible="true" lon="-1.3672918199176824" lat="39.09259180314991">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="128W"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-274" action="modify" visible="true" lon="-1.3613868003304161" lat="39.09754577958188">
+  <tag k="addr:street" v="AV ALBACETE"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-358" action="modify" visible="true" lon="-1.3617262492468503" lat="39.095560242694745">
+  <tag k="addr:street" v="PZ MAYOR"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-442" action="modify" visible="true" lon="-1.3589724176109028" lat="39.09651356197897">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="50"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-526" action="modify" visible="true" lon="-1.3583455652008882" lat="39.09642992417675">
+  <tag k="addr:street" v="CL LAS HIGUERAS"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-610" action="modify" visible="true" lon="-1.3635909718594257" lat="39.09429696400697">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="68"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-694" action="modify" visible="true" lon="-1.3616328591699365" lat="39.096227680913735">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-702" action="modify" visible="true" lon="-1.3611627068606649" lat="39.09638226856459">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-64" action="modify" visible="true" lon="-1.3559124518366248" lat="39.093891183326626">
+  <tag k="addr:street" v="CL ALPERA"/>
+  <tag k="addr:housenumber" v="67"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-148" action="modify" visible="true" lon="-1.3622469475594159" lat="39.09623648637481">
+  <tag k="addr:street" v="AV PAZ DE LA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-232" action="modify" visible="true" lon="-1.3592978600929524" lat="39.094989087048845">
+  <tag k="addr:street" v="CL ARENAL"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-316" action="modify" visible="true" lon="-1.3606021355906668" lat="39.096064777883754">
+  <tag k="addr:street" v="CL CUESTA DE ENMEDIO"/>
+  <tag k="addr:housenumber" v="20D"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-400" action="modify" visible="true" lon="-1.3615794258789669" lat="39.09604085964927">
+  <tag k="addr:street" v="CL CARCELEN"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-484" action="modify" visible="true" lon="-1.3594846462607877" lat="39.096038769359765">
+  <tag k="addr:street" v="CL NUEVA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-568" action="modify" visible="true" lon="-1.3631994960115454" lat="39.09430516346505">
+  <tag k="addr:street" v="CL FRAGUAS"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-652" action="modify" visible="true" lon="-1.3579253272729728" lat="39.09443679656989">
+  <tag k="addr:street" v="CL FUENTE NUEVA"/>
+  <tag k="addr:housenumber" v="5A"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-739" action="modify" visible="true" lon="-1.36031102370417" lat="39.09657933340013">
+  <tag k="addr:street" v="CL PRENSA"/>
+  <tag k="addr:housenumber" v="55"/>
+  <tag k="addr:postcode" v="02152"/>
+  <tag k="entrance" v="yes"/>
+</node>
+</osm>

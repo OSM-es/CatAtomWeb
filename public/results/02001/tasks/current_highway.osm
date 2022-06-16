@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.56.9 76e5016d">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2022-05-20T09:08:03Z" areas="2022-05-20T09:08:03Z"/>
+
+  <node id="1668753957" lat="39.2070144" lon="-1.5396409" version="1" timestamp="2012-03-10T14:58:35Z" changeset="10932662" uid="472193" user="rubensd"/>
+  <node id="1668755540" lat="39.2070784" lon="-1.5397190" version="1" timestamp="2012-03-10T14:59:06Z" changeset="10932662" uid="472193" user="rubensd"/>
+  <node id="1743388124" lat="39.2127835" lon="-1.5439472" version="2" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388134" lat="39.2098515" lon="-1.5448334" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388138" lat="39.2090244" lon="-1.5415611" version="1" timestamp="2012-05-06T18:43:21Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388140" lat="39.2072745" lon="-1.5420976" version="1" timestamp="2012-05-06T18:43:21Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388149" lat="39.2092156" lon="-1.5363469" version="1" timestamp="2012-05-06T18:43:21Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388154" lat="39.2102022" lon="-1.5440459" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388157" lat="39.2093461" lon="-1.5364561" version="2" timestamp="2016-12-07T19:32:17Z" changeset="44243059" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388159" lat="39.2112652" lon="-1.5426166" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388162" lat="39.2098771" lon="-1.5423468" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388167" lat="39.2086185" lon="-1.5422864" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388168" lat="39.2117650" lon="-1.5427263" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388171" lat="39.2086310" lon="-1.5409990" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388173" lat="39.2089633" lon="-1.5414738" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388180" lat="39.2087508" lon="-1.5441139" version="2" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388181" lat="39.2090036" lon="-1.5356925" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388183" lat="39.2073127" lon="-1.5399127" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388187" lat="39.2075586" lon="-1.5393199" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388210" lat="39.2113660" lon="-1.5415944" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388212" lat="39.2106824" lon="-1.5378350" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388214" lat="39.2102354" lon="-1.5376140" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388217" lat="39.2095468" lon="-1.5446525" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388219" lat="39.2094872" lon="-1.5429597" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388221" lat="39.2126628" lon="-1.5395130" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388224" lat="39.2116726" lon="-1.5435597" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388226" lat="39.2094540" lon="-1.5431179" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388229" lat="39.2082528" lon="-1.5382792" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388231" lat="39.2061411" lon="-1.5419538" version="1" timestamp="2012-05-06T18:43:22Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388233" lat="39.2091102" lon="-1.5435152" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388238" lat="39.2098032" lon="-1.5416695" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388247" lat="39.2104138" lon="-1.5440215" version="2" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388249" lat="39.2111209" lon="-1.5442525" version="2" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388251" lat="39.2104765" lon="-1.5434398" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388255" lat="39.2095980" lon="-1.5427735" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388257" lat="39.2088901" lon="-1.5438343" version="2" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388263" lat="39.2095398" lon="-1.5425911" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388270" lat="39.2084813" lon="-1.5402433" version="2" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388275" lat="39.2095607" lon="-1.5436329" version="2" timestamp="2012-07-09T10:40:33Z" changeset="12160327" uid="180097" user="fercema1"/>
+  <node id="1743388281" lat="39.2098821" lon="-1.5440406" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388287" lat="39.2099279" lon="-1.5446682" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388290" lat="39.2088846" lon="-1.5395559" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388306" lat="39.2107577" lon="-1.5422051" version="1" timestamp="2012-05-06T18:43:23Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388309" lat="39.2106006" lon="-1.5441038" version="2" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388310" lat="39.2075806" lon="-1.5401342" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388314" lat="39.2088270" lon="-1.5440878" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388319" lat="39.2106995" lon="-1.5425321" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388322" lat="39.2078288" lon="-1.5421899" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388324" lat="39.2091728" lon="-1.5394235" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388326" lat="39.2096855" lon="-1.5419892" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388329" lat="39.2124591" lon="-1.5393843" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388336" lat="39.2105492" lon="-1.5444725" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388354" lat="39.2106802" lon="-1.5441399" version="2" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388357" lat="39.2073092" lon="-1.5386225" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388359" lat="39.2102396" lon="-1.5443195" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388364" lat="39.2087889" lon="-1.5418331" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388366" lat="39.2063324" lon="-1.5427317" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388367" lat="39.2084647" lon="-1.5374048" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388369" lat="39.2098081" lon="-1.5404904" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388371" lat="39.2095808" lon="-1.5399135" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388375" lat="39.2082985" lon="-1.5426941" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388378" lat="39.2097907" lon="-1.5451778" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388382" lat="39.2072468" lon="-1.5384938" version="1" timestamp="2012-05-06T18:43:24Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388404" lat="39.2109153" lon="-1.5416790" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388409" lat="39.2125971" lon="-1.5446043" version="2" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388412" lat="39.2104944" lon="-1.5440640" version="3" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388414" lat="39.2100276" lon="-1.5438528" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388417" lat="39.2106345" lon="-1.5413098" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388428" lat="39.2075503" lon="-1.5394701" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388431" lat="39.2094311" lon="-1.5456552" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388432" lat="39.2082195" lon="-1.5429355" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388435" lat="39.2059416" lon="-1.5411974" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388445" lat="39.2121058" lon="-1.5389873" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388449" lat="39.2090633" lon="-1.5357526" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388455" lat="39.2121442" lon="-1.5388272" version="1" timestamp="2012-05-06T18:43:25Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388461" lat="39.2061120" lon="-1.5401460" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388464" lat="39.2094385" lon="-1.5434520" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388468" lat="39.2077205" lon="-1.5402498" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388472" lat="39.2123137" lon="-1.5392716" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388485" lat="39.2085599" lon="-1.5409080" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388488" lat="39.2104907" lon="-1.5433037" version="2" timestamp="2017-03-11T18:10:12Z" changeset="46768407" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388491" lat="39.2119743" lon="-1.5436537" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388516" lat="39.2081017" lon="-1.5392115" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388518" lat="39.2132225" lon="-1.5394958" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388520" lat="39.2089870" lon="-1.5427628" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388523" lat="39.2085250" lon="-1.5428659" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388524" lat="39.2130410" lon="-1.5395827" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388525" lat="39.2106178" lon="-1.5427799" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388527" lat="39.2096203" lon="-1.5458377" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388528" lat="39.2094711" lon="-1.5406609" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388529" lat="39.2081239" lon="-1.5425332" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388531" lat="39.2089427" lon="-1.5444268" version="1" timestamp="2012-05-06T18:43:26Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388533" lat="39.2100439" lon="-1.5369878" version="2" timestamp="2016-12-07T19:32:17Z" changeset="44243059" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388538" lat="39.2101033" lon="-1.5422152" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388540" lat="39.2066774" lon="-1.5420289" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388560" lat="39.2096868" lon="-1.5427156" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388568" lat="39.2100816" lon="-1.5442712" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388571" lat="39.2091589" lon="-1.5450652" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388577" lat="39.2099320" lon="-1.5424795" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388579" lat="39.2089427" lon="-1.5442498" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388582" lat="39.2128858" lon="-1.5396139" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388585" lat="39.2077237" lon="-1.5415203" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388587" lat="39.2089330" lon="-1.5425804" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388589" lat="39.2089802" lon="-1.5441318" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388591" lat="39.2101357" lon="-1.5370990" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388595" lat="39.2101980" lon="-1.5378286" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388596" lat="39.2105015" lon="-1.5384938" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388597" lat="39.2103090" lon="-1.5402369" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388599" lat="39.2120436" lon="-1.5389118" version="1" timestamp="2012-05-06T18:43:27Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388624" lat="39.2088665" lon="-1.5439000" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388626" lat="39.2073965" lon="-1.5387995" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388629" lat="39.2090722" lon="-1.5356844" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388635" lat="39.2104833" lon="-1.5430638" version="2" timestamp="2017-09-03T18:58:59Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388638" lat="39.2090889" lon="-1.5434091" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388640" lat="39.2101671" lon="-1.5421336" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388642" lat="39.2090612" lon="-1.5432896" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388645" lat="39.2085921" lon="-1.5369370" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388648" lat="39.2103892" lon="-1.5390248" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388653" lat="39.2103036" lon="-1.5429845" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388657" lat="39.2094401" lon="-1.5418294" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388666" lat="39.2086435" lon="-1.5431823" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388667" lat="39.2136603" lon="-1.5395452" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388670" lat="39.2134982" lon="-1.5393735" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388671" lat="39.2140978" lon="-1.5396790" version="2" timestamp="2012-07-06T20:39:24Z" changeset="12134300" uid="180097" user="fercema1"/>
+  <node id="1743388672" lat="39.2065612" lon="-1.5405282" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388677" lat="39.2106490" lon="-1.5443222" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388679" lat="39.2080435" lon="-1.5421190" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388683" lat="39.2095288" lon="-1.5428611" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388686" lat="39.2122166" lon="-1.5391418" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388689" lat="39.2100725" lon="-1.5435895" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388690" lat="39.2093468" lon="-1.5407238" version="1" timestamp="2012-05-06T18:43:28Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388699" lat="39.2131990" lon="-1.5408756" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388702" lat="39.2087058" lon="-1.5365089" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388723" lat="39.2096438" lon="-1.5457347" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388737" lat="39.2081426" lon="-1.5428802" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388739" lat="39.2097117" lon="-1.5441747" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388741" lat="39.2094041" lon="-1.5405644" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388742" lat="39.2131824" lon="-1.5411009" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388747" lat="39.2069176" lon="-1.5415112" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388749" lat="39.2090743" lon="-1.5359875" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388763" lat="39.2088540" lon="-1.5360304" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388766" lat="39.2099860" lon="-1.5438206" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388769" lat="39.2091256" lon="-1.5362032" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388775" lat="39.2119022" lon="-1.5436275" version="1" timestamp="2012-05-06T18:43:29Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388778" lat="39.2097117" lon="-1.5438957" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388783" lat="39.2099902" lon="-1.5444483" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388785" lat="39.2097748" lon="-1.5421132" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388788" lat="39.2090051" lon="-1.5439816" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388797" lat="39.2108257" lon="-1.5374960" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388800" lat="39.2074431" lon="-1.5404424" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388802" lat="39.2090051" lon="-1.5448345" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388805" lat="39.2104689" lon="-1.5444928" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388815" lat="39.2061817" lon="-1.5412746" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388817" lat="39.2117270" lon="-1.5391781" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388819" lat="39.2104086" lon="-1.5418884" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388834" lat="39.2089594" lon="-1.5446360" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388843" lat="39.2071429" lon="-1.5410258" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388846" lat="39.2111925" lon="-1.5442279" version="2" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388850" lat="39.2111863" lon="-1.5434159" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388857" lat="39.2120937" lon="-1.5390315" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388860" lat="39.2101856" lon="-1.5372117" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388864" lat="39.2100968" lon="-1.5435245" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388868" lat="39.2131574" lon="-1.5400763" version="1" timestamp="2012-05-06T18:43:30Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388873" lat="39.2101980" lon="-1.5439655" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388874" lat="39.2088540" lon="-1.5405902" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388877" lat="39.2106511" lon="-1.5379090" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388891" lat="39.2107161" lon="-1.5416255" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388893" lat="39.2103830" lon="-1.5444670" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388894" lat="39.2084940" lon="-1.5430580" version="2" timestamp="2017-09-03T18:58:59Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388896" lat="39.2119188" lon="-1.5396686" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388898" lat="39.2077581" lon="-1.5419163" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388899" lat="39.2102188" lon="-1.5374048" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388900" lat="39.2090674" lon="-1.5429462" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388904" lat="39.2085479" lon="-1.5426244" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388905" lat="39.2084331" lon="-1.5430574" version="2" timestamp="2017-09-03T18:58:59Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388911" lat="39.2122972" lon="-1.5443875" version="2" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388913" lat="39.2131824" lon="-1.5415032" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388915" lat="39.2096702" lon="-1.5366591" version="1" timestamp="2012-05-06T18:43:31Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388918" lat="39.2092135" lon="-1.5431007" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388943" lat="39.2139804" lon="-1.5396203" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388947" lat="39.2075336" lon="-1.5391536" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388952" lat="39.2092157" lon="-1.5441199" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388955" lat="39.2093085" lon="-1.5454300" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388959" lat="39.2090882" lon="-1.5449042" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388965" lat="39.2093159" lon="-1.5417739" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388969" lat="39.2089552" lon="-1.5434934" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388970" lat="39.2130604" lon="-1.5398874" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388971" lat="39.2079105" lon="-1.5420064" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388973" lat="39.2073549" lon="-1.5398456" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388974" lat="39.2094525" lon="-1.5431703" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388978" lat="39.2091360" lon="-1.5436409" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743388991" lat="39.2079395" lon="-1.5423712" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743388995" lat="39.2080813" lon="-1.5418201" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743389000" lat="39.2074823" lon="-1.5389862" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389004" lat="39.2082270" lon="-1.5384381" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389007" lat="39.2131283" lon="-1.5413691" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389010" lat="39.2076985" lon="-1.5419205" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389011" lat="39.2135606" lon="-1.5394701" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389024" lat="39.2094415" lon="-1.5425010" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389028" lat="39.2129731" lon="-1.5396997" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389032" lat="39.2131865" lon="-1.5403016" version="1" timestamp="2012-05-06T18:43:32Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389034" lat="39.2102958" lon="-1.5444161" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743389043" lat="39.2097283" lon="-1.5436436" version="1" timestamp="2012-05-06T18:43:33Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389046" lat="39.2101924" lon="-1.5441951" version="1" timestamp="2012-05-06T18:43:33Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389063" lat="39.2099264" lon="-1.5410783" version="1" timestamp="2012-05-06T18:43:33Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389064" lat="39.2091159" lon="-1.5416845" version="1" timestamp="2012-05-06T18:43:33Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389070" lat="39.2089344" lon="-1.5436812" version="1" timestamp="2012-05-06T18:43:33Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389072" lat="39.2089677" lon="-1.5438260" version="1" timestamp="2012-05-06T18:43:33Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389080" lat="39.2079161" lon="-1.5396686" version="1" timestamp="2012-05-06T18:43:33Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389086" lat="39.2099124" lon="-1.5368702" version="2" timestamp="2016-12-07T19:32:17Z" changeset="44243059" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743389093" lat="39.2077369" lon="-1.5421322" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743389103" lat="39.2087121" lon="-1.5398258" version="2" timestamp="2017-03-11T18:10:12Z" changeset="46768407" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743389120" lat="39.2109988" lon="-1.5414002" version="1" timestamp="2012-05-06T18:43:34Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389124" lat="39.2132031" lon="-1.5406127" version="1" timestamp="2012-05-06T18:43:34Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1743389128" lat="39.2106989" lon="-1.5400212" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1743389130" lat="39.2099297" lon="-1.5404289" version="1" timestamp="2012-05-06T18:43:34Z" changeset="11521970" uid="180097" user="fercema1"/>
+  <node id="1815292587" lat="39.2092707" lon="-1.5464005" version="3" timestamp="2017-09-04T21:57:14Z" changeset="51732502" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818749663" lat="39.2105803" lon="-1.5431770" version="1" timestamp="2012-07-09T10:40:30Z" changeset="12160327" uid="180097" user="fercema1"/>
+  <node id="1818749667" lat="39.2089830" lon="-1.5447529" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818749671" lat="39.2107050" lon="-1.5432065" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818749674" lat="39.2108172" lon="-1.5432843" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818749676" lat="39.2095516" lon="-1.5449740" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818749678" lat="39.2105005" lon="-1.5431321" version="1" timestamp="2012-07-09T10:40:31Z" changeset="12160327" uid="180097" user="fercema1"/>
+  <node id="1818749681" lat="39.2094685" lon="-1.5446020" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818749683" lat="39.2111290" lon="-1.5433647" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818749684" lat="39.2094913" lon="-1.5449285" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818774743" lat="39.2090616" lon="-1.5431941" version="2" timestamp="2017-09-03T18:58:59Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818774751" lat="39.2087319" lon="-1.5431606" version="2" timestamp="2017-09-03T18:58:59Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818853975" lat="39.2093564" lon="-1.5455603" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818854162" lat="39.2058897" lon="-1.5424125" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818854237" lat="39.2101522" lon="-1.5441393" version="1" timestamp="2012-07-09T12:26:42Z" changeset="12161419" uid="180097" user="fercema1"/>
+  <node id="1818854323" lat="39.2065397" lon="-1.5422920" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1818854370" lat="39.2064031" lon="-1.5423132" version="2" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866905841" lat="39.2089643" lon="-1.5458123" version="1" timestamp="2012-08-15T07:16:16Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866905846" lat="39.2083064" lon="-1.5431846" version="2" timestamp="2017-03-11T18:10:12Z" changeset="46768407" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866905863" lat="39.2081444" lon="-1.5405880" version="3" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866905892" lat="39.2078681" lon="-1.5408875" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866905897" lat="39.2088167" lon="-1.5454977" version="1" timestamp="2012-08-15T07:16:18Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866905949" lat="39.2078214" lon="-1.5410481" version="1" timestamp="2012-08-15T07:16:19Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866905961" lat="39.2092357" lon="-1.5462460" version="2" timestamp="2017-09-04T21:57:14Z" changeset="51732502" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866905978" lat="39.2080086" lon="-1.5406432" version="2" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866905986" lat="39.2091191" lon="-1.5408298" version="1" timestamp="2012-08-15T07:16:20Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866906000" lat="39.2086559" lon="-1.5449671" version="1" timestamp="2012-08-15T07:16:21Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866906001" lat="39.2091069" lon="-1.5460215" version="2" timestamp="2017-09-04T21:57:14Z" changeset="51732502" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866906108" lat="39.2086328" lon="-1.5446941" version="1" timestamp="2012-08-15T07:16:23Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866906110" lat="39.2084462" lon="-1.5436963" version="1" timestamp="2012-08-15T07:16:23Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866906118" lat="39.2088853" lon="-1.5409384" version="1" timestamp="2012-08-15T07:16:23Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866906150" lat="39.2087085" lon="-1.5451825" version="1" timestamp="2012-08-15T07:16:24Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866906181" lat="39.2086126" lon="-1.5441284" version="2" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="1866906225" lat="39.2087134" lon="-1.5409639" version="1" timestamp="2012-08-15T07:16:26Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="1866906239" lat="39.2086216" lon="-1.5442778" version="1" timestamp="2012-08-15T07:16:26Z" changeset="12735232" uid="180097" user="fercema1"/>
+  <node id="4729496854" lat="39.2078010" lon="-1.5422959" version="1" timestamp="2017-03-11T18:10:05Z" changeset="46768407" uid="3242875" user="Pedro Albacete"/>
+  <node id="4729496855" lat="39.2082407" lon="-1.5406620" version="1" timestamp="2017-03-11T18:10:05Z" changeset="46768407" uid="3242875" user="Pedro Albacete"/>
+  <node id="4729496856" lat="39.2104743" lon="-1.5434764" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4729496857" lat="39.2106855" lon="-1.5435134" version="1" timestamp="2017-03-11T18:10:05Z" changeset="46768407" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845859" lat="39.2110278" lon="-1.5442559" version="1" timestamp="2017-05-06T17:14:15Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845860" lat="39.2108591" lon="-1.5442179" version="1" timestamp="2017-05-06T17:14:15Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845861" lat="39.2100895" lon="-1.5435439" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845862" lat="39.2103277" lon="-1.5435191" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845863" lat="39.2104706" lon="-1.5435117" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845864" lat="39.2091804" lon="-1.5436130" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845865" lat="39.2095504" lon="-1.5436666" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845866" lat="39.2095275" lon="-1.5436022" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845867" lat="39.2095254" lon="-1.5435566" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845868" lat="39.2095358" lon="-1.5434493" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845869" lat="39.2093155" lon="-1.5434574" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845870" lat="39.2093135" lon="-1.5434923" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845871" lat="39.2090988" lon="-1.5434584" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845872" lat="39.2091131" lon="-1.5446655" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845873" lat="39.2091935" lon="-1.5442941" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845874" lat="39.2092330" lon="-1.5442324" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845875" lat="39.2092802" lon="-1.5444578" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845876" lat="39.2092636" lon="-1.5442594" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845877" lat="39.2091640" lon="-1.5442751" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845878" lat="39.2091326" lon="-1.5444766" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845879" lat="39.2092490" lon="-1.5445437" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845880" lat="39.2093613" lon="-1.5446751" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838845881" lat="39.2094278" lon="-1.5447207" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838851032" lat="39.2068582" lon="-1.5424071" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838851033" lat="39.2068856" lon="-1.5420529" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838851034" lat="39.2070328" lon="-1.5424286" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838851035" lat="39.2081302" lon="-1.5417419" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838851036" lat="39.2080621" lon="-1.5410867" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="4838851037" lat="39.2081067" lon="-1.5418422" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077612986" lat="39.2097117" lon="-1.5439357" version="1" timestamp="2017-09-03T18:53:38Z" changeset="51700161" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077612987" lat="39.2098915" lon="-1.5440207" version="1" timestamp="2017-09-03T18:53:38Z" changeset="51700161" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077612989" lat="39.2097998" lon="-1.5440646" version="2" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077612991" lat="39.2100212" lon="-1.5437266" version="1" timestamp="2017-09-03T18:53:38Z" changeset="51700161" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077612994" lat="39.2098555" lon="-1.5436236" version="1" timestamp="2017-09-03T18:53:38Z" changeset="51700161" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077621045" lat="39.2080555" lon="-1.5394147" version="1" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077621046" lat="39.2080655" lon="-1.5405998" version="1" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077621047" lat="39.2085516" lon="-1.5431645" version="1" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077621048" lat="39.2085914" lon="-1.5434070" version="1" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077621049" lat="39.2086724" lon="-1.5434229" version="1" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077621050" lat="39.2086871" lon="-1.5432993" version="1" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077621051" lat="39.2087190" lon="-1.5433057" version="1" timestamp="2017-09-03T18:58:58Z" changeset="51700300" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077630201" lat="39.2086107" lon="-1.5434108" version="1" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077630202" lat="39.2086630" lon="-1.5437582" version="1" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077630203" lat="39.2087124" lon="-1.5437709" version="1" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077630204" lat="39.2087497" lon="-1.5437227" version="1" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077630205" lat="39.2089186" lon="-1.5437546" version="1" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077630206" lat="39.2081386" lon="-1.5411653" version="1" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077630207" lat="39.2083768" lon="-1.5407669" version="1" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077672647" lat="39.2113729" lon="-1.5440753" version="1" timestamp="2017-09-03T19:29:06Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077672648" lat="39.2115070" lon="-1.5443525" version="1" timestamp="2017-09-03T19:29:06Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077672649" lat="39.2114705" lon="-1.5442770" version="1" timestamp="2017-09-03T19:29:06Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077672650" lat="39.2113886" lon="-1.5443417" version="1" timestamp="2017-09-03T19:29:06Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="5077672684" lat="39.2086037" lon="-1.5441053" version="1" timestamp="2017-09-03T19:29:07Z" changeset="51701037" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009458" lat="39.2108851" lon="-1.5385978" version="1" timestamp="2017-09-04T21:53:25Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009459" lat="39.2102134" lon="-1.5377400" version="1" timestamp="2017-09-04T21:53:25Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009462" lat="39.2095327" lon="-1.5381810" version="1" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009469" lat="39.2101334" lon="-1.5380468" version="1" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009471" lat="39.2085637" lon="-1.5425488" version="1" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009472" lat="39.2097492" lon="-1.5453351" version="1" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009473" lat="39.2097831" lon="-1.5452066" version="1" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080009478" lat="39.2096889" lon="-1.5455635" version="1" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080020005" lat="39.2091890" lon="-1.5461565" version="1" timestamp="2017-09-04T21:57:13Z" changeset="51732502" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080020011" lat="39.2112443" lon="-1.5395739" version="1" timestamp="2017-09-04T21:57:13Z" changeset="51732502" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080039980" lat="39.2091609" lon="-1.5356527" version="1" timestamp="2017-09-04T22:05:01Z" changeset="51732629" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080039981" lat="39.2093085" lon="-1.5356715" version="1" timestamp="2017-09-04T22:05:01Z" changeset="51732629" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080039982" lat="39.2094332" lon="-1.5357439" version="1" timestamp="2017-09-04T22:05:01Z" changeset="51732629" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080039983" lat="39.2096140" lon="-1.5359129" version="1" timestamp="2017-09-04T22:05:01Z" changeset="51732629" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080039984" lat="39.2096410" lon="-1.5359692" version="1" timestamp="2017-09-04T22:05:01Z" changeset="51732629" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080039985" lat="39.2095537" lon="-1.5361623" version="1" timestamp="2017-09-04T22:05:01Z" changeset="51732629" uid="3242875" user="Pedro Albacete"/>
+  <node id="5080052293" lat="39.2098075" lon="-1.5367788" version="1" timestamp="2017-09-04T22:08:52Z" changeset="51732695" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861557" lat="39.2092474" lon="-1.5443740" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861558" lat="39.2092621" lon="-1.5444775" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861559" lat="39.2092916" lon="-1.5445050" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861560" lat="39.2094020" lon="-1.5445655" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861561" lat="39.2092419" lon="-1.5443201" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861562" lat="39.2091235" lon="-1.5435798" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861563" lat="39.2094352" lon="-1.5436177" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861564" lat="39.2085729" lon="-1.5431686" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <node id="8914861565" lat="39.2097776" lon="-1.5452276" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete"/>
+  <way id="162446736" version="7" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388364"/>
+    <nd ref="5077630206"/>
+    <nd ref="4838851036"/>
+    <nd ref="1866905892"/>
+    <nd ref="1743388800"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Miguel Soriano"/>
+  </way>
+  <way id="162446737" version="6" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete">
+    <nd ref="1866906181"/>
+    <nd ref="1743388180"/>
+    <nd ref="1743388314"/>
+    <nd ref="1743388624"/>
+    <nd ref="1743388257"/>
+    <nd ref="5077630205"/>
+    <nd ref="1743389070"/>
+    <nd ref="1743388969"/>
+    <nd ref="1743388642"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Barranco"/>
+  </way>
+  <way id="162446739" version="2" timestamp="2017-09-03T18:53:39Z" changeset="51700161" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388435"/>
+    <nd ref="1743388815"/>
+    <nd ref="1743388747"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Clara Campoamor"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446740" version="6" timestamp="2020-03-27T15:36:57Z" changeset="82722232" uid="10751207" user="barchindelhoyo">
+    <nd ref="1743388775"/>
+    <nd ref="5077672647"/>
+    <nd ref="1743388846"/>
+    <nd ref="1743388249"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Fuensanta"/>
+  </way>
+  <way id="162446741" version="4" timestamp="2020-10-04T09:02:34Z" changeset="91924732" uid="6389" user="Jesús Gómez">
+    <nd ref="1743388461"/>
+    <nd ref="1743388672"/>
+    <nd ref="1743388843"/>
+    <nd ref="1743388585"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Isaac Peral"/>
+    <tag k="name:etymology:wikidata" v="Q545065"/>
+  </way>
+  <way id="162446743" version="3" timestamp="2012-09-30T21:33:31Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388159"/>
+    <nd ref="1743388168"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Norte"/>
+  </way>
+  <way id="162446744" version="4" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388595"/>
+    <nd ref="5080009469"/>
+    <nd ref="1743388371"/>
+    <nd ref="1743388369"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Ermita"/>
+  </way>
+  <way id="162446745" version="3" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388596"/>
+    <nd ref="5080009458"/>
+    <nd ref="1743388599"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Doctor Ferrandis"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446748" version="3" timestamp="2012-09-30T21:29:13Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388815"/>
+    <nd ref="1743388672"/>
+    <nd ref="1668753957"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Antonio Machado"/>
+  </way>
+  <way id="162446749" version="5" timestamp="2017-09-03T18:53:39Z" changeset="51700161" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388739"/>
+    <nd ref="5077612989"/>
+    <nd ref="1743388281"/>
+    <nd ref="5077612987"/>
+    <nd ref="1743388766"/>
+    <nd ref="5077612991"/>
+    <nd ref="1743388689"/>
+    <nd ref="4838845861"/>
+    <nd ref="1743388864"/>
+    <nd ref="1743388653"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Mayor"/>
+  </way>
+  <way id="162446750" version="3" timestamp="2017-09-04T22:05:02Z" changeset="51732629" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388367"/>
+    <nd ref="1743388645"/>
+    <nd ref="1743388702"/>
+    <nd ref="1743388763"/>
+    <nd ref="1743388181"/>
+    <nd ref="1743388629"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle del Cementerio"/>
+  </way>
+  <way id="162446751" version="3" timestamp="2012-09-30T21:31:14Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388210"/>
+    <nd ref="1743389120"/>
+    <nd ref="1743388417"/>
+    <nd ref="1743389063"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Dos de Mayo"/>
+  </way>
+  <way id="162446752" version="5" timestamp="2017-05-06T17:14:18Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388134"/>
+    <nd ref="1743388217"/>
+    <nd ref="1818749681"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Peñuela"/>
+  </way>
+  <way id="162446754" version="3" timestamp="2020-10-04T09:02:34Z" changeset="91924732" uid="6389" user="Jesús Gómez">
+    <nd ref="1743388974"/>
+    <nd ref="1743388918"/>
+    <nd ref="1743388900"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Isaac Peral"/>
+    <tag k="name:etymology:wikidata" v="Q545065"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446755" version="4" timestamp="2012-09-30T21:33:16Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388366"/>
+    <nd ref="1818854323"/>
+    <nd ref="1743388540"/>
+    <nd ref="1743388747"/>
+    <nd ref="1743388843"/>
+    <nd ref="1743388800"/>
+    <nd ref="1743388310"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Ministro Monares"/>
+  </way>
+  <way id="162446756" version="2" timestamp="2017-09-03T18:53:39Z" changeset="51700161" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388183"/>
+    <nd ref="1743388973"/>
+    <nd ref="1743388428"/>
+    <nd ref="1743388187"/>
+    <nd ref="1743388947"/>
+    <nd ref="1743389000"/>
+    <nd ref="1743388626"/>
+    <nd ref="1743388357"/>
+    <nd ref="1743388382"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Camino de La Recueja"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446757" version="3" timestamp="2012-09-30T21:31:08Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743389080"/>
+    <nd ref="1743388270"/>
+    <nd ref="1743388874"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Doctor Fleming"/>
+  </way>
+  <way id="162446759" version="4" timestamp="2017-04-29T22:03:34Z" changeset="48268509" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388528"/>
+    <nd ref="1743388741"/>
+    <nd ref="1743389103"/>
+    <nd ref="1743388516"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Diego Velázquez"/>
+  </way>
+  <way id="162446760" version="3" timestamp="2020-10-04T09:02:34Z" changeset="91924732" uid="6389" user="Jesús Gómez">
+    <nd ref="1743389010"/>
+    <nd ref="1743388898"/>
+    <nd ref="1743388971"/>
+    <nd ref="1743388679"/>
+    <nd ref="1743388995"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Isaac Peral"/>
+    <tag k="name:etymology:wikidata" v="Q545065"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446762" version="4" timestamp="2017-02-17T02:52:19Z" changeset="46153213" uid="220932" user="mor">
+    <nd ref="1743388124"/>
+    <nd ref="1743388491"/>
+    <nd ref="1743388775"/>
+    <nd ref="1743388224"/>
+    <nd ref="1743388850"/>
+    <nd ref="1818749683"/>
+    <nd ref="1818749674"/>
+    <nd ref="1818749671"/>
+    <nd ref="1818749663"/>
+    <nd ref="1818749678"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Cristóbal Colón"/>
+  </way>
+  <way id="162446763" version="4" timestamp="2017-09-03T18:58:59Z" changeset="51700300" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388367"/>
+    <nd ref="1743388229"/>
+    <nd ref="1743389004"/>
+    <nd ref="1743388516"/>
+    <nd ref="5077621045"/>
+    <nd ref="1743389080"/>
+    <nd ref="1743388468"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle del Cementerio"/>
+  </way>
+  <way id="162446764" version="3" timestamp="2012-09-30T21:30:30Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388249"/>
+    <nd ref="1743388850"/>
+    <nd ref="1743388159"/>
+    <nd ref="1743388210"/>
+    <nd ref="1743388896"/>
+    <nd ref="1743388857"/>
+    <nd ref="1743388445"/>
+    <nd ref="1743388455"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Cervantes"/>
+  </way>
+  <way id="162446768" version="5" timestamp="2017-03-11T18:10:26Z" changeset="46768407" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388290"/>
+    <nd ref="1743389103"/>
+    <nd ref="1743388270"/>
+    <nd ref="4729496855"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Francisco de Goya"/>
+  </way>
+  <way id="162446770" version="4" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388417"/>
+    <nd ref="1743389128"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Bernardino Pérez Iniesta"/>
+  </way>
+  <way id="162446771" version="4" timestamp="2017-09-03T19:29:08Z" changeset="51701037" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388354"/>
+    <nd ref="1743388677"/>
+    <tag k="highway" v="steps"/>
+    <tag k="name" v="Calle la Fuente"/>
+  </way>
+  <way id="162446772" version="3" timestamp="2012-09-30T21:34:05Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388168"/>
+    <nd ref="1743388224"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Poniente"/>
+  </way>
+  <way id="162446775" version="6" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388737"/>
+    <nd ref="1743388432"/>
+    <nd ref="1743388905"/>
+    <nd ref="1743388894"/>
+    <nd ref="5077621047"/>
+    <nd ref="8914861564"/>
+    <nd ref="1743388666"/>
+    <nd ref="1818774751"/>
+    <nd ref="1818774743"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Ybarra"/>
+  </way>
+  <way id="162446776" version="2" timestamp="2017-05-06T17:14:18Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388409"/>
+    <nd ref="1743388911"/>
+    <nd ref="1743388491"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Cristóbal Colón"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446778" version="3" timestamp="2012-09-30T21:36:20Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388464"/>
+    <nd ref="1743388974"/>
+    <nd ref="1743388226"/>
+    <nd ref="1743388219"/>
+    <nd ref="1743388683"/>
+    <nd ref="1743388255"/>
+    <nd ref="1743388560"/>
+    <nd ref="1743388162"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle la Cruz"/>
+  </way>
+  <way id="162446779" version="5" timestamp="2017-05-06T17:14:18Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388247"/>
+    <nd ref="4838845863"/>
+    <nd ref="4729496856"/>
+    <nd ref="1743388251"/>
+    <nd ref="1743388488"/>
+    <nd ref="1818749678"/>
+    <nd ref="1743388635"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Don Pedro"/>
+  </way>
+  <way id="162446780" version="4" timestamp="2017-09-03T18:58:59Z" changeset="51700300" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388785"/>
+    <nd ref="1743388538"/>
+    <nd ref="1743388640"/>
+    <nd ref="1743388819"/>
+    <nd ref="1743388891"/>
+    <nd ref="1743388404"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Contreras"/>
+  </way>
+  <way id="162446781" version="3" timestamp="2012-09-30T21:31:07Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388797"/>
+    <nd ref="1743388212"/>
+    <nd ref="1743388877"/>
+    <nd ref="1743388596"/>
+    <nd ref="1743388648"/>
+    <nd ref="1743388597"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Doctor Ferrandis"/>
+  </way>
+  <way id="162446782" version="5" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388231"/>
+    <nd ref="1743388540"/>
+    <nd ref="4838851033"/>
+    <nd ref="1743388140"/>
+    <nd ref="1743389093"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Teniente Gómez"/>
+  </way>
+  <way id="162446785" version="4" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388913"/>
+    <nd ref="1743389007"/>
+    <nd ref="1743388742"/>
+    <nd ref="1743388699"/>
+    <nd ref="1743389124"/>
+    <nd ref="1743389032"/>
+    <nd ref="1743388868"/>
+    <nd ref="1743388970"/>
+    <nd ref="1743389028"/>
+    <nd ref="1743388582"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Torilejo"/>
+  </way>
+  <way id="162446787" version="2" timestamp="2017-05-06T17:14:18Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743389024"/>
+    <nd ref="1743388263"/>
+    <nd ref="1743388683"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle la Cruz"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446788" version="4" timestamp="2017-04-29T22:03:34Z" changeset="48268509" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388326"/>
+    <nd ref="1743388238"/>
+    <nd ref="1743389063"/>
+    <nd ref="1743389130"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Alcalá"/>
+  </way>
+  <way id="162446790" version="2" timestamp="2017-05-06T17:14:17Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388671"/>
+    <nd ref="1743388943"/>
+    <nd ref="1743388667"/>
+    <nd ref="1743389011"/>
+    <nd ref="1743388670"/>
+    <nd ref="1743388518"/>
+    <nd ref="1743388524"/>
+    <nd ref="1743388582"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Cervantes"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446791" version="3" timestamp="2012-09-30T21:29:56Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388485"/>
+    <nd ref="1743388171"/>
+    <nd ref="1743388173"/>
+    <nd ref="1743388138"/>
+    <nd ref="1743389064"/>
+    <nd ref="1743388965"/>
+    <nd ref="1743388657"/>
+    <nd ref="1743388326"/>
+    <nd ref="1743388785"/>
+    <nd ref="1743388162"/>
+    <nd ref="1743388577"/>
+    <nd ref="1743388653"/>
+    <nd ref="1743388635"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Calvario"/>
+  </way>
+  <way id="162446792" version="2" timestamp="2017-05-06T17:23:45Z" changeset="48457521" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388523"/>
+    <nd ref="1743388375"/>
+    <nd ref="1743388529"/>
+    <nd ref="1743388991"/>
+    <nd ref="1743388322"/>
+    <nd ref="1743389093"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Teniente Gómez"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="162446793" version="5" timestamp="2017-09-04T22:08:52Z" changeset="51732695" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388595"/>
+    <nd ref="5080009459"/>
+    <nd ref="1743388214"/>
+    <nd ref="1743388899"/>
+    <nd ref="1743388860"/>
+    <nd ref="1743388591"/>
+    <nd ref="1743388533"/>
+    <nd ref="1743389086"/>
+    <nd ref="5080052293"/>
+    <nd ref="1743388915"/>
+    <nd ref="1743388157"/>
+    <nd ref="1743388149"/>
+    <nd ref="1743388769"/>
+    <nd ref="1743388749"/>
+    <nd ref="1743388449"/>
+    <nd ref="1743388629"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Ermita"/>
+  </way>
+  <way id="162446795" version="3" timestamp="2012-09-30T21:35:33Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388587"/>
+    <nd ref="1743388965"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Valera"/>
+  </way>
+  <way id="162446796" version="5" timestamp="2017-09-04T21:53:26Z" changeset="51732433" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743389086"/>
+    <nd ref="5080009462"/>
+    <nd ref="1743388324"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Bartolomé E. Murillo"/>
+  </way>
+  <way id="170721639" version="2" timestamp="2017-09-03T18:53:39Z" changeset="51700161" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388739"/>
+    <nd ref="5077612986"/>
+    <nd ref="1743388778"/>
+    <nd ref="1743389043"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle San Miguel"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="170721644" version="4" timestamp="2020-10-04T09:02:34Z" changeset="91924732" uid="6389" user="Jesús Gómez">
+    <nd ref="1743388900"/>
+    <nd ref="1743388520"/>
+    <nd ref="1743388587"/>
+    <nd ref="1743388167"/>
+    <nd ref="4838851037"/>
+    <nd ref="1743388995"/>
+    <nd ref="1743388585"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Isaac Peral"/>
+    <tag k="name:etymology:wikidata" v="Q545065"/>
+  </way>
+  <way id="170721649" version="3" timestamp="2017-09-03T18:53:39Z" changeset="51700161" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388275"/>
+    <nd ref="1743389043"/>
+    <nd ref="5077612994"/>
+    <nd ref="1743388689"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Real"/>
+  </way>
+  <way id="170721650" version="3" timestamp="2017-09-03T19:06:50Z" changeset="51700484" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743389063"/>
+    <nd ref="1743388690"/>
+    <tag k="highway" v="pedestrian"/>
+    <tag k="name" v="Calle Lope de Vega"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="170721659" version="5" timestamp="2017-09-04T21:57:14Z" changeset="51732502" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388485"/>
+    <nd ref="1866906225"/>
+    <nd ref="1866906118"/>
+    <nd ref="1866905986"/>
+    <nd ref="1743388690"/>
+    <nd ref="1743388528"/>
+    <nd ref="1743388369"/>
+    <nd ref="1743389130"/>
+    <nd ref="1743388597"/>
+    <nd ref="1743389128"/>
+    <nd ref="5080020011"/>
+    <nd ref="1743388817"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="name" v="Avenida Castilla-La Mancha"/>
+    <tag k="ref" v="CM-3218"/>
+  </way>
+  <way id="170721666" version="3" timestamp="2012-08-15T07:16:34Z" changeset="12735232" uid="180097" user="fercema1">
+    <nd ref="1668753957"/>
+    <nd ref="1668755540"/>
+    <nd ref="1743388183"/>
+    <nd ref="1743388310"/>
+    <nd ref="1743388468"/>
+    <nd ref="1866905863"/>
+    <tag k="highway" v="tertiary"/>
+    <tag k="name" v="Calle Calvario"/>
+    <tag k="ref" v="AB-207"/>
+  </way>
+  <way id="170721669" version="2" timestamp="2012-09-30T21:34:56Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1818749676"/>
+    <nd ref="1818749684"/>
+    <nd ref="1743388217"/>
+    <nd ref="1743388739"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle San Miguel"/>
+  </way>
+  <way id="170721671" version="4" timestamp="2017-09-04T21:53:27Z" changeset="51732433" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388894"/>
+    <nd ref="1743388523"/>
+    <nd ref="1743388904"/>
+    <nd ref="5080009471"/>
+    <nd ref="1743388167"/>
+    <nd ref="1743388364"/>
+    <nd ref="1743388173"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle San Cristóbal"/>
+  </way>
+  <way id="170721681" version="5" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388723"/>
+    <nd ref="5080009478"/>
+    <nd ref="5080009472"/>
+    <nd ref="8914861565"/>
+    <nd ref="5080009473"/>
+    <nd ref="1743388378"/>
+    <nd ref="1743388134"/>
+    <nd ref="1743388287"/>
+    <nd ref="1743388783"/>
+    <nd ref="1743388568"/>
+    <nd ref="1818854237"/>
+    <nd ref="1743388154"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle la Fuente"/>
+  </way>
+  <way id="170721684" version="8" timestamp="2017-09-04T21:57:14Z" changeset="51732502" uid="3242875" user="Pedro Albacete">
+    <nd ref="1815292587"/>
+    <nd ref="1866905961"/>
+    <nd ref="5080020005"/>
+    <nd ref="1866906001"/>
+    <nd ref="1866905841"/>
+    <nd ref="1866905897"/>
+    <nd ref="1866906150"/>
+    <nd ref="1866906000"/>
+    <nd ref="1866906108"/>
+    <nd ref="1866906239"/>
+    <nd ref="1866906181"/>
+    <nd ref="5077672684"/>
+    <nd ref="1866906110"/>
+    <nd ref="1866905846"/>
+    <nd ref="1743388737"/>
+    <nd ref="4729496854"/>
+    <nd ref="1743389093"/>
+    <nd ref="1743389010"/>
+    <nd ref="1743388585"/>
+    <nd ref="1866905949"/>
+    <nd ref="1866905892"/>
+    <nd ref="1866905978"/>
+    <nd ref="5077621046"/>
+    <nd ref="1866905863"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="lanes" v="2"/>
+    <tag k="name" v="Calle Carretera de Albacete"/>
+    <tag k="ref" v="CM-3218"/>
+  </way>
+  <way id="170721685" version="3" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388324"/>
+    <nd ref="1743388371"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Bartolomé E. Murillo"/>
+  </way>
+  <way id="170721686" version="2" timestamp="2012-09-30T21:35:33Z" changeset="13315749" uid="26599" user="cdavila">
+    <nd ref="1743388635"/>
+    <nd ref="1743388525"/>
+    <nd ref="1743388319"/>
+    <nd ref="1743388306"/>
+    <nd ref="1743388404"/>
+    <nd ref="1743389120"/>
+    <nd ref="1743388817"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Valencia"/>
+  </way>
+  <way id="170727041" version="4" timestamp="2017-09-03T18:53:39Z" changeset="51700161" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743389070"/>
+    <nd ref="1743389072"/>
+    <nd ref="1743388788"/>
+    <nd ref="1743388589"/>
+    <nd ref="1743388579"/>
+    <nd ref="1743388531"/>
+    <nd ref="1743388834"/>
+    <nd ref="1818749667"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Barranco"/>
+  </way>
+  <way id="176130589" version="4" timestamp="2017-09-03T19:03:56Z" changeset="51700406" uid="3242875" user="Pedro Albacete">
+    <nd ref="1866905863"/>
+    <nd ref="4729496855"/>
+    <nd ref="5077630207"/>
+    <nd ref="1743388485"/>
+    <tag k="highway" v="secondary"/>
+    <tag k="name" v="Calle Calvario"/>
+    <tag k="ref" v="CM-3218"/>
+  </way>
+  <way id="479916892" version="2" timestamp="2017-05-06T17:14:18Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="4729496856"/>
+    <nd ref="4729496857"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Don Pedro"/>
+  </way>
+  <way id="491796868" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388582"/>
+    <nd ref="1743388221"/>
+    <nd ref="1743388329"/>
+    <nd ref="1743388472"/>
+    <nd ref="1743388686"/>
+    <nd ref="1743388857"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Cervantes"/>
+  </way>
+  <way id="491796869" version="1" timestamp="2017-05-06T17:14:16Z" changeset="48457330" uid="3242875" user="Pedro Albacete">
+    <nd ref="4838845861"/>
+    <nd ref="4838845862"/>
+    <nd ref="4838845863"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Real"/>
+  </way>
+  <way id="491796870" version="4" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388978"/>
+    <nd ref="4838845864"/>
+    <nd ref="4838845865"/>
+    <nd ref="1743388275"/>
+    <nd ref="4838845866"/>
+    <nd ref="4838845867"/>
+    <nd ref="4838845868"/>
+    <nd ref="1743388464"/>
+    <nd ref="4838845869"/>
+    <nd ref="4838845870"/>
+    <nd ref="4838845871"/>
+    <nd ref="1743388233"/>
+    <nd ref="8914861562"/>
+    <nd ref="1743388978"/>
+    <tag k="area" v="yes"/>
+    <tag k="highway" v="pedestrian"/>
+    <tag k="name" v="Plaza de la Constitución"/>
+  </way>
+  <way id="491796871" version="2" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="1818749681"/>
+    <nd ref="8914861560"/>
+    <nd ref="8914861559"/>
+    <nd ref="8914861558"/>
+    <nd ref="8914861557"/>
+    <nd ref="8914861561"/>
+    <nd ref="4838845874"/>
+    <nd ref="1743388952"/>
+    <nd ref="1743388978"/>
+    <nd ref="8914861562"/>
+    <nd ref="1743388233"/>
+    <nd ref="4838845871"/>
+    <nd ref="1743388638"/>
+    <nd ref="1743388642"/>
+    <nd ref="1818774743"/>
+    <nd ref="1743388900"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Peñuela"/>
+  </way>
+  <way id="491796872" version="3" timestamp="2021-07-12T21:59:13Z" changeset="107863994" uid="3242875" user="Pedro Albacete">
+    <nd ref="1818749681"/>
+    <nd ref="4838845875"/>
+    <nd ref="4838845876"/>
+    <nd ref="4838845874"/>
+    <nd ref="4838845877"/>
+    <nd ref="4838845873"/>
+    <nd ref="4838845878"/>
+    <nd ref="4838845872"/>
+    <nd ref="4838845879"/>
+    <nd ref="4838845880"/>
+    <nd ref="4838845881"/>
+    <nd ref="1818749681"/>
+    <tag k="area" v="yes"/>
+    <tag k="highway" v="pedestrian"/>
+    <tag k="name" v="Calle Peñuela"/>
+  </way>
+  <way id="491797548" version="2" timestamp="2017-09-03T18:53:39Z" changeset="51700161" uid="3242875" user="Pedro Albacete">
+    <nd ref="1818854162"/>
+    <nd ref="1818854370"/>
+    <nd ref="1818854323"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Ministro Monares"/>
+    <tag k="source" v="fercema1"/>
+  </way>
+  <way id="491797549" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete">
+    <nd ref="4838851034"/>
+    <nd ref="4838851032"/>
+    <nd ref="4838851033"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Teniente Gómez"/>
+  </way>
+  <way id="491797551" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete">
+    <nd ref="4838851035"/>
+    <nd ref="4838851036"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Travesía Isaac Peral"/>
+  </way>
+  <way id="491797554" version="1" timestamp="2017-05-06T17:23:44Z" changeset="48457521" uid="3242875" user="Pedro Albacete">
+    <nd ref="4838851037"/>
+    <nd ref="4838851035"/>
+    <tag k="highway" v="pedestrian"/>
+    <tag k="name" v="Travesía Isaac Peral"/>
+  </way>
+  <way id="521075316" version="2" timestamp="2020-03-27T15:36:57Z" changeset="82722232" uid="10751207" user="barchindelhoyo">
+    <nd ref="1818749667"/>
+    <nd ref="1743388802"/>
+    <nd ref="1743388959"/>
+    <nd ref="1743388571"/>
+    <nd ref="1743388955"/>
+    <nd ref="1818853975"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle la Fuente"/>
+  </way>
+  <way id="521076275" version="5" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="5077621047"/>
+    <nd ref="5077621048"/>
+    <nd ref="5077630201"/>
+    <nd ref="5077621049"/>
+    <nd ref="5077621050"/>
+    <nd ref="5077621051"/>
+    <nd ref="1818774751"/>
+    <nd ref="1743388666"/>
+    <nd ref="8914861564"/>
+    <nd ref="5077621047"/>
+    <tag k="area" v="yes"/>
+    <tag k="highway" v="pedestrian"/>
+    <tag k="name" v="Calle Ybarra"/>
+  </way>
+  <way id="521077047" version="2" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="8914861564"/>
+    <nd ref="5077630201"/>
+    <nd ref="5077630202"/>
+    <nd ref="5077630203"/>
+    <nd ref="5077630204"/>
+    <nd ref="5077630205"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Ybarra"/>
+  </way>
+  <way id="521081680" version="1" timestamp="2017-09-03T19:29:07Z" changeset="51701037" uid="3242875" user="Pedro Albacete">
+    <nd ref="5077672647"/>
+    <nd ref="5077672649"/>
+    <nd ref="5077672648"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Fuensanta"/>
+  </way>
+  <way id="521081681" version="1" timestamp="2017-09-03T19:29:07Z" changeset="51701037" uid="3242875" user="Pedro Albacete">
+    <nd ref="5077672649"/>
+    <nd ref="5077672650"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Fuensanta"/>
+  </way>
+  <way id="521081683" version="1" timestamp="2017-09-03T19:29:07Z" changeset="51701037" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388677"/>
+    <nd ref="1743388336"/>
+    <nd ref="1743388805"/>
+    <nd ref="1743388893"/>
+    <nd ref="1743389034"/>
+    <nd ref="1743388359"/>
+    <nd ref="1743389046"/>
+    <nd ref="1743388154"/>
+    <nd ref="1743388873"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle la Fuente"/>
+  </way>
+  <way id="521375742" version="1" timestamp="2017-09-04T22:05:01Z" changeset="51732629" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388629"/>
+    <nd ref="5080039980"/>
+    <nd ref="5080039981"/>
+    <nd ref="5080039982"/>
+    <nd ref="5080039983"/>
+    <nd ref="5080039984"/>
+    <nd ref="5080039985"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Ermita"/>
+  </way>
+  <way id="785117714" version="1" timestamp="2020-03-27T15:36:57Z" changeset="82722232" uid="10751207" user="barchindelhoyo">
+    <nd ref="1743388249"/>
+    <nd ref="4838845859"/>
+    <nd ref="4838845860"/>
+    <nd ref="1743388354"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Fuensanta"/>
+  </way>
+  <way id="785117715" version="1" timestamp="2020-03-27T15:36:57Z" changeset="82722232" uid="10751207" user="barchindelhoyo">
+    <nd ref="1743388354"/>
+    <nd ref="1743388309"/>
+    <nd ref="1743388412"/>
+    <nd ref="1743388247"/>
+    <nd ref="1743388873"/>
+    <nd ref="1743388414"/>
+    <nd ref="1743388766"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle Fuensanta"/>
+  </way>
+  <way id="785117717" version="1" timestamp="2020-03-27T15:36:57Z" changeset="82722232" uid="10751207" user="barchindelhoyo">
+    <nd ref="1818853975"/>
+    <nd ref="1743388431"/>
+    <nd ref="1743388527"/>
+    <nd ref="1743388723"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Calle la Fuente"/>
+  </way>
+  <way id="963778473" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388275"/>
+    <nd ref="8914861563"/>
+    <nd ref="8914861562"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Plaza de la Constitución"/>
+  </way>
+  <way id="963778474" version="1" timestamp="2021-07-12T22:01:36Z" changeset="107864059" uid="3242875" user="Pedro Albacete">
+    <nd ref="1743388464"/>
+    <nd ref="8914861563"/>
+    <tag k="highway" v="residential"/>
+    <tag k="name" v="Plaza de la Constitución"/>
+  </way>
+  <area id="3600346319">
+    <tag k="admin_level" v="8"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="idee:name" v="Abengibre"/>
+    <tag k="ine:municipio" v="02001"/>
+    <tag k="name" v="Abengibre"/>
+    <tag k="population" v="932"/>
+    <tag k="population:date" v="2009"/>
+    <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q559227"/>
+    <tag k="wikipedia" v="es:Abengibre (Albacete)"/>
+  </area>
+
+</osm>

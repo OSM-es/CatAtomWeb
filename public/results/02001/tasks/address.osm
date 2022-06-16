@@ -1,0 +1,3908 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm upload='never' version='0.6' generator='CatAtom2Osm 2.9.11'>
+<changeset>
+  <tag k="comment" v="#Spanish_Cadastre_Buildings_Import"/>
+  <tag k="source" v="Direcci&#243;n General del Catastro"/>
+  <tag k="type" v="import"/>
+  <tag k="url" v="https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_Import"/>
+  <tag k="generator" v="CatAtom2Osm 2.9.11"/>
+  <tag k="source:date" v="2022-03-11"/>
+</changeset>
+<node id="-7" action="modify" visible="true" lon="-1.5417118985717042" lat="39.20981245593759">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-93" action="modify" visible="true" lon="-1.5429523533514493" lat="39.2105522787316">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-177" action="modify" visible="true" lon="-1.5427111814118166" lat="39.208899542716864">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-261" action="modify" visible="true" lon="-1.5435218518589016" lat="39.20848745319575">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-345" action="modify" visible="true" lon="-1.5407740997014698" lat="39.2085167925752">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="51"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-429" action="modify" visible="true" lon="-1.5399824911253537" lat="39.20827079906309">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-513" action="modify" visible="true" lon="-1.541703438799828" lat="39.210826805578954">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-587" action="modify" visible="true" lon="-1.5437816462093141" lat="39.21042516941725">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-674" action="modify" visible="true" lon="-1.5432438167760507" lat="39.21020046527699">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-5" action="modify" visible="true" lon="-1.5417721121527599" lat="39.20979627017474">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-51" action="modify" visible="true" lon="-1.5443192103317895" lat="39.2096406118699">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-135" action="modify" visible="true" lon="-1.5364269814312153" lat="39.21023394559384">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-219" action="modify" visible="true" lon="-1.5434563462529243" lat="39.209405910908835">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-303" action="modify" visible="true" lon="-1.5395679719729678" lat="39.20935532041625">
+  <tag k="addr:street" v="CL BARTOLOME E. MURILLO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-387" action="modify" visible="true" lon="-1.5418201631025585" lat="39.21137078538894">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-471" action="modify" visible="true" lon="-1.5424808984966258" lat="39.20647334768918">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-632" action="modify" visible="true" lon="-1.5439436245845035" lat="39.210334010243564">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-8" action="modify" visible="true" lon="-1.5416295563344695" lat="39.20983458180603">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-94" action="modify" visible="true" lon="-1.5418474045112045" lat="39.21087972959713">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-178" action="modify" visible="true" lon="-1.5428354632458803" lat="39.208798027149456">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="10D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-262" action="modify" visible="true" lon="-1.5433874402993935" lat="39.20858020181866">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-346" action="modify" visible="true" lon="-1.5408474892943356" lat="39.20859700385552">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="51D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-430" action="modify" visible="true" lon="-1.5398091211975962" lat="39.208102923780224">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-514" action="modify" visible="true" lon="-1.5416462950423524" lat="39.21085966029957">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-562" action="modify" visible="true" lon="-1.5425862286355327" lat="39.20952207399528">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-675" action="modify" visible="true" lon="-1.543180827593794" lat="39.210240775875974">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-52" action="modify" visible="true" lon="-1.544413320223055" lat="39.209609440500046">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-136" action="modify" visible="true" lon="-1.538338308590119" lat="39.20149384979992">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-220" action="modify" visible="true" lon="-1.5432900410219954" lat="39.20960430533929">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-304" action="modify" visible="true" lon="-1.5394718305804853" lat="39.20927202981854">
+  <tag k="addr:street" v="CL BARTOLOME E. MURILLO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-388" action="modify" visible="true" lon="-1.542312878563913" lat="39.21132000682787">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-472" action="modify" visible="true" lon="-1.5424561637887697" lat="39.206424453857586">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="9D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-554" action="modify" visible="true" lon="-1.5410252106685944" lat="39.21310433886747">
+  <tag k="addr:street" v="CL TORILEJO"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-633" action="modify" visible="true" lon="-1.5441548169064114" lat="39.21079756121289">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-12" action="modify" visible="true" lon="-1.544708598084175" lat="39.20965169486456">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-95" action="modify" visible="true" lon="-1.541091586449367" lat="39.21105158658266">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-179" action="modify" visible="true" lon="-1.5420307966865388" lat="39.20834121461832">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-263" action="modify" visible="true" lon="-1.5432065146959455" lat="39.20895823742447">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-347" action="modify" visible="true" lon="-1.5406865158285112" lat="39.208339275367365">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="53D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-431" action="modify" visible="true" lon="-1.5404361310043544" lat="39.208731514403375">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-515" action="modify" visible="true" lon="-1.5421426507717104" lat="39.210028567236186">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-577" action="modify" visible="true" lon="-1.54283179395338" lat="39.209642392941255">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-676" action="modify" visible="true" lon="-1.5437728950680525" lat="39.21003027116015">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-53" action="modify" visible="true" lon="-1.5445433740131793" lat="39.2095651124371">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-137" action="modify" visible="true" lon="-1.5345808450708456" lat="39.2139091545609">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-221" action="modify" visible="true" lon="-1.5432920545503506" lat="39.20963577696057">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-305" action="modify" visible="true" lon="-1.5429950732426156" lat="39.210384029574634">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-389" action="modify" visible="true" lon="-1.5421217123915638" lat="39.21133968978817">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-473" action="modify" visible="true" lon="-1.5401636615883878" lat="39.20889314130505">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-553" action="modify" visible="true" lon="-1.5408270892950175" lat="39.21310893917802">
+  <tag k="addr:street" v="CL TORILEJO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-634" action="modify" visible="true" lon="-1.5440867372036835" lat="39.21013525832601">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-11" action="modify" visible="true" lon="-1.54448859271323" lat="39.209324119397046">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-96" action="modify" visible="true" lon="-1.5415424008397336" lat="39.211003256269464">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-180" action="modify" visible="true" lon="-1.5423624679287298" lat="39.20885400157729">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-264" action="modify" visible="true" lon="-1.5432148280592357" lat="39.20857700236802">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-348" action="modify" visible="true" lon="-1.540472848116406" lat="39.20817071596666">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="55"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-432" action="modify" visible="true" lon="-1.5403669551782142" lat="39.2086603661126">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-516" action="modify" visible="true" lon="-1.5421334909278197" lat="39.210149296095324">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-579" action="modify" visible="true" lon="-1.5435388174610247" lat="39.210579004089944">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-306" action="modify" visible="true" lon="-1.5425954535973385" lat="39.210367907515895">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-54" action="modify" visible="true" lon="-1.5450209652118312" lat="39.209599966791956">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="16A"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-138" action="modify" visible="true" lon="-1.5389180885838918" lat="39.20611879692706">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-222" action="modify" visible="true" lon="-1.5432786908344358" lat="39.2096618067826">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="17D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-390" action="modify" visible="true" lon="-1.5396910495249865" lat="39.2118040756315">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="28A"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-474" action="modify" visible="true" lon="-1.5396680379641947" lat="39.208682220281084">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-552" action="modify" visible="true" lon="-1.54057585389001" lat="39.21311477483906">
+  <tag k="addr:street" v="CL TORILEJO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-635" action="modify" visible="true" lon="-1.5441844536375349" lat="39.210910381934546">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-13" action="modify" visible="true" lon="-1.5443506730452041" lat="39.20918850067104">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-97" action="modify" visible="true" lon="-1.5416385269108326" lat="39.21096994990985">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-181" action="modify" visible="true" lon="-1.5427918629225934" lat="39.20886243796084">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-265" action="modify" visible="true" lon="-1.5431816277765495" lat="39.20837416753274">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-349" action="modify" visible="true" lon="-1.5404208580398455" lat="39.20810861328283">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="57"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-433" action="modify" visible="true" lon="-1.535349862173213" lat="39.20935270123251">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="60"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-517" action="modify" visible="true" lon="-1.542127093397311" lat="39.210209034524595">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-591" action="modify" visible="true" lon="-1.54277923177148" lat="39.211636233893586">
+  <tag k="addr:street" v="CL NORTE"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-55" action="modify" visible="true" lon="-1.5447693934946187" lat="39.209551177075916">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-139" action="modify" visible="true" lon="-1.5242931506591857" lat="39.2149912737654">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-223" action="modify" visible="true" lon="-1.5434966811266337" lat="39.20954567616873">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-307" action="modify" visible="true" lon="-1.5426726852733466" lat="39.21005320391452">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-391" action="modify" visible="true" lon="-1.541956313486046" lat="39.21135672155001">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-475" action="modify" visible="true" lon="-1.539362393514579" lat="39.2084813205327">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-551" action="modify" visible="true" lon="-1.5416981964436935" lat="39.21337478315014">
+  <tag k="addr:street" v="CL TORILEJO"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-636" action="modify" visible="true" lon="-1.5440278340103761" lat="39.21056578875372">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-14" action="modify" visible="true" lon="-1.5445158069780773" lat="39.209369151262756">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-98" action="modify" visible="true" lon="-1.5413596817328823" lat="39.21105290794792">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-182" action="modify" visible="true" lon="-1.5428524705174083" lat="39.20874308700026">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="12C"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-266" action="modify" visible="true" lon="-1.5431647447056995" lat="39.2089004040769">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-350" action="modify" visible="true" lon="-1.5403025969823587" lat="39.207969631963266">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="59"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-434" action="modify" visible="true" lon="-1.5402899542805504" lat="39.20858119052852">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-518" action="modify" visible="true" lon="-1.5420887346399692" lat="39.21019090024542">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-584" action="modify" visible="true" lon="-1.5434215074972655" lat="39.21055230069369">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-56" action="modify" visible="true" lon="-1.5448590513564744" lat="39.20950562311696">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-140" action="modify" visible="true" lon="-1.5382178878599861" lat="39.20519671321159">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-224" action="modify" visible="true" lon="-1.5436599547923604" lat="39.209493042388544">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-308" action="modify" visible="true" lon="-1.5425752013166496" lat="39.21035232825033">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-392" action="modify" visible="true" lon="-1.5438665672013567" lat="39.21117494187701">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-476" action="modify" visible="true" lon="-1.5402048787819238" lat="39.20935805592225">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="1A"/>
+</node>
+<node id="-550" action="modify" visible="true" lon="-1.5428075472568397" lat="39.20836138328959">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-637" action="modify" visible="true" lon="-1.544004951356237" lat="39.21029044910744">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-15" action="modify" visible="true" lon="-1.544410903652264" lat="39.20916582622858">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-99" action="modify" visible="true" lon="-1.5407531218711434" lat="39.211165108549544">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-183" action="modify" visible="true" lon="-1.5427054411532246" lat="39.20876677051929">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="12E"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-267" action="modify" visible="true" lon="-1.5430431044335395" lat="39.20877682804938">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="3D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-351" action="modify" visible="true" lon="-1.5427819547754527" lat="39.21009818606148">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-435" action="modify" visible="true" lon="-1.540144057081754" lat="39.208427353199035">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-519" action="modify" visible="true" lon="-1.5420304440521158" lat="39.21023729521118">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-563" action="modify" visible="true" lon="-1.5425844605864727" lat="39.209376501718985">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="14A"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-57" action="modify" visible="true" lon="-1.5441503541015564" lat="39.20981714245161">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-141" action="modify" visible="true" lon="-1.5326036170445414" lat="39.2152183525497">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-225" action="modify" visible="true" lon="-1.5436854085947862" lat="39.209433882718166">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-309" action="modify" visible="true" lon="-1.5426068258795618" lat="39.21000102036576">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-393" action="modify" visible="true" lon="-1.5412992360968818" lat="39.21150255477077">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="31D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-477" action="modify" visible="true" lon="-1.540165899889466" lat="39.20931638968813">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="1B"/>
+</node>
+<node id="-549" action="modify" visible="true" lon="-1.5419258113683119" lat="39.206339006288715">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-638" action="modify" visible="true" lon="-1.5440930904745642" lat="39.21067584252977">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-16" action="modify" visible="true" lon="-1.5447927021808308" lat="39.209851069992744">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-100" action="modify" visible="true" lon="-1.5412506503428036" lat="39.211088575370205">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-184" action="modify" visible="true" lon="-1.5426568512297985" lat="39.208777342734514">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-268" action="modify" visible="true" lon="-1.5432195888831008" lat="39.20876669117571">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-352" action="modify" visible="true" lon="-1.5428735622927832" lat="39.21020231694223">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-436" action="modify" visible="true" lon="-1.539334858774581" lat="39.20977840630034">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-520" action="modify" visible="true" lon="-1.5446192656494386" lat="39.212616136104025">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-564" action="modify" visible="true" lon="-1.5426887781911856" lat="39.2097264154925">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-58" action="modify" visible="true" lon="-1.5448917536454811" lat="39.20949801236904">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-142" action="modify" visible="true" lon="-1.5390422510596355" lat="39.21342268305071">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-226" action="modify" visible="true" lon="-1.5436422395173117" lat="39.20934703194265">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-310" action="modify" visible="true" lon="-1.5419682879611067" lat="39.20958625086357">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-394" action="modify" visible="true" lon="-1.54172428949083" lat="39.21138066791765">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-478" action="modify" visible="true" lon="-1.5401328727698942" lat="39.20926695895637">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="1C"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-548" action="modify" visible="true" lon="-1.5419609930823335" lat="39.20641809435188">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-639" action="modify" visible="true" lon="-1.5442047611531433" lat="39.21099263075753">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-269" action="modify" visible="true" lon="-1.5431579590409612" lat="39.20871892188612">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-17" action="modify" visible="true" lon="-1.544527800832378" lat="39.20913602528475">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-101" action="modify" visible="true" lon="-1.5405818415755148" lat="39.21123126165799">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-185" action="modify" visible="true" lon="-1.5420615427995759" lat="39.20842980809095">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-353" action="modify" visible="true" lon="-1.5397934814669998" lat="39.207287017000795">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="61"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-437" action="modify" visible="true" lon="-1.5392359817658805" lat="39.20973797088842">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-556" action="modify" visible="true" lon="-1.542956615752244" lat="39.20967210486982">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-598" action="modify" visible="true" lon="-1.5411787248914133" lat="39.20975347103658">
+  <tag k="addr:street" v="CL LOPE DE VEGA"/>
+  <tag k="addr:housenumber" v="1B"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-59" action="modify" visible="true" lon="-1.5449156412515634" lat="39.209513448331684">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-143" action="modify" visible="true" lon="-1.5382546907588057" lat="39.20589620522442">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-227" action="modify" visible="true" lon="-1.543634135352878" lat="39.20928520908646">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-311" action="modify" visible="true" lon="-1.54254787125864" lat="39.210324144016276">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-395" action="modify" visible="true" lon="-1.5414460614532899" lat="39.21141592451201">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-479" action="modify" visible="true" lon="-1.5403341924040002" lat="39.209162190236846">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-547" action="modify" visible="true" lon="-1.542014767297927" lat="39.2069256905539">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-640" action="modify" visible="true" lon="-1.5440317919350584" lat="39.2104040458608">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-270" action="modify" visible="true" lon="-1.543341880599479" lat="39.20870001157052">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-1" action="modify" visible="true" lon="-1.5418274401826668" lat="39.20978110447077">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-18" action="modify" visible="true" lon="-1.544760017636575" lat="39.209752893839564">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-102" action="modify" visible="true" lon="-1.541086228091768" lat="39.21114238071374">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-186" action="modify" visible="true" lon="-1.5412851912578795" lat="39.207504753204944">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-354" action="modify" visible="true" lon="-1.539621521845213" lat="39.20713841442403">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="63"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-438" action="modify" visible="true" lon="-1.5391035810719547" lat="39.2098447959965">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-599" action="modify" visible="true" lon="-1.5410305752169828" lat="39.20932334923916">
+  <tag k="addr:street" v="CL LOPE DE VEGA"/>
+  <tag k="addr:housenumber" v="1T"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-60" action="modify" visible="true" lon="-1.5451732942610839" lat="39.209430310703574">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="23D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-144" action="modify" visible="true" lon="-1.5339400274696642" lat="39.20538587028456">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-228" action="modify" visible="true" lon="-1.5436268293128599" lat="39.209229883726735">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-312" action="modify" visible="true" lon="-1.5421402232512766" lat="39.209762202672415">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-396" action="modify" visible="true" lon="-1.541628879023738" lat="39.21139055616624">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-480" action="modify" visible="true" lon="-1.5395620099076963" lat="39.20857444607603">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-546" action="modify" visible="true" lon="-1.542021637414848" lat="39.20708127157872">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-641" action="modify" visible="true" lon="-1.544303485618046" lat="39.21007120004854">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-19" action="modify" visible="true" lon="-1.5446321808957029" lat="39.20914030300031">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-103" action="modify" visible="true" lon="-1.5404888820883078" lat="39.21126262452181">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-187" action="modify" visible="true" lon="-1.542764989825368" lat="39.208756138960844">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-271" action="modify" visible="true" lon="-1.5431560706719758" lat="39.20865897882628">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-355" action="modify" visible="true" lon="-1.5397028326585571" lat="39.207224951955915">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="63D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-439" action="modify" visible="true" lon="-1.5391047814892302" lat="39.20977597131153">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-573" action="modify" visible="true" lon="-1.542984077745767" lat="39.209621556528866">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-600" action="modify" visible="true" lon="-1.5429659315931754" lat="39.21168136913892">
+  <tag k="addr:street" v="CL PONIENTE"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-61" action="modify" visible="true" lon="-1.5440097642476187" lat="39.209678732760366">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-145" action="modify" visible="true" lon="-1.5378635483673424" lat="39.201659270113055">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-229" action="modify" visible="true" lon="-1.5436486930097622" lat="39.20912052975531">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-313" action="modify" visible="true" lon="-1.5419241685136404" lat="39.209449692289">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-397" action="modify" visible="true" lon="-1.5415369516197082" lat="39.211400037428604">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-481" action="modify" visible="true" lon="-1.5402236172109982" lat="39.209148640378764">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-545" action="modify" visible="true" lon="-1.5422806529598667" lat="39.20611722689353">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="32I"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-642" action="modify" visible="true" lon="-1.544698762932506" lat="39.20992053367136">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-20" action="modify" visible="true" lon="-1.5439483501239204" lat="39.209209422073926">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-104" action="modify" visible="true" lon="-1.5408856416944237" lat="39.21120870331314">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-188" action="modify" visible="true" lon="-1.541866006186103" lat="39.20831959552108">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-272" action="modify" visible="true" lon="-1.5434072478890828" lat="39.208692179009745">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-356" action="modify" visible="true" lon="-1.5389023399207689" lat="39.20682285552579">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="67"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-440" action="modify" visible="true" lon="-1.5390368393730256" lat="39.2097962035529">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="14D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-601" action="modify" visible="true" lon="-1.5430892732111523" lat="39.21191159692091">
+  <tag k="addr:street" v="CL PONIENTE"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-62" action="modify" visible="true" lon="-1.5442754344941216" lat="39.20971692653655">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-146" action="modify" visible="true" lon="-1.5383601355596448" lat="39.2064801436269">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-230" action="modify" visible="true" lon="-1.5435283787438603" lat="39.20908586693107">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-314" action="modify" visible="true" lon="-1.5426279503264493" lat="39.2100534569306">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-398" action="modify" visible="true" lon="-1.5411064065865874" lat="39.21150799225295">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-482" action="modify" visible="true" lon="-1.5402448739485972" lat="39.208970297349566">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-544" action="modify" visible="true" lon="-1.541921161069797" lat="39.20617998040362">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="32D"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-643" action="modify" visible="true" lon="-1.5451998135745706" lat="39.20964486070449">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-21" action="modify" visible="true" lon="-1.544788500844204" lat="39.20980379828189">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-105" action="modify" visible="true" lon="-1.5428626955455926" lat="39.210554728861496">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-189" action="modify" visible="true" lon="-1.543192916693843" lat="39.20932320288317">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-273" action="modify" visible="true" lon="-1.541221561509296" lat="39.21017544829247">
+  <tag k="addr:street" v="CL DOS DE MAYO"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-357" action="modify" visible="true" lon="-1.5426936671389777" lat="39.210317596661824">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-441" action="modify" visible="true" lon="-1.5388870867479265" lat="39.20990758178977">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-568" action="modify" visible="true" lon="-1.5426535153519652" lat="39.20970593056509">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="18A"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-602" action="modify" visible="true" lon="-1.5427493285530767" lat="39.21174930117715">
+  <tag k="addr:street" v="CL PONIENTE"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-63" action="modify" visible="true" lon="-1.5443999474057877" lat="39.20967171844635">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-147" action="modify" visible="true" lon="-1.5348951751253443" lat="39.20169964206549">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="8"/>
+</node>
+<node id="-231" action="modify" visible="true" lon="-1.5434923596913876" lat="39.209238321023015">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-315" action="modify" visible="true" lon="-1.5430516463292558" lat="39.21039185098208">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-399" action="modify" visible="true" lon="-1.5406581110259738" lat="39.21163969533928">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="45"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-483" action="modify" visible="true" lon="-1.5401393494075584" lat="39.20907360853046">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-543" action="modify" visible="true" lon="-1.5416628184052423" lat="39.207853951039404">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-644" action="modify" visible="true" lon="-1.5447943076517738" lat="39.209892803891464">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-22" action="modify" visible="true" lon="-1.544581487513149" lat="39.209200309857856">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-106" action="modify" visible="true" lon="-1.5403766356115485" lat="39.211305576316605">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-190" action="modify" visible="true" lon="-1.542328713981457" lat="39.20858434626771">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-274" action="modify" visible="true" lon="-1.5412535234487026" lat="39.20991690930473">
+  <tag k="addr:street" v="CL DOS DE MAYO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-358" action="modify" visible="true" lon="-1.5426442895317363" lat="39.2103418476667">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-442" action="modify" visible="true" lon="-1.5388923829568686" lat="39.20983673608748">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-569" action="modify" visible="true" lon="-1.5425470113278" lat="39.20979942381234">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-603" action="modify" visible="true" lon="-1.5424639215011728" lat="39.21186412354216">
+  <tag k="addr:street" v="CL PONIENTE"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-64" action="modify" visible="true" lon="-1.544138845009627" lat="39.209675931125076">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-148" action="modify" visible="true" lon="-1.54085597504618" lat="39.213377390292365">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-232" action="modify" visible="true" lon="-1.5423429832762956" lat="39.208541636040685">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-316" action="modify" visible="true" lon="-1.5420626887819961" lat="39.20971987427541">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-400" action="modify" visible="true" lon="-1.5400360887621805" lat="39.211844487882445">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-484" action="modify" visible="true" lon="-1.5399218225034204" lat="39.20891379395193">
+  <tag k="addr:street" v="CL DIEGO VELAZQUEZ"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-542" action="modify" visible="true" lon="-1.5420277377217058" lat="39.206360361928056">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-645" action="modify" visible="true" lon="-1.5453294106963287" lat="39.2095945791649">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-23" action="modify" visible="true" lon="-1.5445457647950647" lat="39.20924202784954">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-107" action="modify" visible="true" lon="-1.5407692366206154" lat="39.21124806229129">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-191" action="modify" visible="true" lon="-1.5418261183300304" lat="39.20817005175194">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-275" action="modify" visible="true" lon="-1.5413418645672547" lat="39.2106581979475">
+  <tag k="addr:street" v="CL DOS DE MAYO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-359" action="modify" visible="true" lon="-1.5407437962280848" lat="39.207692863114275">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-443" action="modify" visible="true" lon="-1.5387420080326257" lat="39.20995018323438">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-592" action="modify" visible="true" lon="-1.542602271164617" lat="39.21149538519834">
+  <tag k="addr:street" v="CL NORTE"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-604" action="modify" visible="true" lon="-1.5437149330104245" lat="39.212270936463696">
+  <tag k="addr:street" v="CL PONIENTE"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-65" action="modify" visible="true" lon="-1.5444797035976627" lat="39.2096457739094">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-149" action="modify" visible="true" lon="-1.5370908923118998" lat="39.21395503473904">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-233" action="modify" visible="true" lon="-1.5416410589797402" lat="39.208653621106286">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-317" action="modify" visible="true" lon="-1.541850781662287" lat="39.209376638712">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-401" action="modify" visible="true" lon="-1.5399118546356538" lat="39.211858302386325">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="49D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-485" action="modify" visible="true" lon="-1.5398534332356533" lat="39.20697940240853">
+  <tag k="addr:street" v="CL ANTONIO MACHADO"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-541" action="modify" visible="true" lon="-1.542196382010497" lat="39.20786758627188">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-646" action="modify" visible="true" lon="-1.545225443655219" lat="39.20979474966324">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-24" action="modify" visible="true" lon="-1.5450493693925496" lat="39.20930256701996">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-108" action="modify" visible="true" lon="-1.5398134289357785" lat="39.21149085829058">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-192" action="modify" visible="true" lon="-1.5425355365535092" lat="39.2087738118646">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-276" action="modify" visible="true" lon="-1.5412966406351813" lat="39.21075034898932">
+  <tag k="addr:street" v="CL DOS DE MAYO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-360" action="modify" visible="true" lon="-1.5406544307008845" lat="39.20760118855047">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-444" action="modify" visible="true" lon="-1.538736369561859" lat="39.209881362862895">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-586" action="modify" visible="true" lon="-1.5438856123227291" lat="39.210438362973704">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-605" action="modify" visible="true" lon="-1.5424642137520352" lat="39.21181296323427">
+  <tag k="addr:street" v="CL PONIENTE"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-66" action="modify" visible="true" lon="-1.5442355488678146" lat="39.20966497571191">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-150" action="modify" visible="true" lon="-1.540351421401669" lat="39.209909014704955">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-234" action="modify" visible="true" lon="-1.5424232218927691" lat="39.208399733652584">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-318" action="modify" visible="true" lon="-1.5424702671872905" lat="39.20994248005988">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-402" action="modify" visible="true" lon="-1.5437795128959202" lat="39.21118403531427">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-486" action="modify" visible="true" lon="-1.5402052388332643" lat="39.20640975403005">
+  <tag k="addr:street" v="CL ANTONIO MACHADO"/>
+  <tag k="addr:housenumber" v="1A"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-540" action="modify" visible="true" lon="-1.5420905768387754" lat="39.20675444986841">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-647" action="modify" visible="true" lon="-1.5454035032430897" lat="39.209674706273816">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-25" action="modify" visible="true" lon="-1.5450953062775672" lat="39.20932710860374">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-109" action="modify" visible="true" lon="-1.5406569158446473" lat="39.211285940551136">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-193" action="modify" visible="true" lon="-1.5419538887155122" lat="39.2081941349897">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-277" action="modify" visible="true" lon="-1.54341131997378" lat="39.208426197514896">
+  <tag k="addr:street" v="CR ALBACETE"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-361" action="modify" visible="true" lon="-1.540554866926135" lat="39.20750983665855">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-445" action="modify" visible="true" lon="-1.5386137897249461" lat="39.20953534243005">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="18I"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-561" action="modify" visible="true" lon="-1.5426861140209436" lat="39.209658358740406">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-606" action="modify" visible="true" lon="-1.5378645181129698" lat="39.21265859690461">
+  <tag k="addr:street" v="CL MANUEL DE FALLA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-67" action="modify" visible="true" lon="-1.5445677626180294" lat="39.20961596847144">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-151" action="modify" visible="true" lon="-1.5402599960574623" lat="39.21008059273623">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-235" action="modify" visible="true" lon="-1.5425965412733689" lat="39.208576330158024">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-319" action="modify" visible="true" lon="-1.5417890729029866" lat="39.20920744933083">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-403" action="modify" visible="true" lon="-1.5393344715733508" lat="39.21229174535759">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-487" action="modify" visible="true" lon="-1.5397443714531704" lat="39.20688490054939">
+  <tag k="addr:street" v="CL ANTONIO MACHADO"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-539" action="modify" visible="true" lon="-1.5423491237081293" lat="39.20794698765599">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-648" action="modify" visible="true" lon="-1.5455370923231389" lat="39.20961618474824">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-26" action="modify" visible="true" lon="-1.5449067523290778" lat="39.209174238285044">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-110" action="modify" visible="true" lon="-1.5405417935597103" lat="39.21132486485031">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="45"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-194" action="modify" visible="true" lon="-1.5411656572496084" lat="39.207359809910315">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-278" action="modify" visible="true" lon="-1.5414175497594247" lat="39.207779697443755">
+  <tag k="addr:street" v="CR ALBACETE"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-362" action="modify" visible="true" lon="-1.541638994758246" lat="39.208549612968156">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-446" action="modify" visible="true" lon="-1.5386328967955698" lat="39.20997854875808">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-559" action="modify" visible="true" lon="-1.5428452045404009" lat="39.209554540421145">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-607" action="modify" visible="true" lon="-1.5377990851284375" lat="39.21265263953481">
+  <tag k="addr:street" v="CL MANUEL DE FALLA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-68" action="modify" visible="true" lon="-1.5442741095969599" lat="39.20965410449609">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-152" action="modify" visible="true" lon="-1.5402048662980128" lat="39.21019343151876">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-236" action="modify" visible="true" lon="-1.5424813937507125" lat="39.20863085949353">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="11D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-320" action="modify" visible="true" lon="-1.5422438862865098" lat="39.209892487263794">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-404" action="modify" visible="true" lon="-1.5395136057246264" lat="39.2125046736568">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="53D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-488" action="modify" visible="true" lon="-1.5400025000534767" lat="39.20688599637017">
+  <tag k="addr:street" v="CL ANTONIO MACHADO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-538" action="modify" visible="true" lon="-1.5424369495132773" lat="39.20706928465618">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-649" action="modify" visible="true" lon="-1.544178716623923" lat="39.21020706337854">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-27" action="modify" visible="true" lon="-1.5440533377065127" lat="39.209183165207385">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-111" action="modify" visible="true" lon="-1.5404066094115183" lat="39.21137056577267">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="47"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-195" action="modify" visible="true" lon="-1.542404577156694" lat="39.2087163083693">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-279" action="modify" visible="true" lon="-1.5418357716684223" lat="39.20765108102024">
+  <tag k="addr:street" v="CR ALBACETE"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-363" action="modify" visible="true" lon="-1.5415293042011564" lat="39.208546799656695">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-447" action="modify" visible="true" lon="-1.5402583913801677" lat="39.209678349368964">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-572" action="modify" visible="true" lon="-1.542986512503424" lat="39.20952650430876">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-608" action="modify" visible="true" lon="-1.5382725852600418" lat="39.21241755379044">
+  <tag k="addr:street" v="CL PROYECTO 13"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-69" action="modify" visible="true" lon="-1.5430190095617708" lat="39.21052139580104">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-153" action="modify" visible="true" lon="-1.5401077626637059" lat="39.21039901392322">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-237" action="modify" visible="true" lon="-1.542399547216928" lat="39.20850585160964">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-321" action="modify" visible="true" lon="-1.5417338049698053" lat="39.20913602544116">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-405" action="modify" visible="true" lon="-1.5436852608523723" lat="39.21119393973525">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-489" action="modify" visible="true" lon="-1.5411920863539867" lat="39.20599939274345">
+  <tag k="addr:street" v="CL CLARA CAMPOAMOR"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-537" action="modify" visible="true" lon="-1.5424641060822972" lat="39.20805988571572">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-650" action="modify" visible="true" lon="-1.5451402157298346" lat="39.20938880991827">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-28" action="modify" visible="true" lon="-1.5446945511415902" lat="39.20940670564003">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-112" action="modify" visible="true" lon="-1.5402299027174964" lat="39.211430252945675">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-196" action="modify" visible="true" lon="-1.5431050030427935" lat="39.20930219471587">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-280" action="modify" visible="true" lon="-1.542014484098375" lat="39.20766160776067">
+  <tag k="addr:street" v="CR ALBACETE"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-364" action="modify" visible="true" lon="-1.541569629403487" lat="39.208481977082464">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-448" action="modify" visible="true" lon="-1.5385602031563654" lat="39.2099318636632">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-589" action="modify" visible="true" lon="-1.5436748507891112" lat="39.21043680470218">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-609" action="modify" visible="true" lon="-1.5383411918463117" lat="39.21220342583961">
+  <tag k="addr:street" v="CL PROYECTO 13"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-70" action="modify" visible="true" lon="-1.5427015304616265" lat="39.21063037801227">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-154" action="modify" visible="true" lon="-1.5400324546184734" lat="39.21080950816967">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-238" action="modify" visible="true" lon="-1.5426758624175545" lat="39.208591123920954">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-322" action="modify" visible="true" lon="-1.5420948135614525" lat="39.20989993013086">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-406" action="modify" visible="true" lon="-1.5430101133199503" lat="39.211198444236636">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-490" action="modify" visible="true" lon="-1.5415096043992047" lat="39.20634490987447">
+  <tag k="addr:street" v="CL CLARA CAMPOAMOR"/>
+  <tag k="addr:housenumber" v="4B"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-536" action="modify" visible="true" lon="-1.5425086940641854" lat="39.208104775035025">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-651" action="modify" visible="true" lon="-1.5443264162827106" lat="39.21003202089767">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-29" action="modify" visible="true" lon="-1.5446188007304829" lat="39.209491088046164">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-113" action="modify" visible="true" lon="-1.5428438361144359" lat="39.21060237079353">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-197" action="modify" visible="true" lon="-1.5418782738107704" lat="39.207972847077464">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-281" action="modify" visible="true" lon="-1.54173124485811" lat="39.20765507776876">
+  <tag k="addr:street" v="CR ALBACETE"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-365" action="modify" visible="true" lon="-1.5413781356694236" lat="39.20840254172626">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-449" action="modify" visible="true" lon="-1.5384439308810969" lat="39.20959448211618">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="20I"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-576" action="modify" visible="true" lon="-1.5428640511793157" lat="39.209503692404205">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-610" action="modify" visible="true" lon="-1.5386676609424426" lat="39.21138434167885">
+  <tag k="addr:street" v="CL VICENTE FERRER"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-71" action="modify" visible="true" lon="-1.5426142613266625" lat="39.21068725565832">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-155" action="modify" visible="true" lon="-1.5406027219487062" lat="39.20971194812749">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="1D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-239" action="modify" visible="true" lon="-1.542423700204011" lat="39.20861193013895">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-323" action="modify" visible="true" lon="-1.5420730925154942" lat="39.20984136070626">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-407" action="modify" visible="true" lon="-1.5435495687442276" lat="39.2112082771393">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-491" action="modify" visible="true" lon="-1.5413281861226908" lat="39.20626717112603">
+  <tag k="addr:street" v="CL CLARA CAMPOAMOR"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-535" action="modify" visible="true" lon="-1.5421148962258422" lat="39.20701776912176">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-652" action="modify" visible="true" lon="-1.5442465298474728" lat="39.21027272034957">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-30" action="modify" visible="true" lon="-1.5446396364466533" lat="39.2095253177557">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-114" action="modify" visible="true" lon="-1.5400101516168863" lat="39.21150067055372">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="51"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-198" action="modify" visible="true" lon="-1.5407117923861424" lat="39.206828004826846">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-282" action="modify" visible="true" lon="-1.5433425260636056" lat="39.20827864178526">
+  <tag k="addr:street" v="CR ALBACETE"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-366" action="modify" visible="true" lon="-1.541462458036926" lat="39.208377555672534">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-450" action="modify" visible="true" lon="-1.5385458677135522" lat="39.21000322666012">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-565" action="modify" visible="true" lon="-1.5425022821495369" lat="39.20946524895367">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-611" action="modify" visible="true" lon="-1.543895812109858" lat="39.2100369104659">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-72" action="modify" visible="true" lon="-1.5426160071819401" lat="39.21065507779859">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-156" action="modify" visible="true" lon="-1.5408514945832708" lat="39.20891241944103">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-240" action="modify" visible="true" lon="-1.542333184510543" lat="39.20830976484594">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-324" action="modify" visible="true" lon="-1.5420534504131738" lat="39.209788674085615">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-408" action="modify" visible="true" lon="-1.538822697495669" lat="39.21036781016002">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-492" action="modify" visible="true" lon="-1.5420781861891948" lat="39.20998837211869">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-534" action="modify" visible="true" lon="-1.5425571387841885" lat="39.20815358708575">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-653" action="modify" visible="true" lon="-1.5446240635862223" lat="39.2099203166512">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-31" action="modify" visible="true" lon="-1.544767396792547" lat="39.20971523228162">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-115" action="modify" visible="true" lon="-1.539900741652497" lat="39.2115377736246">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="53"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-199" action="modify" visible="true" lon="-1.541449672167464" lat="39.20752326604084">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="32"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-283" action="modify" visible="true" lon="-1.5432014422146023" lat="39.210596845165625">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-367" action="modify" visible="true" lon="-1.5412688788736855" lat="39.20829845444155">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-451" action="modify" visible="true" lon="-1.5383867183478526" lat="39.20998149680174">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-595" action="modify" visible="true" lon="-1.5410096276893834" lat="39.210689177466406">
+  <tag k="addr:street" v="CL BERNARDINO PEREZ INIESTA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-612" action="modify" visible="true" lon="-1.5443046696443425" lat="39.210932581425894">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-73" action="modify" visible="true" lon="-1.5425354386193546" lat="39.210707173587764">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-157" action="modify" visible="true" lon="-1.539578377221578" lat="39.21112772366339">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-241" action="modify" visible="true" lon="-1.5424704121812731" lat="39.20842816734224">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="15B"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-325" action="modify" visible="true" lon="-1.5428317530042133" lat="39.21021096832451">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-409" action="modify" visible="true" lon="-1.5386200631452465" lat="39.21059594952367">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-493" action="modify" visible="true" lon="-1.5422583138861752" lat="39.21010840839164">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-533" action="modify" visible="true" lon="-1.5426109383740108" lat="39.20821228750012">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-654" action="modify" visible="true" lon="-1.5443170495675618" lat="39.21026783502638">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-32" action="modify" visible="true" lon="-1.5447994643974257" lat="39.20977203829161">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-116" action="modify" visible="true" lon="-1.5398172035784892" lat="39.21156718165037">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="55"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-200" action="modify" visible="true" lon="-1.540630887516748" lat="39.20673048934526">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-284" action="modify" visible="true" lon="-1.5430575064751022" lat="39.21162198704033">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-368" action="modify" visible="true" lon="-1.541297285613272" lat="39.208061835586356">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-452" action="modify" visible="true" lon="-1.5384430650000167" lat="39.21003455449904">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-590" action="modify" visible="true" lon="-1.5437865412952776" lat="39.21045172131151">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-613" action="modify" visible="true" lon="-1.544011676929169" lat="39.21140429652443">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-74" action="modify" visible="true" lon="-1.5425331712523" lat="39.2106786397917">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-158" action="modify" visible="true" lon="-1.5392124650680141" lat="39.21102291561939">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-242" action="modify" visible="true" lon="-1.5425605804683702" lat="39.20852039119263">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-326" action="modify" visible="true" lon="-1.5412612582180616" lat="39.20871460983839">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-410" action="modify" visible="true" lon="-1.5386250835522703" lat="39.2104166282495">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-494" action="modify" visible="true" lon="-1.5419953856518835" lat="39.21028112195024">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-532" action="modify" visible="true" lon="-1.54215111844481" lat="39.20744450657105">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-655" action="modify" visible="true" lon="-1.5452059481860592" lat="39.209757293038265">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-33" action="modify" visible="true" lon="-1.5440880220990467" lat="39.20922089928201">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-117" action="modify" visible="true" lon="-1.5397001791918425" lat="39.211608423977026">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="57"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-201" action="modify" visible="true" lon="-1.5413687333389547" lat="39.20741610947254">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-285" action="modify" visible="true" lon="-1.5435800997543268" lat="39.21191874903345">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-369" action="modify" visible="true" lon="-1.5408153204261985" lat="39.20775124578086">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-453" action="modify" visible="true" lon="-1.5382121285998018" lat="39.21006373809707">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-575" action="modify" visible="true" lon="-1.5429031091409717" lat="39.20946876998631">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-614" action="modify" visible="true" lon="-1.5440497355898557" lat="39.21044932236107">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-75" action="modify" visible="true" lon="-1.54242481301771" lat="39.21073597423701">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-159" action="modify" visible="true" lon="-1.538823308353574" lat="39.2123237949153">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-243" action="modify" visible="true" lon="-1.5428803633358652" lat="39.20853702653608">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-327" action="modify" visible="true" lon="-1.5419162543542717" lat="39.209652861535254">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-411" action="modify" visible="true" lon="-1.5384897527263814" lat="39.2105926115116">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-495" action="modify" visible="true" lon="-1.5420338920615941" lat="39.210291390192936">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-531" action="modify" visible="true" lon="-1.5426600364745282" lat="39.208270286621065">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-656" action="modify" visible="true" lon="-1.5450499301402687" lat="39.209808235553645">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-34" action="modify" visible="true" lon="-1.544170066725771" lat="39.209195166469364">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-118" action="modify" visible="true" lon="-1.5396176905521002" lat="39.21163748459811">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="59"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-202" action="modify" visible="true" lon="-1.5411589001028105" lat="39.20718542727669">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="36"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-286" action="modify" visible="true" lon="-1.5435480727874884" lat="39.2117758935323">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="12D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-370" action="modify" visible="true" lon="-1.541131901431676" lat="39.208168069787924">
+  <tag k="addr:street" v="CL MIGUEL SORIANO"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-454" action="modify" visible="true" lon="-1.5383502182740123" lat="39.21006051081817">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-581" action="modify" visible="true" lon="-1.5434920827257417" lat="39.21073051590957">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-615" action="modify" visible="true" lon="-1.5440972258082153" lat="39.21053326255552">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-76" action="modify" visible="true" lon="-1.542450094373752" lat="39.21070264923216">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-160" action="modify" visible="true" lon="-1.5386703028432893" lat="39.212504922293455">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-244" action="modify" visible="true" lon="-1.5426769307784882" lat="39.20850022192753">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-328" action="modify" visible="true" lon="-1.541855212251974" lat="39.20956352475131">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-412" action="modify" visible="true" lon="-1.53870435517795" lat="39.21039743943885">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-496" action="modify" visible="true" lon="-1.5419192987058392" lat="39.21022383082195">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-530" action="modify" visible="true" lon="-1.5421616140545424" lat="39.207553033565965">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-657" action="modify" visible="true" lon="-1.5442795753048713" lat="39.210191190606885">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-35" action="modify" visible="true" lon="-1.544195860083019" lat="39.20923720450029">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-119" action="modify" visible="true" lon="-1.5428152751002506" lat="39.21057954504825">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-203" action="modify" visible="true" lon="-1.541025135868354" lat="39.20702300555642">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-287" action="modify" visible="true" lon="-1.5435773337134533" lat="39.21161531407282">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-371" action="modify" visible="true" lon="-1.543200905161301" lat="39.211150439827456">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-455" action="modify" visible="true" lon="-1.5402578742509465" lat="39.209759256624814">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-567" action="modify" visible="true" lon="-1.5425795464017404" lat="39.20973762283698">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-616" action="modify" visible="true" lon="-1.5441211018179413" lat="39.21058852468093">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-77" action="modify" visible="true" lon="-1.54232362044129" lat="39.21076227980709">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-161" action="modify" visible="true" lon="-1.5377381278774747" lat="39.21289434498797">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-245" action="modify" visible="true" lon="-1.5422997905094105" lat="39.20866087580106">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-329" action="modify" visible="true" lon="-1.5416430043502458" lat="39.20903267416062">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="34"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-413" action="modify" visible="true" lon="-1.5385150716451619" lat="39.21044398670218">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-497" action="modify" visible="true" lon="-1.5419766592032371" lat="39.210353836951455">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-529" action="modify" visible="true" lon="-1.5427641199181084" lat="39.20840483076361">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-658" action="modify" visible="true" lon="-1.5451483342214813" lat="39.20960826604478">
+  <tag k="addr:street" v="CL FUENTE"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-288" action="modify" visible="true" lon="-1.5436427755509259" lat="39.212097394266">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-36" action="modify" visible="true" lon="-1.5437479749694463" lat="39.20913051120248">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-120" action="modify" visible="true" lon="-1.539522489189404" lat="39.21167107118156">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="61"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-204" action="modify" visible="true" lon="-1.541426893601127" lat="39.20814218018441">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="3A"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-372" action="modify" visible="true" lon="-1.5439789255490841" lat="39.21116319125126">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-456" action="modify" visible="true" lon="-1.5379458036253428" lat="39.210398088482115">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="31"/>
+</node>
+<node id="-580" action="modify" visible="true" lon="-1.5433619018114073" lat="39.21049864057326">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-617" action="modify" visible="true" lon="-1.5444272423374965" lat="39.21044379663546">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-78" action="modify" visible="true" lon="-1.5423534096504328" lat="39.21071819871266">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-162" action="modify" visible="true" lon="-1.5392701830185953" lat="39.21151301965461">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-246" action="modify" visible="true" lon="-1.5417735279620581" lat="39.208915830037256">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-330" action="modify" visible="true" lon="-1.540279073700631" lat="39.20769055411725">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="34D"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-414" action="modify" visible="true" lon="-1.5384190382935097" lat="39.21046719995593">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-498" action="modify" visible="true" lon="-1.541963264627663" lat="39.21031099493968">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-528" action="modify" visible="true" lon="-1.542585202186672" lat="39.20816076814611">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-659" action="modify" visible="true" lon="-1.5437100826384436" lat="39.21005453486236">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-289" action="modify" visible="true" lon="-1.5436020174336118" lat="39.211709962009735">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-37" action="modify" visible="true" lon="-1.5435898450989203" lat="39.20910429598208">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="7D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-121" action="modify" visible="true" lon="-1.5394296183330456" lat="39.211703695762814">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="63"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-205" action="modify" visible="true" lon="-1.543124784251431" lat="39.20923110647457">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-373" action="modify" visible="true" lon="-1.5432920973865616" lat="39.211233397857114">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-457" action="modify" visible="true" lon="-1.5400986173895677" lat="39.20961408475383">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-566" action="modify" visible="true" lon="-1.5426073227644574" lat="39.209767290361434">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-618" action="modify" visible="true" lon="-1.5443291755739097" lat="39.21101344102879">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="170"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-79" action="modify" visible="true" lon="-1.5422773804324448" lat="39.2107318441191">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-163" action="modify" visible="true" lon="-1.5385267061336283" lat="39.21267409353952">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-247" action="modify" visible="true" lon="-1.5427698022194474" lat="39.208478497344835">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-331" action="modify" visible="true" lon="-1.541736235094877" lat="39.2094421134889">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="35"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-415" action="modify" visible="true" lon="-1.5398410329608592" lat="39.21029050873793">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-499" action="modify" visible="true" lon="-1.541921300331231" lat="39.21035759421963">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-527" action="modify" visible="true" lon="-1.5426412973989734" lat="39.20822607489339">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-660" action="modify" visible="true" lon="-1.5436489061173497" lat="39.21007809814959">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-290" action="modify" visible="true" lon="-1.5436900014204993" lat="39.212210975642584">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-38" action="modify" visible="true" lon="-1.5442690582556482" lat="39.20928512503451">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-122" action="modify" visible="true" lon="-1.5393295309114916" lat="39.21173803185552">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="65"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-206" action="modify" visible="true" lon="-1.5407686596672507" lat="39.206712626720794">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-374" action="modify" visible="true" lon="-1.5430995570617854" lat="39.21125234440561">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-458" action="modify" visible="true" lon="-1.540114685686569" lat="39.209682675378836">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-596" action="modify" visible="true" lon="-1.5407664128763103" lat="39.21070550309741">
+  <tag k="addr:street" v="CL BERNARDINO PEREZ INIESTA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-619" action="modify" visible="true" lon="-1.5442787777351301" lat="39.21112664004515">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-80" action="modify" visible="true" lon="-1.5422276551666463" lat="39.210787839772834">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-164" action="modify" visible="true" lon="-1.5383987223516928" lat="39.21282480892917">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-248" action="modify" visible="true" lon="-1.5430182396536618" lat="39.2086293765045">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-332" action="modify" visible="true" lon="-1.54002560865997" lat="39.20725998059104">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="36D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-416" action="modify" visible="true" lon="-1.5400067087884708" lat="39.21024742525215">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="2D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-500" action="modify" visible="true" lon="-1.5419300651256673" lat="39.21040028817471">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-526" action="modify" visible="true" lon="-1.54299325877932" lat="39.20837770872144">
+  <tag k="addr:street" v="CL TENIENTE GOMEZ"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-661" action="modify" visible="true" lon="-1.5431392620791389" lat="39.210262795603306">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-291" action="modify" visible="true" lon="-1.5439008862796992" lat="39.21216196437967">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-39" action="modify" visible="true" lon="-1.5439549040607288" lat="39.20914864747683">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-123" action="modify" visible="true" lon="-1.5392275740028216" lat="39.21177315084893">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="67"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-207" action="modify" visible="true" lon="-1.5401464523789994" lat="39.20604782913317">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="40D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-375" action="modify" visible="true" lon="-1.5427214154633695" lat="39.21131789260093">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-459" action="modify" visible="true" lon="-1.5395579216227637" lat="39.209644785376696">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-594" action="modify" visible="true" lon="-1.5399014009374168" lat="39.208634885612035">
+  <tag k="addr:street" v="CL FRANCISCO DE GOYA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-620" action="modify" visible="true" lon="-1.544197265473821" lat="39.21123753092233">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-81" action="modify" visible="true" lon="-1.5429666667059372" lat="39.210500435110454">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-165" action="modify" visible="true" lon="-1.5405855658498693" lat="39.20897249420833">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-249" action="modify" visible="true" lon="-1.5429553454473328" lat="39.20831244937711">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="2D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-333" action="modify" visible="true" lon="-1.54162863578469" lat="39.20952233782493">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-417" action="modify" visible="true" lon="-1.5394904716512459" lat="39.210384232658036">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-501" action="modify" visible="true" lon="-1.5421196221383133" lat="39.209966016861294">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-525" action="modify" visible="true" lon="-1.5445127853477123" lat="39.212581952589154">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-662" action="modify" visible="true" lon="-1.5435984678679975" lat="39.2100976508725">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-292" action="modify" visible="true" lon="-1.5439482217538278" lat="39.21250576370196">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-40" action="modify" visible="true" lon="-1.5435804818234242" lat="39.20977559825998">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="S-N"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-124" action="modify" visible="true" lon="-1.5427490953478442" lat="39.21057280532707">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-208" action="modify" visible="true" lon="-1.5406724687120508" lat="39.20659266396821">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-376" action="modify" visible="true" lon="-1.5421942665485777" lat="39.21128230037232">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-460" action="modify" visible="true" lon="-1.5397923966518787" lat="39.209647364704345">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-574" action="modify" visible="true" lon="-1.5429462586983054" lat="39.209460029017364">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-621" action="modify" visible="true" lon="-1.5443127636603509" lat="39.21138417769133">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-82" action="modify" visible="true" lon="-1.542145257905504" lat="39.210812578334824">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-166" action="modify" visible="true" lon="-1.5404156515206275" lat="39.21050006725603">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-250" action="modify" visible="true" lon="-1.5418686058485809" lat="39.20870347287133">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-334" action="modify" visible="true" lon="-1.541069010674797" lat="39.20862681455893">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="38"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-418" action="modify" visible="true" lon="-1.5394356999706602" lat="39.210316598305845">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-502" action="modify" visible="true" lon="-1.5418826898965836" lat="39.210398494018136">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-524" action="modify" visible="true" lon="-1.5444275864587342" lat="39.212439694330556">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-663" action="modify" visible="true" lon="-1.5430842202304282" lat="39.21028652542653">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-41" action="modify" visible="true" lon="-1.543673423440576" lat="39.20961475713999">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-125" action="modify" visible="true" lon="-1.5426662937352145" lat="39.21067466135219">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-209" action="modify" visible="true" lon="-1.5405186889355853" lat="39.206423773688165">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="44"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-293" action="modify" visible="true" lon="-1.5431651835084415" lat="39.21058697124488">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-377" action="modify" visible="true" lon="-1.5422626903431558" lat="39.21086757732508">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-461" action="modify" visible="true" lon="-1.5394523558450348" lat="39.20967535863499">
+  <tag k="addr:street" v="CL ERMITA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-585" action="modify" visible="true" lon="-1.5433854724460798" lat="39.21062050149405">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-622" action="modify" visible="true" lon="-1.5439594762573141" lat="39.211565710238006">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-83" action="modify" visible="true" lon="-1.5422206526358098" lat="39.21074185656137">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-167" action="modify" visible="true" lon="-1.5406092308912156" lat="39.2093530537939">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-251" action="modify" visible="true" lon="-1.5418572590426531" lat="39.20886569897196">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-335" action="modify" visible="true" lon="-1.5416430405868642" lat="39.20933381253954">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-419" action="modify" visible="true" lon="-1.5392271811044307" lat="39.210289281247505">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="4D"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-503" action="modify" visible="true" lon="-1.541897830361098" lat="39.21043565608878">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-523" action="modify" visible="true" lon="-1.5446211178566802" lat="39.21256906168979">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-664" action="modify" visible="true" lon="-1.5434285713940366" lat="39.21017505613028">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-294" action="modify" visible="true" lon="-1.543966771922734" lat="39.213026348334104">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-42" action="modify" visible="true" lon="-1.543516885474379" lat="39.21025819244672">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-126" action="modify" visible="true" lon="-1.5419739701872452" lat="39.20920891970259">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-210" action="modify" visible="true" lon="-1.5404127204053997" lat="39.2062950381812">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="46"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-378" action="modify" visible="true" lon="-1.5424626020925998" lat="39.21109705207998">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-462" action="modify" visible="true" lon="-1.5399362113258799" lat="39.20789831751916">
+  <tag k="addr:street" v="CL FRONTON"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-571" action="modify" visible="true" lon="-1.5424740228790443" lat="39.20983410172991">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-623" action="modify" visible="true" lon="-1.5438800129002694" lat="39.2116670754272">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-84" action="modify" visible="true" lon="-1.5420274388560453" lat="39.21085876881732">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-168" action="modify" visible="true" lon="-1.540528791307855" lat="39.20955153701685">
+  <tag k="addr:street" v="AV CASTILLA LA MANCHA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-252" action="modify" visible="true" lon="-1.5420053354654626" lat="39.208649950454394">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-336" action="modify" visible="true" lon="-1.5429273197808722" lat="39.21024632965907">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-420" action="modify" visible="true" lon="-1.5392040328621281" lat="39.2104251728692">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-504" action="modify" visible="true" lon="-1.5418225210543188" lat="39.21046288624021">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-522" action="modify" visible="true" lon="-1.544528063780723" lat="39.21244177080197">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-665" action="modify" visible="true" lon="-1.5433201261619214" lat="39.2102125160074">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="19"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-43" action="modify" visible="true" lon="-1.5435112101566675" lat="39.210342004171906">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-127" action="modify" visible="true" lon="-1.5423864320634093" lat="39.20906802823666">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-211" action="modify" visible="true" lon="-1.5403249643082626" lat="39.206258027360185">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="48"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-295" action="modify" visible="true" lon="-1.5438113672909874" lat="39.21250307966145">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="22"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-379" action="modify" visible="true" lon="-1.542382866495193" lat="39.211263486220496">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-463" action="modify" visible="true" lon="-1.5400034857247773" lat="39.20776062526614">
+  <tag k="addr:street" v="CL FRONTON"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-593" action="modify" visible="true" lon="-1.5400091598069445" lat="39.20864938260824">
+  <tag k="addr:street" v="CL FRANCISCO DE GOYA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-624" action="modify" visible="true" lon="-1.544035845051625" lat="39.21146836100616">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-85" action="modify" visible="true" lon="-1.5421434582935865" lat="39.21076143418687">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-169" action="modify" visible="true" lon="-1.5434242255280037" lat="39.2089526201021">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-253" action="modify" visible="true" lon="-1.541981392306919" lat="39.20881084753804">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-337" action="modify" visible="true" lon="-1.5409688708804041" lat="39.20852973598087">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-421" action="modify" visible="true" lon="-1.5390878799480834" lat="39.210533699246994">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="5A"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-505" action="modify" visible="true" lon="-1.541841426166499" lat="39.21049162563573">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-521" action="modify" visible="true" lon="-1.544149123768856" lat="39.21222203594695">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-666" action="modify" visible="true" lon="-1.5439756978798773" lat="39.20979724023551">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-44" action="modify" visible="true" lon="-1.543466166910021" lat="39.21042589396442">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="16"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-128" action="modify" visible="true" lon="-1.5424491337204136" lat="39.209038177382425">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-212" action="modify" visible="true" lon="-1.5427258992322768" lat="39.2090167724919">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-296" action="modify" visible="true" lon="-1.5432175282570757" lat="39.210659128286416">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-380" action="modify" visible="true" lon="-1.5421134647087837" lat="39.211291470817415">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="18"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-464" action="modify" visible="true" lon="-1.5426734512138869" lat="39.20638033636346">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-597" action="modify" visible="true" lon="-1.5412425061338668" lat="39.209419351825225">
+  <tag k="addr:street" v="CL LOPE DE VEGA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-625" action="modify" visible="true" lon="-1.543813630597826" lat="39.211751664477724">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-86" action="modify" visible="true" lon="-1.5419956541275306" lat="39.21066366258554">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-170" action="modify" visible="true" lon="-1.544196365058152" lat="39.20879070733838">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-254" action="modify" visible="true" lon="-1.5427268384735042" lat="39.20858473356188">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-338" action="modify" visible="true" lon="-1.541725280784231" lat="39.209206290258834">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="41"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-422" action="modify" visible="true" lon="-1.5390863494100062" lat="39.21034069001786">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-506" action="modify" visible="true" lon="-1.5417389401614714" lat="39.21054608654374">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-667" action="modify" visible="true" lon="-1.543250631624713" lat="39.2105048600968">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-297" action="modify" visible="true" lon="-1.543194079656546" lat="39.21074272129649">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-45" action="modify" visible="true" lon="-1.543624799186957" lat="39.20961721452235">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-129" action="modify" visible="true" lon="-1.54253885041975" lat="39.208995419185136">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-213" action="modify" visible="true" lon="-1.542814683063838" lat="39.20914240755962">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-381" action="modify" visible="true" lon="-1.5436845691310304" lat="39.21112656453866">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-465" action="modify" visible="true" lon="-1.5407829465989773" lat="39.207295637184906">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-570" action="modify" visible="true" lon="-1.5424756670402497" lat="39.20978191581441">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-626" action="modify" visible="true" lon="-1.5439316063267816" lat="39.210087095569875">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-87" action="modify" visible="true" lon="-1.5419625049125898" lat="39.21087354404882">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-171" action="modify" visible="true" lon="-1.544120780518114" lat="39.20898091014124">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-255" action="modify" visible="true" lon="-1.5421561786222973" lat="39.20857479925465">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-339" action="modify" visible="true" lon="-1.5403976033266398" lat="39.20782800705414">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="42"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-423" action="modify" visible="true" lon="-1.5388719039460432" lat="39.210504319236975">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-507" action="modify" visible="true" lon="-1.541754567732754" lat="39.21060325880454">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="25"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-668" action="modify" visible="true" lon="-1.5431258778801447" lat="39.210301016273014">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-46" action="modify" visible="true" lon="-1.5435762554361134" lat="39.21018759286667">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-130" action="modify" visible="true" lon="-1.5420812855769028" lat="39.2092287398129">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="2"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-214" action="modify" visible="true" lon="-1.5428958744490453" lat="39.209013402609926">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-298" action="modify" visible="true" lon="-1.5432738825808372" lat="39.210790484480064">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-382" action="modify" visible="true" lon="-1.5422766689678176" lat="39.21127414105098">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-466" action="modify" visible="true" lon="-1.5416308594768202" lat="39.20690194360634">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="4D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-560" action="modify" visible="true" lon="-1.5427701272833296" lat="39.20972906056379">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-627" action="modify" visible="true" lon="-1.5437741359048194" lat="39.21180207967664">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="31"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-6" action="modify" visible="true" lon="-1.5413507154138306" lat="39.20986756712365">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-88" action="modify" visible="true" lon="-1.5420368596307974" lat="39.2108027192734">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-172" action="modify" visible="true" lon="-1.5442464248777528" lat="39.208948155260806">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-256" action="modify" visible="true" lon="-1.5421518997799577" lat="39.20910095546676">
+  <tag k="addr:street" v="CL SAN CRISTOBAL"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-340" action="modify" visible="true" lon="-1.541664774225097" lat="39.20913056584258">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="43"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-424" action="modify" visible="true" lon="-1.5389282769276735" lat="39.21035636771327">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-508" action="modify" visible="true" lon="-1.5416816735415941" lat="39.21061574107959">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-669" action="modify" visible="true" lon="-1.5440856686959685" lat="39.209871881490464">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-299" action="modify" visible="true" lon="-1.543296692594532" lat="39.21083537143144">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-47" action="modify" visible="true" lon="-1.5436322437700798" lat="39.20969975314367">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-131" action="modify" visible="true" lon="-1.5421850985596872" lat="39.2091764270568">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-215" action="modify" visible="true" lon="-1.5427304332906324" lat="39.2089499969723">
+  <tag k="addr:street" v="CL ISAAC PERAL"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-383" action="modify" visible="true" lon="-1.5419216215950131" lat="39.21130804538574">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="20"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-467" action="modify" visible="true" lon="-1.541780445427036" lat="39.206963173603185">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="4T"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-588" action="modify" visible="true" lon="-1.543838534683524" lat="39.210446604656084">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-628" action="modify" visible="true" lon="-1.5437204877093775" lat="39.21187042888145">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="33"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-4" action="modify" visible="true" lon="-1.5406367956528486" lat="39.20995673814552">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-89" action="modify" visible="true" lon="-1.541914005878153" lat="39.210888885402035">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-173" action="modify" visible="true" lon="-1.545235254559731" lat="39.20946973939067">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="26"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-257" action="modify" visible="true" lon="-1.5431692734123301" lat="39.20898379018734">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-341" action="modify" visible="true" lon="-1.5413819333098147" lat="39.20891843251657">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="45"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-425" action="modify" visible="true" lon="-1.5387470237745835" lat="39.21052230525225">
+  <tag k="addr:street" v="CL DOCTOR FERRANDIZ"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-509" action="modify" visible="true" lon="-1.5416362997479307" lat="39.21068716637304">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-557" action="modify" visible="true" lon="-1.5430911851096625" lat="39.20949148622782">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-670" action="modify" visible="true" lon="-1.5434868149195697" lat="39.21011261768114">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-48" action="modify" visible="true" lon="-1.5436090601486496" lat="39.209756769668566">
+  <tag k="addr:street" v="CL REAL"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-132" action="modify" visible="true" lon="-1.5422604429031739" lat="39.20913421002774">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-216" action="modify" visible="true" lon="-1.5434436721048754" lat="39.20951953987474">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-300" action="modify" visible="true" lon="-1.5433242783133652" lat="39.21093528178372">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-384" action="modify" visible="true" lon="-1.542516232524266" lat="39.21129903889821">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-468" action="modify" visible="true" lon="-1.5418567827312064" lat="39.20670232631117">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-558" action="modify" visible="true" lon="-1.5427967226691688" lat="39.20953503809184">
+  <tag k="addr:street" v="CL CRUZ"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-629" action="modify" visible="true" lon="-1.5442472524210007" lat="39.21220804562331">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="37"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-3" action="modify" visible="true" lon="-1.541338200555019" lat="39.209899498372515">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-90" action="modify" visible="true" lon="-1.5418362736881495" lat="39.21091205575874">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="27"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-174" action="modify" visible="true" lon="-1.5441640643331862" lat="39.20902565638284">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-258" action="modify" visible="true" lon="-1.5434586532153682" lat="39.20868182910386">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-342" action="modify" visible="true" lon="-1.5410577951183824" lat="39.20874903135528">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="47"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-426" action="modify" visible="true" lon="-1.5401220340006478" lat="39.20819638286858">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="S-N"/>
+</node>
+<node id="-510" action="modify" visible="true" lon="-1.5416938083681635" lat="39.21070737959517">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-555" action="modify" visible="true" lon="-1.5412535362877868" lat="39.213099039763854">
+  <tag k="addr:street" v="CL TORILEJO"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-671" action="modify" visible="true" lon="-1.544023818620344" lat="39.209900031882995">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-301" action="modify" visible="true" lon="-1.5434683169943915" lat="39.21147124443125">
+  <tag k="addr:street" v="CL CRISTOBAL COLON"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-49" action="modify" visible="true" lon="-1.5438050140613835" lat="39.20968932387378">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-133" action="modify" visible="true" lon="-1.542333822785158" lat="39.20909737462906">
+  <tag k="addr:street" v="CL VALERA"/>
+  <tag k="addr:housenumber" v="8"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-217" action="modify" visible="true" lon="-1.5434948153256314" lat="39.209287638846085">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-385" action="modify" visible="true" lon="-1.5425042188362683" lat="39.21137536465811">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="23"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-469" action="modify" visible="true" lon="-1.5423459090299447" lat="39.20653815554531">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-578" action="modify" visible="true" lon="-1.5439454837517799" lat="39.21043773554477">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-630" action="modify" visible="true" lon="-1.5444315104734534" lat="39.212294424827824">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="39"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-9" action="modify" visible="true" lon="-1.541526077040499" lat="39.20985950199034">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-91" action="modify" visible="true" lon="-1.5412692010511995" lat="39.21099272039732">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="28"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-175" action="modify" visible="true" lon="-1.5435678039863199" lat="39.20891512997709">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-259" action="modify" visible="true" lon="-1.5435504448861006" lat="39.208706764489015">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="12"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-343" action="modify" visible="true" lon="-1.5408783693892845" lat="39.20876696718713">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="49"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-427" action="modify" visible="true" lon="-1.5405148336149213" lat="39.20881242319748">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-511" action="modify" visible="true" lon="-1.5421770491541262" lat="39.210168031558226">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-583" action="modify" visible="true" lon="-1.5434471874033768" lat="39.21065022381393">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="17"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-672" action="modify" visible="true" lon="-1.5434204429942744" lat="39.21014098151715">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="6"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-302" action="modify" visible="true" lon="-1.539721579402809" lat="39.20948239679914">
+  <tag k="addr:street" v="CL BARTOLOME E. MURILLO"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-50" action="modify" visible="true" lon="-1.5448357900263587" lat="39.20953840083387">
+  <tag k="addr:street" v="CL SAN MIGUEL"/>
+  <tag k="addr:housenumber" v="10D"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-134" action="modify" visible="true" lon="-1.5658263748587848" lat="39.2053801202129">
+  <tag k="addr:street" v="CL DISEMINADOS"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-218" action="modify" visible="true" lon="-1.5434563098850456" lat="39.20936843152274">
+  <tag k="addr:street" v="PZ CONSTITUCION"/>
+  <tag k="addr:housenumber" v="13"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-386" action="modify" visible="true" lon="-1.5408310114710222" lat="39.21153829107327">
+  <tag k="addr:street" v="CL CERVANTES"/>
+  <tag k="addr:housenumber" v="24"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-470" action="modify" visible="true" lon="-1.5419237979660112" lat="39.20667072762746">
+  <tag k="addr:street" v="CL MINISTRO MONARES"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-582" action="modify" visible="true" lon="-1.5435385561132005" lat="39.21065892342255">
+  <tag k="addr:street" v="CL DON PEDRO"/>
+  <tag k="addr:housenumber" v="15"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-631" action="modify" visible="true" lon="-1.5439470336708503" lat="39.21024830500276">
+  <tag k="addr:street" v="CL FUENSANTA"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-260" action="modify" visible="true" lon="-1.5436496542950349" lat="39.20870340965466">
+  <tag k="addr:street" v="CL IBARRA"/>
+  <tag k="addr:housenumber" v="14"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-2" action="modify" visible="true" lon="-1.5413832399691485" lat="39.2099112822046">
+  <tag k="addr:street" v="CL ALCALA"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-10" action="modify" visible="true" lon="-1.5443126911627891" lat="39.209275398449314">
+  <tag k="addr:street" v="CL PE&#209;UELA"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-92" action="modify" visible="true" lon="-1.5417430385904598" lat="39.210939992215124">
+  <tag k="addr:street" v="CL VALENCIA"/>
+  <tag k="addr:housenumber" v="29"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-176" action="modify" visible="true" lon="-1.5436778019842896" lat="39.20885459639949">
+  <tag k="addr:street" v="CL BARRANCO"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="02250"/>
+</node>
+<node id="-344" action="modify" visible="true" lon="-1.5427160572139205" lat="39.210310217923826">
+  <tag k="addr:street" v="CL CALVARIO"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-428" action="modify" visible="true" lon="-1.5400777505401835" lat="39.20836308863316">
+  <tag k="addr:street" v="CL DOCTOR FLEMING"/>
+  <tag k="addr:housenumber" v="11"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-512" action="modify" visible="true" lon="-1.5416254656479973" lat="39.2107747914863">
+  <tag k="addr:street" v="CL CONTRERAS"/>
+  <tag k="addr:housenumber" v="30"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+<node id="-673" action="modify" visible="true" lon="-1.5439145790533524" lat="39.209957144074245">
+  <tag k="addr:street" v="CL MAYOR"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="02250"/>
+  <tag k="entrance" v="yes"/>
+</node>
+</osm>

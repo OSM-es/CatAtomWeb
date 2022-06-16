@@ -1,0 +1,65 @@
+.vcpg {
+    width: 100%;
+}
+.vcpg .vcp * {
+    box-sizing: border-box;
+}
+.vcpg .vcp__header {
+    background-color: $panel-heading-background-color;
+    transition: background-color 0.3s ease;
+}
+.vcpg .vcp.is-info .vcp__header {
+    background-color: $info;
+}
+.vcp__header {
+    display: flex;
+    border-radius: $panel-radius;
+    pointer-events: none;
+}
+.vcp--expanded .vcp__header {
+    border-radius: $panel-radius $panel-radius 0 0;
+}
+.vcp .panel-heading {
+    border-radius: $panel-radius;
+
+}
+.vcp--expandable .vcp__header {
+    pointer-events: auto;
+    cursor: pointer;
+}
+.vcp__header-title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.vcp__header-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 0.2em;
+    transition: transform 0.3s cubic-bezier(0.5, 0.25, 0, 1);
+}
+.vcp.is-info .vcp__header-icon {
+    color: $info-invert;
+}
+.vcp--expanded .vcp__header-icon {
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+.vcp__header-icon > span {
+    display: flex;
+    height: 24px;
+    width: 24px;
+}
+.vcp__header-icon svg {
+    height: 100%;
+    width: 100%;
+}
+.vcp__body {
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.5, 0.25, 0, 1);
+}
+.slide-enter-from,
+.slide-leave-to {
+    opacity: 0.25;
+}
+

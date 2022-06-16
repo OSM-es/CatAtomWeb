@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.56.9 76e5016d">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2022-05-20T09:08:03Z" areas="2022-05-20T09:08:03Z"/>
+
+  <area id="3600346319">
+    <tag k="admin_level" v="8"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="idee:name" v="Abengibre"/>
+    <tag k="ine:municipio" v="02001"/>
+    <tag k="name" v="Abengibre"/>
+    <tag k="population" v="932"/>
+    <tag k="population:date" v="2009"/>
+    <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+    <tag k="type" v="boundary"/>
+    <tag k="wikidata" v="Q559227"/>
+    <tag k="wikipedia" v="es:Abengibre (Albacete)"/>
+  </area>
+
+</osm>

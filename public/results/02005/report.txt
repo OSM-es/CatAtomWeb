@@ -1,0 +1,61 @@
+Municipio: Alborea
+Nombre en Catastro: ALBOREA
+Código: 02005
+Fecha: 18/04/22
+Opciones: 02005
+
+=Información del sistema=
+Versión de la aplicación: CatAtom2Osm 2.9.4
+Plataforma: Linux 5.13.0-39-generic #44~20.04.1-Ubuntu SMP Thu Mar 24 16:43:35 UTC 2022 x86_64 x86_64
+Idioma: es_ES
+Versión de QGIS: 3.10.4-A Coruña
+Versión de GDAL: 3.0.4
+Número de CPUs: 2
+Frecuencia de CPU: 3100.0 Mhz
+Tiempo de ejecución: 24.5 segundos
+Memoria total: 7830.97 MB
+Memoria física usada: 121.70 MB
+Memoria virtual usada: 649.12 MB
+
+=Edificios=
+
+==Datos de entrada==
+Fecha de origen: 2022-03-11
+Número de características: 3217
+  Edificios: 991
+  Partes de edificios: 2213
+  Piscinas: 13
+
+==Procesado==
+Partes fuera de contorno eliminadas: 2
+Partes bajo rasante eliminadas: 5
+Edificios con geometrías multiparte: 260
+Edificios resultantes de dividir multipartes: 604
+Partes fusionadas al contorno: 928
+Partes adyacentes fusionadas: 74
+Vértices próximos fusionados: 621
+Puntos topológicos creados: 281
+Vértices simplificados: 2594
+
+==Datos de salida==
+Nodos: 21860
+Vías: 2567
+Relaciones: 15
+Número de características: 2552
+  Edificios: 1335
+  Partes de edificios: 1204
+  Piscinas: 13
+Recuento de tipos de edificios: barn: 195, yes: 64, industrial: 125, public: 14, residential: 923, ruins: 6, office: 2, retail: 6
+Plantas sobre rasante (nivel: nº de edificios): 1: 370, 2: 565, 3: 51, 4: 3
+Plantas bajo rasante (nivel: nº de edificios): 1: 27
+
+=Proyecto=
+Archivos de tareas: 133
+  Rústica: 43
+  Urbana: 90
+
+=Problemas=
+Correcciones (fixmes): 20
+  Las partes de edificio no cubren todo el contorno: 20
+
+https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Generar_y_corregir_los_archivos_a_importar

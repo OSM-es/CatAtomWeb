@@ -1,0 +1,146 @@
+2022-04-18 21:46:28,803 - INFO - Municipio: 'Alborea'
+2022-04-18 21:46:28,804 - INFO - Comienza el procesado de '02005'
+2022-04-18 21:46:29,467 - INFO - Descargando '/catastro/02005/A.ES.SDGC.CP.02005.zip'
+2022-04-18 21:46:30,917 - INFO - Leídos 7195 características en '/catastro/02005/A.ES.SDGC.CP.02005.cadastralparcel.gml'
+2022-04-18 21:46:33,328 - INFO - Descargando '/catastro/02005/A.ES.SDGC.BU.02005.zip'
+2022-04-18 21:46:34,425 - INFO - Leídos 991 características en '/catastro/02005/A.ES.SDGC.BU.02005.building.gml'
+2022-04-18 21:46:34,430 - INFO - Leídos 13 características en '/catastro/02005/A.ES.SDGC.BU.02005.otherconstruction.gml'
+2022-04-18 21:46:39,958 - INFO - Leídos 2213 características en '/catastro/02005/A.ES.SDGC.BU.02005.buildingpart.gml'
+2022-04-18 21:46:40,626 - INFO - Leídos 71 características en '/catastro/02005/A.ES.SDGC.CP.02005.cadastralzoning.gml'
+2022-04-18 21:46:48,941 - INFO - Generado '000400700XJ34H.osm.gz': 96 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:48,952 - INFO - Generado '001401200XJ34H.osm.gz': 87 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:48,954 - INFO - Generado '001600100XJ45G.osm.gz': 14 nodos, 2 vías, 0 relaciones
+2022-04-18 21:46:48,958 - INFO - Generado '002500100XJ35B.osm.gz': 30 nodos, 7 vías, 0 relaciones
+2022-04-18 21:46:48,960 - INFO - Generado '02005A00100002.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,961 - INFO - Generado '02005A00100005.osm.gz': 6 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,963 - INFO - Generado '02005A00200013.osm.gz': 10 nodos, 2 vías, 0 relaciones
+2022-04-18 21:46:48,964 - INFO - Generado '02005A00201006.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,972 - INFO - Generado '02005A00300222.osm.gz': 77 nodos, 10 vías, 0 relaciones
+2022-04-18 21:46:48,973 - INFO - Generado '02005A00300468.osm.gz': 8 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,974 - INFO - Generado '02005A00300677.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,976 - INFO - Generado '02005A00400042.osm.gz': 8 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,977 - INFO - Generado '02005A00400126.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,979 - INFO - Generado '02005A00500006.osm.gz': 6 nodos, 3 vías, 0 relaciones
+2022-04-18 21:46:48,981 - INFO - Generado '02005A00500113.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,983 - INFO - Generado '02005A00500439.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:48,986 - INFO - Generado '02005A00600047.osm.gz': 20 nodos, 2 vías, 0 relaciones
+2022-04-18 21:46:48,988 - INFO - Generado '02005A00700150.osm.gz': 18 nodos, 2 vías, 0 relaciones
+2022-04-18 21:46:48,993 - INFO - Generado '02005A00800026.osm.gz': 26 nodos, 7 vías, 0 relaciones
+2022-04-18 21:46:48,996 - INFO - Generado '02005A00900813.osm.gz': 17 nodos, 3 vías, 0 relaciones
+2022-04-18 21:46:48,998 - INFO - Generado '02005A00900950.osm.gz': 20 nodos, 3 vías, 0 relaciones
+2022-04-18 21:46:49,001 - INFO - Generado '02005A00903128.osm.gz': 16 nodos, 3 vías, 0 relaciones
+2022-04-18 21:46:49,013 - INFO - Generado '02005A01001220.osm.gz': 81 nodos, 19 vías, 0 relaciones
+2022-04-18 21:46:49,016 - INFO - Generado '02005A01001253.osm.gz': 20 nodos, 3 vías, 0 relaciones
+2022-04-18 21:46:49,017 - INFO - Generado '02005A01003004.osm.gz': 6 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:49,019 - INFO - Generado '02005A01003114.osm.gz': 10 nodos, 2 vías, 0 relaciones
+2022-04-18 21:46:49,040 - INFO - Generado '02005A01100411.osm.gz': 130 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:49,056 - INFO - Generado '02005A01100495.osm.gz': 81 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:49,068 - INFO - Generado '02005A01100540.osm.gz': 93 nodos, 8 vías, 0 relaciones
+2022-04-18 21:46:49,086 - INFO - Generado '02005A01100573.osm.gz': 79 nodos, 20 vías, 1 relaciones
+2022-04-18 21:46:49,102 - INFO - Generado '02005A01100593.osm.gz': 107 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:49,120 - INFO - Generado '02005A01100606.osm.gz': 91 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:49,132 - INFO - Generado '02005A01101000.osm.gz': 68 nodos, 11 vías, 1 relaciones
+2022-04-18 21:46:49,139 - INFO - Generado '02005A01103092.osm.gz': 40 nodos, 8 vías, 0 relaciones
+2022-04-18 21:46:49,155 - INFO - Generado '02005A01103434.osm.gz': 55 nodos, 19 vías, 0 relaciones
+2022-04-18 21:46:49,157 - INFO - Generado '02005A01110461.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:49,172 - INFO - Generado '02005A01200008.osm.gz': 72 nodos, 17 vías, 1 relaciones
+2022-04-18 21:46:49,189 - INFO - Generado '02005A01200020.osm.gz': 117 nodos, 18 vías, 0 relaciones
+2022-04-18 21:46:49,194 - INFO - Generado '02005A01200147.osm.gz': 27 nodos, 8 vías, 0 relaciones
+2022-04-18 21:46:49,196 - INFO - Generado '02005A01200258.osm.gz': 8 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:49,197 - INFO - Generado '02005A01203529.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:49,199 - INFO - Generado '02005A01220394.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:49,206 - INFO - Generado '02005A01300081.osm.gz': 24 nodos, 6 vías, 0 relaciones
+2022-04-18 21:46:49,246 - INFO - Generado '8291609XJ3489S.osm.gz': 193 nodos, 60 vías, 0 relaciones
+2022-04-18 21:46:49,252 - INFO - Generado '8291801XJ3489S.osm.gz': 25 nodos, 9 vías, 0 relaciones
+2022-04-18 21:46:49,270 - INFO - Generado '8292903XJ3489S.osm.gz': 76 nodos, 34 vías, 0 relaciones
+2022-04-18 21:46:49,277 - INFO - Generado '8292906XJ3489S.osm.gz': 44 nodos, 12 vías, 0 relaciones
+2022-04-18 21:46:49,323 - INFO - Generado '8390406XJ3489S.osm.gz': 200 nodos, 69 vías, 0 relaciones
+2022-04-18 21:46:49,353 - INFO - Generado '8391305XJ3489S.osm.gz': 147 nodos, 48 vías, 0 relaciones
+2022-04-18 21:46:49,354 - INFO - Generado '8391319XJ3489S.osm.gz': 4 nodos, 1 vías, 0 relaciones
+2022-04-18 21:46:49,397 - INFO - Generado '8391506XJ3489S.osm.gz': 204 nodos, 63 vías, 3 relaciones
+2022-04-18 21:46:49,429 - INFO - Generado '8391916XJ3489S.osm.gz': 166 nodos, 49 vías, 0 relaciones
+2022-04-18 21:46:49,431 - INFO - Generado '8392103XJ3489S.osm.gz': 6 nodos, 2 vías, 0 relaciones
+2022-04-18 21:46:49,458 - INFO - Generado '8392114XJ3489S.osm.gz': 121 nodos, 48 vías, 0 relaciones
+2022-04-18 21:46:49,467 - INFO - Generado '8392301XJ3489S.osm.gz': 46 nodos, 12 vías, 0 relaciones
+2022-04-18 21:46:49,481 - INFO - Generado '8392311XJ3489S.osm.gz': 73 nodos, 21 vías, 0 relaciones
+2022-04-18 21:46:49,498 - INFO - Generado '8392312XJ3489S.osm.gz': 68 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:49,512 - INFO - Generado '8392317XJ3489S.osm.gz': 55 nodos, 15 vías, 0 relaciones
+2022-04-18 21:46:49,531 - INFO - Generado '8392508XJ3489S.osm.gz': 80 nodos, 24 vías, 0 relaciones
+2022-04-18 21:46:49,545 - INFO - Generado '8392512XJ3489S.osm.gz': 73 nodos, 13 vías, 0 relaciones
+2022-04-18 21:46:49,565 - INFO - Generado '8392520XJ3489S.osm.gz': 81 nodos, 25 vías, 0 relaciones
+2022-04-18 21:46:49,573 - INFO - Generado '8392523XJ3489S.osm.gz': 24 nodos, 8 vías, 0 relaciones
+2022-04-18 21:46:49,584 - INFO - Generado '8392702XJ3489S.osm.gz': 43 nodos, 14 vías, 0 relaciones
+2022-04-18 21:46:49,597 - INFO - Generado '8394601XJ3489S.osm.gz': 58 nodos, 19 vías, 0 relaciones
+2022-04-18 21:46:49,618 - INFO - Generado '8394605XJ3489S.osm.gz': 85 nodos, 27 vías, 0 relaciones
+2022-04-18 21:46:49,628 - INFO - Generado '8394608XJ3489S.osm.gz': 45 nodos, 14 vías, 0 relaciones
+2022-04-18 21:46:49,653 - INFO - Generado '8394619XJ3489S.osm.gz': 86 nodos, 28 vías, 0 relaciones
+2022-04-18 21:46:49,664 - INFO - Generado '8395703XJ3489N.osm.gz': 45 nodos, 15 vías, 0 relaciones
+2022-04-18 21:46:49,675 - INFO - Generado '8490104XJ3489S.osm.gz': 34 nodos, 13 vías, 0 relaciones
+2022-04-18 21:46:49,683 - INFO - Generado '8490109XJ3489S.osm.gz': 16 nodos, 7 vías, 0 relaciones
+2022-04-18 21:46:49,721 - INFO - Generado '8490204XJ3489S.osm.gz': 125 nodos, 38 vías, 1 relaciones
+2022-04-18 21:46:49,736 - INFO - Generado '8490503XJ3489S.osm.gz': 47 nodos, 15 vías, 0 relaciones
+2022-04-18 21:46:49,767 - INFO - Generado '8491307XJ3489S.osm.gz': 103 nodos, 36 vías, 0 relaciones
+2022-04-18 21:46:49,790 - INFO - Generado '8491501XJ3489S.osm.gz': 59 nodos, 23 vías, 0 relaciones
+2022-04-18 21:46:49,807 - INFO - Generado '8491702XJ3489S.osm.gz': 64 nodos, 18 vías, 0 relaciones
+2022-04-18 21:46:49,839 - INFO - Generado '8491813XJ3489S.osm.gz': 114 nodos, 33 vías, 0 relaciones
+2022-04-18 21:46:49,858 - INFO - Generado '8493203XJ3489S.osm.gz': 48 nodos, 19 vías, 0 relaciones
+2022-04-18 21:46:49,868 - INFO - Generado '8493207XJ3489S.osm.gz': 36 nodos, 10 vías, 0 relaciones
+2022-04-18 21:46:49,888 - INFO - Generado '8493216XJ3489S.osm.gz': 58 nodos, 22 vías, 0 relaciones
+2022-04-18 21:46:49,900 - INFO - Generado '8493227XJ3489S.osm.gz': 41 nodos, 13 vías, 1 relaciones
+2022-04-18 21:46:49,930 - INFO - Generado '8494605XJ3489S.osm.gz': 91 nodos, 34 vías, 0 relaciones
+2022-04-18 21:46:49,967 - INFO - Generado '8494908XJ3489S.osm.gz': 140 nodos, 42 vías, 1 relaciones
+2022-04-18 21:46:49,982 - INFO - Generado '8495802XJ3489N.osm.gz': 64 nodos, 16 vías, 0 relaciones
+2022-04-18 21:46:49,989 - INFO - Generado '8589701XJ3488N.osm.gz': 16 nodos, 4 vías, 0 relaciones
+2022-04-18 21:46:50,055 - INFO - Generado '8590119XJ3489S.osm.gz': 207 nodos, 82 vías, 0 relaciones
+2022-04-18 21:46:50,065 - INFO - Generado '8590124XJ3489S.osm.gz': 40 nodos, 15 vías, 0 relaciones
+2022-04-18 21:46:50,074 - INFO - Generado '8591916XJ3489S.osm.gz': 58 nodos, 11 vías, 0 relaciones
+2022-04-18 21:46:50,144 - INFO - Generado '8591918XJ3489S.osm.gz': 236 nodos, 68 vías, 0 relaciones
+2022-04-18 21:46:50,156 - INFO - Generado '8591940XJ3489S.osm.gz': 65 nodos, 19 vías, 0 relaciones
+2022-04-18 21:46:50,164 - INFO - Generado '8593202XJ3489S.osm.gz': 41 nodos, 11 vías, 0 relaciones
+2022-04-18 21:46:50,184 - INFO - Generado '8593211XJ3489S.osm.gz': 115 nodos, 32 vías, 0 relaciones
+2022-04-18 21:46:50,195 - INFO - Generado '8593232XJ3489S.osm.gz': 52 nodos, 15 vías, 0 relaciones
+2022-04-18 21:46:50,198 - INFO - Generado '8593803XJ3489S.osm.gz': 16 nodos, 5 vías, 0 relaciones
+2022-04-18 21:46:50,248 - INFO - Generado '8593809XJ3489S.osm.gz': 264 nodos, 79 vías, 2 relaciones
+2022-04-18 21:46:50,258 - INFO - Generado '8593901XJ3489S.osm.gz': 58 nodos, 13 vías, 0 relaciones
+2022-04-18 21:46:50,271 - INFO - Generado '8594102XJ3489S.osm.gz': 75 nodos, 19 vías, 0 relaciones
+2022-04-18 21:46:50,278 - INFO - Generado '8594201XJ3489S.osm.gz': 36 nodos, 12 vías, 0 relaciones
+2022-04-18 21:46:50,332 - INFO - Generado '8594607XJ3489S.osm.gz': 291 nodos, 83 vías, 1 relaciones
+2022-04-18 21:46:50,337 - INFO - Generado '8594622XJ3489S.osm.gz': 31 nodos, 9 vías, 0 relaciones
+2022-04-18 21:46:50,353 - INFO - Generado '8594628XJ3489S.osm.gz': 66 nodos, 26 vías, 1 relaciones
+2022-04-18 21:46:50,356 - INFO - Generado '8595101XJ3489N.osm.gz': 24 nodos, 5 vías, 0 relaciones
+2022-04-18 21:46:50,391 - INFO - Generado '8688409XJ3488N.osm.gz': 146 nodos, 51 vías, 0 relaciones
+2022-04-18 21:46:50,440 - INFO - Generado '8689203XJ3488N.osm.gz': 246 nodos, 81 vías, 0 relaciones
+2022-04-18 21:46:50,477 - INFO - Generado '8689616XJ3488N.osm.gz': 201 nodos, 59 vías, 1 relaciones
+2022-04-18 21:46:50,482 - INFO - Generado '8690101XJ3489S.osm.gz': 18 nodos, 8 vías, 0 relaciones
+2022-04-18 21:46:50,539 - INFO - Generado '8690103XJ3489S.osm.gz': 249 nodos, 84 vías, 0 relaciones
+2022-04-18 21:46:50,555 - INFO - Generado '8690119XJ3489S.osm.gz': 54 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:50,572 - INFO - Generado '8690402XJ3489S.osm.gz': 69 nodos, 21 vías, 1 relaciones
+2022-04-18 21:46:50,604 - INFO - Generado '8690406XJ3489S.osm.gz': 110 nodos, 34 vías, 0 relaciones
+2022-04-18 21:46:50,608 - INFO - Generado '8690416XJ3489S.osm.gz': 11 nodos, 4 vías, 0 relaciones
+2022-04-18 21:46:50,611 - INFO - Generado '8691409XJ3489S.osm.gz': 8 nodos, 2 vías, 0 relaciones
+2022-04-18 21:46:50,687 - INFO - Generado '8693511XJ3489S.osm.gz': 246 nodos, 73 vías, 0 relaciones
+2022-04-18 21:46:50,691 - INFO - Generado '8693515XJ3489S.osm.gz': 17 nodos, 4 vías, 0 relaciones
+2022-04-18 21:46:50,706 - INFO - Generado '8694401XJ3489S.osm.gz': 53 nodos, 16 vías, 0 relaciones
+2022-04-18 21:46:50,709 - INFO - Generado '8694407XJ3489S.osm.gz': 7 nodos, 3 vías, 0 relaciones
+2022-04-18 21:46:50,714 - INFO - Generado '8694501XJ3489S.osm.gz': 20 nodos, 5 vías, 0 relaciones
+2022-04-18 21:46:50,772 - INFO - Generado '8694816XJ3489S.osm.gz': 210 nodos, 68 vías, 0 relaciones
+2022-04-18 21:46:50,783 - INFO - Generado '8694832XJ3489S.osm.gz': 24 nodos, 10 vías, 0 relaciones
+2022-04-18 21:46:50,794 - INFO - Generado '8788307XJ3488N.osm.gz': 49 nodos, 11 vías, 0 relaciones
+2022-04-18 21:46:50,818 - INFO - Generado '8789802XJ3488N.osm.gz': 75 nodos, 24 vías, 0 relaciones
+2022-04-18 21:46:50,834 - INFO - Generado '8789810XJ3488N.osm.gz': 61 nodos, 17 vías, 0 relaciones
+2022-04-18 21:46:50,853 - INFO - Generado '8789813XJ3488N.osm.gz': 58 nodos, 21 vías, 0 relaciones
+2022-04-18 21:46:50,878 - INFO - Generado '8790105XJ3489S.osm.gz': 86 nodos, 24 vías, 0 relaciones
+2022-04-18 21:46:50,888 - INFO - Generado '8790106XJ3489S.osm.gz': 26 nodos, 10 vías, 0 relaciones
+2022-04-18 21:46:50,898 - INFO - Generado '8792203XJ3489S.osm.gz': 45 nodos, 10 vías, 0 relaciones
+2022-04-18 21:46:50,919 - INFO - Generado '8794105XJ3489S.osm.gz': 70 nodos, 23 vías, 0 relaciones
+2022-04-18 21:46:50,923 - INFO - Generado '8794202XJ3489S.osm.gz': 15 nodos, 4 vías, 0 relaciones
+2022-04-18 21:46:50,926 - INFO - Generado '8794901XJ3489S.osm.gz': 11 nodos, 3 vías, 0 relaciones
+2022-04-18 21:46:50,933 - INFO - Generado '8889201XJ3488N.osm.gz': 35 nodos, 5 vías, 0 relaciones
+2022-04-18 21:46:50,943 - INFO - Generado '8890101XJ3488N.osm.gz': 36 nodos, 11 vías, 0 relaciones
+2022-04-18 21:46:50,968 - INFO - Generado '8890109XJ3488N.osm.gz': 93 nodos, 20 vías, 0 relaciones
+2022-04-18 21:46:50,977 - INFO - Generado '8892805XJ3489S.osm.gz': 32 nodos, 11 vías, 0 relaciones
+2022-04-18 21:46:50,984 - INFO - Generado '8989101XJ3488N.osm.gz': 22 nodos, 7 vías, 0 relaciones
+2022-04-18 21:46:53,266 - INFO - Generado 'zoning.geojson'
+2022-04-18 21:46:53,267 - WARNING - Revisa 20 etiquetas fixme
+2022-04-18 21:46:53,267 - INFO - Generado 'review.txt'. Por favor, compruébelo
+2022-04-18 21:46:53,269 - INFO - ¡Terminado!
