@@ -30,6 +30,10 @@ function deleteHandler(event) {
   event.target.value = "";
   editHandler(event);
 }
+
+function deleteFilter() {
+  filters.value.name.value = "";
+}
 </script>
 
 <template>
@@ -39,13 +43,22 @@ function deleteHandler(event) {
     </template>
     <template #content>
       <div class="panel-block">
-        <div class="field">
-          <div class="control">
+        <div class="field has-addons">
+          <div class="control has-icons-right">
             <input
+              ref="filterInput"
               class="input"
               v-model="filters.name.value"
               placeholder="Filtrar"
             />
+            <span class="icon is-right">
+              <font-awesome-icon icon="search" />
+            </span>
+          </div>
+          <div class="control">
+            <a class="button" @click="deleteFilter">
+              <font-awesome-icon icon="times" />
+            </a>
           </div>
         </div>
       </div>

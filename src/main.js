@@ -11,6 +11,7 @@ import {
   faDownload,
   faExclamationTriangle,
   faUpload,
+  faSearch,
   faTimes,
   faUser,
   faUserPlus,
@@ -26,6 +27,7 @@ library.add(faAngleDown);
 library.add(faDownload);
 library.add(faExclamationTriangle);
 library.add(faUpload);
+library.add(faSearch);
 library.add(faTimes);
 library.add(faUser);
 library.add(faUserPlus);
