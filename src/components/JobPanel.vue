@@ -78,6 +78,7 @@ onMounted(() => {
       @update:modelValue="getJobStatus"
     ></watch-select>
     <watch-select
+      v-if="!job.report.split_name"
       :watched-value="municipio ? municipio.cod_municipio : ''"
       v-model="division"
       :fetch-options="fetchDivisiones"
@@ -86,6 +87,9 @@ onMounted(() => {
       label="nombre"
       @update:modelValue="getJobStatus"
     ></watch-select>
+    <div class="control is-disabled" v-else>
+      <input class="input" :value="job.report.split_name" />
+    </div>
     <div class="notification is-info is-light" v-if="municipio === null">
       Selecciona una provincia y el municipio a procesar. Si existen divisiones
       administrativas del municipio (distritos o barrios), también puedes
