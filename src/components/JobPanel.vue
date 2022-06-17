@@ -1,16 +1,17 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import api from "@/api";
-import { useJobStore } from "@/stores/job";
 import { useErrorStore } from "@/stores/error";
+import { useJobStore } from "@/stores/job";
+import { useProvStore } from "@/stores/provincias";
 import WatchSelect from "./WatchSelect.vue";
 
 const errorStore = useErrorStore();
 const job = useJobStore();
+const provincias = useProvStore();
 const provincia = ref(null);
 const municipio = ref(null);
 const division = ref(null);
-const provincias = ref([]);
 
 async function fetchMunicipios(prov) {
   try {
@@ -47,16 +48,7 @@ function getJobStatus() {
 }
 
 onMounted(() => {
-  api
-    .getProv()
-    .then((response) => {
-      provincias.value = response.data.provincias.map((prov) => ({
-        cod_provincia: prov.cod_provincia,
-        nombre: prov.nombre,
-        label: prov.cod_provincia + " " + prov.nombre,
-      }));
-    })
-    .catch((err) => errorStore.set(err));
+  provincias.fetch().catch((err) => errorStore.set(err));
 });
 </script>
 
@@ -66,11 +58,16 @@ onMounted(() => {
       <div class="control">
         <v-select
           placeholder="Selecciona la provincia..."
-          :options="provincias"
+          :options="provincias.get"
           :clearable="false"
           :selectOnTab="true"
           v-model="provincia"
-        ></v-select>
+        >
+          <!-- eslint-disable-next-line vue/no-unused-vars  -->
+          <template #no-options="{ search, searching, loading }">
+            Lo siento, opción no encontrada.
+          </template>
+        </v-select>
       </div>
     </div>
     <watch-select

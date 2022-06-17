@@ -1,10 +1,10 @@
 import { defineStore } from "pinia";
 import api from "@/api";
+import { useProvStore } from "@/stores/provincias";
 
 export const useJobStore = defineStore({
   id: "job",
   state: () => ({
-    data: { cod_municipio: null },
     cod_municipio: null,
     cod_division: "",
     estado: "",
@@ -18,7 +18,38 @@ export const useJobStore = defineStore({
     callejero: [],
   }),
 
-  getters: {},
+  getters: {
+    nombreZona(state) {
+      const provincias = useProvStore();
+      let name = state.report.split_name;
+      name = name ? name + ", " : "";
+      name = name + state.report.mun_name;
+      let prov = provincias.nombre(state.report.mun_code);
+      name = prov != state.report.mun_name ? name + " (" + prov + ")" : name;
+      return name;
+    },
+    opciones(state) {
+      return state.edificios
+        ? state.direcciones
+          ? "edificios y direcciones"
+          : "edificios"
+        : "direcciones";
+    },
+    options(state) {
+      return state.edificios
+        ? state.direcciones
+          ? "buildings and addresses"
+          : "buildings"
+        : "addresses";
+    },
+    tags(state) {
+      return state.edificios
+        ? state.direcciones
+          ? "buildings, addresses"
+          : "buildings"
+        : "addresses";
+    },
+  },
 
   actions: {
     async getJob(cod_municipio, cod_division) {

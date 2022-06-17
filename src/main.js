@@ -8,6 +8,7 @@ import SmartTable from "vuejs-smart-table";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faAngleDown,
+  faCopy,
   faDownload,
   faExclamationTriangle,
   faUpload,
@@ -24,6 +25,7 @@ import router from "./router";
 const app = createApp(App);
 
 library.add(faAngleDown);
+library.add(faCopy);
 library.add(faDownload);
 library.add(faExclamationTriangle);
 library.add(faUpload);

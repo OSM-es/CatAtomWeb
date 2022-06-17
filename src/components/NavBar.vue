@@ -1,5 +1,5 @@
 <script setup>
-import { computed, ref } from "vue";
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useUserStore } from "@/stores/user";
 import api from "../api";
@@ -8,16 +8,14 @@ const isActive = ref(false);
 const userStore = useUserStore();
 const router = useRouter();
 
-const isLogged = computed(() => userStore.isLogged);
-
-const loginUrl = computed(() => {
+function loginUrl() {
   const authPath = router.resolve({ name: "auth" });
   const authURL = new URL(authPath.href, window.location.href).href;
   return api.getUri({
     url: process.env.VUE_APP_ROOT_API + "/login",
     params: { callback: authURL },
   });
-});
+}
 
 function logout() {
   userStore.logout().then(() => {
@@ -51,7 +49,7 @@ function logout() {
       </div>
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
-      <div class="navbar-end" v-if="isLogged">
+      <div class="navbar-end" v-if="userStore.isLogged">
         <a class="navbar-item" :href="$docUrl">Documentación</a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">{{ userStore.username }}</a>
@@ -81,7 +79,7 @@ function logout() {
               </a>
             </p>
             <p class="control">
-              <a class="button is-info is-outlined" :href="loginUrl">
+              <a class="button is-info is-outlined" :href="loginUrl()">
                 <span class="icon">
                   <font-awesome-icon icon="user" />
                 </span>

@@ -58,11 +58,6 @@ watch(
         <template no-options="{ search, searching, loading }">
           Lo siento, opción no encontrada.
         </template>
-        <template #open-indicator="{ attributes }">
-          <span v-bind="attributes">
-            <font-awesome-icon icon="angle-down" />
-          </span>
-        </template>
       </v-select>
     </div>
   </div>
