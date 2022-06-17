@@ -1,6 +1,6 @@
 {
   "headers": [
-    { "source" : "**/*.@(jpg|jpeg|gif|png|txt)"
+    { "source" : "**/*.@(jpg|jpeg|gif|png|txt|gz)"
     , "headers" :
         [{ "key" : "Access-Control-Allow-Origin"
          , "value" : "*"
