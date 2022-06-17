@@ -11,8 +11,8 @@ import ProcessPanelGroup from "../components/ProcessPanelGroup.vue";
 const job = useJobStore();
 
 function updateLog() {
-  job.getJob(job.data.cod_municipio, job.data.cod_division).then(() => {
-    if (job.data.estado == "RUNNING") {
+  job.getJob(job.cod_municipio, job.cod_division).then(() => {
+    if (job.estado == "RUNNING") {
       setTimeout(() => {
         updateLog();
       }, 500);
@@ -34,22 +34,22 @@ function updateProcess() {
         <div class="column is-one-quarter">
           <job-panel></job-panel>
           <process-panel-group
-            v-if="job.data.cod_municipio !== null"
+            v-if="job.cod_municipio !== null"
             @updateProcess="updateProcess"
           >
           </process-panel-group>
         </div>
         <div class="column">
-          <vue-collapsible-panel-group v-if="job.data.cod_municipio">
-            <done-panel v-if="job.data.estado == 'DONE'"></done-panel>
-            <review-panel v-if="job.data.estado == 'REVIEW'"></review-panel>
+          <vue-collapsible-panel-group v-if="job.cod_municipio">
+            <done-panel v-if="job.estado == 'DONE'"></done-panel>
+            <review-panel v-if="job.estado == 'REVIEW'"></review-panel>
             <fixme-panel
-              v-if="job.data.estado == 'FIXME'"
-              :fixmes="job.data.revisar"
-              :municipio="job.data.cod_municipio"
+              v-if="job.estado == 'FIXME'"
+              :fixmes="job.revisar"
+              :municipio="job.cod_municipio"
             ></fixme-panel>
-            <report-panel v-if="job.data.informe.length > 0"></report-panel>
-            <log-panel v-if="job.data.estado != 'AVAILABLE'"></log-panel>
+            <report-panel v-if="job.informe.length > 0"></report-panel>
+            <log-panel v-if="job.estado != 'AVAILABLE'"></log-panel>
           </vue-collapsible-panel-group>
         </div>
       </div>

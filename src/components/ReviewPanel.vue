@@ -12,14 +12,14 @@ const currentPage = ref(1);
 
 const editHandler = debounce((event) => {
   const key = event.target.attributes["data-key"].value;
-  const cat = job.data.callejero[key][0];
+  const cat = job.callejero[key][0];
   job
     .updateHighway(cat, event.target.value)
     .catch((err) => errorStore.set(err));
 }, 500);
 
 function highwayNames() {
-  return job.data.callejero.map((row, i) => ({
+  return job.callejero.map((row, i) => ({
     key: i,
     cat: row[0],
     conv: row[1],

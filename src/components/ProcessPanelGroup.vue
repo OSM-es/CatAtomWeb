@@ -8,7 +8,7 @@ const user = useUserStore();
 const processPanel = ref(null);
 
 function isActive(panel) {
-  const estado = job.data.estado;
+  const estado = job.estado;
   if (panel == "processPanel") {
     return estado == "AVAILABLE" || estado == "ERROR" || estado == "RUNNING";
   }
@@ -25,7 +25,7 @@ function isActive(panel) {
 }
 
 watch(
-  () => job.data.estado,
+  () => job.estado,
   async (estado) => {
     await nextTick();
     if (processPanel.value) {
@@ -54,7 +54,7 @@ watch(
         <div
           class="container"
           :class="
-            isActive('processPanel') && job.data.estado != 'RUNNING'
+            isActive('processPanel') && job.estado != 'RUNNING'
               ? ''
               : 'is-disabled'
           "
@@ -64,12 +64,12 @@ watch(
               <label class="label">Opciones</label>
               <div class="checkbox">
                 <label class="checkbox">
-                  <input type="checkbox" v-model="job.data.edificios" />
+                  <input type="checkbox" v-model="job.edificios" />
                   Procesar edificios
                 </label>
                 <br />
                 <label class="checkbox">
-                  <input type="checkbox" v-model="job.data.direcciones" />
+                  <input type="checkbox" v-model="job.direcciones" />
                   Procesar direcciones
                 </label>
               </div>
@@ -77,7 +77,7 @@ watch(
                 <label class="label">Idioma</label>
                 <div class="control">
                   <div class="select">
-                    <select v-model="job.data.idioma">
+                    <select v-model="job.idioma">
                       <option value="es_ES">Español</option>
                       <option value="ca_ES">Catalá</option>
                       <option value="gl_ES">Galego</option>
@@ -90,7 +90,7 @@ watch(
           <div class="panel-block">
             <div class="field">
               <label class="label">Estado</label>
-              <div class="control">{{ job.data.mensaje }}</div>
+              <div class="control">{{ job.mensaje }}</div>
             </div>
           </div>
           <div class="panel-block">
@@ -123,18 +123,18 @@ watch(
         </div>
         <div class="panel-block">
           <div class="container">
-            <p v-if="!user.isOwner(job.data.propietario)">
+            <p v-if="!user.isOwner(job.propietario)">
               El proceso está bloqueado por
               <a
-                :href="`https://www.openstreetmap.org/user/${job.data.propietario.username}`"
+                :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
               >
-                {{ job.data.propietario.username }}.
+                {{ job.propietario.username }}.
               </a>
             </p>
             <button
               class="button is-link is-outlined is-fullwidth"
               @click="$emit('updateProcess')"
-              :disabled="!user.isOwner(job.data.propietario)"
+              :disabled="!user.isOwner(job.propietario)"
             >
               Reprocesar
             </button>
@@ -148,7 +148,7 @@ watch(
       </div>
       <div id="fixmePanel" class="container">
         <div class="panel-block">
-          <p v-if="job.data.revisar.length == 0">
+          <p v-if="job.revisar.length == 0">
             ¡Bien hecho!. Confirma para continuar.
           </p>
           <p v-else>
@@ -158,26 +158,25 @@ watch(
             >
               instrucciones.
             </a>
-            <span v-if="job.data.revisar.length == 1">Falta 1 archivo.</span>
-            <span v-else>Faltan {{ job.data.revisar.length }} archivos.</span>
+            <span v-if="job.revisar.length == 1">Falta 1 archivo.</span>
+            <span v-else>Faltan {{ job.revisar.length }} archivos.</span>
           </p>
         </div>
         <div class="panel-block">
           <div class="container">
-            <p v-if="!user.isOwner(job.data.propietario)">
+            <p v-if="!user.isOwner(job.propietario)">
               El proceso está bloqueado por
               <a
-                :href="`https://www.openstreetmap.org/user/${job.data.propietario.username}`"
+                :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
               >
-                {{ job.data.propietario.username }}.
+                {{ job.propietario.username }}.
               </a>
             </p>
             <button
               class="button is-link is-outlined is-fullwidth"
               @click="$emit('updateProcess')"
               :disabled="
-                job.data.revisar.length != 0 ||
-                !user.isOwner(job.data.propietario)
+                job.revisar.length != 0 || !user.isOwner(job.propietario)
               "
             >
               Confirmar

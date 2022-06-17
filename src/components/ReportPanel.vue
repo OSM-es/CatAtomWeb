@@ -12,7 +12,7 @@ const job = useJobStore();
     <template #content>
       <div class="panel-block">
         <div class="container">
-          <p v-for="(row, i) in job.data.informe" :key="i" class="terminal">
+          <p v-for="(row, i) in job.informe" :key="i" class="terminal">
             {{ row }}
           </p>
         </div>

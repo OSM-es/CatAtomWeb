@@ -28,8 +28,9 @@ api.getMun = (mun) => {
   return api.get("mun/" + mun);
 };
 
-api.getJob = (cod_municipio, cod_division, options) => {
-  return api.get("job/" + cod_municipio + "/" + cod_division, options);
+api.getJob = (cod_municipio, cod_division, linea = 0) => {
+  const params = { linea };
+  return api.get("job/" + cod_municipio + "/" + cod_division, { params });
 };
 
 api.postJob = (cod_municipio, cod_division, options) => {

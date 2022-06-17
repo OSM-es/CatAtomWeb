@@ -29,9 +29,9 @@ function onNewFiles(newFiles) {
     let formData = new FormData();
     formData.append("file", file.file);
     api
-      .put("job/" + job.data.cod_municipio, formData, config)
+      .put("job/" + job.cod_municipio, formData, config)
       .then(() => {
-        job.getJob(job.data.cod_municipio, job.data.cod_division);
+        job.getJob(job.cod_municipio, job.cod_division);
       })
       .catch((err) => errorStore.set(err));
   });

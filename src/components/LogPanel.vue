@@ -7,7 +7,7 @@ const job = useJobStore();
 <template>
   <vue-collapsible-panel
     class="panel"
-    :class="job.data.estado == 'RUNNING' ? 'is-info' : ''"
+    :class="job.estado == 'RUNNING' ? 'is-info' : ''"
   >
     <template #title>
       <p class="panel-heading">Registro</p>
@@ -15,10 +15,10 @@ const job = useJobStore();
     <template #content>
       <div class="panel-block">
         <div class="container">
-          <p v-for="(row, i) in job.data.log" :key="i" class="terminal">
+          <p v-for="(row, i) in job.log" :key="i" class="terminal">
             {{ row }}
           </p>
-          <div class="loader" v-if="job.data.estado == 'RUNNING'"></div>
+          <div class="loader" v-if="job.estado == 'RUNNING'"></div>
         </div>
       </div>
     </template>
