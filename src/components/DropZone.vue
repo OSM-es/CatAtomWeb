@@ -1,6 +1,7 @@
 <script setup>
-import { defineProps, onMounted, onUnmounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
 
+// eslint-disable-next-line no-undef
 const props = defineProps(["disabled"]);
 let active = ref(false);
 let inActiveTimeout = null;

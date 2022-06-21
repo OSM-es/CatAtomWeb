@@ -1,16 +1,16 @@
 <script setup>
-import { useJobStore } from "../stores/job";
-import JobPanel from "../components/JobPanel.vue";
-import DonePanel from "../components/DonePanel.vue";
-import FixmePanel from "../components/FixmePanel.vue";
-import LogPanel from "../components/LogPanel.vue";
-import ReportPanel from "../components/ReportPanel.vue";
-import ReviewPanel from "../components/ReviewPanel.vue";
-import ProcessPanelGroup from "../components/ProcessPanelGroup.vue";
+import { useJobStore } from "@/stores/job";
+import JobPanel from "@/components/JobPanel.vue";
+import DonePanel from "@/components/DonePanel.vue";
+import FixmePanel from "@/components/FixmePanel.vue";
+import LogPanel from "@/components/LogPanel.vue";
+import ReportPanel from "@/components/ReportPanel.vue";
+import ReviewPanel from "@/components/ReviewPanel.vue";
+import ProcessPanelGroup from "@/components/ProcessPanelGroup.vue";
 
 const job = useJobStore();
 
-function updateLog() {
+/* function updateLog() {
   job.getJob(job.cod_municipio, job.cod_division).then(() => {
     if (job.estado == "RUNNING") {
       setTimeout(() => {
@@ -18,12 +18,12 @@ function updateLog() {
       }, 500);
     }
   });
-}
+} */
 
 function updateProcess() {
-  job.createJob().then(() => {
-    updateLog();
-  });
+  job.createJob(); //.then(() => {
+  // updateLog();
+  //});
 }
 </script>
 

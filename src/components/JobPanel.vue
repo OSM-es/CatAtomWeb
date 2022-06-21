@@ -1,17 +1,29 @@
 <script setup>
-import { ref, onMounted } from "vue";
-import api from "@/api";
+import { ref, onBeforeUnmount } from "vue";
+import api from "@/services/api";
 import { useErrorStore } from "@/stores/error";
 import { useJobStore } from "@/stores/job";
 import { useProvStore } from "@/stores/provincias";
+import { useChatService } from "@/services/chat";
+import { useUserStore } from "@/stores/user";
 import WatchSelect from "./WatchSelect.vue";
 
 const errorStore = useErrorStore();
 const job = useJobStore();
+const chat = useChatService();
+const userStore = useUserStore();
 const provincias = useProvStore();
 const provincia = ref(null);
 const municipio = ref(null);
 const division = ref(null);
+let municipioPrevio = null;
+
+chat.on("updateJob", (data) => {
+  console.info("updateJob", data);
+  job.getJob(job.cod_municipio, job.cod_division).catch((err) => {
+    errorStore.set(err);
+  });
+});
 
 async function fetchMunicipios(prov) {
   try {
@@ -37,18 +49,37 @@ async function fetchDivisiones(mun) {
   return [];
 }
 
+function getRoom(cod_municipio = municipio.value.cod_municipio) {
+  return {
+    id: userStore.osmId,
+    username: userStore.username,
+    room: cod_municipio,
+  };
+}
+
 function getJobStatus() {
+  if (municipioPrevio && municipioPrevio != municipio.value) {
+    chat.socket.emit("leave", getRoom(municipioPrevio));
+  }
   if (municipio.value === null) {
     job.$reset();
   } else {
     const cod_municipio = municipio.value.cod_municipio;
     const cod_division = division.value === null ? "" : division.value.osm_id;
+    if (!cod_division) {
+      chat.socket.emit("join", getRoom(), (response) => {
+        console.info("emit join", response);
+      });
+    }
+    municipioPrevio = cod_municipio;
     job.getJob(cod_municipio, cod_division).catch((err) => errorStore.set(err));
   }
 }
 
-onMounted(() => {
-  provincias.fetch().catch((err) => errorStore.set(err));
+provincias.fetch().catch((err) => errorStore.set(err));
+
+onBeforeUnmount(() => {
+  chat.disconnect();
 });
 </script>
 

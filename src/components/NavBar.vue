@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useUserStore } from "@/stores/user";
-import api from "../api";
+import api from "@/services/api";
 
 const isActive = ref(false);
 const userStore = useUserStore();

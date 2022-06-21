@@ -1,11 +1,12 @@
 <script setup>
-import { defineProps, ref } from "vue";
-import { api } from "@/api";
+import { ref } from "vue";
+import { api } from "@/services/api";
 import { useJobStore } from "@/stores/job";
 import DropZone from "./DropZone.vue";
 import UploadableFileList from "../compositions/UploadableFileList";
 import { useErrorStore } from "@/stores/error";
 
+// eslint-disable-next-line no-undef
 const props = defineProps(["municipio", "fixmes"]);
 const errorStore = useErrorStore();
 const job = useJobStore();

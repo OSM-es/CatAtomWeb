@@ -1,6 +1,7 @@
 <script setup>
-import { defineProps, ref, watch } from "vue";
+import { ref, watch } from "vue";
 
+// eslint-disable-next-line no-undef
 const props = defineProps({
   watchedValue: {},
   modelValue: { type: Object, default: null },

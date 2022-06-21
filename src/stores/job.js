@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import api from "@/api";
+import api from "@/services/api";
 import { useProvStore } from "@/stores/provincias";
 
 export const useJobStore = defineStore({
@@ -54,7 +54,7 @@ export const useJobStore = defineStore({
   actions: {
     async getJob(cod_municipio, cod_division) {
       const linea = this.estado == "RUNNING" ? this.linea : 0;
-      const log = this.linea == 0 ? [] : this.log;
+      const log = linea < this.log.length ? [] : this.log;
       const provincia = cod_municipio.substring(0, 2);
       const response = await api.getJob(cod_municipio, cod_division, linea);
       this.$state = response.data;
