@@ -13,6 +13,7 @@ import {
   faExclamationTriangle,
   faUpload,
   faSearch,
+  faPaperPlane,
   faTimes,
   faUser,
   faUserPlus,
@@ -30,6 +31,7 @@ library.add(faDownload);
 library.add(faExclamationTriangle);
 library.add(faUpload);
 library.add(faSearch);
+library.add(faPaperPlane);
 library.add(faTimes);
 library.add(faUser);
 library.add(faUserPlus);

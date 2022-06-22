@@ -1,6 +1,8 @@
 <script setup>
 import { useJobStore } from "@/stores/job";
+import { useErrorStore } from "@/stores/error";
 import JobPanel from "@/components/JobPanel.vue";
+import ChatPanel from "@/components/ChatPanel.vue";
 import DonePanel from "@/components/DonePanel.vue";
 import FixmePanel from "@/components/FixmePanel.vue";
 import LogPanel from "@/components/LogPanel.vue";
@@ -9,21 +11,10 @@ import ReviewPanel from "@/components/ReviewPanel.vue";
 import ProcessPanelGroup from "@/components/ProcessPanelGroup.vue";
 
 const job = useJobStore();
-
-/* function updateLog() {
-  job.getJob(job.cod_municipio, job.cod_division).then(() => {
-    if (job.estado == "RUNNING") {
-      setTimeout(() => {
-        updateLog();
-      }, 500);
-    }
-  });
-} */
+const errorStore = useErrorStore();
 
 function updateProcess() {
-  job.createJob(); //.then(() => {
-  // updateLog();
-  //});
+  job.createJob().catch((err) => errorStore.set(err));
 }
 </script>
 
@@ -31,7 +22,7 @@ function updateProcess() {
   <section class="section">
     <div class="content">
       <div class="columns">
-        <div class="column is-one-quarter">
+        <div class="column is-one-fifth">
           <job-panel></job-panel>
           <process-panel-group
             v-if="job.cod_municipio !== null"
@@ -39,7 +30,7 @@ function updateProcess() {
           >
           </process-panel-group>
         </div>
-        <div class="column">
+        <div class="column is-three-fifths">
           <vue-collapsible-panel-group v-if="job.cod_municipio">
             <done-panel v-if="job.estado == 'DONE'"></done-panel>
             <review-panel v-if="job.estado == 'REVIEW'"></review-panel>
@@ -51,6 +42,9 @@ function updateProcess() {
             <report-panel v-if="job.informe.length > 0"></report-panel>
             <log-panel v-if="job.estado != 'AVAILABLE'"></log-panel>
           </vue-collapsible-panel-group>
+        </div>
+        <div class="column is-one-fifth" v-if="job.cod_municipio">
+          <chat-panel></chat-panel>
         </div>
       </div>
     </div>

@@ -64,15 +64,18 @@ function getJobStatus() {
   if (municipio.value === null) {
     job.$reset();
   } else {
+    job.$reset();
     const cod_municipio = municipio.value.cod_municipio;
     const cod_division = division.value === null ? "" : division.value.osm_id;
-    if (!cod_division) {
-      chat.socket.emit("join", getRoom(), (response) => {
-        console.info("emit join", response);
-      });
-    }
     municipioPrevio = cod_municipio;
-    job.getJob(cod_municipio, cod_division).catch((err) => errorStore.set(err));
+    job
+      .getJob(cod_municipio, cod_division)
+      .then(() => {
+        if (!cod_division) {
+          chat.socket.emit("join", getRoom());
+        }
+      })
+      .catch((err) => errorStore.set(err));
   }
 }
 

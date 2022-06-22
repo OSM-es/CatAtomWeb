@@ -18,3 +18,33 @@ ul.vs__dropdown-menu {
     margin-left: 0 !important;
     margin-top: 0 !important;
 }
+
+.chat {
+    background-color: $background;
+}
+
+.chat .message {
+    padding: 0.2em 0.5em;
+    border-radius: 12px 12px 12px 0;
+    background-color: white;
+}
+
+.chat .notify {
+    padding: 0.2em 0.5em;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center !important;
+}
+
+.chat .message:not(:last-child),
+.chat .notify:not(:last-child) {
+    margin-bottom: 0.4em;
+}
+
+.chat .message p:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.chat [disabled].textarea {
+    background-color: white;
+}

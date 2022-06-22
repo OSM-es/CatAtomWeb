@@ -16,6 +16,8 @@ export const useJobStore = defineStore({
     report: {},
     revisar: [],
     callejero: [],
+    participantes: 0,
+    charla: [],
   }),
 
   getters: {
