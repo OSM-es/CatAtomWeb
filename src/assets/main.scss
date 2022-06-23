@@ -23,24 +23,62 @@ ul.vs__dropdown-menu {
     background-color: $background;
 }
 
-.chat .message {
+.chat [class^="message-"] {
     padding: 0.2em 0.5em;
-    border-radius: 12px 12px 12px 0;
+    border-radius: 0.8em;
 }
 
 .chat .notify {
     padding: 0.2em 0.5em;
-    border-radius: 12px;
+    border-radius: 0.8em;
     background-color: white;
     text-align: center !important;
 }
 
-.chat .message:not(:last-child),
-.chat .notify:not(:last-child) {
-    margin-bottom: 0.4em;
+.message-left::after {
+    content: '';
+    margin-top: -0.5em;
+    padding-top: 0px;
+    position: relative;
+    bottom: -0.7em;
+    left: 0;
+    border-width: 0.6em 0 0 0.6em;
+    border-style: solid;
+    border-top-color: inherit;
+    border-right-color: transparent;
+    border-bottom-color: inherit;
+    border-left-color: transparent;
+    display: block;
+    width: 0;
 }
 
-.chat .message p:not(:last-child) {
+.message-right::after {
+    content: '';
+    margin-top: -0.5em;
+    padding-top: 0px;
+    position: relative;
+    bottom: -0.7em;
+    margin-left: auto;
+    margin-right: 0;
+    border-width: 0.6em 0.6em 0 0;
+    border-style: solid;
+    border-top-color: inherit;
+    border-right-color: transparent;
+    border-bottom-color: inherit;
+    border-left-color: transparent;
+    display: block;
+    width: 0;
+}
+
+.chat [class^="message-"]:not(:last-child) {
+    margin-bottom: 0.8em;
+}
+
+.chat .notify:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.chat [class^="message-"] p:not(:last-child) {
     margin-bottom: 0;
 }
 
@@ -50,129 +88,161 @@ ul.vs__dropdown-menu {
 
 .chat-color-0 {
     background-color: #228b22;
+    border-color: #228b22;
     color: white;
 }
 .chat-color-1 {
     background-color: #800000;
+    border-color: #800000;
     color: white;
 }
 .chat-color-2 {
     background-color: #556b2f;
+    border-color: #556b2f;
     color: white;
 }
 .chat-color-3 {
     background-color: #808080;
+    border-color: #808080;
     color: white;
 }
 .chat-color-4 {
     background-color: #483d8b;
+    border-color: #483d8b;
     color: white;
 }
 .chat-color-5 {
     background-color: #b8860b;
+    border-color: #b8860b;
     color: white;
 }
 .chat-color-6 {
     background-color: #008b8b;
+    border-color: #008b8b;
     color: white;
 }
 .chat-color-7 {
     background-color: #000080;
+    border-color: #000080;
     color: white;
 }
 .chat-color-8 {
     background-color: #4682b4;
+    border-color: #4682b4;
     color: white;
 }
 .chat-color-9 {
     background-color: #32cd32;
+    border-color: #32cd32;
     color: black;
 }
 .chat-color-10 {
     background-color: #7f007f;
+    border-color: #7f007f;
     color: white;
 }
 .chat-color-11 {
     background-color: #8fbc8f;
+    border-color: #8fbc8f;
     color: black;
 }
 .chat-color-12 {
     background-color: #ff4500;
+    border-color: #ff4500;
     color: white;
 }
 .chat-color-13 {
     background-color: #ff8c00;
+    border-color: #ff8c00;
     color: black;
 }
 .chat-color-14 {
     background-color: #ffff00;
+    border-color: #ffff00;
     color: black;
 }
 .chat-color-15 {
     background-color: #00ff00;
+    border-color: #00ff00;
     color: black;
 }
 .chat-color-16 {
     background-color: #8a2be2;
+    border-color: #8a2be2;
     color: white;
 }
 .chat-color-17 {
     background-color: #e9967a;
+    border-color: #e9967a;
     color: black;
 }
 .chat-color-18 {
     background-color: #dc143c;
+    border-color: #dc143c;
     color: white;
 }
 .chat-color-19 {
     background-color: #00ffff;
+    border-color: #00ffff;
     color: black;
 }
 .chat-color-20 {
     background-color: #0000ff;
+    border-color: #0000ff;
     color: white;
 }
 .chat-color-21 {
     background-color: #adff2f;
+    border-color: #adff2f;
     color: black;
 }
 .chat-color-22 {
     background-color: #da70d6;
+    border-color: #da70d6;
     color: black;
 }
 .chat-color-23 {
     background-color: #d8bfd8;
+    border-color: #d8bfd8;
     color: black;
 }
 .chat-color-24 {
     background-color: #ff00ff;
+    border-color: #ff00ff;
     color: white;
 }
 .chat-color-25 {
     background-color: #1e90ff;
+    border-color: #1e90ff;
     color: white;
 }
 .chat-color-26 {
     background-color: #db7093;
+    border-color: #db7093;
     color: black;
 }
 .chat-color-27 {
     background-color: #f0e68c;
+    border-color: #f0e68c;
     color: black;
 }
 .chat-color-28 {
     background-color: #87ceeb;
+    border-color: #87ceeb;
     color: black;
 }
 .chat-color-29 {
     background-color: #ff1493;
+    border-color: #ff1493;
     color: white;
 }
 .chat-color-30 {
     background-color: #7b68ee;
+    border-color: #7b68ee;
     color: white;
 }
 .chat-color-31 {
     background-color: #98fb98;
+    border-color: #98fb98;
     color: black;
 }

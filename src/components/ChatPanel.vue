@@ -3,16 +3,21 @@
 import { computed, ref } from "vue";
 import { useChatService } from "@/services/chat";
 import { useJobStore } from "@/stores/job";
+import { useUserStore } from "@/stores/user";
 
 const job = useJobStore();
+const user = useUserStore();
 const chat = useChatService();
 const message = ref("");
 const chatActive = computed(() => job.participantes > 1);
 
-function chatColor(msg) {
-  return Object.prototype.hasOwnProperty.call(msg, "username")
-    ? "message chat-color-" + (msg.osmId % 32)
-    : "notify";
+function chatClasses(msg) {
+  if (Object.prototype.hasOwnProperty.call(msg, "username")) {
+    const userClass = msg.username == user.username ? "right" : "left";
+    return `message-${userClass} chat-color-${msg.osmId % 32}`;
+  } else {
+    return "notify";
+  }
 }
 
 function getMessage(msg) {
@@ -33,9 +38,9 @@ function send() {
     <div class="panel-heading">Charla</div>
     <div class="panel-block chat">
       <div class="container">
-        <div v-for="(msg, i) in job.charla" :key="i" :class="chatColor(msg)">
-          <p v-if="msg.hasOwnProperty('username')">
-            <strong>{{ msg.username }}</strong>
+        <div v-for="(msg, i) in job.charla" :key="i" :class="chatClasses(msg)">
+          <p v-if="msg.hasOwnProperty('username')" class="has-text-weight-bold">
+            {{ msg.username }}
           </p>
           <p v-for="(row, i) in getMessage(msg)" :key="i">{{ row }}</p>
         </div>
