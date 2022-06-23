@@ -18,11 +18,16 @@ const editHandler = debounce((event) => {
     .catch((err) => errorStore.set(err));
 }, 500);
 
+function chatColor(row) {
+  return row.length < 3 ? "" : "chat-color-" + (row[2] % 32);
+}
+
 function highwayNames() {
   return job.callejero.map((row, i) => ({
     key: i,
     cat: row[0],
     conv: row[1],
+    color: chatColor(row),
   }));
 }
 
@@ -64,7 +69,7 @@ function deleteFilter() {
       </div>
       <div class="panel-block">
         <VTable
-          class="table is-narrow is-hoverable"
+          class="table is-narrow"
           :data="highwayNames()"
           :filters="filters"
           :pageSize="12"
@@ -78,7 +83,7 @@ function deleteFilter() {
             </tr>
           </template>
           <template #body="{ rows }">
-            <tr v-for="row in rows" :key="row.key">
+            <tr v-for="row in rows" :key="row.key" :class="row.color">
               <td class="is-valign-middle">{{ row.cat }}</td>
               <td>
                 <div class="field has-addons">

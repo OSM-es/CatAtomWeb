@@ -7,7 +7,13 @@ import { useJobStore } from "@/stores/job";
 const job = useJobStore();
 const chat = useChatService();
 const message = ref("");
-const chatActive = computed(() => job.participantes > 0);
+const chatActive = computed(() => job.participantes > 1);
+
+function chatColor(msg) {
+  return Object.prototype.hasOwnProperty.call(msg, "username")
+    ? "message chat-color-" + (msg.osmId % 32)
+    : "notify";
+}
 
 function getMessage(msg) {
   const message = Object.prototype.hasOwnProperty.call(msg, "message")
@@ -27,11 +33,7 @@ function send() {
     <div class="panel-heading">Charla</div>
     <div class="panel-block chat">
       <div class="container">
-        <div
-          v-for="(msg, i) in job.charla"
-          :key="i"
-          :class="msg.hasOwnProperty('username') ? 'message' : 'notify'"
-        >
+        <div v-for="(msg, i) in job.charla" :key="i" :class="chatColor(msg)">
           <p v-if="msg.hasOwnProperty('username')">
             <strong>{{ msg.username }}</strong>
           </p>

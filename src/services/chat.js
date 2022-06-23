@@ -8,9 +8,6 @@ class SocketioService {
   constructor() {
     this.connect(process.env.VUE_APP_ROOT_API);
 
-    this.socket.on("message", (data) => {
-      console.info("message", data);
-    });
     this.socket.on("join", (data) => {
       const job = useJobStore();
       const msg = `${data.username} se unió a ${data.room}`;
@@ -25,7 +22,6 @@ class SocketioService {
     });
     this.socket.on("chat", (msg) => {
       useJobStore().charla.push(msg);
-      console.info(msg);
     });
   }
 
@@ -34,8 +30,10 @@ class SocketioService {
   }
 
   sendMessage(message) {
+    const user = useUserStore();
     const data = {
-      username: useUserStore().username,
+      username: user.username,
+      osmId: user.osmId,
       message: message,
       room: useJobStore().cod_municipio,
     };
