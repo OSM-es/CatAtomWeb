@@ -24,7 +24,7 @@ export const useErrorStore = defineStore({
     set(error) {
       this.error = error;
       toast({
-        message: error,
+        message: this.message,
         type: "is-danger",
         position: "top-center",
         duration: 20000,

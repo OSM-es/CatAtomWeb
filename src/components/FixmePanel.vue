@@ -1,21 +1,30 @@
 <script setup>
 import { ref } from "vue";
+import debounce from "lodash.debounce";
 import { api } from "@/services/api";
 import { useJobStore } from "@/stores/job";
 import DropZone from "./DropZone.vue";
-import UploadableFileList from "../compositions/UploadableFileList";
+import UploadableFileList from "@/compositions/UploadableFileList";
 import { useErrorStore } from "@/stores/error";
+import { useChatService } from "@/services/chat";
 
 // eslint-disable-next-line no-undef
 const props = defineProps(["municipio", "fixmes"]);
 const errorStore = useErrorStore();
 const job = useJobStore();
+const chat = useChatService();
 const files = new UploadableFileList();
 const uploadEnabled = ref(true);
 
 function getUrl(filename) {
   return `results/${props.municipio}/tasks/${filename}`;
 }
+
+const updateJob = debounce(() => {
+  console.info("updateJob");
+  job.getJob(job.cod_municipio, job.cod_division);
+  chat.socket.emit("updateJob", "newfiles", job.cod_municipio);
+}, 500);
 
 function onNewFiles(newFiles) {
   const matchFiles = UploadableFileList.filterByNames(
@@ -29,12 +38,13 @@ function onNewFiles(newFiles) {
     };
     let formData = new FormData();
     formData.append("file", file.file);
+    console.info(file.file);
     api
       .put("job/" + job.cod_municipio, formData, config)
-      .then(() => {
-        job.getJob(job.cod_municipio, job.cod_division);
-      })
-      .catch((err) => errorStore.set(err));
+      .then(updateJob)
+      .catch((err) => {
+        errorStore.set(err);
+      });
   });
 }
 
