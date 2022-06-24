@@ -49,7 +49,7 @@ function downloadUrl() {
             </tr>
             <tr>
               <th>Descripción</th>
-              <td>
+              <td class="cell-breakWord">
                 <copy-icon>
                   El trazado de edificios y las direcciones postales son datos
                   de mucho valor para el mapa de OpenStreetMap. Actualmente no
@@ -63,8 +63,7 @@ function downloadUrl() {
                   para colaborar.
                 </copy-icon>
               </td>
-
-              <td>
+              <td class="cell-breakWord">
                 <copy-icon>
                   Building footprints and postal addresses are very valuable
                   data for the OpenStreetMap map. Currently there are not many
@@ -104,13 +103,13 @@ function downloadUrl() {
             </tr>
             <tr>
               <th>Instrucciones detalladas</th>
-              <td>
+              <td class="cell-breakWord">
                 <copy-icon>
                   Revisa la tarea siguiendo las instrucciones de la [guía de
                   importación](https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gu%C3%ADa_de_importaci%C3%B3n).
                 </copy-icon>
               </td>
-              <td>
+              <td class="cell-breakWord">
                 <copy-icon>
                   Review this task following the instructions in this [import
                   guide](https://wiki.openstreetmap.org/wiki/Spanish
@@ -120,7 +119,7 @@ function downloadUrl() {
             </tr>
             <tr>
               <th>Instrucciones adicionales para esta tarea</th>
-              <td>
+              <td class="cell-breakWord">
                 <copy-icon>
                   Descarga el [archivo de la tarea]({{
                     downloadUrl()
@@ -150,3 +149,11 @@ function downloadUrl() {
     </template>
   </vue-collapsible-panel>
 </template>
+
+<style scoped>
+.cell-breakWord {
+  word-wrap: break-word;
+  max-width: 1px;
+  width: 42%;
+}
+</style>
