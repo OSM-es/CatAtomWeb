@@ -14,7 +14,7 @@ export const useUserStore = defineStore({
       return state.token ? true : false;
     },
     isOwner: (state) => {
-      return (owner) => state.osm_id == owner.osmId;
+      return (owner) => owner && state.osmId == owner.osm_id;
     },
   },
 

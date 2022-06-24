@@ -1,6 +1,9 @@
 import { defineStore } from "pinia";
 import api from "@/services/api";
+import { useChatService } from "@/services/chat";
 import { useProvStore } from "@/stores/provincias";
+
+const chat = useChatService();
 
 export const useJobStore = defineStore({
   id: "job",
@@ -54,12 +57,11 @@ export const useJobStore = defineStore({
   },
 
   actions: {
-    async getJob(cod_municipio, cod_division) {
+    updateJob(data) {
       const linea = this.estado == "RUNNING" ? this.linea : 0;
       const log = linea < this.log.length ? [] : this.log;
-      const provincia = cod_municipio.substring(0, 2);
-      const response = await api.getJob(cod_municipio, cod_division, linea);
-      this.$state = response.data;
+      this.$state = data;
+      const provincia = this.cod_municipio.substring(0, 2);
       this.log = log.concat(this.log);
       if (this.informe.length == 0) {
         this.edificios = true;
@@ -78,6 +80,12 @@ export const useJobStore = defineStore({
         this.idioma = this.report.language;
       }
     },
+    async getJob(cod_municipio, cod_division) {
+      const linea = this.estado == "RUNNING" ? this.linea : 0;
+      console.info("getJob", linea, this.estado);
+      const response = await api.getJob(cod_municipio, cod_division, linea);
+      this.updateJob(response.data);
+    },
     async createJob() {
       const options = {
         building: this.edificios,
@@ -90,6 +98,14 @@ export const useJobStore = defineStore({
       this.estado = response.data.estado;
       this.mensaje = response.data.mensaje;
       return response;
+    },
+    async deleteJob() {
+      const response = await api.deleteJob(
+        this.cod_municipio,
+        this.cod_division
+      );
+      this.updateJob(response.data);
+      chat.socket.emit("updateJob", "delete", this.cod_municipio);
     },
     async updateHighway(cat, conv) {
       let formData = new FormData();

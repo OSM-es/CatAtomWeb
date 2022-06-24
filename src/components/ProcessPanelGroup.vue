@@ -1,10 +1,13 @@
 <script setup>
 import { nextTick, ref, watch } from "vue";
-import { useJobStore } from "../stores/job";
-import { useUserStore } from "../stores/user";
+import ProcessButton from "./ProcessButton";
+import { useJobStore } from "@/stores/job";
+import { useUserStore } from "@/stores/user";
+import { useErrorStore } from "@/stores/error";
 
 const job = useJobStore();
 const user = useUserStore();
+const errorStore = useErrorStore();
 const processPanel = ref(null);
 
 function isActive(panel) {
@@ -22,6 +25,14 @@ function isActive(panel) {
     return estado == "DONE";
   }
   return false;
+}
+
+function exportJob() {
+  return process.env.VUE_APP_ROOT_API + "/export/" + job.cod_municipio;
+}
+
+function deleteJob() {
+  job.deleteJob().catch((err) => errorStore.set(err));
 }
 
 watch(
@@ -94,12 +105,9 @@ watch(
             </div>
           </div>
           <div class="panel-block">
-            <button
-              class="button is-link is-outlined is-fullwidth"
-              @click="$emit('updateProcess')"
-            >
+            <process-button @click="$emit('updateProcess')">
               Procesar
-            </button>
+            </process-button>
           </div>
         </div>
       </template>
@@ -123,21 +131,9 @@ watch(
         </div>
         <div class="panel-block">
           <div class="container">
-            <p v-if="!user.isOwner(job.propietario)">
-              El proceso está bloqueado por
-              <a
-                :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
-              >
-                {{ job.propietario.username }}.
-              </a>
-            </p>
-            <button
-              class="button is-link is-outlined is-fullwidth"
-              @click="$emit('updateProcess')"
-              :disabled="!user.isOwner(job.propietario)"
-            >
+            <process-button @click="$emit('updateProcess')">
               Reprocesar
-            </button>
+            </process-button>
           </div>
         </div>
       </div>
@@ -164,23 +160,9 @@ watch(
         </div>
         <div class="panel-block">
           <div class="container">
-            <p v-if="!user.isOwner(job.propietario)">
-              El proceso está bloqueado por
-              <a
-                :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
-              >
-                {{ job.propietario.username }}.
-              </a>
-            </p>
-            <button
-              class="button is-link is-outlined is-fullwidth"
-              @click="$emit('updateProcess')"
-              :disabled="
-                job.revisar.length != 0 || !user.isOwner(job.propietario)
-              "
-            >
+            <process-button @click="$emit('updateProcess')">
               Confirmar
-            </button>
+            </process-button>
           </div>
         </div>
       </div>
@@ -205,5 +187,42 @@ watch(
         </div>
       </div>
     </nav>
+    <vue-collapsible-panel
+      class="panel"
+      :expanded="false"
+      v-if="user.isOwner(job.propietario)"
+    >
+      <template #title>
+        <p class="panel-heading">Administrar</p>
+      </template>
+      <template #content>
+        <div class="container">
+          <div class="panel-block">
+            <div class="content">
+              <p>
+                Descarga los resultados del trabajo como copia de seguridad.
+              </p>
+              <a
+                class="button is-link is-outlined is-fullwidth"
+                :href="exportJob()"
+              >
+                Exportar
+              </a>
+            </div>
+          </div>
+          <div class="panel-block">
+            <div class="content">
+              <p>Eliminar el proceso (cuidado, acción no reversible).</p>
+              <button
+                class="button is-link is-outlined is-fullwidth"
+                @click="deleteJob"
+              >
+                Eliminar
+              </button>
+            </div>
+          </div>
+        </div>
+      </template>
+    </vue-collapsible-panel>
   </vue-collapsible-panel-group>
 </template>

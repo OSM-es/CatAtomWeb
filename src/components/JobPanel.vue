@@ -18,8 +18,7 @@ const municipio = ref(null);
 const division = ref(null);
 let municipioPrevio = null;
 
-chat.on("updateJob", (data) => {
-  console.info("updateJob", data);
+chat.on("updateJob", () => {
   job.getJob(job.cod_municipio, job.cod_division).catch((err) => {
     errorStore.set(err);
   });

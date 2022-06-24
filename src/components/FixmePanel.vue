@@ -21,7 +21,6 @@ function getUrl(filename) {
 }
 
 const updateJob = debounce(() => {
-  console.info("updateJob");
   job.getJob(job.cod_municipio, job.cod_division);
   chat.socket.emit("updateJob", "newfiles", job.cod_municipio);
 }, 500);
@@ -38,7 +37,6 @@ function onNewFiles(newFiles) {
     };
     let formData = new FormData();
     formData.append("file", file.file);
-    console.info(file.file);
     api
       .put("job/" + job.cod_municipio, formData, config)
       .then(updateJob)

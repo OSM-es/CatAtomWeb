@@ -37,8 +37,16 @@ api.postJob = (cod_municipio, cod_division, options) => {
   return api.post("job/" + cod_municipio + "/" + cod_division, options);
 };
 
+api.deleteJob = (cod_municipio, cod_division) => {
+  return api.delete("job/" + cod_municipio + "/" + cod_division);
+};
+
 api.putHgw = (cod_municipio, data) => {
   return api.put("hgw/" + cod_municipio, data);
+};
+
+api.getExport = (cod_municipio) => {
+  return api.get("export/" + cod_municipio);
 };
 
 export default api;
