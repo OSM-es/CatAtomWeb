@@ -18,6 +18,8 @@ export const useProvStore = defineStore({
         ).nombre;
       };
     },
+    ca_provs: () => ["03", "07", "08", "12", "17", "25", "43", "46"],
+    gl_provs: () => ["15", "27", "32", "36"],
   },
 
   actions: {

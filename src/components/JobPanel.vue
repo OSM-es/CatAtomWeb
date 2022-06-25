@@ -48,7 +48,7 @@ async function fetchDivisiones(mun) {
   return [];
 }
 
-function getRoom(cod_municipio = municipio.value.cod_municipio) {
+function getRoom(cod_municipio = municipio.value) {
   return {
     id: userStore.osmId,
     username: userStore.username,
@@ -60,19 +60,16 @@ function getJobStatus() {
   if (municipioPrevio && municipioPrevio != municipio.value) {
     chat.socket.emit("leave", getRoom(municipioPrevio));
   }
-  if (municipio.value === null) {
-    job.$reset();
-  } else {
-    job.$reset();
-    const cod_municipio = municipio.value.cod_municipio;
-    const cod_division = division.value === null ? "" : division.value.osm_id;
-    municipioPrevio = cod_municipio;
+  job.$reset();
+  if (municipio.value) {
+    if (municipioPrevio != municipio.value) {
+      chat.socket.emit("join", getRoom());
+    }
     job
-      .getJob(cod_municipio, cod_division)
+      .getJob(municipio.value, division.value || "")
       .then(() => {
-        if (!cod_division) {
-          chat.socket.emit("join", getRoom());
-        }
+        division.value = job.cod_division;
+        municipioPrevio = municipio.value;
       })
       .catch((err) => errorStore.set(err));
   }
@@ -106,18 +103,25 @@ onBeforeUnmount(() => {
     <watch-select
       :watched-value="provincia ? provincia.cod_provincia : ''"
       v-model="municipio"
+      :reduce="(mun) => mun && mun.cod_municipio"
       :fetch-options="fetchMunicipios"
       placeholder="Selecciona el municipio..."
       @update:modelValue="getJobStatus"
     ></watch-select>
     <watch-select
-      v-if="!job.report.split_name"
-      :watched-value="municipio ? municipio.cod_municipio : ''"
+      v-if="
+        !job.estado ||
+        (job.estado == 'DONE' && job.report.split_name) ||
+        job.estado == 'AVAILABLE' ||
+        job.estado == 'ERROR'
+      "
+      :watched-value="municipio || ''"
       v-model="division"
+      label="nombre"
+      :reduce="(split) => split && split.osm_id"
       :fetch-options="fetchDivisiones"
       placeholder="Selecciona la división..."
       :clearable="true"
-      label="nombre"
       @update:modelValue="getJobStatus"
     ></watch-select>
     <div class="control is-disabled" v-else>

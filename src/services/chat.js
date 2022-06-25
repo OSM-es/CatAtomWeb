@@ -18,7 +18,7 @@ class SocketioService {
       const job = useJobStore();
       const msg = `${data.username} abandonó ${data.room}`;
       job.participantes = data.participants;
-      job.charla = [msg];
+      job.charla.push(msg);
     });
     this.socket.on("chat", (msg) => {
       useJobStore().charla.push(msg);

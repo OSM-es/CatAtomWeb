@@ -27,6 +27,18 @@ function isActive(panel) {
   return false;
 }
 
+function tasksUrl() {
+  return `results/${job.cod_municipio}/tasks`;
+}
+
+function zoningUrl() {
+  if (job.cod_division) {
+    return `results/${job.cod_municipio}/tasks/${job.cod_division}/zoning.geojson`;
+  } else {
+    return `results/${job.cod_municipio}/zoning.geojson`;
+  }
+}
+
 function exportJob() {
   return process.env.VUE_APP_ROOT_API + "/export/" + job.cod_municipio;
 }
@@ -158,13 +170,6 @@ watch(
             <span v-else>Faltan {{ job.revisar.length }} archivos.</span>
           </p>
         </div>
-        <div class="panel-block">
-          <div class="container">
-            <process-button @click="$emit('updateProcess')">
-              Confirmar
-            </process-button>
-          </div>
-        </div>
       </div>
     </nav>
     <nav class="panel is-info" v-if="isActive('publishPanel')">
@@ -176,13 +181,13 @@ watch(
           <div class="content">
             <p>
               Crea un nuevo proyecto en el Gestor de tareas usando el archivo
-              <a href="">zoning.geojson</a>.
+              <a :href="zoningUrl()">zoning.geojson</a>.
             </p>
             <p>
               Completa los campos necesarios siguiendo la plantilla mostrada en
               el panel.
             </p>
-            <p>Ver el <a href="">resultado del proceso</a>.</p>
+            <p>Ver el <a :href="tasksUrl()">resultado del proceso</a>.</p>
           </div>
         </div>
       </div>

@@ -5,7 +5,10 @@ const job = useJobStore();
 </script>
 
 <template>
-  <vue-collapsible-panel class="panel">
+  <vue-collapsible-panel
+    class="panel"
+    :expanded="job.estado != 'RUNNING' && job.estado != 'ERROR'"
+  >
     <template #title>
       <p class="panel-heading">Informe</p>
     </template>

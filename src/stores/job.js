@@ -9,7 +9,7 @@ export const useJobStore = defineStore({
   id: "job",
   state: () => ({
     cod_municipio: null,
-    cod_division: "",
+    cod_division: null,
     estado: "",
     propietario: null,
     mensaje: "",
@@ -24,6 +24,7 @@ export const useJobStore = defineStore({
   }),
 
   getters: {
+    provincia: (state) => state.cod_municipio.substring(0, 2),
     nombreZona(state) {
       const provincias = useProvStore();
       let name = state.report.split_name;
@@ -60,18 +61,16 @@ export const useJobStore = defineStore({
     updateJob(data) {
       const linea = this.estado == "RUNNING" ? this.linea : 0;
       const log = linea < this.log.length ? [] : this.log;
+      const provincias = useProvStore();
       this.$state = data;
-      const provincia = this.cod_municipio.substring(0, 2);
       this.log = log.concat(this.log);
       if (this.informe.length == 0) {
         this.edificios = true;
         this.direcciones = true;
         this.idioma = "es_ES";
-        if (
-          ["03", "07", "08", "12", "17", "25", "43", "46"].includes(provincia)
-        ) {
+        if (provincias.ca_provs.includes(this.provincia)) {
           this.idioma = "ca_ES";
-        } else if (["15", "27", "32", "36"].includes(provincia)) {
+        } else if (provincias.gl_provs.includes(this.provincia)) {
           this.idioma = "gl_ES";
         }
       } else {
@@ -82,7 +81,6 @@ export const useJobStore = defineStore({
     },
     async getJob(cod_municipio, cod_division) {
       const linea = this.estado == "RUNNING" ? this.linea : 0;
-      console.info("getJob", linea, this.estado);
       const response = await api.getJob(cod_municipio, cod_division, linea);
       this.updateJob(response.data);
     },
