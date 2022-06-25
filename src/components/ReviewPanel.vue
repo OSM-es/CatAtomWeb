@@ -3,9 +3,11 @@ import { ref } from "vue";
 import debounce from "lodash.debounce";
 import { useJobStore } from "@/stores/job";
 import { useErrorStore } from "@/stores/error";
+import { useChatService } from "@/services/chat";
 
 const job = useJobStore();
 const errorStore = useErrorStore();
+const chat = useChatService();
 const filters = ref({ name: { value: "", keys: ["cat", "conv"] } });
 const totalPages = ref(1);
 const currentPage = ref(1);
@@ -15,11 +17,15 @@ const editHandler = debounce((event) => {
   const cat = job.callejero[key][0];
   job
     .updateHighway(cat, event.target.value)
+    .then(() => {
+      const msg = "hgw " + cat;
+      chat.socket.emit("updateJob", msg, job.cod_municipio);
+    })
     .catch((err) => errorStore.set(err));
 }, 500);
 
 function chatColor(row) {
-  return row.length < 3 ? "" : "chat-color-" + (row[2] % 32);
+  return row.length < 3 || !row[2] ? "" : "chat-color-" + (row[2] % 32);
 }
 
 function highwayNames() {

@@ -1,6 +1,5 @@
 <script setup>
 import { useJobStore } from "@/stores/job";
-import { useErrorStore } from "@/stores/error";
 import JobPanel from "@/components/JobPanel.vue";
 import ChatPanel from "@/components/ChatPanel.vue";
 import DonePanel from "@/components/DonePanel.vue";
@@ -11,11 +10,6 @@ import ReviewPanel from "@/components/ReviewPanel.vue";
 import ProcessPanelGroup from "@/components/ProcessPanelGroup.vue";
 
 const job = useJobStore();
-const errorStore = useErrorStore();
-
-function updateProcess() {
-  job.createJob().catch((err) => errorStore.set(err));
-}
 </script>
 
 <template>
@@ -24,10 +18,7 @@ function updateProcess() {
       <div class="columns">
         <div class="column is-one-fifth">
           <job-panel></job-panel>
-          <process-panel-group
-            v-if="job.cod_municipio !== null"
-            @updateProcess="updateProcess"
-          >
+          <process-panel-group v-if="job.cod_municipio !== null">
           </process-panel-group>
         </div>
         <div class="column is-three-fifths">

@@ -80,9 +80,11 @@ export const useJobStore = defineStore({
       }
     },
     async getJob(cod_municipio, cod_division) {
-      const linea = this.estado == "RUNNING" ? this.linea : 0;
-      const response = await api.getJob(cod_municipio, cod_division, linea);
-      this.updateJob(response.data);
+      if (cod_municipio) {
+        const linea = this.estado == "RUNNING" ? this.linea : 0;
+        const response = await api.getJob(cod_municipio, cod_division, linea);
+        this.updateJob(response.data);
+      }
     },
     async createJob() {
       const options = {

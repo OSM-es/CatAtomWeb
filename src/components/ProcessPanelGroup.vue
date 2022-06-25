@@ -5,6 +5,8 @@ import { useJobStore } from "@/stores/job";
 import { useUserStore } from "@/stores/user";
 import { useErrorStore } from "@/stores/error";
 
+const wikiUrl =
+  "https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles";
 const job = useJobStore();
 const user = useUserStore();
 const errorStore = useErrorStore();
@@ -37,6 +39,26 @@ function zoningUrl() {
   } else {
     return `results/${job.cod_municipio}/zoning.geojson`;
   }
+}
+
+function updateLog() {
+  job
+    .getJob(job.cod_municipio, job.cod_division)
+    .then(() => {
+      if (job.estado == "RUNNING") {
+        setTimeout(() => {
+          updateLog();
+        }, 500);
+      }
+    })
+    .catch((err) => errorStore.set(err));
+}
+
+function processJob() {
+  job
+    .createJob()
+    .then(updateLog)
+    .catch((err) => errorStore.set(err));
 }
 
 function exportJob() {
@@ -117,9 +139,7 @@ watch(
             </div>
           </div>
           <div class="panel-block">
-            <process-button @click="$emit('updateProcess')">
-              Procesar
-            </process-button>
+            <process-button @click="processJob()">Procesar</process-button>
           </div>
         </div>
       </template>
@@ -132,20 +152,13 @@ watch(
         <div class="panel-block">
           <p>
             Edita los nombres de las calles mostrados en el panel siguiendo
-            estas
-            <a
-              href="https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles"
-            >
-              instrucciones.
-            </a>
-            Cuando termines continúa al siguiente paso.
+            estas <a :href="wikiUrl">instrucciones</a>. Cuando termines continúa
+            al siguiente paso.
           </p>
         </div>
         <div class="panel-block">
           <div class="container">
-            <process-button @click="$emit('updateProcess')">
-              Reprocesar
-            </process-button>
+            <process-button @click="processJob()">Reprocesar</process-button>
           </div>
         </div>
       </div>
@@ -161,11 +174,7 @@ watch(
           </p>
           <p v-else>
             Edita con JOSM los archivos mostrados en el panel siguiendo estas
-            <a
-              href="https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Generar_y_corregir_los_archivos_a_importar"
-            >
-              instrucciones.
-            </a>
+            <a :href="wikiUrl"> instrucciones</a>.
             <span v-if="job.revisar.length == 1">Falta 1 archivo.</span>
             <span v-else>Faltan {{ job.revisar.length }} archivos.</span>
           </p>

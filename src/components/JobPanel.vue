@@ -18,10 +18,12 @@ const municipio = ref(null);
 const division = ref(null);
 let municipioPrevio = null;
 
-chat.on("updateJob", () => {
-  job.getJob(job.cod_municipio, job.cod_division).catch((err) => {
-    errorStore.set(err);
-  });
+chat.on("updateJob", (msg) => {
+  if (!msg.startsWith("log") || !userStore.isOwner(job.propietario)) {
+    job.getJob(job.cod_municipio, job.cod_division).catch((err) => {
+      errorStore.set(err);
+    });
+  }
 });
 
 async function fetchMunicipios(prov) {
