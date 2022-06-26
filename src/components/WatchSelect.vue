@@ -35,9 +35,6 @@ watch(
       if (props.fetchOptions) {
         loading.value = true;
         options.value = await props.fetchOptions(newValue);
-        if (props.modelValue) {
-          //
-        }
         const ws = watchSelectRef.value;
         if (props.modelValue) {
           const selected = options.value.find(
