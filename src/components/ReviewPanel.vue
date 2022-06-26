@@ -13,6 +13,8 @@ const totalPages = ref(1);
 const currentPage = ref(1);
 
 const editHandler = debounce((event) => {
+  console.info(event);
+  console.info(event.target.attributes["data-key"].value);
   const key = event.target.attributes["data-key"].value;
   const cat = job.callejero[key][0];
   job
@@ -102,13 +104,13 @@ function deleteFilter() {
                     />
                   </div>
                   <div class="control">
-                    <a
+                    <button
                       class="button"
                       :data-key="row.key"
                       @click="deleteHandler"
                     >
                       <font-awesome-icon icon="times" />
-                    </a>
+                    </button>
                   </div>
                 </div>
               </td>
