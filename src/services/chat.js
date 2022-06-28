@@ -41,7 +41,7 @@ class SocketioService {
   }
 
   connect(endpoint) {
-    this.socket = io(endpoint); //, { path: "/api/socket.io" });
+    this.socket = io(endpoint);
   }
 
   disconnect() {

@@ -30,6 +30,9 @@ function onNewFiles(newFiles) {
     [...newFiles],
     props.fixmes
   );
+  if (newFiles.length != matchFiles.length) {
+    errorStore.set("Seleccione sólo los archivos listados");
+  }
   files.addFiles(matchFiles);
   files.getFiles().forEach((file) => {
     const config = {
@@ -48,17 +51,6 @@ function onNewFiles(newFiles) {
 
 function onDownload() {
   uploadEnabled.value = true;
-}
-
-function openJosm(filename) {
-  const url = new URL(getUrl(filename), window.location.href).href;
-  const josmUrl = `http://localhost:8111/import?new_layer=true&url=${url}`;
-  fetch(josmUrl).catch(function () {
-    alert(
-      "Debe abrir la aplicación JOSM con el complemento Control Remoto activo"
-    );
-  });
-  onDownload();
 }
 </script>
 
@@ -86,7 +78,7 @@ function openJosm(filename) {
             class="panel-block is-block"
             :class="uploadEnabled ? '' : 'is-disabled'"
           >
-            <div class="file is-small is-justify-content-center">
+            <div class="file is-justify-content-center">
               <label class="file-label">
                 <div class="is-size-5">
                   Arrastra los archivos corregidos aquí o &nbsp;
@@ -113,24 +105,14 @@ function openJosm(filename) {
           >
             <nav class="level is-mobile" v-if="!files.fileExists(filename)">
               <div class="level-left">
-                <a
-                  :href="getUrl(filename)"
-                  class="has-text-dark"
-                  @click="onDownload"
-                >
-                  {{ filename }}
-                </a>
-                &nbsp;<button
-                  class="button is-small"
-                  @click="openJosm(filename)"
-                >
-                  <span class="file-icon">
+                <a :href="getUrl(filename)" @click="onDownload">
+                  <span class="icon">
                     <font-awesome-icon icon="download" />
                   </span>
-                  abrir en JOSM
-                </button>
+                  {{ filename }}
+                </a>
               </div>
-              <div class="level-right file is-small">
+              <div class="level-right file">
                 <label class="file-label" v-if="uploadEnabled">
                   <input
                     class="file-input"

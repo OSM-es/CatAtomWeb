@@ -9,7 +9,7 @@ export const useErrorStore = defineStore({
 
   getters: {
     message: (state) => {
-      if (state.error.response) {
+      if (state.error.response && state.error.response.data) {
         return state.error.response.data.message;
       } else if (state.error.message) {
         return state.error.message;

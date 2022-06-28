@@ -41,6 +41,10 @@ function zoningUrl() {
   }
 }
 
+function exportJobUrl() {
+  return process.env.VUE_APP_ROOT_API + "/export/" + job.cod_municipio;
+}
+
 function updateLog() {
   job
     .getJob(job.cod_municipio, job.cod_division)
@@ -59,10 +63,6 @@ function processJob() {
     .createJob()
     .then(updateLog)
     .catch((err) => errorStore.set(err));
-}
-
-function exportJob() {
-  return process.env.VUE_APP_ROOT_API + "/export/" + job.cod_municipio;
 }
 
 function deleteJob() {
@@ -174,9 +174,8 @@ watch(
           </p>
           <p v-else>
             Edita con JOSM los archivos mostrados en el panel siguiendo estas
-            <a :href="wikiUrl"> instrucciones</a>.
-            <span v-if="job.revisar.length == 1">Falta 1 archivo.</span>
-            <span v-else>Faltan {{ job.revisar.length }} archivos.</span>
+            <a :href="wikiUrl"> instrucciones</a>. Guarda los resultados y sube
+            los archivos corregidos.
           </p>
         </div>
       </div>
@@ -204,21 +203,21 @@ watch(
     <vue-collapsible-panel
       class="panel"
       :expanded="false"
-      v-if="user.isOwner(job.propietario)"
+      v-if="user.isOwner(job.propietario) && job.estado != 'RUNNING'"
     >
       <template #title>
         <p class="panel-heading">Administrar</p>
       </template>
       <template #content>
         <div class="container">
-          <div class="panel-block">
+          <div class="panel-block" v-if="job.estado != 'REVIEW'">
             <div class="content">
               <p>
                 Descarga los resultados del trabajo como copia de seguridad.
               </p>
               <a
                 class="button is-link is-outlined is-fullwidth"
-                :href="exportJob()"
+                :href="exportJobUrl()"
               >
                 Exportar
               </a>
