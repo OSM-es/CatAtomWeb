@@ -6,7 +6,7 @@ class SocketioService {
   socket = null;
 
   constructor() {
-    this.connect(process.env.VUE_APP_ROOT_API);
+    this.connect(process.env.VUE_APP_ROOT_SOCKETIO);
 
     this.socket.on("join", (data) => {
       const job = useJobStore();
@@ -41,7 +41,7 @@ class SocketioService {
   }
 
   connect(endpoint) {
-    this.socket = io(endpoint);
+    this.socket = io(endpoint); //, { path: "/api/socket.io" });
   }
 
   disconnect() {

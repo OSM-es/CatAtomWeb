@@ -13,8 +13,6 @@ const totalPages = ref(1);
 const currentPage = ref(1);
 
 const editHandler = debounce((event) => {
-  console.info(event);
-  console.info(event.target.attributes["data-key"].value);
   const key = event.target.attributes["data-key"].value;
   const cat = job.callejero[key][0];
   job

@@ -12,7 +12,7 @@ function loginUrl() {
   const authPath = router.resolve({ name: "auth" });
   const authURL = new URL(authPath.href, window.location.href).href;
   return api.getUri({
-    url: process.env.VUE_APP_ROOT_API + "/login",
+    url: "/login",
     params: { callback: authURL },
   });
 }

@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+  web:
+    build:
+      context: .
+    restart: always
+    volumes:
+      - /var/www/html/results:/usr/share/nginx/html/results
+    ports:
+      - "80:80"
+    expose:
+      - "80"
+    networks:
+      default:
+        aliases:
+          - web
+
+networks:
+  default:
+    external:
+      name: catatom
+
