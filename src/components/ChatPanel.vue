@@ -27,9 +27,14 @@ function getMessage(msg) {
   return message.split(/\r?\n/);
 }
 
-function send() {
-  chat.sendMessage(message.value);
-  message.value = "";
+function send(event) {
+  console.info(event);
+  if (event.shiftKey) {
+    message.value += "\n";
+  } else {
+    chat.sendMessage(message.value);
+    message.value = "";
+  }
 }
 </script>
 
@@ -54,6 +59,7 @@ function send() {
               class="textarea"
               v-model="message"
               :disabled="!chatActive"
+              @keydown.enter.prevent="send"
             ></textarea>
           </div>
           <div class="control">
