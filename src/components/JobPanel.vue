@@ -60,11 +60,12 @@ function getRoom(cod_municipio = municipio.value) {
 
 function getJobStatus() {
   if (municipioPrevio && municipioPrevio != municipio.value) {
+    job.$reset();
     chat.socket.emit("leave", getRoom(municipioPrevio));
   }
-  job.$reset();
   if (municipio.value) {
     if (municipioPrevio != municipio.value) {
+      job.$reset();
       chat.socket.emit("join", getRoom());
     }
     job
