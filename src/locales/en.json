@@ -58,5 +58,7 @@
   "Review street names": "Review street names",
   "Filter": "Filter",
   "Name in Cadastre": "Name in Cadastre",
-  "Conversion": "Conversion"
+  "Conversion": "Conversion",
+  "joined": "{username} joined {room}",
+  "leave":  "{username} leave {room}"
 }

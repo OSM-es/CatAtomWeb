@@ -58,5 +58,7 @@
   "Review street names": "Revisar callejero",
   "Filter": "Filtrar",
   "Name in Cadastre": "Nombre en Catastro",
-  "Conversion": "Conversión"
-  }
+  "Conversion": "Conversión",
+  "joined": "{username} se unió a {room}",
+  "leave": "{username} abandonó {room}"
+}

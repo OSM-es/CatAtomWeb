@@ -1,6 +1,9 @@
 import { io } from "socket.io-client";
 import { useJobStore } from "@/stores/job";
 import { useUserStore } from "@/stores/user";
+import i18n from "@/services/i18n";
+
+const { t } = i18n.global;
 
 class SocketioService {
   socket = null;
@@ -10,15 +13,16 @@ class SocketioService {
 
     this.socket.on("join", (data) => {
       const job = useJobStore();
-      const msg = `${data.username} se unió a ${data.room}`;
       job.participantes = data.participants;
-      job.charla.push(msg);
+      console.info(data);
+      console.info(t("locale"));
+      console.info(i18n);
+      job.charla.push(t("joined", data));
     });
     this.socket.on("leave", (data) => {
       const job = useJobStore();
-      const msg = `${data.username} abandonó ${data.room}`;
       job.participantes = data.participants;
-      job.charla.push(msg);
+      job.charla.push(t("leave", data));
     });
     this.socket.on("chat", (msg) => {
       useJobStore().charla.push(msg);
