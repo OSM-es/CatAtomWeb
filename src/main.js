@@ -22,7 +22,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import App from "./App.vue";
 import router from "./router";
-import i18n from "./i18n";
+import i18n from "./services/i18n";
 
 const app = createApp(App).use(i18n);
 

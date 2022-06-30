@@ -3,29 +3,32 @@ import { useI18n } from "vue-i18n";
 
 const i18n = useI18n();
 
-const locale =
-  localStorage.getItem("locale") ||
-  (navigator.languages ? navigator.languages[0] : navigator.language) ||
-  "es-ES";
+function getLocaleName(locale) {
+  return i18n.getLocaleMessage(locale)["locale"].source;
+}
 
-i18n.locale.value = locale;
-localStorage.setItem("locale", locale);
+function getCurrentLocaleName() {
+  return getLocaleName(i18n.locale.value);
+}
 
-function saveLocale() {
-  localStorage.setItem("locale", i18n.locale.value);
+function saveLocale(locale) {
+  i18n.locale.value = locale;
+  localStorage.setItem("locale", locale);
 }
 </script>
 
 <template>
-  <div class="select">
-    <select v-model="$i18n.locale" @change="saveLocale">
-      <option
+  <div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-link">{{ getCurrentLocaleName() }}</a>
+    <div class="navbar-dropdown is-right">
+      <a
         v-for="locale in $i18n.availableLocales"
         :key="`locale-${locale}`"
-        :value="locale"
+        @click="saveLocale(locale)"
+        class="navbar-item"
       >
-        {{ locale.substring(0, 2).toUpperCase() }}
-      </option>
-    </select>
+        {{ getLocaleName(locale) }}
+      </a>
+    </div>
   </div>
 </template>

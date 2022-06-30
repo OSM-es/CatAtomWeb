@@ -1,6 +1,7 @@
 {
-  "cerrar_session": "Trancar sesió",
-  "registrarse": "Registrar-se",
-  "iniciar_session": "Iniciar sesió",
-  "documentacion": "Documentació"
+  "locale": "Català",
+  "Docs": "Documentació",
+  "Logout": "Tancar sesió",
+  "Sign up": "Registrar-se",
+  "Log in": "Iniciar sesió"
 }

@@ -51,10 +51,8 @@ function logout() {
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
       <div class="navbar-end" v-if="userStore.isLogged">
-        <a class="navbar-item" :href="$docUrl">{{ $t("documentacion") }}</a>
-        <div class="navbar-item">
-          <locale-switcher></locale-switcher>
-        </div>
+        <a class="navbar-item" :href="$docUrl">{{ $t("Docs") }}</a>
+        <locale-switcher></locale-switcher>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">{{ userStore.username }}</a>
           <div class="navbar-dropdown is-right">
@@ -63,7 +61,7 @@ function logout() {
                 <font-awesome-icon icon="user-times" />
               </span>
               &nbsp;
-              <span @click="logout">{{ $t("cerrar_session") }}</span>
+              <span @click="logout">{{ $t("Logout") }}</span>
             </a>
           </div>
         </div>
@@ -82,7 +80,7 @@ function logout() {
                 <span class="icon">
                   <font-awesome-icon icon="user-plus" />
                 </span>
-                <span>{{ $t("registrarse") }}</span>
+                <span>{{ $t("Sign up") }}</span>
               </a>
             </p>
             <p class="control">
@@ -90,7 +88,7 @@ function logout() {
                 <span class="icon">
                   <font-awesome-icon icon="user" />
                 </span>
-                <span>{{ $t("iniciar_session") }}</span>
+                <span>{{ $t("Log in") }}</span>
               </a>
             </p>
           </div>

@@ -4,8 +4,8 @@ module.exports = defineConfig({
 
   pluginOptions: {
     i18n: {
-      locale: "es_ES",
-      fallbackLocale: "es_ES",
+      locale: "es-ES",
+      fallbackLocale: "es-ES",
       localeDir: "locales",
       enableLegacy: false,
       runtimeOnly: false,

@@ -1,6 +1,14 @@
 {
+<<<<<<< HEAD
   "cerrar_session": "Cerrar sesión",
   "registrarse": "Registrarse",
   "iniciar_session": "Iniciar sesión",
   "documentacion": "Documentación"
+=======
+  "locale": "Español",
+  "Docs": "Documentación",
+  "Logout": "Cerrar sesión",
+  "Sign up": "Registrarse",
+  "Log in": "Iniciar sesión"
+>>>>>>> i18n
 }
