@@ -10,7 +10,7 @@ const job = useJobStore();
     :expanded="job.estado != 'RUNNING' && job.estado != 'ERROR'"
   >
     <template #title>
-      <p class="panel-heading">Informe</p>
+      <p class="panel-heading">{{ $t("Report") }}</p>
     </template>
     <template #content>
       <div class="panel-block">

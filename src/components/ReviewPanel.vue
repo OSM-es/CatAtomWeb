@@ -50,7 +50,7 @@ function deleteFilter() {
 <template>
   <vue-collapsible-panel class="panel is-info">
     <template #title>
-      <p class="panel-heading">Revisar callejero</p>
+      <p class="panel-heading">{{ $t("Review street names") }}</p>
     </template>
     <template #content>
       <div class="panel-block">
@@ -60,7 +60,7 @@ function deleteFilter() {
               ref="filterInput"
               class="input"
               v-model="filters.name.value"
-              placeholder="Filtrar"
+              :placeholder="$t('Filter')"
             />
             <span class="icon is-right">
               <font-awesome-icon icon="search" />
@@ -84,8 +84,10 @@ function deleteFilter() {
         >
           <template #head>
             <tr>
-              <VTh sortKey="cat" defaultSort="asc">Nombre en Catastro</VTh>
-              <VTh sortKey="conv">Conversión</VTh>
+              <VTh sortKey="cat" defaultSort="asc">{{
+                $t("Name in Cadastre")
+              }}</VTh>
+              <VTh sortKey="conv">{{ $t("Conversion") }}</VTh>
             </tr>
           </template>
           <template #body="{ rows }">

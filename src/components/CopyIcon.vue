@@ -11,7 +11,7 @@ function copyToClipboard() {
 <template>
   <button
     class="button is-small is-pulled-right has-tooltip-arrow"
-    data-tooltip="Copiar al portapapeles"
+    :data-tooltip="$t('Copy to clipboard')"
     @click="copyToClipboard"
   >
     <span class="icon">

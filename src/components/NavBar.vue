@@ -35,7 +35,7 @@ function logout() {
           class="navbar-item logo"
         />
         <h1 class="navbar-item is-size-3 has-text-weight-bold">
-          CatAtom2Osm online
+          CatAtom2Osm&nbsp;<span class="is-size-5">online</span>
         </h1>
       </router-link>
       <div

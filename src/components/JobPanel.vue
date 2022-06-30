@@ -8,6 +8,8 @@ import { useChatService } from "@/services/chat";
 import { useUserStore } from "@/stores/user";
 import WatchSelect from "./WatchSelect.vue";
 
+const wikiUrl =
+  "https://wiki.openstreetmap.org/wiki/ES:Tag:boundary%3Dadministrative";
 const errorStore = useErrorStore();
 const job = useJobStore();
 const chat = useChatService();
@@ -90,7 +92,7 @@ onBeforeUnmount(() => {
     <div class="field">
       <div class="control">
         <v-select
-          placeholder="Selecciona la provincia..."
+          :placeholder="$t('Select the province')"
           :options="provincias.get"
           :clearable="false"
           :selectOnTab="true"
@@ -98,7 +100,7 @@ onBeforeUnmount(() => {
         >
           <!-- eslint-disable-next-line vue/no-unused-vars  -->
           <template #no-options="{ search, searching, loading }">
-            Lo siento, opción no encontrada.
+            {{ $t("Sorry, no matching option") }}
           </template>
         </v-select>
       </div>
@@ -108,7 +110,7 @@ onBeforeUnmount(() => {
       v-model="municipio"
       :reduce="(mun) => mun && mun.cod_municipio"
       :fetch-options="fetchMunicipios"
-      placeholder="Selecciona el municipio..."
+      :placeholder="$t('Select the municipality')"
       @update:modelValue="getJobStatus"
     ></watch-select>
     <watch-select
@@ -123,7 +125,7 @@ onBeforeUnmount(() => {
       label="nombre"
       :reduce="(split) => split && split.osm_id"
       :fetch-options="fetchDivisiones"
-      placeholder="Selecciona la división..."
+      :placeholder="$t('Select the subarea')"
       :clearable="true"
       @update:modelValue="getJobStatus"
     ></watch-select>
@@ -131,9 +133,9 @@ onBeforeUnmount(() => {
       <input class="input" :value="job.report.split_name" />
     </div>
     <div class="notification is-info is-light" v-if="municipio === null">
-      Selecciona una provincia y el municipio a procesar. Si existen divisiones
-      administrativas del municipio (distritos o barrios), también puedes
-      seleccionar una.
+      <i18n-t keypath="select_job" scope="global">
+        <a :href="wikiUrl">{{ $t("admin boundaries") }}</a>
+      </i18n-t>
     </div>
   </div>
 </template>

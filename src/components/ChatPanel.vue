@@ -40,7 +40,7 @@ function send(event) {
 
 <template>
   <nav class="panel" :class="chatActive ? 'is-info' : ''">
-    <div class="panel-heading">Charla</div>
+    <div class="panel-heading">{{ $t("Chat") }}</div>
     <div class="panel-block chat">
       <div class="container">
         <div v-for="(msg, i) in job.charla" :key="i" :class="chatClasses(msg)">

@@ -7,9 +7,11 @@ import DropZone from "./DropZone.vue";
 import UploadableFileList from "@/compositions/UploadableFileList";
 import { useErrorStore } from "@/stores/error";
 import { useChatService } from "@/services/chat";
+import { useI18n } from "vue-i18n";
 
 // eslint-disable-next-line no-undef
 const props = defineProps(["municipio", "fixmes"]);
+const i18n = useI18n();
 const errorStore = useErrorStore();
 const job = useJobStore();
 const chat = useChatService();
@@ -31,7 +33,7 @@ function onNewFiles(newFiles) {
     props.fixmes
   );
   if (newFiles.length != matchFiles.length) {
-    errorStore.set("Seleccione sólo los archivos listados");
+    errorStore.set(i18n.t("Select only listed files"));
   }
   files.addFiles(matchFiles);
   files.getFiles().forEach((file) => {
@@ -57,7 +59,7 @@ function onDownload() {
 <template>
   <vue-collapsible-panel class="panel is-info">
     <template #title>
-      <p class="panel-heading">Corregir errores</p>
+      <p class="panel-heading">{{ $t("Check fixmes") }}</p>
     </template>
     <template #content>
       <div class="container">
@@ -71,7 +73,7 @@ function onDownload() {
             v-if="dropZoneActive"
             class="panel-block is-block has-text-centered"
           >
-            <div class="is-size-5">Suéltalos</div>
+            <div class="is-size-5">i18n.t("Drop them")</div>
           </div>
           <div
             v-else
@@ -80,9 +82,7 @@ function onDownload() {
           >
             <div class="file is-justify-content-center">
               <label class="file-label">
-                <div class="is-size-5">
-                  Arrastra los archivos corregidos aquí o &nbsp;
-                </div>
+                <div class="is-size-5">{{ $t("Drop here or") }}&nbsp;</div>
                 <input
                   class="file-input"
                   type="file"
@@ -93,7 +93,7 @@ function onDownload() {
                   <span class="file-icon">
                     <font-awesome-icon icon="upload" />
                   </span>
-                  <span class="file-label">selecciónalos</span>
+                  <span class="file-label">{{ $t("select") }}</span>
                 </span>
               </label>
             </div>
@@ -124,7 +124,7 @@ function onDownload() {
                       <font-awesome-icon icon="upload" />
                     </span>
                     <span class="file-label">
-                      Seleccionar archivo corregido
+                      {{ $t("Select reviewed file") }}
                     </span>
                   </span>
                 </label>

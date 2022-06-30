@@ -10,7 +10,7 @@ const job = useJobStore();
     :class="job.estado == 'RUNNING' ? 'is-info' : ''"
   >
     <template #title>
-      <p class="panel-heading">Registro</p>
+      <p class="panel-heading">{{ $t("Log") }}</p>
     </template>
     <template #content>
       <div class="panel-block">

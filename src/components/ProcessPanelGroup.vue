@@ -208,7 +208,9 @@ watch(
               </i18n-t>
             </p>
             <p>
-              {{ $t("done_msg2") }}
+              <i18n-t keypath="done_msg2" scope="global">
+                <span class="icon"><font-awesome-icon icon="copy" /></span>
+              </i18n-t>
             </p>
             <p>
               <i18n-t keypath="done_msg3" scope="global">
@@ -230,7 +232,7 @@ watch(
       <template #content>
         <div class="container">
           <div class="panel-block" v-if="job.estado != 'REVIEW'">
-            <div class="content">
+            <div class="content" style="width: 100%">
               <p>{{ $t("export_msg") }}</p>
               <a
                 class="button is-link is-outlined is-fullwidth"
