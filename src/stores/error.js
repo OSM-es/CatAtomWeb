@@ -1,5 +1,8 @@
 import { defineStore } from "pinia";
 import { toast } from "bulma-toast";
+import i18n from "@/services/i18n";
+
+const { t, te } = i18n.global;
 
 export const useErrorStore = defineStore({
   id: "error",
@@ -9,13 +12,19 @@ export const useErrorStore = defineStore({
 
   getters: {
     message: (state) => {
+      let msg = "";
       if (state.error.response && state.error.response.data) {
-        return state.error.response.data.message;
+        msg = state.error.response.data.message;
       } else if (state.error.message) {
-        return state.error.message;
+        msg = state.error.message;
       } else {
-        return state.error;
+        msg = state.error;
       }
+      console.info(msg, te(msg), t(msg));
+      if (te(msg)) {
+        return t(msg);
+      }
+      return msg;
     },
     hasError: (state) => state.error !== null,
   },

@@ -14,9 +14,6 @@ class SocketioService {
     this.socket.on("join", (data) => {
       const job = useJobStore();
       job.participantes = data.participants;
-      console.info(data);
-      console.info(t("locale"));
-      console.info(i18n);
       job.charla.push(t("joined", data));
     });
     this.socket.on("leave", (data) => {

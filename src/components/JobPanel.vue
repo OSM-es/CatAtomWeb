@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onBeforeUnmount } from "vue";
+import { useI18n } from "vue-i18n";
 import api from "@/services/api";
 import { useErrorStore } from "@/stores/error";
 import { useJobStore } from "@/stores/job";
@@ -8,6 +9,7 @@ import { useChatService } from "@/services/chat";
 import { useUserStore } from "@/stores/user";
 import WatchSelect from "./WatchSelect.vue";
 
+const { t } = useI18n();
 const wikiUrl =
   "https://wiki.openstreetmap.org/wiki/ES:Tag:boundary%3Dadministrative";
 const errorStore = useErrorStore();
@@ -26,6 +28,22 @@ chat.on("updateJob", (msg) => {
       errorStore.set(err);
     });
   }
+});
+
+chat.on("create_job", (data) => {
+  if (job.estado == "REVIEW") {
+    job.charla.push(t("restart_job", data));
+  } else {
+    job.charla.push(t("create_job", data));
+  }
+});
+
+chat.on("delete_job", (data) => {
+  job.charla.push(t("delete_job", data));
+});
+
+onBeforeUnmount(() => {
+  chat.disconnect();
 });
 
 async function fetchMunicipios(prov) {
@@ -81,10 +99,6 @@ function getJobStatus() {
 }
 
 provincias.fetch().catch((err) => errorStore.set(err));
-
-onBeforeUnmount(() => {
-  chat.disconnect();
-});
 </script>
 
 <template>

@@ -60,5 +60,20 @@
   "Name in Cadastre": "Name in Cadastre",
   "Conversion": "Conversion",
   "joined": "{username} joined {room}",
-  "leave":  "{username} leave {room}"
+  "leave":  "{username} leave {room}",
+  "Procesando": "Processing",
+  "Pendiente de revisar direcciones": "Pending to review addresses",
+  "Pendiente de revisar problemas": "Pending to review fixmes",
+  "Proceso finalizado": "Process finished",
+  "No procesado": "Not processed",
+  "Terminó con error": "Finished with error",
+  "Autorización denegada": "Denied authorization",
+  "No es un archivo gzip válido": "Not a valid gzip file",
+  "Sólo archivos de tareas existentes": "Only existing task files",
+  "No se pudo eliminar": "Could not delete",
+  "Proceso eliminado correctamente": "Process succesfully deleted",
+  "Proceso no encontrado": "Process not found",
+  "create_job": "{username} started processing of {room}",
+  "restart_job": "{username} restarted processing of {room}",
+  "delete_job": "{username} deletes processing of {room}"
 }

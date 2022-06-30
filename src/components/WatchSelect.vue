@@ -69,7 +69,7 @@ watch(
       >
         <!-- eslint-disable-next-line vue/no-unused-vars  -->
         <template no-options="{ search, searching, loading }">
-          Lo siento, opción no encontrada.
+          {{ $t("Sorry, no matching option") }}
         </template>
       </v-select>
     </div>
