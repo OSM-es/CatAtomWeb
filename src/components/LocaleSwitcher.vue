@@ -3,10 +3,15 @@ import { useI18n } from "vue-i18n";
 
 const i18n = useI18n();
 
-i18n.locale.value = localStorage.getItem("locale") || "es_ES";
+const locale =
+  localStorage.getItem("locale") ||
+  (navigator.languages ? navigator.languages[0] : navigator.language) ||
+  "es-ES";
+
+i18n.locale.value = locale;
+localStorage.setItem("locale", locale);
 
 function saveLocale() {
-  console.info(i18n.locale.value);
   localStorage.setItem("locale", i18n.locale.value);
 }
 </script>
