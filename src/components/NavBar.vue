@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import LocaleSwitcher from "./LocaleSwitcher.vue";
 import { useRouter } from "vue-router";
 import { useUserStore } from "@/stores/user";
 import api from "@/services/api";
@@ -50,7 +51,8 @@ function logout() {
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
       <div class="navbar-end" v-if="userStore.isLogged">
-        <a class="navbar-item" :href="$docUrl">Documentación</a>
+        <a class="navbar-item" :href="$docUrl">{{ $t("Docs") }}</a>
+        <locale-switcher></locale-switcher>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">{{ userStore.username }}</a>
           <div class="navbar-dropdown is-right">
@@ -59,12 +61,15 @@ function logout() {
                 <font-awesome-icon icon="user-times" />
               </span>
               &nbsp;
-              <span @click="logout">Cerrar sesión</span>
+              <span @click="logout">{{ $t("Logout") }}</span>
             </a>
           </div>
         </div>
       </div>
       <div class="navbar-end" v-else>
+        <div class="navbar-item">
+          <locale-switcher></locale-switcher>
+        </div>
         <div class="navbar-item">
           <div class="field has-addons">
             <p class="control">
@@ -75,7 +80,7 @@ function logout() {
                 <span class="icon">
                   <font-awesome-icon icon="user-plus" />
                 </span>
-                <span>Registrarse</span>
+                <span>{{ $t("Sign up") }}</span>
               </a>
             </p>
             <p class="control">
@@ -83,7 +88,7 @@ function logout() {
                 <span class="icon">
                   <font-awesome-icon icon="user" />
                 </span>
-                <span>Iniciar sesión</span>
+                <span>{{ $t("Log in") }}</span>
               </a>
             </p>
           </div>

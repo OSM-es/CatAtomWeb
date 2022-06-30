@@ -22,8 +22,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import App from "./App.vue";
 import router from "./router";
+import i18n from "./services/i18n";
 
-const app = createApp(App);
+const app = createApp(App).use(i18n);
 
 library.add(faAngleDown);
 library.add(faCopy);
