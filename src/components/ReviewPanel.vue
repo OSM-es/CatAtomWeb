@@ -84,7 +84,7 @@ function deleteFilter() {
         >
           <template #head>
             <tr>
-              <VTh sortKey="cat">Nombre en Catastro</VTh>
+              <VTh sortKey="cat" defaultSort="asc">Nombre en Catastro</VTh>
               <VTh sortKey="conv">Conversión</VTh>
             </tr>
           </template>
