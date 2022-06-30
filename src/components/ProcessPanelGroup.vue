@@ -93,7 +93,7 @@ watch(
       :expanded="isActive('processPanel')"
     >
       <template #title>
-        <p class="panel-heading">1. Procesar</p>
+        <p class="panel-heading">1. {{ $t("Process") }}</p>
       </template>
       <template #content>
         <div
@@ -106,20 +106,20 @@ watch(
         >
           <div class="panel-block">
             <div class="container">
-              <label class="label">Opciones</label>
+              <label class="label">{{ $t("Options") }}</label>
               <div class="checkbox">
                 <label class="checkbox">
                   <input type="checkbox" v-model="job.edificios" />
-                  Procesar edificios
+                  {{ $t("Process buildings") }}
                 </label>
                 <br />
                 <label class="checkbox">
                   <input type="checkbox" v-model="job.direcciones" />
-                  Procesar direcciones
+                  {{ $t("Process addresses") }}
                 </label>
               </div>
               <div class="field">
-                <label class="label">Idioma</label>
+                <label class="label">{{ $t("Language") }}</label>
                 <div class="control">
                   <div class="select">
                     <select v-model="job.idioma">
@@ -134,68 +134,87 @@ watch(
           </div>
           <div class="panel-block">
             <div class="field">
-              <label class="label">Estado</label>
+              <label class="label">{{ $t("Status") }}</label>
               <div class="control">{{ job.mensaje }}</div>
             </div>
           </div>
           <div class="panel-block">
-            <process-button @click="processJob()">Procesar</process-button>
+            <process-button @click="processJob()">{{
+              $t("Process")
+            }}</process-button>
           </div>
         </div>
       </template>
     </vue-collapsible-panel>
     <nav class="panel is-info" v-if="isActive('reviewPanel')">
       <div class="panel-heading">
-        <p>2. Revisar callejero</p>
+        <p>2. {{ $t("Review street names") }}</p>
       </div>
       <div class="container">
         <div class="panel-block">
           <p>
-            Edita los nombres de las calles mostrados en el panel siguiendo
-            estas <a :href="wikiUrl">instrucciones</a>. Cuando termines continúa
-            al siguiente paso.
+            <i18n-t keypath="review_msg" scope="global">
+              <a :href="wikiUrl">{{ $t("guide") }}</a>
+            </i18n-t>
           </p>
         </div>
         <div class="panel-block">
           <div class="container">
-            <process-button @click="processJob()">Reprocesar</process-button>
+            <process-button @click="processJob()">
+              {{ $t("Reprocess") }}
+            </process-button>
           </div>
         </div>
       </div>
     </nav>
     <nav class="panel is-info" v-if="isActive('fixmePanel')">
       <div class="panel-heading">
-        <p>2. Corregir errores</p>
+        <p>2. {{ $t("Check fixmes") }}</p>
       </div>
       <div id="fixmePanel" class="container">
         <div class="panel-block">
           <p v-if="job.revisar.length == 0">
-            ¡Bien hecho!. Confirma para continuar.
+            {{ $t("welldone") }}
           </p>
           <p v-else>
-            Edita con JOSM los archivos mostrados en el panel siguiendo estas
-            <a :href="wikiUrl"> instrucciones</a>. Guarda los resultados y sube
-            los archivos corregidos.
+            <i18n-t keypath="fixme_msg" scope="global">
+              <template v-slot:download>
+                <span class="icon"><font-awesome-icon icon="download" /></span>
+              </template>
+              <template v-slot:upload>
+                <span class="icon"><font-awesome-icon icon="upload" /></span>
+              </template>
+              <template v-slot:link>
+                <a :href="wikiUrl" target="_blank">{{ $t("guide") }}</a>
+              </template>
+            </i18n-t>
           </p>
         </div>
       </div>
     </nav>
     <nav class="panel is-info" v-if="isActive('publishPanel')">
       <div class="panel-heading">
-        <p>3. Publicar</p>
+        <p>3. {{ $t("Publish") }}</p>
       </div>
       <div id="publishPanel" class="container">
         <div class="panel-block">
           <div class="content">
             <p>
-              Crea un nuevo proyecto en el Gestor de tareas usando el archivo
-              <a :href="zoningUrl()">zoning.geojson</a>.
+              <i18n-t keypath="done_msg1" scope="global">
+                <a href="https://tareas.openstreetmap.es" target="_blank">
+                  {{ $t("Task manager") }}
+                </a>
+                <a :href="zoningUrl()">zoning.geojson</a>
+              </i18n-t>
             </p>
             <p>
-              Completa los campos necesarios siguiendo la plantilla mostrada en
-              el panel.
+              {{ $t("done_msg2") }}
             </p>
-            <p>Ver el <a :href="tasksUrl()">resultado del proceso</a>.</p>
+            <p>
+              <i18n-t keypath="done_msg3" scope="global">
+                <a :href="tasksUrl()">{{ $t("process result") }}</a>
+              </i18n-t>
+            </p>
           </div>
         </div>
       </div>
@@ -206,31 +225,29 @@ watch(
       v-if="user.isOwner(job.propietario) && job.estado != 'RUNNING'"
     >
       <template #title>
-        <p class="panel-heading">Administrar</p>
+        <p class="panel-heading">{{ $t("Management") }}</p>
       </template>
       <template #content>
         <div class="container">
           <div class="panel-block" v-if="job.estado != 'REVIEW'">
             <div class="content">
-              <p>
-                Descarga los resultados del trabajo como copia de seguridad.
-              </p>
+              <p>{{ $t("export_msg") }}</p>
               <a
                 class="button is-link is-outlined is-fullwidth"
                 :href="exportJobUrl()"
               >
-                Exportar
+                {{ $t("Export") }}
               </a>
             </div>
           </div>
           <div class="panel-block">
             <div class="content">
-              <p>Eliminar el proceso (cuidado, acción no reversible).</p>
+              <p>{{ $t("delete_msg") }}</p>
               <button
                 class="button is-link is-outlined is-fullwidth"
                 @click="deleteJob"
               >
-                Eliminar
+                {{ $t("Delete") }}
               </button>
             </div>
           </div>

@@ -1,14 +1,32 @@
 {
-<<<<<<< HEAD
-  "cerrar_session": "Cerrar sesión",
-  "registrarse": "Registrarse",
-  "iniciar_session": "Iniciar sesión",
-  "documentacion": "Documentación"
-=======
   "locale": "Español",
   "Docs": "Documentación",
   "Logout": "Cerrar sesión",
   "Sign up": "Registrarse",
-  "Log in": "Iniciar sesión"
->>>>>>> i18n
+  "Log in": "Iniciar sesión",
+  "guide": "instrucciones",
+  "Process": "Procesar",
+  "Options": "Opciones",
+  "Process buildings": "Procesar edificios",
+  "Process addresses": "Procesar direcciones",
+  "Language": "Idioma",
+  "Status": "Estado",
+  "Review street names": "Revisar callejero",
+  "review_msg": "Edita los nombres de las vías/lugares mostrados en el panel siguiendo estas {0}. La columna izquierda muestra el nombre de la vía/lugar en Catastro, la derecha la conversión propuesta que se usará al reprocesar. Revisa que sean correctas. Déjala en blanco para excluir todas las direcciones de esa vía. Cuando termines continúa al siguiente paso.",
+  "Reprocess": "Reprocess",
+  "Check fixmes": "Corregir errores",
+  "fixme_msg": "Descarga ({download}) los archivos mostrados en el panel. Editalos con JOSM siguiendo estas {link}. Guarda los resultados y sube los archivos corregidos ({upload}). Revisa los edificios que tengan etiquetas \"fixme\" y elimínalas. No hay que subir los datos a OSM, sino aquí.",
+  "welldone": "¡Bien hecho!. Confirma para continuar.",
+  "Confirm": "Confirmar",
+  "Publish": "Publicar",
+  "Task manager": "Gestor de tareas",
+  "done_msg1": "Crea un nuevo proyecto en el {0} usando el archivo {1}.",
+  "done_msg2": "Completa los campos necesarios copiándolos de la plantilla mostrada en el panel.",
+  "done_msg3": "Ver el {0}.",
+  "process result": "resultado del proceso",
+  "Management": "Administrar",
+  "export_msg": "Descarga los resultados del trabajo como copia de seguridad.",
+  "Export": "Exportar",
+  "delete_msg": "Eliminar el proceso (cuidado, acción no reversible).",
+  "Delete": "Eliminar"
 }
