@@ -27,6 +27,7 @@
   "Management": "Management",
   "export_msg": "Download the process results for backup.",
   "Export": "Export",
+  "Owner": "Owner",
   "delete_msg": "Delete the process (caution, can't be undone).",
   "Delete": "Delete",
   "Chat": "Chat",

@@ -27,6 +27,7 @@
   "Management": "Administrar",
   "export_msg": "Descarga los resultados del trabajo como copia de seguridad.",
   "Export": "Exportar",
+  "Owner": "Propietario",
   "delete_msg": "Eliminar el proceso (cuidado, acción no reversible).",
   "Delete": "Eliminar",
   "Chat": "Charla",

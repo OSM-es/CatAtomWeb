@@ -2,13 +2,11 @@
 import { nextTick, ref, watch } from "vue";
 import ProcessButton from "./ProcessButton";
 import { useJobStore } from "@/stores/job";
-import { useUserStore } from "@/stores/user";
 import { useErrorStore } from "@/stores/error";
 
 const wikiUrl =
   "https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles";
 const job = useJobStore();
-const user = useUserStore();
 const errorStore = useErrorStore();
 const processPanel = ref(null);
 
@@ -224,15 +222,22 @@ watch(
     <vue-collapsible-panel
       class="panel"
       :expanded="false"
-      v-if="user.isOwner(job.propietario) && job.estado != 'RUNNING'"
+      v-if="!isActive('processPanel')"
     >
       <template #title>
         <p class="panel-heading">{{ $t("Management") }}</p>
       </template>
       <template #content>
         <div class="container">
+          <div class="panel-block">
+            {{ $t("Propietario") }}:&nbsp;
+            <a
+              :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
+              >{{ job.propietario.username }}</a
+            >
+          </div>
           <div class="panel-block" v-if="job.estado != 'REVIEW'">
-            <div class="content" style="width: 100%">
+            <div class="content">
               <p>{{ $t("export_msg") }}</p>
               <a
                 class="button is-link is-outlined is-fullwidth"
@@ -245,12 +250,9 @@ watch(
           <div class="panel-block">
             <div class="content">
               <p>{{ $t("delete_msg") }}</p>
-              <button
-                class="button is-link is-outlined is-fullwidth"
-                @click="deleteJob"
-              >
+              <process-button @click="deleteJob">
                 {{ $t("Delete") }}
-              </button>
+              </process-button>
             </div>
           </div>
         </div>
@@ -258,3 +260,9 @@ watch(
     </vue-collapsible-panel>
   </vue-collapsible-panel-group>
 </template>
+
+<style scoped>
+.panel-block .content {
+  width: 100%;
+}
+</style>
