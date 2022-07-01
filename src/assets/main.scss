@@ -70,7 +70,7 @@ ul.vs__dropdown-menu {
     width: 0;
 }
 
-.chat [class^="message-"]:not(:last-child) {
+.chat [class*="message-"]:not(:last-child) {
     margin-bottom: 0.8em;
 }
 
@@ -78,12 +78,16 @@ ul.vs__dropdown-menu {
     margin-bottom: 0.5em;
 }
 
-.chat [class^="message-"] p:not(:last-child) {
+.chat [class*="message-"] p:not(:last-child) {
     margin-bottom: 0;
 }
 
 .chat [disabled].textarea {
     background-color: white;
+}
+
+[class*="chat-color-"] a {
+    color: inherit;
 }
 
 .chat-color-0 {

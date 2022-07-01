@@ -30,7 +30,7 @@ const updateJob = debounce(() => {
 function onNewFiles(newFiles) {
   const matchFiles = UploadableFileList.filterByNames(
     [...newFiles],
-    props.fixmes
+    props.fixmes.map((fixme) => fixme.filename)
   );
   if (newFiles.length != matchFiles.length) {
     errorStore.set(i18n.t("Select only listed files"));
@@ -53,6 +53,10 @@ function onNewFiles(newFiles) {
 
 function onDownload() {
   uploadEnabled.value = true;
+}
+
+function chatColor(fixme) {
+  return fixme.owner ? "chat-color-" + (fixme.owner % 32) : "";
 }
 </script>
 
@@ -99,17 +103,21 @@ function onDownload() {
             </div>
           </div>
           <div
+            v-for="(fixme, index) in fixmes"
             class="panel-block is-block"
-            v-for="(filename, index) in fixmes"
+            :class="chatColor(fixme)"
             :key="index"
           >
-            <nav class="level is-mobile" v-if="!files.fileExists(filename)">
+            <nav
+              class="level is-mobile"
+              v-if="!files.fileExists(fixme.filename)"
+            >
               <div class="level-left">
-                <a :href="getUrl(filename)" @click="onDownload">
+                <a :href="getUrl(fixme.filename)" @click="onDownload">
                   <span class="icon">
                     <font-awesome-icon icon="download" />
                   </span>
-                  {{ filename }}
+                  {{ fixme.filename }} ({{ fixme.fixmes }} fixmes)
                 </a>
               </div>
               <div class="level-right file">
@@ -131,13 +139,13 @@ function onDownload() {
               </div>
             </nav>
             <nav v-else class="level is-mobile">
-              {{ filename }}&nbsp;
+              {{ fixme.filename }}&nbsp;
               <progress
-                class="progress is-primary"
-                :value="files.getFile(filename).percentCompleted"
+                class="progress"
+                :value="files.getFile(fixme.filename).percentCompleted"
                 max="100"
               >
-                {{ files.getFile(filename).percentCompleted }}%
+                {{ files.getFile(fixme.filename).percentCompleted }}%
               </progress>
             </nav>
           </div>
