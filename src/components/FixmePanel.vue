@@ -30,14 +30,18 @@ function getOwner(fixme) {
 }
 
 function isLocked(fixme) {
-  if (fixme.locked && !user.isOwner({ osm_id: fixme.owner })) {
-    return "is-disabled";
+  if (
+    !fixme.locked ||
+    user.isOwner(job.propietario) ||
+    user.isOwner({ osm_id: fixme.osm_id })
+  ) {
+    return "";
   }
-  return "";
+  return "is-disabled";
 }
 
 function uploadEnabled(fixme) {
-  return user.isOwner({ osm_id: fixme.owner });
+  return user.isOwner({ osm_id: fixme.osm_id });
 }
 
 function dropEnabled() {
@@ -83,7 +87,7 @@ function onDownload(event) {
 }
 
 function chatColor(fixme) {
-  return fixme.owner ? "chat-color-" + (fixme.owner % 32) : "";
+  return fixme.osm_id ? "chat-color-" + (fixme.osm_id % 32) : "";
 }
 </script>
 
@@ -143,7 +147,7 @@ function chatColor(fixme) {
               >
                 <a
                   :href="getUrl(fixme.filename)"
-                  @click.prevent="onDownload"
+                  @click="onDownload"
                   :class="isLocked(fixme)"
                 >
                   <span class="icon">

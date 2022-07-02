@@ -47,7 +47,6 @@ api.putHgw = (cod_municipio, data) => {
 };
 
 api.postFixme = (cod_municipio, data) => {
-  console.info(data);
   return api.post("fixme/" + cod_municipio, data);
 };
 

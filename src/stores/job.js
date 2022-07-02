@@ -76,6 +76,10 @@ export const useJobStore = defineStore({
         this.idioma = this.report.language;
       }
     },
+    updateHighway(data) {
+      const i = array.findIndex(this.callejero, (row) => row[0] == data.cat);
+      this.callejero[i] = [data.cat, data.conv, data.osm_id, data.username];
+    },
     updateFixme(data) {
       const i = array.findIndex(this.revisar, { filename: data.filename });
       this.revisar[i] = data;
@@ -124,14 +128,11 @@ export const useJobStore = defineStore({
       this.estado = "DONE";
       chat.socket.emit("updateJob", "done", this.cod_municipio);
     },
-    async updateHighway(cat, conv) {
-      let formData = new FormData();
-      formData.append("cat", cat);
-      formData.append("conv", conv);
-      const response = await api.putHgw(this.cod_municipio, formData);
-      if (response.data.length > 0) {
-        this.callejero = response.data;
-      }
+    async putHighway(cat, conv) {
+      const data = { cat, conv };
+      const response = await api.putHgw(this.cod_municipio, data);
+      this.updateHighway(response.data);
+      chat.socket.emit("highway", response.data, this.cod_municipio);
     },
   },
 });

@@ -3,26 +3,29 @@ import { ref } from "vue";
 import debounce from "lodash.debounce";
 import { useJobStore } from "@/stores/job";
 import { useErrorStore } from "@/stores/error";
+import { useI18n } from "vue-i18n";
 import { useChatService } from "@/services/chat";
 
+const { t } = useI18n();
+const chat = useChatService();
 const job = useJobStore();
 const errorStore = useErrorStore();
-const chat = useChatService();
 const filters = ref({ name: { value: "", keys: ["cat", "conv"] } });
 const totalPages = ref(1);
 const currentPage = ref(1);
 
-const editHandler = debounce((event) => {
-  const key = event.target.attributes["data-key"].value;
+chat.on("highway", (data) => {
+  job.updateHighway(data);
+});
+
+const editHandler = debounce((key, value) => {
   const cat = job.callejero[key][0];
-  job
-    .updateHighway(cat, event.target.value)
-    .then(() => {
-      const msg = "hgw " + cat;
-      chat.socket.emit("updateJob", msg, job.cod_municipio);
-    })
-    .catch((err) => errorStore.set(err));
+  job.putHighway(cat, value).catch((err) => errorStore.set(err));
 }, 500);
+
+function deleteHandler(key) {
+  editHandler(key, "");
+}
 
 function chatColor(row) {
   return row.length < 3 || !row[2] ? "" : "chat-color-" + (row[2] % 32);
@@ -34,21 +37,36 @@ function highwayNames() {
     cat: row[0],
     conv: row[1],
     color: chatColor(row),
+    username: row.length > 3 ? row[3] : "",
   }));
 }
 
-function deleteHandler(event) {
-  event.target.value = "";
-  editHandler(event);
+function isActive() {
+  return job.estado == "REVIEW" ? "is-info" : "";
+}
+
+function isExpanded() {
+  return job.estado == "REVIEW";
 }
 
 function deleteFilter() {
   filters.value.name.value = "";
 }
+
+function getOwner(row) {
+  if (row.username) {
+    return t("Edited by") + " " + row.username;
+  }
+  return null;
+}
 </script>
 
 <template>
-  <vue-collapsible-panel class="panel is-info">
+  <vue-collapsible-panel
+    class="panel"
+    :class="isActive()"
+    :expanded="isExpanded()"
+  >
     <template #title>
       <p class="panel-heading">{{ $t("Review street names") }}</p>
     </template>
@@ -99,22 +117,25 @@ function deleteFilter() {
               <td class="is-valign-middle">{{ row.cat }}</td>
               <td>
                 <div class="field has-addons">
-                  <div class="control is-expanded">
+                  <div
+                    class="control is-expanded has-tooltip-arrow"
+                    :data-tooltip="getOwner(row)"
+                  >
                     <input
                       class="input"
                       :value="row.conv"
-                      :data-key="row.key"
-                      @input="editHandler"
+                      @input="(e) => editHandler(row.key, e.target.value)"
+                      :readonly="job.estado != 'REVIEW'"
                     />
                   </div>
                   <div class="control">
                     <button
+                      v-if="job.estado == 'REVIEW'"
                       class="button has-tooltip-arrow"
-                      :data-key="row.key"
                       :data-tooltip="$t('Delete')"
-                      @click="deleteHandler"
+                      @click="deleteHandler(row.key)"
                     >
-                      <font-awesome-icon icon="times" />
+                      <font-awesome-icon icon="times" :data-key="row.key" />
                     </button>
                   </div>
                 </div>

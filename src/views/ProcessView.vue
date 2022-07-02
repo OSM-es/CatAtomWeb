@@ -24,12 +24,12 @@ const job = useJobStore();
         <div class="column is-three-fifths">
           <vue-collapsible-panel-group v-if="job.cod_municipio">
             <done-panel v-if="job.estado == 'DONE'"></done-panel>
-            <review-panel v-if="job.estado == 'REVIEW'"></review-panel>
             <fixme-panel
               v-if="job.revisar.length > 0"
               :fixmes="job.revisar"
               :municipio="job.cod_municipio"
             ></fixme-panel>
+            <review-panel v-if="job.callejero.length > 0"></review-panel>
             <report-panel v-if="job.informe.length > 0"></report-panel>
             <log-panel v-if="job.estado != 'AVAILABLE'"></log-panel>
           </vue-collapsible-panel-group>

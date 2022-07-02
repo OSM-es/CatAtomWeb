@@ -28,7 +28,6 @@ function getMessage(msg) {
 }
 
 function send(event) {
-  console.info(event);
   if (event.shiftKey) {
     message.value += "\n";
   } else {
