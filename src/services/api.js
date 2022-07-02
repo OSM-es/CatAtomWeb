@@ -46,6 +46,19 @@ api.putHgw = (cod_municipio, data) => {
   return api.put("hgw/" + cod_municipio, data);
 };
 
+api.postFixme = (cod_municipio, data) => {
+  console.info(data);
+  return api.post("fixme/" + cod_municipio, data);
+};
+
+api.putFixme = (cod_municipio, data, config) => {
+  return api.put("fixme/" + cod_municipio, data, config);
+};
+
+api.deleteFixme = (cod_municipio) => {
+  return api.delete("fixme/" + cod_municipio);
+};
+
 api.getExport = (cod_municipio) => {
   return api.get("export/" + cod_municipio);
 };

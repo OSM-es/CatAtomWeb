@@ -20,7 +20,6 @@ export const useErrorStore = defineStore({
       } else {
         msg = state.error;
       }
-      console.info(msg, te(msg), t(msg));
       if (te(msg)) {
         return t(msg);
       }

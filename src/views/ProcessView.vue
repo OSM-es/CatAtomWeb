@@ -26,7 +26,7 @@ const job = useJobStore();
             <done-panel v-if="job.estado == 'DONE'"></done-panel>
             <review-panel v-if="job.estado == 'REVIEW'"></review-panel>
             <fixme-panel
-              v-if="job.estado == 'FIXME'"
+              v-if="job.revisar.length > 0"
               :fixmes="job.revisar"
               :municipio="job.cod_municipio"
             ></fixme-panel>

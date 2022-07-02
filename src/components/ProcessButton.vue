@@ -12,17 +12,18 @@ function ownerTip() {
   if (!job.propietario || user.isOwner(job.propietario)) {
     return null;
   } else {
-    return i18n.t("The process is blocked by") + " " + job.propietario.username;
+    return i18n.t("The process is locked by") + " " + job.propietario.username;
   }
 }
 </script>
 
 <template>
-  <button
-    class="button is-link is-outlined is-fullwidth has-tooltip-arrow"
-    :disabled="job.propietario && !user.isOwner(job.propietario)"
-    :data-tooltip="ownerTip()"
-  >
-    <slot></slot>
-  </button>
+  <div class="has-tooltip-arrow" :data-tooltip="ownerTip()">
+    <button
+      class="button is-link is-outlined is-fullwidth"
+      :disabled="job.propietario && !user.isOwner(job.propietario)"
+    >
+      <slot></slot>
+    </button>
+  </div>
 </template>

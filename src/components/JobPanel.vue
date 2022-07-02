@@ -22,15 +22,13 @@ const municipio = ref(null);
 const division = ref(null);
 let municipioPrevio = null;
 
-chat.on("updateJob", (msg) => {
-  if (!msg.startsWith("log") || !userStore.isOwner(job.propietario)) {
-    job.getJob(job.cod_municipio, job.cod_division).catch((err) => {
-      errorStore.set(err);
-    });
-  }
+chat.on("updateJob", () => {
+  job.getJob(job.cod_municipio, job.cod_division).catch((err) => {
+    errorStore.set(err);
+  });
 });
 
-chat.on("create_job", (data) => {
+chat.on("createJob", (data) => {
   if (job.estado == "REVIEW") {
     job.charla.push(t("restart_job", data));
   } else {
@@ -38,8 +36,16 @@ chat.on("create_job", (data) => {
   }
 });
 
-chat.on("delete_job", (data) => {
+chat.on("deleteJob", (data) => {
   job.charla.push(t("delete_job", data));
+});
+
+chat.on("done", () => {
+  let name = job.cod_municipio;
+  if (job.cod_division) {
+    name += " (" + job.report.split_name + ")";
+  }
+  job.charla.push(t("finish_job", [name]));
 });
 
 onBeforeUnmount(() => {

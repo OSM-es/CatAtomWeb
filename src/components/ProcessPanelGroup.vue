@@ -67,6 +67,10 @@ function deleteJob() {
   job.deleteJob().catch((err) => errorStore.set(err));
 }
 
+function confirmFixmes() {
+  job.deleteFixme().catch((err) => errorStore.set(err));
+}
+
 watch(
   () => job.estado,
   async (estado) => {
@@ -153,6 +157,7 @@ watch(
           <p>
             <i18n-t keypath="review_msg" scope="global">
               <a :href="wikiUrl">{{ $t("guide") }}</a>
+              <font-awesome-icon icon="times" />
             </i18n-t>
           </p>
         </div>
@@ -171,7 +176,7 @@ watch(
       </div>
       <div id="fixmePanel" class="container">
         <div class="panel-block">
-          <p v-if="job.revisar.length == 0">
+          <p v-if="job.fixmes == 0">
             {{ $t("welldone") }}
           </p>
           <p v-else>
@@ -187,6 +192,18 @@ watch(
               </template>
             </i18n-t>
           </p>
+        </div>
+        <div class="panel-block">
+          <p v-if="job.fixmes > 0">
+            <i18n-t keypath="files left" scope="global" :plural="job.fixmes">
+              {{ job.fixmes }}
+            </i18n-t>
+          </p>
+          <div class="container" v-else>
+            <process-button @click="confirmFixmes">
+              {{ $t("Confirm") }}
+            </process-button>
+          </div>
         </div>
       </div>
     </nav>
@@ -230,7 +247,7 @@ watch(
       <template #content>
         <div class="container">
           <div class="panel-block">
-            {{ $t("Propietario") }}:&nbsp;
+            {{ $t("Owner") }}:&nbsp;
             <a
               :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
               >{{ job.propietario.username }}</a

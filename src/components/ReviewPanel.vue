@@ -67,7 +67,11 @@ function deleteFilter() {
             </span>
           </div>
           <div class="control">
-            <a class="button" @click="deleteFilter">
+            <a
+              class="button has-tooltip-arrow has-tooltip-right"
+              @click="deleteFilter"
+              :data-tooltip="$t('Delete filter')"
+            >
               <font-awesome-icon icon="times" />
             </a>
           </div>
@@ -105,8 +109,9 @@ function deleteFilter() {
                   </div>
                   <div class="control">
                     <button
-                      class="button"
+                      class="button has-tooltip-arrow"
                       :data-key="row.key"
+                      :data-tooltip="$t('Delete')"
                       @click="deleteHandler"
                     >
                       <font-awesome-icon icon="times" />

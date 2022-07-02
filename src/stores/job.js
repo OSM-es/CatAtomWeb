@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+var array = require("lodash/array");
 import api from "@/services/api";
 import { useChatService } from "@/services/chat";
 import { useProvStore } from "@/stores/provincias";
@@ -48,12 +49,8 @@ export const useJobStore = defineStore({
           : "buildings"
         : "addresses";
     },
-    tags(state) {
-      return state.edificios
-        ? state.direcciones
-          ? "buildings, addresses"
-          : "buildings"
-        : "addresses";
+    fixmes(state) {
+      return state.revisar.filter((fixme) => fixme.fixmes > 0).length;
     },
   },
 
@@ -78,6 +75,10 @@ export const useJobStore = defineStore({
         this.direcciones = "address_date" in this.report;
         this.idioma = this.report.language;
       }
+    },
+    updateFixme(data) {
+      const i = array.findIndex(this.revisar, { filename: data.filename });
+      this.revisar[i] = data;
     },
     async getJob(cod_municipio, cod_division) {
       if (cod_municipio) {
@@ -106,6 +107,22 @@ export const useJobStore = defineStore({
       );
       this.updateJob(response.data);
       chat.socket.emit("updateJob", "delete", this.cod_municipio);
+    },
+    async postFixme(data) {
+      const response = await api.postFixme(this.cod_municipio, data);
+      this.updateFixme(response.data);
+      chat.socket.emit("fixme", response.data, this.cod_municipio);
+    },
+    async putFixme(data, config = {}) {
+      const response = await api.putFixme(this.cod_municipio, data, config);
+      this.updateFixme(response.data);
+      chat.socket.emit("fixme", response.data, this.cod_municipio);
+      return response.data;
+    },
+    async deleteFixme() {
+      await api.deleteFixme(this.cod_municipio);
+      this.estado = "DONE";
+      chat.socket.emit("updateJob", "done", this.cod_municipio);
     },
     async updateHighway(cat, conv) {
       let formData = new FormData();
