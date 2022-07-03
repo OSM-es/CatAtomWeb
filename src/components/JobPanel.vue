@@ -55,8 +55,6 @@ async function fetchMunicipios(prov) {
   try {
     loadingMun.value = true;
     const response = await api.getProv(prov);
-    //municipio.value = localStorage.getItem("municipio");
-    //console.info("fetchM", localStorage.getItem("municipio"));
     job.$reset();
     municipio.value = null;
     division.value = null;
@@ -72,12 +70,10 @@ async function fetchMunicipios(prov) {
 }
 
 async function fetchDivisiones(mun) {
-  console.info("fetch", mun);
   getJobStatus();
   try {
     loadingDiv.value = true;
     const response = await api.getMun(mun);
-    console.info(response.data.divisiones);
     loadingDiv.value = false;
     divisiones.value = response.data.divisiones;
   } catch (err) {
@@ -94,12 +90,6 @@ function getRoom(cod_municipio = municipio.value) {
 }
 
 function getJobStatus() {
-  console.info(
-    "getJobStatus",
-    municipio.value,
-    division.value,
-    municipio.value == "null"
-  );
   if (municipioPrevio && municipioPrevio != municipio.value) {
     chat.socket.emit("leave", getRoom(municipioPrevio));
   }
@@ -112,7 +102,6 @@ function getJobStatus() {
       .getJob(municipio.value, division.value || "")
       .then(() => {
         division.value = job.cod_division;
-        //localStorage.setItem("provincia", provincia.value);
         localStorage.setItem("municipio", municipio.value);
         municipioPrevio = municipio.value;
       })
@@ -130,16 +119,6 @@ onMounted(() => {
       fetchDivisiones(mun);
     });
   }
-  // provincia.value = "08";
-  // fetchMunicipios("08").then(() => {
-  //   municipio.value = "08900";
-  //   fetchDivisiones("08900");
-  // });
-  //localStorage.removeItem("provincia");
-  //localStorage.removeItem("municipio");
-  //provincia.value = localStorage.getItem("provincia");
-  //municipio.value = localStorage.getItem("municipio");
-  console.info(provincia.value, municipio.value, division.value);
 });
 
 onBeforeUnmount(() => {
