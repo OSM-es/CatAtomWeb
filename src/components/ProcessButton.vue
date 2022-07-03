@@ -18,12 +18,14 @@ function ownerTip() {
 </script>
 
 <template>
-  <div class="has-tooltip-arrow" :data-tooltip="ownerTip()">
-    <button
-      class="button is-link is-outlined is-fullwidth"
-      :disabled="job.propietario && !user.isOwner(job.propietario)"
-    >
-      <slot></slot>
-    </button>
+  <div class="container">
+    <div class="has-tooltip-arrow" :data-tooltip="ownerTip()">
+      <button
+        class="button is-link is-outlined is-fullwidth"
+        :disabled="job.propietario && !user.isOwner(job.propietario)"
+      >
+        <slot></slot>
+      </button>
+    </div>
   </div>
 </template>

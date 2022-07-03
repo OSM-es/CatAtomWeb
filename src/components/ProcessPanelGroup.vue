@@ -146,11 +146,9 @@ watch(
           </p>
         </div>
         <div class="panel-block">
-          <div class="container">
-            <process-button @click="processJob()">
-              {{ $t("Reprocess") }}
-            </process-button>
-          </div>
+          <process-button @click="processJob()">
+            {{ $t("Reprocess") }}
+          </process-button>
         </div>
       </div>
     </nav>
@@ -183,11 +181,9 @@ watch(
               {{ job.fixmes }}
             </i18n-t>
           </p>
-          <div class="container" v-else>
-            <process-button @click="job.deleteFixme">
-              {{ $t("Confirm") }}
-            </process-button>
-          </div>
+          <process-button @click="job.deleteFixme" v-else>
+            {{ $t("Confirm") }}
+          </process-button>
         </div>
       </div>
     </nav>
