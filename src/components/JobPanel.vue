@@ -48,7 +48,11 @@ chat.on("done", () => {
 });
 
 async function fetchMunicipios(prov) {
+  const controller = new AbortController();
+  controller.abort();
+  console.info("abort");
   loadingMun.value = true;
+  loadingDiv.value = false;
   const response = await api.getProv(prov);
   job.$reset();
   municipio.value = null;
@@ -145,7 +149,7 @@ onBeforeUnmount(() => {
           @update:modelValue="fetchDivisiones"
         >
           <!-- eslint-disable-next-line vue/no-unused-vars  -->
-          <template no-options="{ search, searching, loading }">
+          <template #no-options="{ search, searching, loading }">
             {{ $t("Sorry, no matching option") }}
           </template>
         </v-select>
@@ -171,7 +175,7 @@ onBeforeUnmount(() => {
           @update:modelValue="getJobStatus"
         >
           <!-- eslint-disable-next-line vue/no-unused-vars  -->
-          <template no-options="{ search, searching, loading }">
+          <template #no-options="{ search, searching, loading }">
             {{ $t("Sorry, no matching option") }}
           </template>
         </v-select>
