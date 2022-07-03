@@ -4,8 +4,8 @@ import { useI18n } from "vue-i18n";
 const i18n = useI18n();
 
 const localeNames = [
-  { key: "es-ES", name: "Español" },
-  { key: "ca-ES", name: "Catalán" },
+  { key: "es", name: "Español" },
+  { key: "ca", name: "Catalán" },
   { key: "en", name: "English" },
 ];
 
