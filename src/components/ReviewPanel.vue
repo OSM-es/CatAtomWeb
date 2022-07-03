@@ -2,14 +2,12 @@
 import { ref } from "vue";
 import debounce from "lodash.debounce";
 import { useJobStore } from "@/stores/job";
-import { useErrorStore } from "@/stores/error";
 import { useI18n } from "vue-i18n";
 import { useChatService } from "@/services/chat";
 
 const { t } = useI18n();
 const chat = useChatService();
 const job = useJobStore();
-const errorStore = useErrorStore();
 const filters = ref({ name: { value: "", keys: ["cat", "conv"] } });
 const totalPages = ref(1);
 const currentPage = ref(1);
@@ -20,7 +18,7 @@ chat.on("highway", (data) => {
 
 const editHandler = debounce((key, value) => {
   const cat = job.callejero[key][0];
-  job.putHighway(cat, value).catch((err) => errorStore.set(err));
+  job.putHighway(cat, value);
 }, 500);
 
 function deleteHandler(key) {

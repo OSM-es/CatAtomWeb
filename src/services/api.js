@@ -1,4 +1,5 @@
 import axios from "axios";
+import { useErrorStore } from "@/stores/error";
 
 export const api = axios.create({
   baseURL: process.env.VUE_APP_ROOT_API,
@@ -15,6 +16,16 @@ api.setAuth = () => {
 };
 
 api.setAuth();
+
+api.interceptors.response.use(
+  function (response) {
+    return response;
+  },
+  function (error) {
+    useErrorStore().set(error);
+    return Promise.reject(error);
+  }
+);
 
 api.getAuth = (session) => {
   return api.get("authorize", { params: session });

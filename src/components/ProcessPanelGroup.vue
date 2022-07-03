@@ -2,12 +2,10 @@
 import { nextTick, ref, watch } from "vue";
 import ProcessButton from "./ProcessButton";
 import { useJobStore } from "@/stores/job";
-import { useErrorStore } from "@/stores/error";
 
 const wikiUrl =
   "https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles";
 const job = useJobStore();
-const errorStore = useErrorStore();
 const processPanel = ref(null);
 
 function isActive(panel) {
@@ -44,31 +42,17 @@ function exportJobUrl() {
 }
 
 function updateLog() {
-  job
-    .getJob(job.cod_municipio, job.cod_division)
-    .then(() => {
-      if (job.estado == "RUNNING") {
-        setTimeout(() => {
-          updateLog();
-        }, 500);
-      }
-    })
-    .catch((err) => errorStore.set(err));
+  job.getJob(job.cod_municipio, job.cod_division).then(() => {
+    if (job.estado == "RUNNING") {
+      setTimeout(() => {
+        updateLog();
+      }, 500);
+    }
+  });
 }
 
 function processJob() {
-  job
-    .createJob()
-    .then(updateLog)
-    .catch((err) => errorStore.set(err));
-}
-
-function deleteJob() {
-  job.deleteJob().catch((err) => errorStore.set(err));
-}
-
-function confirmFixmes() {
-  job.deleteFixme().catch((err) => errorStore.set(err));
+  job.createJob().then(updateLog);
 }
 
 watch(
@@ -200,7 +184,7 @@ watch(
             </i18n-t>
           </p>
           <div class="container" v-else>
-            <process-button @click="confirmFixmes">
+            <process-button @click="job.deleteFixme">
               {{ $t("Confirm") }}
             </process-button>
           </div>
@@ -267,7 +251,7 @@ watch(
           <div class="panel-block">
             <div class="content">
               <p>{{ $t("delete_msg") }}</p>
-              <process-button @click="deleteJob">
+              <process-button @click="job.deleteJob">
                 {{ $t("Delete") }}
               </process-button>
             </div>

@@ -2,7 +2,6 @@
 import { ref, onBeforeUnmount, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import api from "@/services/api";
-import { useErrorStore } from "@/stores/error";
 import { useJobStore } from "@/stores/job";
 import { useProvStore } from "@/stores/provincias";
 import { useChatService } from "@/services/chat";
@@ -11,7 +10,6 @@ import { useUserStore } from "@/stores/user";
 const { t } = useI18n();
 const wikiUrl =
   "https://wiki.openstreetmap.org/wiki/ES:Tag:boundary%3Dadministrative";
-const errorStore = useErrorStore();
 const job = useJobStore();
 const chat = useChatService();
 const userStore = useUserStore();
@@ -26,9 +24,7 @@ const loadingDiv = ref(false);
 let municipioPrevio = null;
 
 chat.on("updateJob", () => {
-  job.getJob(job.cod_municipio, job.cod_division).catch((err) => {
-    errorStore.set(err);
-  });
+  job.getJob(job.cod_municipio, job.cod_division);
 });
 
 chat.on("createJob", (data) => {
@@ -52,33 +48,25 @@ chat.on("done", () => {
 });
 
 async function fetchMunicipios(prov) {
-  try {
-    loadingMun.value = true;
-    const response = await api.getProv(prov);
-    job.$reset();
-    municipio.value = null;
-    division.value = null;
-    loadingMun.value = false;
-    municipios.value = response.data.municipios.map((mun) => ({
-      cod_municipio: mun.cod_municipio,
-      nombre: mun.nombre,
-      label: mun.cod_municipio + " " + mun.nombre,
-    }));
-  } catch (err) {
-    errorStore.set(err);
-  }
+  loadingMun.value = true;
+  const response = await api.getProv(prov);
+  job.$reset();
+  municipio.value = null;
+  division.value = null;
+  loadingMun.value = false;
+  municipios.value = response.data.municipios.map((mun) => ({
+    cod_municipio: mun.cod_municipio,
+    nombre: mun.nombre,
+    label: mun.cod_municipio + " " + mun.nombre,
+  }));
 }
 
 async function fetchDivisiones(mun) {
   getJobStatus();
-  try {
-    loadingDiv.value = true;
-    const response = await api.getMun(mun);
-    loadingDiv.value = false;
-    divisiones.value = response.data.divisiones;
-  } catch (err) {
-    errorStore.set(err);
-  }
+  loadingDiv.value = true;
+  const response = await api.getMun(mun);
+  loadingDiv.value = false;
+  divisiones.value = response.data.divisiones;
 }
 
 function getRoom(cod_municipio = municipio.value) {
@@ -98,19 +86,16 @@ function getJobStatus() {
       job.$reset();
       chat.socket.emit("join", getRoom());
     }
-    job
-      .getJob(municipio.value, division.value || "")
-      .then(() => {
-        division.value = job.cod_division;
-        localStorage.setItem("municipio", municipio.value);
-        municipioPrevio = municipio.value;
-      })
-      .catch((err) => errorStore.set(err));
+    job.getJob(municipio.value, division.value || "").then(() => {
+      division.value = job.cod_division;
+      localStorage.setItem("municipio", municipio.value);
+      municipioPrevio = municipio.value;
+    });
   }
 }
 
 onMounted(() => {
-  provincias.fetch().catch((err) => errorStore.set(err));
+  provincias.fetch();
   const mun = localStorage.getItem("municipio");
   if (mun) {
     provincia.value = mun.substring(0, 2);

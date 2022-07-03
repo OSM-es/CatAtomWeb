@@ -68,22 +68,15 @@ function onNewFiles(newFiles) {
     };
     const formData = new FormData();
     formData.append("file", file.file);
-    job
-      .putFixme(formData, config)
-      .then((data) => {
-        files.removeFile(data.filename);
-      })
-      .catch((err) => {
-        errorStore.set(err);
-      });
+    job.putFixme(formData, config).then((data) => {
+      files.removeFile(data.filename);
+    });
   });
 }
 
 function onDownload(event) {
   const filename = event.target.pathname.split("/").pop();
-  job.postFixme({ filename }).catch((err) => {
-    errorStore.set(err);
-  });
+  job.postFixme({ filename });
 }
 
 function chatColor(fixme) {
