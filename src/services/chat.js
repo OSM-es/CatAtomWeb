@@ -42,7 +42,7 @@ class SocketioService {
   }
 
   connect(endpoint) {
-    this.socket = io(endpoint);
+    this.socket = io(endpoint, { query: useUserStore().userData });
   }
 
   disconnect() {
@@ -50,8 +50,10 @@ class SocketioService {
       this.socket.disconnect();
     }
   }
+
+  emit(msg, data, room) {
+    this.socket.emit(msg, data, room);
+  }
 }
 
-const socketio = new SocketioService();
-
-export const useChatService = () => socketio;
+export const useChatService = () => new SocketioService();

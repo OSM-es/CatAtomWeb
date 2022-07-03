@@ -4,8 +4,6 @@ import api from "@/services/api";
 import { useChatService } from "@/services/chat";
 import { useProvStore } from "@/stores/provincias";
 
-const chat = useChatService();
-
 export const useJobStore = defineStore({
   id: "job",
   state: () => ({
@@ -110,29 +108,29 @@ export const useJobStore = defineStore({
         this.cod_division
       );
       this.updateJob(response.data);
-      chat.socket.emit("updateJob", "delete", this.cod_municipio);
+      useChatService().emit("updateJob", "delete", this.cod_municipio);
     },
     async postFixme(data) {
       const response = await api.postFixme(this.cod_municipio, data);
       this.updateFixme(response.data);
-      chat.socket.emit("fixme", response.data, this.cod_municipio);
+      useChatService().emit("fixme", response.data, this.cod_municipio);
     },
     async putFixme(data, config = {}) {
       const response = await api.putFixme(this.cod_municipio, data, config);
       this.updateFixme(response.data);
-      chat.socket.emit("fixme", response.data, this.cod_municipio);
+      useChatService().emit("fixme", response.data, this.cod_municipio);
       return response.data;
     },
     async deleteFixme() {
       await api.deleteFixme(this.cod_municipio);
       this.estado = "DONE";
-      chat.socket.emit("updateJob", "done", this.cod_municipio);
+      useChatService().emit("updateJob", "done", this.cod_municipio);
     },
     async putHighway(cat, conv) {
       const data = { cat, conv };
       const response = await api.putHgw(this.cod_municipio, data);
       this.updateHighway(response.data);
-      chat.socket.emit("highway", response.data, this.cod_municipio);
+      useChatService().emit("highway", response.data, this.cod_municipio);
     },
   },
 });

@@ -10,9 +10,8 @@ export const useUserStore = defineStore({
   }),
 
   getters: {
-    isLogged: (state) => {
-      return state.token ? true : false;
-    },
+    userData: (state) => ({ osm_id: state.osmId, username: state.username }),
+    isLogged: (state) => (state.token ? true : false),
     isOwner: (state) => {
       return (owner) => owner && state.osmId == owner.osm_id;
     },
