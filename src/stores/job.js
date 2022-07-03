@@ -58,6 +58,7 @@ export const useJobStore = defineStore({
       const log = linea < this.log.length ? [] : this.log;
       const provincias = useProvStore();
       this.$state = data;
+      this.cod_division = this.cod_division || null;
       this.log = log.concat(this.log);
       if (this.informe.length == 0) {
         this.edificios = true;
@@ -83,6 +84,7 @@ export const useJobStore = defineStore({
       this.revisar[i] = data;
     },
     async getJob(cod_municipio, cod_division) {
+      console.info("getJob", cod_municipio, cod_division);
       if (cod_municipio) {
         const linea = this.estado == "RUNNING" ? this.linea : 0;
         const response = await api.getJob(cod_municipio, cod_division, linea);

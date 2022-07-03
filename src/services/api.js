@@ -3,7 +3,7 @@ import axios from "axios";
 export const api = axios.create({
   baseURL: process.env.VUE_APP_ROOT_API,
   withCredentials: true,
-  timeout: 30000,
+  timeout: 60000,
 });
 
 api.setAuth = () => {

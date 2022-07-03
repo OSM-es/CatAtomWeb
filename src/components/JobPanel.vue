@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onBeforeUnmount } from "vue";
+import { ref, onBeforeUnmount, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import api from "@/services/api";
 import { useErrorStore } from "@/stores/error";
@@ -7,7 +7,6 @@ import { useJobStore } from "@/stores/job";
 import { useProvStore } from "@/stores/provincias";
 import { useChatService } from "@/services/chat";
 import { useUserStore } from "@/stores/user";
-import WatchSelect from "./WatchSelect.vue";
 
 const { t } = useI18n();
 const wikiUrl =
@@ -17,9 +16,13 @@ const job = useJobStore();
 const chat = useChatService();
 const userStore = useUserStore();
 const provincias = useProvStore();
+const municipios = ref([]);
+const divisiones = ref([]);
 const provincia = ref(null);
 const municipio = ref(null);
 const division = ref(null);
+const loadingMun = ref(false);
+const loadingDiv = ref(false);
 let municipioPrevio = null;
 
 chat.on("updateJob", () => {
@@ -48,14 +51,17 @@ chat.on("done", () => {
   job.charla.push(t("finish_job", [name]));
 });
 
-onBeforeUnmount(() => {
-  chat.disconnect();
-});
-
 async function fetchMunicipios(prov) {
   try {
+    loadingMun.value = true;
     const response = await api.getProv(prov);
-    return response.data.municipios.map((mun) => ({
+    //municipio.value = localStorage.getItem("municipio");
+    //console.info("fetchM", localStorage.getItem("municipio"));
+    job.$reset();
+    municipio.value = null;
+    division.value = null;
+    loadingMun.value = false;
+    municipios.value = response.data.municipios.map((mun) => ({
       cod_municipio: mun.cod_municipio,
       nombre: mun.nombre,
       label: mun.cod_municipio + " " + mun.nombre,
@@ -63,17 +69,20 @@ async function fetchMunicipios(prov) {
   } catch (err) {
     errorStore.set(err);
   }
-  return [];
 }
 
 async function fetchDivisiones(mun) {
+  console.info("fetch", mun);
+  getJobStatus();
   try {
+    loadingDiv.value = true;
     const response = await api.getMun(mun);
-    return response.data.divisiones;
+    console.info(response.data.divisiones);
+    loadingDiv.value = false;
+    divisiones.value = response.data.divisiones;
   } catch (err) {
     errorStore.set(err);
   }
-  return [];
 }
 
 function getRoom(cod_municipio = municipio.value) {
@@ -85,8 +94,13 @@ function getRoom(cod_municipio = municipio.value) {
 }
 
 function getJobStatus() {
+  console.info(
+    "getJobStatus",
+    municipio.value,
+    division.value,
+    municipio.value == "null"
+  );
   if (municipioPrevio && municipioPrevio != municipio.value) {
-    job.$reset();
     chat.socket.emit("leave", getRoom(municipioPrevio));
   }
   if (municipio.value) {
@@ -98,13 +112,39 @@ function getJobStatus() {
       .getJob(municipio.value, division.value || "")
       .then(() => {
         division.value = job.cod_division;
+        //localStorage.setItem("provincia", provincia.value);
+        localStorage.setItem("municipio", municipio.value);
         municipioPrevio = municipio.value;
       })
       .catch((err) => errorStore.set(err));
   }
 }
 
-provincias.fetch().catch((err) => errorStore.set(err));
+onMounted(() => {
+  provincias.fetch().catch((err) => errorStore.set(err));
+  const mun = localStorage.getItem("municipio");
+  if (mun) {
+    provincia.value = mun.substring(0, 2);
+    fetchMunicipios(provincia.value).then(() => {
+      municipio.value = mun;
+      fetchDivisiones(mun);
+    });
+  }
+  // provincia.value = "08";
+  // fetchMunicipios("08").then(() => {
+  //   municipio.value = "08900";
+  //   fetchDivisiones("08900");
+  // });
+  //localStorage.removeItem("provincia");
+  //localStorage.removeItem("municipio");
+  //provincia.value = localStorage.getItem("provincia");
+  //municipio.value = localStorage.getItem("municipio");
+  console.info(provincia.value, municipio.value, division.value);
+});
+
+onBeforeUnmount(() => {
+  chat.disconnect();
+});
 </script>
 
 <template>
@@ -116,7 +156,9 @@ provincias.fetch().catch((err) => errorStore.set(err));
           :options="provincias.get"
           :clearable="false"
           :selectOnTab="true"
+          :reduce="(prov) => prov && prov.cod_provincia"
           v-model="provincia"
+          @update:modelValue="fetchMunicipios"
         >
           <!-- eslint-disable-next-line vue/no-unused-vars  -->
           <template #no-options="{ search, searching, loading }">
@@ -125,32 +167,54 @@ provincias.fetch().catch((err) => errorStore.set(err));
         </v-select>
       </div>
     </div>
-    <watch-select
-      :watched-value="provincia ? provincia.cod_provincia : ''"
-      v-model="municipio"
-      :reduce="(mun) => mun && mun.cod_municipio"
-      :fetch-options="fetchMunicipios"
-      :placeholder="$t('Select the municipality')"
-      @update:modelValue="getJobStatus"
-    ></watch-select>
-    <watch-select
-      v-if="
-        !job.estado ||
-        (job.estado == 'DONE' && job.report.split_name) ||
-        job.estado == 'AVAILABLE' ||
-        job.estado == 'ERROR'
-      "
-      :watched-value="municipio || ''"
-      v-model="division"
-      label="nombre"
-      :reduce="(split) => split && split.osm_id"
-      :fetch-options="fetchDivisiones"
-      :placeholder="$t('Select the subarea')"
-      :clearable="true"
-      @update:modelValue="getJobStatus"
-    ></watch-select>
-    <div class="control is-disabled" v-else>
-      <input class="input" :value="job.report.split_name" />
+    <div class="field">
+      <div class="control">
+        <v-select
+          v-model="municipio"
+          :reduce="(mun) => mun && mun.cod_municipio"
+          :placeholder="$t('Select the municipality')"
+          :options="municipios"
+          :clearable="false"
+          :selectOnTab="true"
+          :disabled="municipios.length == 0"
+          :loading="loadingMun"
+          @update:modelValue="fetchDivisiones"
+        >
+          <!-- eslint-disable-next-line vue/no-unused-vars  -->
+          <template no-options="{ search, searching, loading }">
+            {{ $t("Sorry, no matching option") }}
+          </template>
+        </v-select>
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <v-select
+          v-if="
+            !job.estado ||
+            job.estado == 'AVAILABLE' ||
+            job.estado == 'ERROR' ||
+            (job.estado == 'DONE' && job.report.split_name)
+          "
+          v-model="division"
+          label="nombre"
+          :reduce="(div) => div && div.osm_id"
+          :placeholder="$t('Select the subarea')"
+          :options="divisiones"
+          :selectOnTab="true"
+          :disabled="divisiones.length == 0"
+          :loading="loadingDiv"
+          @update:modelValue="getJobStatus"
+        >
+          <!-- eslint-disable-next-line vue/no-unused-vars  -->
+          <template no-options="{ search, searching, loading }">
+            {{ $t("Sorry, no matching option") }}
+          </template>
+        </v-select>
+        <div class="control is-disabled" v-else>
+          <input class="input" :value="job.report.split_name" />
+        </div>
+      </div>
     </div>
     <div class="notification is-info is-light" v-if="municipio === null">
       <i18n-t keypath="select_job" scope="global">
