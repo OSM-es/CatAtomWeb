@@ -53,13 +53,19 @@ function dropEnabled() {
   return false;
 }
 
+function uploadableFiles() {
+  return props.fixmes
+    .filter((fixme) => uploadEnabled(fixme))
+    .map((fixme) => fixme.filename);
+}
+
 function onNewFiles(newFiles) {
   const matchFiles = UploadableFileList.filterByNames(
     [...newFiles],
-    props.fixmes.map((fixme) => fixme.filename)
+    uploadableFiles()
   );
   if (newFiles.length != matchFiles.length) {
-    errorStore.set(t("Select only listed files"));
+    errorStore.set(t("Select only downloaded files"));
   }
   files.addFiles(matchFiles);
   files.getFiles().forEach((file) => {

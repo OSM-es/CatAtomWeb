@@ -10,6 +10,18 @@ import ReviewPanel from "@/components/ReviewPanel.vue";
 import ProcessPanelGroup from "@/components/ProcessPanelGroup.vue";
 
 const job = useJobStore();
+
+function fixmeEnabled() {
+  return job.revisar.length > 0 && job.estado != "RUNNING";
+}
+
+function reviewEnabled() {
+  return job.callejero.length > 0 && job.estado != "RUNNING";
+}
+
+function reportEnabled() {
+  return job.informe.length > 0 && job.estado != "RUNNING";
+}
 </script>
 
 <template>
@@ -25,12 +37,12 @@ const job = useJobStore();
           <vue-collapsible-panel-group v-if="job.cod_municipio">
             <done-panel v-if="job.estado == 'DONE'"></done-panel>
             <fixme-panel
-              v-if="job.revisar.length > 0"
+              v-if="fixmeEnabled()"
               :fixmes="job.revisar"
               :municipio="job.cod_municipio"
             ></fixme-panel>
-            <review-panel v-if="job.callejero.length > 0"></review-panel>
-            <report-panel v-if="job.informe.length > 0"></report-panel>
+            <review-panel v-if="reviewEnabled()"></review-panel>
+            <report-panel v-if="reportEnabled()"></report-panel>
             <log-panel v-if="job.estado != 'AVAILABLE'"></log-panel>
           </vue-collapsible-panel-group>
         </div>
