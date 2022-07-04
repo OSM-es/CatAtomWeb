@@ -42,7 +42,10 @@ class SocketioService {
   }
 
   connect(endpoint) {
-    this.socket = io(endpoint, { query: useUserStore().userData });
+    const username = localStorage.getItem("username") || "";
+    const osmId = localStorage.getItem("osmId") || 0;
+    const userData = { osm_id: osmId, username: username };
+    this.socket = io(endpoint, { query: userData });
   }
 
   disconnect() {
@@ -56,4 +59,6 @@ class SocketioService {
   }
 }
 
-export const useChatService = () => new SocketioService();
+const socketio = new SocketioService();
+
+export const useChatService = () => socketio;
