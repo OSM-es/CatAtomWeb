@@ -66,6 +66,7 @@ async function fetchDivisiones(mun) {
   getJobStatus();
   loadingDiv.value = true;
   const response = await api.getMun(mun);
+  division.value = null;
   loadingDiv.value = false;
   divisiones.value = response.data.divisiones;
 }

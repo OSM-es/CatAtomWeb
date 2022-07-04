@@ -8,11 +8,15 @@ const job = useJobStore();
 const i18n = useI18n();
 const user = useUserStore();
 
+function isDisabled() {
+  return job.propietario && !user.isOwner(job.propietario);
+}
+
 function ownerTip() {
-  if (!job.propietario || user.isOwner(job.propietario)) {
-    return null;
-  } else {
+  if (isDisabled()) {
     return i18n.t("The process is locked by") + " " + job.propietario.username;
+  } else {
+    return null;
   }
 }
 </script>
@@ -22,7 +26,7 @@ function ownerTip() {
     <div class="has-tooltip-arrow" :data-tooltip="ownerTip()">
       <button
         class="button is-link is-outlined is-fullwidth"
-        :disabled="job.propietario && !user.isOwner(job.propietario)"
+        :disabled="isDisabled()"
       >
         <slot></slot>
       </button>
