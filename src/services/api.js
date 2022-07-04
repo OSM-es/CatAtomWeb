@@ -42,15 +42,18 @@ api.getMun = (mun) => {
 
 api.getJob = (cod_municipio, cod_division, linea = 0) => {
   const params = { linea };
-  return api.get("job/" + cod_municipio + "/" + cod_division, { params });
+  const div = cod_division || "";
+  return api.get("job/" + cod_municipio + "/" + div, { params });
 };
 
 api.postJob = (cod_municipio, cod_division, options) => {
-  return api.post("job/" + cod_municipio + "/" + cod_division, options);
+  const div = cod_division || "";
+  return api.post("job/" + cod_municipio + "/" + div, options);
 };
 
 api.deleteJob = (cod_municipio, cod_division) => {
-  return api.delete("job/" + cod_municipio + "/" + cod_division);
+  const div = cod_division || "";
+  return api.delete("job/" + cod_municipio + "/" + div);
 };
 
 api.putHgw = (cod_municipio, data) => {
