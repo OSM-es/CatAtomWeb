@@ -55,6 +55,10 @@ function processJob() {
   job.createJob().then(updateLog);
 }
 
+function deleteJob() {
+  job.deleteJob();
+}
+
 watch(
   () => job.estado,
   async (estado) => {
@@ -247,7 +251,7 @@ watch(
           <div class="panel-block">
             <div class="content">
               <p>{{ $t("delete_msg") }}</p>
-              <process-button @click="job.deleteJob">
+              <process-button @click="deleteJob">
                 {{ $t("Delete") }}
               </process-button>
             </div>
