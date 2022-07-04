@@ -142,6 +142,7 @@ function chatColor(fixme) {
                   :href="getUrl(fixme.filename)"
                   @click="onDownload"
                   :class="isLocked(fixme)"
+                  target="_blank"
                 >
                   <span class="icon">
                     <font-awesome-icon icon="download" />

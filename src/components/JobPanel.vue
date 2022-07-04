@@ -48,9 +48,6 @@ chat.on("done", () => {
 });
 
 async function fetchMunicipios(prov) {
-  const controller = new AbortController();
-  controller.abort();
-  console.info("abort");
   loadingMun.value = true;
   loadingDiv.value = false;
   const response = await api.getProv(prov);
