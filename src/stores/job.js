@@ -20,6 +20,7 @@ export const useJobStore = defineStore({
     callejero: [],
     participantes: 0,
     charla: [],
+    next_args: "",
   }),
 
   getters: {
@@ -49,6 +50,22 @@ export const useJobStore = defineStore({
     },
     fixmes(state) {
       return state.revisar.filter((fixme) => fixme.fixmes > 0).length;
+    },
+    args(state) {
+      if (state.edificios && !state.direcciones) {
+        return "-b";
+      }
+      if (state.direcciones && !state.edificios) {
+        return "-d";
+      }
+    },
+    nextMsg(state) {
+      if (state.next_args == "-b") {
+        return "Process buildings";
+      }
+      if (state.next_args == "-d") {
+        return "Process addresses";
+      }
     },
   },
 
@@ -124,7 +141,7 @@ export const useJobStore = defineStore({
     },
     async deleteFixme() {
       await api.deleteFixme(this.cod_municipio);
-      this.estado = "DONE";
+      this.getJob(this.cod_municipio, this.cod_division);
       useChatService().emit("updateJob", "done", this.cod_municipio);
     },
     async putHighway(cat, conv) {

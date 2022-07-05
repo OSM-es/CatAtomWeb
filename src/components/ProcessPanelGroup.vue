@@ -26,7 +26,7 @@ function isActive(panel) {
 }
 
 function tasksUrl() {
-  return `results/${job.cod_municipio}/tasks`;
+  return `results/${job.cod_municipio}/tasks${job.args}`;
 }
 
 function zoningUrl() {
@@ -52,11 +52,20 @@ function updateLog() {
 }
 
 function processJob() {
+  if (job.next_args) {
+    job.edificios = job.next_args == "-b";
+    job.direcciones = job.next_args == "-d";
+  }
   job.createJob().then(updateLog);
 }
 
 function deleteJob() {
   job.deleteJob();
+}
+
+function changeArgs(event) {
+  job.edificios = event.target.value == "-b";
+  job.direcciones = event.target.value == "-d";
 }
 
 watch(
@@ -196,6 +205,18 @@ watch(
         <p>3. {{ $t("Publish") }}</p>
       </div>
       <div id="publishPanel" class="container">
+        <div class="panel-block" v-if="job.args && !job.next_args">
+          <div class="select" @change="changeArgs">
+            <select>
+              <option :selected="job.args == '-b'" value="-b">
+                {{ $t("Buildings") }}
+              </option>
+              <option :selected="job.args == '-d'" value="-d">
+                {{ $t("Addresses") }}
+              </option>
+            </select>
+          </div>
+        </div>
         <div class="panel-block">
           <div class="content">
             <p>
@@ -216,6 +237,14 @@ watch(
                 <a :href="tasksUrl()">{{ $t("process result") }}</a>
               </i18n-t>
             </p>
+          </div>
+        </div>
+        <div class="panel-block" v-if="job.next_args">
+          <div class="content">
+            <p>{{ $t("You can also") }}</p>
+            <process-button @click="processJob()">
+              {{ $t(job.nextMsg) }}
+            </process-button>
           </div>
         </div>
       </div>

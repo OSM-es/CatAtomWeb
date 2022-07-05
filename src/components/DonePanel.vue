@@ -118,7 +118,9 @@ function downloadUrl() {
                   Control Remoto de
                   JOSM](http://localhost:8111/import?new_layer=true&amp;url={{
                     downloadUrl()
-                  }}results/{muncode}/tasks/{localId}.osm.gz).<br />
+                  }}results/{muncode}/tasks{{
+                    job.args
+                  }}/{localId}.osm.gz).<br />
                   Tipo: {type}. Complejidad: {parts} partes.<br />
                   Revisa la tarea siguiendo las instrucciones de la [guía de
                   importación](https://openstreetmap.es/catastro). Consulta las
