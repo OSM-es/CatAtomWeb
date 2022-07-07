@@ -1,10 +1,10 @@
 <script setup>
-import { useJobStore } from "@/stores/job";
+import { useJobStore } from "@/stores/job"
 
-const job = useJobStore();
+const job = useJobStore()
 
 function isActive() {
-  return job.estado == "RUNNING" ? "is-info" : "";
+  return job.estado == "RUNNING" ? "is-info" : ""
 }
 </script>
 
@@ -19,7 +19,7 @@ function isActive() {
           <p v-for="(row, i) in job.log" :key="i" class="terminal">
             {{ row }}
           </p>
-          <div class="loader" v-if="job.estado == 'RUNNING'"></div>
+          <div v-if="job.estado == 'RUNNING'" class="loader"></div>
         </div>
       </div>
     </template>

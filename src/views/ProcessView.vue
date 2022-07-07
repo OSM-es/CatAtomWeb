@@ -1,26 +1,26 @@
 <script setup>
-import { useJobStore } from "@/stores/job";
-import JobPanel from "@/components/JobPanel.vue";
-import ChatPanel from "@/components/ChatPanel.vue";
-import DonePanel from "@/components/DonePanel.vue";
-import FixmePanel from "@/components/FixmePanel.vue";
-import LogPanel from "@/components/LogPanel.vue";
-import ReportPanel from "@/components/ReportPanel.vue";
-import ReviewPanel from "@/components/ReviewPanel.vue";
-import ProcessPanelGroup from "@/components/ProcessPanelGroup.vue";
+import { useJobStore } from "@/stores/job"
+import JobPanel from "@/components/JobPanel.vue"
+import ChatPanel from "@/components/ChatPanel.vue"
+import DonePanel from "@/components/DonePanel.vue"
+import FixmePanel from "@/components/FixmePanel.vue"
+import LogPanel from "@/components/LogPanel.vue"
+import ReportPanel from "@/components/ReportPanel.vue"
+import ReviewPanel from "@/components/ReviewPanel.vue"
+import ProcessPanelGroup from "@/components/ProcessPanelGroup.vue"
 
-const job = useJobStore();
+const job = useJobStore()
 
 function fixmeEnabled() {
-  return job.revisar.length > 0 && job.estado != "RUNNING";
+  return job.revisar.length > 0 && job.estado != "RUNNING"
 }
 
 function reviewEnabled() {
-  return job.callejero.length > 0 && job.estado != "RUNNING";
+  return job.callejero.length > 0 && job.estado != "RUNNING"
 }
 
 function reportEnabled() {
-  return job.informe.length > 0 && job.estado != "RUNNING";
+  return job.informe.length > 0 && job.estado != "RUNNING"
 }
 </script>
 
@@ -46,7 +46,7 @@ function reportEnabled() {
             <log-panel v-if="job.estado != 'AVAILABLE'"></log-panel>
           </vue-collapsible-panel-group>
         </div>
-        <div class="column is-one-fifth" v-if="job.cod_municipio">
+        <div v-if="job.cod_municipio" class="column is-one-fifth">
           <chat-panel></chat-panel>
         </div>
       </div>

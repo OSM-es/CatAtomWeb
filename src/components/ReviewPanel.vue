@@ -1,32 +1,32 @@
 <script setup>
-import { ref } from "vue";
-import debounce from "lodash.debounce";
-import { useJobStore } from "@/stores/job";
-import { useI18n } from "vue-i18n";
-import { useChatService } from "@/services/chat";
+import { ref } from "vue"
+import debounce from "lodash.debounce"
+import { useJobStore } from "@/stores/job"
+import { useI18n } from "vue-i18n"
+import { useChatService } from "@/services/chat"
 
-const { t } = useI18n();
-const chat = useChatService();
-const job = useJobStore();
-const filters = ref({ name: { value: "", keys: ["cat", "conv"] } });
-const totalPages = ref(1);
-const currentPage = ref(1);
+const { t } = useI18n()
+const chat = useChatService()
+const job = useJobStore()
+const filters = ref({ name: { value: "", keys: ["cat", "conv"] } })
+const totalPages = ref(1)
+const currentPage = ref(1)
 
 chat.on("highway", (data) => {
-  job.updateHighway(data);
-});
+  job.updateHighway(data)
+})
 
 const editHandler = debounce((key, value) => {
-  const cat = job.callejero[key][0];
-  job.putHighway(cat, value);
-}, 500);
+  const cat = job.callejero[key][0]
+  job.putHighway(cat, value)
+}, 500)
 
 function deleteHandler(key) {
-  editHandler(key, "");
+  editHandler(key, "")
 }
 
 function chatColor(row) {
-  return row.length < 3 || !row[2] ? "" : "chat-color-" + (row[2] % 32);
+  return row.length < 3 || !row[2] ? "" : "chat-color-" + (row[2] % 32)
 }
 
 function highwayNames() {
@@ -36,26 +36,26 @@ function highwayNames() {
     conv: row[1],
     color: chatColor(row),
     username: row.length > 3 ? row[3] : "",
-  }));
+  }))
 }
 
 function isActive() {
-  return job.estado == "REVIEW" ? "is-info" : "";
+  return job.estado == "REVIEW" ? "is-info" : ""
 }
 
 function isExpanded() {
-  return job.estado == "REVIEW";
+  return job.estado == "REVIEW"
 }
 
 function deleteFilter() {
-  filters.value.name.value = "";
+  filters.value.name.value = ""
 }
 
 function getOwner(row) {
   if (row.username) {
-    return t("Edited by") + " " + row.username;
+    return t("Edited by") + " " + row.username
   }
-  return null;
+  return null
 }
 </script>
 
@@ -74,8 +74,8 @@ function getOwner(row) {
           <div class="control has-icons-right">
             <input
               ref="filterInput"
-              class="input"
               v-model="filters.name.value"
+              class="input"
               :placeholder="$t('Filter')"
             />
             <span class="icon is-right">
@@ -85,8 +85,8 @@ function getOwner(row) {
           <div class="control">
             <a
               class="button has-tooltip-arrow has-tooltip-right"
-              @click="deleteFilter"
               :data-tooltip="$t('Delete filter')"
+              @click="deleteFilter"
             >
               <font-awesome-icon icon="times" />
             </a>
@@ -95,19 +95,19 @@ function getOwner(row) {
       </div>
       <div class="panel-block">
         <VTable
+          v-model:currentPage="currentPage"
           class="table is-narrow"
           :data="highwayNames()"
           :filters="filters"
-          :pageSize="12"
-          v-model:currentPage="currentPage"
-          @totalPagesChanged="totalPages = $event"
+          :page-size="12"
+          @total-pages-changed="totalPages = $event"
         >
           <template #head>
             <tr>
-              <VTh sortKey="cat" defaultSort="asc">{{
+              <VTh sort-key="cat" default-sort="asc">{{
                 $t("Name in Cadastre")
               }}</VTh>
-              <VTh sortKey="conv">{{ $t("Conversion") }}</VTh>
+              <VTh sort-key="conv">{{ $t("Conversion") }}</VTh>
             </tr>
           </template>
           <template #body="{ rows }">
@@ -122,8 +122,8 @@ function getOwner(row) {
                     <input
                       class="input"
                       :value="row.conv"
-                      @input="(e) => editHandler(row.key, e.target.value)"
                       :readonly="job.estado != 'REVIEW'"
+                      @input="(e) => editHandler(row.key, e.target.value)"
                     />
                   </div>
                   <div class="control">
@@ -147,7 +147,6 @@ function getOwner(row) {
           v-model:currentPage="currentPage"
           :total-pages="totalPages"
           :boundary-links="true"
-          :boundaryLinks="false"
         />
       </div>
     </template>

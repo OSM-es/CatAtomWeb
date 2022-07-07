@@ -1,10 +1,10 @@
 <script setup>
-import { useJobStore } from "@/stores/job";
+import { useJobStore } from "@/stores/job"
 
-const job = useJobStore();
+const job = useJobStore()
 
 function isExpanded() {
-  return job.estado != "RUNNING" && job.estado != "ERROR";
+  return job.estado != "RUNNING" && job.estado != "ERROR"
 }
 </script>
 

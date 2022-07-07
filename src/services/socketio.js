@@ -1,23 +1,23 @@
-import { io } from "socket.io-client";
+import { io } from "socket.io-client"
 
 class SocketioService {
-  socket = null;
+  socket = null
 
   constructor() {
-    this.connect(process.env.VUE_APP_ROOT_API);
+    this.connect(process.env.VUE_APP_ROOT_API)
   }
 
   connect(endpoint) {
-    this.socket = io(endpoint);
+    this.socket = io(endpoint)
   }
 
   disconnect() {
     if (this.socket) {
-      this.socket.disconnect();
+      this.socket.disconnect()
     }
   }
 }
 
-const socketio = new SocketioService();
+const socketio = new SocketioService()
 
-export const useSocketioService = () => socketio;
+export const useSocketioService = () => socketio

@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from "vue-router";
-import { useUserStore } from "../stores/user";
-import AuthView from "../views/AuthView.vue";
-import HomeView from "../views/HomeView.vue";
-import ProcessView from "../views/ProcessView.vue";
+import { createRouter, createWebHistory } from "vue-router"
+import { useUserStore } from "../stores/user"
+import AuthView from "../views/AuthView.vue"
+import HomeView from "../views/HomeView.vue"
+import ProcessView from "../views/ProcessView.vue"
 
 const routes = [
   {
@@ -23,28 +23,28 @@ const routes = [
     name: "auth",
     component: AuthView,
   },
-];
+]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-});
+})
 
 router.beforeEach((to, from, next) => {
-  const userStore = useUserStore();
+  const userStore = useUserStore()
 
   to.matched.some((record) => {
     if (record.meta.requiresAuth) {
-      userStore.update();
+      userStore.update()
       if (userStore.isLogged) {
-        next();
-        return;
+        next()
+        return
       }
-      next({ name: "home" });
+      next({ name: "home" })
     } else {
-      next();
+      next()
     }
-  });
-});
+  })
+})
 
-export default router;
+export default router

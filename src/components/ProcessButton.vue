@@ -1,22 +1,22 @@
 <script setup>
-import { useJobStore } from "../stores/job";
-import { useUserStore } from "../stores/user";
-import { useI18n } from "vue-i18n";
+import { useJobStore } from "../stores/job"
+import { useUserStore } from "../stores/user"
+import { useI18n } from "vue-i18n"
 
 // eslint-disable-next-line no-undef
-const job = useJobStore();
-const i18n = useI18n();
-const user = useUserStore();
+const job = useJobStore()
+const i18n = useI18n()
+const user = useUserStore()
 
 function isDisabled() {
-  return job.propietario && !user.isOwner(job.propietario);
+  return job.propietario && !user.isOwner(job.propietario)
 }
 
 function ownerTip() {
   if (isDisabled()) {
-    return i18n.t("The process is locked by") + " " + job.propietario.username;
+    return i18n.t("The process is locked by") + " " + job.propietario.username
   } else {
-    return null;
+    return null
   }
 }
 </script>
