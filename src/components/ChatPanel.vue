@@ -1,38 +1,38 @@
 /* eslint-disable prettier/prettier */
 <script setup>
-import { computed, ref } from "vue";
-import { useChatService } from "@/services/chat";
-import { useJobStore } from "@/stores/job";
-import { useUserStore } from "@/stores/user";
+import { computed, ref } from "vue"
+import { useChatService } from "@/services/chat"
+import { useJobStore } from "@/stores/job"
+import { useUserStore } from "@/stores/user"
 
-const job = useJobStore();
-const user = useUserStore();
-const chat = useChatService();
-const message = ref("");
-const chatActive = computed(() => job.participantes > 1);
+const job = useJobStore()
+const user = useUserStore()
+const chat = useChatService()
+const message = ref("")
+const chatActive = computed(() => job.participantes > 1)
 
 function chatClasses(msg) {
   if (Object.prototype.hasOwnProperty.call(msg, "username")) {
-    const userClass = msg.username == user.username ? "right" : "left";
-    return `message-${userClass} chat-color-${msg.osmId % 32}`;
+    const userClass = msg.username == user.username ? "right" : "left"
+    return `message-${userClass} chat-color-${msg.osmId % 32}`
   } else {
-    return "notify";
+    return "notify"
   }
 }
 
 function getMessage(msg) {
   const message = Object.prototype.hasOwnProperty.call(msg, "message")
     ? msg.message
-    : msg;
-  return message.split(/\r?\n/);
+    : msg
+  return message.split(/\r?\n/)
 }
 
 function send(event) {
   if (event.shiftKey) {
-    message.value += "\n";
+    message.value += "\n"
   } else {
-    chat.sendMessage(message.value);
-    message.value = "";
+    chat.sendMessage(message.value)
+    message.value = ""
   }
 }
 </script>
@@ -46,7 +46,7 @@ function send(event) {
           <p v-if="msg.hasOwnProperty('username')" class="has-text-weight-bold">
             {{ msg.username }}
           </p>
-          <p v-for="(row, i) in getMessage(msg)" :key="i">{{ row }}</p>
+          <p v-for="(row, j) in getMessage(msg)" :key="j">{{ row }}</p>
         </div>
       </div>
     </div>
@@ -55,8 +55,8 @@ function send(event) {
         <div class="field has-addons">
           <div class="control is-expanded">
             <textarea
-              class="textarea"
               v-model="message"
+              class="textarea"
               :disabled="!chatActive"
               @keydown.enter.prevent="send"
             ></textarea>

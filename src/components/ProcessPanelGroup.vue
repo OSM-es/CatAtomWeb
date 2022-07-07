@@ -1,86 +1,86 @@
 <script setup>
-import { nextTick, ref, watch } from "vue";
-import ProcessButton from "./ProcessButton";
-import { useJobStore } from "@/stores/job";
+import { nextTick, ref, watch } from "vue"
+import ProcessButton from "./ProcessButton"
+import { useJobStore } from "@/stores/job"
 
 const wikiUrl =
-  "https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles";
-const job = useJobStore();
-const processPanel = ref(null);
+  "https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles"
+const job = useJobStore()
+const processPanel = ref(null)
 
 function isActive(panel) {
-  const estado = job.estado;
+  const estado = job.estado
   if (panel == "processPanel") {
-    return estado == "AVAILABLE" || estado == "ERROR" || estado == "RUNNING";
+    return estado == "AVAILABLE" || estado == "ERROR" || estado == "RUNNING"
   }
   if (panel == "reviewPanel") {
-    return estado == "REVIEW";
+    return estado == "REVIEW"
   }
   if (panel == "fixmePanel") {
-    return estado == "FIXME";
+    return estado == "FIXME"
   }
   if (panel == "publishPanel") {
-    return estado == "DONE";
+    return estado == "DONE"
   }
-  return false;
+  return false
 }
 
 function tasksUrl() {
-  return `results/${job.cod_municipio}/tasks${job.args}`;
+  return `results/${job.cod_municipio}/tasks${job.args}`
 }
 
 function zoningUrl() {
   if (job.cod_division) {
-    return `results/${job.cod_municipio}/tasks/${job.cod_division}/zoning.geojson`;
+    return `results/${job.cod_municipio}/tasks/${job.cod_division}/zoning.geojson`
   } else {
-    return `results/${job.cod_municipio}/zoning.geojson`;
+    return `results/${job.cod_municipio}/zoning.geojson`
   }
 }
 
 function exportJobUrl() {
-  return process.env.VUE_APP_ROOT_API + "/export/" + job.cod_municipio;
+  return process.env.VUE_APP_ROOT_API + "/export/" + job.cod_municipio
 }
 
 function updateLog() {
   job.getJob(job.cod_municipio, job.cod_division).then(() => {
     if (job.estado == "RUNNING") {
       setTimeout(() => {
-        updateLog();
-      }, 500);
+        updateLog()
+      }, 500)
     }
-  });
+  })
 }
 
 function processJob() {
   if (job.next_args) {
-    job.edificios = job.next_args == "-b";
-    job.direcciones = job.next_args == "-d";
+    job.edificios = job.next_args == "-b"
+    job.direcciones = job.next_args == "-d"
   }
-  job.createJob().then(updateLog);
+  job.createJob().then(updateLog)
 }
 
 function deleteJob() {
-  job.deleteJob();
+  job.deleteJob()
 }
 
 function changeArgs(event) {
-  job.edificios = event.target.value == "-b";
-  job.direcciones = event.target.value == "-d";
+  job.edificios = event.target.value == "-b"
+  job.direcciones = event.target.value == "-d"
 }
 
 watch(
   () => job.estado,
   async (estado) => {
-    await nextTick();
+    await nextTick()
     if (processPanel.value) {
       const expanded =
-        estado == "AVAILABLE" || estado == "ERROR" || estado == "RUNNING";
+        estado == "AVAILABLE" || estado == "ERROR" || estado == "RUNNING"
       if (processPanel.value.isExpanded != expanded) {
-        processPanel.value.toggle();
+        processPanel.value.toggle()
       }
     }
   }
-);
+)
 </script>
 
 <template>
@@ -108,12 +108,12 @@ watch(
               <label class="label">{{ $t("Options") }}</label>
               <div class="checkbox">
                 <label class="checkbox">
-                  <input type="checkbox" v-model="job.edificios" />
+                  <input v-model="job.edificios" type="checkbox" />
                   {{ $t("Process buildings") }}
                 </label>
                 <br />
                 <label class="checkbox">
-                  <input type="checkbox" v-model="job.direcciones" />
+                  <input v-model="job.direcciones" type="checkbox" />
                   {{ $t("Process addresses") }}
                 </label>
               </div>
@@ -145,7 +145,7 @@ watch(
         </div>
       </template>
     </vue-collapsible-panel>
-    <nav class="panel is-info" v-if="isActive('reviewPanel')">
+    <nav v-if="isActive('reviewPanel')" class="panel is-info">
       <div class="panel-heading">
         <p>2. {{ $t("Review street names") }}</p>
       </div>
@@ -165,7 +165,7 @@ watch(
         </div>
       </div>
     </nav>
-    <nav class="panel is-info" v-if="isActive('fixmePanel')">
+    <nav v-if="isActive('fixmePanel')" class="panel is-info">
       <div class="panel-heading">
         <p>2. {{ $t("Check fixmes") }}</p>
       </div>
@@ -176,13 +176,13 @@ watch(
           </p>
           <p v-else>
             <i18n-t keypath="fixme_msg" scope="global">
-              <template v-slot:download>
+              <template #download>
                 <span class="icon"><font-awesome-icon icon="download" /></span>
               </template>
-              <template v-slot:upload>
+              <template #upload>
                 <span class="icon"><font-awesome-icon icon="upload" /></span>
               </template>
-              <template v-slot:link>
+              <template #link>
                 <a :href="wikiUrl" target="_blank">{{ $t("guide") }}</a>
               </template>
             </i18n-t>
@@ -194,18 +194,18 @@ watch(
               {{ job.fixmes }}
             </i18n-t>
           </p>
-          <process-button @click="job.deleteFixme" v-else>
+          <process-button v-else @click="job.deleteFixme">
             {{ $t("Confirm") }}
           </process-button>
         </div>
       </div>
     </nav>
-    <nav class="panel is-info" v-if="isActive('publishPanel')">
+    <nav v-if="isActive('publishPanel')" class="panel is-info">
       <div class="panel-heading">
         <p>3. {{ $t("Publish") }}</p>
       </div>
       <div id="publishPanel" class="container">
-        <div class="panel-block" v-if="job.args && !job.next_args">
+        <div v-if="job.args && !job.next_args" class="panel-block">
           <div class="select" @change="changeArgs">
             <select>
               <option :selected="job.args == '-b'" value="-b">
@@ -239,7 +239,7 @@ watch(
             </p>
           </div>
         </div>
-        <div class="panel-block" v-if="job.next_args">
+        <div v-if="job.next_args" class="panel-block">
           <div class="content">
             <p>{{ $t("You can also") }}</p>
             <process-button @click="processJob()">
@@ -250,9 +250,9 @@ watch(
       </div>
     </nav>
     <vue-collapsible-panel
+      v-if="!isActive('processPanel')"
       class="panel"
       :expanded="false"
-      v-if="!isActive('processPanel')"
     >
       <template #title>
         <p class="panel-heading">{{ $t("Management") }}</p>
@@ -266,7 +266,7 @@ watch(
               >{{ job.propietario.username }}</a
             >
           </div>
-          <div class="panel-block" v-if="job.estado != 'REVIEW'">
+          <div v-if="job.estado != 'REVIEW'" class="panel-block">
             <div class="content">
               <p>{{ $t("export_msg") }}</p>
               <a

@@ -1,10 +1,10 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from "vue"
 
-const data = ref(null);
+const data = ref(null)
 
 function copyToClipboard() {
-  navigator.clipboard.writeText(data.value.outerText);
+  navigator.clipboard.writeText(data.value.outerText)
 }
 </script>
 

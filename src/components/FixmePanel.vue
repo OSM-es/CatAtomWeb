@@ -1,32 +1,32 @@
 <script setup>
-import { useI18n } from "vue-i18n";
-import { useJobStore } from "@/stores/job";
-import DropZone from "./DropZone.vue";
-import UploadableFileList from "@/compositions/UploadableFileList";
-import { useErrorStore } from "@/stores/error";
-import { useChatService } from "@/services/chat";
-import { useUserStore } from "@/stores/user";
+import { useI18n } from "vue-i18n"
+import { useJobStore } from "@/stores/job"
+import DropZone from "./DropZone.vue"
+import UploadableFileList from "@/compositions/UploadableFileList"
+import { useErrorStore } from "@/stores/error"
+import { useChatService } from "@/services/chat"
+import { useUserStore } from "@/stores/user"
 
 // eslint-disable-next-line no-undef
-const props = defineProps(["municipio", "fixmes"]);
-const { t } = useI18n();
-const errorStore = useErrorStore();
-const job = useJobStore();
-const user = useUserStore();
-const chat = useChatService();
-const files = new UploadableFileList();
+const props = defineProps(["municipio", "fixmes"])
+const { t } = useI18n()
+const errorStore = useErrorStore()
+const job = useJobStore()
+const user = useUserStore()
+const chat = useChatService()
+const files = new UploadableFileList()
 
 chat.on("fixme", (data) => {
-  job.updateFixme(data);
-});
+  job.updateFixme(data)
+})
 
 function getUrl(filename) {
-  return `results/${props.municipio}/tasks/${filename}`;
+  return `results/${props.municipio}/tasks/${filename}`
 }
 
 function getOwner(fixme) {
-  const msg = fixme.locked ? "Locked by" : "Edited by";
-  return fixme.username && t(msg) + " " + fixme.username;
+  const msg = fixme.locked ? "Locked by" : "Edited by"
+  return fixme.username && t(msg) + " " + fixme.username
 }
 
 function isLocked(fixme) {
@@ -35,58 +35,58 @@ function isLocked(fixme) {
     user.isOwner(job.propietario) ||
     user.isOwner({ osm_id: fixme.osm_id })
   ) {
-    return "";
+    return ""
   }
-  return "is-disabled";
+  return "is-disabled"
 }
 
 function uploadEnabled(fixme) {
-  return user.isOwner({ osm_id: fixme.osm_id });
+  return user.isOwner({ osm_id: fixme.osm_id })
 }
 
 function dropEnabled() {
   for (let i = 0; i < props.fixmes.length; i++) {
     if (uploadEnabled(props.fixmes[i])) {
-      return true;
+      return true
     }
   }
-  return false;
+  return false
 }
 
 function uploadableFiles() {
   return props.fixmes
     .filter((fixme) => uploadEnabled(fixme))
-    .map((fixme) => fixme.filename);
+    .map((fixme) => fixme.filename)
 }
 
 function onNewFiles(newFiles) {
   const matchFiles = UploadableFileList.filterByNames(
     [...newFiles],
     uploadableFiles()
-  );
+  )
   if (newFiles.length != matchFiles.length) {
-    errorStore.set(t("Select only downloaded files"));
+    errorStore.set(t("Select only downloaded files"))
   }
-  files.addFiles(matchFiles);
+  files.addFiles(matchFiles)
   files.getFiles().forEach((file) => {
     const config = {
       onUploadProgress: file.onUploadProgress(),
-    };
-    const formData = new FormData();
-    formData.append("file", file.file);
+    }
+    const formData = new FormData()
+    formData.append("file", file.file)
     job.putFixme(formData, config).then((data) => {
-      files.removeFile(data.filename);
-    });
-  });
+      files.removeFile(data.filename)
+    })
+  })
 }
 
 function onDownload(event) {
-  const filename = event.target.pathname.split("/").pop();
-  job.postFixme({ filename });
+  const filename = event.target.pathname.split("/").pop()
+  job.postFixme({ filename })
 }
 
 function chatColor(fixme) {
-  return fixme.osm_id ? "chat-color-" + (fixme.osm_id % 32) : "";
+  return fixme.osm_id ? "chat-color-" + (fixme.osm_id % 32) : ""
 }
 </script>
 
@@ -98,9 +98,9 @@ function chatColor(fixme) {
     <template #content>
       <div class="container">
         <drop-zone
+          v-slot="{ dropZoneActive }"
           class="drop-area"
           @files-dropped="onNewFiles"
-          #default="{ dropZoneActive }"
         >
           <div
             v-if="dropZoneActive && dropEnabled()"
@@ -132,13 +132,13 @@ function chatColor(fixme) {
           </div>
           <div
             v-for="(fixme, index) in fixmes"
+            :key="index"
             class="panel-block is-block"
             :class="chatColor(fixme)"
-            :key="index"
           >
             <nav
-              class="level is-mobile"
               v-if="!files.fileExists(fixme.filename)"
+              class="level is-mobile"
             >
               <div
                 class="level-left has-tooltip-arrow"
@@ -146,9 +146,9 @@ function chatColor(fixme) {
               >
                 <a
                   :href="getUrl(fixme.filename)"
-                  @click="onDownload"
                   :class="isLocked(fixme)"
                   target="_blank"
+                  @click="onDownload"
                 >
                   <span class="icon">
                     <font-awesome-icon icon="download" />
@@ -157,7 +157,7 @@ function chatColor(fixme) {
                 </a>
               </div>
               <div class="level-right file is-small">
-                <label class="file-label" v-show="uploadEnabled(fixme)">
+                <label v-show="uploadEnabled(fixme)" class="file-label">
                   <input
                     class="file-input"
                     type="file"

@@ -1,11 +1,11 @@
 <script setup>
-import { useJobStore } from "@/stores/job";
-import CopyIcon from "./CopyIcon.vue";
+import { useJobStore } from "@/stores/job"
+import CopyIcon from "./CopyIcon.vue"
 
-const job = useJobStore();
+const job = useJobStore()
 
 function downloadUrl() {
-  return new URL(process.env.BASE_URL, window.location.href).href;
+  return new URL(process.env.BASE_URL, window.location.href).href
 }
 </script>
 

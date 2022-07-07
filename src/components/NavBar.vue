@@ -1,27 +1,27 @@
 <script setup>
-import { ref } from "vue";
-import LocaleSwitcher from "./LocaleSwitcher.vue";
-import { useRouter } from "vue-router";
-import { useUserStore } from "@/stores/user";
-import api from "@/services/api";
+import { ref } from "vue"
+import LocaleSwitcher from "./LocaleSwitcher.vue"
+import { useRouter } from "vue-router"
+import { useUserStore } from "@/stores/user"
+import api from "@/services/api"
 
-const isActive = ref(false);
-const userStore = useUserStore();
-const router = useRouter();
+const isActive = ref(false)
+const userStore = useUserStore()
+const router = useRouter()
 
 function loginUrl() {
-  const authPath = router.resolve({ name: "auth" });
-  const authURL = new URL(authPath.href, window.location.href).href;
+  const authPath = router.resolve({ name: "auth" })
+  const authURL = new URL(authPath.href, window.location.href).href
   return api.getUri({
     url: "/login",
     params: { callback: authURL },
-  });
+  })
 }
 
 function logout() {
   userStore.logout().then(() => {
-    router.replace({ name: "home" });
-  });
+    router.replace({ name: "home" })
+  })
 }
 </script>
 
@@ -50,7 +50,7 @@ function logout() {
       </div>
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
-      <div class="navbar-end" v-if="userStore.isLogged">
+      <div v-if="userStore.isLogged" class="navbar-end">
         <a class="navbar-item" :href="$docUrl">{{ $t("Docs") }}</a>
         <locale-switcher></locale-switcher>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -66,7 +66,7 @@ function logout() {
           </div>
         </div>
       </div>
-      <div class="navbar-end" v-else>
+      <div v-else class="navbar-end">
         <div class="navbar-item">
           <locale-switcher></locale-switcher>
         </div>

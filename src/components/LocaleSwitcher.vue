@@ -1,17 +1,17 @@
 <script setup>
-import { useI18n } from "vue-i18n";
+import { useI18n } from "vue-i18n"
 
-const i18n = useI18n();
+const i18n = useI18n()
 
 const localeNames = [
   { key: "es", name: "Español" },
   { key: "ca", name: "Catalán" },
   { key: "en", name: "English" },
-];
+]
 
 function saveLocale(locale) {
-  i18n.locale.value = locale;
-  localStorage.setItem("locale", locale);
+  i18n.locale.value = locale
+  localStorage.setItem("locale", locale)
 }
 </script>
 
@@ -22,8 +22,8 @@ function saveLocale(locale) {
       <a
         v-for="locale in localeNames"
         :key="`locale-${locale.key}`"
-        @click="saveLocale(locale.key)"
         class="navbar-item"
+        @click="saveLocale(locale.key)"
       >
         {{ locale.name }}
       </a>
