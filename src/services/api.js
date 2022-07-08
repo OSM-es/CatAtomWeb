@@ -1,5 +1,5 @@
-import axios from "axios"
-import { useErrorStore } from "@/stores/error"
+import axios from 'axios'
+import { useErrorStore } from '@/stores/error'
 
 export const api = axios.create({
   baseURL: process.env.VUE_APP_ROOT_API,
@@ -8,10 +8,10 @@ export const api = axios.create({
 })
 
 api.setAuth = () => {
-  const token = localStorage.getItem("token")
+  const token = localStorage.getItem('token')
 
   if (token) {
-    api.defaults.headers.common["Authorization"] = `token ${token}`
+    api.defaults.headers.common['Authorization'] = `token ${token}`
   }
 }
 
@@ -28,52 +28,52 @@ api.interceptors.response.use(
 )
 
 api.getAuth = (session) => {
-  return api.get("authorize", { params: session })
+  return api.get('authorize', { params: session })
 }
 
 api.getProv = (prov) => {
-  const url = prov ? "prov/" + prov : "prov"
+  const url = prov ? 'prov/' + prov : 'prov'
   return api.get(url)
 }
 
 api.getMun = (mun) => {
-  return api.get("mun/" + mun)
+  return api.get('mun/' + mun)
 }
 
 api.getJob = (cod_municipio, cod_division, linea = 0) => {
   const params = { linea }
-  const div = cod_division || ""
-  return api.get("job/" + cod_municipio + "/" + div, { params })
+  const div = cod_division || ''
+  return api.get('job/' + cod_municipio + '/' + div, { params })
 }
 
 api.postJob = (cod_municipio, cod_division, options) => {
-  const div = cod_division || ""
-  return api.post("job/" + cod_municipio + "/" + div, options)
+  const div = cod_division || ''
+  return api.post('job/' + cod_municipio + '/' + div, options)
 }
 
 api.deleteJob = (cod_municipio, cod_division) => {
-  const div = cod_division || ""
-  return api.delete("job/" + cod_municipio + "/" + div)
+  const div = cod_division || ''
+  return api.delete('job/' + cod_municipio + '/' + div)
 }
 
 api.putHgw = (cod_municipio, data) => {
-  return api.put("hgw/" + cod_municipio, data)
+  return api.put('hgw/' + cod_municipio, data)
 }
 
 api.postFixme = (cod_municipio, data) => {
-  return api.post("fixme/" + cod_municipio, data)
+  return api.post('fixme/' + cod_municipio, data)
 }
 
 api.putFixme = (cod_municipio, data, config) => {
-  return api.put("fixme/" + cod_municipio, data, config)
+  return api.put('fixme/' + cod_municipio, data, config)
 }
 
 api.deleteFixme = (cod_municipio) => {
-  return api.delete("fixme/" + cod_municipio)
+  return api.delete('fixme/' + cod_municipio)
 }
 
 api.getExport = (cod_municipio) => {
-  return api.get("export/" + cod_municipio)
+  return api.get('export/' + cod_municipio)
 }
 
 export default api

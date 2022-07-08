@@ -1,18 +1,18 @@
 <script setup>
-import { ref } from "vue"
-import debounce from "lodash.debounce"
-import { useJobStore } from "@/stores/job"
-import { useI18n } from "vue-i18n"
-import { useChatService } from "@/services/chat"
+import { ref } from 'vue'
+import debounce from 'lodash.debounce'
+import { useJobStore } from '@/stores/job'
+import { useI18n } from 'vue-i18n'
+import { useChatService } from '@/services/chat'
 
 const { t } = useI18n()
 const chat = useChatService()
 const job = useJobStore()
-const filters = ref({ name: { value: "", keys: ["cat", "conv"] } })
+const filters = ref({ name: { value: '', keys: ['cat', 'conv'] } })
 const totalPages = ref(1)
 const currentPage = ref(1)
 
-chat.on("highway", (data) => {
+chat.on('highway', (data) => {
   job.updateHighway(data)
 })
 
@@ -22,11 +22,11 @@ const editHandler = debounce((key, value) => {
 }, 500)
 
 function deleteHandler(key) {
-  editHandler(key, "")
+  editHandler(key, '')
 }
 
 function chatColor(row) {
-  return row.length < 3 || !row[2] ? "" : "chat-color-" + (row[2] % 32)
+  return row.length < 3 || !row[2] ? '' : 'chat-color-' + (row[2] % 32)
 }
 
 function highwayNames() {
@@ -35,25 +35,25 @@ function highwayNames() {
     cat: row[0],
     conv: row[1],
     color: chatColor(row),
-    username: row.length > 3 ? row[3] : "",
+    username: row.length > 3 ? row[3] : '',
   }))
 }
 
 function isActive() {
-  return job.estado == "REVIEW" ? "is-info" : ""
+  return job.estado == 'REVIEW' ? 'is-info' : ''
 }
 
 function isExpanded() {
-  return job.estado == "REVIEW"
+  return job.estado == 'REVIEW'
 }
 
 function deleteFilter() {
-  filters.value.name.value = ""
+  filters.value.name.value = ''
 }
 
 function getOwner(row) {
   if (row.username) {
-    return t("Edited by") + " " + row.username
+    return t('Edited by') + ' ' + row.username
   }
   return null
 }
@@ -66,7 +66,7 @@ function getOwner(row) {
     :expanded="isExpanded()"
   >
     <template #title>
-      <p class="panel-heading">{{ $t("Review street names") }}</p>
+      <p class="panel-heading">{{ $t('Review street names') }}</p>
     </template>
     <template #content>
       <div class="panel-block">
@@ -105,9 +105,9 @@ function getOwner(row) {
           <template #head>
             <tr>
               <VTh sort-key="cat" default-sort="asc">{{
-                $t("Name in Cadastre")
+                $t('Name in Cadastre')
               }}</VTh>
-              <VTh sort-key="conv">{{ $t("Conversion") }}</VTh>
+              <VTh sort-key="conv">{{ $t('Conversion') }}</VTh>
             </tr>
           </template>
           <template #body="{ rows }">

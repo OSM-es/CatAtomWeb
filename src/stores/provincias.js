@@ -1,8 +1,8 @@
-import { defineStore } from "pinia"
-import api from "@/services/api"
+import { defineStore } from 'pinia'
+import api from '@/services/api'
 
 export const useProvStore = defineStore({
-  id: "provincias",
+  id: 'provincias',
   state: () => ({
     data: [],
   }),
@@ -18,8 +18,8 @@ export const useProvStore = defineStore({
         ).nombre
       }
     },
-    ca_provs: () => ["03", "07", "08", "12", "17", "25", "43", "46"],
-    gl_provs: () => ["15", "27", "32", "36"],
+    ca_provs: () => ['03', '07', '08', '12', '17', '25', '43', '46'],
+    gl_provs: () => ['15', '27', '32', '36'],
   },
 
   actions: {
@@ -28,7 +28,7 @@ export const useProvStore = defineStore({
       this.data = response.data.provincias.map((prov) => ({
         cod_provincia: prov.cod_provincia,
         nombre: prov.nombre,
-        label: prov.cod_provincia + " " + prov.nombre,
+        label: prov.cod_provincia + ' ' + prov.nombre,
       }))
     },
   },

@@ -1,6 +1,6 @@
 <script setup>
-import { useJobStore } from "@/stores/job"
-import CopyIcon from "./CopyIcon.vue"
+import { useJobStore } from '@/stores/job'
+import CopyIcon from './CopyIcon.vue'
 
 const job = useJobStore()
 
@@ -12,21 +12,21 @@ function downloadUrl() {
 <template>
   <vue-collapsible-panel class="panel is-info">
     <template #title>
-      <p class="panel-heading">{{ $t("Publish") }}</p>
+      <p class="panel-heading">{{ $t('Publish') }}</p>
     </template>
     <template #content>
       <div class="panel-block">
         <table class="table">
           <thead>
             <tr>
-              <th>{{ $t("Field") }}</th>
-              <th>{{ $t("Spanish (es)") }}</th>
-              <th>{{ $t("English (en)") }}</th>
+              <th>{{ $t('Field') }}</th>
+              <th>{{ $t('Spanish (es)') }}</th>
+              <th>{{ $t('English (en)') }}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th>{{ $t("Name of the project") }}</th>
+              <th>{{ $t('Name of the project') }}</th>
               <td>
                 <copy-icon>Catastro de {{ job.nombreZona }}</copy-icon>
               </td>
@@ -35,7 +35,7 @@ function downloadUrl() {
               </td>
             </tr>
             <tr>
-              <th>{{ $t("Short description") }}</th>
+              <th>{{ $t('Short description') }}</th>
               <td>
                 <copy-icon>
                   Importación de {{ job.opciones }} de {{ job.nombreZona }}
@@ -48,7 +48,7 @@ function downloadUrl() {
               </td>
             </tr>
             <tr>
-              <th>{{ $t("Description") }}</th>
+              <th>{{ $t('Description') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
                   El trazado de edificios y las direcciones postales son datos
@@ -78,7 +78,7 @@ function downloadUrl() {
               </td>
             </tr>
             <tr>
-              <th>{{ $t("Changeset comment") }}</th>
+              <th>{{ $t('Changeset comment') }}</th>
               <td>
                 <copy-icon>
                   #Spanish_Cadastre_Buildings_Import {{ job.cod_municipio }}
@@ -93,7 +93,7 @@ function downloadUrl() {
               </td>
             </tr>
             <tr>
-              <th>{{ $t("Detailed instructions") }}</th>
+              <th>{{ $t('Detailed instructions') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
                   Revisa la tarea siguiendo las instrucciones de la [guía de
@@ -109,7 +109,7 @@ function downloadUrl() {
               </td>
             </tr>
             <tr>
-              <th>{{ $t("Per task instructions") }}</th>
+              <th>{{ $t('Per task instructions') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
                   Descarga el [archivo de la tarea]({{

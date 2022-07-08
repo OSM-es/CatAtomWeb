@@ -1,15 +1,15 @@
 <script setup>
-import { ref, onBeforeUnmount, onMounted } from "vue"
-import { useI18n } from "vue-i18n"
-import api from "@/services/api"
-import { useJobStore } from "@/stores/job"
-import { useProvStore } from "@/stores/provincias"
-import { useChatService } from "@/services/chat"
-import { useUserStore } from "@/stores/user"
+import { ref, onBeforeUnmount, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+import api from '@/services/api'
+import { useJobStore } from '@/stores/job'
+import { useProvStore } from '@/stores/provincias'
+import { useChatService } from '@/services/chat'
+import { useUserStore } from '@/stores/user'
 
 const { t } = useI18n()
 const wikiUrl =
-  "https://wiki.openstreetmap.org/wiki/ES:Tag:boundary%3Dadministrative"
+  'https://wiki.openstreetmap.org/wiki/ES:Tag:boundary%3Dadministrative'
 const job = useJobStore()
 const chat = useChatService()
 const userStore = useUserStore()
@@ -23,28 +23,28 @@ const loadingMun = ref(false)
 const loadingDiv = ref(false)
 let municipioPrevio = null
 
-chat.on("updateJob", () => {
+chat.on('updateJob', () => {
   job.getJob(job.cod_municipio, job.cod_division)
 })
 
-chat.on("createJob", (data) => {
-  if (job.estado == "REVIEW") {
-    job.charla.push(t("restart_job", data))
+chat.on('createJob', (data) => {
+  if (job.estado == 'REVIEW') {
+    job.charla.push(t('restart_job', data))
   } else {
-    job.charla.push(t("create_job", data))
+    job.charla.push(t('create_job', data))
   }
 })
 
-chat.on("deleteJob", (data) => {
-  job.charla.push(t("delete_job", data))
+chat.on('deleteJob', (data) => {
+  job.charla.push(t('delete_job', data))
 })
 
-chat.on("done", () => {
+chat.on('done', () => {
   let name = job.cod_municipio
   if (job.cod_division) {
-    name += " (" + job.report.split_name + ")"
+    name += ' (' + job.report.split_name + ')'
   }
-  job.charla.push(t("finish_job", [name]))
+  job.charla.push(t('finish_job', [name]))
 })
 
 async function fetchMunicipios(prov) {
@@ -58,7 +58,7 @@ async function fetchMunicipios(prov) {
   municipios.value = response.data.municipios.map((mun) => ({
     cod_municipio: mun.cod_municipio,
     nombre: mun.nombre,
-    label: mun.cod_municipio + " " + mun.nombre,
+    label: mun.cod_municipio + ' ' + mun.nombre,
   }))
 }
 
@@ -81,16 +81,16 @@ function getRoom(cod_municipio = municipio.value) {
 
 function getJobStatus() {
   if (municipioPrevio && municipioPrevio != municipio.value) {
-    chat.socket.emit("leave", getRoom(municipioPrevio))
+    chat.socket.emit('leave', getRoom(municipioPrevio))
   }
   if (municipio.value) {
     if (municipioPrevio != municipio.value) {
       job.$reset()
-      chat.socket.emit("join", getRoom())
+      chat.socket.emit('join', getRoom())
     }
-    job.getJob(municipio.value, division.value || "").then(() => {
+    job.getJob(municipio.value, division.value || '').then(() => {
       division.value = job.cod_division
-      localStorage.setItem("municipio", municipio.value)
+      localStorage.setItem('municipio', municipio.value)
       municipioPrevio = municipio.value
     })
   }
@@ -98,7 +98,7 @@ function getJobStatus() {
 
 onMounted(() => {
   provincias.fetch()
-  const mun = localStorage.getItem("municipio")
+  const mun = localStorage.getItem('municipio')
   if (mun) {
     provincia.value = mun.substring(0, 2)
     fetchMunicipios(provincia.value).then(() => {
@@ -128,7 +128,7 @@ onBeforeUnmount(() => {
         >
           <!-- eslint-disable-next-line vue/no-unused-vars  -->
           <template #no-options="{ search, searching, loading }">
-            {{ $t("Sorry, no matching option") }}
+            {{ $t('Sorry, no matching option') }}
           </template>
         </v-select>
       </div>
@@ -148,7 +148,7 @@ onBeforeUnmount(() => {
         >
           <!-- eslint-disable-next-line vue/no-unused-vars  -->
           <template #no-options="{ search, searching, loading }">
-            {{ $t("Sorry, no matching option") }}
+            {{ $t('Sorry, no matching option') }}
           </template>
         </v-select>
       </div>
@@ -174,7 +174,7 @@ onBeforeUnmount(() => {
         >
           <!-- eslint-disable-next-line vue/no-unused-vars  -->
           <template #no-options="{ search, searching, loading }">
-            {{ $t("Sorry, no matching option") }}
+            {{ $t('Sorry, no matching option') }}
           </template>
         </v-select>
         <div v-else class="control is-disabled">
@@ -184,7 +184,7 @@ onBeforeUnmount(() => {
     </div>
     <div v-if="municipio === null" class="notification is-info is-light">
       <i18n-t keypath="select_job" scope="global">
-        <a :href="wikiUrl">{{ $t("admin boundaries") }}</a>
+        <a :href="wikiUrl">{{ $t('admin boundaries') }}</a>
       </i18n-t>
     </div>
   </div>

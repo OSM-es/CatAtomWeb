@@ -1,26 +1,26 @@
-import { createRouter, createWebHistory } from "vue-router"
-import { useUserStore } from "../stores/user"
-import AuthView from "../views/AuthView.vue"
-import HomeView from "../views/HomeView.vue"
-import ProcessView from "../views/ProcessView.vue"
+import { createRouter, createWebHistory } from 'vue-router'
+import { useUserStore } from '../stores/user'
+import AuthView from '../views/AuthView.vue'
+import HomeView from '../views/HomeView.vue'
+import ProcessView from '../views/ProcessView.vue'
 
 const routes = [
   {
-    path: "/home",
-    name: "home",
+    path: '/home',
+    name: 'home',
     component: HomeView,
   },
   {
-    path: "/",
-    name: "process",
+    path: '/',
+    name: 'process',
     component: ProcessView,
     meta: {
       requiresAuth: true,
     },
   },
   {
-    path: "/auth",
-    name: "auth",
+    path: '/auth',
+    name: 'auth',
     component: AuthView,
   },
 ]
@@ -40,7 +40,7 @@ router.beforeEach((to, from, next) => {
         next()
         return
       }
-      next({ name: "home" })
+      next({ name: 'home' })
     } else {
       next()
     }

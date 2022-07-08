@@ -1,17 +1,17 @@
 <script setup>
-import { useI18n } from "vue-i18n"
-import { useJobStore } from "@/stores/job"
-import DropZone from "./DropZone.vue"
-import UploadableFileList from "@/compositions/UploadableFileList"
-import { useErrorStore } from "@/stores/error"
-import { useChatService } from "@/services/chat"
-import { useUserStore } from "@/stores/user"
+import { useI18n } from 'vue-i18n'
+import { useJobStore } from '@/stores/job'
+import DropZone from './DropZone.vue'
+import UploadableFileList from '@/compositions/UploadableFileList'
+import { useErrorStore } from '@/stores/error'
+import { useChatService } from '@/services/chat'
+import { useUserStore } from '@/stores/user'
 
 // eslint-disable-next-line no-undef
 const props = defineProps({
   municipio: {
     type: String,
-    default: "",
+    default: '',
   },
   fixmes: {
     type: Array,
@@ -25,7 +25,7 @@ const user = useUserStore()
 const chat = useChatService()
 const files = new UploadableFileList()
 
-chat.on("fixme", (data) => {
+chat.on('fixme', (data) => {
   job.updateFixme(data)
 })
 
@@ -34,8 +34,8 @@ function getUrl(filename) {
 }
 
 function getOwner(fixme) {
-  const msg = fixme.locked ? "Locked by" : "Edited by"
-  return fixme.username && t(msg) + " " + fixme.username
+  const msg = fixme.locked ? 'Locked by' : 'Edited by'
+  return fixme.username && t(msg) + ' ' + fixme.username
 }
 
 function isLocked(fixme) {
@@ -44,9 +44,9 @@ function isLocked(fixme) {
     user.isOwner(job.propietario) ||
     user.isOwner({ osm_id: fixme.osm_id })
   ) {
-    return ""
+    return ''
   }
-  return "is-disabled"
+  return 'is-disabled'
 }
 
 function uploadEnabled(fixme) {
@@ -74,7 +74,7 @@ function onNewFiles(newFiles) {
     uploadableFiles()
   )
   if (newFiles.length != matchFiles.length) {
-    errorStore.set(t("Select only downloaded files"))
+    errorStore.set(t('Select only downloaded files'))
   }
   files.addFiles(matchFiles)
   files.getFiles().forEach((file) => {
@@ -82,7 +82,7 @@ function onNewFiles(newFiles) {
       onUploadProgress: file.onUploadProgress(),
     }
     const formData = new FormData()
-    formData.append("file", file.file)
+    formData.append('file', file.file)
     job.putFixme(formData, config).then((data) => {
       files.removeFile(data.filename)
     })
@@ -90,19 +90,19 @@ function onNewFiles(newFiles) {
 }
 
 function onDownload(event) {
-  const filename = event.target.pathname.split("/").pop()
+  const filename = event.target.pathname.split('/').pop()
   job.postFixme({ filename })
 }
 
 function chatColor(fixme) {
-  return fixme.osm_id ? "chat-color-" + (fixme.osm_id % 32) : ""
+  return fixme.osm_id ? 'chat-color-' + (fixme.osm_id % 32) : ''
 }
 </script>
 
 <template>
   <vue-collapsible-panel class="panel is-info">
     <template #title>
-      <p class="panel-heading">{{ $t("Check fixmes") }}</p>
+      <p class="panel-heading">{{ $t('Check fixmes') }}</p>
     </template>
     <template #content>
       <div class="container">
@@ -115,7 +115,7 @@ function chatColor(fixme) {
             v-if="dropZoneActive && dropEnabled()"
             class="panel-block is-block has-text-centered"
           >
-            <div class="is-size-5">{{ $t("Drop them") }}</div>
+            <div class="is-size-5">{{ $t('Drop them') }}</div>
           </div>
           <div v-else class="panel-block is-block">
             <div
@@ -123,7 +123,7 @@ function chatColor(fixme) {
               :class="dropEnabled() ? '' : 'is-disabled'"
             >
               <label class="file-label">
-                <div class="is-size-5">{{ $t("Drop here or") }}&nbsp;</div>
+                <div class="is-size-5">{{ $t('Drop here or') }}&nbsp;</div>
                 <input
                   class="file-input"
                   type="file"
@@ -134,7 +134,7 @@ function chatColor(fixme) {
                   <span class="file-icon">
                     <font-awesome-icon icon="upload" />
                   </span>
-                  <span class="file-label">{{ $t("select") }}</span>
+                  <span class="file-label">{{ $t('select') }}</span>
                 </span>
               </label>
             </div>
@@ -177,7 +177,7 @@ function chatColor(fixme) {
                       <font-awesome-icon icon="upload" />
                     </span>
                     <span class="file-label">
-                      {{ $t("Select reviewed file") }}
+                      {{ $t('Select reviewed file') }}
                     </span>
                   </span>
                 </label>

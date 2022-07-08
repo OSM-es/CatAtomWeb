@@ -1,26 +1,26 @@
 <script setup>
-import { nextTick, ref, watch } from "vue"
-import ProcessButton from "./ProcessButton"
-import { useJobStore } from "@/stores/job"
+import { nextTick, ref, watch } from 'vue'
+import ProcessButton from './ProcessButton'
+import { useJobStore } from '@/stores/job'
 
 const wikiUrl =
-  "https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles"
+  'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles'
 const job = useJobStore()
 const processPanel = ref(null)
 
 function isActive(panel) {
   const estado = job.estado
-  if (panel == "processPanel") {
-    return estado == "AVAILABLE" || estado == "ERROR" || estado == "RUNNING"
+  if (panel == 'processPanel') {
+    return estado == 'AVAILABLE' || estado == 'ERROR' || estado == 'RUNNING'
   }
-  if (panel == "reviewPanel") {
-    return estado == "REVIEW"
+  if (panel == 'reviewPanel') {
+    return estado == 'REVIEW'
   }
-  if (panel == "fixmePanel") {
-    return estado == "FIXME"
+  if (panel == 'fixmePanel') {
+    return estado == 'FIXME'
   }
-  if (panel == "publishPanel") {
-    return estado == "DONE"
+  if (panel == 'publishPanel') {
+    return estado == 'DONE'
   }
   return false
 }
@@ -38,12 +38,12 @@ function zoningUrl() {
 }
 
 function exportJobUrl() {
-  return process.env.VUE_APP_ROOT_API + "/export/" + job.cod_municipio
+  return process.env.VUE_APP_ROOT_API + '/export/' + job.cod_municipio
 }
 
 function updateLog() {
   job.getJob(job.cod_municipio, job.cod_division).then(() => {
-    if (job.estado == "RUNNING") {
+    if (job.estado == 'RUNNING') {
       setTimeout(() => {
         updateLog()
       }, 500)
@@ -53,8 +53,8 @@ function updateLog() {
 
 function processJob() {
   if (job.next_args) {
-    job.edificios = job.next_args == "-b"
-    job.direcciones = job.next_args == "-d"
+    job.edificios = job.next_args == '-b'
+    job.direcciones = job.next_args == '-d'
   }
   job.createJob().then(updateLog)
 }
@@ -64,8 +64,8 @@ function deleteJob() {
 }
 
 function changeArgs(event) {
-  job.edificios = event.target.value == "-b"
-  job.direcciones = event.target.value == "-d"
+  job.edificios = event.target.value == '-b'
+  job.direcciones = event.target.value == '-d'
 }
 
 watch(
@@ -74,7 +74,7 @@ watch(
     await nextTick()
     if (processPanel.value) {
       const expanded =
-        estado == "AVAILABLE" || estado == "ERROR" || estado == "RUNNING"
+        estado == 'AVAILABLE' || estado == 'ERROR' || estado == 'RUNNING'
       if (processPanel.value.isExpanded != expanded) {
         processPanel.value.toggle()
       }
@@ -92,7 +92,7 @@ watch(
       :expanded="isActive('processPanel')"
     >
       <template #title>
-        <p class="panel-heading">1. {{ $t("Process") }}</p>
+        <p class="panel-heading">1. {{ $t('Process') }}</p>
       </template>
       <template #content>
         <div
@@ -105,20 +105,20 @@ watch(
         >
           <div class="panel-block">
             <div class="container">
-              <label class="label">{{ $t("Options") }}</label>
+              <label class="label">{{ $t('Options') }}</label>
               <div class="checkbox">
                 <label class="checkbox">
                   <input v-model="job.edificios" type="checkbox" />
-                  {{ $t("Process buildings") }}
+                  {{ $t('Process buildings') }}
                 </label>
                 <br />
                 <label class="checkbox">
                   <input v-model="job.direcciones" type="checkbox" />
-                  {{ $t("Process addresses") }}
+                  {{ $t('Process addresses') }}
                 </label>
               </div>
               <div class="field">
-                <label class="label">{{ $t("Language") }}</label>
+                <label class="label">{{ $t('Language') }}</label>
                 <div class="control">
                   <div class="select">
                     <select v-model="job.idioma">
@@ -133,13 +133,13 @@ watch(
           </div>
           <div class="panel-block">
             <div class="field">
-              <label class="label">{{ $t("Status") }}</label>
+              <label class="label">{{ $t('Status') }}</label>
               <div class="control">{{ job.mensaje }}</div>
             </div>
           </div>
           <div class="panel-block">
             <process-button @click="processJob()">{{
-              $t("Process")
+              $t('Process')
             }}</process-button>
           </div>
         </div>
@@ -147,32 +147,32 @@ watch(
     </vue-collapsible-panel>
     <nav v-if="isActive('reviewPanel')" class="panel is-info">
       <div class="panel-heading">
-        <p>2. {{ $t("Review street names") }}</p>
+        <p>2. {{ $t('Review street names') }}</p>
       </div>
       <div class="container">
         <div class="panel-block">
           <p>
             <i18n-t keypath="review_msg" scope="global">
-              <a :href="wikiUrl">{{ $t("guide") }}</a>
+              <a :href="wikiUrl">{{ $t('guide') }}</a>
               <font-awesome-icon icon="times" />
             </i18n-t>
           </p>
         </div>
         <div class="panel-block">
           <process-button @click="processJob()">
-            {{ $t("Reprocess") }}
+            {{ $t('Reprocess') }}
           </process-button>
         </div>
       </div>
     </nav>
     <nav v-if="isActive('fixmePanel')" class="panel is-info">
       <div class="panel-heading">
-        <p>2. {{ $t("Check fixmes") }}</p>
+        <p>2. {{ $t('Check fixmes') }}</p>
       </div>
       <div id="fixmePanel" class="container">
         <div class="panel-block">
           <p v-if="job.fixmes == 0">
-            {{ $t("welldone") }}
+            {{ $t('welldone') }}
           </p>
           <p v-else>
             <i18n-t keypath="fixme_msg" scope="global">
@@ -183,7 +183,7 @@ watch(
                 <span class="icon"><font-awesome-icon icon="upload" /></span>
               </template>
               <template #link>
-                <a :href="wikiUrl" target="_blank">{{ $t("guide") }}</a>
+                <a :href="wikiUrl" target="_blank">{{ $t('guide') }}</a>
               </template>
             </i18n-t>
           </p>
@@ -195,24 +195,24 @@ watch(
             </i18n-t>
           </p>
           <process-button v-else @click="job.deleteFixme">
-            {{ $t("Confirm") }}
+            {{ $t('Confirm') }}
           </process-button>
         </div>
       </div>
     </nav>
     <nav v-if="isActive('publishPanel')" class="panel is-info">
       <div class="panel-heading">
-        <p>3. {{ $t("Publish") }}</p>
+        <p>3. {{ $t('Publish') }}</p>
       </div>
       <div id="publishPanel" class="container">
         <div v-if="job.args && !job.next_args" class="panel-block">
           <div class="select" @change="changeArgs">
             <select>
               <option :selected="job.args == '-b'" value="-b">
-                {{ $t("Buildings") }}
+                {{ $t('Buildings') }}
               </option>
               <option :selected="job.args == '-d'" value="-d">
-                {{ $t("Addresses") }}
+                {{ $t('Addresses') }}
               </option>
             </select>
           </div>
@@ -222,7 +222,7 @@ watch(
             <p>
               <i18n-t keypath="done_msg1" scope="global">
                 <a href="https://tareas.openstreetmap.es" target="_blank">
-                  {{ $t("Task manager") }}
+                  {{ $t('Task manager') }}
                 </a>
                 <a :href="zoningUrl()">zoning.geojson</a>
               </i18n-t>
@@ -234,14 +234,14 @@ watch(
             </p>
             <p>
               <i18n-t keypath="done_msg3" scope="global">
-                <a :href="tasksUrl()">{{ $t("process result") }}</a>
+                <a :href="tasksUrl()">{{ $t('process result') }}</a>
               </i18n-t>
             </p>
           </div>
         </div>
         <div v-if="job.next_args" class="panel-block">
           <div class="content">
-            <p>{{ $t("You can also") }}</p>
+            <p>{{ $t('You can also') }}</p>
             <process-button @click="processJob()">
               {{ $t(job.nextMsg) }}
             </process-button>
@@ -255,12 +255,12 @@ watch(
       :expanded="false"
     >
       <template #title>
-        <p class="panel-heading">{{ $t("Management") }}</p>
+        <p class="panel-heading">{{ $t('Management') }}</p>
       </template>
       <template #content>
         <div class="container">
           <div class="panel-block">
-            {{ $t("Owner") }}:&nbsp;
+            {{ $t('Owner') }}:&nbsp;
             <a
               :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
               >{{ job.propietario.username }}</a
@@ -268,20 +268,20 @@ watch(
           </div>
           <div v-if="job.estado != 'REVIEW'" class="panel-block">
             <div class="content">
-              <p>{{ $t("export_msg") }}</p>
+              <p>{{ $t('export_msg') }}</p>
               <a
                 class="button is-link is-outlined is-fullwidth"
                 :href="exportJobUrl()"
               >
-                {{ $t("Export") }}
+                {{ $t('Export') }}
               </a>
             </div>
           </div>
           <div class="panel-block">
             <div class="content">
-              <p>{{ $t("delete_msg") }}</p>
+              <p>{{ $t('delete_msg') }}</p>
               <process-button @click="deleteJob">
-                {{ $t("Delete") }}
+                {{ $t('Delete') }}
               </process-button>
             </div>
           </div>

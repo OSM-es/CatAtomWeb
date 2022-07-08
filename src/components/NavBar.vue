@@ -1,26 +1,26 @@
 <script setup>
-import { ref } from "vue"
-import LocaleSwitcher from "./LocaleSwitcher.vue"
-import { useRouter } from "vue-router"
-import { useUserStore } from "@/stores/user"
-import api from "@/services/api"
+import { ref } from 'vue'
+import LocaleSwitcher from './LocaleSwitcher.vue'
+import { useRouter } from 'vue-router'
+import { useUserStore } from '@/stores/user'
+import api from '@/services/api'
 
 const isActive = ref(false)
 const userStore = useUserStore()
 const router = useRouter()
 
 function loginUrl() {
-  const authPath = router.resolve({ name: "auth" })
+  const authPath = router.resolve({ name: 'auth' })
   const authURL = new URL(authPath.href, window.location.href).href
   return api.getUri({
-    url: "/login",
+    url: '/login',
     params: { callback: authURL },
   })
 }
 
 function logout() {
   userStore.logout().then(() => {
-    router.replace({ name: "home" })
+    router.replace({ name: 'home' })
   })
 }
 </script>
@@ -51,7 +51,7 @@ function logout() {
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
       <div v-if="userStore.isLogged" class="navbar-end">
-        <a class="navbar-item" :href="$docUrl">{{ $t("Docs") }}</a>
+        <a class="navbar-item" :href="$docUrl">{{ $t('Docs') }}</a>
         <locale-switcher></locale-switcher>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">{{ userStore.username }}</a>
@@ -61,7 +61,7 @@ function logout() {
                 <font-awesome-icon icon="user-times" />
               </span>
               &nbsp;
-              <span @click="logout">{{ $t("Logout") }}</span>
+              <span @click="logout">{{ $t('Logout') }}</span>
             </a>
           </div>
         </div>
@@ -80,7 +80,7 @@ function logout() {
                 <span class="icon">
                   <font-awesome-icon icon="user-plus" />
                 </span>
-                <span>{{ $t("Sign up") }}</span>
+                <span>{{ $t('Sign up') }}</span>
               </a>
             </p>
             <p class="control">
@@ -88,7 +88,7 @@ function logout() {
                 <span class="icon">
                   <font-awesome-icon icon="user" />
                 </span>
-                <span>{{ $t("Log in") }}</span>
+                <span>{{ $t('Log in') }}</span>
               </a>
             </p>
           </div>

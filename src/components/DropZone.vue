@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, onUnmounted, ref } from "vue"
+import { onMounted, onUnmounted, ref } from 'vue'
 
 // eslint-disable-next-line no-undef
 const props = defineProps({ disabled: Boolean })
@@ -7,12 +7,12 @@ let active = ref(false)
 let inActiveTimeout = null
 
 // eslint-disable-next-line no-undef
-const emit = defineEmits(["files-dropped"])
+const emit = defineEmits(['files-dropped'])
 
 function onDrop(e) {
   if (!props.disabled) {
     setInactive()
-    emit("files-dropped", [...e.dataTransfer.files])
+    emit('files-dropped', [...e.dataTransfer.files])
   }
 }
 
@@ -32,7 +32,7 @@ function setInactive() {
   }, 50)
 }
 
-const events = ["dragenter", "dragover", "dragleave", "drop"]
+const events = ['dragenter', 'dragover', 'dragleave', 'drop']
 
 onMounted(() => {
   events.forEach((eventName) => {

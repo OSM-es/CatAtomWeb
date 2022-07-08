@@ -1,17 +1,17 @@
 <script setup>
-import { useJobStore } from "@/stores/job"
+import { useJobStore } from '@/stores/job'
 
 const job = useJobStore()
 
 function isExpanded() {
-  return job.estado != "RUNNING" && job.estado != "ERROR"
+  return job.estado != 'RUNNING' && job.estado != 'ERROR'
 }
 </script>
 
 <template>
   <vue-collapsible-panel class="panel" :expanded="isExpanded()">
     <template #title>
-      <p class="panel-heading">{{ $t("Report") }}</p>
+      <p class="panel-heading">{{ $t('Report') }}</p>
     </template>
     <template #content>
       <div class="panel-block">

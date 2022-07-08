@@ -1,17 +1,17 @@
 <script setup>
-import { useJobStore } from "@/stores/job"
+import { useJobStore } from '@/stores/job'
 
 const job = useJobStore()
 
 function isActive() {
-  return job.estado == "RUNNING" ? "is-info" : ""
+  return job.estado == 'RUNNING' ? 'is-info' : ''
 }
 </script>
 
 <template>
   <vue-collapsible-panel class="panel" :class="isActive()">
     <template #title>
-      <p class="panel-heading">{{ $t("Log") }}</p>
+      <p class="panel-heading">{{ $t('Log') }}</p>
     </template>
     <template #content>
       <div class="panel-block">
