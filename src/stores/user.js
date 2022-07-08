@@ -20,6 +20,7 @@ export const useUserStore = defineStore({
   actions: {
     login(session) {
       localStorage.removeItem('token')
+      1 / 0
       return new Promise((resolve, reject) => {
         api.getAuth(session).then((response) => {
           const token = response.data.session_token
@@ -40,9 +41,10 @@ export const useUserStore = defineStore({
     },
     logout() {
       return new Promise((resolve) => {
-        this.$reset
-        this.token = ''
         localStorage.removeItem('token')
+        localStorage.removeItem('username')
+        localStorage.removeItem('osmId')
+        this.$reset()
         delete api.defaults.headers.common['Authorization']
         resolve()
       })
