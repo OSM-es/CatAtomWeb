@@ -7,22 +7,23 @@ const { t } = i18n.global
 
 class SocketioService {
   socket = null
+  user = null
 
   constructor() {
+    this.user = useUserStore()
+    this.job = useJobStore()
     this.connect(process.env.VUE_APP_ROOT_SOCKETIO)
 
     this.socket.on('join', (data) => {
-      const job = useJobStore()
-      job.participantes = data.participants
-      job.charla.push(t('joined', data))
+      this.job.participantes = data.participants
+      this.job.charla.push(t('joined', data))
     })
     this.socket.on('leave', (data) => {
-      const job = useJobStore()
-      job.participantes = data.participants
-      job.charla.push(t('leave', data))
+      this.job.participantes = data.participants
+      this.job.charla.push(t('leave', data))
     })
     this.socket.on('chat', (msg) => {
-      useJobStore().charla.push(msg)
+      this.job.charla.push(msg)
     })
   }
 
@@ -31,19 +32,18 @@ class SocketioService {
   }
 
   sendMessage(message) {
-    const user = useUserStore()
     const data = {
-      username: user.username,
-      osmId: user.osmId,
+      username: this.user.username,
+      osmId: this.user.osmId,
       message: message,
-      room: useJobStore().cod_municipio,
+      room: this.job.cod_municipio,
     }
     this.socket.emit('chat', data)
   }
 
   connect(endpoint) {
-    const username = localStorage.getItem('username') || ''
-    const osmId = localStorage.getItem('osmId') || 0
+    const username = this.user.username
+    const osmId = this.user.osmId
     const userData = { osm_id: osmId, username: username }
     this.socket = io(endpoint, { query: userData })
   }
@@ -59,6 +59,11 @@ class SocketioService {
   }
 }
 
-const socketio = new SocketioService()
+let socketio = false
 
-export const useChatService = () => socketio
+export const useChatService = () => {
+  if (!socketio) {
+    socketio = new SocketioService()
+  }
+  return socketio
+}
