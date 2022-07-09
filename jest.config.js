@@ -1,5 +1,6 @@
 module.exports = {
   preset: '@vue/cli-plugin-unit-jest',
-  resetMocks: false,
+  resetModules: true,
+  clearMocks: true,
   setupFiles: ['jest-localstorage-mock'],
 }
