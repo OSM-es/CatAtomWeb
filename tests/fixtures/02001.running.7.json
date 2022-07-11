@@ -1,0 +1,21 @@
+{
+    "cod_municipio": "02001",
+    "cod_division": "",
+    "estado": "RUNNING",
+    "propietario": {
+        "osm_id": "47882",
+        "username": "Javier Sanchez"
+    },
+    "mensaje": "Procesando",
+    "linea": 7,
+    "log": [
+      "2022-07-10 18:22:00,641 - WARNING - No se obtuvieron datos OSM de 'current_address.osm'",
+      "2022-07-10 18:22:01,299 - INFO - Generado '000700100XJ24B.osm.gz': 94 nodos, 15 v\u00edas, 0 relaciones",
+      "2022-07-10 18:22:01,311 - INFO - Generado '000700200XJ24B.osm.gz': 68 nodos, 20 v\u00edas, 0 relaciones",
+      "2022-07-10 18:22:01,322 - INFO - Generado '000700800XJ24B.osm.gz': 55 nodos, 16 v\u00edas, 0 relaciones"
+    ],
+    "informe": [],
+    "report": {},
+    "revisar": [],
+    "callejero": []
+}

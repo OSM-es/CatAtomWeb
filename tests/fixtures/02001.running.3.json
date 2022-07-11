@@ -1,0 +1,20 @@
+{
+    "cod_municipio": "02001",
+    "cod_division": "",
+    "estado": "RUNNING",
+    "propietario": {
+        "osm_id": "47882",
+        "username": "Javier Sanchez"
+    },
+    "mensaje": "Procesando",
+    "linea": 3,
+    "log": [
+      "2022-07-10 18:21:59,236 - INFO - Municipio: 'Abengibre'",
+      "2022-07-10 18:21:59,237 - INFO - Reanuda el procesado de '02001'",
+      "2022-07-10 18:21:59,998 - INFO - Descargando 'current_address.osm'"
+  ],
+    "informe": [],
+    "report": {},
+    "revisar": [],
+    "callejero": []
+}

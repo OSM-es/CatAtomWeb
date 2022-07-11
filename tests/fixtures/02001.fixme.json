@@ -1,0 +1,522 @@
+{
+    "cod_municipio": "02001",
+    "cod_division": "",
+    "estado": "FIXME",
+    "propietario": {
+        "osm_id": "47882",
+        "username": "Javier Sanchez"
+    },
+    "mensaje": "Pendiente de revisar problemas",
+    "linea": 107,
+    "log": [
+        "2022-07-10 18:21:59,236 - INFO - Municipio: 'Abengibre'",
+        "2022-07-10 18:21:59,237 - INFO - Reanuda el procesado de '02001'",
+        "2022-07-10 18:21:59,998 - INFO - Descargando 'current_address.osm'",
+        "2022-07-10 18:22:00,641 - WARNING - No se obtuvieron datos OSM de 'current_address.osm'",
+        "2022-07-10 18:22:01,299 - INFO - Generado '000700100XJ24B.osm.gz': 94 nodos, 15 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,311 - INFO - Generado '000700200XJ24B.osm.gz': 68 nodos, 20 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,322 - INFO - Generado '000700800XJ24B.osm.gz': 55 nodos, 16 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,333 - INFO - Generado '001200100XJ24B.osm.gz': 52 nodos, 15 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,345 - INFO - Generado '001700200XJ24B.osm.gz': 108 nodos, 17 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,350 - INFO - Generado '001700800XJ24B.osm.gz': 29 nodos, 6 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,352 - INFO - Generado '02001A00300027.osm.gz': 8 nodos, 2 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,355 - INFO - Generado '02001A00700052.osm.gz': 16 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,358 - INFO - Generado '02001A00800033.osm.gz': 8 nodos, 2 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,361 - INFO - Generado '02001A01300333.osm.gz': 17 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,365 - INFO - Generado '02001A01500156.osm.gz': 10 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,367 - INFO - Generado '5712101XJ2451S.osm.gz': 12 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,374 - INFO - Generado '5712220XJ2451S.osm.gz': 29 nodos, 9 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,417 - INFO - Generado '5712226XJ2451S.osm.gz': 221 nodos, 55 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,420 - INFO - Generado '5713401XJ2451S.osm.gz': 11 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,424 - INFO - Generado '5713501XJ2451S.osm.gz': 11 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,437 - INFO - Generado '5812005XJ2451S.osm.gz': 59 nodos, 16 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,490 - INFO - Generado '5812117XJ2451S.osm.gz': 228 nodos, 69 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,492 - INFO - Generado '5812501XJ2451S.osm.gz': 4 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,498 - INFO - Generado '5812703XJ2451S.osm.gz': 23 nodos, 7 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,504 - INFO - Generado '5812802XJ2451S.osm.gz': 27 nodos, 6 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,541 - INFO - Generado '5813008XJ2451S.osm.gz': 156 nodos, 42 v\u00edas, 2 relaciones",
+        "2022-07-10 18:22:01,567 - INFO - Generado '5813103XJ2451S.osm.gz': 107 nodos, 27 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,586 - INFO - Generado '5813203XJ2451S.osm.gz': 91 nodos, 24 v\u00edas, 2 relaciones",
+        "2022-07-10 18:22:01,588 - INFO - Generado '5813301XJ2451S.osm.gz': 14 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,593 - INFO - Generado '5813701XJ2451S.osm.gz': 21 nodos, 7 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,596 - INFO - Generado '5813801XJ2451S.osm.gz': 6 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,600 - INFO - Generado '5814010XJ2451S.osm.gz': 13 nodos, 2 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,660 - INFO - Generado '5814023XJ2451S.osm.gz': 192 nodos, 52 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,674 - INFO - Generado '5814202XJ2451S.osm.gz': 60 nodos, 10 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,691 - INFO - Generado '5814802XJ2451S.osm.gz': 49 nodos, 10 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,700 - INFO - Generado '5815001XJ2451N.osm.gz': 34 nodos, 9 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,715 - INFO - Generado '5815006XJ2451N.osm.gz': 59 nodos, 15 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:01,725 - INFO - Generado '5816001XJ2451N.osm.gz': 39 nodos, 8 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:01,727 - INFO - Generado '5816101XJ2451N.osm.gz': 6 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,748 - INFO - Generado '5910001XJ2451S.osm.gz': 111 nodos, 20 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,761 - INFO - Generado '5911302XJ2451S.osm.gz': 38 nodos, 13 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,764 - INFO - Generado '5911305XJ2451S.osm.gz': 7 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,775 - INFO - Generado '5911801XJ2451S.osm.gz': 34 nodos, 10 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,790 - INFO - Generado '5912004XJ2451S.osm.gz': 56 nodos, 14 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,813 - INFO - Generado '5912517XJ2451S.osm.gz': 136 nodos, 25 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,835 - INFO - Generado '5912601XJ2451S.osm.gz': 70 nodos, 20 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,890 - INFO - Generado '5913024XJ2451S.osm.gz': 199 nodos, 58 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,910 - INFO - Generado '5913028XJ2451S.osm.gz': 72 nodos, 16 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,938 - INFO - Generado '5913105XJ2451S.osm.gz': 86 nodos, 24 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:01,958 - INFO - Generado '5914002XJ2451S.osm.gz': 66 nodos, 18 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:02,027 - INFO - Generado '5914018XJ2451S.osm.gz': 193 nodos, 56 v\u00edas, 2 relaciones",
+        "2022-07-10 18:22:02,044 - INFO - Generado '5914022XJ2451S.osm.gz': 58 nodos, 18 v\u00edas, 2 relaciones",
+        "2022-07-10 18:22:02,057 - INFO - Generado '5915001XJ2451N.osm.gz': 68 nodos, 10 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:02,072 - INFO - Generado '5915503XJ2451N.osm.gz': 62 nodos, 10 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,087 - INFO - Generado '6009002XJ2460N.osm.gz': 62 nodos, 11 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,095 - INFO - Generado '6009602XJ2460N.osm.gz': 30 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,103 - INFO - Generado '6010008XJ2461S.osm.gz': 31 nodos, 9 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,124 - INFO - Generado '6010009XJ2461S.osm.gz': 72 nodos, 20 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,157 - INFO - Generado '6011002XJ2461S.osm.gz': 145 nodos, 25 v\u00edas, 2 relaciones",
+        "2022-07-10 18:22:02,188 - INFO - Generado '6011105XJ2461S.osm.gz': 90 nodos, 30 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:02,194 - INFO - Generado '6011401XJ2461S.osm.gz': 24 nodos, 3 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,203 - INFO - Generado '6011501XJ2461S.osm.gz': 24 nodos, 6 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,224 - INFO - Generado '6012008XJ2461S.osm.gz': 70 nodos, 12 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,249 - INFO - Generado '6012201XJ2461S.osm.gz': 42 nodos, 17 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,261 - INFO - Generado '6012205XJ2461S.osm.gz': 57 nodos, 14 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,270 - INFO - Generado '6012206XJ2461S.osm.gz': 31 nodos, 7 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,280 - INFO - Generado '6012501XJ2461S.osm.gz': 30 nodos, 6 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,289 - INFO - Generado '6012816XJ2461S.osm.gz': 28 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,343 - INFO - Generado '6012831XJ2461S.osm.gz': 258 nodos, 38 v\u00edas, 2 relaciones",
+        "2022-07-10 18:22:02,422 - INFO - Generado '6013015XJ2461S.osm.gz': 281 nodos, 79 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,538 - INFO - Generado '6013816XJ2461S.osm.gz': 377 nodos, 99 v\u00edas, 3 relaciones",
+        "2022-07-10 18:22:02,542 - INFO - Generado '6016701XJ2461N.osm.gz': 25 nodos, 5 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,549 - INFO - Generado '6109002XJ2460N.osm.gz': 47 nodos, 6 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,554 - INFO - Generado '6109303XJ2460N.osm.gz': 15 nodos, 3 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,566 - INFO - Generado '6109802XJ2460N.osm.gz': 45 nodos, 9 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,587 - INFO - Generado '6110004XJ2461S.osm.gz': 93 nodos, 21 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:02,598 - INFO - Generado '6110201XJ2461S.osm.gz': 36 nodos, 8 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,605 - INFO - Generado '6110403XJ2461S.osm.gz': 37 nodos, 7 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,640 - INFO - Generado '6111001XJ2461S.osm.gz': 91 nodos, 30 v\u00edas, 2 relaciones",
+        "2022-07-10 18:22:02,644 - INFO - Generado '6111005XJ2461S.osm.gz': 4 nodos, 1 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,666 - INFO - Generado '6112001XJ2461S.osm.gz': 86 nodos, 20 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,671 - INFO - Generado '6112002XJ2461S.osm.gz': 11 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,690 - INFO - Generado '6112404XJ2461S.osm.gz': 47 nodos, 19 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,709 - INFO - Generado '6114001XJ2461S.osm.gz': 108 nodos, 18 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,717 - INFO - Generado '6114502XJ2461S.osm.gz': 26 nodos, 6 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,724 - INFO - Generado '6115005XJ2461N.osm.gz': 26 nodos, 5 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,768 - INFO - Generado '6115011XJ2461N.osm.gz': 132 nodos, 40 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,778 - INFO - Generado '6210001XJ2461S.osm.gz': 17 nodos, 4 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,785 - INFO - Generado '6210101XJ2461S.osm.gz': 24 nodos, 3 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,812 - INFO - Generado '6211003XJ2461S.osm.gz': 45 nodos, 16 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,829 - INFO - Generado '6211702XJ2461S.osm.gz': 68 nodos, 18 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:02,848 - INFO - Generado '6212002XJ2461S.osm.gz': 62 nodos, 20 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,859 - INFO - Generado '6212013XJ2461S.osm.gz': 30 nodos, 10 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,866 - INFO - Generado '6212501XJ2461S.osm.gz': 38 nodos, 5 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,910 - INFO - Generado '6213017XJ2461S.osm.gz': 161 nodos, 46 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,926 - INFO - Generado '6213018XJ2461S.osm.gz': 68 nodos, 11 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,943 - INFO - Generado '6214001XJ2461S.osm.gz': 68 nodos, 17 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:02,962 - INFO - Generado '6214013XJ2461S.osm.gz': 56 nodos, 19 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:03,047 - INFO - Generado '6215017XJ2461N.osm.gz': 203 nodos, 66 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:03,058 - INFO - Generado '6215019XJ2461N.osm.gz': 32 nodos, 8 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:03,064 - INFO - Generado '6215401XJ2461N.osm.gz': 22 nodos, 5 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:03,087 - INFO - Generado '6313002XJ2461S.osm.gz': 69 nodos, 20 v\u00edas, 1 relaciones",
+        "2022-07-10 18:22:03,100 - INFO - Generado '6313010XJ2461S.osm.gz': 53 nodos, 14 v\u00edas, 0 relaciones",
+        "2022-07-10 18:22:04,850 - INFO - Generado 'zoning.geojson'",
+        "2022-07-10 18:22:04,851 - WARNING - Revisa 6 etiquetas fixme",
+        "2022-07-10 18:22:04,852 - INFO - Generado '/catastro/02001/review.txt'. Please, check it before publish",
+        "2022-07-10 18:22:04,855 - INFO - \u00a1Terminado!"
+    ],
+    "informe": [
+        "Municipio: Abengibre",
+        "Nombre en Catastro: ABENGIBRE",
+        "C\u00f3digo: 02001",
+        "Fecha: 10/07/22",
+        "Opciones: 02001",
+        "",
+        "=Informaci\u00f3n del sistema=",
+        "Versi\u00f3n de la aplicaci\u00f3n: CatAtom2Osm 2.9.13",
+        "Plataforma: Linux 5.13.0-52-generic #59~20.04.1-Ubuntu SMP Thu Jun 16 21:21:28 UTC 2022 x86_64 x86_64",
+        "Idioma: es_ES",
+        "Versi\u00f3n de QGIS: 3.10.4-A Coru\u00f1a",
+        "Versi\u00f3n de GDAL: 3.0.4",
+        "N\u00famero de CPUs: 2",
+        "Frecuencia de CPU: 3100.0 Mhz",
+        "Tiempo de ejecuci\u00f3n: 5.7 segundos",
+        "Memoria total: 7830.98 MB",
+        "Memoria f\u00edsica usada: 131.37 MB",
+        "Memoria virtual usada: 674.45 MB",
+        "",
+        "=Direcciones=",
+        "",
+        "==Datos de entrada==",
+        "Fecha de origen: 2022-03-11",
+        "N\u00famero de caracter\u00edsticas: 783",
+        "  Tipo entrada: 611",
+        "  Tipo parcela: 172",
+        "C\u00f3digos postales: 2",
+        "Nombres de viales: 44",
+        "",
+        "==Procesado==",
+        "Direcciones sin edificio asociado excluidas: 107",
+        "Direcciones sin n\u00famero de portal eliminadas: 9",
+        "Direcciones correspondientes a edificios m\u00faltiples eliminadas: 60",
+        "Direcciones tipo parcela no \u00fanicas para su edificio eliminadas: 3",
+        "",
+        "==Combinaci\u00f3n==",
+        "Direcciones OSM: 0",
+        "",
+        "==Datos de salida==",
+        "Direcciones: 604",
+        "  En nodos de entrada: 426",
+        "  En parcelas: 178",
+        "  Tipo addr:street: 604",
+        "",
+        "=Edificios=",
+        "",
+        "==Datos de entrada==",
+        "Fecha de origen: 2022-03-11",
+        "N\u00famero de caracter\u00edsticas: 2131",
+        "  Edificios: 703",
+        "  Partes de edificios: 1424",
+        "  Piscinas: 4",
+        "",
+        "==Procesado==",
+        "Partes fuera de contorno eliminadas: 3",
+        "Partes bajo rasante eliminadas: 2",
+        "Edificios con geometr\u00edas multiparte: 167",
+        "Edificios resultantes de dividir multipartes: 368",
+        "Partes fusionadas al contorno: 516",
+        "Partes adyacentes fusionadas: 166",
+        "Geometr\u00edas no v\u00e1lidas eliminadas: 1",
+        "V\u00e9rtices en punta eliminados: 6",
+        "V\u00e9rtices pr\u00f3ximos fusionados: 4289",
+        "Puntos topol\u00f3gicos creados: 463",
+        "V\u00e9rtices simplificados: 1533",
+        "",
+        "==Datos de salida==",
+        "Nodos: 15405",
+        "V\u00edas: 1669",
+        "Relaciones: 25",
+        "N\u00famero de caracter\u00edsticas: 1644",
+        "  Edificios: 904",
+        "  Partes de edificios: 736",
+        "  Piscinas: 4",
+        "Recuento de tipos de edificios: barn: 39, industrial: 151, ruins: 4, residential: 647, yes: 49, public: 8, office: 2, retail: 4",
+        "Plantas sobre rasante (nivel: n\u00ba de edificios): 1: 225, 2: 323, 3: 32, 4: 1",
+        "Plantas bajo rasante (nivel: n\u00ba de edificios): 1: 20",
+        "",
+        "=Proyecto=",
+        "Archivos de tareas: 99",
+        "  R\u00fastica: 11",
+        "  Urbana: 88",
+        "",
+        "=Problemas=",
+        "Correcciones (fixmes): 6",
+        "  Las partes de edificio no cubren todo el contorno: 6",
+        "Avisos: 1",
+        "  No se obtuvieron datos OSM de 'current_address.osm'",
+        "",
+        "https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Generar_y_corregir_los_archivos_a_importar"
+    ],
+    "report": {
+        "date": "10/07/22",
+        "warnings": [
+            "No se obtuvieron datos OSM de 'current_address.osm'"
+        ],
+        "errors": [],
+        "fixme_counter": {
+            "Las partes de edificio no cubren todo el contorno": 6
+        },
+        "building_counter": {
+            "barn": 39,
+            "industrial": 151,
+            "ruins": 4,
+            "residential": 647,
+            "yes": 49,
+            "public": 8,
+            "office": 2,
+            "retail": 4
+        },
+        "platform": "Linux 5.13.0-52-generic #59~20.04.1-Ubuntu SMP Thu Jun 16 21:21:28 UTC 2022 x86_64 x86_64",
+        "app_version": "CatAtom2Osm 2.9.13",
+        "language": "es_ES",
+        "cpu_count": 2,
+        "cpu_freq": 3100.0,
+        "memory": 7830.9765625,
+        "rss": 131.37109375,
+        "vms": 674.453125,
+        "options": "02001",
+        "mun_code": "02001",
+        "qgs_version": "3.10.4-A Coru\u00f1a",
+        "gdal_version": "3.0.4",
+        "mun_name": "Abengibre",
+        "cat_mun": "ABENGIBRE",
+        "vertex_zz_cadastralparcel": 1,
+        "vertex_spike_cadastralparcel": 2,
+        "vertex_close_cadastralparcel": 15,
+        "vertex_topo_cadastralparcel": 60,
+        "vertex_simplify_cadastralparcel": 633,
+        "building_date": "2022-03-11",
+        "inp_features": 2131,
+        "inp_buildings": 703,
+        "inp_pools": 4,
+        "inp_parts": 1424,
+        "outside_parts": 3,
+        "underground_parts": 2,
+        "multipart_geoms_building": 167,
+        "exploded_parts_building": 368,
+        "geom_invalid_building": 1,
+        "vertex_spike_building": 6,
+        "vertex_close_building": 4289,
+        "vertex_topo_building": 463,
+        "parts_to_outline": 516,
+        "adjacent_parts": 166,
+        "vertex_simplify_building": 1533,
+        "address_date": "2022-03-11",
+        "inp_address": 783,
+        "inp_address_entrance": 611,
+        "inp_address_parcel": 172,
+        "orphaned_addresses": 107,
+        "inp_zip_codes": 2,
+        "inp_street_names": 44,
+        "ex_time": 5.6971354484558105,
+        "osm_addresses": 0,
+        "addresses_without_number": 9,
+        "multiple_addresses": 60,
+        "out_addr_str": 604,
+        "out_address": 604,
+        "out_address_parcel": 178,
+        "out_buildings": 904,
+        "out_features": 1644,
+        "nodes": 15405,
+        "ways": 1669,
+        "relations": 25,
+        "out_parts": 736,
+        "out_address_entrance": 426,
+        "out_pools": 4,
+        "not_unique_addresses": 3,
+        "tasks_r": 11,
+        "tasks_u": 88,
+        "tasks": 99,
+        "fixme_count": 6,
+        "fixmes": [
+            "Las partes de edificio no cubren todo el contorno: 6"
+        ],
+        "dlag": "1: 225, 2: 323, 3: 32, 4: 1",
+        "dlbg": "1: 20",
+        "building_types": "barn: 39, industrial: 151, ruins: 4, residential: 647, yes: 49, public: 8, office: 2, retail: 4"
+    },
+    "revisar": [
+        {
+            "filename": "5812117XJ2451S.osm.gz",
+            "fixmes": "1",
+            "osm_id": null,
+            "username": null,
+            "locked": null
+        },
+        {
+            "filename": "5912601XJ2451S.osm.gz",
+            "fixmes": "1",
+            "osm_id": null,
+            "username": null,
+            "locked": null
+        },
+        {
+            "filename": "5913028XJ2451S.osm.gz",
+            "fixmes": "1",
+            "osm_id": null,
+            "username": null,
+            "locked": null
+        },
+        {
+            "filename": "5914018XJ2451S.osm.gz",
+            "fixmes": "1",
+            "osm_id": null,
+            "username": null,
+            "locked": null
+        },
+        {
+            "filename": "6010009XJ2461S.osm.gz",
+            "fixmes": "1",
+            "osm_id": null,
+            "username": null,
+            "locked": null
+        },
+        {
+            "filename": "6215017XJ2461N.osm.gz",
+            "fixmes": "1",
+            "osm_id": null,
+            "username": null,
+            "locked": null
+        }
+    ],
+    "callejero": [
+        [
+            "AV CASTILLA LA MANCHA",
+            "Avenida Castilla-La Mancha"
+        ],
+        [
+            "CL ALCALA",
+            "Calle Alcal\u00e1"
+        ],
+        [
+            "CL ANTONIO MACHADO",
+            "Calle Antonio Machado"
+        ],
+        [
+            "CL BARRANCO",
+            "Calle Barranco"
+        ],
+        [
+            "CL BARTOLOME E. MURILLO",
+            "Calle Bartolom\u00e9 E. Murillo"
+        ],
+        [
+            "CL BERNARDINO PEREZ INIESTA",
+            "Calle Bernardino P\u00e9rez Iniesta"
+        ],
+        [
+            "CL CALVARIO",
+            "Calle Calvario"
+        ],
+        [
+            "CR ALBACETE",
+            "Calle Carretera de Albacete"
+        ],
+        [
+            "CL CERVANTES",
+            "Calle Cervantes"
+        ],
+        [
+            "CL VICENTE FERRER",
+            "Calle Cervantes"
+        ],
+        [
+            "CL CLARA CAMPOAMOR",
+            "Calle Clara Campoamor"
+        ],
+        [
+            "CL CONTRERAS",
+            "Calle Contreras"
+        ],
+        [
+            "CL CRISTOBAL COLON",
+            "Calle Crist\u00f3bal Col\u00f3n"
+        ],
+        [
+            "CL DIEGO VELAZQUEZ",
+            "Calle Diego Vel\u00e1zquez"
+        ],
+        [
+            "CL DOCTOR FERRANDIZ",
+            "Calle Doctor Ferrandis"
+        ],
+        [
+            "CL DOCTOR FLEMING",
+            "Calle Doctor Fleming"
+        ],
+        [
+            "CL DON PEDRO",
+            "Calle Don Pedro"
+        ],
+        [
+            "CL DOS DE MAYO",
+            "Calle Dos de Mayo"
+        ],
+        [
+            "CL DISEMINADOS",
+            "Calle Ermita"
+        ],
+        [
+            "CL ERMITA",
+            "Calle Ermita"
+        ],
+        [
+            "CL FRONTON",
+            "Calle Ermita"
+        ],
+        [
+            "CL FRANCISCO DE GOYA",
+            "Calle Francisco de Goya"
+        ],
+        [
+            "CL FUENSANTA",
+            "Calle Fuensanta"
+        ],
+        [
+            "CL ISAAC PERAL",
+            "Calle Isaac Peral"
+        ],
+        [
+            "CL LOPE DE VEGA",
+            "Calle Lope de Vega"
+        ],
+        [
+            "CL MANUEL DE FALLA",
+            "Calle Manuel de Falla"
+        ],
+        [
+            "CL MAYOR",
+            "Calle Mayor"
+        ],
+        [
+            "CL MIGUEL SORIANO",
+            "Calle Miguel Soriano"
+        ],
+        [
+            "CL MINISTRO MONARES",
+            "Calle Ministro Monares"
+        ],
+        [
+            "CL NORTE",
+            "Calle Norte"
+        ],
+        [
+            "CL PE\u00d1UELA",
+            "Calle Pe\u00f1uela"
+        ],
+        [
+            "CL PONIENTE",
+            "Calle Poniente"
+        ],
+        [
+            "CL PROYECTO 13",
+            "Calle Proyecto 13"
+        ],
+        [
+            "CL REAL",
+            "Calle Real"
+        ],
+        [
+            "CL SAN CRISTOBAL",
+            "Calle San Crist\u00f3bal"
+        ],
+        [
+            "CL SAN MIGUEL",
+            "Calle San Miguel"
+        ],
+        [
+            "CL TENIENTE GOMEZ",
+            "Calle Teniente G\u00f3mez"
+        ],
+        [
+            "CL TORILEJO",
+            "Calle Torilejo"
+        ],
+        [
+            "CL VALENCIA",
+            "Calle Valencia"
+        ],
+        [
+            "CL VALERA",
+            "Calle Valera"
+        ],
+        [
+            "CL IBARRA",
+            "Calle Ybarra"
+        ],
+        [
+            "CL CRUZ",
+            "Calle la Cruz"
+        ],
+        [
+            "CL FUENTE",
+            "Calle la Fuente"
+        ],
+        [
+            "PZ CONSTITUCION",
+            "Plaza de la Constituci\u00f3n"
+        ]
+    ]
+}

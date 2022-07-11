@@ -26,7 +26,9 @@ const chat = useChatService()
 const files = new UploadableFileList()
 
 chat.on('fixme', (data) => {
-  job.updateFixme(data)
+  if (!user.isOwner(data)) {
+    job.updateFixme(data)
+  }
 })
 
 function getUrl(filename) {

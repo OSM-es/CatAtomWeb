@@ -1,0 +1,16 @@
+{
+    "cod_municipio": "02001",
+    "cod_division": "",
+    "estado": "RUNNING",
+    "propietario": {
+        "osm_id": "47882",
+        "username": "Javier Sanchez"
+    },
+    "mensaje": "Procesando",
+    "linea": 0,
+    "log": [],
+    "informe": [],
+    "report": {},
+    "revisar": [],
+    "callejero": []
+}

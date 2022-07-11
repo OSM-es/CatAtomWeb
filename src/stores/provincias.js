@@ -8,9 +8,6 @@ export const useProvStore = defineStore({
   }),
 
   getters: {
-    get(state) {
-      return state.data
-    },
     nombre: (state) => {
       return (code) => {
         return state.data.find(

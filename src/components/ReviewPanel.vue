@@ -4,16 +4,20 @@ import debounce from 'lodash.debounce'
 import { useJobStore } from '@/stores/job'
 import { useI18n } from 'vue-i18n'
 import { useChatService } from '@/services/chat'
+import { useUserStore } from '@/stores/user'
 
 const { t } = useI18n()
 const chat = useChatService()
 const job = useJobStore()
+const user = useUserStore()
 const filters = ref({ name: { value: '', keys: ['cat', 'conv'] } })
 const totalPages = ref(1)
 const currentPage = ref(1)
 
 chat.on('highway', (data) => {
-  job.updateHighway(data)
+  if (!user.isOwner(data)) {
+    job.updateHighway(data)
+  }
 })
 
 const editHandler = debounce((key, value) => {

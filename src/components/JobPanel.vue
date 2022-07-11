@@ -23,8 +23,10 @@ const loadingMun = ref(false)
 const loadingDiv = ref(false)
 let municipioPrevio = null
 
-chat.on('updateJob', () => {
-  job.getJob(job.cod_municipio, job.cod_division)
+chat.on('updateJob', (data) => {
+  if (!userStore.isOwner(data)) {
+    job.getJob(job.cod_municipio, job.cod_division)
+  }
 })
 
 chat.on('createJob', (data) => {
@@ -36,11 +38,17 @@ chat.on('createJob', (data) => {
 })
 
 chat.on('deleteJob', (data) => {
+  if (!userStore.isOwner(data)) {
+    job.getJob(job.cod_municipio, job.cod_division)
+  }
   job.charla.push(t('delete_job', data))
 })
 
-chat.on('done', () => {
+chat.on('done', (data) => {
   let name = job.cod_municipio
+  if (!userStore.isOwner(data)) {
+    job.getJob(job.cod_municipio, job.cod_division)
+  }
   if (job.cod_division) {
     name += ' (' + job.report.split_name + ')'
   }
@@ -120,7 +128,7 @@ onBeforeUnmount(() => {
         <v-select
           v-model="provincia"
           :placeholder="$t('Select the province')"
-          :options="provincias.get"
+          :options="provincias.data"
           :clearable="false"
           :select-on-tab="true"
           :reduce="(prov) => prov && prov.cod_provincia"
