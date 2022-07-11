@@ -21,10 +21,10 @@ function chatClasses(msg) {
 }
 
 function getMessage(msg) {
-  const message = Object.prototype.hasOwnProperty.call(msg, 'message')
+  const _message = Object.prototype.hasOwnProperty.call(msg, 'message')
     ? msg.message
     : msg
-  return message.split(/\r?\n/)
+  return _message.split(/\r?\n/)
 }
 
 function send(event) {

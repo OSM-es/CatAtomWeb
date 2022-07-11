@@ -49,7 +49,7 @@ module.exports = {
         estado: 'RUNNING',
         mensaje: 'lorem ipsum',
         report,
-      }
+      },
     }
   }),
   deleteJob: jest.fn((cod_municipio) => ({

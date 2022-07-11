@@ -1,13 +1,8 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { localeNames } from '@/services/i18n'
 
 const i18n = useI18n()
-
-const localeNames = [
-  { key: 'es', name: 'Español' },
-  { key: 'ca', name: 'Catalán' },
-  { key: 'en', name: 'English' },
-]
 
 function saveLocale(locale) {
   i18n.locale.value = locale
@@ -17,11 +12,12 @@ function saveLocale(locale) {
 
 <template>
   <div class="navbar-item has-dropdown is-hoverable">
-    <a class="navbar-link">{{ $t('locale') }}</a>
+    <a class="navbar-link" data-test="locale">{{ $t('locale') }}</a>
     <div class="navbar-dropdown is-right">
       <a
         v-for="locale in localeNames"
         :key="`locale-${locale.key}`"
+        :data-test="`locale-${locale.key}`"
         class="navbar-item"
         @click="saveLocale(locale.key)"
       >
