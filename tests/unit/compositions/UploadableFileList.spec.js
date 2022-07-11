@@ -1,9 +1,8 @@
 /* eslint-disable no-undef */
 import UploadableFileList from '@/compositions/UploadableFileList'
-import { faker } from '@faker-js/faker'
 
 const newFiles = [...Array(6).keys()].map((id) => {
-  return { id, name: faker.system.commonFileName() }
+  return { id, name: `file${id}` }
 })
 
 test('filterByNames', () => {
