@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 module.exports = {
   t: (key) => key.toUpperCase(),
   te: (key) => key != 'not.exists',
