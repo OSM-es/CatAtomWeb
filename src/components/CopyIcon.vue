@@ -4,7 +4,7 @@ import { ref } from 'vue'
 const data = ref(null)
 
 function copyToClipboard() {
-  navigator.clipboard.writeText(data.value.outerText)
+  navigator.clipboard.writeText(data.value.outerText || data.value.innerHTML)
 }
 </script>
 
@@ -18,7 +18,7 @@ function copyToClipboard() {
       <font-awesome-icon icon="copy" />
     </span>
   </button>
-  <div ref="data">
+  <div ref="data" data-test="data">
     <slot></slot>
   </div>
 </template>
