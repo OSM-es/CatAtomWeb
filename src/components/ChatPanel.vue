@@ -20,11 +20,11 @@ function chatClasses(msg) {
   }
 }
 
-function getMessage(msg) {
-  const _message = Object.prototype.hasOwnProperty.call(msg, 'message')
+function getRows(msg) {
+  const rows = Object.prototype.hasOwnProperty.call(msg, 'message')
     ? msg.message
     : msg
-  return _message.split(/\r?\n/)
+  return rows.split(/\r?\n/)
 }
 
 function send(event) {
@@ -41,12 +41,12 @@ function send(event) {
   <nav class="panel" :class="chatActive ? 'is-info' : ''">
     <div class="panel-heading">{{ $t('Chat') }}</div>
     <div class="panel-block chat">
-      <div class="container">
+      <div class="container" data-test="chat">
         <div v-for="(msg, i) in job.charla" :key="i" :class="chatClasses(msg)">
           <p v-if="msg.hasOwnProperty('username')" class="has-text-weight-bold">
             {{ msg.username }}
           </p>
-          <p v-for="(row, j) in getMessage(msg)" :key="j">{{ row }}</p>
+          <p v-for="(row, j) in getRows(msg)" :key="j">{{ row }}</p>
         </div>
       </div>
     </div>

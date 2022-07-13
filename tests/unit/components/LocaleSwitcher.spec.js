@@ -30,25 +30,25 @@ function initWrapper(component) {
 }
 
 test('translates component to English', () => {
-  let wrapper = initWrapper(LocaleSwitcher)
+  const wrapper = initWrapper(LocaleSwitcher)
   expect(wrapper.get('[data-test="locale"]').text()).toBe('English')
 })
 
 test('translates component to Spanish', async () => {
-  let wrapper = initWrapper(LocaleSwitcher)
+  const wrapper = initWrapper(LocaleSwitcher)
   wrapper.get('[data-test="locale-es"]').trigger('click')
   await nextTick()
   expect(wrapper.get('[data-test="locale"]').text()).toBe('Español')
 })
 
 test('falls back to English if language dictionary is not found', async () => {
-  let wrapper = initWrapper(LocaleSwitcher)
+  const wrapper = initWrapper(LocaleSwitcher)
   wrapper.rootVM.$i18n.locale = 'xx'
   await nextTick()
   expect(wrapper.get('[data-test="locale"]').text()).toBe('English')
 })
 
 test('falls back to key value if key not found', () => {
-  let wrapper = initWrapper(UntranslatedComponent)
+  const wrapper = initWrapper(UntranslatedComponent)
   expect(wrapper.text()).toBe('untranslated')
 })

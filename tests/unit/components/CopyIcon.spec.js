@@ -1,6 +1,5 @@
 /* eslint-disable no-undef */
-import { nextTick } from 'vue'
-import { mount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import CopyIcon from '@/components/CopyIcon'
 
 test('text is copied', async () => {
@@ -9,12 +8,11 @@ test('text is copied', async () => {
       writeText: jest.fn(),
     },
   })
-  const wrapper = mount(CopyIcon, {
+  const wrapper = shallowMount(CopyIcon, {
     slots: {
       default: 'text to copy',
     },
   })
-  await nextTick()
   wrapper.get('button').trigger('click')
   expect(navigator.clipboard.writeText).toBeCalledWith('text to copy')
 })
