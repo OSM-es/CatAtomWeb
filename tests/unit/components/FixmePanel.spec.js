@@ -13,14 +13,10 @@ jest.mock('@/stores/user', () => require('../../mocks/stores/user'))
 
 const chat = useChatService()
 const job = useJobStore()
-let wrapper
-
-beforeEach(() => {
-  const f1 = { osm_id: '123', username: 'u1', filename: 'f1f1', fixmes: 2 }
-  const f2 = { osm_id: '321', username: 'u2', filename: 'f2f2', fixmes: 1 }
-  wrapper = mount(FixmePanel)
-  wrapper.setProps({ fixmes: [f1, f2] })
-})
+const f1 = { osm_id: '123', username: 'u1', filename: 'f1f1', fixmes: 2 }
+const f2 = { osm_id: '321', username: 'u2', filename: 'f2f2', fixmes: 1 }
+let wrapper = mount(FixmePanel)
+wrapper.setProps({ fixmes: [f1, f2] })
 
 test('show fixmes', () => {
   const html = wrapper.html()

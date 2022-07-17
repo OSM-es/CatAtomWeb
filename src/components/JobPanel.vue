@@ -127,6 +127,7 @@ onBeforeUnmount(() => {
       <div class="control">
         <v-select
           v-model="provincia"
+          data-test="provincia"
           :placeholder="$t('Select the province')"
           :options="provincias.data"
           :clearable="false"

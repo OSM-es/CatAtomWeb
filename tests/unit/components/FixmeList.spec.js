@@ -21,7 +21,7 @@ const fixmes = [
 const f6 = { filename: 'f6', percentCompleted: 30 }
 const files = {
   fileExists: (filename) => filename == 'f6',
-  getFile: (filename) => filename == 'f6' ? f6 : null,
+  getFile: (filename) => (filename == 'f6' ? f6 : null),
 }
 const wrapper = shallowMount(FixmeList, {
   props: { municipio: '66699', fixmes, files },

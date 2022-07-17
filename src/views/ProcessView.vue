@@ -5,7 +5,6 @@ import ChatPanel from '@/components/ChatPanel.vue'
 import DonePanel from '@/components/DonePanel.vue'
 import FixmePanel from '@/components/FixmePanel.vue'
 import LogPanel from '@/components/LogPanel.vue'
-import ReportPanel from '@/components/ReportPanel.vue'
 import ReviewPanel from '@/components/ReviewPanel.vue'
 import ProcessPanelGroup from '@/components/ProcessPanelGroup.vue'
 
@@ -42,8 +41,8 @@ function reportEnabled() {
               :municipio="job.cod_municipio"
             ></fixme-panel>
             <review-panel v-if="reviewEnabled()"></review-panel>
-            <report-panel v-if="reportEnabled()"></report-panel>
-            <log-panel v-if="job.estado != 'AVAILABLE'"></log-panel>
+            <log-panel v-if="reportEnabled()" title="Report"></log-panel>
+            <log-panel v-if="job.estado != 'AVAILABLE'" title='Log'></log-panel>
           </vue-collapsible-panel-group>
         </div>
         <div v-if="job.cod_municipio" class="column is-one-fifth">
