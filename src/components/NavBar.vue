@@ -8,6 +8,8 @@ import api from '@/services/api'
 const isActive = ref(false)
 const userStore = useUserStore()
 const router = useRouter()
+const docUrl =
+  'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos'
 
 function loginUrl() {
   const authPath = router.resolve({ name: 'auth' })
@@ -51,12 +53,12 @@ function logout() {
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
       <div v-if="userStore.isLogged" class="navbar-end">
-        <a class="navbar-item" :href="$docUrl">{{ $t('Docs') }}</a>
+        <a class="navbar-item" :href="docUrl">{{ $t('Docs') }}</a>
         <locale-switcher></locale-switcher>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">{{ userStore.username }}</a>
           <div class="navbar-dropdown is-right">
-            <a class="navbar-item">
+            <a data-test="logout" class="navbar-item">
               <span class="icon">
                 <font-awesome-icon icon="user-times" />
               </span>
@@ -84,7 +86,11 @@ function logout() {
               </a>
             </p>
             <p class="control">
-              <a class="button is-info is-outlined" :href="loginUrl()">
+              <a
+                data-test="login"
+                class="button is-info is-outlined"
+                :href="loginUrl()"
+              >
                 <span class="icon">
                   <font-awesome-icon icon="user" />
                 </span>

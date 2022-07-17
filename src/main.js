@@ -37,8 +37,6 @@ library.add(faTimes)
 library.add(faUser)
 library.add(faUserPlus)
 library.add(faUserTimes)
-app.config.globalProperties.$docUrl =
-  'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos'
 app.component('FontAwesomeIcon', FontAwesomeIcon)
 app.component('VSelect', vSelect)
 app.use(router)

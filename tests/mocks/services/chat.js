@@ -1,4 +1,4 @@
-class Chat {
+class MockChat {
   events = []
 
   on(eventName, listener) {
@@ -9,7 +9,7 @@ class Chat {
     this.events[eventName](...args)
   }
 }
-const chat = new Chat()
+const chat = new MockChat()
 
 module.exports = {
   useChatService: () => chat,

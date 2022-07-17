@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-class ErrorStore {
+class MockErrorStore {
   error = null
 
   set(error) {
@@ -7,7 +7,7 @@ class ErrorStore {
   }
 }
 
-const error = new ErrorStore()
+const error = new MockErrorStore()
 
 module.exports = {
   useErrorStore: () => error,
