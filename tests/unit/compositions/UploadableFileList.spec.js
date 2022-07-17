@@ -30,6 +30,10 @@ describe('With files', () => {
     expect(files.getFiles()[5].file.id).toBe(5)
   })
 
+  test('getFile if not exists', () => {
+    expect(files.getFile('no existe')).toBeUndefined()
+  })
+
   test('getFile', () => {
     expect(files.getFile(newFiles[3].name).file.id).toBe(3)
   })

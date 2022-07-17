@@ -1,8 +1,14 @@
 /* eslint-disable no-undef */
-const errorMock = jest.fn()
+class ErrorStore {
+  error = null
+
+  set(error) {
+    this.error = error
+  }
+}
+
+const error = new ErrorStore()
 
 module.exports = {
-  useErrorStore: () => ({
-    set: errorMock,
-  }),
+  useErrorStore: () => error,
 }

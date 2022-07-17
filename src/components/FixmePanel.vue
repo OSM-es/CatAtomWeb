@@ -1,10 +1,11 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
-import { useJobStore } from '@/stores/job'
 import DropZone from './DropZone.vue'
+import FixmeList from './FixmeList.vue'
 import UploadableFileList from '@/compositions/UploadableFileList'
-import { useErrorStore } from '@/stores/error'
 import { useChatService } from '@/services/chat'
+import { useErrorStore } from '@/stores/error'
+import { useJobStore } from '@/stores/job'
 import { useUserStore } from '@/stores/user'
 
 // eslint-disable-next-line no-undef
@@ -30,26 +31,6 @@ chat.on('fixme', (data) => {
     job.updateFixme(data)
   }
 })
-
-function getUrl(filename) {
-  return `results/${props.municipio}/tasks/${filename}`
-}
-
-function getOwner(fixme) {
-  const msg = fixme.locked ? 'Locked by' : 'Edited by'
-  return fixme.username && t(msg) + ' ' + fixme.username
-}
-
-function isLocked(fixme) {
-  if (
-    !fixme.locked ||
-    user.isOwner(job.propietario) ||
-    user.isOwner({ osm_id: fixme.osm_id })
-  ) {
-    return ''
-  }
-  return 'is-disabled'
-}
 
 function uploadEnabled(fixme) {
   return user.isOwner({ osm_id: fixme.osm_id })
@@ -85,19 +66,12 @@ function onNewFiles(newFiles) {
     }
     const formData = new FormData()
     formData.append('file', file.file)
+    formData.append('foo', 'bar')
+    console.info(file.file, formData)
     job.putFixme(formData, config).then((data) => {
       files.removeFile(data.filename)
     })
   })
-}
-
-function onDownload(event) {
-  const filename = event.target.pathname.split('/').pop()
-  job.postFixme({ filename })
-}
-
-function chatColor(fixme) {
-  return fixme.osm_id ? 'chat-color-' + (fixme.osm_id % 32) : ''
 }
 </script>
 
@@ -141,61 +115,12 @@ function chatColor(fixme) {
               </label>
             </div>
           </div>
-          <div
-            v-for="(fixme, index) in fixmes"
-            :key="index"
-            class="panel-block is-block"
-            :class="chatColor(fixme)"
-          >
-            <nav
-              v-if="!files.fileExists(fixme.filename)"
-              class="level is-mobile"
-            >
-              <div
-                class="level-left has-tooltip-arrow"
-                :data-tooltip="getOwner(fixme)"
-              >
-                <a
-                  :href="getUrl(fixme.filename)"
-                  :class="isLocked(fixme)"
-                  target="_blank"
-                  @click="onDownload"
-                >
-                  <span class="icon">
-                    <font-awesome-icon icon="download" />
-                  </span>
-                  {{ fixme.filename }} ({{ fixme.fixmes }} fixmes)
-                </a>
-              </div>
-              <div class="level-right file is-small">
-                <label v-show="uploadEnabled(fixme)" class="file-label">
-                  <input
-                    class="file-input"
-                    type="file"
-                    @change="onNewFiles($event.target.files)"
-                  />
-                  <span class="file-cta">
-                    <span class="file-icon">
-                      <font-awesome-icon icon="upload" />
-                    </span>
-                    <span class="file-label">
-                      {{ $t('Select reviewed file') }}
-                    </span>
-                  </span>
-                </label>
-              </div>
-            </nav>
-            <nav v-else class="level is-mobile">
-              {{ fixme.filename }}&nbsp;
-              <progress
-                class="progress"
-                :value="files.getFile(fixme.filename).percentCompleted"
-                max="100"
-              >
-                {{ files.getFile(fixme.filename).percentCompleted }}%
-              </progress>
-            </nav>
-          </div>
+          <fixme-list
+            :municipio="municipio"
+            :fixmes="fixmes"
+            :files="files"
+            @change="onNewFiles(event)"
+          ></fixme-list>
         </drop-zone>
       </div>
     </template>

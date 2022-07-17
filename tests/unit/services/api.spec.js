@@ -18,5 +18,5 @@ test('setAuth', () => {
 test('interceptors', () => {
   const rejected = api.interceptors.response.handlers[0].rejected
   expect(rejected('foobar')).rejects.toEqual('foobar')
-  expect(useErrorStore().set).toBeCalledWith('foobar')
+  expect(useErrorStore().error).toBe('foobar')
 })
