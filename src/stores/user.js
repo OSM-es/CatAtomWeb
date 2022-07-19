@@ -20,7 +20,7 @@ export const useUserStore = defineStore({
   actions: {
     login(session) {
       localStorage.removeItem('token')
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
         api.getAuth(session).then((response) => {
           const token = response.data.session_token
           if (token) {
@@ -32,8 +32,6 @@ export const useUserStore = defineStore({
             localStorage.setItem('username', this.username)
             localStorage.setItem('osmId', this.osmId)
             resolve(response)
-          } else {
-            reject()
           }
         })
       })
@@ -49,7 +47,7 @@ export const useUserStore = defineStore({
       })
     },
     update() {
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
         api
           .put('login')
           .then((response) => {
@@ -60,7 +58,6 @@ export const useUserStore = defineStore({
           })
           .catch(() => {
             this.logout()
-            reject()
           })
       })
     },

@@ -24,8 +24,6 @@ import App from './App.vue'
 import router from './router'
 import i18n from './services/i18n'
 
-const app = createApp(App).use(i18n)
-
 library.add(faAngleDown)
 library.add(faCopy)
 library.add(faDownload)
@@ -37,6 +35,10 @@ library.add(faTimes)
 library.add(faUser)
 library.add(faUserPlus)
 library.add(faUserTimes)
+
+const app = createApp(App).use(i18n)
+app.config.globalProperties.$docUrl =
+  'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos'
 app.component('FontAwesomeIcon', FontAwesomeIcon)
 app.component('VSelect', vSelect)
 app.use(router)

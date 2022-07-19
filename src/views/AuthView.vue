@@ -16,5 +16,5 @@ router.replace({ name: 'home' })
 </script>
 
 <template>
-  <div />
+  <div></div>
 </template>

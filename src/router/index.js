@@ -23,6 +23,10 @@ const routes = [
     name: 'auth',
     component: AuthView,
   },
+  {
+    path: '/login',
+    component: ProcessView,
+  },
 ]
 
 const router = createRouter({

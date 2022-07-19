@@ -8,9 +8,6 @@ import api from '@/services/api'
 const isActive = ref(false)
 const userStore = useUserStore()
 const router = useRouter()
-const docUrl =
-  'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos'
-
 function loginUrl() {
   const authPath = router.resolve({ name: 'auth' })
   const authURL = new URL(authPath.href, window.location.href).href
@@ -56,7 +53,7 @@ function logout() {
         <a class="navbar-item" :href="docUrl">{{ $t('Docs') }}</a>
         <locale-switcher></locale-switcher>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">{{ userStore.username }}</a>
+          <a class="navbar-link" data-test="user">{{ userStore.username }}</a>
           <div class="navbar-dropdown is-right">
             <a data-test="logout" class="navbar-item">
               <span class="icon">

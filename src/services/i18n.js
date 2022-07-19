@@ -17,12 +17,12 @@ function loadLocaleMessages() {
   return messages
 }
 
-const currentLocale =
+let currentLocale = (
   localStorage.getItem('locale') ||
   (navigator.languages ? navigator.languages[0] : navigator.language) ||
   process.env.VUE_APP_I18N_LOCALE ||
-  'es-ES'
-
+  'es'
+).substring(0, 2)
 localStorage.setItem('locale', currentLocale)
 
 const messages = loadLocaleMessages()
@@ -36,6 +36,6 @@ export default createI18n({
   legacy: false,
   globalInjection: true,
   locale: currentLocale,
-  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
+  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'es',
   messages,
 })

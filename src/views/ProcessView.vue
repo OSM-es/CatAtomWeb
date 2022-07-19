@@ -1,5 +1,7 @@
 <script setup>
 import { useJobStore } from '@/stores/job'
+// import { useRoute } from 'vue-router'
+// import { useUserStore } from '@/stores/user'
 import JobPanel from '@/components/JobPanel.vue'
 import ChatPanel from '@/components/ChatPanel.vue'
 import DonePanel from '@/components/DonePanel.vue'
