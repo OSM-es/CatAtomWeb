@@ -87,6 +87,7 @@ watch(
   <vue-collapsible-panel-group>
     <vue-collapsible-panel
       ref="processPanel"
+      data-test="processPanel"
       class="panel"
       :class="isActive('processPanel') ? 'is-info' : ''"
       :expanded="isActive('processPanel')"
@@ -134,7 +135,7 @@ watch(
           <div class="panel-block">
             <div class="field">
               <label class="label">{{ $t('Status') }}</label>
-              <div class="control">{{ job.mensaje }}</div>
+              <div data-test="estado" class="control">{{ job.mensaje }}</div>
             </div>
           </div>
           <div class="panel-block">

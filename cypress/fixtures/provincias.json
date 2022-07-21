@@ -1,0 +1,212 @@
+{
+  "provincias": [
+      {
+          "cod_provincia": "02",
+          "nombre": "Albacete"
+      },
+      {
+          "cod_provincia": "03",
+          "nombre": "Alicante"
+      },
+      {
+          "cod_provincia": "04",
+          "nombre": "Almer\u00eda"
+      },
+      {
+          "cod_provincia": "05",
+          "nombre": "\u00c1vila"
+      },
+      {
+          "cod_provincia": "06",
+          "nombre": "Badajoz"
+      },
+      {
+          "cod_provincia": "07",
+          "nombre": "Baleares"
+      },
+      {
+          "cod_provincia": "08",
+          "nombre": "Barcelona"
+      },
+      {
+          "cod_provincia": "09",
+          "nombre": "Burgos"
+      },
+      {
+          "cod_provincia": "10",
+          "nombre": "C\u00e1ceres"
+      },
+      {
+          "cod_provincia": "11",
+          "nombre": "C\u00e1diz"
+      },
+      {
+          "cod_provincia": "12",
+          "nombre": "Castell\u00f3n"
+      },
+      {
+          "cod_provincia": "13",
+          "nombre": "Ciudad Real"
+      },
+      {
+          "cod_provincia": "14",
+          "nombre": "C\u00f3rdoba"
+      },
+      {
+          "cod_provincia": "15",
+          "nombre": "Coru\u00f1a"
+      },
+      {
+          "cod_provincia": "16",
+          "nombre": "Cuenca"
+      },
+      {
+          "cod_provincia": "17",
+          "nombre": "Girona"
+      },
+      {
+          "cod_provincia": "18",
+          "nombre": "Granada"
+      },
+      {
+          "cod_provincia": "19",
+          "nombre": "Guadalajara"
+      },
+      {
+          "cod_provincia": "21",
+          "nombre": "Huelva"
+      },
+      {
+          "cod_provincia": "22",
+          "nombre": "Huesca"
+      },
+      {
+          "cod_provincia": "23",
+          "nombre": "Ja\u00e9n"
+      },
+      {
+          "cod_provincia": "24",
+          "nombre": "Le\u00f3n"
+      },
+      {
+          "cod_provincia": "25",
+          "nombre": "Lleida"
+      },
+      {
+          "cod_provincia": "26",
+          "nombre": "La Rioja"
+      },
+      {
+          "cod_provincia": "27",
+          "nombre": "Lugo"
+      },
+      {
+          "cod_provincia": "28",
+          "nombre": "Madrid"
+      },
+      {
+          "cod_provincia": "29",
+          "nombre": "M\u00e1laga"
+      },
+      {
+          "cod_provincia": "30",
+          "nombre": "Murcia"
+      },
+      {
+          "cod_provincia": "32",
+          "nombre": "Ourense"
+      },
+      {
+          "cod_provincia": "33",
+          "nombre": "Oviedo"
+      },
+      {
+          "cod_provincia": "34",
+          "nombre": "Palencia"
+      },
+      {
+          "cod_provincia": "35",
+          "nombre": "Las Palmas"
+      },
+      {
+          "cod_provincia": "36",
+          "nombre": "Pontevedra"
+      },
+      {
+          "cod_provincia": "37",
+          "nombre": "Salamanca"
+      },
+      {
+          "cod_provincia": "38",
+          "nombre": "Santa Cruz de Tenerife"
+      },
+      {
+          "cod_provincia": "39",
+          "nombre": "Cantabria"
+      },
+      {
+          "cod_provincia": "40",
+          "nombre": "Segovia"
+      },
+      {
+          "cod_provincia": "41",
+          "nombre": "Sevilla"
+      },
+      {
+          "cod_provincia": "42",
+          "nombre": "Soria"
+      },
+      {
+          "cod_provincia": "43",
+          "nombre": "Tarragona"
+      },
+      {
+          "cod_provincia": "44",
+          "nombre": "Teruel"
+      },
+      {
+          "cod_provincia": "45",
+          "nombre": "Toledo"
+      },
+      {
+          "cod_provincia": "46",
+          "nombre": "Valencia"
+      },
+      {
+          "cod_provincia": "47",
+          "nombre": "Valladolid"
+      },
+      {
+          "cod_provincia": "49",
+          "nombre": "Zamora"
+      },
+      {
+          "cod_provincia": "50",
+          "nombre": "Zaragoza"
+      },
+      {
+          "cod_provincia": "51",
+          "nombre": "Cartagena"
+      },
+      {
+          "cod_provincia": "52",
+          "nombre": "Gij\u00f3n"
+      },
+      {
+          "cod_provincia": "53",
+          "nombre": "Jerez de la Frontera"
+      },
+      {
+          "cod_provincia": "54",
+          "nombre": "Vigo"
+      },
+      {
+          "cod_provincia": "55",
+          "nombre": "Ceuta"
+      },
+      {
+          "cod_provincia": "56",
+          "nombre": "Melilla"
+      }
+  ]
+}

@@ -146,6 +146,7 @@ onBeforeUnmount(() => {
       <div class="control">
         <v-select
           v-model="municipio"
+          data-test="municipio"
           :reduce="(mun) => mun && mun.cod_municipio"
           :placeholder="$t('Select the municipality')"
           :options="municipios"
@@ -172,6 +173,7 @@ onBeforeUnmount(() => {
             (job.estado == 'DONE' && job.report.split_name)
           "
           v-model="division"
+          data-test="division"
           label="nombre"
           :reduce="(div) => div && div.osm_id"
           :placeholder="$t('Select the subarea')"

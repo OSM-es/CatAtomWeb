@@ -1,0 +1,222 @@
+{
+  "cod_provincia": "38",
+  "nombre": "Santa Cruz de Tenerife",
+  "municipios": [
+      {
+          "cod_municipio": "38001",
+          "nombre": "Adeje"
+      },
+      {
+          "cod_municipio": "38002",
+          "nombre": "Agulo"
+      },
+      {
+          "cod_municipio": "38003",
+          "nombre": "Alajer\u00f3"
+      },
+      {
+          "cod_municipio": "38004",
+          "nombre": "Arafo"
+      },
+      {
+          "cod_municipio": "38005",
+          "nombre": "Arico"
+      },
+      {
+          "cod_municipio": "38006",
+          "nombre": "Arona"
+      },
+      {
+          "cod_municipio": "38007",
+          "nombre": "Barlovento"
+      },
+      {
+          "cod_municipio": "38008",
+          "nombre": "Bre\u00f1a Alta"
+      },
+      {
+          "cod_municipio": "38009",
+          "nombre": "Bre\u00f1a Baja"
+      },
+      {
+          "cod_municipio": "38010",
+          "nombre": "Buenavista del Norte"
+      },
+      {
+          "cod_municipio": "38011",
+          "nombre": "Candelaria"
+      },
+      {
+          "cod_municipio": "38027",
+          "nombre": "El Paso"
+      },
+      {
+          "cod_municipio": "38054",
+          "nombre": "El Pinar de El Hierro"
+      },
+      {
+          "cod_municipio": "38032",
+          "nombre": "El Rosario"
+      },
+      {
+          "cod_municipio": "38044",
+          "nombre": "El Tanque"
+      },
+      {
+          "cod_municipio": "38012",
+          "nombre": "Fasnia"
+      },
+      {
+          "cod_municipio": "38013",
+          "nombre": "Frontera"
+      },
+      {
+          "cod_municipio": "38014",
+          "nombre": "Fuencaliente de la Palma"
+      },
+      {
+          "cod_municipio": "38015",
+          "nombre": "Garachico"
+      },
+      {
+          "cod_municipio": "38016",
+          "nombre": "Garaf\u00eda"
+      },
+      {
+          "cod_municipio": "38017",
+          "nombre": "Granadilla de Abona"
+      },
+      {
+          "cod_municipio": "38019",
+          "nombre": "Gu\u00eda de Isora"
+      },
+      {
+          "cod_municipio": "38020",
+          "nombre": "G\u00fc\u00edmar"
+      },
+      {
+          "cod_municipio": "38021",
+          "nombre": "Hermigua"
+      },
+      {
+          "cod_municipio": "38022",
+          "nombre": "Icod de los Vinos"
+      },
+      {
+          "cod_municipio": "38018",
+          "nombre": "La Guancha"
+      },
+      {
+          "cod_municipio": "38025",
+          "nombre": "La Matanza de Acentejo"
+      },
+      {
+          "cod_municipio": "38026",
+          "nombre": "La Orotava"
+      },
+      {
+          "cod_municipio": "38051",
+          "nombre": "La Victoria de Acentejo"
+      },
+      {
+          "cod_municipio": "38024",
+          "nombre": "Los Llanos de Aridane"
+      },
+      {
+          "cod_municipio": "38031",
+          "nombre": "Los Realejos"
+      },
+      {
+          "cod_municipio": "38042",
+          "nombre": "Los Silos"
+      },
+      {
+          "cod_municipio": "38028",
+          "nombre": "Puerto de la Cruz"
+      },
+      {
+          "cod_municipio": "38029",
+          "nombre": "Puntagorda"
+      },
+      {
+          "cod_municipio": "38030",
+          "nombre": "Puntallana"
+      },
+      {
+          "cod_municipio": "38033",
+          "nombre": "San Andr\u00e9s y Sauces"
+      },
+      {
+          "cod_municipio": "38023",
+          "nombre": "San Crist\u00f3bal de La Laguna"
+      },
+      {
+          "cod_municipio": "38034",
+          "nombre": "San Juan de la Rambla"
+      },
+      {
+          "cod_municipio": "38035",
+          "nombre": "San Miguel de Abona"
+      },
+      {
+          "cod_municipio": "38036",
+          "nombre": "San Sebasti\u00e1n de la Gomera"
+      },
+      {
+          "cod_municipio": "38037",
+          "nombre": "Santa Cruz de la Palma"
+      },
+      {
+          "cod_municipio": "38900",
+          "nombre": "Santa Cruz de Tenerife"
+      },
+      {
+          "cod_municipio": "38039",
+          "nombre": "Santa \u00darsula"
+      },
+      {
+          "cod_municipio": "38040",
+          "nombre": "Santiago del Teide"
+      },
+      {
+          "cod_municipio": "38041",
+          "nombre": "El Sauzal"
+      },
+      {
+          "cod_municipio": "38043",
+          "nombre": "Tacoronte"
+      },
+      {
+          "cod_municipio": "38045",
+          "nombre": "Tazacorte"
+      },
+      {
+          "cod_municipio": "38046",
+          "nombre": "Tegueste"
+      },
+      {
+          "cod_municipio": "38047",
+          "nombre": "Tijarafe"
+      },
+      {
+          "cod_municipio": "38049",
+          "nombre": "Valle Gran Rey"
+      },
+      {
+          "cod_municipio": "38050",
+          "nombre": "Vallehermoso"
+      },
+      {
+          "cod_municipio": "38048",
+          "nombre": "Valverde"
+      },
+      {
+          "cod_municipio": "38052",
+          "nombre": "Vilaflor"
+      },
+      {
+          "cod_municipio": "38053",
+          "nombre": "Villa de Mazo"
+      }
+  ]
+}

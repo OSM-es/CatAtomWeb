@@ -19,7 +19,7 @@ describe('Login', () => {
     cy.get('[data-target="topNav"').click()
     cy.get('[data-test="login"').click()
     cy.get('[data-test="logout"').should('exist')
-    cy.get('[data-test="user"]').should('contain', 'Indiana Jones')
+    cy.get('[data-test="user"]').should('have.text', 'Indiana Jones')
     cy.get('[data-test="provincia"]').should('be.visible')
   })
 })
