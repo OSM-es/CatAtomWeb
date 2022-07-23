@@ -1,16 +1,10 @@
 /* eslint-disable no-undef */
-before(() => {
-  const login = require('../fixtures/login.json')
-  localStorage.setItem('token', login.session_token)
-  localStorage.setItem('username', login.username)
-  localStorage.setItem('osmId', login.osm_id)
-  cy.intercept('PUT', '/login', {
-    statusCode: 200,
-    body: 'Ok',
-  })
+beforeEach(() => {
+  cy.login()
   cy.intercept('/prov', { fixture: 'provincias.json' })
   cy.intercept('/prov/38', { fixture: 'prov.38.json' })
-  cy.intercept('/job/02001', { fixture: 'job.38900.available.json' })
+  cy.intercept('/mun/38900', { fixture: 'mun.38900.json' })
+  cy.intercept('/job/38900', { fixture: 'job.38900.available.json' })
 })
 
 describe('Selects', () => {
@@ -46,4 +40,8 @@ describe('Selects', () => {
     cy.get('[data-test="division"]').should('contain', 'Distrito Ofra-Costa Sur')
     cy.get('[data-test="division"]').should('not.contain', 'Distrito Anaga')
   })
+})
+
+after('Save municipio', () => {
+  expect(localStorage.getItem('municipio')).equal('38900')
 })

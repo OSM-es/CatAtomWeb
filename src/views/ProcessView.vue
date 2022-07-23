@@ -42,9 +42,15 @@ function reportEnabled() {
               :fixmes="job.revisar"
               :municipio="job.cod_municipio"
             ></fixme-panel>
-            <review-panel v-if="reviewEnabled()"></review-panel>
-            <log-panel v-if="reportEnabled()" title="Report"></log-panel>
-            <log-panel v-if="job.estado != 'AVAILABLE'" title='Log'></log-panel>
+            <review-panel v-if="reviewEnabled()" data-test="review">
+            </review-panel>
+            <log-panel v-if="reportEnabled()" data-test="report" title="Report">
+            </log-panel>
+            <log-panel
+              v-if="job.estado != 'AVAILABLE'"
+              data-test="log"
+              title="Log"
+            ></log-panel>
           </vue-collapsible-panel-group>
         </div>
         <div v-if="job.cod_municipio" class="column is-one-fifth">

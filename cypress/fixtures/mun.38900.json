@@ -1,0 +1,29 @@
+{
+  "cod_municipio": "38900",
+  "divisiones": [
+      {
+          "osm_id": "2591089",
+          "nombre": "Distrito Anaga"
+      },
+      {
+          "osm_id": "2591050",
+          "nombre": "Distrito Centro-Ifara"
+      },
+      {
+          "osm_id": "2573352",
+          "nombre": "Distrito Ofra-Costa Sur"
+      },
+      {
+          "osm_id": "2574134",
+          "nombre": "Distrito Salud-La Salle"
+      },
+      {
+          "osm_id": "2561936",
+          "nombre": "Distrito Suroeste"
+      },
+      {
+          "osm_id": "2574211",
+          "nombre": "Barrio La Salud"
+      }
+  ]
+}

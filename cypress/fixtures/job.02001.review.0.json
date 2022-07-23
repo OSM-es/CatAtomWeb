@@ -1,0 +1,299 @@
+{
+  "cod_municipio": "02001",
+  "cod_division": "",
+  "estado": "REVIEW",
+  "propietario": {
+    "osm_id": "1",
+    "username": "Indiana Jones"
+},
+  "mensaje": "Pendiente de revisar direcciones",
+  "linea": 5,
+  "log": [
+      "2022-07-23 07:00:49,792 - INFO - Generado 'address.osm': 676 nodos, 0 v\u00edas, 0 relaciones",
+      "2022-07-23 07:00:49,795 - INFO - Generado '/catastro/02001/highway_names.csv'. Por favor, compru\u00e9belo y ejecute de nuevo"
+  ],
+  "informe": [
+      "Municipio: Abengibre",
+      "Nombre en Catastro: ABENGIBRE",
+      "C\u00f3digo: 02001",
+      "Fecha: 23/07/22",
+      "Opciones: 02001",
+      "",
+      "=Informaci\u00f3n del sistema=",
+      "Versi\u00f3n de la aplicaci\u00f3n: CatAtom2Osm 2.9.13",
+      "Plataforma: Linux 5.13.0-52-generic #59~20.04.1-Ubuntu SMP Thu Jun 16 21:21:28 UTC 2022 x86_64 x86_64",
+      "Idioma: es_ES",
+      "Versi\u00f3n de QGIS: 3.10.4-A Coru\u00f1a",
+      "Versi\u00f3n de GDAL: 3.0.4",
+      "N\u00famero de CPUs: 2",
+      "Frecuencia de CPU: 3100.0 Mhz",
+      "Tiempo de ejecuci\u00f3n: 16.6 segundos",
+      "Memoria total: 7830.98 MB",
+      "Memoria f\u00edsica usada: 129.42 MB",
+      "Memoria virtual usada: 674.45 MB",
+      "",
+      "=Direcciones=",
+      "",
+      "==Datos de entrada==",
+      "Fecha de origen: 2022-03-11",
+      "N\u00famero de caracter\u00edsticas: 783",
+      "  Tipo entrada: 611",
+      "  Tipo parcela: 172",
+      "C\u00f3digos postales: 2",
+      "Nombres de viales: 44",
+      "",
+      "==Procesado==",
+      "Direcciones sin edificio asociado excluidas: 107",
+      "",
+      "=Edificios=",
+      "",
+      "==Datos de entrada==",
+      "Fecha de origen: 2022-03-11",
+      "N\u00famero de caracter\u00edsticas: 2131",
+      "  Edificios: 703",
+      "  Partes de edificios: 1424",
+      "  Piscinas: 4",
+      "",
+      "==Procesado==",
+      "Partes fuera de contorno eliminadas: 3",
+      "Partes bajo rasante eliminadas: 2",
+      "Edificios con geometr\u00edas multiparte: 167",
+      "Edificios resultantes de dividir multipartes: 368",
+      "Partes fusionadas al contorno: 516",
+      "Partes adyacentes fusionadas: 166",
+      "Geometr\u00edas no v\u00e1lidas eliminadas: 1",
+      "V\u00e9rtices en punta eliminados: 6",
+      "V\u00e9rtices pr\u00f3ximos fusionados: 4289",
+      "Puntos topol\u00f3gicos creados: 463",
+      "V\u00e9rtices simplificados: 1533"
+  ],
+  "report": {
+      "date": "23/07/22",
+      "warnings": [],
+      "errors": [],
+      "fixme_counter": {},
+      "building_counter": {},
+      "platform": "Linux 5.13.0-52-generic #59~20.04.1-Ubuntu SMP Thu Jun 16 21:21:28 UTC 2022 x86_64 x86_64",
+      "app_version": "CatAtom2Osm 2.9.13",
+      "language": "es_ES",
+      "cpu_count": 2,
+      "cpu_freq": 3100.0,
+      "memory": 7830.9765625,
+      "rss": 129.421875,
+      "vms": 674.453125,
+      "options": "02001",
+      "mun_code": "02001",
+      "qgs_version": "3.10.4-A Coru\u00f1a",
+      "gdal_version": "3.0.4",
+      "mun_name": "Abengibre",
+      "cat_mun": "ABENGIBRE",
+      "vertex_zz_cadastralparcel": 1,
+      "vertex_spike_cadastralparcel": 2,
+      "vertex_close_cadastralparcel": 15,
+      "vertex_topo_cadastralparcel": 60,
+      "vertex_simplify_cadastralparcel": 3003,
+      "building_date": "2022-03-11",
+      "inp_features": 2131,
+      "inp_buildings": 703,
+      "inp_pools": 4,
+      "inp_parts": 1424,
+      "outside_parts": 3,
+      "underground_parts": 2,
+      "multipart_geoms_building": 167,
+      "exploded_parts_building": 368,
+      "geom_invalid_building": 1,
+      "vertex_spike_building": 6,
+      "vertex_close_building": 4289,
+      "vertex_topo_building": 463,
+      "parts_to_outline": 516,
+      "adjacent_parts": 166,
+      "vertex_simplify_building": 1533,
+      "address_date": "2022-03-11",
+      "inp_address": 783,
+      "inp_address_entrance": 611,
+      "inp_address_parcel": 172,
+      "orphaned_addresses": 107,
+      "inp_zip_codes": 2,
+      "inp_street_names": 44,
+      "ex_time": 16.63713502883911
+  },
+  "revisar": [],
+  "callejero": [
+      [
+          "AV CASTILLA LA MANCHA",
+          "Avenida Castilla-La Mancha"
+      ],
+      [
+          "CL ALCALA",
+          "Calle Alcal\u00e1"
+      ],
+      [
+          "CL ANTONIO MACHADO",
+          "Calle Antonio Machado"
+      ],
+      [
+          "CL BARRANCO",
+          "Calle Barranco"
+      ],
+      [
+          "CL BARTOLOME E. MURILLO",
+          "Calle Bartolom\u00e9 E. Murillo"
+      ],
+      [
+          "CL BERNARDINO PEREZ INIESTA",
+          "Calle Bernardino P\u00e9rez Iniesta"
+      ],
+      [
+          "CL CALVARIO",
+          "Calle Calvario"
+      ],
+      [
+          "CR ALBACETE",
+          "Calle Carretera de Albacete"
+      ],
+      [
+          "CL CERVANTES",
+          "Calle Cervantes"
+      ],
+      [
+          "CL VICENTE FERRER",
+          "Calle Cervantes"
+      ],
+      [
+          "CL CLARA CAMPOAMOR",
+          "Calle Clara Campoamor"
+      ],
+      [
+          "CL CONTRERAS",
+          "Calle Contreras"
+      ],
+      [
+          "CL CRISTOBAL COLON",
+          "Calle Crist\u00f3bal Col\u00f3n"
+      ],
+      [
+          "CL DIEGO VELAZQUEZ",
+          "Calle Diego Vel\u00e1zquez"
+      ],
+      [
+          "CL DOCTOR FERRANDIZ",
+          "Calle Doctor Ferrandis"
+      ],
+      [
+          "CL DOCTOR FLEMING",
+          "Calle Doctor Fleming"
+      ],
+      [
+          "CL DON PEDRO",
+          "Calle Don Pedro"
+      ],
+      [
+          "CL DOS DE MAYO",
+          "Calle Dos de Mayo"
+      ],
+      [
+          "CL DISEMINADOS",
+          "Calle Ermita"
+      ],
+      [
+          "CL ERMITA",
+          "Calle Ermita"
+      ],
+      [
+          "CL FRONTON",
+          "Calle Ermita"
+      ],
+      [
+          "CL FRANCISCO DE GOYA",
+          "Calle Francisco de Goya"
+      ],
+      [
+          "CL FUENSANTA",
+          "Calle Fuensanta"
+      ],
+      [
+          "CL ISAAC PERAL",
+          "Calle Isaac Peral"
+      ],
+      [
+          "CL LOPE DE VEGA",
+          "Calle Lope de Vega"
+      ],
+      [
+          "CL MANUEL DE FALLA",
+          "Calle Manuel de Falla"
+      ],
+      [
+          "CL MAYOR",
+          "Calle Mayor"
+      ],
+      [
+          "CL MIGUEL SORIANO",
+          "Calle Miguel Soriano"
+      ],
+      [
+          "CL MINISTRO MONARES",
+          "Calle Ministro Monares"
+      ],
+      [
+          "CL NORTE",
+          "Calle Norte"
+      ],
+      [
+          "CL PE\u00d1UELA",
+          "Calle Pe\u00f1uela"
+      ],
+      [
+          "CL PONIENTE",
+          "Calle Poniente"
+      ],
+      [
+          "CL PROYECTO 13",
+          "Calle Proyecto 13"
+      ],
+      [
+          "CL REAL",
+          "Calle Real"
+      ],
+      [
+          "CL SAN CRISTOBAL",
+          "Calle San Crist\u00f3bal"
+      ],
+      [
+          "CL SAN MIGUEL",
+          "Calle San Miguel"
+      ],
+      [
+          "CL TENIENTE GOMEZ",
+          "Calle Teniente G\u00f3mez"
+      ],
+      [
+          "CL TORILEJO",
+          "Calle Torilejo"
+      ],
+      [
+          "CL VALENCIA",
+          "Calle Valencia"
+      ],
+      [
+          "CL VALERA",
+          "Calle Valera"
+      ],
+      [
+          "CL IBARRA",
+          "Calle Ybarra"
+      ],
+      [
+          "CL CRUZ",
+          "Calle la Cruz"
+      ],
+      [
+          "CL FUENTE",
+          "Calle la Fuente"
+      ],
+      [
+          "PZ CONSTITUCION",
+          "Plaza de la Constituci\u00f3n"
+      ]
+  ]
+}

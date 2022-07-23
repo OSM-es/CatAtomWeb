@@ -109,7 +109,11 @@ watch(
               <label class="label">{{ $t('Options') }}</label>
               <div class="checkbox">
                 <label class="checkbox">
-                  <input v-model="job.edificios" type="checkbox" />
+                  <input
+                    v-model="job.edificios"
+                    data-test="edificios"
+                    type="checkbox"
+                  />
                   {{ $t('Process buildings') }}
                 </label>
                 <br />
@@ -122,7 +126,7 @@ watch(
                 <label class="label">{{ $t('Language') }}</label>
                 <div class="control">
                   <div class="select">
-                    <select v-model="job.idioma">
+                    <select v-model="job.idioma" data-test="idioma">
                       <option value="es_ES">Español</option>
                       <option value="ca_ES">Catalá</option>
                       <option value="gl_ES">Galego</option>

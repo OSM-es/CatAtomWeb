@@ -1,0 +1,354 @@
+{
+  "cod_provincia": "02",
+  "nombre": "Albacete",
+  "municipios": [
+      {
+          "cod_municipio": "02001",
+          "nombre": "Abengibre"
+      },
+      {
+          "cod_municipio": "02002",
+          "nombre": "Alatoz"
+      },
+      {
+          "cod_municipio": "02900",
+          "nombre": "Albacete"
+      },
+      {
+          "cod_municipio": "02004",
+          "nombre": "Albatana"
+      },
+      {
+          "cod_municipio": "02005",
+          "nombre": "Alborea"
+      },
+      {
+          "cod_municipio": "02006",
+          "nombre": "Alcadozo"
+      },
+      {
+          "cod_municipio": "02007",
+          "nombre": "Alcal\u00e1 del J\u00facar"
+      },
+      {
+          "cod_municipio": "02008",
+          "nombre": "Alcaraz"
+      },
+      {
+          "cod_municipio": "02009",
+          "nombre": "Almansa"
+      },
+      {
+          "cod_municipio": "02010",
+          "nombre": "Alpera"
+      },
+      {
+          "cod_municipio": "02011",
+          "nombre": "Ayna"
+      },
+      {
+          "cod_municipio": "02012",
+          "nombre": "Balazote"
+      },
+      {
+          "cod_municipio": "02013",
+          "nombre": "Balsa de Ves"
+      },
+      {
+          "cod_municipio": "02015",
+          "nombre": "Barrax"
+      },
+      {
+          "cod_municipio": "02016",
+          "nombre": "Bienservida"
+      },
+      {
+          "cod_municipio": "02017",
+          "nombre": "Bogarra"
+      },
+      {
+          "cod_municipio": "02018",
+          "nombre": "Bonete"
+      },
+      {
+          "cod_municipio": "02020",
+          "nombre": "Carcel\u00e9n"
+      },
+      {
+          "cod_municipio": "02021",
+          "nombre": "Casas de Juan N\u00fa\u00f1ez"
+      },
+      {
+          "cod_municipio": "02022",
+          "nombre": "Casas de L\u00e1zaro"
+      },
+      {
+          "cod_municipio": "02023",
+          "nombre": "Casas de Ves"
+      },
+      {
+          "cod_municipio": "02024",
+          "nombre": "Casas-Ib\u00e1\u00f1ez"
+      },
+      {
+          "cod_municipio": "02025",
+          "nombre": "Caudete"
+      },
+      {
+          "cod_municipio": "02026",
+          "nombre": "Cenizate"
+      },
+      {
+          "cod_municipio": "02029",
+          "nombre": "Alpera"
+      },
+      {
+          "cod_municipio": "02027",
+          "nombre": "Corral-Rubio"
+      },
+      {
+          "cod_municipio": "02028",
+          "nombre": "Cotillas"
+      },
+      {
+          "cod_municipio": "02014",
+          "nombre": "El Ballestero"
+      },
+      {
+          "cod_municipio": "02019",
+          "nombre": "El Bonillo"
+      },
+      {
+          "cod_municipio": "02030",
+          "nombre": "Elche de la Sierra"
+      },
+      {
+          "cod_municipio": "02031",
+          "nombre": "F\u00e9rez"
+      },
+      {
+          "cod_municipio": "02032",
+          "nombre": "Fuensanta"
+      },
+      {
+          "cod_municipio": "02033",
+          "nombre": "Fuente-\u00c1lamo"
+      },
+      {
+          "cod_municipio": "02034",
+          "nombre": "Fuentealbilla"
+      },
+      {
+          "cod_municipio": "02036",
+          "nombre": "Golosalvo"
+      },
+      {
+          "cod_municipio": "02037",
+          "nombre": "Hell\u00edn"
+      },
+      {
+          "cod_municipio": "02039",
+          "nombre": "Higueruela"
+      },
+      {
+          "cod_municipio": "02040",
+          "nombre": "Hoya-Gonzalo"
+      },
+      {
+          "cod_municipio": "02041",
+          "nombre": "Jorquera"
+      },
+      {
+          "cod_municipio": "02035",
+          "nombre": "La Gineta"
+      },
+      {
+          "cod_municipio": "02038",
+          "nombre": "La Herrera"
+      },
+      {
+          "cod_municipio": "02066",
+          "nombre": "La Recueja"
+      },
+      {
+          "cod_municipio": "02069",
+          "nombre": "La Roda"
+      },
+      {
+          "cod_municipio": "02042",
+          "nombre": "Letur"
+      },
+      {
+          "cod_municipio": "02043",
+          "nombre": "Lezuza"
+      },
+      {
+          "cod_municipio": "02044",
+          "nombre": "Li\u00e9tor"
+      },
+      {
+          "cod_municipio": "02045",
+          "nombre": "Madrigueras"
+      },
+      {
+          "cod_municipio": "02046",
+          "nombre": "Mahora"
+      },
+      {
+          "cod_municipio": "02047",
+          "nombre": "Masegoso"
+      },
+      {
+          "cod_municipio": "02048",
+          "nombre": "Minaya"
+      },
+      {
+          "cod_municipio": "02049",
+          "nombre": "Molinicos"
+      },
+      {
+          "cod_municipio": "02050",
+          "nombre": "Montalvos"
+      },
+      {
+          "cod_municipio": "02051",
+          "nombre": "Montealegre del Castillo"
+      },
+      {
+          "cod_municipio": "02052",
+          "nombre": "Motilleja"
+      },
+      {
+          "cod_municipio": "02053",
+          "nombre": "Munera"
+      },
+      {
+          "cod_municipio": "02054",
+          "nombre": "Navas de Jorquera"
+      },
+      {
+          "cod_municipio": "02055",
+          "nombre": "Nerpio"
+      },
+      {
+          "cod_municipio": "02056",
+          "nombre": "Ontur"
+      },
+      {
+          "cod_municipio": "02057",
+          "nombre": "Ossa de Montiel"
+      },
+      {
+          "cod_municipio": "02058",
+          "nombre": "Paterna del Madera"
+      },
+      {
+          "cod_municipio": "02061",
+          "nombre": "P\u00e9trola"
+      },
+      {
+          "cod_municipio": "02060",
+          "nombre": "Pe\u00f1as de San Pedro"
+      },
+      {
+          "cod_municipio": "02059",
+          "nombre": "Pe\u00f1ascosa"
+      },
+      {
+          "cod_municipio": "02062",
+          "nombre": "Povedilla"
+      },
+      {
+          "cod_municipio": "02087",
+          "nombre": "Pozo Ca\u00f1ada"
+      },
+      {
+          "cod_municipio": "02064",
+          "nombre": "Pozo-Lorente"
+      },
+      {
+          "cod_municipio": "02063",
+          "nombre": "Pozohondo"
+      },
+      {
+          "cod_municipio": "02065",
+          "nombre": "Pozuelo"
+      },
+      {
+          "cod_municipio": "02067",
+          "nombre": "Ri\u00f3par"
+      },
+      {
+          "cod_municipio": "02068",
+          "nombre": "Robledo"
+      },
+      {
+          "cod_municipio": "02070",
+          "nombre": "Salobre"
+      },
+      {
+          "cod_municipio": "02071",
+          "nombre": "San Pedro"
+      },
+      {
+          "cod_municipio": "02072",
+          "nombre": "Socovos"
+      },
+      {
+          "cod_municipio": "02073",
+          "nombre": "Tarazona de la Mancha"
+      },
+      {
+          "cod_municipio": "02074",
+          "nombre": "Tobarra"
+      },
+      {
+          "cod_municipio": "02075",
+          "nombre": "Valdeganga"
+      },
+      {
+          "cod_municipio": "02076",
+          "nombre": "Vianos"
+      },
+      {
+          "cod_municipio": "02077",
+          "nombre": "Villa de Ves"
+      },
+      {
+          "cod_municipio": "02078",
+          "nombre": "Villalgordo del J\u00facar"
+      },
+      {
+          "cod_municipio": "02079",
+          "nombre": "Villamalea"
+      },
+      {
+          "cod_municipio": "02080",
+          "nombre": "Villapalacios"
+      },
+      {
+          "cod_municipio": "02081",
+          "nombre": "Villarrobledo"
+      },
+      {
+          "cod_municipio": "02082",
+          "nombre": "Villatoya"
+      },
+      {
+          "cod_municipio": "02083",
+          "nombre": "Villavaliente"
+      },
+      {
+          "cod_municipio": "02084",
+          "nombre": "Villaverde de Guadalimar"
+      },
+      {
+          "cod_municipio": "02085",
+          "nombre": "Viveros"
+      },
+      {
+          "cod_municipio": "02086",
+          "nombre": "Yeste"
+      }
+  ]
+}

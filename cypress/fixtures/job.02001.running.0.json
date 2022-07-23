@@ -1,0 +1,16 @@
+{
+  "cod_municipio": "02001",
+  "cod_division": "",
+  "estado": "RUNNING",
+  "propietario": {
+    "osm_id": "1",
+    "username": "Indiana Jones"
+},
+  "mensaje": "Procesando...",
+  "linea": 0,
+  "log": [],
+  "informe": [],
+  "report": {},
+  "revisar": [],
+  "callejero": []
+}
