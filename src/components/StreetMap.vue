@@ -12,17 +12,43 @@ const job = useJobStore()
 
 let map
 let layer
+let images
+let viewer
+
+function getImg(data) {
+  const ref = data.localId.split('.').pop()
+  const foto =
+    'http://ovc.catastro.meh.es/OVCServWeb/OVCWcfLibres/OVCFotoFachada.svc/RecuperarFotoFachadaGet?ReferenciaCatastral='
+  return { src: foto + ref, alt: `${data.TN_text} ${data.designator}` }
+}
+
+function getViewer() {
+  const options = {
+    navbar: false,
+    rotatable: false,
+    scalable: false,
+    title: [true, (image) => `${image.alt}`],
+  }
+  return viewerApi({ options, images })
+}
+
+function showImg(index) {
+  viewer = getViewer()
+  viewer.view(index)
+}
 
 watch(
   () => props.street,
   async (newStreet) => {
     const data = await job.getHighway(newStreet)
-    console.info(data)
+    let i = 0
+    images = []
     if (layer) {
       map.removeLayer(layer)
     }
     layer = leaflet.geoJSON(data, {
       onEachFeature: (feat, flayer) => {
+        images.push(getImg(feat.properties))
         flayer.setIcon(
           new leaflet.DivIcon({
             className: 'portal',
@@ -30,8 +56,10 @@ watch(
           })
         )
         flayer.on('click', (event) => {
-          showImg(event.target.feature.properties.localId)
+          showImg(event.target.feature.properties.index)
         })
+        feat.properties.index = i
+        i += 1
       },
     })
     layer.addTo(map)
@@ -48,19 +76,6 @@ onMounted(() => {
     })
     .addTo(map)
 })
-
-function showImg(localId) {
-  const ref = localId.split('.').pop()
-  const foto =
-    'http://ovc.catastro.meh.es/OVCServWeb/OVCWcfLibres/OVCFotoFachada.svc/RecuperarFotoFachadaGet?ReferenciaCatastral='
-  const options = {
-    navbar: false,
-    rotatable: false,
-    scalable: false,
-    title: [true, () => '© Dirección General de Catastro'],
-  }
-  viewerApi({ options, images: [foto + ref] })
-}
 </script>
 
 <template>
@@ -81,9 +96,19 @@ function showImg(localId) {
   border: 1px solid #dc143c;
 }
 
+.viewer-title::before {
+  content: '© Dirección General de Catastro';
+  display: block;
+  margin-bottom: 1em;
+  font-size: 12px;
+}
+
 .viewer-title {
   opacity: 100% !important;
+  font-size: 16px !important;
   color: white !important;
+  background-color: #00000033;
+  padding: 0.2em 0.4em;
 }
 
 .viewer-backdrop {
