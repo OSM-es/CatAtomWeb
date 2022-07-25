@@ -11,7 +11,9 @@ const props = defineProps({
   },
 })
 
-const data = props.title == 'Log' ? job.log : job.informe
+function getData() {
+  return props.title == 'Log' ? job.log : job.informe
+}
 
 function isActive() {
   return job.estado == 'RUNNING' ? 'is-info' : ''
@@ -26,7 +28,7 @@ function isActive() {
     <template #content>
       <div class="panel-block">
         <div class="container">
-          <p v-for="(row, i) in data" :key="i" class="terminal">
+          <p v-for="(row, i) in getData()" :key="i" class="terminal">
             {{ row }}
           </p>
           <div v-if="job.estado == 'RUNNING'" class="loader"></div>

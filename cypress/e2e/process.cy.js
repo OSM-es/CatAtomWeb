@@ -37,7 +37,8 @@ describe('Create process', () => {
         log.should('be.visible')
         log.should('have.class', 'is-info')
         cy.wait('@getjob').then(() => {
-          //log.find('[class="terminal"]').should('have.length', 3)
+          const log = cy.get('[data-test="log"]')
+          log.find('[class="terminal"]').should('have.length', 3)
           log.get('[class="loader"').should('be.visible')
           cy.wait('@getjob').then(() => {
             const review = cy.get('[data-test="review"]')
@@ -45,6 +46,8 @@ describe('Create process', () => {
             review.should('have.class', 'is-info')
             const report = cy.get('[data-test="report"]')
             report.find('[class="terminal"]').should('have.length', 53)
+            const log = cy.get('[data-test="log"]')
+            log.find('[class="terminal"]').should('have.length', 5)
           })
         })
       })

@@ -83,6 +83,7 @@ function showMap(street) {
   </quick-view>
   <vue-collapsible-panel
     class="panel"
+    data-test="review"
     :class="isActive()"
     :expanded="isExpanded()"
   >
