@@ -56,6 +56,10 @@ api.deleteJob = (cod_municipio, cod_division) => {
   return api.delete('job/' + cod_municipio + '/' + div)
 }
 
+api.getHgw = (cod_municipio, street) => {
+  return api.get('hgw/' + cod_municipio, { params: { street } })
+}
+
 api.putHgw = (cod_municipio, data) => {
   return api.put('hgw/' + cod_municipio, data)
 }

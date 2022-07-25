@@ -35,3 +35,10 @@ function isActive() {
     </template>
   </vue-collapsible-panel>
 </template>
+
+<style lang="scss">
+.terminal {
+  font-family: monospace;
+  margin-bottom: 0 !important;
+}
+</style>

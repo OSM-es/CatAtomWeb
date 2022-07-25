@@ -50,7 +50,7 @@ function logout() {
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
       <div v-if="userStore.isLogged" class="navbar-end">
-        <a class="navbar-item" :href="docUrl">{{ $t('Docs') }}</a>
+        <a class="navbar-item" :href="$docUrl">{{ $t('Docs') }}</a>
         <locale-switcher></locale-switcher>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link" data-test="user">{{ userStore.username }}</a>

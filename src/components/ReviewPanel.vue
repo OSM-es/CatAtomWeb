@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 import debounce from 'lodash.debounce'
+import QuickView from '@/components/QuickView.vue'
+import StreetMap from '@/components/StreetMap.vue'
 import { useJobStore } from '@/stores/job'
 import { useI18n } from 'vue-i18n'
 import { useChatService } from '@/services/chat'
@@ -13,6 +15,8 @@ const user = useUserStore()
 const filters = ref({ name: { value: '', keys: ['cat', 'conv'] } })
 const totalPages = ref(1)
 const currentPage = ref(1)
+const mapIsVisible = ref(false)
+const currentStreet = ref('')
 
 chat.on('highway', (data) => {
   if (!user.isOwner(data)) {
@@ -61,9 +65,22 @@ function getOwner(row) {
   }
   return null
 }
+
+function showMap(street) {
+  currentStreet.value = street
+  mapIsVisible.value = true
+}
 </script>
 
 <template>
+  <quick-view v-model="mapIsVisible" classes="reviewmap is-left">
+    <template #header>
+      <p class="title">{{ currentStreet }}</p>
+    </template>
+    <template #body>
+      <street-map :street="currentStreet"></street-map>
+    </template>
+  </quick-view>
   <vue-collapsible-panel
     class="panel"
     :class="isActive()"
@@ -74,7 +91,7 @@ function getOwner(row) {
     </template>
     <template #content>
       <div class="panel-block">
-        <div class="field has-addons">
+        <div class="field has-addons has-addons-right ml-auto">
           <div class="control has-icons-right">
             <input
               ref="filterInput"
@@ -116,7 +133,9 @@ function getOwner(row) {
           </template>
           <template #body="{ rows }">
             <tr v-for="row in rows" :key="row.key" :class="row.color">
-              <td class="is-valign-middle">{{ row.cat }}</td>
+              <td class="is-valign-middle" @click="showMap(row.cat)">
+                <a>{{ row.cat }}</a>
+              </td>
               <td>
                 <div class="field has-addons">
                   <div
@@ -128,6 +147,7 @@ function getOwner(row) {
                       :value="row.conv"
                       :readonly="job.estado != 'REVIEW'"
                       @input="(e) => editHandler(row.key, e.target.value)"
+                      @focus="showMap(row.cat)"
                     />
                   </div>
                   <div class="control">
@@ -146,7 +166,7 @@ function getOwner(row) {
           </template>
         </VTable>
       </div>
-      <div class="panel-block">
+      <div class="panel-block is-pulled-right">
         <VTPagination
           v-model:currentPage="currentPage"
           :total-pages="totalPages"

@@ -5,14 +5,8 @@
     class="panel-block is-block"
     :class="chatColor(fixme)"
   >
-    <nav
-      v-if="!files.fileExists(fixme.filename)"
-      class="level is-mobile"
-    >
-      <div
-        class="level-left has-tooltip-arrow"
-        :data-tooltip="getOwner(fixme)"
-      >
+    <nav v-if="!files.fileExists(fixme.filename)" class="level is-mobile">
+      <div class="level-left has-tooltip-arrow" :data-tooltip="getOwner(fixme)">
         <a
           :href="getUrl(fixme.filename)"
           :class="isLocked(fixme)"

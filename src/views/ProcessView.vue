@@ -1,7 +1,5 @@
 <script setup>
 import { useJobStore } from '@/stores/job'
-// import { useRoute } from 'vue-router'
-// import { useUserStore } from '@/stores/user'
 import JobPanel from '@/components/JobPanel.vue'
 import ChatPanel from '@/components/ChatPanel.vue'
 import DonePanel from '@/components/DonePanel.vue'
@@ -60,10 +58,3 @@ function reportEnabled() {
     </div>
   </section>
 </template>
-
-<style lang="scss">
-.terminal {
-  font-family: monospace;
-  margin-bottom: 0 !important;
-}
-</style>
