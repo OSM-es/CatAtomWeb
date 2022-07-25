@@ -40,8 +40,7 @@ function reportEnabled() {
               :fixmes="job.revisar"
               :municipio="job.cod_municipio"
             ></fixme-panel>
-            <review-panel v-if="reviewEnabled()" data-test="review">
-            </review-panel>
+            <review-panel v-if="reviewEnabled()"></review-panel>
             <log-panel v-if="reportEnabled()" data-test="report" title="Report">
             </log-panel>
             <log-panel

@@ -13,6 +13,7 @@ const job = useJobStore()
 let map
 let layer
 let images
+let control
 let viewer
 
 function getImg(data) {
@@ -45,6 +46,7 @@ watch(
     images = []
     if (layer) {
       map.removeLayer(layer)
+      control.removeLayer(layer)
     }
     layer = leaflet.geoJSON(data, {
       onEachFeature: (feat, flayer) => {
@@ -63,18 +65,25 @@ watch(
       },
     })
     layer.addTo(map)
+    control.addOverlay(layer, 'Fotos')
     map.fitBounds(layer.getBounds())
   }
 )
 
 onMounted(() => {
   map = leaflet.map('map').setView([51.505, -0.09], 13)
-  leaflet
+  const scne = leaflet.tileLayer.wms('http://www.ign.es/wms-inspire/ign-base', {
+    layers: 'IGNBaseTodo',
+    attribution:
+      '© <a href="http://www.scne.es">Sistema Cartográfico Nacional</a>',
+  })
+  const osm = leaflet
     .tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '© OpenStreetMap',
+      attribution: '<a href="https://www.openstreetmap.org/"OpenStreetMap</a>',
     })
     .addTo(map)
+  control = leaflet.control.layers({ OSM: osm, 'IGN-Base': scne }).addTo(map)
 })
 </script>
 
