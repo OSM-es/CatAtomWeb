@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onBeforeUnmount, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute, useRouter } from 'vue-router'
 import api from '@/services/api'
 import { useJobStore } from '@/stores/job'
 import { useProvStore } from '@/stores/provincias'
@@ -10,6 +11,8 @@ import { useUserStore } from '@/stores/user'
 const { t } = useI18n()
 const wikiUrl =
   'https://wiki.openstreetmap.org/wiki/ES:Tag:boundary%3Dadministrative'
+const route = useRoute()
+const router = useRouter()
 const job = useJobStore()
 const chat = useChatService()
 const userStore = useUserStore()
@@ -104,7 +107,11 @@ function getJobStatus() {
     }
     job.getJob(municipio.value, division.value || '').then(() => {
       division.value = job.cod_division
-      localStorage.setItem('municipio', municipio.value)
+      console.info(route)
+      if (localStorage.getItem('municipio') != municipio.value) {
+        localStorage.setItem('municipio', municipio.value)
+        router.replace({ name: 'process' })
+      }
       municipioPrevio = municipio.value
     })
   }
