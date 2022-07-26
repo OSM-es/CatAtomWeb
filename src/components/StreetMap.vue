@@ -74,13 +74,15 @@ onMounted(() => {
   map = leaflet.map('map').setView([51.505, -0.09], 13)
   const scne = leaflet.tileLayer.wms('http://www.ign.es/wms-inspire/ign-base', {
     layers: 'IGNBaseTodo',
+    maxZoom: 19,
     attribution:
       '© <a href="http://www.scne.es">Sistema Cartográfico Nacional</a>',
   })
   const osm = leaflet
     .tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '<a href="https://www.openstreetmap.org/"OpenStreetMap</a>',
+      attribution:
+        '© <a href="https://www.openstreetmap.org/"OpenStreetMap</a>',
     })
     .addTo(map)
   control = leaflet.control.layers({ OSM: osm, 'IGN-Base': scne }).addTo(map)
