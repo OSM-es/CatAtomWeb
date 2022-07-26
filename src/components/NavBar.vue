@@ -33,9 +33,12 @@ function logout() {
           src="@/assets/logo.svg"
           class="navbar-item logo"
         />
-        <h1 class="navbar-item is-size-3 has-text-weight-bold">
-          CatAtom2Osm&nbsp;<span class="is-size-5">online</span>
-        </h1>
+        <div class="navbar-item">
+          <div class="content">
+            <h1 class="is-size-3 mb-0 has-text-weight-bold">CatAtom2Osm</h1>
+            <p class="is-size-6">online</p>
+          </div>
+        </div>
       </router-link>
       <div
         class="navbar-burger burger"
@@ -104,5 +107,8 @@ function logout() {
 <style lang="scss">
 .logo {
   max-height: 4em !important;
+}
+.navbar-item {
+  padding: 0.25em 0.75em !important;
 }
 </style>

@@ -40,16 +40,27 @@ function getClass() {
 .reviewmap.is-active {
   right: 0 !important;
 }
+
 .reviewmap.is-active.is-left {
   left: 0 !important;
 }
-.reviewmap.is-left {
-  left: -40% !important;
+
+@media screen and (max-width: 768px) {
+  .reviewmap {
+    width: 100% !important;
+    right: -100% !important;
+  }
+  .reviewmap.is-left {
+    left: -100% !important;
+  }
 }
 @media screen and (min-width: 769px), print {
   .reviewmap {
     width: 40% !important;
     right: -40% !important;
+  }
+  .reviewmap.is-left {
+    left: -40% !important;
   }
 }
 
