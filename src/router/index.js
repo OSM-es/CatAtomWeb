@@ -11,7 +11,7 @@ const routes = [
     component: HomeView,
   },
   {
-    path: '/',
+    path: '/:munCode?',
     name: 'process',
     component: ProcessView,
     meta: {

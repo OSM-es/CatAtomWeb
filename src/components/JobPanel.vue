@@ -70,13 +70,19 @@ async function fetchMunicipios(prov) {
   }))
 }
 
-async function fetchDivisiones(mun) {
+function fetchDivisiones(mun) {
   getJobStatus()
   loadingDiv.value = true
-  const response = await api.getMun(mun)
-  division.value = null
-  loadingDiv.value = false
-  divisiones.value = response.data.divisiones
+  api
+    .getMun(mun)
+    .then((response) => {
+      division.value = null
+      loadingDiv.value = false
+      divisiones.value = response.data.divisiones
+    })
+    .catch(() => {
+      loadingDiv.value = false
+    })
 }
 
 function getRoom(cod_municipio = municipio.value) {

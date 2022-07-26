@@ -1,5 +1,6 @@
 <script setup>
 import { useJobStore } from '@/stores/job'
+import { useRoute } from 'vue-router'
 import JobPanel from '@/components/JobPanel.vue'
 import ChatPanel from '@/components/ChatPanel.vue'
 import DonePanel from '@/components/DonePanel.vue'
@@ -9,6 +10,12 @@ import ReviewPanel from '@/components/ReviewPanel.vue'
 import ProcessPanelGroup from '@/components/ProcessPanelGroup.vue'
 
 const job = useJobStore()
+const route = useRoute()
+
+const munCode = route.params.munCode
+if (munCode) {
+  localStorage.setItem('municipio', munCode)
+}
 
 function fixmeEnabled() {
   return job.revisar.length > 0 && job.estado != 'RUNNING'

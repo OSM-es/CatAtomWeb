@@ -13,6 +13,9 @@ export const useErrorStore = defineStore({
   getters: {
     message: (state) => {
       let msg = ''
+      if (!state.error) {
+        return
+      }
       if (state.error.response && state.error.response.data) {
         msg = state.error.response.data.message
       } else if (state.error.message) {
@@ -30,18 +33,21 @@ export const useErrorStore = defineStore({
 
   actions: {
     set(error) {
+      const prevMsg = this.message
       this.error = error
-      toast({
-        message: this.message,
-        type: 'is-danger',
-        position: 'top-center',
-        duration: 20000,
-        dismissible: true,
-        pauseOnHover: true,
-        closeOnClick: false,
-        offsetTop: '2.5em',
-        opacity: 0.8,
-      })
+      if (this.message != prevMsg) {
+        toast({
+          message: this.message,
+          type: 'is-danger',
+          position: 'top-center',
+          duration: 20000,
+          dismissible: true,
+          pauseOnHover: true,
+          closeOnClick: false,
+          offsetTop: '2.5em',
+          opacity: 0.8,
+        })
+      }
     },
     clear() {
       this.error = null
