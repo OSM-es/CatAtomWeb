@@ -13,8 +13,9 @@ import {
   faExclamationTriangle,
   faExternalLink,
   faUpload,
-  faSearch,
   faPaperPlane,
+  faShare,
+  faSearch,
   faTimes,
   faUser,
   faUserPlus,
@@ -31,8 +32,9 @@ library.add(faDownload)
 library.add(faExclamationTriangle)
 library.add(faExternalLink)
 library.add(faUpload)
-library.add(faSearch)
 library.add(faPaperPlane)
+library.add(faShare)
+library.add(faSearch)
 library.add(faTimes)
 library.add(faUser)
 library.add(faUserPlus)

@@ -81,11 +81,10 @@ function showMap(street) {
         &nbsp;<a
           :href="`https://www.openstreetmap.org/#map=${currentCoords}`"
           target="_blank"
-          >Ver en OpenStreetMap</a
         >
-        <span class="icon">
+          {{ $t('view_in_osm') }}
           <font-awesome-icon icon="external-link" />
-        </span>
+        </a>
       </p>
     </template>
     <template #body>

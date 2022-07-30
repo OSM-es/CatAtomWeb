@@ -82,5 +82,7 @@
   "Proceso no encontrado": "Process not found",
   "create_job": "{username} started processing of {room}",
   "restart_job": "{username} restarted processing of {room}",
-  "delete_job": "{username} deletes processing of {room}"
+  "delete_job": "{username} deletes processing of {room}",
+  "done": "Done",
+  "view_in_osm": "View in OpenStreetMap"
 }

@@ -82,5 +82,7 @@
   "Proceso no encontrado": "Proceso no encontrado",
   "create_job": "{username} inicia el proceso de {room}",
   "restart_job": "{username} reinicia el proceso de {room}",
-  "delete_job": "{username} elimina el proceso de {room}"
+  "delete_job": "{username} elimina el proceso de {room}",
+  "done": "Hecho",
+  "view_in_osm": "Ver en OpenStreetMap"
 }

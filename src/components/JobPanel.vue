@@ -7,6 +7,7 @@ import { useJobStore } from '@/stores/job'
 import { useProvStore } from '@/stores/provincias'
 import { useChatService } from '@/services/chat'
 import { useUserStore } from '@/stores/user'
+import { clipboardHandler } from '@/compositions/clipboard'
 
 const { t } = useI18n()
 const wikiUrl =
@@ -115,6 +116,11 @@ function getJobStatus() {
   }
 }
 
+function shareLink(event) {
+  const link = job.cod_municipio
+  clipboardHandler(event, link)
+}
+
 onMounted(() => {
   provincias.fetch()
   const mun = localStorage.getItem('municipio')
@@ -209,5 +215,14 @@ onBeforeUnmount(() => {
         <a :href="wikiUrl">{{ $t('admin boundaries') }}</a>
       </i18n-t>
     </div>
+    <a
+      v-else
+      class="has-tooltip-arrow"
+      :data-tooltip="$t('Copy to clipboard')"
+      @click="shareLink"
+    >
+      Compartir proyecto
+      <font-awesome-icon icon="share" />
+    </a>
   </div>
 </template>

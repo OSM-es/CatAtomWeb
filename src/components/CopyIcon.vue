@@ -1,10 +1,11 @@
 <script setup>
 import { ref } from 'vue'
+import { clipboardHandler } from '@/compositions/clipboard'
 
 const data = ref(null)
 
-function copyToClipboard() {
-  navigator.clipboard.writeText(data.value.outerText || data.value.innerHTML)
+function copyToClipboard(event) {
+  clipboardHandler(event, data.value.outerText || data.value.innerHTML)
 }
 </script>
 
