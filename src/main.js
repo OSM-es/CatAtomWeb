@@ -14,9 +14,12 @@ import {
   faExternalLink,
   faUpload,
   faPaperPlane,
+  faRepeat,
+  faRunning,
   faShare,
   faSearch,
   faTimes,
+  faTrash,
   faUser,
   faUserPlus,
   faUserTimes,
@@ -33,9 +36,12 @@ library.add(faExclamationTriangle)
 library.add(faExternalLink)
 library.add(faUpload)
 library.add(faPaperPlane)
+library.add(faRepeat)
+library.add(faRunning)
 library.add(faShare)
 library.add(faSearch)
 library.add(faTimes)
+library.add(faTrash)
 library.add(faUser)
 library.add(faUserPlus)
 library.add(faUserTimes)

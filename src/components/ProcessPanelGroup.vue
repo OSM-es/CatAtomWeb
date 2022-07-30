@@ -143,9 +143,14 @@ watch(
             </div>
           </div>
           <div class="panel-block">
-            <process-button @click="processJob()">{{
-              $t('Process')
-            }}</process-button>
+            <process-button @click="processJob()">
+              <span>
+                {{ $t('Process') }}
+              </span>
+              <span class="icon">
+                <font-awesome-icon icon="running" />
+              </span>
+            </process-button>
           </div>
         </div>
       </template>
@@ -165,7 +170,10 @@ watch(
         </div>
         <div class="panel-block">
           <process-button @click="processJob()">
-            {{ $t('Reprocess') }}
+            <span>{{ $t('Reprocess') }}</span>
+            <span class="icon">
+              <font-awesome-icon icon="repeat" />
+            </span>
           </process-button>
         </div>
       </div>
@@ -200,7 +208,10 @@ watch(
             </i18n-t>
           </p>
           <process-button v-else @click="job.deleteFixme">
-            {{ $t('Confirm') }}
+            <span>{{ $t('Confirm') }}</span>
+            <span class="icon">
+              <font-awesome-icon icon="check" />
+            </span>
           </process-button>
         </div>
       </div>
@@ -278,7 +289,10 @@ watch(
                 class="button is-link is-outlined is-fullwidth"
                 :href="exportJobUrl()"
               >
-                {{ $t('Export') }}
+                <span>{{ $t('Export') }}</span>
+                <span class="icon">
+                  <font-awesome-icon icon="download" />
+                </span>
               </a>
             </div>
           </div>
@@ -286,7 +300,10 @@ watch(
             <div class="content">
               <p>{{ $t('delete_msg') }}</p>
               <process-button @click="deleteJob">
-                {{ $t('Delete') }}
+                <span>{{ $t('Delete') }}</span>
+                <span class="icon">
+                  <font-awesome-icon icon="trash" />
+                </span>
               </process-button>
             </div>
           </div>
