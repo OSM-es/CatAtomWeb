@@ -7,7 +7,10 @@ import { useJobStore } from '@/stores/job'
 // eslint-disable-next-line no-undef
 const props = defineProps({
   street: { type: String, default: '' },
+  modelValue: { type: String, default: '' },
 })
+// eslint-disable-next-line no-undef
+const emit = defineEmits(['update:modelValue'])
 const job = useJobStore()
 
 let map
@@ -67,6 +70,8 @@ watch(
     layer.addTo(map)
     control.addOverlay(layer, 'Fotos')
     map.fitBounds(layer.getBounds())
+    const coords = map.getCenter()
+    emit('update:modelValue', `${map.getZoom()}/${coords.lat}/${coords.lng}`)
   }
 )
 

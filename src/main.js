@@ -11,6 +11,7 @@ import {
   faCopy,
   faDownload,
   faExclamationTriangle,
+  faExternalLink,
   faUpload,
   faSearch,
   faPaperPlane,
@@ -28,6 +29,7 @@ library.add(faAngleDown)
 library.add(faCopy)
 library.add(faDownload)
 library.add(faExclamationTriangle)
+library.add(faExternalLink)
 library.add(faUpload)
 library.add(faSearch)
 library.add(faPaperPlane)

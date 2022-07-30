@@ -17,6 +17,7 @@ const totalPages = ref(1)
 const currentPage = ref(1)
 const mapIsVisible = ref(false)
 const currentStreet = ref('')
+const currentCoords = ref('')
 
 chat.on('highway', (data) => {
   if (!user.isOwner(data)) {
@@ -75,10 +76,20 @@ function showMap(street) {
 <template>
   <quick-view v-model="mapIsVisible" classes="reviewmap is-left">
     <template #header>
-      <p class="title">{{ currentStreet }}</p>
+      <p>
+        <span class="title">{{ currentStreet }}</span>
+        &nbsp;<a
+          :href="`https://www.openstreetmap.org/#map=${currentCoords}`"
+          target="_blank"
+          >Ver en OpenStreetMap</a
+        >
+        <span class="icon">
+          <font-awesome-icon icon="external-link" />
+        </span>
+      </p>
     </template>
     <template #body>
-      <street-map :street="currentStreet"></street-map>
+      <street-map v-model="currentCoords" :street="currentStreet"></street-map>
     </template>
   </quick-view>
   <vue-collapsible-panel
