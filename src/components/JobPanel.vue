@@ -117,7 +117,7 @@ function getJobStatus() {
 }
 
 function shareLink(event) {
-  const link = job.cod_municipio
+  const link = document.location.origin + '/' + job.cod_municipio
   clipboardHandler(event, link)
 }
 

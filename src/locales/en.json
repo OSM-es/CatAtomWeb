@@ -25,7 +25,7 @@
   "Publish": "Publish",
   "Task manager": "Task manager",
   "done_msg1": "Create a new proyect in the {0} using the file {1}.",
-  "done_msg2": "Fill in the necessary fields by copying {0} from the template displayed on the panel.",
+  "done_msg2": "Fill in the necessary fields by copying ({0}) from the template displayed on the panel.",
   "done_msg3": "View the {0}.",
   "process result": "process result",
   "You can also": "You can also",
@@ -84,5 +84,6 @@
   "restart_job": "{username} restarted processing of {room}",
   "delete_job": "{username} deletes processing of {room}",
   "done": "Done",
-  "view_in_osm": "View in OpenStreetMap"
+  "view_in_osm": "View in OpenStreetMap",
+  "Validate": "Validate"
 }

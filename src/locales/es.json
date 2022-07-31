@@ -25,7 +25,7 @@
   "Publish": "Publicar",
   "Task manager": "Gestor de tareas",
   "done_msg1": "Crea un nuevo proyecto en el {0} usando el archivo {1}.",
-  "done_msg2": "Completa los campos necesarios copiándolos {0} de la plantilla mostrada en el panel.",
+  "done_msg2": "Completa los campos necesarios copiándolos ({0}) de la plantilla mostrada en el panel.",
   "done_msg3": "Ver el {0}.",
   "process result": "resultado del proceso",
   "You can also": "También puedes",
@@ -84,5 +84,6 @@
   "restart_job": "{username} reinicia el proceso de {room}",
   "delete_job": "{username} elimina el proceso de {room}",
   "done": "Hecho",
-  "view_in_osm": "Ver en OpenStreetMap"
+  "view_in_osm": "Ver en OpenStreetMap",
+  "Validate": "Validar"
 }

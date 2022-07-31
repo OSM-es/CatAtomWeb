@@ -25,7 +25,7 @@
   "Publish": "Publicar",
   "Task manager": "Gestor de tasques",
   "done_msg1": "Crea un nou projecte en el {0} usant l'arxiu {1}.",
-  "done_msg2": "Completa els camps necessaris copiant-los {0} de la plantilla mostrada al panell.",
+  "done_msg2": "Completa els camps necessaris copiant-los ({0}) de la plantilla mostrada al panell.",
   "done_msg3": "Veure el {0}.",
   "process result": "resultat del procés",
   "You can also": "També pots",
@@ -85,5 +85,6 @@
   "restart_job": "{username} reinicia el procés de {room}",
   "delete_job": "{username} elimina el procés de {room}",
   "done": "Fet",
-  "view_in_osm": "Veure a OpenStreetMap"
+  "view_in_osm": "Veure a OpenStreetMap",
+  "Validate": "Validar"
 }

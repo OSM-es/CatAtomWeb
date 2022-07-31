@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue'
-import debounce from 'lodash.debounce'
 import QuickView from '@/components/QuickView.vue'
 import StreetMap from '@/components/StreetMap.vue'
+import ReviewInput from './ReviewInput.vue'
 import { useJobStore } from '@/stores/job'
 import { useI18n } from 'vue-i18n'
 import { useChatService } from '@/services/chat'
@@ -25,13 +25,9 @@ chat.on('highway', (data) => {
   }
 })
 
-const editHandler = debounce((key, value) => {
+function editHandler(key, value) {
   const cat = job.callejero[key][0]
   job.putHighway(cat, value)
-}, 500)
-
-function deleteHandler(key) {
-  editHandler(key, '')
 }
 
 function chatColor(row) {
@@ -148,30 +144,14 @@ function showMap(street) {
                 <a>{{ row.cat }}</a>
               </td>
               <td>
-                <div class="field has-addons">
-                  <div
-                    class="control is-expanded has-tooltip-arrow"
-                    :data-tooltip="getOwner(row)"
-                  >
-                    <input
-                      class="input"
-                      :value="row.conv"
-                      :readonly="job.estado != 'REVIEW'"
-                      @input="(e) => editHandler(row.key, e.target.value)"
-                      @focus="showMap(row.cat)"
-                    />
-                  </div>
-                  <div class="control">
-                    <button
-                      v-if="job.estado == 'REVIEW'"
-                      class="button has-tooltip-arrow"
-                      :data-tooltip="$t('Delete')"
-                      @click="deleteHandler(row.key)"
-                    >
-                      <font-awesome-icon icon="times" :data-key="row.key" />
-                    </button>
-                  </div>
-                </div>
+                <review-input
+                  v-model="row.conv"
+                  :model-key="row.key"
+                  :tooltip="getOwner(row)"
+                  :active="job.estado == 'REVIEW'"
+                  @update:model-value="editHandler"
+                  @focus:input="showMap(row.cat)"
+                ></review-input>
               </td>
             </tr>
           </template>

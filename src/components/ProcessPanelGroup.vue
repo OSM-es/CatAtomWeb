@@ -250,7 +250,10 @@ watch(
             </p>
             <p>
               <i18n-t keypath="done_msg3" scope="global">
-                <a :href="tasksUrl()">{{ $t('process result') }}</a>
+                <a :href="tasksUrl()">
+                  {{ $t('process result') }}
+                  <font-awesome-icon icon="external-link" />
+                </a>
               </i18n-t>
             </p>
           </div>
