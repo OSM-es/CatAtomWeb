@@ -29,7 +29,7 @@ const messages = loadLocaleMessages()
 
 export const localeNames = Object.keys(messages).map((key) => ({
   key,
-  name: messages[key].locale.source,
+  name: messages[key].locale({ normalize: (msg) => msg[0] }),
 }))
 
 export default createI18n({
