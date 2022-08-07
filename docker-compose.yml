@@ -6,7 +6,7 @@ services:
       context: .
     restart: always
     volumes:
-      - /var/www/html/results:/usr/share/nginx/html/results
+      - /var/catastro/results:/usr/share/nginx/html/results
     ports:
       - "80:80"
     expose:
