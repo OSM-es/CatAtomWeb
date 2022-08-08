@@ -48,7 +48,10 @@ export const useJobStore = defineStore({
         : 'addresses'
     },
     fixmes(state) {
-      return state.revisar.filter((fixme) => fixme.fixmes > 0).length
+      return state.revisar.reduce(
+        (total, fixme) => total + Number(fixme.fixmes),
+        0
+      )
     },
     args(state) {
       if (state.edificios && !state.direcciones) {
@@ -129,6 +132,10 @@ export const useJobStore = defineStore({
         this.cod_division
       )
       this.updateJob(response.data)
+    },
+    async getFixme(data) {
+      const response = await api.getFixme(this.cod_municipio, data)
+      this.updateFixme(response.data)
     },
     async postFixme(data) {
       const response = await api.postFixme(this.cod_municipio, data)

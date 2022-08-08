@@ -17,7 +17,7 @@
   "Check fixmes": "Check fixmes",
   "Locked by": "Locked by",
   "Edited by": "Edited by",
-  "files left": "{n} file left|{n} files left",
+  "fixmes left": "{n} fixme left|{n} fixmes left",
   "fixme_msg": "Download {upload} the files displayed in the panel. Edit them with JOSM following this {link}. Save the results and upload the corrected files {upload}. Check the buildings that have \"fixme\" tags and remove them. You don't have to upload the data to OSM, but here.",
   "welldone": "Well done! Confirm to continue.",
   "Confirm": "Confirm",
@@ -85,5 +85,6 @@
   "delete_job": "{username} deletes processing of {room}",
   "done": "Done",
   "view_in_osm": "View in OpenStreetMap",
-  "Validate": "Validate"
+  "Validate": "Validate",
+  "Undo": "Undo"
 }

@@ -50,7 +50,11 @@ function isLocked(fixme) {
 
 function onDownload(event) {
   const filename = event.target.pathname.split('/').pop()
-  job.postFixme({ filename })
+  job.getFixme(filename)
+}
+
+function onUndo(filename) {
+  job.postFixme(filename)
 }
 
 function chatColor(fixme) {
@@ -69,7 +73,7 @@ function chatColor(fixme) {
         <a
           :href="getUrl(fixme)"
           :class="isLocked(fixme)"
-          target="_blank"
+          download
           @click="onDownload"
         >
           <span class="icon">
@@ -78,22 +82,34 @@ function chatColor(fixme) {
           {{ fixme.filename }} ({{ fixme.fixmes }} fixmes)
         </a>
       </div>
-      <div class="level-right file is-small">
-        <label v-show="uploadEnabled(fixme)" class="file-label">
-          <input
-            class="file-input"
-            type="file"
-            @change="$emit('change', $event.target.files)"
-          />
-          <span class="file-cta">
-            <span class="file-icon">
-              <font-awesome-icon icon="upload" />
-            </span>
-            <span class="file-label">
-              {{ $t('Select reviewed file') }}
-            </span>
-          </span>
-        </label>
+      <div class="level-right">
+        <div v-show="uploadEnabled(fixme)" class="field has-addons">
+          <div class="control file has-name is-small">
+            <label class="file-label">
+              <input
+                class="file-input"
+                type="file"
+                @change="$emit('change', $event.target.files)"
+              />
+              <span class="file-cta">
+                <span class="file-icon">
+                  <font-awesome-icon icon="upload" />
+                </span>
+                <span class="file-label">
+                  {{ $t('Select reviewed file') }}
+                </span>
+              </span>
+            </label>
+          </div>
+          <div class="control" @click="onUndo(fixme.filename)">
+            <a
+              class="button is-small is-light has-tooltip-arrow"
+              :data-tooltip="$t('Undo')"
+            >
+              <font-awesome-icon icon="undo" />
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
     <nav v-else class="level is-mobile">

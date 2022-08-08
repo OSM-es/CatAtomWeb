@@ -203,7 +203,7 @@ watch(
         </div>
         <div class="panel-block">
           <p v-if="job.fixmes > 0">
-            <i18n-t keypath="files left" scope="global" :plural="job.fixmes">
+            <i18n-t keypath="fixmes left" scope="global" :plural="job.fixmes">
               {{ job.fixmes }}
             </i18n-t>
           </p>

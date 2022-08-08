@@ -66,8 +66,6 @@ function onNewFiles(newFiles) {
     }
     const formData = new FormData()
     formData.append('file', file.file)
-    formData.append('foo', 'bar')
-    console.info(file.file, formData)
     job.putFixme(formData, config).then((data) => {
       files.removeFile(data.filename)
     })
@@ -119,7 +117,7 @@ function onNewFiles(newFiles) {
             :municipio="municipio"
             :fixmes="fixmes"
             :files="files"
-            @change="onNewFiles(event)"
+            @change="onNewFiles($event)"
           ></fixme-list>
         </drop-zone>
       </div>

@@ -21,6 +21,7 @@ import {
   faSearch,
   faTimes,
   faTrash,
+  faUndo,
   faUser,
   faUserPlus,
   faUserTimes,
@@ -44,6 +45,7 @@ library.add(faShare)
 library.add(faSearch)
 library.add(faTimes)
 library.add(faTrash)
+library.add(faUndo)
 library.add(faUser)
 library.add(faUserPlus)
 library.add(faUserTimes)

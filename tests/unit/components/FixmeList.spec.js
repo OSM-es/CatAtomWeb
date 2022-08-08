@@ -69,7 +69,7 @@ test('upload not enabled', async () => {
   expect(rows[4].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[4].get('input').isVisible()).toBeFalsy()
   rows[4].get('a').trigger('click')
-  await expect(job.postFixme).toHaveBeenCalled()
+  await expect(job.getFixme).toHaveBeenCalled()
 })
 
 test('in progress', () => {

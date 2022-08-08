@@ -4,6 +4,7 @@ let job = {
   charla: [],
   cod_municipio: '12345',
   propietario: { osm_id: '321' },
+  getFixme: jest.fn(),
   postFixme: jest.fn(),
   updateFixme: jest.fn(),
   putFixme: (data) => Promise.resolve(data),

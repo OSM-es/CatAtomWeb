@@ -17,7 +17,7 @@
   "Check fixmes": "Corregir errors",
   "Locked by": "Bloquejat per",
   "Edited by": "Editat per",
-  "files left": "Falta {n} arxiu|Falten {n} arxius",
+  "fixmes left": "Falta {n} fixme|Falten {n} fixmes",
   "fixme_msg": "Baixa't ({download}) els arxius mostrats en el panell. Edita'ls amb JOSM seguint aquestes {link}. Guarda els resultats i puja els arxius corregits ({upload}). Revisa els edificis que tinguin etiquetes \"fixme\" i elimina-les. No cal pujar les dades a OSM, sinó aquí.",
   "welldone": "Ben fet. Confirma per a continuar.",
   "Confirm": "Confirmar",
@@ -86,5 +86,6 @@
   "delete_job": "{username} elimina el procés de {room}",
   "done": "Fet",
   "view_in_osm": "Veure a OpenStreetMap",
-  "Validate": "Validar"
+  "Validate": "Validar",
+  "Undo": "Desfer"
 }

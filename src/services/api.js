@@ -64,12 +64,17 @@ api.putHgw = (cod_municipio, data) => {
   return api.put('hgw/' + cod_municipio, data)
 }
 
+api.getFixme = (cod_municipio, data) => {
+  return api.get('fixme/' + cod_municipio + '/' + data)
+}
+
 api.postFixme = (cod_municipio, data) => {
-  return api.post('fixme/' + cod_municipio, data)
+  return api.post('fixme/' + cod_municipio + '/' + data)
 }
 
 api.putFixme = (cod_municipio, data, config) => {
-  return api.put('fixme/' + cod_municipio, data, config)
+  const filename = data.get('file').name
+  return api.put('fixme/' + cod_municipio + '/' + filename, data, config)
 }
 
 api.deleteFixme = (cod_municipio) => {
