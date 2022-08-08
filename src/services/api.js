@@ -64,6 +64,10 @@ api.putHgw = (cod_municipio, data) => {
   return api.put('hgw/' + cod_municipio, data)
 }
 
+api.postHgw = (cod_municipio, data) => {
+  return api.post('hgw/' + cod_municipio, data)
+}
+
 api.getFixme = (cod_municipio, data) => {
   return api.get('fixme/' + cod_municipio + '/' + data)
 }

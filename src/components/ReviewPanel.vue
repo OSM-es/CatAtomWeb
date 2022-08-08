@@ -23,9 +23,17 @@ chat.on('highway', (data) => {
   if (!user.isOwner(data)) {
     job.updateHighway(data)
   }
+  console.info(job.highways)
 })
 
-function editHandler(key, value) {
+function undoHandler(key) {
+  const cat = job.callejero[key][0]
+  const conv = job.callejero[key][1]
+  job.postHighway(cat, conv)
+  console.info(job.highways)
+}
+
+function editHandler(value, key) {
   const cat = job.callejero[key][0]
   job.putHighway(cat, value)
 }
@@ -149,7 +157,9 @@ function showMap(street) {
                   :model-key="row.key"
                   :tooltip="getOwner(row)"
                   :active="job.estado == 'REVIEW'"
+                  :username="row.username"
                   @update:model-value="editHandler"
+                  @undo:model-value="undoHandler"
                   @focus:input="showMap(row.cat)"
                 ></review-input>
               </td>

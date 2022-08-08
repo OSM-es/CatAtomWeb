@@ -161,12 +161,21 @@ watch(
       </div>
       <div class="container">
         <div class="panel-block">
-          <p>
+          <p v-if="job.highways == 0">
+            {{ $t('welldone2') }}
+          </p>
+          <p v-else>
             <i18n-t keypath="review_msg" scope="global">
               <a :href="wikiUrl">{{ $t('guide') }}</a>
+              <font-awesome-icon icon="check" />
               <font-awesome-icon icon="times" />
             </i18n-t>
           </p>
+        </div>
+        <div v-if="job.highways > 0" class="panel-block">
+          <i18n-t keypath="highways left" scope="global" :plural="job.highways">
+            {{ job.highways }}
+          </i18n-t>
         </div>
         <div class="panel-block">
           <process-button @click="processJob()">
@@ -185,7 +194,7 @@ watch(
       <div id="fixmePanel" class="container">
         <div class="panel-block">
           <p v-if="job.fixmes == 0">
-            {{ $t('welldone') }}
+            {{ $t('welldone1') }}
           </p>
           <p v-else>
             <i18n-t keypath="fixme_msg" scope="global">

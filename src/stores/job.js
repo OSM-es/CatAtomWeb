@@ -53,6 +53,12 @@ export const useJobStore = defineStore({
         0
       )
     },
+    highways(state) {
+      return state.callejero.reduce(
+        (total, row) => total + (row.length < 3 || !row[2] ? 1 : 0),
+        0
+      )
+    },
     args(state) {
       if (state.edificios && !state.direcciones) {
         return '-b'
@@ -97,6 +103,14 @@ export const useJobStore = defineStore({
     async getHighway(street) {
       const resp = await api.getHgw(this.cod_municipio, street)
       return resp.data
+    },
+    async putHighway(cat, conv) {
+      const response = await api.putHgw(this.cod_municipio, { cat, conv })
+      this.updateHighway(response.data)
+    },
+    async postHighway(cat, conv) {
+      const response = await api.postHgw(this.cod_municipio, { cat, conv })
+      this.updateHighway(response.data)
     },
     updateHighway(data) {
       const i = array.findIndex(this.callejero, (row) => row[0] == data.cat)
@@ -149,10 +163,6 @@ export const useJobStore = defineStore({
     async deleteFixme() {
       await api.deleteFixme(this.cod_municipio)
       this.getJob(this.cod_municipio, this.cod_division)
-    },
-    async putHighway(cat, conv) {
-      const response = await api.putHgw(this.cod_municipio, { cat, conv })
-      this.updateHighway(response.data)
     },
   },
 })

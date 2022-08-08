@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import debounce from 'lodash.debounce'
 
 // eslint-disable-next-line no-undef
@@ -8,18 +7,29 @@ const props = defineProps({
   modelValue: { type: String, default: '' },
   tooltip: { type: String, default: '' },
   active: { type: Boolean, default: true },
+  username: { type: String, default: '' },
 })
 // eslint-disable-next-line no-undef
-const emit = defineEmits(['update:modelValue', 'focus:input'])
-const value = ref(props.modelValue)
+const emit = defineEmits([
+  'update:modelValue',
+  'undo:modelValue',
+  'focus:input',
+])
 
-const editHandler = debounce(() => {
-  emit('update:modelValue', props.modelKey, value.value)
+const editHandler = debounce((event) => {
+  emit('update:modelValue', event.target.value, props.modelKey)
 }, 500)
 
 function deleteHandler() {
-  value.value = ''
-  editHandler()
+  editHandler({ target: { value: '' } })
+}
+
+function validateHandler() {
+  editHandler({ target: { value: props.modelValue } })
+}
+
+function undoHandler() {
+  emit('undo:modelValue', props.modelKey)
 }
 </script>
 
@@ -27,7 +37,7 @@ function deleteHandler() {
   <div class="field has-addons">
     <div class="control is-expanded has-tooltip-arrow" :data-tooltip="tooltip">
       <input
-        v-model="value"
+        :value="modelValue"
         class="input"
         :readonly="!active"
         @input="editHandler"
@@ -45,10 +55,18 @@ function deleteHandler() {
     </div>
     <div class="control">
       <button
-        v-if="active"
+        v-if="active && username"
+        class="button has-tooltip-arrow"
+        :data-tooltip="$t('Undo')"
+        @click="undoHandler"
+      >
+        <font-awesome-icon icon="undo" />
+      </button>
+      <button
+        v-else
         class="button has-tooltip-arrow"
         :data-tooltip="$t('Validate')"
-        @click="editHandler"
+        @click="validateHandler"
       >
         <font-awesome-icon icon="check" />
       </button>
