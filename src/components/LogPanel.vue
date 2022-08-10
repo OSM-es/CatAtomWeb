@@ -18,6 +18,24 @@ function getData() {
 function isActive() {
   return job.estado == 'RUNNING' ? 'is-info' : ''
 }
+
+function formatRow(row) {
+  if (row == '') {
+    return ' '
+  }
+  return row.replace(/^=+/g, '').replace(/=+$/g, '')
+}
+
+function styleRow(row) {
+  let style = ''
+  if (row.startsWith('=')) {
+    style = 'has-text-weight-bold'
+    if (!row.startsWith('==')) {
+      style += ' is-underlined'
+    }
+  }
+  return style
+}
 </script>
 
 <template>
@@ -28,8 +46,13 @@ function isActive() {
     <template #content>
       <div class="panel-block">
         <div class="container">
-          <p v-for="(row, i) in getData()" :key="i" class="terminal">
-            {{ row }}
+          <p
+            v-for="(row, i) in getData()"
+            :key="i"
+            class="terminal"
+            :class="styleRow(row)"
+          >
+            {{ formatRow(row) }}
           </p>
           <div v-if="job.estado == 'RUNNING'" class="loader"></div>
         </div>
@@ -42,5 +65,6 @@ function isActive() {
 .terminal {
   font-family: monospace;
   margin-bottom: 0 !important;
+  white-space: pre;
 }
 </style>

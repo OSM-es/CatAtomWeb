@@ -45,7 +45,7 @@ describe('Create process', () => {
             review.should('be.visible')
             review.should('have.class', 'is-info')
             const report = cy.get('[data-test="report"]')
-            report.find('[class="terminal"]').should('have.length', 53)
+            report.find('[class="terminal"]').should('have.length', 46)
             const log = cy.get('[data-test="log"]')
             log.find('[class="terminal"]').should('have.length', 5)
           })
