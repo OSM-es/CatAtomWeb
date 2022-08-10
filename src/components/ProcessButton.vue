@@ -4,6 +4,10 @@ import { useUserStore } from '../stores/user'
 import { useI18n } from 'vue-i18n'
 
 // eslint-disable-next-line no-undef
+const props = defineProps({
+  classes: { type: String, default: 'is-link' },
+})
+
 const job = useJobStore()
 const i18n = useI18n()
 const user = useUserStore()
@@ -25,7 +29,8 @@ function ownerTip() {
   <div class="container">
     <div class="has-tooltip-arrow" :data-tooltip="ownerTip()">
       <button
-        class="button is-link is-outlined is-fullwidth"
+        class="button is-outlined is-fullwidth"
+        :class="props.classes"
         :disabled="isDisabled()"
       >
         <slot></slot>

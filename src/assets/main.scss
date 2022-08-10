@@ -22,6 +22,11 @@ ul.vs__dropdown-menu {
     margin-top: 0 !important;
 }
 
+.panel .message,
+.panel .message-body {
+  border-radius: 0 0 4px 4px;
+}
+
 .chat {
     background-color: $background;
 }

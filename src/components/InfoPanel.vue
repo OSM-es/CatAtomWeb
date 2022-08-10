@@ -60,10 +60,3 @@ function getStatus() {
     </template>
   </vue-collapsible-panel>
 </template>
-
-<style scoped>
-.message,
-.message-body {
-  border-radius: 0 0 4px 4px;
-}
-</style>

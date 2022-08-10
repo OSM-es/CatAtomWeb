@@ -172,13 +172,24 @@ watch(
             </i18n-t>
           </p>
         </div>
-        <div v-if="job.highways > 0" class="panel-block">
-          <i18n-t keypath="highways left" scope="global" :plural="job.highways">
-            {{ job.highways }}
-          </i18n-t>
+        <div v-if="job.highways > 0">
+          <article class="message is-info">
+            <div class="message-body is-radiusless">
+              <i18n-t
+                keypath="highways left"
+                scope="global"
+                :plural="job.highways"
+              >
+                {{ job.highways }}
+              </i18n-t>
+            </div>
+          </article>
         </div>
         <div class="panel-block">
-          <process-button @click="processJob()">
+          <process-button
+            :classes="job.highways > 0 ? 'is-warning' : 'is-success'"
+            @click="processJob()"
+          >
             <span>{{ $t('Reprocess') }}</span>
             <span class="icon">
               <font-awesome-icon icon="repeat" />
@@ -210,13 +221,17 @@ watch(
             </i18n-t>
           </p>
         </div>
-        <div class="panel-block">
-          <p v-if="job.fixmes > 0">
-            <i18n-t keypath="fixmes left" scope="global" :plural="job.fixmes">
-              {{ job.fixmes }}
-            </i18n-t>
-          </p>
-          <process-button v-else @click="job.deleteFixme">
+        <div v-if="job.fixmes > 0">
+          <article class="message is-info">
+            <div class="message-body">
+              <i18n-t keypath="fixmes left" scope="global" :plural="job.fixmes">
+                {{ job.fixmes }}
+              </i18n-t>
+            </div>
+          </article>
+        </div>
+        <div v-else class="panel-block">
+          <process-button classes="is-success" @click="job.deleteFixme">
             <span>{{ $t('Confirm') }}</span>
             <span class="icon">
               <font-awesome-icon icon="check" />
@@ -311,7 +326,7 @@ watch(
           <div class="panel-block">
             <div class="content">
               <p>{{ $t('delete_msg') }}</p>
-              <process-button @click="deleteJob">
+              <process-button classes="is-danger" @click="deleteJob">
                 <span>{{ $t('Delete') }}</span>
                 <span class="icon">
                   <font-awesome-icon icon="trash" />
