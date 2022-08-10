@@ -1,7 +1,5 @@
 # CatAtomWeb
-Interfaz web para la API CatAtomApi
-
-# app3
+Aplicación web para la API CatAtomApi
 
 ## Project setup
 ```
