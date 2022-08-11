@@ -309,7 +309,7 @@ watch(
               >{{ job.propietario.username }}</a
             >
           </div>
-          <div v-if="job.estado != 'REVIEW'" class="panel-block">
+          <div v-if="job.estado == 'DONE'" class="panel-block">
             <div class="content">
               <p>{{ $t('export_msg') }}</p>
               <a
