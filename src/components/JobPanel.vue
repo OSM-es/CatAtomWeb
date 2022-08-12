@@ -204,6 +204,9 @@ onBeforeUnmount(() => {
           <template #no-options="{ search, searching, loading }">
             {{ $t('Sorry, no matching option') }}
           </template>
+          <template #option="{ nombre }">
+            {{ nombre.replace('  ', '&nbsp;&nbsp;&nbsp;&nbsp;') }}
+          </template>
         </v-select>
         <div v-else class="control is-disabled">
           <input class="input" :value="job.report.split_name" />
@@ -226,3 +229,9 @@ onBeforeUnmount(() => {
     </a>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.vs__dropdown-menu {
+  white-space: pre;
+}
+</style>
