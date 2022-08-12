@@ -53,9 +53,9 @@ function undoHandler() {
         <font-awesome-icon icon="times" />
       </button>
     </div>
-    <div class="control">
+    <div v-if="active" class="control">
       <button
-        v-if="active && username"
+        v-if="username"
         class="button has-tooltip-arrow"
         :data-tooltip="$t('Undo')"
         @click="undoHandler"
