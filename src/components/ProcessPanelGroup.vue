@@ -126,7 +126,11 @@ watch(
                 <label class="label">{{ $t('Language') }}</label>
                 <div class="control">
                   <div class="select">
-                    <select v-model="job.idioma" data-test="idioma">
+                    <select
+                      v-model="job.idioma"
+                      data-test="idioma"
+                      :disabled="!job.direcciones"
+                    >
                       <option value="es_ES">Español</option>
                       <option value="ca_ES">Catalá</option>
                       <option value="gl_ES">Galego</option>
