@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 <script setup>
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { useChatService } from '@/services/chat'
 import { useJobStore } from '@/stores/job'
 import { useUserStore } from '@/stores/user'
@@ -9,7 +9,6 @@ const job = useJobStore()
 const user = useUserStore()
 const chat = useChatService()
 const message = ref('')
-const chatActive = computed(() => job.participantes > 1)
 
 function chatClasses(msg) {
   if (Object.prototype.hasOwnProperty.call(msg, 'username')) {
@@ -38,7 +37,7 @@ function send(event) {
 </script>
 
 <template>
-  <nav class="panel" :class="chatActive ? 'is-info' : ''">
+  <nav class="panel is-info">
     <div class="panel-heading">{{ $t('Chat') }}</div>
     <div class="panel-block chat">
       <div class="container" data-test="chat">
