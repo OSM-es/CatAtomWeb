@@ -65,7 +65,7 @@ function chatColor(fixme) {
   <div
     v-for="(fixme, index) in fixmes"
     :key="index"
-    class="panel-block is-block"
+    class="panel-block is-block fixme"
     :class="chatColor(fixme)"
   >
     <nav v-if="!files.fileExists(fixme.filename)" class="level is-mobile">
@@ -124,3 +124,10 @@ function chatColor(fixme) {
     </nav>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.fixme {
+  padding: 0.25em 0.75em;
+  line-height: 1.9em;
+}
+</style>
