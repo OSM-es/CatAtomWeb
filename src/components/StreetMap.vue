@@ -1,4 +1,6 @@
 <script setup>
+import axios from 'axios'
+import osmtogeojson from 'osmtogeojson'
 import { onMounted, watch } from 'vue'
 import leaflet from 'leaflet'
 import { api as viewerApi } from 'v-viewer'
@@ -14,10 +16,55 @@ const emit = defineEmits(['update:modelValue'])
 const job = useJobStore()
 
 let map
-let layer
+let portales
+let viales
 let images
 let control
 let viewer
+
+const colors = [
+  '#228b22',
+  '#800000',
+  '#556b2f',
+  '#808080',
+  '#483d8b',
+  '#b8860b',
+  '#008b8b',
+  '#000080',
+  '#4682b4',
+  '#32cd32',
+  '#7f007f',
+  '#8fbc8f',
+  '#ff4500',
+  '#ff8c00',
+  '#ffff00',
+  '#00ff00',
+  '#8a2be2',
+  '#e9967a',
+  '#dc143c',
+  '#00ffff',
+  '#0000ff',
+  '#adff2f',
+  '#da70d6',
+  '#d8bfd8',
+  '#ff00ff',
+  '#1e90ff',
+  '#db7093',
+  '#f0e68c',
+  '#87ceeb',
+  '#ff1493',
+  '#7b68ee',
+  '#98fb98',
+]
+
+function checksum(s) {
+  var chk = 0x12345678
+  var len = s.length
+  for (var i = 0; i < len; i++) {
+    chk += s.charCodeAt(i) * (i + 1)
+  }
+  return chk & 0xffffffff
+}
 
 function getImg(data) {
   const ref = data.localId.split('.').pop()
@@ -41,37 +88,63 @@ function showImg(index) {
   viewer.view(index)
 }
 
+async function getPortales(street) {
+  const data = await job.getHighway(street)
+  let i = 0
+  images = []
+  if (portales) {
+    map.removeLayer(portales)
+    control.removeLayer(portales)
+  }
+  portales = leaflet.geoJSON(data, {
+    onEachFeature: (feat, path) => {
+      images.push(getImg(feat.properties))
+      path.setIcon(
+        new leaflet.DivIcon({
+          className: 'portal',
+          html: feat.properties.designator,
+        })
+      )
+      path.on('click', (event) => {
+        showImg(event.target.feature.properties.index)
+      })
+      feat.properties.index = i
+      i += 1
+    },
+  })
+  portales.addTo(map)
+  control.addOverlay(portales, 'Portales')
+  map.fitBounds(portales.getBounds())
+  const coords = map.getCenter()
+  emit('update:modelValue', `${map.getZoom()}/${coords.lat}/${coords.lng}`)
+  getViales()
+}
+
+async function getViales() {
+  if (viales) {
+    map.removeLayer(viales)
+    control.removeLayer(viales)
+  }
+  const bounds = portales.getBounds()
+  const bb = `${bounds.getSouth()},${bounds.getWest()},${bounds.getNorth()},${bounds.getEast()}`
+  const ql = `data=[out:json][timeout:250];(way["highway"]["name"](${bb});relation["highway"]["name"](${bb});way["place"="square"]["name"](${bb});relation["place"="square"]["name"](${bb}););out body;>;out skel qt;`
+  const response = await axios.get(process.env.VUE_APP_OSM3S_URL + ql)
+  const data = osmtogeojson(response.data)
+  viales = leaflet.geoJSON(data, {
+    onEachFeature: (feat, path) => {
+      const i = checksum(feat.properties.name) % 32
+      path.setStyle({ color: colors[i] })
+      path.bindTooltip(feat.properties.name)
+    },
+  })
+  viales.addTo(map)
+  control.addOverlay(viales, 'Viales')
+}
+
 watch(
   () => props.street,
-  async (newStreet) => {
-    const data = await job.getHighway(newStreet)
-    let i = 0
-    images = []
-    if (layer) {
-      map.removeLayer(layer)
-      control.removeLayer(layer)
-    }
-    layer = leaflet.geoJSON(data, {
-      onEachFeature: (feat, flayer) => {
-        images.push(getImg(feat.properties))
-        flayer.setIcon(
-          new leaflet.DivIcon({
-            className: 'portal',
-            html: feat.properties.designator,
-          })
-        )
-        flayer.on('click', (event) => {
-          showImg(event.target.feature.properties.index)
-        })
-        feat.properties.index = i
-        i += 1
-      },
-    })
-    layer.addTo(map)
-    control.addOverlay(layer, 'Fotos')
-    map.fitBounds(layer.getBounds())
-    const coords = map.getCenter()
-    emit('update:modelValue', `${map.getZoom()}/${coords.lat}/${coords.lng}`)
+  (newStreet) => {
+    getPortales(newStreet)
   }
 )
 

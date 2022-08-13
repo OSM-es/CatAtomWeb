@@ -56,12 +56,11 @@ function send(event) {
             <textarea
               v-model="message"
               class="textarea"
-              :disabled="!chatActive"
               @keydown.enter.prevent="send"
             ></textarea>
           </div>
           <div class="control">
-            <button class="button" :disabled="!chatActive" @click="send">
+            <button class="button" @click="send">
               <span class="icon">
                 <font-awesome-icon icon="paper-plane" />
               </span>
