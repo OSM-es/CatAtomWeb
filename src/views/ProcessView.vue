@@ -1,6 +1,7 @@
 <script setup>
 import { useJobStore } from '@/stores/job'
 import { useRoute } from 'vue-router'
+import AdminPanel from '@/components/AdminPanel.vue'
 import ChatPanel from '@/components/ChatPanel.vue'
 import DonePanel from '@/components/DonePanel.vue'
 import FixmePanel from '@/components/FixmePanel.vue'
@@ -39,6 +40,7 @@ function reportEnabled() {
           <job-panel></job-panel>
           <process-panel-group v-if="job.cod_municipio !== null">
           </process-panel-group>
+          <admin-panel v-if="job.cod_municipio !== null"></admin-panel>
         </div>
         <div class="column is-three-fifths">
           <vue-collapsible-panel-group v-if="job.cod_municipio">

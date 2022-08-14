@@ -1,12 +1,18 @@
 <script setup>
-import { nextTick, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import ProcessButton from './ProcessButton'
 import { useJobStore } from '@/stores/job'
+import { useUserStore } from '../stores/user'
 
 const wikiUrl =
   'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles'
 const job = useJobStore()
+const user = useUserStore()
 const processPanel = ref(null)
+
+const isOwner = computed(() => {
+  return job.propietario && user.isOwner(job.propietario)
+})
 
 function isActive(panel) {
   const estado = job.estado
@@ -25,20 +31,12 @@ function isActive(panel) {
   return false
 }
 
-function tasksUrl() {
-  return `results/${job.cod_municipio}/tasks${job.args}`
-}
-
 function zoningUrl() {
   if (job.cod_division) {
     return `results/${job.cod_municipio}/tasks/${job.cod_division}/zoning.geojson`
   } else {
     return `results/${job.cod_municipio}/zoning.geojson`
   }
-}
-
-function exportJobUrl() {
-  return process.env.VUE_APP_ROOT_API + '/export/' + job.cod_municipio
 }
 
 function updateLog() {
@@ -57,10 +55,6 @@ function processJob() {
     job.direcciones = job.next_args == '-d'
   }
   job.createJob().then(updateLog)
-}
-
-function deleteJob() {
-  job.deleteJob()
 }
 
 function changeArgs(event) {
@@ -84,7 +78,7 @@ watch(
 </script>
 
 <template>
-  <vue-collapsible-panel-group>
+  <vue-collapsible-panel-group class="mb-5">
     <vue-collapsible-panel
       ref="processPanel"
       data-test="processPanel"
@@ -249,103 +243,54 @@ watch(
         <p>3. {{ $t('Publish') }}</p>
       </div>
       <div id="publishPanel" class="container">
-        <div v-if="job.args && !job.next_args" class="panel-block">
-          <div class="select" @change="changeArgs">
-            <select>
-              <option :selected="job.args == '-b'" value="-b">
-                {{ $t('Buildings') }}
-              </option>
-              <option :selected="job.args == '-d'" value="-d">
-                {{ $t('Addresses') }}
-              </option>
-            </select>
-          </div>
-        </div>
-        <div class="panel-block">
-          <div class="content">
-            <p>
-              <i18n-t keypath="done_msg1" scope="global">
-                <a href="https://tareas.openstreetmap.es" target="_blank">
-                  {{ $t('Task manager') }}
-                </a>
-                <a :href="zoningUrl()">zoning.geojson</a>
-              </i18n-t>
-            </p>
-            <p>
-              <i18n-t keypath="done_msg2" scope="global">
-                <span class="icon"><font-awesome-icon icon="copy" /></span>
-              </i18n-t>
-            </p>
-            <p>
-              <i18n-t keypath="done_msg3" scope="global">
-                <a :href="tasksUrl()">
-                  {{ $t('process result') }}
-                  <font-awesome-icon icon="external-link" />
-                </a>
-              </i18n-t>
-            </p>
-          </div>
-        </div>
-        <div v-if="job.next_args" class="panel-block">
-          <div class="content">
-            <p>{{ $t('You can also') }}</p>
-            <process-button @click="processJob()">
-              {{ $t(job.nextMsg) }}
-            </process-button>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <vue-collapsible-panel
-      v-if="!isActive('processPanel')"
-      class="panel"
-      :expanded="false"
-    >
-      <template #title>
-        <p class="panel-heading">{{ $t('Management') }}</p>
-      </template>
-      <template #content>
-        <div class="container">
-          <div class="panel-block">
-            {{ $t('Owner') }}:&nbsp;
-            <a
-              :href="`https://www.openstreetmap.org/user/${job.propietario.username}`"
-              >{{ job.propietario.username }}</a
-            >
-          </div>
-          <div v-if="job.estado == 'DONE'" class="panel-block">
-            <div class="content">
-              <p>{{ $t('export_msg') }}</p>
-              <a
-                class="button is-link is-outlined is-fullwidth"
-                :href="exportJobUrl()"
-              >
-                <span>{{ $t('Export') }}</span>
-                <span class="icon">
-                  <font-awesome-icon icon="download" />
-                </span>
-              </a>
+        <div v-if="isOwner">
+          <div v-if="job.args && !job.next_args" class="panel-block">
+            <div class="select" @change="changeArgs">
+              <select>
+                <option :selected="job.args == '-b'" value="-b">
+                  {{ $t('Buildings') }}
+                </option>
+                <option :selected="job.args == '-d'" value="-d">
+                  {{ $t('Addresses') }}
+                </option>
+              </select>
             </div>
           </div>
           <div class="panel-block">
             <div class="content">
-              <p>{{ $t('delete_msg') }}</p>
-              <process-button classes="is-danger" @click="deleteJob">
-                <span>{{ $t('Delete') }}</span>
-                <span class="icon">
-                  <font-awesome-icon icon="trash" />
-                </span>
+              <p>
+                <i18n-t keypath="done_msg1" scope="global">
+                  <a href="https://tareas.openstreetmap.es" target="_blank">
+                    {{ $t('Task manager') }}
+                  </a>
+                  <a :href="zoningUrl()">zoning.geojson</a>
+                </i18n-t>
+              </p>
+              <p>
+                <i18n-t keypath="done_msg2" scope="global">
+                  <span class="icon"><font-awesome-icon icon="copy" /></span>
+                </i18n-t>
+              </p>
+            </div>
+          </div>
+          <div v-if="job.next_args" class="panel-block">
+            <div class="content">
+              <p>{{ $t('You can also') }}</p>
+              <process-button @click="processJob()">
+                {{ $t(job.nextMsg) }}
               </process-button>
             </div>
           </div>
         </div>
-      </template>
-    </vue-collapsible-panel>
+        <div v-else class="panel-block">
+          <span>
+            {{ $t('The process is locked by') }}
+            <a :href="`https://www.openstreetmap.org/user/${username}`">{{
+              job.propietario.username
+            }}</a>
+          </span>
+        </div>
+      </div>
+    </nav>
   </vue-collapsible-panel-group>
 </template>
-
-<style scoped>
-.panel-block .content {
-  width: 100%;
-}
-</style>
