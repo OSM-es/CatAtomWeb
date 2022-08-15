@@ -19,7 +19,7 @@ beforeEach(() => {
   }).as('getjob')
   cy.intercept('POST', 'job/02001', (req) => {
     expect(req.body.building).to.be.false
-    expect(req.body.idioma).to.be.equal('ca_ES')
+    expect(req.body.config.language).to.be.equal('ca_ES')
     req.reply({ fixture: 'job.02001.post.json' })
   })
 })

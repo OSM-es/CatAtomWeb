@@ -2,6 +2,8 @@
 import { useJobStore } from '@/stores/job'
 import ProcessButton from './ProcessButton'
 
+// eslint-disable-next-line no-undef
+const emit = defineEmits(['process-job'])
 const wikiUrl =
   'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles'
 const job = useJobStore()

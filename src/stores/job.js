@@ -21,6 +21,8 @@ export const useJobStore = defineStore({
     participantes: 0,
     charla: [],
     next_args: '',
+    parcel_parts: Number(process.env.VUE_APP_DEFAULT_PARCEL_PARTS),
+    parcel_dist: Number(process.env.VUE_APP_DEFAULT_PARCEL_DIST),
   }),
 
   getters: {
@@ -129,7 +131,11 @@ export const useJobStore = defineStore({
       const options = {
         building: this.edificios,
         address: this.direcciones,
-        idioma: this.idioma,
+        config: {
+          language: this.idioma,
+          parcel_parts: this.parcel_parts,
+          parcel_dist: this.parcel_dist,
+        },
       }
       const mun = this.cod_municipio
       const div = this.cod_division
