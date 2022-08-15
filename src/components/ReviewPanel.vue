@@ -106,6 +106,12 @@ function showMap(street) {
     </template>
     <template #content>
       <div class="panel-block">
+        <p class="mt-1 mb-0 ml-2">
+          <i18n-t keypath="reviewed_hgw" scope="global">
+            <span>{{ job.callejero.length - job.highways }}</span>
+            <span>{{ job.callejero.length }}</span>
+          </i18n-t>
+        </p>
         <div class="field has-addons has-addons-right ml-auto">
           <div class="control has-icons-right">
             <input

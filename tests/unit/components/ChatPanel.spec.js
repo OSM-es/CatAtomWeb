@@ -16,22 +16,6 @@ function initWrapper() {
   return shallowMount(ChatPanel)
 }
 
-test('chat is not active', () => {
-  job.participantes = 1
-  const wrapper = initWrapper()
-  expect(wrapper.get('nav').attributes().class).not.toMatch(/is-info/)
-  expect(wrapper.get('textarea').attributes().disabled).toBeDefined()
-  expect(wrapper.get('button').attributes().disabled).toBeDefined()
-})
-
-test('chat is active', () => {
-  job.participantes = 2
-  const wrapper = initWrapper()
-  expect(wrapper.get('nav').attributes().class).toMatch(/is-info/)
-  expect(wrapper.get('textarea').attributes().disabled).not.toBeDefined()
-  expect(wrapper.get('button').attributes().disabled).not.toBeDefined()
-})
-
 test('on button click sendMessage is called with message value', async () => {
   const wrapper = initWrapper()
   wrapper.get('textarea').setValue('lorem ipsum')

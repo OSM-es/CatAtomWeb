@@ -49,10 +49,7 @@ export const useJobStore = defineStore({
         : 'addresses'
     },
     fixmes(state) {
-      return state.revisar.reduce(
-        (total, fixme) => total + Number(fixme.fixmes),
-        0
-      )
+      return state.revisar.filter((fixme) => fixme.fixmes != '0').length
     },
     highways(state) {
       return state.callejero.reduce(

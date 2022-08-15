@@ -3,28 +3,17 @@ import { nextTick } from 'vue'
 import { createI18n } from 'vue-i18n'
 import { shallowMount } from '@vue/test-utils'
 import LocaleSwitcher from '@/components/LocaleSwitcher'
-import { localeNames } from '@/services/i18n'
+import { i18nConf } from '@/services/i18n'
 jest.mock('@/services/i18n', () => require('../../mocks/services/i18n'))
 
 const UntranslatedComponent = {
   template: '<div>{{ $t("untranslated") }}</div>',
 }
 
-const messages = {}
-localeNames.forEach((l) => (messages[l.key] = { locale: l.name }))
-
-const i18n = createI18n({
-  locale: 'en',
-  fallbackLocale: 'en',
-  silentFallbackWarn: true,
-  silentTranslationWarn: true,
-  messages,
-})
-
 function initWrapper(component) {
   return shallowMount(component, {
     global: {
-      plugins: [i18n],
+      plugins: [createI18n(i18nConf)],
     },
   })
 }

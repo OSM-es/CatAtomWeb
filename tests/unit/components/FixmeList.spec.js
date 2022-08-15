@@ -1,10 +1,11 @@
 /* eslint-disable no-undef */
 import { nextTick } from 'vue'
+import { createI18n } from 'vue-i18n'
 import { shallowMount } from '@vue/test-utils'
 import FixmeList from '@/components/FixmeList'
 import { useJobStore } from '@/stores/job'
+import { i18nConf } from '@/services/i18n'
 jest.mock('@/services/i18n', () => require('../../mocks/services/i18n'))
-jest.mock('vue-i18n', () => require('../../mocks/services/i18n'))
 jest.mock('@/stores/job', () => require('../../mocks/stores/job'))
 jest.mock('@/stores/user', () => require('../../mocks/stores/user'))
 
@@ -25,19 +26,20 @@ const files = {
 }
 const wrapper = shallowMount(FixmeList, {
   props: { municipio: '66699', fixmes, files },
+  global: { plugins: [createI18n(i18nConf)] },
 })
 const rows = wrapper.findAll('nav')
 
 test('owner locked', () => {
   expect(rows).toHaveLength(6)
-  expect(rows[0].get('div').attributes()['data-tooltip']).toBe('LOCKED BY u1')
+  expect(rows[0].get('div').attributes()['data-tooltip']).toBe('Locked by u1')
   expect(rows[0].get('a').attributes().href).toBe('results/66699/tasks/f1')
   expect(rows[0].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[0].get('input').isVisible()).toBeTruthy()
 })
 
 test('owner not locked', async () => {
-  expect(rows[1].get('div').attributes()['data-tooltip']).toBe('EDITED BY u1')
+  expect(rows[1].get('div').attributes()['data-tooltip']).toBe('Edited by u1')
   expect(rows[1].get('a').attributes().href).toBe('results/66699/tasks/f2')
   expect(rows[1].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[1].get('input').isVisible()).toBeTruthy()
@@ -51,14 +53,14 @@ test('owner not locked', async () => {
 })
 
 test('not owner locked', () => {
-  expect(rows[2].get('div').attributes()['data-tooltip']).toBe('LOCKED BY u2')
+  expect(rows[2].get('div').attributes()['data-tooltip']).toBe('Locked by u2')
   expect(rows[2].get('a').attributes().href).toBe('results/66699/tasks/f3')
   expect(rows[2].get('a').attributes().class).toBe('is-disabled')
   expect(rows[2].get('input').isVisible()).toBeFalsy()
 })
 
 test('not owner not locked', () => {
-  expect(rows[3].get('div').attributes()['data-tooltip']).toBe('EDITED BY u2')
+  expect(rows[3].get('div').attributes()['data-tooltip']).toBe('Edited by u2')
   expect(rows[3].get('a').attributes().href).toBe('results/66699/tasks/f4')
   expect(rows[3].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[3].get('input').isVisible()).toBeFalsy()
@@ -79,9 +81,9 @@ test('in progress', () => {
 
 test('colors', () => {
   const rows = wrapper.findAll('div > div')
-  const c1 = rows[1].attributes().class
-  const c2 = rows[2].attributes().class
-  const c4 = rows[4].attributes().class
+  const c1 = rows[2].attributes().class
+  const c2 = rows[3].attributes().class
+  const c4 = rows[5].attributes().class
   expect(c1).not.toEqual(c2)
   expect(c1).toMatch(/color/)
   expect(c2).toMatch(/color/)

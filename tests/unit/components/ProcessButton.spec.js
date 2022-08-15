@@ -10,7 +10,9 @@ const job = useJobStore()
 let wrapper
 
 function initWrapper() {
-  wrapper = mount(ProcessButton, { slots: { default: 'foobar' } })
+  wrapper = mount(ProcessButton, {
+    slots: { default: 'foobar' },
+  })
 }
 
 test('not owner', () => {

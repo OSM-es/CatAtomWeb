@@ -10,7 +10,12 @@ const user = useUserStore()
 let wrapper
 
 function initWrapper() {
-  wrapper = shallowMount(NavBar, { global: { plugins: [router] } })
+  wrapper = shallowMount(NavBar, {
+    global: {
+      plugins: [router],
+      mocks: { $docUrl: '' },
+    },
+  })
 }
 
 test('not logged', () => {

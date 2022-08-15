@@ -62,6 +62,14 @@ function chatColor(fixme) {
 }
 </script>
 <template>
+  <div class="panel-block">
+    <p>
+      <i18n-t keypath="reviewed_files" scope="global">
+        <span>{{ job.revisar.length - job.fixmes }}</span>
+        <span>{{ job.revisar.length }}</span>
+      </i18n-t>
+    </p>
+  </div>
   <div
     v-for="(fixme, index) in fixmes"
     :key="index"

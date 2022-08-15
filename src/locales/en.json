@@ -7,6 +7,7 @@
   "guide": "guide",
   "Process": "Process",
   "Options": "Options",
+  "Advanced options": "Advanced options",
   "Process buildings": "Process buildings",
   "Process addresses": "Process addresses",
   "Language": "Language",
@@ -27,6 +28,8 @@
   "Edited by": "Edited by",
   "fixmes left": "{n} fixme left.|{n} fixmes left.",
   "highways left": "{n} highway left.|{n} highways left.",
+  "reviewed_hgw": "Reviewed {0} of {1} streets.",
+  "reviewed_files": "Reviewed {0} of {1} files.",
   "fixme_msg": "Download {upload} the files displayed in the panel. Edit them with JOSM following this {link}. Save the results and upload the corrected files {upload}. Check the buildings that have \"fixme\" tags and remove them. You don't have to upload the data to OSM, but here.",
   "welldone1": "Well done! Confirm to continue.",
   "welldone2": "Well done! Reprocess to continue.",
@@ -79,6 +82,8 @@
   "joined": "{username} joined {room}",
   "leave":  "{username} leave {room}",
   "Procesando": "Processing",
+  "Review": "Review",
+  "Review done": "Review done",
   "Pendiente de revisar direcciones": "Pending to review addresses",
   "Pendiente de revisar problemas": "Pending to review fixmes",
   "Proceso finalizado": "Process finished",
@@ -96,5 +101,7 @@
   "done": "Done",
   "view_in_osm": "View in OpenStreetMap",
   "Validate": "Validate",
-  "Undo": "Undo"
+  "Undo": "Undo",
+  "parcel_parts_help": "Number of building parts to agregate parcels for tasks.",
+  "parcel_dist_help": "Distance in meters to agregate parcels for tasks."
 }

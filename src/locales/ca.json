@@ -7,6 +7,7 @@
   "guide": "instruccions",
   "Process": "Processar",
   "Options": "Opcions",
+  "Advanced options": "Opcions avançades",
   "Process buildings": "Processar edificis",
   "Process addresses": "Processar adreces",
   "Language": "Idioma",
@@ -19,6 +20,8 @@
   "Feature count": "Nombre de característiques",
   "Pools": "Piscines",
   "Building parts": "Parts d'edificis",
+  "Review": "Revisar",
+  "Review done": "Revisions completades",
   "Review street names": "Revisar carrerer",
   "review_msg": "Revisa els noms de les vies/llocs mostrats en el panell seguint aquestes {0}. La columna esquerra mostra el nom de la via/lloc a Cadastre, la dreta la conversió proposada que s'usarà en reprocessar. Edita les que no siguin correctes o valida ({1}) les que si. Deixa-la en blanc ({2}) per a excloure totes les adreces d'aquesta via. Quan acabis continua al següent pas.",
   "Reprocess": "Reprocessar",
@@ -27,6 +30,8 @@
   "Edited by": "Editat per",
   "fixmes left": "Falta {n} fixme.|Falten {n} fixmes.",
   "highways left": "Falta {n} carrer.|Falten {n} carrers.",
+  "reviewed_hgw": "Revisades {0} de {1} carrers.",
+  "reviewed_files": "Revisats {0} de {1} fitxers.",
   "fixme_msg": "Baixa't ({download}) els arxius mostrats en el panell. Edita'ls amb JOSM seguint aquestes {link}. Guarda els resultats i puja els arxius corregits ({upload}). Revisa els edificis que tinguin etiquetes \"fixme\" i elimina-les. No cal pujar les dades a OSM, sinó aquí.",
   "welldone1": "Ben fet. Confirma per a continuar.",
   "welldone2": "Ben fet. Reprocessa per a continuar.",
@@ -97,5 +102,7 @@
   "done": "Fet",
   "view_in_osm": "Veure a OpenStreetMap",
   "Validate": "Validar",
-  "Undo": "Desfer"
+  "Undo": "Desfer",
+  "parcel_parts_help": "Nombre de parts d'edifici per començar a afegir parcel·les per a tasques.",
+  "parcel_dist_help": "Distància en metres per afegir parcel·les per a tasques."
 }

@@ -1,10 +1,11 @@
 /* eslint-disable no-undef */
 import { nextTick } from 'vue'
+import { createI18n } from 'vue-i18n'
 import { mount } from '@vue/test-utils'
 import FixmePanel from '@/components/FixmePanel'
 import { useChatService } from '@/services/chat'
 import { useJobStore } from '@/stores/job'
-jest.mock('vue-i18n', () => require('../../mocks/services/i18n'))
+import { i18nConf } from '@/services/i18n'
 jest.mock('@/services/chat', () => require('../../mocks/services/chat'))
 jest.mock('@/services/i18n', () => require('../../mocks/services/i18n'))
 jest.mock('@/stores/error', () => require('../../mocks/stores/error'))
@@ -15,8 +16,10 @@ const chat = useChatService()
 const job = useJobStore()
 const f1 = { osm_id: '123', username: 'u1', filename: 'f1f1', fixmes: 2 }
 const f2 = { osm_id: '321', username: 'u2', filename: 'f2f2', fixmes: 1 }
-let wrapper = mount(FixmePanel)
-wrapper.setProps({ fixmes: [f1, f2] })
+let wrapper = mount(FixmePanel, {
+  props: { fixmes: [f1, f2] },
+  global: { plugins: [createI18n(i18nConf)] },
+})
 
 test('show fixmes', () => {
   const html = wrapper.html()

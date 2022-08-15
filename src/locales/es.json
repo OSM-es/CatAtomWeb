@@ -7,6 +7,7 @@
   "guide": "instrucciones",
   "Process": "Procesar",
   "Options": "Opciones",
+  "Advanced options": "Opciones avanzadas",
   "Process buildings": "Procesar edificios",
   "Process addresses": "Procesar direcciones",
   "Language": "Idioma",
@@ -19,6 +20,8 @@
   "Feature count": "Número de características",
   "Pools": "Piscinas",
   "Building parts": "Partes de edificios",
+  "Review": "Revisar",
+  "Review done": "Revisiones completadas",
   "Review street names": "Revisar callejero",
   "review_msg": "Revisa los nombres de las vías/lugares mostrados en el panel siguiendo estas {0}. La columna izquierda muestra el nombre de la vía/lugar en Catastro, la derecha la conversión propuesta que se usará al reprocesar. Edita las que no sean correctas o valida ({1}) las que si. Déjala en blanco ({2}) para excluir todas las direcciones de esa vía. Cuando termines continúa al siguiente paso.",
   "Reprocess": "Reprocesar",
@@ -27,6 +30,8 @@
   "Edited by": "Editado por",
   "fixmes left": "Falta {n} fixme.|Faltan {n} fixmes.",
   "highways left": "Falta {n} vía.|Faltan {n} vías.",
+  "reviewed_hgw": "Revisadas {0} de {1} calles.",
+  "reviewed_files": "Revisados {0} de {1} archivos.",
   "fixme_msg": "Descarga ({download}) los archivos mostrados en el panel. Edítalos con JOSM siguiendo estas {link}. Guarda los resultados y sube los archivos corregidos ({upload}). Revisa los edificios que tengan etiquetas \"fixme\" y elimínalas. No hay que subir los datos a OSM, sino aquí.",
   "welldone1": "¡Bien hecho! Confirma para continuar.",
   "welldone2": "¡Bien hecho! Reprocesa para continuar.",
@@ -96,5 +101,7 @@
   "done": "Hecho",
   "view_in_osm": "Ver en OpenStreetMap",
   "Validate": "Validar",
-  "Undo": "Deshacer"
+  "Undo": "Deshacer",
+  "parcel_parts_help": "Número de partes de edificio para comenzar a agregar parcelas para tareas.",
+  "parcel_dist_help": "Distancia en metros para agregar parcelas para tareas."
 }
