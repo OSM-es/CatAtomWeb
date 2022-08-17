@@ -52,14 +52,6 @@ function highwayNames() {
   }))
 }
 
-function isActive() {
-  return job.estado == 'REVIEW' ? 'is-info' : ''
-}
-
-function isExpanded() {
-  return job.estado == 'REVIEW'
-}
-
 function deleteFilter() {
   filters.value.name.value = ''
 }
@@ -98,8 +90,8 @@ function showMap(street) {
   <vue-collapsible-panel
     class="panel"
     data-test="review"
-    :class="isActive()"
-    :expanded="isExpanded()"
+    :class="{ 'is-info': job.estado == 'REVIEW' }"
+    :expanded="job.estado == 'REVIEW'"
   >
     <template #title>
       <p class="panel-heading">{{ $t('Review street names') }}</p>

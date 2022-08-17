@@ -74,12 +74,16 @@ function onNewFiles(newFiles) {
 </script>
 
 <template>
-  <vue-collapsible-panel class="panel is-info">
+  <vue-collapsible-panel
+    class="panel"
+    :class="{ 'is-info': job.estado == 'FIXME' }"
+    :expanded="job.estado == 'FIXME'"
+  >
     <template #title>
       <p class="panel-heading">{{ $t('Check fixmes') }}</p>
     </template>
     <template #content>
-      <div class="container">
+      <div class="container" :class="{ 'is-disabled': job.estado != 'FIXME' }">
         <drop-zone
           v-slot="{ dropZoneActive }"
           class="drop-area"
