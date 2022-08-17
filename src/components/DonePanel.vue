@@ -112,7 +112,7 @@ function downloadUrl() {
               <th>{{ $t('Per task instructions') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
-                  Descarga el [archivo de la tarea]({{
+                  Download the **[task file]({{
                     downloadUrl()
                   }}results/{muncode}/tasks/{localId}.osm.gz) o [Editar con
                   Control Remoto de
@@ -120,20 +120,31 @@ function downloadUrl() {
                     downloadUrl()
                   }}results/{muncode}/tasks{{
                     job.args
-                  }}/{localId}.osm.gz).<br />
+                  }}/{localId}.osm.gz)**.<br />
+                  Type: {type}. Complexity: {parts} parts.<br />
+                  Review the task following the instructions in the [import
+                  guide](https://openstreetmap.es/catastro). Check the facade
+                  photos of the buildings using the **pointinfo** plugin that is
+                  activated with *Ctrl-Shift-x*.
+                </copy-icon>
+              </td>
+              <td>
+                <copy-icon>
+                  Descarga el [archivo de la tarea]({{
+                    downloadUrl()
+                  }}results/{muncode}/tasks/{localId}.osm.gz) o **[Editar con
+                  Control Remoto de
+                  JOSM](http://localhost:8111/import?new_layer=true&amp;url={{
+                    downloadUrl()
+                  }}results/{muncode}/tasks{{
+                    job.args
+                  }}/{localId}.osm.gz)**.<br />
                   Tipo: {type}. Complejidad: {parts} partes.<br />
                   Revisa la tarea siguiendo las instrucciones de la [guía de
                   importación](https://openstreetmap.es/catastro). Consulta las
                   fotos de fachada de los edificios haciendo uso del complemento
                   **pointinfo** que se activa con *Ctrl-Maýus-x*.
                 </copy-icon>
-              </td>
-              <td>
-                <i
-                  >(Introduce el texto en español debido a un problema con el
-                  gestor de tareas que muestra siempre el texto en inglés
-                  independientemente de la configuración del usuario.)</i
-                >
               </td>
             </tr>
           </tbody>
