@@ -22,9 +22,9 @@ function changeArgs(event) {
 
 function zoningUrl() {
   if (job.cod_division) {
-    return `results/${job.cod_municipio}/tasks/${job.cod_division}/zoning.geojson`
+    return `results/${job.cod_municipio}/tasks/${job.cod_division}/zoning.zip`
   } else {
-    return `results/${job.cod_municipio}/zoning.geojson`
+    return `results/${job.cod_municipio}/zoning.zip`
   }
 }
 </script>
@@ -56,7 +56,7 @@ function zoningUrl() {
                   <a href="https://tareas.openstreetmap.es" target="_blank">
                     {{ $t('Task manager') }}
                   </a>
-                  <a :href="zoningUrl()">zoning.geojson</a>
+                  <a :href="zoningUrl()">zoning.zip</a>
                 </i18n-t>
               </p>
               <p>

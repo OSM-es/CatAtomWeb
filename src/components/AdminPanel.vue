@@ -23,7 +23,7 @@ const isVisible = computed(() => {
 })
 
 function tasksUrl() {
-  return `results/${job.cod_municipio}/tasks${job.args}`
+  return `results/${job.cod_municipio}/tasks${job.args || ''}`
 }
 
 function exportJobUrl() {
@@ -42,7 +42,8 @@ function exportJobUrl() {
           <div v-if="isOwner">
             <div class="panel-block">
               <i18n-t keypath="done_msg3" scope="global">
-                <a :href="tasksUrl()">&nbsp;
+                <a :href="tasksUrl()"
+                  >&nbsp;
                   {{ $t('process result') }}
                   <font-awesome-icon icon="external-link" />
                 </a>
