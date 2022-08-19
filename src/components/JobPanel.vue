@@ -225,7 +225,9 @@ onBeforeUnmount(() => {
       @click="shareLink"
     >
       Compartir proyecto
-      <font-awesome-icon icon="share" />
+      <span class="icon is-fake-btn">
+        <font-awesome-icon icon="share" />
+      </span>
     </a>
   </div>
 </template>

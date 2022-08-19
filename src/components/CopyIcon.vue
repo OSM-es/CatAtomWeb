@@ -5,6 +5,7 @@ import { clipboardHandler } from '@/compositions/clipboard'
 const data = ref(null)
 
 function copyToClipboard(event) {
+  console.info(event.target.attributes, data.value.outerText)
   clipboardHandler(event, data.value.outerText || data.value.innerHTML)
 }
 </script>
@@ -15,7 +16,7 @@ function copyToClipboard(event) {
     :data-tooltip="$t('Copy to clipboard')"
     @click="copyToClipboard"
   >
-    <span class="icon">
+    <span class="icon is-fake-btn">
       <font-awesome-icon icon="copy" />
     </span>
   </button>

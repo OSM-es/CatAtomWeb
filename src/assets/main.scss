@@ -12,6 +12,11 @@
     opacity: 0.4;
 }
 
+.is-fake-btn {
+  pointer-events: none;
+  cursor: auto;
+}
+
 .vs__dropdown-toggle {
     height: 2.5em;
 }
