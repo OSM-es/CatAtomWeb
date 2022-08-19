@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import QuickView from '@/components/QuickView.vue'
 import StreetMap from '@/components/StreetMap.vue'
 import ReviewInput from './ReviewInput.vue'
@@ -24,6 +24,22 @@ chat.on('highway', (data) => {
     job.updateHighway(data)
   }
   console.info(job.highways)
+})
+
+const osmLink = computed(() => {
+  return `https://www.openstreetmap.org/#map=${currentCoords.value}`
+})
+
+const mapillaryLink = computed(() => {
+  const coords = currentCoords.value.split('/')
+  const url = 'https://www.mapillary.com/app/'
+  return `${url}?lat=${coords[1]}&lng=${coords[2]}&z=${coords[0]}`
+})
+
+const kartaLink = computed(() => {
+  const coords = currentCoords.value.split('/')
+  const url = 'https://kartaview.org/map/@'
+  return `${url}${coords[1]},${coords[2]},${coords[0]}z`
 })
 
 function undoHandler(key) {
@@ -74,11 +90,16 @@ function showMap(street) {
     <template #header>
       <p>
         <span class="title">{{ currentStreet }}</span>
-        &nbsp;<a
-          :href="`https://www.openstreetmap.org/#map=${currentCoords}`"
-          target="_blank"
-        >
+        &nbsp;<a :href="osmLink" target="_blank">
           {{ $t('view_in_osm') }}
+          <font-awesome-icon icon="external-link" /> </a
+        >,
+        <a :href="mapillaryLink" target="_blank">
+          Mapillary
+          <font-awesome-icon icon="external-link" /> </a
+        >,
+        <a :href="kartaLink" target="_blank">
+          KartaView
           <font-awesome-icon icon="external-link" />
         </a>
       </p>

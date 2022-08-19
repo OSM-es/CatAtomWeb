@@ -50,7 +50,9 @@ function undoHandler() {
         :data-tooltip="$t('Delete')"
         @click="deleteHandler"
       >
-        <font-awesome-icon icon="times" />
+        <span class="icon">
+          <font-awesome-icon icon="times" />
+        </span>
       </button>
     </div>
     <div v-if="active" class="control">
@@ -60,7 +62,9 @@ function undoHandler() {
         :data-tooltip="$t('Undo')"
         @click="undoHandler"
       >
-        <font-awesome-icon icon="undo" />
+        <span class="icon">
+          <font-awesome-icon icon="undo" />
+        </span>
       </button>
       <button
         v-else
@@ -68,7 +72,9 @@ function undoHandler() {
         :data-tooltip="$t('Validate')"
         @click="validateHandler"
       >
-        <font-awesome-icon icon="check" />
+        <span class="icon">
+          <font-awesome-icon icon="check" />
+        </span>
       </button>
     </div>
   </div>
