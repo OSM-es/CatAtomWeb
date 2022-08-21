@@ -38,13 +38,13 @@
         <p>No dudes en contactar a través de cualquiera de estos medios:</p>
         <ul>
           <li>
-            <a href="https://lists.openstreetmap.org/pipermail/talk-es/ Talk-es"
-              >Lista de correo</a
+            <a href="https://lists.openstreetmap.org/pipermail/talk-es/"
+              >Lista de correo Talk-es</a
             >
           </li>
           <li>
             Canal de
-            <a href="https://telegram.me/OSMes_Catastro>">Telegram</a>/<a
+            <a href="https://telegram.me/OSMes_Catastro">Telegram</a>/<a
               href="https://matrix.to/#/#OSMes_Catastro:matrix.org"
               >Matrix</a
             >

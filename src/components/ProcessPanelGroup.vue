@@ -132,7 +132,7 @@ watch(
                 <div class="field">
                   <label class="label">
                     parcel_parts
-                    <a href="" target="_blank">
+                    <a href="/doc/process#options" target="_blank">
                       <font-awesome-icon icon="question-circle" />
                     </a>
                   </label>
@@ -163,7 +163,7 @@ watch(
                 <div class="field">
                   <label class="label">
                     parcel_dist
-                    <a href="" target="_blank">
+                    <a href="/doc/process#options" target="_blank">
                       <font-awesome-icon icon="question-circle" />
                     </a>
                   </label>
