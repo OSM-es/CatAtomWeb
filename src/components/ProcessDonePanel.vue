@@ -70,12 +70,15 @@ function zoningUrl() {
                   <span class="icon"><font-awesome-icon icon="copy" /></span>
                 </i18n-t>
               </p>
-              <button class="button is-success is-outlined is-fullwidth">
+              <a
+                class="button is-success is-outlined is-fullwidth"
+                href="https://tareas.openstreetmap.es/manage/projects/new/"
+              >
                 <span>{{ $t('add_project') }}</span>
                 <span class="icon">
                   <font-awesome-icon icon="plus" />
                 </span>
-              </button>
+              </a>
             </div>
           </div>
           <div v-if="job.next_args" class="panel-block">
