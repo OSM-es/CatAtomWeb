@@ -28,6 +28,7 @@
           Calle/Carrer/Rúa). Se ajusta en función de la provincia, por lo que en
           principio no es necesario cambiarlo.
         </p>
+        <a id="options"></a>
         <p><b>2)</b> Opciones avanzadas.</p>
         <figure class="image column is-3">
           <img src="@/assets/doc/process/advanced.png" />
