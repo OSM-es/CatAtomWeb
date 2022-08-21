@@ -14,6 +14,7 @@ const isOwner = computed(() => {
 })
 
 const isActive = computed(() => job.estado == 'DONE')
+//const newProjectLink = 'https://tareas.openstreetmap.es/manage/projects/new/'
 
 function changeArgs(event) {
   job.edificios = event.target.value == '-b'
@@ -55,15 +56,26 @@ function zoningUrl() {
                 <i18n-t keypath="done_msg1" scope="global">
                   <a href="https://tareas.openstreetmap.es" target="_blank">
                     {{ $t('Task manager') }}
+                    <font-awesome-icon icon="external-link" />
                   </a>
-                  <a :href="zoningUrl()">zoning.zip</a>
+                  <a :href="zoningUrl()">
+                    zoning.zip
+                    <font-awesome-icon icon="download" />
+                  </a>
                 </i18n-t>
               </p>
+              <p>Número de tareas: {{ job.report.tasks }}</p>
               <p>
                 <i18n-t keypath="done_msg2" scope="global">
                   <span class="icon"><font-awesome-icon icon="copy" /></span>
                 </i18n-t>
               </p>
+              <button class="button is-success is-outlined is-fullwidth">
+                <span>{{ $t('add_project') }}</span>
+                <span class="icon">
+                  <font-awesome-icon icon="plus" />
+                </span>
+              </button>
             </div>
           </div>
           <div v-if="job.next_args" class="panel-block">

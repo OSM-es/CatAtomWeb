@@ -104,5 +104,6 @@
   "Undo": "Undo",
   "parcel_parts_help": "Number of building parts to agregate parcels for tasks.",
   "parcel_dist_help": "Distance in meters to agregate parcels for tasks.",
-  "between_val": "The value must be between {0} and {1}."
+  "between_val": "The value must be between {0} and {1}.",
+  "add_project": "Add project"
 }

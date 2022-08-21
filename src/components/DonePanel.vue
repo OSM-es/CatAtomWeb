@@ -20,35 +20,48 @@ function downloadUrl() {
           <thead>
             <tr>
               <th>{{ $t('Field') }}</th>
-              <th>{{ $t('Spanish (es)') }}</th>
               <th>{{ $t('English (en)') }}</th>
+              <th>{{ $t('Spanish (es)') }}</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th>{{ $t('Name of the project') }}</th>
               <td>
-                <copy-icon>Catastro de {{ job.nombreZona }}</copy-icon>
+                <copy-icon>Cadastre of {{ job.nombreZona }}</copy-icon>
               </td>
               <td>
-                <copy-icon>Cadastre of {{ job.nombreZona }}</copy-icon>
+                <copy-icon>Catastro de {{ job.nombreZona }}</copy-icon>
               </td>
             </tr>
             <tr>
               <th>{{ $t('Short description') }}</th>
               <td>
                 <copy-icon>
-                  Importación de {{ job.opciones }} de {{ job.nombreZona }}
+                  Import of {{ job.options }} of {{ job.nombreZona }}
                 </copy-icon>
               </td>
               <td>
                 <copy-icon>
-                  Import of {{ job.options }} of {{ job.nombreZona }}
+                  Importación de {{ job.opciones }} de {{ job.nombreZona }}
                 </copy-icon>
               </td>
             </tr>
             <tr>
               <th>{{ $t('Description') }}</th>
+              <td class="cell-breakWord">
+                <copy-icon>
+                  Building footprints and postal addresses are very valuable
+                  data for the OpenStreetMap map. Currently there are not many
+                  Spanish municipalities that have this information and that is
+                  why OpenStreetMap Spain is promoting the import of some of the
+                  cadastral data. Help us make the OpenStreetMap map even more
+                  useful!<br /><br />
+                  Consult the [import
+                  guide](https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_import
+                  to contribute.
+                </copy-icon>
+              </td>
               <td class="cell-breakWord">
                 <copy-icon>
                   El trazado de edificios y las direcciones postales son datos
@@ -63,19 +76,6 @@ function downloadUrl() {
                   para colaborar.
                 </copy-icon>
               </td>
-              <td class="cell-breakWord">
-                <copy-icon>
-                  Building footprints and postal addresses are very valuable
-                  data for the OpenStreetMap map. Currently there are not many
-                  Spanish municipalities that have this information and that is
-                  why OpenStreetMap Spain is promoting the import of some of the
-                  cadastral data. Help us make the OpenStreetMap map even more
-                  useful!<br /><br />
-                  Consult the [import
-                  guide](https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_import
-                  to contribute.
-                </copy-icon>
-              </td>
             </tr>
             <tr>
               <th>{{ $t('Changeset comment') }}</th>
@@ -85,26 +85,21 @@ function downloadUrl() {
                   {{ job.nombreZona }}
                 </copy-icon>
               </td>
-              <td>
-                <copy-icon>
-                  #Spanish_Cadastre_Buildings_Import {{ job.cod_municipio }}
-                  {{ job.nombreZona }}
-                </copy-icon>
-              </td>
+              <td></td>
             </tr>
             <tr>
               <th>{{ $t('Detailed instructions') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
-                  Revisa la tarea siguiendo las instrucciones de la [guía de
-                  importación](https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gu%C3%ADa_de_importaci%C3%B3n).
+                  Review this task following the instructions in this [import
+                  guide](https://wiki.openstreetmap.org/wiki/Spanish
+                  Cadastre/Buildings Import/Import guide).
                 </copy-icon>
               </td>
               <td class="cell-breakWord">
                 <copy-icon>
-                  Review this task following the instructions in this [import
-                  guide](https://wiki.openstreetmap.org/wiki/Spanish
-                  Cadastre/Buildings Import/Import guide).
+                  Revisa la tarea siguiendo las instrucciones de la [guía de
+                  importación](https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gu%C3%ADa_de_importaci%C3%B3n).
                 </copy-icon>
               </td>
             </tr>

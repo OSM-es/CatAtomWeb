@@ -9,6 +9,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faAngleDown,
   faAngleUp,
+  faLongArrowLeft,
+  faLongArrowRight,
   faCheck,
   faCopy,
   faDownload,
@@ -16,6 +18,7 @@ import {
   faExternalLink,
   faUpload,
   faPaperPlane,
+  faPlus,
   faQuestionCircle,
   faRepeat,
   faRunning,
@@ -35,13 +38,15 @@ import i18n from './services/i18n'
 
 library.add(faAngleDown)
 library.add(faAngleUp)
+library.add(faLongArrowLeft)
+library.add(faLongArrowRight)
 library.add(faCheck)
 library.add(faCopy)
 library.add(faDownload)
 library.add(faExclamationTriangle)
 library.add(faExternalLink)
-library.add(faUpload)
 library.add(faPaperPlane)
+library.add(faPlus)
 library.add(faQuestionCircle)
 library.add(faRepeat)
 library.add(faRunning)
@@ -50,13 +55,12 @@ library.add(faSearch)
 library.add(faTimes)
 library.add(faTrash)
 library.add(faUndo)
+library.add(faUpload)
 library.add(faUser)
 library.add(faUserPlus)
 library.add(faUserTimes)
 
 const app = createApp(App).use(i18n)
-app.config.globalProperties.$docUrl =
-  'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos'
 app.component('FontAwesomeIcon', FontAwesomeIcon)
 app.component('VSelect', vSelect)
 app.use(router)

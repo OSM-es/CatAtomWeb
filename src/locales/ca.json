@@ -105,5 +105,6 @@
   "Undo": "Desfer",
   "parcel_parts_help": "Nombre de parts d'edifici per començar a afegir parcel·les per a tasques.",
   "parcel_dist_help": "Distància en metres per afegir parcel·les per a tasques.",
-  "between_val" : "El valor ha d'estar entre {0} i {1}."
+  "between_val" : "El valor ha d'estar entre {0} i {1}.",
+  "add_project": "Crear projecte"
 }

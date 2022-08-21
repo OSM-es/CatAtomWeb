@@ -5,7 +5,7 @@ import { useI18n } from 'vue-i18n'
 
 // eslint-disable-next-line no-undef
 const props = defineProps({
-  classes: { type: String, default: 'is-link' },
+  classes: { type: String, default: 'is-primary' },
 })
 
 const job = useJobStore()

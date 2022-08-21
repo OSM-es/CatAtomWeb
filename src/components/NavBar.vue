@@ -35,7 +35,7 @@ function logout() {
         />
         <div class="navbar-item">
           <div class="content">
-            <h1 class="is-size-3 mb-0 has-text-weight-bold">CatAtom2Osm</h1>
+            <h1 class="is-size-3 mb-0 has-text-weight-bold">CatAtom2OSM</h1>
             <p class="is-size-6">online</p>
           </div>
         </div>
@@ -52,10 +52,17 @@ function logout() {
       </div>
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
-      <div v-if="userStore.isLogged" class="navbar-end">
-        <a class="navbar-item" :href="$docUrl">{{ $t('Docs') }}</a>
-        <locale-switcher></locale-switcher>
-        <div class="navbar-item has-dropdown is-hoverable">
+      <div class="navbar-end">
+        <router-link to="/doc" class="navbar-item">
+          {{ $t('Docs') }}
+        </router-link>
+        <div class="navbar-item">
+          <locale-switcher></locale-switcher>
+        </div>
+        <div
+          v-if="userStore.isLogged"
+          class="navbar-item has-dropdown is-hoverable"
+        >
           <a class="navbar-link" data-test="user">{{ userStore.username }}</a>
           <div class="navbar-dropdown is-right">
             <a data-test="logout" class="navbar-item">
@@ -67,12 +74,7 @@ function logout() {
             </a>
           </div>
         </div>
-      </div>
-      <div v-else class="navbar-end">
-        <div class="navbar-item">
-          <locale-switcher></locale-switcher>
-        </div>
-        <div class="navbar-item">
+        <div v-else class="navbar-item">
           <div class="field has-addons">
             <p class="control">
               <a

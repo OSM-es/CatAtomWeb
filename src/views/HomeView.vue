@@ -9,7 +9,8 @@
             <a href="http://www.catastro.minhap.gob.es/webinspire/index.html">
               Servicios ATOM
             </a>
-            del Catastro a archivos <a :href="$docUrl">OSM</a>.
+            del Catastro a archivos
+            <a :href="docUrl">OSM</a>.
           </p>
         </div>
         <div class="block">
@@ -39,7 +40,7 @@
                 </p>
                 <p>
                   Consulta la
-                  <strong><a :href="$docUrl">guía de importación.</a></strong>
+                  <strong><a :href="docUrl">guía de importación.</a></strong>
                   Las importaciones o ediciones automatizadas que no sigan estas
                   directrices ¡se pueden revertir!
                 </p>
@@ -52,4 +53,10 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+import { wikiUrl } from '@/utils'
+
+const docUrl = wikiUrl(
+  'ES:Catastro español/Importación de edificios/Guía de importación'
+)
+</script>

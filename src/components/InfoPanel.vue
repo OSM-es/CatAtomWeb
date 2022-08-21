@@ -1,8 +1,8 @@
 <script setup>
 import { useJobStore } from '@/stores/job'
+import { wikiUrl } from '@/utils'
 
-const wikiUrl =
-  'https://wiki.openstreetmap.org/wiki/ES:Tag:boundary%3Dadministrative'
+const adminUrl = wikiUrl('ES:Tag:boundary=administrative')
 const job = useJobStore()
 
 function getStatus() {
@@ -52,7 +52,7 @@ function getStatus() {
         <article v-else class="message is-warning">
           <div class="message-body">
             <i18n-t keypath="project-size-ko" scope="global">
-              <a :href="wikiUrl">{{ $t('admin-boundaries') }}</a>
+              <a :href="adminUrl">{{ $t('admin-boundaries') }}</a>
             </i18n-t>
           </div>
         </article>

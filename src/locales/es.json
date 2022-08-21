@@ -58,7 +58,7 @@
   "Spanish (es)": "Español (es)",
   "English (en)": "Inglés (en)",
   "Name of the project": "Nombre del proyecto",
-  "Short description": "Descripción breve",
+  "Short description": "Descripción corta",
   "Description": "Descripción",
   "Changeset comment": "Comentario del conjunto de cambios",
   "Detailed instructions": "Instrucciones detalladas",
@@ -104,5 +104,6 @@
   "Undo": "Deshacer",
   "parcel_parts_help": "Número de partes de edificio para comenzar a agregar parcelas para tareas.",
   "parcel_dist_help": "Distancia en metros para agregar parcelas para tareas.",
-  "between_val" : "El valor debe estar entre {0} y {1}."
+  "between_val" : "El valor debe estar entre {0} y {1}.",
+  "add_project": "Crear proyecto"
 }

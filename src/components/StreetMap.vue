@@ -160,7 +160,7 @@ onMounted(() => {
     .tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution:
-        '© <a href="https://www.openstreetmap.org/"OpenStreetMap</a>',
+        '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
     })
     .addTo(map)
   control = leaflet.control.layers({ OSM: osm, 'IGN-Base': scne }).addTo(map)
