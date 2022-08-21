@@ -90,10 +90,28 @@
           >
         </figure>
         <p>
-          Si la calle está formada por distintas vías en OSM, usa los colores de
-          la capa de viales para comprobar que todas tengan exactamente el mismo
-          nombre.
+          Cuando tengas el nombre correcto edita la conversión en la tabla y/o
+          el nombre de la vía en OSM según sea necesario. Para acceder a editar
+          el mapa, en el encabezado del mapa hay un enlace a la web de OSM.
         </p>
+        <p>
+          Las ediciones en el mapa resultado de esta fase deben hacerse con la
+          cuenta de usuario habitual de OSM, no con cuentas dedicadas de
+          importación. Conviene etiquetarlas con
+          <a :href="c1n">#1calle1nombre</a> y el nombre del municipio en el
+          comentario del conjunto de cambios.
+        </p>
+        <p>
+          Si una calle se muestra con distintos colores a lo largo de su
+          trazado, es por que está formada por distintas vías en OSM y el nombre
+          no coincide. Hay que editar el mapa, ver cual es el correcto y ponerlo
+          en todos los tramos. En este ejemplo, al nombre en un tramo le falta
+          una tilde.
+        </p>
+        <figure class="image column is-9">
+          <img src="@/assets/doc/review/name.png" />
+          <span class="is-pulled-right is-size-7">© OpenStreetMap</span>
+        </figure>
         <p>
           Cuando el programa no encuentra una vía en OSM con la que emparejar
           los nombres, aplicará correcciones al nombre en Catastro para
@@ -114,18 +132,6 @@
           <a :href="addrstr" class="has-background-light">addr:street=*</a>
           cuando el nombre comienza por referencias de lugar. Para una lista
           completa consulta el anexo.
-        </p>
-        <p>
-          Cuando tengas el nombre correcto edita la conversión en la tabla y/o
-          el nombre de la vía en OSM según sea necesario. Para acceder a editar
-          el mapa, en el encabezado del mapa hay un enlace a la web de OSM.
-        </p>
-        <p>
-          Las ediciones en el mapa resultado de esta fase deben hacerse con la
-          cuenta de usuario habitual de OSM, no con cuentas dedicadas de
-          importación. Conviene etiquetarlas con
-          <a :href="c1n">#1calle1nombre</a> y el nombre del municipio en el
-          comentario del conjunto de cambios.
         </p>
         <h4>Eliminar</h4>
         <p>
