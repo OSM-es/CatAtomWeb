@@ -45,7 +45,7 @@ function styleRow(row) {
     </template>
     <template #content>
       <div class="panel-block">
-        <div class="container">
+        <div class="table-container">
           <p
             v-for="(row, i) in getData()"
             :key="i"
