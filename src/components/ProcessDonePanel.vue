@@ -73,6 +73,7 @@ function zoningUrl() {
               <a
                 class="button is-success is-outlined is-fullwidth"
                 href="https://tareas.openstreetmap.es/manage/projects/new/"
+                target="_blank"
               >
                 <span>{{ $t('add_project') }}</span>
                 <span class="icon">

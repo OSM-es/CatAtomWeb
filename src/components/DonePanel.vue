@@ -15,8 +15,8 @@ function downloadUrl() {
       <p class="panel-heading">{{ $t('Publish') }}</p>
     </template>
     <template #content>
-      <div class="panel-block">
-        <table class="table">
+      <div class="panel-block table-container">
+        <table class="table is-narrow">
           <thead>
             <tr>
               <th>{{ $t('Field') }}</th>

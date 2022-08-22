@@ -20,7 +20,19 @@ function copyToClipboard(event) {
       <font-awesome-icon icon="copy" />
     </span>
   </button>
-  <div ref="data" data-test="data">
+  <div
+    ref="data"
+    data-test="data"
+    class="is-clicklable has-tooltip-arrow"
+    :data-tooltip="$t('Copy to clipboard')"
+    @click="copyToClipboard"
+  >
     <slot></slot>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.is-clicklable {
+  cursor: pointer;
+}
+</style>
