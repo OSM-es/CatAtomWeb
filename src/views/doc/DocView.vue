@@ -31,7 +31,7 @@
           <li><a href="/doc/select">Seleccionar zona</a></li>
           <li><a href="/doc/process">Procesar</a></li>
           <li><a href="/doc/review">Revisar el callejero</a></li>
-          <li><a href="/doc/fixmes">Corregir errores</a></li>
+          <li><a href="/doc/fixme">Corregir errores</a></li>
           <li><a href="/doc/publish">Publicación</a></li>
         </ol>
         <h2>¿Necesitas ayuda?</h2>
