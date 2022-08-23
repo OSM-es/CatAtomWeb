@@ -43,7 +43,7 @@ api.getMun = (mun) => {
 api.getJob = (cod_municipio, cod_division, linea = 0) => {
   const params = { linea }
   const div = cod_division || ''
-  return api.get('job/' + cod_municipio + '/' + div, { params })
+  return api.get('job/' + (cod_municipio || '') + '/' + div, { params })
 }
 
 api.postJob = (cod_municipio, cod_division, options) => {
@@ -68,21 +68,21 @@ api.postHgw = (cod_municipio, data) => {
   return api.post('hgw/' + cod_municipio, data)
 }
 
-api.getFixme = (cod_municipio, data) => {
-  return api.get('fixme/' + cod_municipio + '/' + data)
+api.getFixme = (cod_municipio, fixme) => {
+  return api.get('fixme/' + cod_municipio, { params: { fixme } })
 }
 
-api.postFixme = (cod_municipio, data) => {
-  return api.post('fixme/' + cod_municipio + '/' + data)
+api.postFixme = (cod_municipio, fixme) => {
+  return api.post('fixme/' + cod_municipio, { fixme })
 }
 
 api.putFixme = (cod_municipio, data, config) => {
-  const filename = data.get('file').name
-  return api.put('fixme/' + cod_municipio + '/' + filename, data, config)
+  return api.put('fixme/' + cod_municipio, data, config)
 }
 
-api.deleteFixme = (cod_municipio) => {
-  return api.delete('fixme/' + cod_municipio)
+api.deleteFixme = (cod_municipio, cod_division) => {
+  const div = cod_division || ''
+  return api.delete('fixme/' + cod_municipio + '/' + div)
 }
 
 api.getExport = (cod_municipio) => {

@@ -165,8 +165,11 @@ export const useJobStore = defineStore({
       return response.data
     },
     async deleteFixme() {
-      await api.deleteFixme(this.cod_municipio)
-      this.getJob(this.cod_municipio, this.cod_division)
+      const response = await api.deleteFixme(
+        this.cod_municipio,
+        this.cod_division
+      )
+      this.updateJob(response.data)
     },
   },
 })

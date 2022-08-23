@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onBeforeUnmount, onMounted } from 'vue'
+import { computed, ref, onBeforeUnmount, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
 import api from '@/services/api'
@@ -20,8 +20,6 @@ const provincias = useProvStore()
 const municipios = ref([])
 const divisiones = ref([])
 const provincia = ref(null)
-const municipio = ref(null)
-const division = ref(null)
 const loadingMun = ref(false)
 const loadingDiv = ref(false)
 let municipioPrevio = null
@@ -58,13 +56,18 @@ chat.on('done', (data) => {
   job.charla.push(t('finish_job', [name]))
 })
 
+const divDisabled = computed(() => {
+  return (
+    divisiones.value.length == 0 ||
+    !['AVAILABLE', 'ERROR', 'DONE'].includes(job.estado)
+  )
+})
+
 async function fetchMunicipios(prov) {
   loadingMun.value = true
   loadingDiv.value = false
   const response = await api.getProv(prov)
   job.$reset()
-  municipio.value = null
-  division.value = null
   loadingMun.value = false
   municipios.value = response.data.municipios.map((mun) => ({
     cod_municipio: mun.cod_municipio,
@@ -79,7 +82,6 @@ function fetchDivisiones(mun) {
   api
     .getMun(mun)
     .then((response) => {
-      division.value = null
       loadingDiv.value = false
       divisiones.value = response.data.divisiones
     })
@@ -88,7 +90,7 @@ function fetchDivisiones(mun) {
     })
 }
 
-function getRoom(cod_municipio = municipio.value) {
+function getRoom(cod_municipio = job.cod_municipio) {
   return {
     id: userStore.osmId,
     username: userStore.username,
@@ -97,21 +99,18 @@ function getRoom(cod_municipio = municipio.value) {
 }
 
 function getJobStatus() {
-  if (municipioPrevio && municipioPrevio != municipio.value) {
+  if (municipioPrevio && municipioPrevio != job.cod_municipio) {
     chat.socket.emit('leave', getRoom(municipioPrevio))
+    chat.socket.emit('join', getRoom())
+    job.cod_division = null
   }
-  if (municipio.value) {
-    if (municipioPrevio != municipio.value) {
-      job.$reset()
-      chat.socket.emit('join', getRoom())
-    }
-    job.getJob(municipio.value, division.value || '').then(() => {
-      division.value = job.cod_division
-      if (localStorage.getItem('municipio') != municipio.value) {
-        localStorage.setItem('municipio', municipio.value)
+  if (job.cod_municipio) {
+    job.getJob(job.cod_municipio, job.cod_division).then(() => {
+      if (localStorage.getItem('municipio') != job.cod_municipio) {
+        localStorage.setItem('municipio', job.cod_municipio || '')
         router.replace({ name: 'process' })
       }
-      municipioPrevio = municipio.value
+      municipioPrevio = job.cod_municipio
     })
   }
 }
@@ -127,7 +126,7 @@ onMounted(() => {
   if (mun) {
     provincia.value = mun.substring(0, 2)
     fetchMunicipios(provincia.value).then(() => {
-      municipio.value = mun
+      job.cod_municipio = mun
       fetchDivisiones(mun)
     })
   }
@@ -162,11 +161,10 @@ onBeforeUnmount(() => {
     <div class="field">
       <div class="control">
         <v-select
-          v-model="municipio"
-          data-test="municipio"
+          v-model="job.cod_municipio"
           :reduce="(mun) => mun && mun.cod_municipio"
-          :placeholder="$t('Select the municipality')"
           :options="municipios"
+          :placeholder="$t('Select the municipality')"
           :clearable="false"
           :select-on-tab="true"
           :disabled="municipios.length == 0"
@@ -183,20 +181,14 @@ onBeforeUnmount(() => {
     <div class="field">
       <div class="control">
         <v-select
-          v-if="
-            !job.estado ||
-            job.estado == 'AVAILABLE' ||
-            job.estado == 'ERROR' ||
-            (job.estado == 'DONE' && job.report.split_name)
-          "
-          v-model="division"
+          v-model="job.cod_division"
           data-test="division"
           label="nombre"
           :reduce="(div) => div && div.osm_id"
           :placeholder="$t('Select the subarea')"
           :options="divisiones"
           :select-on-tab="true"
-          :disabled="divisiones.length == 0"
+          :disabled="divDisabled"
           :loading="loadingDiv"
           @update:model-value="getJobStatus"
         >
@@ -208,12 +200,9 @@ onBeforeUnmount(() => {
             {{ nombre.replace('  ', '&nbsp;&nbsp;&nbsp;&nbsp;') }}
           </template>
         </v-select>
-        <div v-else class="control is-disabled">
-          <input class="input" :value="job.report.split_name" />
-        </div>
       </div>
     </div>
-    <div v-if="municipio === null" class="notification is-info is-light">
+    <div v-if="!job.cod_municipio" class="notification is-info is-light">
       <i18n-t keypath="select_job" scope="global">
         <a :href="wikiUrl">{{ $t('admin boundaries') }}</a>
       </i18n-t>
