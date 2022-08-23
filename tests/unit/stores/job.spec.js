@@ -142,10 +142,3 @@ test('postFixme 02001', async () => {
   expect(job.revisar[3].osm_id).toBe('foo')
   expect(job.revisar[3].locked).toBe('true')
 })
-
-test('deleteFixme 02001', async () => {
-  job.cod_municipio = '02001'
-  await job.deleteFixme()
-  expect(api.deleteFixme).toBeCalledWith('02001')
-  expect(api.getJob).toBeCalledWith('02001', null, 0)
-})

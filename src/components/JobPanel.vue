@@ -162,6 +162,7 @@ onBeforeUnmount(() => {
       <div class="control">
         <v-select
           v-model="job.cod_municipio"
+          data-test="municipio"
           :reduce="(mun) => mun && mun.cod_municipio"
           :options="municipios"
           :placeholder="$t('Select the municipality')"
