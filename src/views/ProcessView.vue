@@ -15,9 +15,11 @@ const job = useJobStore()
 const route = useRoute()
 
 const munCode = route.params.munCode
+const divCode = route.params.divCode
 if (munCode) {
   localStorage.setItem('municipio', munCode)
 }
+localStorage.setItem('division', divCode)
 
 function fixmeEnabled() {
   return job.revisar.length > 0 && job.estado != 'RUNNING'

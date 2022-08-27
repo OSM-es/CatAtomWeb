@@ -110,6 +110,9 @@ function getJobStatus() {
     job.getJob(job.cod_municipio, job.cod_division).then(() => {
       if (localStorage.getItem('municipio') != job.cod_municipio) {
         localStorage.setItem('municipio', job.cod_municipio || '')
+        if (localStorage.getItem('division') != job.cod_division) {
+          localStorage.setItem('division', job.cod_division || '')
+        }
         router.replace({ name: 'process' })
       }
       municipioPrevio = job.cod_municipio
@@ -118,17 +121,22 @@ function getJobStatus() {
 }
 
 function shareLink(event) {
-  const link = document.location.origin + '/' + job.cod_municipio
+  let link = document.location.origin + '/' + job.cod_municipio
+  link += job.cod_division ? `/${job.cod_division}` : ''
   clipboardHandler(event, link)
 }
 
 onMounted(() => {
   provincias.fetch()
   const mun = localStorage.getItem('municipio')
+  const div = localStorage.getItem('division')
   if (mun) {
     provincia.value = mun.substring(0, 2)
     fetchMunicipios(provincia.value).then(() => {
       job.cod_municipio = mun
+      if (div) {
+        job.cod_division = div
+      }
       fetchDivisiones(mun)
     })
   }
@@ -216,7 +224,7 @@ onBeforeUnmount(() => {
       :data-tooltip="$t('Copy to clipboard')"
       @click="shareLink"
     >
-      Compartir proyecto
+      {{ $t('Share project') }}
       <span class="icon is-fake-btn">
         <font-awesome-icon icon="share" />
       </span>

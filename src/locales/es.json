@@ -105,5 +105,6 @@
   "parcel_parts_help": "Número de partes de edificio para comenzar a agregar parcelas para tareas.",
   "parcel_dist_help": "Distancia en metros para agregar parcelas para tareas.",
   "between_val" : "El valor debe estar entre {0} y {1}.",
-  "add_project": "Crear proyecto"
+  "add_project": "Crear proyecto",
+  "Share project": "Compartir proyecto"
 }

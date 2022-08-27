@@ -21,7 +21,7 @@ const routes = [
   { path: '/doc/fixme', name: 'doc_fixme', component: DocFixmeView },
   { path: '/doc/publish', name: 'doc_publish', component: DocPublishView },
   {
-    path: '/:munCode?',
+    path: '/:munCode?/:divCode?',
     name: 'process',
     component: ProcessView,
     meta: {
