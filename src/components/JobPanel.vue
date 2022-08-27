@@ -26,7 +26,7 @@ let municipioPrevio = null
 
 chat.on('updateJob', (data) => {
   if (!userStore.isOwner(data)) {
-    job.getJob(job.cod_municipio, job.cod_division, true)
+    job.updateJob(data.job)
   }
 })
 
@@ -40,7 +40,7 @@ chat.on('createJob', (data) => {
 
 chat.on('deleteJob', (data) => {
   if (!userStore.isOwner(data)) {
-    job.getJob(job.cod_municipio, job.cod_division)
+    job.updateJob(data.job)
   }
   job.charla.push(t('delete_job', data))
 })
@@ -48,7 +48,7 @@ chat.on('deleteJob', (data) => {
 chat.on('done', (data) => {
   let name = job.cod_municipio
   if (!userStore.isOwner(data)) {
-    job.getJob(job.cod_municipio, job.cod_division)
+    job.updateJob(data.job)
   }
   if (job.cod_division) {
     name += ' (' + job.report.split_name + ')'

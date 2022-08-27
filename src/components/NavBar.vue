@@ -113,4 +113,7 @@ function logout() {
 .navbar-item {
   padding: 0.25em 0.75em !important;
 }
+a.navbar-item.is-active {
+  background-color: white !important;
+}
 </style>
