@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import api from '@/services/api'
-import { useErrorStore } from '@/stores/error'
-jest.mock('@/stores/error', () => require('../../mocks/stores/error'))
+import { useFlashStore } from '@/stores/flash'
+jest.mock('@/stores/flash', () => require('../../mocks/stores/flash'))
 
 test('create', () => {
   expect(api.defaults.baseURL).toBe(process.env.VUE_APP_ROOT_API)
@@ -18,5 +18,5 @@ test('setAuth', () => {
 test('interceptors', () => {
   const rejected = api.interceptors.response.handlers[0].rejected
   expect(rejected('foobar')).rejects.toEqual('foobar')
-  expect(useErrorStore().error).toBe('foobar')
+  expect(useFlashStore().error).toBe('foobar')
 })

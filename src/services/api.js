@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useErrorStore } from '@/stores/error'
+import { useFlashStore } from '@/stores/flash'
 
 export const api = axios.create({
   baseURL: process.env.VUE_APP_ROOT_API,
@@ -22,7 +22,7 @@ api.interceptors.response.use(
     return response
   },
   function (error) {
-    useErrorStore().set(error)
+    useFlashStore().set(error)
     return Promise.reject(error)
   }
 )

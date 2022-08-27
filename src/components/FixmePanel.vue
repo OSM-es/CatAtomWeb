@@ -4,7 +4,7 @@ import DropZone from './DropZone.vue'
 import FixmeList from './FixmeList.vue'
 import UploadableFileList from '@/compositions/UploadableFileList'
 import { useChatService } from '@/services/chat'
-import { useErrorStore } from '@/stores/error'
+import { useFlashStore } from '@/stores/flash'
 import { useJobStore } from '@/stores/job'
 import { useUserStore } from '@/stores/user'
 
@@ -20,7 +20,7 @@ const props = defineProps({
   },
 })
 const { t } = useI18n()
-const errorStore = useErrorStore()
+const flash = useFlashStore()
 const job = useJobStore()
 const user = useUserStore()
 const chat = useChatService()
@@ -57,7 +57,7 @@ function onNewFiles(newFiles) {
     uploadableFiles()
   )
   if (newFiles.length != matchFiles.length) {
-    errorStore.set(t('Select only downloaded files'))
+    flash.set(t('Select only downloaded files'))
   }
   files.addFiles(matchFiles)
   files.getFiles().forEach((file) => {

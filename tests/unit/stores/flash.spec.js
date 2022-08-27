@@ -1,45 +1,45 @@
 /* eslint-disable no-undef */
 import { setActivePinia, createPinia } from 'pinia'
-import { useErrorStore } from '@/stores/error'
+import { useFlashStore } from '@/stores/flash'
 import { toast } from 'bulma-toast'
 jest.mock('@/services/i18n', () => require('../../mocks/services/i18n'))
 jest.mock('bulma-toast', () => require('../../mocks/bulma-toast'))
 
-let error
+let flash
 
 beforeEach(() => {
   setActivePinia(createPinia())
-  error = useErrorStore()
-  error.error = 'error'
+  flash = useFlashStore()
+  flash.flash = 'flash'
 })
 
 describe('message getter', () => {
   test('is string with i18n', () => {
-    expect(error.message).toBe('ERROR')
+    expect(flash.message).toBe('FLASH')
   })
 
   test('is string', () => {
-    error.error = 'not.exists'
-    expect(error.message).toBe('not.exists')
+    flash.flash = 'not.exists'
+    expect(flash.message).toBe('not.exists')
   })
 
   test('is in message', () => {
-    error.error = { message: 'hola' }
-    expect(error.message).toBe('HOLA')
+    flash.flash = { message: 'hola' }
+    expect(flash.message).toBe('HOLA')
   })
 
   test('is in response', () => {
-    error.error = { response: { data: { message: 'hola' } } }
-    expect(error.message).toBe('HOLA')
+    flash.flash = { response: { data: { message: 'hola' } } }
+    expect(flash.message).toBe('HOLA')
   })
 })
 
 test('clear action', () => {
-  error.clear()
-  expect(error.error).toBeNull()
+  flash.clear()
+  expect(flash.flash).toBeNull()
 })
 
 test('set action', () => {
-  error.set('foobar')
+  flash.set('foobar')
   expect(toast.mock.calls[0][0].message).toBe('FOOBAR')
 })

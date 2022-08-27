@@ -8,7 +8,7 @@ import { useJobStore } from '@/stores/job'
 import { i18nConf } from '@/services/i18n'
 jest.mock('@/services/chat', () => require('../../mocks/services/chat'))
 jest.mock('@/services/i18n', () => require('../../mocks/services/i18n'))
-jest.mock('@/stores/error', () => require('../../mocks/stores/error'))
+jest.mock('@/stores/flash', () => require('../../mocks/stores/flash'))
 jest.mock('@/stores/job', () => require('../../mocks/stores/job'))
 jest.mock('@/stores/user', () => require('../../mocks/stores/user'))
 

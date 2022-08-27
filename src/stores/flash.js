@@ -4,41 +4,41 @@ import i18n from '@/services/i18n'
 
 const { t, te } = i18n.global
 
-export const useErrorStore = defineStore({
-  id: 'error',
+export const useFlashStore = defineStore({
+  id: 'flash',
   state: () => ({
-    error: null,
+    flash: null,
   }),
 
   getters: {
     message: (state) => {
       let msg = ''
-      if (!state.error) {
+      if (!state.flash) {
         return
       }
-      if (state.error.response && state.error.response.data) {
-        msg = state.error.response.data.message
-      } else if (state.error.message) {
-        msg = state.error.message
+      if (state.flash.response && state.flash.response.data) {
+        msg = state.flash.response.data.message
+      } else if (state.flash.message) {
+        msg = state.flash.message
       } else {
-        msg = state.error
+        msg = state.flash
       }
       if (te(msg)) {
         return t(msg)
       }
       return msg
     },
-    hasError: (state) => state.error !== null,
+    hasFlash: (state) => state.flash !== null,
   },
 
   actions: {
-    set(error) {
+    set(flash, type = 'is-danger') {
       const prevMsg = this.message
-      this.error = error
+      this.flash = flash
       if (this.message != prevMsg) {
         toast({
           message: this.message,
-          type: 'is-danger',
+          type,
           position: 'top-center',
           duration: 20000,
           dismissible: true,
@@ -50,7 +50,7 @@ export const useErrorStore = defineStore({
       }
     },
     clear() {
-      this.error = null
+      this.flash = null
     },
   },
 })
