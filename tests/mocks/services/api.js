@@ -34,7 +34,7 @@ module.exports = {
       estado: 'AVAILABLE',
     },
   })),
-  postJob: jest.fn((cod_municipio, cod_division, options) => {
+  postJob: jest.fn((cod_municipio, cod_division,    options) => {
     let report = { language: options.idioma }
     if ('building' in options) {
       report['building_date'] = '1999'
@@ -62,7 +62,7 @@ module.exports = {
   putHgw: jest.fn((cod_municipio, data) => ({
     data: { ...data, osm_id: 'foo', username: 'bar' },
   })),
-  putFixme: jest.fn((cod_municipio, filename) => ({
+  putFixme: jest.fn((cod_municipio, cod_division, filename) => ({
     data: {
       filename: filename,
       fixmes: '0',
@@ -70,7 +70,7 @@ module.exports = {
       username: 'bar',
     },
   })),
-  postFixme: jest.fn((cod_municipio, filename) => ({
+  postFixme: jest.fn((cod_municipio, cod_division, filename) => ({
     data: {
       filename: filename,
       fixmes: '0',

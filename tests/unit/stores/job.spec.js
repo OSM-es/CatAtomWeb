@@ -57,8 +57,6 @@ test('getJob 03002 review', async () => {
   expect(job.cod_municipio).toBe('03002')
   expect(job.estado).toBe('REVIEW')
   expect(job.idioma).toBe('ca_ES')
-  expect(job.edificios).toBeFalsy()
-  expect(job.direcciones).toBeTruthy()
 })
 
 test('createJob 02001', async () => {
@@ -73,8 +71,6 @@ test('createJob 02001', async () => {
   expect(job.estado).toBe('RUNNING')
   expect(job.idioma).toBe('ca_ES')
   expect(job.mensaje).toBe('lorem ipsum')
-  expect(job.edificios).toBeTruthy()
-  expect(job.direcciones).toBeFalsy()
 })
 
 test('deleteJob 02001', async () => {

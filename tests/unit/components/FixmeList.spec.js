@@ -25,7 +25,7 @@ const files = {
   getFile: (filename) => (filename == 'f6' ? f6 : null),
 }
 const wrapper = shallowMount(FixmeList, {
-  props: { municipio: '66699', fixmes, files },
+  props: { municipio: '12345', fixmes, files },
   global: { plugins: [createI18n(i18nConf)] },
 })
 const rows = wrapper.findAll('nav')
@@ -33,14 +33,14 @@ const rows = wrapper.findAll('nav')
 test('owner locked', () => {
   expect(rows).toHaveLength(6)
   expect(rows[0].get('div').attributes()['data-tooltip']).toBe('Locked by u1')
-  expect(rows[0].get('a').attributes().href).toBe('results/66699/tasks/f1')
+  expect(rows[0].get('a').attributes().href).toBe('results/12345/tasks/f1')
   expect(rows[0].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[0].get('input').isVisible()).toBeTruthy()
 })
 
 test('owner not locked', async () => {
   expect(rows[1].get('div').attributes()['data-tooltip']).toBe('Edited by u1')
-  expect(rows[1].get('a').attributes().href).toBe('results/66699/tasks/f2')
+  expect(rows[1].get('a').attributes().href).toBe('results/12345/tasks/f2')
   expect(rows[1].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[1].get('input').isVisible()).toBeTruthy()
   rows[1].get('input').element.value = ''
@@ -54,20 +54,20 @@ test('owner not locked', async () => {
 
 test('not owner locked', () => {
   expect(rows[2].get('div').attributes()['data-tooltip']).toBe('Locked by u2')
-  expect(rows[2].get('a').attributes().href).toBe('results/66699/tasks/f3')
+  expect(rows[2].get('a').attributes().href).toBe('results/12345/tasks/f3')
   expect(rows[2].get('a').attributes().class).toBe('is-disabled')
   expect(rows[2].get('input').isVisible()).toBeFalsy()
 })
 
 test('not owner not locked', () => {
   expect(rows[3].get('div').attributes()['data-tooltip']).toBe('Edited by u2')
-  expect(rows[3].get('a').attributes().href).toBe('results/66699/tasks/f4')
+  expect(rows[3].get('a').attributes().href).toBe('results/12345/tasks/f4')
   expect(rows[3].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[3].get('input').isVisible()).toBeFalsy()
 })
 
 test('upload not enabled', async () => {
-  expect(rows[4].get('a').attributes().href).toBe('results/66699/tasks/f5')
+  expect(rows[4].get('a').attributes().href).toBe('results/12345/tasks/f5')
   expect(rows[4].get('a').attributes().class).not.toBe('is-disabled')
   expect(rows[4].get('input').isVisible()).toBeFalsy()
   rows[4].get('a').trigger('click')
