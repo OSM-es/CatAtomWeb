@@ -3,6 +3,27 @@ import { useJobStore } from '@/stores/job'
 import CopyIcon from './CopyIcon.vue'
 
 const job = useJobStore()
+const titles = { b: 'Buildings', d: 'Addresses' }
+const opciones = {
+  b: 'edificios',
+  d: 'direcciones',
+  bd: 'edificios y direcciones',
+}
+const options = {
+  b: 'buildings',
+  d: 'addresses',
+  bd: 'buildings and addresses',
+}
+const opcionesLng = {
+  b: 'El trazado de edificios',
+  d: 'Las direcciones postales',
+  bd: 'El trazado de edificios y las direcciones postales',
+}
+const optionsLng = {
+  b: 'Buildings footprints',
+  d: 'Postal addresses',
+  bd: 'Buildings footprints and postal addresses',
+}
 
 function downloadUrl() {
   return new URL(process.env.BASE_URL, window.location.href).href
@@ -12,7 +33,12 @@ function downloadUrl() {
 <template>
   <vue-collapsible-panel class="panel is-info">
     <template #title>
-      <p class="panel-heading">{{ $t('Publish') }}</p>
+      <p class="panel-heading">
+        {{ $t('Publish') }}
+        <span v-if="job.type == 'bd'">
+          &nbsp;{{ $t(titles[job.options]).toLowerCase() }}
+        </span>
+      </p>
     </template>
     <template #content>
       <div class="panel-block table-container">
@@ -38,12 +64,13 @@ function downloadUrl() {
               <th>{{ $t('Short description') }}</th>
               <td>
                 <copy-icon>
-                  Import of {{ job.options }} of {{ job.nombreZona }}
+                  Import of {{ options[job.options] }} of {{ job.nombreZona }}
                 </copy-icon>
               </td>
               <td>
                 <copy-icon>
-                  Importación de {{ job.opciones }} de {{ job.nombreZona }}
+                  Importación de {{ opciones[job.options] }} de
+                  {{ job.nombreZona }}
                 </copy-icon>
               </td>
             </tr>
@@ -51,12 +78,11 @@ function downloadUrl() {
               <th>{{ $t('Description') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
-                  Building footprints and postal addresses are very valuable
-                  data for the OpenStreetMap map. Currently there are not many
-                  Spanish municipalities that have this information and that is
-                  why OpenStreetMap Spain is promoting the import of some of the
-                  cadastral data. Help us make the OpenStreetMap map even more
-                  useful!<br /><br />
+                  {{ optionsLng[job.options] }} are very valuable OpenStreetMap
+                  map. Currently there are not many Spanish municipalities that
+                  have this information and that is why why OpenStreetMap Spain
+                  is promoting the import of some of the cadastral data. Help us
+                  make the OpenStreetMap map even more useful!<br /><br />
                   Consult the [import
                   guide](https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_import
                   to contribute.
@@ -64,13 +90,12 @@ function downloadUrl() {
               </td>
               <td class="cell-breakWord">
                 <copy-icon>
-                  El trazado de edificios y las direcciones postales son datos
-                  de mucho valor para el mapa de OpenStreetMap. Actualmente no
-                  son muchos los municipios españoles que disponen de esta
-                  información y es por ello que desde OpenStreetMap España se
-                  está impulsando la importación de algunos de los datos
-                  catastrales. ¡Ayúdanos a que el mapa de OpenStreetMap sea
-                  todavía más útil!<br /><br />
+                  {{ opcionesLng[job.options] }} son datos de mucho valor para
+                  el mapa de OpenStreetMap. Actualmente no son muchos los
+                  municipios españoles que disponen de esta información y es por
+                  ello que desde OpenStreetMap España se está impulsando la
+                  importación de algunos de los datos catastrales. ¡Ayúdanos a
+                  que el mapa de OpenStreetMap sea todavía más útil!<br /><br />
                   Consulta la [guía de
                   importación](https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gu%C3%ADa_de_importaci%C3%B3n)
                   para colaborar.
@@ -107,15 +132,13 @@ function downloadUrl() {
               <th>{{ $t('Per task instructions') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
-                  Download the **[task file]({{
-                    downloadUrl()
-                  }}results/{muncode}/tasks/{localId}.osm.gz) o [Editar con
-                  Control Remoto de
+                  Download the **[task file]({{ downloadUrl() }}
+                  {{ job.url }}/{localId}.osm.gz) o [Editar con Control Remoto
+                  de
                   JOSM](http://localhost:8111/import?new_layer=true&amp;url={{
                     downloadUrl()
-                  }}results/{muncode}/tasks{{
-                    job.args
-                  }}/{localId}.osm.gz)**.<br />
+                  }}
+                  {{ job.url }}/{localId}.osm.gz)**.<br />
                   Type: {type}. Complexity: {parts} parts.<br />
                   Review the task following the instructions in the [import
                   guide](https://openstreetmap.es/catastro). Check the facade
@@ -125,15 +148,13 @@ function downloadUrl() {
               </td>
               <td>
                 <copy-icon>
-                  Descarga el [archivo de la tarea]({{
-                    downloadUrl()
-                  }}results/{muncode}/tasks/{localId}.osm.gz) o **[Editar con
-                  Control Remoto de
+                  Descarga el [archivo de la tarea]({{ downloadUrl() }}
+                  {{ job.url }}/{localId}.osm.gz) o **[Editar con Control Remoto
+                  de
                   JOSM](http://localhost:8111/import?new_layer=true&amp;url={{
                     downloadUrl()
-                  }}results/{muncode}/tasks{{
-                    job.args
-                  }}/{localId}.osm.gz)**.<br />
+                  }}
+                  {{ job.url }}/{localId}.osm.gz)**.<br />
                   Tipo: {type}. Complejidad: {parts} partes.<br />
                   Revisa la tarea siguiendo las instrucciones de la [guía de
                   importación](https://openstreetmap.es/catastro). Consulta las

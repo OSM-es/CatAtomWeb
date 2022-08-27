@@ -28,7 +28,7 @@
           <em>{{ $t('add_project') }}</em>
         </p>
         <figure class="image has-text-left ml-6">
-          <span class="button is-success is-outlined is-fake-btn">
+          <span class="button is-success is-fake-btn">
             <span>{{ $t('add_project') }}</span>
             <span class="icon">
               <font-awesome-icon icon="plus" />

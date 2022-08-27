@@ -4,7 +4,7 @@ import { useJobStore } from '@/stores/job'
 import { useUserStore } from '@/stores/user'
 
 // eslint-disable-next-line no-undef
-const props = defineProps({
+defineProps({
   municipio: {
     type: String,
     default: '',
@@ -23,10 +23,6 @@ defineEmits(['change'])
 const { t } = useI18n()
 const job = useJobStore()
 const user = useUserStore()
-
-function getUrl(fixme) {
-  return `results/${props.municipio}/tasks/${fixme.filename}`
-}
 
 function getOwner(fixme) {
   const msg = fixme.locked ? 'Locked by' : 'Edited by'
@@ -79,7 +75,7 @@ function chatColor(fixme) {
     <nav v-if="!files.fileExists(fixme.filename)" class="level is-mobile">
       <div class="level-left has-tooltip-arrow" :data-tooltip="getOwner(fixme)">
         <a
-          :href="getUrl(fixme)"
+          :href="`${job.url}/${fixme.filename}`"
           :class="isLocked(fixme)"
           download
           @click="onDownload"

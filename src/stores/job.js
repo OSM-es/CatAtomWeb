@@ -8,6 +8,8 @@ export const useJobStore = defineStore({
   state: () => ({
     cod_municipio: null,
     cod_division: null,
+    edificios: true,
+    direcciones: true,
     estado: '',
     propietario: null,
     mensaje: '',
@@ -20,14 +22,15 @@ export const useJobStore = defineStore({
     info: null,
     participantes: 0,
     charla: [],
-    next_args: '',
+    current_args: '',
+    type: '',
     parcel_parts: Number(process.env.VUE_APP_DEFAULT_PARCEL_PARTS),
     parcel_dist: Number(process.env.VUE_APP_DEFAULT_PARCEL_DIST),
   }),
 
   getters: {
     provincia: (state) => state.cod_municipio.substring(0, 2),
-    nombreZona(state) {
+    nombreZona: (state) => {
       const provincias = useProvStore()
       let name = state.report.split_name
       name = name ? name + ', ' : ''
@@ -36,44 +39,31 @@ export const useJobStore = defineStore({
       name = prov != state.report.mun_name ? name + ' (' + prov + ')' : name
       return name
     },
-    opciones(state) {
-      return state.edificios
-        ? state.direcciones
-          ? 'edificios y direcciones'
-          : 'edificios'
-        : 'direcciones'
+    options: (state) => {
+      return state.edificios ? (state.direcciones ? 'bd' : 'b') : 'd'
     },
-    options(state) {
-      return state.edificios
-        ? state.direcciones
-          ? 'buildings and addresses'
-          : 'buildings'
-        : 'addresses'
-    },
-    fixmes(state) {
+    fixmes: (state) => {
       return state.revisar.filter((fixme) => fixme.fixmes != '0').length
     },
-    highways(state) {
+    highways: (state) => {
       return state.callejero.reduce(
         (total, row) => total + (row.length < 3 || !row[2] ? 1 : 0),
         0
       )
     },
-    args(state) {
-      if (state.edificios && !state.direcciones) {
-        return '-b'
-      }
-      if (state.direcciones && !state.edificios) {
-        return '-d'
-      }
-    },
-    nextMsg(state) {
-      if (state.next_args == '-b') {
+    nextMsg: (state) => {
+      if (state.type == 'd') {
         return 'Process buildings'
       }
-      if (state.next_args == '-d') {
+      if (state.type == 'b') {
         return 'Process addresses'
       }
+      return ''
+    },
+    url: (state) => {
+      const split = state.cod_division ? `/${state.cod_division}` : ''
+      const tasks = state.current_args || ''
+      return `results/${state.cod_municipio}${split}/tasks${tasks}`
     },
   },
 
@@ -86,8 +76,6 @@ export const useJobStore = defineStore({
       this.cod_division = this.cod_division || null
       this.log = log.concat(this.log)
       if (this.informe.length == 0) {
-        this.edificios = true
-        this.direcciones = true
         this.idioma = 'es_ES'
         if (provincias.ca_provs.includes(this.provincia)) {
           this.idioma = 'ca_ES'
@@ -95,8 +83,6 @@ export const useJobStore = defineStore({
           this.idioma = 'gl_ES'
         }
       } else {
-        this.edificios = 'building_date' in this.report
-        this.direcciones = 'address_date' in this.report
         this.idioma = this.report.language
       }
     },
@@ -120,10 +106,15 @@ export const useJobStore = defineStore({
       const i = array.findIndex(this.revisar, { filename: data.filename })
       this.revisar[i] = data
     },
-    async getJob(cod_municipio, cod_division) {
+    async getJob(cod_municipio, cod_division, force = false) {
       if (cod_municipio) {
         const linea = this.estado == 'RUNNING' ? this.linea : 0
-        const response = await api.getJob(cod_municipio, cod_division, linea)
+        const params = { linea }
+        if (this.estado == 'RUNNING' || force) {
+          params.building = this.edificios
+          params.address = this.direcciones
+        }
+        const response = await api.getJob(cod_municipio, cod_division, params)
         this.updateJob(response.data)
       }
     },
@@ -145,22 +136,37 @@ export const useJobStore = defineStore({
       return response
     },
     async deleteJob() {
+      const options = { building: this.edificios, address: this.direcciones }
       const response = await api.deleteJob(
         this.cod_municipio,
-        this.cod_division
+        this.cod_division,
+        options
       )
       this.updateJob(response.data)
     },
     async getFixme(data) {
-      const response = await api.getFixme(this.cod_municipio, data)
+      const response = await api.getFixme(
+        this.cod_municipio,
+        this.cod_division,
+        data
+      )
       this.updateFixme(response.data)
     },
     async postFixme(data) {
-      const response = await api.postFixme(this.cod_municipio, data)
+      const response = await api.postFixme(
+        this.cod_municipio,
+        this.cod_division,
+        data
+      )
       this.updateFixme(response.data)
     },
     async putFixme(data, config = {}) {
-      const response = await api.putFixme(this.cod_municipio, data, config)
+      const response = await api.putFixme(
+        this.cod_municipio,
+        this.cod_division,
+        data,
+        config
+      )
       this.updateFixme(response.data)
       return response.data
     },

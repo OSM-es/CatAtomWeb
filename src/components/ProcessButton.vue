@@ -29,7 +29,7 @@ function ownerTip() {
   <div class="container">
     <div class="has-tooltip-arrow" :data-tooltip="ownerTip()">
       <button
-        class="button is-outlined is-fullwidth"
+        class="button is-fullwidth"
         :class="props.classes"
         :disabled="isDisabled()"
       >

@@ -45,10 +45,8 @@ function updateLog() {
 function processJob() {
   job.parcel_dist = state.parcel_dist
   job.parcel_parts = state.parcel_parts
-  if (job.next_args) {
-    job.edificios = job.next_args == '-b'
-    job.direcciones = job.next_args == '-d'
-  }
+  job.edificios = job.type == 'd' ? true : job.edificios
+  job.direcciones = job.type == 'b' ? true : job.direcciones
   job.createJob().then(updateLog)
 }
 

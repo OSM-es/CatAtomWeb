@@ -98,7 +98,7 @@ function onNewFiles(newFiles) {
           <div v-else class="panel-block is-block">
             <div
               class="file is-justify-content-center is-small"
-              :class="{ 'is-disabled': dropEnabled() }"
+              :class="{ 'is-disabled': !dropEnabled() }"
             >
               <label class="file-label">
                 <div class="is-size-5">{{ $t('Drop here or') }}&nbsp;</div>

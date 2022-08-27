@@ -2,10 +2,11 @@
 import { computed } from 'vue'
 import ProcessButton from './ProcessButton'
 import { useJobStore } from '@/stores/job'
-import { useUserStore } from '../stores/user'
+import { useUserStore } from '@/stores/user'
 
 const job = useJobStore()
 const user = useUserStore()
+const titles = { b: 'Buildings', d: 'Addresses' }
 
 const username = computed(() => {
   return job.propietario ? job.propietario.username : ''
@@ -16,14 +17,14 @@ const isOwner = computed(() => {
 })
 
 const isVisible = computed(() => {
-  if (['REVIEW', 'FIXME', 'DONE'].includes(job.estado)) {
+  if (['REVIEW', 'FIXME', 'DONE', 'ERROR'].includes(job.estado)) {
     return true
   }
   return false
 })
 
 function tasksUrl() {
-  return `results/${job.cod_municipio}/tasks${job.args || ''}`
+  return job.url
 }
 
 function exportJobUrl() {
@@ -40,7 +41,7 @@ function exportJobUrl() {
       <template #content>
         <div class="container">
           <div v-if="isOwner">
-            <div class="panel-block">
+            <div v-if="job.estado == 'DONE'" class="panel-block">
               <i18n-t keypath="done_msg3" scope="global">
                 <a :href="tasksUrl()"
                   >&nbsp;
@@ -66,8 +67,14 @@ function exportJobUrl() {
             <div class="panel-block">
               <div class="content">
                 <p>{{ $t('delete_msg') }}</p>
-                <process-button classes="is-danger" @click="job.deleteJob">
-                  <span>{{ $t('Delete') }}</span>
+                <process-button
+                  classes="is-danger is-outlined"
+                  @click="job.deleteJob"
+                >
+                  <span>̣{{ $t('Delete') }}</span>
+                  <span v-if="job.type == 'bd'">
+                    &nbsp;{{ $t(titles[job.options]).toLowerCase() }}
+                  </span>
                   <span class="icon">
                     <font-awesome-icon icon="trash" />
                   </span>

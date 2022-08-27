@@ -14,19 +14,11 @@ const isOwner = computed(() => {
 })
 
 const isActive = computed(() => job.estado == 'DONE')
-//const newProjectLink = 'https://tareas.openstreetmap.es/manage/projects/new/'
 
 function changeArgs(event) {
   job.edificios = event.target.value == '-b'
   job.direcciones = event.target.value == '-d'
-}
-
-function zoningUrl() {
-  if (job.cod_division) {
-    return `results/${job.cod_municipio}/tasks/${job.cod_division}/zoning.zip`
-  } else {
-    return `results/${job.cod_municipio}/zoning.zip`
-  }
+  job.getJob(job.cod_municipio, job.cod_division, true)
 }
 </script>
 
@@ -38,15 +30,11 @@ function zoningUrl() {
     <template #content>
       <div id="publishPanel" class="container">
         <div v-if="isOwner">
-          <div v-if="job.args && !job.next_args" class="panel-block">
+          <div v-if="job.type.length == 'bd'" class="panel-block">
             <div class="select" @change="changeArgs">
-              <select>
-                <option :selected="job.args == '-b'" value="-b">
-                  {{ $t('Buildings') }}
-                </option>
-                <option :selected="job.args == '-d'" value="-d">
-                  {{ $t('Addresses') }}
-                </option>
+              <select :value="job.current_args">
+                <option value="-b">{{ $t('Buildings') }}</option>
+                <option value="-d">{{ $t('Addresses') }}</option>
               </select>
             </div>
           </div>
@@ -58,7 +46,7 @@ function zoningUrl() {
                     {{ $t('Task manager') }}
                     <font-awesome-icon icon="external-link" />
                   </a>
-                  <a :href="zoningUrl()">
+                  <a :href="job.url + '/zoning.zip'">
                     zoning.zip
                     <font-awesome-icon icon="download" />
                   </a>
@@ -71,7 +59,7 @@ function zoningUrl() {
                 </i18n-t>
               </p>
               <a
-                class="button is-success is-outlined is-fullwidth"
+                class="button is-success is-fullwidth"
                 href="https://tareas.openstreetmap.es/manage/projects/new/"
                 target="_blank"
               >
@@ -82,10 +70,16 @@ function zoningUrl() {
               </a>
             </div>
           </div>
-          <div v-if="job.next_args" class="panel-block">
+          <div
+            v-if="job.type.length == 'b' || job.type == 'd'"
+            class="panel-block"
+          >
             <div class="content">
               <p>{{ $t('You can also') }}</p>
-              <process-button @click="emit('process-job')">
+              <process-button
+                classes="is-outlined is-primary"
+                @click="emit('process-job')"
+              >
                 {{ $t(job.nextMsg) }}
               </process-button>
             </div>

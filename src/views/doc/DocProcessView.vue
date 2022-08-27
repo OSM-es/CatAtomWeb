@@ -58,7 +58,7 @@
         <p><b>3)</b> Inicia el proceso.</p>
         <p>Cuando estés listo haz clic en el botón <em>Procesar</em>.</p>
         <figure class="image has-text-left ml-6">
-          <span class="button is-primary is-outlined is-fake-btn">
+          <span class="button is-primary is-fake-btn">
             <span>Procesar</span>
             <span class="icon">
               <font-awesome-icon icon="running" />

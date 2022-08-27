@@ -26,7 +26,7 @@ let municipioPrevio = null
 
 chat.on('updateJob', (data) => {
   if (!userStore.isOwner(data)) {
-    job.getJob(job.cod_municipio, job.cod_division)
+    job.getJob(job.cod_municipio, job.cod_division, true)
   }
 })
 
@@ -101,10 +101,12 @@ function getRoom(cod_municipio = job.cod_municipio) {
 function getJobStatus() {
   if (municipioPrevio && municipioPrevio != job.cod_municipio) {
     chat.socket.emit('leave', getRoom(municipioPrevio))
-    chat.socket.emit('join', getRoom())
     job.cod_division = null
   }
   if (job.cod_municipio) {
+    if (job.last_mun != job.cod_municipio) {
+      chat.socket.emit('join', getRoom())
+    }
     job.getJob(job.cod_municipio, job.cod_division).then(() => {
       if (localStorage.getItem('municipio') != job.cod_municipio) {
         localStorage.setItem('municipio', job.cod_municipio || '')

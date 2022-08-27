@@ -4,8 +4,6 @@ import ProcessButton from './ProcessButton'
 
 // eslint-disable-next-line no-undef
 const emit = defineEmits(['process-job'])
-const wikiUrl =
-  'https://wiki.openstreetmap.org/wiki/ES:Catastro_espa%C3%B1ol/Importaci%C3%B3n_de_edificios/Gesti%C3%B3n_de_proyectos#Revisi%C3%B3n_de_nombres_de_calles'
 const job = useJobStore()
 </script>
 
@@ -30,7 +28,7 @@ const job = useJobStore()
           </p>
           <p v-else>
             <i18n-t keypath="review_msg" scope="global">
-              <a :href="wikiUrl">{{ $t('guide') }}</a>
+              <a href="/doc/review">{{ $t('guide') }}</a>
               <font-awesome-icon icon="check" />
               <font-awesome-icon icon="times" />
             </i18n-t>
@@ -38,7 +36,9 @@ const job = useJobStore()
         </div>
         <div class="panel-block">
           <process-button
-            :classes="job.highways > 0 ? 'is-warning' : 'is-success'"
+            :classes="
+              job.highways > 0 ? 'is-warning is-outlined' : 'is-success'
+            "
             @click="emit('process-job')"
           >
             <span>{{ $t('Reprocess') }}</span>
@@ -69,7 +69,7 @@ const job = useJobStore()
                 <span class="icon"><font-awesome-icon icon="upload" /></span>
               </template>
               <template #link>
-                <a :href="wikiUrl" target="_blank">{{ $t('guide') }}</a>
+                <a href="/doc/fixme">{{ $t('guide') }}</a>
               </template>
             </i18n-t>
           </p>

@@ -23,6 +23,7 @@ class SocketioService {
       this.job.charla.push(t('leave', data))
     })
     this.socket.on('chat', (msg) => {
+      console.info(msg)
       this.job.charla.push(msg)
     })
   }
