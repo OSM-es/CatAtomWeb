@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import ProcessButton from './ProcessButton'
 import { useJobStore } from '@/stores/job'
 import { useUserStore } from '@/stores/user'
+import { api } from '@/services/api'
 
 const job = useJobStore()
 const user = useUserStore()
@@ -28,7 +29,12 @@ function tasksUrl() {
 }
 
 function exportJobUrl() {
-  return process.env.VUE_APP_ROOT_API + '/export/' + job.cod_municipio
+  const url = '/export/' + job.cod_municipio + '/' + (job.cod_division || '')
+  let params = {
+    building: job.edificios,
+    address: job.direcciones,
+  }
+  return api.getUri({ url, params })
 }
 </script>
 

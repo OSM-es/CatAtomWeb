@@ -30,7 +30,7 @@ function changeArgs(event) {
     <template #content>
       <div id="publishPanel" class="container">
         <div v-if="isOwner">
-          <div v-if="job.type.length == 'bd'" class="panel-block">
+          <div v-if="job.type == 'bd'" class="panel-block">
             <div class="select" @change="changeArgs">
               <select :value="job.current_args">
                 <option value="-b">{{ $t('Buildings') }}</option>
@@ -70,10 +70,7 @@ function changeArgs(event) {
               </a>
             </div>
           </div>
-          <div
-            v-if="job.type.length == 'b' || job.type == 'd'"
-            class="panel-block"
-          >
+          <div v-if="job.type == 'b' || job.type == 'd'" class="panel-block">
             <div class="content">
               <p>{{ $t('You can also') }}</p>
               <process-button
