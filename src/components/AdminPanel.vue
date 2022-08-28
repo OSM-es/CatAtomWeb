@@ -48,13 +48,14 @@ function exportJobUrl() {
         <div class="container">
           <div v-if="isOwner">
             <div v-if="job.estado == 'DONE'" class="panel-block">
-              <i18n-t keypath="done_msg3" scope="global">
-                <a :href="tasksUrl()"
-                  >&nbsp;
-                  {{ $t('process result') }}
-                  <font-awesome-icon icon="external-link" />
-                </a>
-              </i18n-t>
+              <div class="content">
+                <i18n-t keypath="done_msg3" scope="global">
+                  <a :href="tasksUrl()">
+                    {{ $t('process result') }}
+                    <font-awesome-icon icon="external-link" />
+                  </a>
+                </i18n-t>
+              </div>
             </div>
             <div v-if="job.estado == 'DONE'" class="panel-block">
               <div class="content">

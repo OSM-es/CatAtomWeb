@@ -21,6 +21,10 @@
     height: 2.5em;
 }
 
+.vs__search:disabled {
+  display: none;
+}
+
 ul.vs__dropdown-menu {
     list-style: none !important;
     margin-left: 0 !important;
