@@ -71,3 +71,9 @@ function send(event) {
     </div>
   </nav>
 </template>
+
+<style lang="scss" scoped>
+.textarea {
+  border-radius: 4px 0 4px 4px;
+}
+</style>

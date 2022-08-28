@@ -45,12 +45,15 @@ function updateLog() {
 function processJob() {
   job.parcel_dist = state.parcel_dist
   job.parcel_parts = state.parcel_parts
-  if (job.type == 'b' || job.type == 'd') {
-    job.edificios = !job.edificios
-    job.direcciones = !job.direcciones
+  if (job.type == 'b') {
+    job.edificios = false
+    job.direcciones = true
   }
-
-job.createJob().then(updateLog)
+  if (job.type == 'd') {
+    job.edificios = true
+    job.direcciones = false
+  }
+  job.createJob().then(updateLog)
 }
 
 watch(
