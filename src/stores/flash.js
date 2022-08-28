@@ -33,21 +33,18 @@ export const useFlashStore = defineStore({
 
   actions: {
     set(flash, type = 'is-danger') {
-      const prevMsg = this.message
       this.flash = flash
-      if (this.message != prevMsg) {
-        toast({
-          message: this.message,
-          type,
-          position: 'top-center',
-          duration: 20000,
-          dismissible: true,
-          pauseOnHover: true,
-          closeOnClick: false,
-          offsetTop: '2.5em',
-          opacity: 0.8,
-        })
-      }
+      toast({
+        message: this.message,
+        type,
+        position: 'top-center',
+        duration: 20000,
+        dismissible: true,
+        pauseOnHover: true,
+        closeOnClick: false,
+        offsetTop: '2.5em',
+        opacity: 0.8,
+      })
     },
     clear() {
       this.flash = null

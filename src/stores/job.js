@@ -1,7 +1,7 @@
-import { defineStore } from 'pinia'
 var array = require('lodash/array')
-import api from '@/services/api'
+import { defineStore } from 'pinia'
 import { useProvStore } from '@/stores/provincias'
+import api from '@/services/api'
 
 export const useJobStore = defineStore({
   id: 'job',

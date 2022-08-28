@@ -8,7 +8,6 @@ import { useProvStore } from '@/stores/provincias'
 import { useChatService } from '@/services/chat'
 import { useUserStore } from '@/stores/user'
 import { clipboardHandler } from '@/compositions/clipboard'
-import { useFlashStore } from '@/stores/flash'
 
 const { t } = useI18n()
 const wikiUrl =
@@ -42,11 +41,9 @@ chat.on('createJob', (data) => {
 chat.on('deleteJob', (data) => {
   if (!userStore.isOwner(data)) {
     job.updateJob(data.job)
-  } else {
-    useFlashStore().set(t('Proceso eliminado correctamente'), 'is-success')
   }
   job.charla.push(t('delete_job', data))
- })
+})
 
 chat.on('done', (data) => {
   let name = job.cod_municipio

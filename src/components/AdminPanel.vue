@@ -1,10 +1,13 @@
 <script setup>
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import ProcessButton from './ProcessButton'
 import { useJobStore } from '@/stores/job'
 import { useUserStore } from '@/stores/user'
+import { useFlashStore } from '@/stores/flash'
 import { api } from '@/services/api'
 
+const { t } = useI18n()
 const job = useJobStore()
 const user = useUserStore()
 const titles = { b: 'Buildings', d: 'Addresses' }
@@ -24,8 +27,10 @@ const isVisible = computed(() => {
   return false
 })
 
-function tasksUrl() {
-  return job.url
+function deleteJob() {
+  job.deleteJob().then(() => {
+    useFlashStore().set(t('Proceso eliminado correctamente'), 'is-success')
+  })
 }
 
 function exportJobUrl() {
@@ -50,7 +55,7 @@ function exportJobUrl() {
             <div v-if="job.estado == 'DONE'" class="panel-block">
               <div class="content">
                 <i18n-t keypath="done_msg3" scope="global">
-                  <a :href="tasksUrl()">
+                  <a :href="job.url">
                     {{ $t('process result') }}
                     <font-awesome-icon icon="external-link" />
                   </a>
@@ -76,9 +81,9 @@ function exportJobUrl() {
                 <p>{{ $t('delete_msg') }}</p>
                 <process-button
                   classes="is-danger is-outlined"
-                  @click="job.deleteJob"
+                  @click="deleteJob"
                 >
-                  <span>̣{{ $t('Delete') }}</span>
+                  <span>{{ $t('Delete') }}</span>
                   <span v-if="job.type == 'bd'">
                     &nbsp;{{ $t(titles[job.options]).toLowerCase() }}
                   </span>
