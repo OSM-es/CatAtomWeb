@@ -92,8 +92,8 @@ test('updateHighway 03002', async () => {
   }
   job.updateHighway(data)
   expect(job.callejero[7][1]).toBe('Calle la Carmelita')
-  expect(job.callejero[7][2]).toBe('foo')
-  expect(job.callejero[7][3]).toBe('bar')
+  expect(job.callejero[7][3]).toBe('foo')
+  expect(job.callejero[7][4]).toBe('bar')
 })
 
 test('putHighway 03002', async () => {
@@ -101,8 +101,8 @@ test('putHighway 03002', async () => {
   job.updateJob(resp)
   await job.putHighway('CL CARMELITA LA', 'Calle la Carmelita')
   expect(job.callejero[7][1]).toBe('Calle la Carmelita')
-  expect(job.callejero[7][2]).toBe('foo')
-  expect(job.callejero[7][3]).toBe('bar')
+  expect(job.callejero[7][3]).toBe('foo')
+  expect(job.callejero[7][4]).toBe('bar')
 })
 
 test('updateFixme 02001', async () => {

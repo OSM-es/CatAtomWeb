@@ -100,7 +100,13 @@ export const useJobStore = defineStore({
     },
     updateHighway(data) {
       const i = array.findIndex(this.callejero, (row) => row[0] == data.cat)
-      this.callejero[i] = [data.cat, data.conv, data.osm_id, data.username]
+      this.callejero[i] = [
+        data.cat,
+        data.conv,
+        data.src,
+        data.osm_id,
+        data.username,
+      ]
     },
     updateFixme(data) {
       const i = array.findIndex(this.revisar, { filename: data.filename })

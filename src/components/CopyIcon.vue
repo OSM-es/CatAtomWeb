@@ -30,9 +30,3 @@ function copyToClipboard(event) {
     <slot></slot>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.is-clicklable {
-  cursor: pointer;
-}
-</style>

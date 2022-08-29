@@ -46,7 +46,6 @@ function undoHandler(key) {
   const cat = job.callejero[key][0]
   const conv = job.callejero[key][1]
   job.postHighway(cat, conv)
-  console.info(job.highways)
 }
 
 function editHandler(value, key) {
@@ -55,13 +54,14 @@ function editHandler(value, key) {
 }
 
 function chatColor(row) {
-  return row.length < 3 || !row[2] ? '' : 'chat-color-' + (row[2] % 32)
+  return row.length < 4 || !row[3] ? '' : 'chat-color-' + (row[3] % 32)
 }
 
 function highwayNames() {
   return job.callejero.map((row, i) => ({
     key: i,
     cat: row[0],
+    src: row[2],
     conv: row[1],
     color: chatColor(row),
     username: row.length > 3 ? row[3] : '',
@@ -162,13 +162,23 @@ function showMap(street) {
               <VTh sort-key="cat" default-sort="asc">{{
                 $t('Name in Cadastre')
               }}</VTh>
+              <VTh sort-key="src">{{ $t('Origen') }}</VTh>
               <VTh sort-key="conv">{{ $t('Conversion') }}</VTh>
             </tr>
           </template>
           <template #body="{ rows }">
             <tr v-for="row in rows" :key="row.key" :class="row.color">
-              <td class="is-valign-middle" @click="showMap(row.cat)">
+              <td
+                class="is-clicklable is-valign-middle"
+                @click="showMap(row.cat)"
+              >
                 <a>{{ row.cat }}</a>
+              </td>
+              <td
+                class="is-clicklable is-valign-middle"
+                @click="showMap(row.cat)"
+              >
+                {{ row.src }}
               </td>
               <td>
                 <review-input
