@@ -1,7 +1,8 @@
 <script setup>
 import { computed, ref } from 'vue'
-import QuickView from '@/components/QuickView.vue'
-import StreetMap from '@/components/StreetMap.vue'
+import QuickView from './QuickView.vue'
+import StreetMap from './StreetMap.vue'
+import FilterInput from './FilterInput.vue'
 import ReviewInput from './ReviewInput.vue'
 import { useJobStore } from '@/stores/job'
 import { useI18n } from 'vue-i18n'
@@ -42,6 +43,17 @@ const kartaLink = computed(() => {
   return `${url}${coords[1]},${coords[2]},${coords[0]}z`
 })
 
+const highwayNames = computed(() => {
+  return job.callejero.map((row, i) => ({
+    key: i,
+    cat: row[0],
+    src: row[2],
+    conv: row[1],
+    color: chatColor(row),
+    username: row.length > 3 ? row[3] : '',
+  }))
+})
+
 function undoHandler(key) {
   const cat = job.callejero[key][0]
   const conv = job.callejero[key][1]
@@ -55,21 +67,6 @@ function editHandler(value, key) {
 
 function chatColor(row) {
   return row.length < 4 || !row[3] ? '' : 'chat-color-' + (row[3] % 32)
-}
-
-function highwayNames() {
-  return job.callejero.map((row, i) => ({
-    key: i,
-    cat: row[0],
-    src: row[2],
-    conv: row[1],
-    color: chatColor(row),
-    username: row.length > 3 ? row[3] : '',
-  }))
-}
-
-function deleteFilter() {
-  filters.value.name.value = ''
 }
 
 function getOwner(row) {
@@ -125,34 +122,13 @@ function showMap(street) {
             <span>{{ job.callejero.length }}</span>
           </i18n-t>
         </p>
-        <div class="field has-addons has-addons-right ml-auto">
-          <div class="control has-icons-right">
-            <input
-              ref="filterInput"
-              v-model="filters.name.value"
-              class="input"
-              :placeholder="$t('Filter')"
-            />
-            <span class="icon is-right">
-              <font-awesome-icon icon="search" />
-            </span>
-          </div>
-          <div class="control">
-            <a
-              class="button has-tooltip-arrow has-tooltip-right"
-              :data-tooltip="$t('Delete filter')"
-              @click="deleteFilter"
-            >
-              <font-awesome-icon icon="times" />
-            </a>
-          </div>
-        </div>
+        <filter-input v-model="filters.name.value"></filter-input>
       </div>
       <div class="panel-block">
         <VTable
           v-model:currentPage="currentPage"
           class="table is-narrow"
-          :data="highwayNames()"
+          :data="highwayNames"
           :filters="filters"
           :page-size="12"
           @total-pages-changed="totalPages = $event"
@@ -162,7 +138,7 @@ function showMap(street) {
               <VTh sort-key="cat" default-sort="asc">{{
                 $t('Name in Cadastre')
               }}</VTh>
-              <VTh sort-key="src">{{ $t('Origen') }}</VTh>
+              <VTh sort-key="src">{{ $t('Source') }}</VTh>
               <VTh sort-key="conv">{{ $t('Conversion') }}</VTh>
             </tr>
           </template>

@@ -57,6 +57,7 @@ function chatColor(fixme) {
   return fixme.osm_id ? 'chat-color-' + (fixme.osm_id % 32) : ''
 }
 </script>
+
 <template>
   <div class="panel-block">
     <p>

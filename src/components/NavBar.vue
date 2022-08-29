@@ -52,6 +52,14 @@ function logout() {
       </div>
     </div>
     <div id="topNav" :class="{ 'is-active': isActive }" class="navbar-menu">
+      <div v-if="userStore.isLogged" class="navbar-start">
+        <router-link class="navbar-item" :to="{ name: 'process' }">
+          {{ $t('Process') }}
+        </router-link>
+        <router-link class="navbar-item" :to="{ name: 'explore' }">
+          {{ $t('Explore') }}
+        </router-link>
+      </div>
       <div class="navbar-end">
         <router-link to="/doc" class="navbar-item">
           {{ $t('Docs') }}

@@ -121,8 +121,7 @@ function getJobStatus() {
 }
 
 function shareLink(event) {
-  let link = document.location.origin + '/' + job.cod_municipio
-  link += job.cod_division ? `/${job.cod_division}` : ''
+  const link = document.location.origin + '/' + job.link
   clipboardHandler(event, link)
 }
 

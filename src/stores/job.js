@@ -65,6 +65,10 @@ export const useJobStore = defineStore({
       const tasks = state.current_args || ''
       return `results/${state.cod_municipio}${split}/tasks${tasks}`
     },
+    link: (state) => {
+      const div = state.cod_division
+      return state.cod_municipio + (div ? `/${div}` : '')
+    }
   },
 
   actions: {

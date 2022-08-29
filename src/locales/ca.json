@@ -107,5 +107,17 @@
   "parcel_dist_help": "Distància en metres per afegir parcel·les per a tasques.",
   "between_val" : "El valor ha d'estar entre {0} i {1}.",
   "add_project": "Crear projecte",
-  "Share project": "Compartir projecte"
+  "Share project": "Compartir projecte",
+  "Explore": "Explorar",
+  "Origen": "Origen",
+  "Project": "Proyecto",
+  "User": "Usuari",
+  "Tasks": "Tasques",
+  "parts": "parts",
+  "AVAILABLE": "disponible",
+  "RUNNING": "executant-se",
+  "DONE": "acabat",
+  "REVIEW": "carrerer",
+  "FIXME": "corregir",
+  "ERROR": "error"
 }

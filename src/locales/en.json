@@ -106,5 +106,17 @@
   "parcel_dist_help": "Distance in meters to agregate parcels for tasks.",
   "between_val": "The value must be between {0} and {1}.",
   "add_project": "Add project",
-  "Share project": "Share project"
+  "Share project": "Share project",
+  "Explore": "Explore",
+  "Source": "Source",
+  "Project": "Project",
+  "User": "User",
+  "Tasks": "Tasks",
+  "parts": "parts",
+  "AVAILABLE": "availlable",
+  "RUNNING": "running",
+  "DONE": "done",
+  "REVIEW": "review",
+  "FIXME": "fixmes",
+  "ERROR": "error"
 }

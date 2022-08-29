@@ -40,6 +40,8 @@ api.getMun = (mun) => {
   return api.get('mun/' + mun)
 }
 
+api.getJobs = () => api.get('job')
+
 api.getJob = (cod_municipio, cod_division, params) => {
   const div = cod_division || ''
   return api.get('job/' + (cod_municipio || '') + '/' + div, { params })

@@ -8,6 +8,7 @@ import DocProcessView from '@/views/doc/DocProcessView.vue'
 import DocReviewView from '@/views/doc/DocReviewView.vue'
 import DocSelectView from '@/views/doc/DocSelectView.vue'
 import DocPublishView from '@/views/doc/DocPublishView.vue'
+import ExploreView from '@/views/ExploreView.vue'
 import HomeView from '@/views/HomeView.vue'
 import ProcessView from '@/views/ProcessView.vue'
 
@@ -28,6 +29,7 @@ const routes = [
       requiresAuth: true,
     },
   },
+  { path: '/explore', name: 'explore', component: ExploreView },
   { path: '/auth', name: 'auth', component: AuthView },
   { path: '/login', component: ProcessView },
 ]

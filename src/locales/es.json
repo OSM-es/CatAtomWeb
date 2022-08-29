@@ -106,5 +106,17 @@
   "parcel_dist_help": "Distancia en metros para agregar parcelas para tareas.",
   "between_val" : "El valor debe estar entre {0} y {1}.",
   "add_project": "Crear proyecto",
-  "Share project": "Compartir proyecto"
+  "Share project": "Compartir proyecto",
+  "Explore": "Explorar",
+  "Source": "Origen",
+  "Project": "Proyecto",
+  "User": "Usuario",
+  "Tasks": "Tareas",
+  "parts": "partes",
+  "AVAILABLE": "disponible",
+  "RUNNING": "ejecutándose",
+  "DONE": "terminado",
+  "REVIEW": "callejero",
+  "FIXME": "correcciones",
+  "ERROR": "error"
 }
