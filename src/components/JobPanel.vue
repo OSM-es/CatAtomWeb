@@ -57,10 +57,14 @@ chat.on('done', (data) => {
 })
 
 const divDisabled = computed(() => {
-  return (
-    divisiones.value.length == 0 ||
-    !['AVAILABLE', 'ERROR', 'DONE'].includes(job.estado)
-  )
+  if (divisiones.value.length == 0) {
+    return true
+  } else if (!['AVAILABLE', 'ERROR', 'DONE'].includes(job.estado)) {
+    return true
+  } else if (job.report.options && !job.report.options.includes('-s')) {
+    return true
+  }
+  return false
 })
 
 async function fetchMunicipios(prov) {
