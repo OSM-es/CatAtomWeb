@@ -72,6 +72,7 @@ async function fetchMunicipios(prov) {
   municipios.value = response.data.municipios.map((mun) => ({
     cod_municipio: mun.cod_municipio,
     nombre: mun.nombre,
+    estado: mun.estado,
     label: mun.cod_municipio + ' ' + mun.nombre,
   }))
 }
@@ -185,6 +186,11 @@ onBeforeUnmount(() => {
           <template #no-options="{ search, searching, loading }">
             {{ $t('Sorry, no matching option') }}
           </template>
+          <template #option="{ cod_municipio, nombre, estado }">
+            <span :class="`is-${estado}`">
+              {{ cod_municipio }} {{ nombre }}
+            </span>
+          </template>
         </v-select>
       </div>
     </div>
@@ -206,8 +212,10 @@ onBeforeUnmount(() => {
           <template #no-options="{ search, searching, loading }">
             {{ $t('Sorry, no matching option') }}
           </template>
-          <template #option="{ nombre }">
-            {{ nombre.replace('  ', '&nbsp;&nbsp;&nbsp;&nbsp;') }}
+          <template #option="{ nombre, estado }">
+            <span :class="`is-${estado}`">
+              {{ nombre.replace('  ', '&nbsp;&nbsp;&nbsp;&nbsp;') }}
+            </span>
           </template>
         </v-select>
       </div>
@@ -234,5 +242,16 @@ onBeforeUnmount(() => {
 <style lang="scss" scoped>
 .vs__dropdown-menu {
   white-space: pre;
+}
+.is-DONE {
+  color: hsl(229, 53%,  53%); //hsl(0, 0%, 48%);
+}
+.is-FIXME,
+.is-REVIEW,
+.is-RUNNING {
+  font-weight: 700;
+}
+.is-ERROR {
+  color: hsl(348, 86%, 61%);
 }
 </style>
