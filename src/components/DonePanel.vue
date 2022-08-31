@@ -26,7 +26,9 @@ const optionsLng = {
 }
 
 function downloadUrl() {
-  return new URL(process.env.BASE_URL, window.location.href).href
+  let url = new URL(process.env.BASE_URL, window.location.href).href
+  url += `${job.url}/{localId}.osm.gz`
+  return url
 }
 </script>
 
@@ -132,13 +134,11 @@ function downloadUrl() {
               <th>{{ $t('Per task instructions') }}</th>
               <td class="cell-breakWord">
                 <copy-icon>
-                  Download the **[task file]({{ downloadUrl() }}
-                  {{ job.url }}/{localId}.osm.gz) o [Editar con Control Remoto
-                  de
+                  Download the **[task file]({{ downloadUrl() }}) o [Editar con
+                  Control Remoto de
                   JOSM](http://localhost:8111/import?new_layer=true&amp;url={{
                     downloadUrl()
-                  }}
-                  {{ job.url }}/{localId}.osm.gz)**.<br />
+                  }})**.<br />
                   Type: {type}. Complexity: {parts} parts.<br />
                   Review the task following the instructions in the [import
                   guide](https://openstreetmap.es/catastro). Check the facade
@@ -148,13 +148,11 @@ function downloadUrl() {
               </td>
               <td>
                 <copy-icon>
-                  Descarga el [archivo de la tarea]({{ downloadUrl() }}
-                  {{ job.url }}/{localId}.osm.gz) o **[Editar con Control Remoto
-                  de
+                  Descarga el [archivo de la tarea]({{ downloadUrl() }}) o
+                  **[Editar con Control Remoto de
                   JOSM](http://localhost:8111/import?new_layer=true&amp;url={{
                     downloadUrl()
-                  }}
-                  {{ job.url }}/{localId}.osm.gz)**.<br />
+                  }})**.<br />
                   Tipo: {type}. Complejidad: {parts} partes.<br />
                   Revisa la tarea siguiendo las instrucciones de la [guía de
                   importación](https://openstreetmap.es/catastro). Consulta las
