@@ -27,9 +27,8 @@ function getRows(msg) {
 }
 
 function send(event) {
-  if (event.shiftKey) {
-    message.value += '\n'
-  } else {
+  if (!event.shiftKey) {
+    event.preventDefault()
     chat.sendMessage(message.value)
     message.value = ''
   }
@@ -56,7 +55,7 @@ function send(event) {
             <textarea
               v-model="message"
               class="textarea"
-              @keydown.enter.prevent="send"
+              @keydown.enter="send"
             ></textarea>
           </div>
           <div class="control">

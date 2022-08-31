@@ -149,9 +149,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
   chat.disconnect()
 })
-
-console.info(job.cod_division, typeof job.cod_division)
-console.info(localStorage.getItem('division'))
 </script>
 
 <template>
@@ -252,7 +249,7 @@ console.info(localStorage.getItem('division'))
   white-space: pre;
 }
 .is-DONE {
-  color: hsl(229, 53%,  53%); //hsl(0, 0%, 48%);
+  color: hsl(229, 53%, 53%); //hsl(0, 0%, 48%);
 }
 .is-FIXME,
 .is-REVIEW,
