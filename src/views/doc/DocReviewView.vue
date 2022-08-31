@@ -127,9 +127,13 @@
           vías, por ejemplo a barrios, urbanizaciones, caseríos. Comprueba si el
           nombre está mapeado en OSM o se puede añadir. Ten en cuenta que el
           programa asigna las direcciones a la etiqueta
-          <a :href="addrplc" class="has-background-light">addr:place=*</a> en
-          lugar de
-          <a :href="addrstr" class="has-background-light">addr:street=*</a>
+          <code>
+            <a :href="addrplc" class="has-background-light">addr:place=*</a>
+          </code>
+          en lugar de
+          <code>
+            <a :href="addrstr" class="has-background-light">addr:street=*</a>
+          </code>
           cuando el nombre comienza por referencias de lugar. Para una lista
           completa consulta el anexo.
         </p>
@@ -203,9 +207,9 @@ CU               Conjunto*                  Conjunt*                 Conxunto*
 CY               Caleya                     Carreró                  Caleya
 DE               Detrás                     Darrere                  Detrás
 DP               Diputación*                Diputació*               Deputación*
-DS               Diseminados*               Disseminats*             Espallado*
+DS***            Diseminados                Disseminats              Espallado
 ED               Edificios*                 Edificis*                Edificios*
-EM               Extramuros*                Extramurs*/Raval         Extramuros*
+EM***            Extramuros                 Extramurs/Raval          Extramuros
 EN               Entrada*/Ensanche*         Entrada*/Eixample*       Entrada*/Ensanche*
 ER               Extrarradio*               Extraradi*/Raval         Arrabalde*
 ES               Escalinata                 Escalinata               Escalinata
@@ -218,7 +222,7 @@ GV               Gran Vía                   Gran Via                 Gran Vía
 HT               Huerta*/Huerto*            Hort*                    Horta*/Horto*
 JR               Jardines*                  Jardins*                 Xardíns*
 LD               Lado/Ladera                Marge/Vessant            Costado/Ladeira
-LG               Lugar                      Lloc                     Lugar
+LG               Lugar**                    Lloc**                   Lugar**
 MC               Mercado*                   Mercat*                  Mercado*
 ML               Muelle*                    Moll*                    Peirao*
 MN               Município*                 Municipi*                Concello*
@@ -275,7 +279,15 @@ TRANSITO         Tránsito                   Trànsit                  Tránsito
 TRAVESIA         Travesía                   Travessera               Travesía
 VIA              Vía                        Via                      Vía
         </pre>
-        <p>*) Se aplica a addr:place en lugar de addr:street</p>
+        <p>
+          *) Se aplica a <code>addr:place</code> en lugar de
+          <code>addr:street</code>.
+        </p>
+        <p>
+          **) Se aplica a <code>addr:place</code> y se elimina el prefijo
+          "Lugar" en la conversión
+        </p>
+        <p>***) Se eliminan las direcciones de estos tipos.</p>
       </div>
     </div>
   </section>
