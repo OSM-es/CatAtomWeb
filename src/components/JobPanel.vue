@@ -115,11 +115,11 @@ function getJobStatus() {
     job.getJob(job.cod_municipio, job.cod_division).then(() => {
       if (localStorage.getItem('municipio') != job.cod_municipio) {
         localStorage.setItem('municipio', job.cod_municipio || '')
-        if (localStorage.getItem('division') != job.cod_division) {
-          localStorage.setItem('division', job.cod_division || '')
-        }
-        router.replace({ name: 'process' })
       }
+      if (localStorage.getItem('division') != job.cod_division) {
+        localStorage.setItem('division', job.cod_division || '')
+      }
+      router.replace({ name: 'process' })
       municipioPrevio = job.cod_municipio
     })
   }
@@ -149,9 +149,13 @@ onMounted(() => {
 onBeforeUnmount(() => {
   chat.disconnect()
 })
+
+console.info(job.cod_division, typeof job.cod_division)
+console.info(localStorage.getItem('division'))
 </script>
 
 <template>
+  {{ job.cod_division }}
   <div class="box">
     <div class="field">
       <div class="control">
