@@ -68,7 +68,7 @@ export const useJobStore = defineStore({
     link: (state) => {
       const div = state.cod_division
       return state.cod_municipio + (div ? `/${div}` : '')
-    }
+    },
   },
 
   actions: {

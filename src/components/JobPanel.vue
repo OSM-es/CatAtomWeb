@@ -152,7 +152,6 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  {{ job.cod_division }}
   <div class="box">
     <div class="field">
       <div class="control">
