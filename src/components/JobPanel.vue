@@ -116,9 +116,7 @@ function getJobStatus() {
       if (localStorage.getItem('municipio') != job.cod_municipio) {
         localStorage.setItem('municipio', job.cod_municipio || '')
       }
-      if (localStorage.getItem('division') != job.cod_division) {
-        localStorage.setItem('division', job.cod_division || '')
-      }
+      localStorage.setItem('division', '')
       router.replace({ name: 'process' })
       municipioPrevio = job.cod_municipio
     })
@@ -131,6 +129,7 @@ function shareLink(event) {
 }
 
 onMounted(() => {
+  console.info('onMounted')
   provincias.fetch()
   const mun = localStorage.getItem('municipio')
   const div = localStorage.getItem('division')
