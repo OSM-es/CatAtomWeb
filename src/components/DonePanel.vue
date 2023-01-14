@@ -86,7 +86,7 @@ function downloadUrl() {
                   is promoting the import of some of the cadastral data. Help us
                   make the OpenStreetMap map even more useful!<br /><br />
                   Consult the [import
-                  guide](https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_import
+                  guide](https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_import)
                   to contribute.
                 </copy-icon>
               </td>
@@ -119,8 +119,7 @@ function downloadUrl() {
               <td class="cell-breakWord">
                 <copy-icon>
                   Review this task following the instructions in this [import
-                  guide](https://wiki.openstreetmap.org/wiki/Spanish
-                  Cadastre/Buildings Import/Import guide).
+                  guide](https://wiki.openstreetmap.org/wiki/Spanish_Cadastre/Buildings_Import/Import_guide).
                 </copy-icon>
               </td>
               <td class="cell-breakWord">
