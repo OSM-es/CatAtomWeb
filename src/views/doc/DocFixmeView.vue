@@ -100,38 +100,6 @@
           'fixme'. Si el edificio no va a ser reemplazado con los datos de
           Catastro al importar, hay que corregirlo en OSM.
         </p>
-        <h4>Las partes de edificio no cubren todo el contorno</h4>
-        <p>
-          El esquema <a :href="s3durl">Edificios 3D sencillos</a> requiere que
-          todo el contorno del edificio esté cubierto por geometrías con la
-          etiqueta
-          <a :href="bpurl" class="has-background-light">building:part=*</a>. En
-          ocasiones, las partes de edificio presentes en los datos de Catastro
-          no cumplen este requisito. Esto sucede principalmente cuando hay
-          balcones o terrazas, pero también cuando la información simplemente no
-          está disponible. Las partes del contorno que faltan por cubrir se
-          detectan por que el fondo es más transparente que el resto y en
-          algunos de los segmentos de vía que lo forma no está presente el
-          márgen semitransparente que JOSM muestra en el interior del resto de
-          vías cerradas (marcados con flechas en la imagen).
-        </p>
-        <figure class="image column is-11">
-          <img src="@/assets/doc/fixme/Faltan_partes_edificio.jpg" />
-        </figure>
-        <p>
-          La imagen de fondo de Catastro también da información a través de las
-          etiquetas rojas en el interior de cada parte. Siempre está ausente la
-          parte cuando aparece una interrogación '?' en lugar del número de
-          alturas en numeración romana. También puede estar ausente cuando
-          aparecen siglas como 'POR' (ver anexo).
-        </p>
-        <p>
-          Utiliza toda las fuentes disponibles para recoger información del
-          edificio. Si lo tienes claro, crea las partes que faltan y asígnale
-          etiquetas de altura. Si hay alguna adyacente con los mismos valores
-          fusionalas. En caso de duda, reduce el contorno del edificio para que
-          se ajuste a las partes.
-        </p>
         <h3>Deshacer</h3>
         <p>
           Si te equivocas, siempre puedes restaurar el archivo de tarea original
