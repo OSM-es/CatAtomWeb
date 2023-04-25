@@ -194,6 +194,4 @@ import DocNav from '@/components/DocNav.vue'
 import { wikiUrl } from '@/utils'
 
 const fixmeurl = wikiUrl('ES:Key:fixme')
-const s3durl = wikiUrl('ES:Edificios 3D sencillos')
-const bpurl = wikiUrl('ES:Key:building:part')
 </script>
