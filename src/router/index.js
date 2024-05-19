@@ -45,15 +45,12 @@ router.beforeEach((to, from, next) => {
 
   to.matched.some((record) => {
     if (record.meta.requiresAuth) {
-      userStore.update()
-      if (userStore.isLogged) {
-        next()
+      if (!userStore.isLogged) {
+        next({ name: 'home' })
         return
       }
-      next({ name: 'home' })
-    } else {
-      next()
     }
+    next()
   })
 })
 

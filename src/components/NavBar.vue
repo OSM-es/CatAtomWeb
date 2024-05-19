@@ -1,26 +1,18 @@
 <script setup>
 import { ref } from 'vue'
 import LocaleSwitcher from './LocaleSwitcher.vue'
-import { useRouter } from 'vue-router'
 import { useUserStore } from '@/stores/user'
 import api from '@/services/api'
 
 const isActive = ref(false)
 const userStore = useUserStore()
-const router = useRouter()
+
 function loginUrl() {
-  const authPath = router.resolve({ name: 'auth' })
-  const authURL = new URL(authPath.href, window.location.href).href
-  return api.getUri({
-    url: '/login',
-    params: { callback: authURL },
-  })
+  return api.getUri({ url: '/login' })
 }
 
-function logout() {
-  userStore.logout().then(() => {
-    router.replace({ name: 'home' })
-  })
+function logoutUrl() {
+  return api.getUri({ url: '/logout' })
 }
 </script>
 
@@ -78,7 +70,7 @@ function logout() {
                 <font-awesome-icon icon="user-times" />
               </span>
               &nbsp;
-              <span @click="logout">{{ $t('Logout') }}</span>
+              <a :href="logoutUrl()">{{ $t('Logout') }}</a>
             </a>
           </div>
         </div>

@@ -7,16 +7,6 @@ export const api = axios.create({
   timeout: 60000,
 })
 
-api.setAuth = () => {
-  const token = localStorage.getItem('token')
-
-  if (token) {
-    api.defaults.headers.common['Authorization'] = `token ${token}`
-  }
-}
-
-api.setAuth()
-
 api.interceptors.response.use(
   function (response) {
     return response
@@ -27,8 +17,8 @@ api.interceptors.response.use(
   }
 )
 
-api.getAuth = (session) => {
-  return api.get('authorize', { params: session })
+api.getUser = () => {
+  return api.get('user')
 }
 
 api.getProv = (prov) => {

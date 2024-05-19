@@ -35,6 +35,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import App from './App.vue'
 import router from './router'
 import i18n from './services/i18n'
+import { useUserStore } from '@/stores/user'
 
 library.add(faAngleDown)
 library.add(faAngleUp)
@@ -68,3 +69,5 @@ app.use(createPinia())
 app.use(VueCollapsiblePanel)
 app.use(SmartTable)
 app.mount('#app')
+
+useUserStore().login()

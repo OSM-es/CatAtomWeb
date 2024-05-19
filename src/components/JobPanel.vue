@@ -129,7 +129,6 @@ function shareLink(event) {
 }
 
 onMounted(() => {
-  console.info('onMounted')
   provincias.fetch()
   const mun = localStorage.getItem('municipio')
   const div = localStorage.getItem('division')
