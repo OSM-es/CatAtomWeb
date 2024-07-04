@@ -1,5 +1,3 @@
-version: '3.3'
-
 services:
   web:
     build:
@@ -18,6 +16,5 @@ services:
 
 networks:
   default:
-    external:
-      name: catatom
-
+    name: catatom
+    external: true
