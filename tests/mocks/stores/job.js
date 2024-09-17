@@ -10,7 +10,7 @@ let job = {
   postFixme: jest.fn(),
   updateFixme: jest.fn(),
   url: 'results/12345/tasks',
-putFixme: (data) => Promise.resolve(data),
+  putFixme: (data) => Promise.resolve(data),
 }
 
 module.exports = {
