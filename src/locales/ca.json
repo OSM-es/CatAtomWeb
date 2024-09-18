@@ -118,5 +118,11 @@
   "DONE": "acabat",
   "REVIEW": "carrerer",
   "FIXME": "corregir",
-  "ERROR": "error"
+  "ERROR": "error",
+  "hero title": "Importació del Cadastre Espanyol a OpenStreetMap",
+  "hero subtitle": "Eina en línia per convertir edificis i adreces dels {0} del Cadastre a fitxers {1}.",
+  "Serveis ATOM": "Serveis ATOM",
+  "hero content1": "Les importacions i edicions automatitzades han de ser dutes a terme per persones amb experiència i prou coneixement de la manera com la comunitat OpenStreetMap crea mapes i amb una acurada planificació i consulta amb la comunitat local corresponent.",
+  "hero content2": "Consulta la {0}. Les importacions o edicions automatitzades que no segueixin aquestes directrius es poden revertir!",
+  "import guide": "guia d'importació",
 }

@@ -118,5 +118,11 @@
   "DONE": "done",
   "REVIEW": "review",
   "FIXME": "fixmes",
-  "ERROR": "error"
+  "ERROR": "error",
+  "hero title": "Importing the Spanish Cadastre into OpenStreetMap",
+  "hero subtitle": "Online tool to convert buildings and addresses from {0} Cadastre files to {1} files.",
+  "Servicios ATOM": "ATOM Services",
+  "hero content1": "Automated imports and edits should be carried out by people with experience and sufficient knowledge of how the OpenStreetMap community creates maps, and with careful planning and consultation with the relevant local community.",
+  "hero content2": "See the {0}. Automated imports or edits that do not follow these guidelines may be reverted!",
+  "import guide": "import guide",
 }

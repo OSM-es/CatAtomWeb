@@ -3,14 +3,14 @@
     <section class="hero">
       <div class="container">
         <div class="hero-body">
-          <p class="title">Importación del Catastro Español a OpenStreetMap</p>
+          <p class="title">{{ $t('hero title') }}</p>
           <p class="subtitle">
-            Herramienta en línea para convertir edificios y direcciones de los
-            <a href="http://www.catastro.minhap.gob.es/webinspire/index.html">
-              Servicios ATOM
-            </a>
-            del Catastro a archivos
-            <a :href="docUrl">OSM</a>.
+            <i18n-t keypath="hero subtitle" scope="global">
+              <a href="http://www.catastro.minhap.gob.es/webinspire/index.html">
+                {{ $t('Servicios ATOM') }}
+              </a>
+              <a :href="docUrl">OSM</a>
+            </i18n-t>
           </p>
         </div>
         <div class="block">
@@ -32,17 +32,14 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  Las importaciones y ediciones automatizadas deben ser llevadas
-                  a cabo por personas con experiencia y suficiente conocimiento
-                  de la forma en que la comunidad OpenStreetMap crea mapas y con
-                  una cuidada planificación y consulta con la comunidad local
-                  correspondiente.
+                  {{ $t('hero content1') }}
                 </p>
                 <p>
-                  Consulta la
-                  <strong><a :href="docUrl">guía de importación.</a></strong>
-                  Las importaciones o ediciones automatizadas que no sigan estas
-                  directrices ¡se pueden revertir!
+                  <i18n-t keypath="hero content2" scope="global">
+                    <strong>
+                      <a :href="docUrl">{{ $t('import guide') }}</a>
+                    </strong>
+                  </i18n-t>
                 </p>
               </div>
             </div>

@@ -104,7 +104,7 @@
   "Undo": "Deshacer",
   "parcel_parts_help": "Número de partes de edificio para comenzar a agregar parcelas para tareas.",
   "parcel_dist_help": "Distancia en metros para agregar parcelas para tareas.",
-  "between_val" : "El valor debe estar entre {0} y {1}.",
+  "between_val": "El valor debe estar entre {0} y {1}.",
   "add_project": "Crear proyecto",
   "Share project": "Compartir proyecto",
   "Explore": "Explorar",
@@ -118,5 +118,11 @@
   "DONE": "terminado",
   "REVIEW": "callejero",
   "FIXME": "correcciones",
-  "ERROR": "error"
+  "ERROR": "error",
+  "hero title": "Importación del Catastro Español a OpenStreetMap",
+  "hero subtitle": "Herramienta en línea para convertir edificios y direcciones de los {0} del Catastro a archivos {1}.",
+  "Servicios ATOM": "Servicios ATOM",
+  "hero content1": "Las importaciones y ediciones automatizadas deben ser llevadas a cabo por personas con experiencia y suficiente conocimiento de la forma en que la comunidad OpenStreetMap crea mapas y con una cuidada planificación y consulta con la comunidad local correspondiente.",
+  "hero content2": "Consulta la {0}. Las importaciones o ediciones automatizadas que no sigan estas directrices ¡se pueden revertir!",
+  "import guide": "guía de importación",
 }
