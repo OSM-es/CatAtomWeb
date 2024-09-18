@@ -2,7 +2,7 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <p class="title">Gestión de proyectos</p>
+        <p class="title">{{ $t('docview title') }}</p>
       </div>
     </div>
   </section>
@@ -10,55 +10,62 @@
     <div class="container is-max-desktop">
       <div class="content">
         <p>
-          Esta herramienta en linea sirve para convertir datos de edificios y
-          direcciones de Catastro al formato de OSM. La conversión se realiza
-          por zonas, generalmente un municipio y el resultado es un proyecto de
-          importación disponible para que distintos usuarios puedan llevar a
-          cabo la importación de forma colaborativa.
+          {{ $t('docview content1') }}
         </p>
         <p>
-          Es interesante que antes de crear tu primer proyecto conozcas cómo es
-          el proceso de participación en los que ya están publicados. Anímate a
-          colaborar en ellos siguiendo la
-          <a :href="docUrl">guía de importación</a>.
+          <i18n-t keypath="docview content2" scope="global">
+            <a :href="docUrl">{{ $t('import guide') }}</a>
+          </i18n-t>
         </p>
         <p>
-          Para crear un proyecto de una zona no publicada es necesario dar estos
-          pasos:
+          {{ $t('docview content3') }}
         </p>
         <ol>
-          <li><a href="/doc/login">Registro</a></li>
-          <li><a href="/doc/select">Seleccionar zona</a></li>
-          <li><a href="/doc/process">Procesar</a></li>
-          <li><a href="/doc/review">Revisar el callejero</a></li>
-          <li><a href="/doc/fixme">Corregir errores</a></li>
-          <li><a href="/doc/publish">Publicación</a></li>
+          <li>
+            <a href="/doc/login">{{ $t('docview login') }}</a>
+          </li>
+          <li>
+            <a href="/doc/select">{{ $t('docview select') }}</a>
+          </li>
+          <li>
+            <a href="/doc/process">{{ $t('docview process') }}</a>
+          </li>
+          <li>
+            <a href="/doc/review">{{ $t('docview review') }}</a>
+          </li>
+          <li>
+            <a href="/doc/fixme">{{ $t('docview fixme') }}</a>
+          </li>
+          <li>
+            <a href="/doc/publish">{{ $t('docview publish') }}</a>
+          </li>
         </ol>
-        <h2>¿Necesitas ayuda?</h2>
-        <p>No dudes en contactar a través de cualquiera de estos medios:</p>
+        <h2>{{ $t('docview need help') }}</h2>
+        <p>{{ $t('docview need help explanation') }}</p>
         <ul>
           <li>
-            <a href="https://lists.openstreetmap.org/pipermail/talk-es/"
-              >Lista de correo Talk-es</a
-            >
+            <a href="https://lists.openstreetmap.org/pipermail/talk-es/">
+              {{ $t('docview mail list') }}
+            </a>
           </li>
           <li>
-            Canal de
-            <a href="https://telegram.me/OSMes_Catastro">Telegram</a>/<a
-              href="https://matrix.to/#/#OSMes_Catastro:matrix.org"
-              >Matrix</a
-            >
+            <i18n-t keypath="docview telegram matrix" scope="global">
+              <a href="https://telegram.me/OSMes_Catastro">Telegram</a>
+              <a href="https://matrix.to/#/#OSMes_Catastro:matrix.org">
+                Matrix
+              </a>
+            </i18n-t>
           </li>
           <li>
-            Foro
-            <a href="https://forum.openstreetmap.org/viewforum.php?id=83"
-              >users: Spain</a
-            >.
+            <i18n-t keypath="docview forum" scope="global">
+              <a href="https://forum.openstreetmap.org/viewforum.php?id=83">
+                users: Spain
+              </a>
+            </i18n-t>
           </li>
         </ul>
         <p>
-          Allí encontrarás otros usuarios dispuestos a resolver tus dudas o
-          colaborar en lo necesario.
+          {{ $t('docview need help end') }}
         </p>
       </div>
     </div>
