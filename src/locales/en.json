@@ -140,5 +140,15 @@
   "docview mail list": "Talk-es mailing list",
   "docview telegram matrix": "Channel {0} / {1}",
   "docview forum": "Forum {0}",
-  "docview need help end": "There you will find other users willing to resolve your doubts or collaborate in whatever is necessary."
+  "docview need help end": "There you will find other users willing to resolve your doubts or collaborate in whatever is necessary.",
+  "docselectview admin level": "Optionally, select an administrative division.",
+  "docselectview check size": "Check the size of the project.",
+  "docselectview content1": "Follow these instructions to select the area to process:",
+  "docselectview content2": "After selecting a municipality, in the information panel you will have data that allows you to get an idea of the size the project will have. The more buildings or addresses, the greater the work. It is important that a project is not too big, especially if it is the first time you create one. The larger it is, the more time it will take for pre-publication review and to complete the import once published.",
+  "docselectview content3": "As a general rule, we can say that a project is too large if the number of building parts is greater than 10,000. The program will alert you if it exceeds this figure. If the project is large and you do not want to start with another smaller municipality, try selecting an administrative division.",
+  "docselectview content4": "Municipalities are usually divided into smaller administrative entities. In OSM, municipalities have the label {0}. Below, with {1}, are the districts (the name may change according to the peculiarities of each territory). Within each district there will be neighborhoods (or the equivalent in your area), with {2}.",
+  "docselectview content5": "If these administrative boundaries are defined in OSM, they will appear in the administrative division selector below the municipality selector. Select a neighborhood that is the appropriate size to process.",
+  "docselectview content6": "If the {0} are not defined in OSM, it is advisable to create the ones you need. If you are going to use third-party data to draw these limits and they are not published with a compatible license, it will be necessary to request an express license for use. Consult your City Council and ask for help to take the necessary steps.",
+  "docselectview municipality": "Select a municipality.",
+  "docselectview province": "Select a province."
 }

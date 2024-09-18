@@ -104,7 +104,7 @@
   "Undo": "Desfer",
   "parcel_parts_help": "Nombre de parts d'edifici per començar a afegir parcel·les per a tasques.",
   "parcel_dist_help": "Distància en metres per afegir parcel·les per a tasques.",
-  "between_val" : "El valor ha d'estar entre {0} i {1}.",
+  "between_val": "El valor ha d'estar entre {0} i {1}.",
   "add_project": "Crear projecte",
   "Share project": "Compartir projecte",
   "Explore": "Explorar",
@@ -140,5 +140,15 @@
   "docview mail list": "Llista de correu Talk-ca",
   "docview telegram matrix": "Canal de {0} / {1}",
   "docview forum": "Fòrum {0}",
-  "docview need help end": "Allà trobaràs altres usuaris disposats a resoldre els teus dubtes o col·laborar en allò necessari."
+  "docview need help end": "Allà trobaràs altres usuaris disposats a resoldre els teus dubtes o col·laborar en allò necessari.",
+  "docselectview admin level": "Opcionalment, seleccioneu una divisió administrativa.",
+  "docselectview check size": "Comprova la mida del projecte.",
+  "docselectview content1": "Seguiu aquestes instruccions per seleccionar la zona a processar:",
+  "docselectview content2": "Després de seleccionar un municipi, al panell d'informació tindràs dades que et permeten fer-te una idea de la mida que tindrà el projecte. Com més edificis o adreces més gran serà la feina. Interessa que un projecte no sigui gaire gran, especialment si és la primera vegada que en crees un. Com més gran sigui, més temps serà necessari per a la revisió prèvia a la seva publicació i per completar la importació un cop publicat.",
+  "docselectview content3": "Com a regla general, podem dir que un projecte és massa gran si el nombre de parts d'edifici és superior a 10.000. El programa us alertarà en cas de superar aquesta xifra. Si el projecte és gran i no vols començar per cap altre municipi menor, intenta seleccionar una divisió administrativa.",
+  "docselectview content4": "Els municipis se solen dividir en entitats administratives menors. A OSM, els municipis tenen l'etiqueta {0}. Per sota, amb {1}, hi ha els districtes (el nom pot canviar segons les peculiaritats de cada territori). Dins de cada districte existiran barris (o l'equivalent a la teva zona), amb {2}.",
+  "docselectview content5": "Si aquests límits administratius estan definits a OSM, apareixeran al selector de divisió administrativa sota el selector de municipi. Selecciona un barri que tingui la mida adequada per processar.",
+  "docselectview content6": "Si els {0} no estan definits a OSM, és recomanable crear els que necessitis. Si utilitzareu dades de tercers per dibuixar aquests límits i no estan publicats amb una llicència compatible caldrà sol·licitar una llicència expressa d'ús. Consulta al teu Ajuntament i demana ajuda per fer els passos necessaris.",
+  "docselectview municipality": "Selecciona un municipi.",
+  "docselectview province": "Seleccioneu una província."
 }
