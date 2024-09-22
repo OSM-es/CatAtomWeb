@@ -157,5 +157,17 @@
   "Grant Access": "Otorgar acceso",
   "docloginview content4": "Autoriza el acceso en CatAtom2Osm haciendo clic en {0}.",
   "docloginview content5": "La cuenta dedicada de importación es necesaria para contribuir en proyectos publicados. Para crearlos puedes usar tu cuenta normal si lo deseas.",
-  "Note": "Nota"
+  "Note": "Nota",
+  "docprocessview content1": "Opciones de proceso.",
+  "docprocessview content2": "Una vez seleccionada la zona a procesar debes decidir si quieres importar al mismo tiempo edificios y direcciones postales o procesar independientemente edificios o direcciones. La opción más completa es la primera, aunque algunos usuarios deciden procesar sólo direcciones si el mapa ya contiene muchos edificios, o procesar sólamente los edificios para reducir la carga de trabajo.",
+  "docprocessview content3": "El selector de idioma se refiere al idioma empleado al convertir las abreviaturas de tipo de vía empleadas en Catastro (por ejemplo, CL = Calle/Carrer/Rúa). Se ajusta en función de la provincia, por lo que en principio no es necesario cambiarlo.",
+  "docprocessview content4": "Opciones avanzadas.",
+  "docprocessview content5": "Dentro del apartado opciones avanzadas se encuentran parámetros para modificar la forma en que el programa agrupa las parcelas con edificios o direcciones en archivos de tareas para importar. Se recomienda utilizar los valores por defecto.",
+  "docprocessview content6": "El programa intentará que los ficheros de tareas tengan como máximo este número de partes de edificio.",
+  "docprocessview content7": "Se fusionarán las parcelas más cercanas que esta distancia si no se supera el número de partes.",
+  "docprocessview content8": "Inicia el proceso.",
+  "docprocessview content9": "Cuando estés listo haz clic en el botón",
+  "docprocessview content10": "Información.",
+  "docprocessview content11": "Durante la ejecución del proceso de conversión se actualiza el panel de registro con información de la ejecución del programa.",
+  "docprocessview content12": "Al terminar se muestra un informe con datos sobre el resultado de la ejecución."
 }

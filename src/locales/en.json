@@ -157,5 +157,17 @@
   "docloginview content2": "Click the {0} button in the navigation bar.",
   "docloginview content3": "Sign in to OpenStreetMap using your account or one of the alternative methods.",
   "docloginview content4": "Authorize access on CatAtom2Osm by clicking {0}.",
-  "docloginview content5": "The dedicated import account is required to contribute to published projects. \nTo create them you can use your normal account if you wish."
+  "docloginview content5": "The dedicated import account is required to contribute to published projects. \nTo create them you can use your normal account if you wish.",
+  "docprocessview content1": "Process options.",
+  "docprocessview content10": "Information.",
+  "docprocessview content11": "During the execution of the conversion process, the log panel is updated with information about the program execution.",
+  "docprocessview content12": "When finished, a report is displayed with data on the result of the execution.",
+  "docprocessview content2": "Once you have selected the area to process, you must decide if you want to import buildings and postal addresses at the same time or process buildings or addresses independently. \nThe most complete option is the first, although some users decide to process only addresses if the map already contains many buildings, or to process only buildings to reduce the workload.",
+  "docprocessview content3": "The language selector refers to the language used when converting the road type abbreviations used in Cadastre (for example, CL = Calle/Carrer/Rúa). \nIt is adjusted depending on the province, so in principle it is not necessary to change it.",
+  "docprocessview content4": "Advanced options.",
+  "docprocessview content5": "Within the advanced options section there are parameters to modify the way the program groups parcels with buildings or addresses in task files to import. \nIt is recommended to use the default values.",
+  "docprocessview content6": "The program will try to ensure that the task files have a maximum of this number of building parts.",
+  "docprocessview content7": "Parcels closer than this distance will be merged if the number of parts is not exceeded.",
+  "docprocessview content8": "Start the process.",
+  "docprocessview content9": "When you are ready click the button"
 }

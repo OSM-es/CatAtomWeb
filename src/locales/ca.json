@@ -157,5 +157,17 @@
   "docloginview content2": "Feu clic al botó {0} de la barra de navegació.",
   "docloginview content3": "Inicia sessió a OpenStreetMap usant el teu compte o un dels mètodes alternatius.",
   "docloginview content4": "Autoritza l'accés a CatAtom2Osm fent clic a {0}.",
-  "docloginview content5": "El compte dedicat d'importació és necessari per contribuir a projectes publicats. \nPer crear-los pots fer servir el teu compte normal si ho desitges."
+  "docloginview content5": "El compte dedicat d'importació és necessari per contribuir a projectes publicats. \nPer crear-los pots fer servir el teu compte normal si ho desitges.",
+  "docprocessview content1": "Opcions de procés.",
+  "docprocessview content10": "Informació.",
+  "docprocessview content11": "Durant l'execució del procés de conversió s'actualitza el tauler de registre amb informació de l'execució del programa.",
+  "docprocessview content12": "En acabar, es mostra un informe amb dades sobre el resultat de l'execució.",
+  "docprocessview content2": "Un cop seleccionada la zona a processar has de decidir si vols importar alhora edificis i adreces postals o processar independentment edificis o adreces. \nL'opció més completa és la primera, encara que alguns usuaris decideixen processar només adreces si el mapa ja conté molts edificis, o processar només els edificis per reduir la càrrega de treball.",
+  "docprocessview content3": "El selector d'idioma es refereix a l'idioma emprat en convertir les abreviatures de tipus de via emprades a Cadastre (per exemple, CL = Carrer/Carrer/Rúa). \nS'ajusta en funció de la província, per la qual cosa en principi no cal canviar-ho.",
+  "docprocessview content4": "Opcions avançades.",
+  "docprocessview content5": "Dins l'apartat opcions avançades es troben paràmetres per modificar la manera com el programa agrupa les parcel·les amb edificis o adreces en fitxers de tasques per importar. \nEs recomana fer servir els valors per defecte.",
+  "docprocessview content6": "El programa intentarà que els fitxers de tasques tinguin com a màxim aquest nombre de parts dedifici.",
+  "docprocessview content7": "Es fusionaran les parcel·les més properes que aquesta distància si no se supera el nombre de parts.",
+  "docprocessview content8": "Inicieu el procés.",
+  "docprocessview content9": "Quan estiguis llest fes clic al botó"
 }
