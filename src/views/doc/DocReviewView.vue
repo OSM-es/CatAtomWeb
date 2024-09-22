@@ -2,8 +2,8 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <p class="title">Gestión de proyectos</p>
-        <p class="subtitle">Revisar el callejero</p>
+        <p class="title">{{ $t('docview title') }}</p>
+        <p class="subtitle">{{ $t('docview review') }}</p>
       </div>
     </div>
   </section>
@@ -11,56 +11,42 @@
     <div class="container is-max-desktop">
       <div class="content">
         <p>
-          Antes de poder publicar un proyecto de importación existen dos
-          revisiones que hay que realizar manualmente. La primera, es la del
-          callejero. Si no has seleccionado <em>direcciones</em>, puedes pasar a
-          <a href="/doc/fixmes">Corregir errores</a>.
+          <i18n-t keypath="docreviewview content1" scope="global">
+            <em>{{ $t('Addresses') }}</em>
+            <a href="/doc/fixmes">{{ $t('docview fixme') }}</a>
+          </i18n-t>
         </p>
-        <h3>Conversión de viales</h3>
+        <h3>{{ $t('docreviewview content2') }}</h3>
         <p>
-          No se deben importar los nombres de calles tal como vienen de
-          Catastro. Incumplen las reglas de OSM (están en mayúsculas, sin tildes
-          y con otros problemas). CatAtom2Osm ayuda a corregirlos intentando
-          emparejar automáticamente el nombre de cada vía en Catastro con el
-          nombre en OSM más parecido y cercano. Si no encuentra una coincidencia
-          realiza una transformación preliminar como sugerencia de cuál debería
-          ser el nombre correcto. En cualquier caso, hace falta revisar el
-          proceso manualmente.
+          {{ $t('docreviewview content3') }}
         </p>
         <p>
-          La revisión se hace mediante esta tabla. En la columna de la izquierda
-          se muestra el <em>Nombre en Catastro</em> del vial, en la de la
-          derecha la <em>Conversión</em> propuesta.
+          <i18n-t keypath="docreviewview content4" scope="global">
+            <em>{{ $t('Name in Cadastre') }}</em>
+            <em>{{ $t('Conversion') }}</em>
+          </i18n-t>
         </p>
         <figure class="image column is-11">
           <img src="@/assets/doc/review/panel.png" />
         </figure>
         <p>
-          Al hacer clic en una fila aparece un mapa que muestra los portales de
-          Catastro existentes en esa calle y los viales existentes en OSM. Haz
-          clic en los portales para acceder a las foto de fachada de Catastro.
-          Al colocar el ratón sobre un vial se muestra el nombre en OSM.
+          {{ $t('docreviewview content5') }}
         </p>
         <figure class="image column is-8">
           <img src="@/assets/doc/review/map.png" />
           <span class="is-pulled-right is-size-7">© OpenStreetMap</span>
         </figure>
         <p>
-          Puedes usar el selector de capas para alternar entre el mapa de OSM y
-          el de IGN-Base que muestra el callejero de Cartociudad, o para
-          desactivar las capas de Portales o Viales si no te dejan ver bien el
-          mapa.
+          {{ $t('docreviewview content6') }}
         </p>
-        <h4>Validación</h4>
+        <h4>{{ $t('docreviewview content7') }}</h4>
         <p>
-          Siguiendo los portales de Catastro, busca con que vial de OSM se
-          corresponden.
+          {{ $t('docreviewview content8') }}
         </p>
         <p>
-          Si la calle tiene nombre en OSM, está correctamente escrito, es igual
-          a la conversión propuesta y se corresponde con el nombre que figura en
-          Catastro, puedes validar la conversión usando el botón
-          <em>Validar</em>
+          <i18n-t keypath="docreviewview content9" scope="global">
+            <em>{{ $t('Validate') }}</em>
+          </i18n-t>
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-fake-btn">
@@ -70,18 +56,11 @@
           </span>
         </figure>
         <p>
-          Las filas de las calles revisadas se muestran con un color
-          diferenciado para cada usuario que ha hecho la revisión. También
-          puedes consultarlo al poner el ratón encima del recuadro de edición
-          del nombre de la calle. Distintos usuarios pueden colaborar para
-          completar la revisión.
+          {{ $t('docreviewview content10') }}
         </p>
-        <h4>Corrección</h4>
+        <h4>{{ $t('docreviewview content11') }}</h4>
         <p>
-          Si la calle no tiene nombre en OSM, o si lo tiene pero no es igual a
-          la conversión propuesta, busca el nombre correcto usando revisión
-          sobre el terreno o las distintas fuentes disponibles (Cartociudad, las
-          fotos de fachada, Mapillary, KartaView).
+          {{ $t('docreviewview content12') }}
         </p>
         <figure class="image column is-9">
           <img src="@/assets/doc/review/photo.png" />
@@ -90,61 +69,38 @@
           >
         </figure>
         <p>
-          Cuando tengas el nombre correcto edita la conversión en la tabla y/o
-          el nombre de la vía en OSM según sea necesario. Para acceder a editar
-          el mapa, en el encabezado del mapa hay un enlace a la web de OSM.
+          {{ $t('docreviewview content13') }}
         </p>
         <p>
-          Las ediciones en el mapa resultado de esta fase deben hacerse con la
-          cuenta de usuario habitual de OSM, no con cuentas dedicadas de
-          importación. Conviene etiquetarlas con
-          <a :href="c1n">#1calle1nombre</a> y el nombre del municipio en el
-          comentario del conjunto de cambios.
+          <i18n-t keypath="docreviewview content14" scope="global">
+            <a :href="c1n">#1calle1nombre</a>
+          </i18n-t>
         </p>
         <p>
-          Si una calle se muestra con distintos colores a lo largo de su
-          trazado, es por que está formada por distintas vías en OSM y el nombre
-          no coincide. Hay que editar el mapa, ver cual es el correcto y ponerlo
-          en todos los tramos. En este ejemplo, al nombre en un tramo le falta
-          una tilde.
+          {{ $t('docreviewview content15') }}
         </p>
         <figure class="image column is-9">
           <img src="@/assets/doc/review/name.png" />
           <span class="is-pulled-right is-size-7">© OpenStreetMap</span>
         </figure>
         <p>
-          Cuando el programa no encuentra una vía en OSM con la que emparejar
-          los nombres, aplicará correcciones al nombre en Catastro para
-          sugerirlo como conversión. Vigila la conversión de las abreviaturas
-          del tipo de vía. Existen algunas que tienen varios valores posibles
-          que se muestran separados por una barra. Son los casos de AL
-          (Aldea/Alameda), CJ (Calleja/Callejón) o CR (Carretera/Carrera), por
-          ejemplo. En caso de usarlos, revisa que sólo quede el tipo de vía
-          correcto o ningúno, según el caso.
+          {{ $t('docreviewview content16') }}
         </p>
         <p>
-          Algunas direcciones de Catastro pueden referirse a lugares en vez de a
-          vías, por ejemplo a barrios, urbanizaciones, caseríos. Comprueba si el
-          nombre está mapeado en OSM o se puede añadir. Ten en cuenta que el
-          programa asigna las direcciones a la etiqueta
-          <code>
-            <a :href="addrplc" class="has-background-light">addr:place=*</a>
-          </code>
-          en lugar de
-          <code>
-            <a :href="addrstr" class="has-background-light">addr:street=*</a>
-          </code>
-          cuando el nombre comienza por referencias de lugar. Para una lista
-          completa consulta el anexo.
+          <i18n-t keypath="docreviewview content17" scope="global">
+            <code>
+              <a :href="addrplc" class="has-background-light">addr:place=*</a>
+            </code>
+            <code>
+              <a :href="addrstr" class="has-background-light">addr:street=*</a>
+            </code>
+          </i18n-t>
         </p>
-        <h4>Eliminar</h4>
+        <h4>{{ $t('docreviewview content18') }}</h4>
         <p>
-          Algunos nombres de vía de Catastro pueden no ser adecuados para
-          importar en OSM. Por ejemplo podemos encontrar referencias
-          administrativa tales como 'MANZANA A SECTOR 4' que no se corresponde
-          con nombres de vía reales. Si decides que no se importen las
-          direcciones para un nombre de vía, deja la conversión en blanco
-          mediante el botón <em>Eliminar</em>
+          <i18n-t keypath="docreviewview content19" scope="global">
+            <em>{{ $t('Delete') }}</em>
+          </i18n-t>
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-fake-btn">
@@ -153,10 +109,11 @@
             </span>
           </span>
         </figure>
-        <h4>Deshacer</h4>
+        <h4>{{ $t('docreviewview content20') }}</h4>
         <p>
-          Para restaurar la conversión a su valor original usa el botón
-          <em>Deshacer</em>
+          <i18n-t keypath="docreviewview content21" scope="global">
+            <em>{{ $t('Undo') }}</em>
+          </i18n-t>
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-fake-btn">
@@ -165,20 +122,19 @@
             </span>
           </span>
         </figure>
-        <h4>Reprocesar</h4>
+        <h4>{{ $t('docreviewview content22') }}</h4>
         <p>
-          Cuando esté completa la revisión del callejero, el usuario que inició
-          el proceso puede continuar al siguente paso mediante el botón
+          {{ $t('docreviewview content23') }}
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-success is-fake-btn">
-            <span>Reprocesar</span>
+            <span>{{ $t('Reprocess') }}</span>
             <span class="icon">
               <font-awesome-icon icon="repeat" />
             </span>
           </span>
         </figure>
-        <h3>Anexo: Siglas de tipo de vía</h3>
+        <h3>{{ $t('docreviewview content24') }}</h3>
         <pre>
 ABREV.           ESPAÑOL                    CATALÁ                   GALEGO
 AG               Agregado*                  Agregat*                 Engadido*
@@ -280,14 +236,17 @@ TRAVESIA         Travesía                   Travessera               Travesía
 VIA              Vía                        Via                      Vía
         </pre>
         <p>
-          *) Se aplica a <code>addr:place</code> en lugar de
-          <code>addr:street</code>.
+          <i18n-t keypath="docreviewview content25" scope="global">
+            <code>addr:place</code>
+            <code>addr:street</code>
+          </i18n-t>
         </p>
         <p>
-          **) Se aplica a <code>addr:place</code> y se elimina el prefijo
-          "Lugar" en la conversión
+          <i18n-t keypath="docreviewview content26" scope="global">
+            <code>addr:place</code>
+          </i18n-t>
         </p>
-        <p>***) Se eliminan las direcciones de estos tipos.</p>
+        <p>{{ $t('docreviewview content27') }}</p>
       </div>
     </div>
   </section>
@@ -296,12 +255,12 @@ VIA              Vía                        Via                      Vía
       <div class="content">
         <doc-nav prev-url="/doc/process" next-url="/doc/fixme">
           <template #previous>
-            <em>Gestión de proyectos</em>
-            <strong>Procesar</strong>
+            <em>{{ $t('docview title') }}</em>
+            <strong>{{ $t('docview process') }}</strong>
           </template>
           <template #next>
-            <em>Gestión de proyectos:</em>
-            <strong>Corregir errores</strong>
+            <em>{{ $t('docview title') }}</em>
+            <strong>{{ $t('docview fixme') }}</strong>
           </template>
         </doc-nav>
       </div>
