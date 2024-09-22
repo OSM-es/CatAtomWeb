@@ -130,7 +130,7 @@
   "docview content2": "Es interesante que antes de crear tu primer proyecto conozcas cómo es el proceso de participación en los que ya están publicados. Anímate a colaborar en ellos siguiendo la {0}.",
   "docview content3": "Para crear un proyecto de una zona no publicada es necesario dar estos pasos:",
   "docview login": "Registro",
-  "docview select": "Seleccionar zona",
+  "docview select": "Seleccionar",
   "docview process": "Procesar",
   "docview review": "Revisar el callejero",
   "docview fixme": "Corregir errores",
@@ -150,5 +150,12 @@
   "docselectview admin level": "Opcionalmente, selecciona una división administrativa.",
   "docselectview content4": "Los municipio se suelen dividir en entidades administrativas menores. En OSM, los municipios tienen la etiqueta {0}. Por debajo, con {1}, están los distritos (el nombre puede cambiar según las peculiaridades de cada territorio). Dentro de de cada distrito existirán barrios (o el equivalente en tu zona), con {2}.",
   "docselectview content5": "Si estos límites administrativos están definidos en OSM, aparecerán en el selector de división administrativa debajo del selector de municipio. Selecciona un barrio que tenga el tamaño adecuado para procesar.",
-  "docselectview content6": "Si los {0} no están definidos en OSM, es recomendable crear los que necesites. Si vas a utilizar datos de terceros para dibujar estos límites y no están publicados con una licencia compatible será necesario solicitar una licencia expresa de uso. Consulta en tu Ayuntamiento y pide ayuda para dar los pasos necesarios."
+  "docselectview content6": "Si los {0} no están definidos en OSM, es recomendable crear los que necesites. Si vas a utilizar datos de terceros para dibujar estos límites y no están publicados con una licencia compatible será necesario solicitar una licencia expresa de uso. Consulta en tu Ayuntamiento y pide ayuda para dar los pasos necesarios.",
+  "docloginview content1": "Sigue estas instrucciones para acceder a CatAtom2Osm online:",
+  "docloginview content2": "Haz clic en el botón {0} de la barra de navegación.",
+  "docloginview content3": "Inicia sesión en OpenStreetMap usando tu cuenta o uno de los métodos alternativos.",
+  "Grant Access": "Otorgar acceso",
+  "docloginview content4": "Autoriza el acceso en CatAtom2Osm haciendo clic en {0}.",
+  "docloginview content5": "La cuenta dedicada de importación es necesaria para contribuir en proyectos publicados. Para crearlos puedes usar tu cuenta normal si lo deseas.",
+  "Note": "Nota"
 }

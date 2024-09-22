@@ -150,5 +150,12 @@
   "docselectview content5": "If these administrative boundaries are defined in OSM, they will appear in the administrative division selector below the municipality selector. Select a neighborhood that is the appropriate size to process.",
   "docselectview content6": "If the {0} are not defined in OSM, it is advisable to create the ones you need. If you are going to use third-party data to draw these limits and they are not published with a compatible license, it will be necessary to request an express license for use. Consult your City Council and ask for help to take the necessary steps.",
   "docselectview municipality": "Select a municipality.",
-  "docselectview province": "Select a province."
+  "docselectview province": "Select a province.",
+  "Grant Access": "Grant access",
+  "Note": "Note",
+  "docloginview content1": "Follow these instructions to access CatAtom2Osm online:",
+  "docloginview content2": "Click the {0} button in the navigation bar.",
+  "docloginview content3": "Sign in to OpenStreetMap using your account or one of the alternative methods.",
+  "docloginview content4": "Authorize access on CatAtom2Osm by clicking {0}.",
+  "docloginview content5": "The dedicated import account is required to contribute to published projects. \nTo create them you can use your normal account if you wish."
 }
