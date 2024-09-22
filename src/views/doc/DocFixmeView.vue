@@ -2,8 +2,8 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <p class="title">Gestión de proyectos</p>
-        <p class="subtitle">Corregir errores</p>
+        <p class="title">{{ $t('docview title') }}</p>
+        <p class="subtitle">{{ $t('docview fixme') }}</p>
       </div>
     </div>
   </section>
@@ -11,100 +11,71 @@
     <div class="container is-max-desktop">
       <div class="content">
         <p>
-          En esta fase, ya está completada la conversión de datos. Se han creado
-          cada unidad de importación (o tareas). Sin embargo, antes de poder
-          publicar el proyecto de importación hay que revisar los problemas que
-          el programa ha detectado y marcado en los edificios mediante etiquetas
-          <a :href="fixmeurl" class="has-background-light">fixme=*</a>.
+          <i18n-t keypath="docfixmeview content1" scope="global">
+            <a :href="fixmeurl" class="has-background-light">fixme=*</a>
+          </i18n-t>
         </p>
         <p>
-          La revisión se hace mediante esta lista. Cada fila contiene el enlace
-          al archivo de una tarea con problemas y el número de fixmes que
-          contiene.
+          {{ $t('docfixmeview content2') }}
         </p>
         <figure class="image column is-9">
           <img src="@/assets/doc/fixme/panel.png" />
         </figure>
         <p>
-          Descarga <font-awesome-icon icon="download" /> el archivo a tu
-          ordenador y ábrelo con JOSM. Haz una búsqueda del texto 'fixme' para
-          localizar los elementos que tengan esa etiqueta. Lee el mensage del
-          problema detectado y busca su descripción en esta página. Elimina la
-          etiqueta fixme y si es necesario corrige el problema indicado. Para
-          resolver el problema consulta la imagen aérea de fondo, las fotos de
-          fachada y otras fuentes aprobadas de imágenes como Mapillary o
-          KartaView.
+          <i18n-t keypath="docfixmeview content3" scope="global">
+            <font-awesome-icon icon="download" />
+          </i18n-t>
         </p>
         <p>
-          No subas los archivos de tareas a OSM. Cuando estén corregidos los
-          problemas y no queden etiquetas fixme guardalo en tu ordenador y
-          súbelo a CatAtom2OSM. Puedes arrastrar los archivos al panel o usar
-          los botones <font-awesome-icon icon="upload" />.
+          <i18n-t keypath="docfixmeview content4" scope="global">
+            <font-awesome-icon icon="upload" />
+          </i18n-t>
         </p>
         <p>
-          Las filas de los archivos revisados se muestran con un color
-          diferenciado para cada usuario que ha hecho la revisión. También
-          puedes consultarlo al poner el ratón encima del enlace de descarga.
-          Distintos usuarios pueden colaborar para completar la revisión.
+          {{ $t('docfixmeview content5') }}
         </p>
         <p>
-          Los 'fixmes' están pensados para corregirlos antes publicar el
-          proyecto. Se debe reducir su número a 0 para poder hacerlo. Esta es la
-          lista de posibles problemas a solucionar:
+          {{ $t('docfixmeview content6') }}
         </p>
-        <h4>Área demasiado grande</h4>
+        <h4>{{ $t('docfixmeview content7') }}</h4>
         <p>
-          Edificio con área demasiado grande. Si no se corresponde a un edificio
-          real, elimínalo.
+          {{ $t('docfixmeview content8') }}
         </p>
         <figure class="image column is-11">
           <img src="@/assets/doc/fixme/Catatom2osm-fixmebigarea.png" />
         </figure>
-        <h4>Área demasiado pequeña</h4>
+        <h4>{{ $t('docfixmeview content9') }}</h4>
         <p>
-          Edificio con área demasiado pequeña. Si no se corresponde a un
-          edificio real, elimínalo.
+          {{ $t('docfixmeview content10') }}
         </p>
         <figure class="image column is-11">
           <img src="@/assets/doc/fixme/Catatom2osm-fixmesmallarea.png" />
         </figure>
-        <h4>Esta parte es mayor que su edificio</h4>
+        <h4>{{ $t('docfixmeview content11') }}</h4>
         <p>
-          Significa que una parte de un edificio está fuera del contorno del
-          mismo. Resuélvelo ampliando el contorno del edificio o recortando la
-          parte según sea oportuno.
+          {{ $t('docfixmeview content12') }}
         </p>
         <figure class="image column is-11">
           <img
             src="@/assets/doc/fixme/Catatom2osm-fixmepartbiggerthanbuilding.png"
           />
         </figure>
-        <h4>Validación GEOS</h4>
+        <h4>{{ $t('docfixmeview content13') }}</h4>
         <p>
-          La geometría no ha superado las pruebas de validación de la librería
-          GEOS. En este ejemplo, una parte interior de un multipolígono está
-          tocando el borde exterior del mismo. Se puede resolver eliminando la
-          relación multipolígono y colocando las etiquetas de altura en cada
-          parte por separado.
+          {{ $t('docfixmeview content14') }}
         </p>
         <figure class="image column is-11">
           <img src="@/assets/doc/fixme/Catatom2osm-fixmegeos.png" />
         </figure>
-        <h4>El edificio de OSM con id %s no es válido</h4>
+        <h4>{{ $t('docfixmeview content15') }}</h4>
         <p>
-          Se ha encontrado un edificio con geometría no válida en OSM. En este
-          caso el problema no está en los datos de Catastro sino en los de OSM.
-          Comprueba que el edificio de Catastro se superpone al de OSM y que
-          será reemplazado (combinación) cuando se haga la importación. En ese
-          caso no es necesaria ninguna acción aparte de eliminar la etiqueta
-          'fixme'. Si el edificio no va a ser reemplazado con los datos de
-          Catastro al importar, hay que corregirlo en OSM.
+          {{ $t('docfixmeview content16') }}
         </p>
-        <h3>Deshacer</h3>
+        <h3>{{ $t('docfixmeview content17') }}</h3>
         <p>
-          Si te equivocas, siempre puedes restaurar el archivo de tarea original
-          usando el botón
-          <em>Deshacer</em>
+          <i18n-t keypath="docfixmeview content18" scope="global">
+            <em>{{ $t('Undo') }}</em>
+          </i18n-t>
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-fake-btn">
@@ -113,10 +84,9 @@
             </span>
           </span>
         </figure>
-        <h3>Reprocesar</h3>
+        <h3>{{ $t('docfixmeview content19') }}</h3>
         <p>
-          Cuando esté completa la revisión de todos los archivos, el usuario que
-          inició el proceso puede continuar al siguente paso mediante el botón
+          {{ $t('docfixmeview content20') }}
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-success is-fake-btn">
@@ -126,7 +96,7 @@
             </span>
           </span>
         </figure>
-        <h3>Anexo: nomenclatura de subparcelas</h3>
+        <h3>{{ $t('docfixmeview content21') }}</h3>
         <pre>
           -I,-II ...... Volúmenes bajo rasante (1, 2 alturas)
           I, II ....... Volúmenes sobre rasante (1, 2 alturas)
@@ -162,11 +132,12 @@
           ZPAV ........ Obras de urbanización interior
         </pre>
         <p>
-          Según
-          <a
-            href="https://www.catastro.meh.es/documentos/formatos_intercambio/FICCcodigosUnificado07.pdf"
-            >FICCcodigosUnificado07.pdf</a
-          >
+          <i18n-t keypath="docfixmeview content22" scope="global">
+            <a
+              href="https://www.catastro.meh.es/documentos/formatos_intercambio/FICCcodigosUnificado07.pdf"
+              >FICCcodigosUnificado07.pdf</a
+            >
+          </i18n-t>
         </p>
       </div>
     </div>
@@ -176,12 +147,12 @@
       <div class="content">
         <doc-nav prev-url="/doc/review" next-url="/doc/publish">
           <template #previous>
-            <em>Gestión de proyectos</em>
-            <strong>Revisar callejero</strong>
+            <em>{{ $t('docview title') }}</em>
+            <strong>{{ $t('Review street names') }}</strong>
           </template>
           <template #next>
-            <em>Gestión de proyectos:</em>
-            <strong>Publicar</strong>
+            <em>{{ $t('docview title') }}</em>
+            <strong>{{ $t('Publish') }}</strong>
           </template>
         </doc-nav>
       </div>
