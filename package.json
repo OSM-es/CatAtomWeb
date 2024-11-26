@@ -65,5 +65,8 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
+  },
+  "engines": {
+    "node": "<=16"
   }
 }

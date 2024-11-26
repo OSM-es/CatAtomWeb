@@ -1,6 +1,7 @@
 <script setup>
 import { useJobStore } from '@/stores/job'
 import { useRoute } from 'vue-router'
+
 import AdminPanel from '@/components/AdminPanel.vue'
 import ChatPanel from '@/components/ChatPanel.vue'
 import DonePanel from '@/components/DonePanel.vue'
@@ -56,12 +57,16 @@ function reportEnabled() {
               :municipio="job.cod_municipio"
             ></fixme-panel>
             <review-panel v-if="reviewEnabled()"></review-panel>
-            <log-panel v-if="reportEnabled()" data-test="report" title="Report">
+            <log-panel
+              v-if="reportEnabled()"
+              data-test="report"
+              :title="$t('Report')"
+            >
             </log-panel>
             <log-panel
               v-if="job.estado != 'AVAILABLE'"
               data-test="log"
-              title="Log"
+              :title="$t('Log')"
             ></log-panel>
           </vue-collapsible-panel-group>
         </div>

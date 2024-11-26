@@ -34,7 +34,7 @@ module.exports = {
       estado: 'AVAILABLE',
     },
   })),
-  postJob: jest.fn((cod_municipio, cod_division,    options) => {
+  postJob: jest.fn((cod_municipio, cod_division, options) => {
     let report = { language: options.idioma }
     if ('building' in options) {
       report['building_date'] = '1999'

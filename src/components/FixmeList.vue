@@ -25,8 +25,8 @@ const job = useJobStore()
 const user = useUserStore()
 
 function getOwner(fixme) {
-  const msg = fixme.locked ? 'Locked by' : 'Edited by'
-  return fixme.username && t(msg) + ' ' + fixme.username
+  const msg = fixme.locked ? t('Locked by') : t('Edited by')
+  return fixme.username && msg + ' ' + fixme.username
 }
 
 function uploadEnabled(fixme) {

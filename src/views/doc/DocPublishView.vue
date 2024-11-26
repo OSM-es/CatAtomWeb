@@ -2,8 +2,8 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <p class="title">Gestión de proyectos</p>
-        <p class="subtitle">Publicar</p>
+        <p class="title">{{ $t('docview title') }}</p>
+        <p class="subtitle">{{ $t('Publish') }}</p>
       </div>
     </div>
   </section>
@@ -11,21 +11,22 @@
     <div class="container is-max-desktop">
       <div class="content">
         <p>
-          Finalmente, el proyecto está listo para su publicación en el
-          <a href="https://tareas.openstreetmap.es/">Gestor de Tareas</a>.
+          <i18n-t keypath="docpublishview content1" scope="global">
+            <a href="https://tareas.openstreetmap.es/">{{
+              $t('Task Manager')
+            }}</a>
+          </i18n-t>
         </p>
         <p>
-          Para ello necesitas que te den permiso para crear proyectos. Manda un
-          mensaje solicitándolo al Canal de
-          <a href="https://telegram.me/OSMes_Catastro>">Telegram</a>/<a
-            href="https://matrix.to/#/#OSMes_Catastro:matrix.org"
-            >Matrix</a
-          >
-          indicando tu nombre de usuario.
+          <i18n-t keypath="docpublishview content2" scope="global">
+            <a href="https://telegram.me/OSMes_Catastro>">Telegram</a>
+            <a href="https://matrix.to/#/#OSMes_Catastro:matrix.org">Matrix</a>
+          </i18n-t>
         </p>
         <p>
-          Cuando tengas el permiso asignado, usa el botón
-          <em>{{ $t('add_project') }}</em>
+          <i18n-t keypath="docpublishview content3" scope="global">
+            <em>{{ $t('add_project') }}</em>
+          </i18n-t>
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-success is-fake-btn">
@@ -36,34 +37,41 @@
           </span>
         </figure>
         <p>
-          Descarga el archivo <b>zoning.zip</b>
-          <font-awesome-icon icon="download" /> a tu ordenador.
+          <i18n-t keypath="docpublishview content4" scope="global">
+            <b>zoning.zip</b>
+            <font-awesome-icon icon="download" />
+          </i18n-t>
         </p>
         <p>
-          En la ventana 'CREAR NUEVO PROYECTO, DEFINIR ÁREA' del Gestor de
-          Tareas haz clic en <em>Seleccionar archivo</em> y selecciona el
-          archivo zoning.zip descargado.
+          <i18n-t keypath="docpublishview content5" scope="global">
+            <em>{{ $t('Select file') }}</em>
+          </i18n-t>
         </p>
         <figure class="image column is-11">
           <img src="@/assets/doc/publish/new-project.png" />
         </figure>
         <p>
-          <b>Importante</b>: Activa la opción para
-          <em>Definir tareas mediante los polígonos cargados</em>.
+          <i18n-t keypath="docpublishview content6" scope="global">
+            <b>{{ $t('important') }}</b>
+            <em>{{ $t('docpublishview content7') }}</em>
+          </i18n-t>
         </p>
-        <p>Haz clic en <em>Siguente</em> para continuar.</p>
         <p>
-          En la ventana 'REVISAR', comprueba que el número de tareas mostrado
-          coincide con el que se muestra en CatAtom2OSM.
+          <i18n-t keypath="docpublishview content8" scope="global">
+            <em>{{ $t('next') }}</em>
+          </i18n-t>
+        </p>
+        <p>
+          {{ $t('docpublishview content9') }}
         </p>
         <figure class="image column is-5">
           <img src="@/assets/doc/publish/review.png" />
         </figure>
-        <p>Selecciona la organización OSM-es.</p>
+        <p>{{ $t('docpublishview content10') }}</p>
         <p>
-          Introduce el nombre del proyecto en inglés. A partir de ahora,
-          completa los campos necesarios copiándolos de la plantilla mostrada en
-          el panel mediante los botones <em>Copiar al portapapeles</em>
+          <i18n-t keypath="docpublishview content11" scope="global">
+            <em>{{ $t('Copy to clipboard') }}</em>
+          </i18n-t>
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-fake-btn">
@@ -72,22 +80,22 @@
             </span>
           </span>
         </figure>
-        <p>Haz clic en <em>Crear</em> para crear el proyecto.</p>
         <p>
-          En la página 'EDITAR PROYECTO', 'DESCRIPCIÓN', selecciona el estado
-          'Publicado'. Completa en inglés y español los campos 'Nombre del
-          proyecto', 'Descripción corta' y 'Descripción'.
+          <i18n-t keypath="docpublishview content12" scope="global">
+            <em>{{ $t('create') }}</em>
+          </i18n-t>
+        </p>
+        <p>
+          {{ $t('docpublishview content13') }}
         </p>
         <figure class="image column is-9">
           <img src="@/assets/doc/publish/description.png" />
         </figure>
         <p>
-          En 'INSTRUCCIONES', completa en inglés y español los campos
-          'Comentario al conjunto de cambios', 'Instrucciones detalladas' y
-          'Instrucciones adicionales para esta tarea'.
+          {{ $t('docpublishview content14') }}
         </p>
-        <p>En 'METADATOS', 'Tipos de mapeo', selecciona 'Edificios'.</p>
-        <p>Haz clic en el botón 'Guardar' para finalizar.</p>
+        <p>{{ $t('docpublishview content15') }}</p>
+        <p>{{ $t('docpublishview content16') }}</p>
       </div>
     </div>
   </section>
@@ -96,11 +104,11 @@
       <div class="content">
         <doc-nav prev-url="/doc/fixme" next-url="/doc">
           <template #previous>
-            <em>Gestión de proyectos</em>
-            <strong>Corregir errores</strong>
+            <em>{{ $t('docview title') }}</em>
+            <strong>{{ $t('docview fixme') }}</strong>
           </template>
           <template #next>
-            <strong>Gestión de proyectos</strong>
+            <strong>{{ $t('docview title') }}</strong>
           </template>
         </doc-nav>
       </div>

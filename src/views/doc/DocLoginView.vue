@@ -2,45 +2,44 @@
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <p class="title">Gestión de proyectos</p>
-        <p class="subtitle">Registro</p>
+        <p class="title">{{ $t('docview title') }}</p>
+        <p class="subtitle">{{ $t('docview login') }}</p>
       </div>
     </div>
   </section>
   <section class="section">
     <div class="container is-max-desktop">
       <div class="content">
-        <p>Sigue estas instrucciones para acceder a CatAtom2Osm online:</p>
+        <p>{{ $t('docloginview content1') }}</p>
         <p>
-          <b>1)</b> Haz clic en el botón <i>Iniciar sesión</i> de la barra de
-          navegación.
+          <b>1)</b>&nbsp;
+          <i18n-t keypath="docloginview content2" scope="global">
+            <i>{{ $t('Log in') }}</i>
+          </i18n-t>
         </p>
         <figure class="image has-text-left ml-6">
           <span class="button is-outlined is-info is-fake-btn">
             <span class="icon">
               <font-awesome-icon icon="user" />
             </span>
-            <span>Iniciar sesión</span>
+            <span>{{ $t('Log in') }}</span>
           </span>
         </figure>
-        <p>
-          <b>2)</b> Inicia sesión en OpenStreetMap usando tu cuenta o uno de los
-          métodos alternativos.
-        </p>
+        <p><b>2)</b> {{ $t('docloginview content3') }}</p>
         <figure class="image column is-8">
           <img src="@/assets/doc/login/osm-login.png" />
         </figure>
         <p>
-          <b>3)</b> Autoriza el acceso en CatAtom2Osm haciendo clic en
-          <i>Otorgar acceso</i>.
+          <b>3)</b>&nbsp;
+          <i18n-t keypath="docloginview content4" scope="global">
+            <i>{{ $t('Grant Access') }}</i>
+          </i18n-t>
         </p>
         <figure class="image column is-8">
           <img src="@/assets/doc/login/oauth.png" />
         </figure>
         <p>
-          <b>Nota:</b> La cuenta dedicada de importación es necesaria para
-          contribuir en proyectos publicados. Para crearlos puedes usar tu
-          cuenta normal si lo deseas.
+          <b>{{ $t('Note') }}</b> {{ $t('docloginview content5') }}
         </p>
       </div>
     </div>
@@ -50,11 +49,11 @@
       <div class="content">
         <doc-nav prev-url="/doc" next-url="/doc/select">
           <template #previous>
-            <strong>Gestión de proyectos</strong>
+            <strong>{{ $t('docview title') }}</strong>
           </template>
           <template #next>
-            <em>Gestión de proyectos:</em>
-            <strong>Seleccionar</strong>
+            <em>{{ $t('docview title') }}</em>
+            <strong>{{ $t('docview select') }}</strong>
           </template>
         </doc-nav>
       </div>
