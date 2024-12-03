@@ -16,7 +16,10 @@ onMounted(async () => {
   jobs.value = response.data
 })
 
-const link = (row) => row.mun_code + (row.split_id ? `/${row.split_id}` : '')
+const link = (row) => ({
+  name: 'process',
+  params: { munCode: row.mun_code, divCode: row.split_id },
+})
 </script>
 
 <template>
@@ -47,14 +50,17 @@ const link = (row) => row.mun_code + (row.split_id ? `/${row.split_id}` : '')
           <template #body="{ rows }">
             <tr v-for="(row, i) in rows" :key="i">
               <td>
-                <a :href="link(row)">
+                <router-link :to="link(row)">
                   {{ row.mun_code }} {{ row.name }}
                   <span v-if="row.split_id">/ {{ row.split_name }}</span>
-                </a>
+                </router-link>
               </td>
               <td>{{ $t(row.status) }}</td>
               <td>
-                <a :href="`https://www.openstreetmap.org/user/${row.user}`">
+                <a
+                  :href="`https://www.openstreetmap.org/user/${row.user}`"
+                  target="_blank"
+                >
                   {{ row.user }}
                 </a>
               </td>

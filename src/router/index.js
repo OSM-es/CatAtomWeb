@@ -44,13 +44,11 @@ router.beforeEach((to, from, next) => {
   const userStore = useUserStore()
 
   to.matched.some((record) => {
-    if (record.meta.requiresAuth) {
-      if (!userStore.isLogged) {
-        next({ name: 'home' })
-        return
-      }
+    if (record.meta.requiresAuth && !userStore.isLogged) {
+      next({ name: 'home' })
+    } else {
+      next()
     }
-    next()
   })
 })
 
