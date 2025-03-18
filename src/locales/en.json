@@ -230,7 +230,7 @@
   "docpublishview content14": "Under 'INSTRUCTIONS', complete the 'Change set comment', 'Detailed instructions', and 'Additional instructions for this task' fields in English and Spanish.",
   "docpublishview content15": "Under 'METADATA', 'Mapping Types', select 'Buildings'.",
   "docpublishview content16": "Click the 'Save' button to finish.",
-  "docpublishview content2": "To do this you need to be given permission to create projects. \nSend a message requesting it to Channel {0} / {1} indicating your username.",
+  "docpublishview content2": "To do this you need to be given permission to create projects. \nSend a message requesting it to any communication channel listed in {0} indicating your username/s.",
   "docpublishview content3": "When you have the permission assigned, use the {0} button",
   "docpublishview content4": "Download file {0} {1} to your computer.",
   "docpublishview content5": "In the 'CREATE NEW PROJECT, DEFINE AREA' window of the Task Manager click on {0} and select the downloaded zoning.zip file.",

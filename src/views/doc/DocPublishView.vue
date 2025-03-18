@@ -19,8 +19,7 @@
         </p>
         <p>
           <i18n-t keypath="docpublishview content2" scope="global">
-            <a href="https://telegram.me/OSMes_Catastro>">Telegram</a>
-            <a href="https://matrix.to/#/#OSMes_Catastro:matrix.org">Matrix</a>
+            <router-link to="/doc">{{ $t('Docs') }}</router-link>
           </i18n-t>
         </p>
         <p>
