@@ -2,16 +2,10 @@
 import { computed } from 'vue'
 import ProcessButton from './ProcessButton'
 import { useJobStore } from '@/stores/job'
-import { useUserStore } from '@/stores/user'
 
 // eslint-disable-next-line no-undef
 const emit = defineEmits(['process-job'])
 const job = useJobStore()
-const user = useUserStore()
-
-const isOwner = computed(() => {
-  return job.propietario && user.isOwner(job.propietario)
-})
 
 const isActive = computed(() => job.estado == 'DONE')
 
@@ -29,7 +23,6 @@ function changeArgs(event) {
     </template>
     <template #content>
       <div id="publishPanel" class="container">
-        <div v-if="isOwner">
           <div v-if="job.type == 'bd'" class="panel-block">
             <div class="select" @change="changeArgs">
               <select :value="job.current_args">
@@ -81,15 +74,6 @@ function changeArgs(event) {
               </process-button>
             </div>
           </div>
-        </div>
-        <div v-else class="panel-block">
-          <span>
-            {{ $t('The process is locked by') }}
-            <a :href="`https://www.openstreetmap.org/user/${username}`">{{
-              job.propietario.username
-            }}</a>
-          </span>
-        </div>
       </div>
     </template>
   </vue-collapsible-panel>
